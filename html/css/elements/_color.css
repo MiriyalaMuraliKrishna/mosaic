@@ -1,0 +1,29 @@
+:root{
+    --Black: #000000;
+    --Black-5: rgb(0 0 0 / 5%);
+    --Black-8: rgb(0 0 0 / 8%);
+    --Black-10: rgb(0 0 0 / 10%);
+    --Black-15: rgb(0 0 0 / 15%);
+    --Black-16: rgb(0 0 0 / 16%);
+    --Black-20: rgb(0 0 0 / 20%);
+    --Black-25: rgb(0 0 0 / 25%);
+    --Black-30: rgb(0 0 0 / 30%);
+    --Black-50: rgb(0 0 0 / 50%);
+    --Black-60: rgb(0 0 0 / 60%);
+    --Black-75: rgb(0 0 0 / 75%);
+    --Black-90: rgb(0 0 0 / 90%);
+    --White-10: rgb(255 255 255 / 10%);
+    --White-15: rgb(255 255 255 / 15%);
+    --White-16: rgb(255 255 255 / 16%);
+    --White-25: rgb(255 255 255 / 25%);
+    --White-40: rgb(255 255 255 / 40%);
+    --White-50: rgb(255 255 255 / 50%);
+    --White-60: rgb(255 255 255 / 60%);
+    --White-70: rgb(255 255 255 / 70%);
+    --White-75: rgb(255 255 255 / 75%);
+    --White-80: rgb(255 255 255 / 80%);
+    --White-90: rgb(255 255 255 / 90%);
+    --White: #ffffff;
+    --Green: #1AD1B1;
+    --Muted---Light: rgba(255, 255, 255, 0.40);
+}

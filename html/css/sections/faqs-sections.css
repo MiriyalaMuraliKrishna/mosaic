@@ -1,0 +1,189 @@
+
+.faqs-wrap-head {
+  justify-content: space-between;
+}
+.faqs-head-rt {
+  gap: 8px;
+}
+.faqs-head-rt:only-child {
+  flex: 1;
+}
+.faqs-head-rt span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.faqs-head-rt button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.faqs-head h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+.faqs-head-rt .button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.faqs-head .category-links {
+  margin: 0 0 0 16px;
+}
+.faqs-head ul.category-links > li {
+  margin-bottom: 13px;
+}
+.faqs-head ul.category-links > li:last-child {
+  margin-bottom: 0;
+}
+
+ul.category-links > li a {
+  gap: 13px;
+  padding-top: 11px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.faqs-q-list {
+  gap: 59px 0;
+}
+.faqs-q-list:first-child .stripe-line{display: none;}
+.faqs-q-list h2 {
+  
+  margin-bottom: 2px;
+}
+.faqs-q-list:last-child {
+  margin-bottom: 0;
+}
+
+
+.faqs-main.no_accordion{display: block; padding-bottom: 68px;}
+.faqs-main.block{display: block;}
+
+.faqs-head h2 a{color: var(--Deep-Teal);}
+.faqs-head h2 a:hover{color: var(--Black);}
+.faqs-head h2.h5{margin-bottom: 9px;}
+
+.faqs-answer{padding: 25px 24px 40px;
+  background: var(--White-10);
+  backdrop-filter: blur(40px);
+}
+.faqs-answer span.optional-text{margin-bottom: 19px; color: var(--Sky-Blue);}
+.faqs-answer h2{margin-bottom: 20px;}
+.faqs-answer p{padding-bottom: 2px;}
+.faqs-vactor{bottom: -26px; right: 14px; width: 225px; height: 54px;}
+.faqs-vactor svg{width: 100%; height: 100%; object-fit: contain;}
+
+
+
+/* media css starts here */
+@media only screen  and (min-width: 1024px){
+    .faqs-main{ gap: 80px 256px;}
+    .faqs-text{padding-top: 20px; flex: 0 0 320px;}
+    .faqs-head{padding-bottom: 33px;}
+    .faqs-head h2{margin-bottom: 8px;}
+    .faqs-right{flex: 1; gap: 82px 0;}
+    .faqs-text:nth-child(1):last-child, .faqs-right:nth-child(1):last-child{width: 100%; flex: 0 0 100%;}
+
+    
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .faqs-main{padding: 32px 0 64px; display: block;}
+    .faqs-text{padding-bottom: 80px;}
+    .faqs-head{padding-bottom: 33px;}
+    .faqs-head h2{margin-bottom: 8px;}
+    .faqs-answer{flex: 1;}
+
+    body.page-template-support .faqs-main { padding-top: 0; }
+    
+
+ 
+
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .faqs-main{padding: 41px 0 40px; display: block;}
+    .faqs-text{padding-bottom: 80px;}
+    .faqs-head{padding-bottom: 33px;}
+    .faqs-head h2{margin-bottom: 8px;}
+    .faqs-vactor{width: 257px; height: 63px; right: 26px; bottom: -42px;}
+    
+    .faqs-answer span.optional-text{font-size: 1rem;}
+    body.page-template-support .faqs-text { padding-bottom: 75px; }
+
+}
+
+/* media css starts here */
+@media only screen and (min-width: 1024px) {
+  .faqs-head-lt {
+    flex: 0 0 62%;
+  }
+  .faqs-head-rt {
+    flex: 0 0 calc(40% - 30px);
+  }
+  .faqs-wrap-head {
+    padding-bottom: 48px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .faqs-wrap {
+    padding: 80px 0 21px;
+  }
+  .faqs-wrap-head {
+    border-bottom: 2px dashed var(--Beige);
+  }
+  .faqs-head-lt h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 0;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 769px) {
+  .faqs-head-lt {
+    flex: 1;
+  }
+  .faqs-head-rt {
+    flex: 1;
+  }
+  .faqs-wrap-head {
+    padding-bottom: 32px;
+  }
+  .faqs-main {
+    padding-bottom: 0;
+  }
+  .faqs-wrap {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 200px) {
+  .faqs-wrap {
+    padding: 20px 0 0;
+  }
+  .faqs-main {
+    padding: 40px 0 20px;
+  }
+  .faqs-head h2 { margin-bottom: 22px; }
+  .faqs-head-lt {
+    margin-bottom: 14px;
+  }
+  .faqs-head-lt h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+  }
+  .faqs-wrap-head{justify-content: center;}
+.faqs-head-rt {
+  flex-direction: column;
+}
+.faqs-head-rt .button {
+  width: 100%;
+  justify-content: center;
+}
+}

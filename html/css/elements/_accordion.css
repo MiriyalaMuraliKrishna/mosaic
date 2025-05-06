@@ -1,0 +1,30 @@
+
+
+.accordion-main{gap: 42px 0;}
+.accordion-header{gap: 21px; font-size: 24px; line-height: 32px; letter-spacing: -0.72px; cursor: pointer; position: relative; z-index: 1;}  
+.accordion-plus{ width: 42px; height: 42px;}
+.accordion-plus-circle{opacity: 0.15;}
+
+.accordion-line.is-second { transition: transform .4s; position: absolute; transform: rotate(90deg); }
+.accordion-line { background-color: var(--Green); flex: none; width: 16px; height: 2px; }
+
+
+.accordion-content{max-height: 0; transition: max-height 0.9s; overflow: hidden; } 
+.accordion-desc {padding: 2px 29px 15px 78px;}
+.accordion-desc ul>li::before { top: 9px; left: -16px; width: 5px; height: 5px; } 
+.accordion-head { justify-content: space-between; gap: 20px; } 
+.accordion-head-lt h3 { margin-bottom: 0; font-size: 2.5rem; }
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .accordion-main h3{margin-bottom: 26px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .accordion-list{margin-bottom: 9px;}
+    .accordion-header{padding: 21px 21px 22px 76px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .accordion-header{padding: 15px 21px 18px 76px;}
+    .accordion-plus{top: calc(50% - 5px);}
+    .accordion-desc { padding: 2px 22px 15px 78px; }
+}
