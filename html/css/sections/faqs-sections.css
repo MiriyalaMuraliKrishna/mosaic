@@ -1,33 +1,8 @@
 
-.faqs-wrap-head {
-  justify-content: space-between;
-}
-.faqs-head-rt {
-  gap: 8px;
-}
-.faqs-head-rt:only-child {
-  flex: 1;
-}
-.faqs-head-rt span {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-}
-.faqs-head-rt button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 .faqs-head h2 {
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 32px;
-}
-.faqs-head-rt .button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: fit-content;
 }
 
 .faqs-head .category-links {
@@ -97,7 +72,6 @@ ul.category-links > li a {
     .faqs-head h2{margin-bottom: 8px;}
     .faqs-answer{flex: 1;}
 
-    body.page-template-support .faqs-main { padding-top: 0; }
     
 
  
@@ -110,50 +84,20 @@ ul.category-links > li a {
     .faqs-head h2{margin-bottom: 8px;}
     .faqs-vactor{width: 257px; height: 63px; right: 26px; bottom: -42px;}
     
-    .faqs-answer span.optional-text{font-size: 1rem;}
-    body.page-template-support .faqs-text { padding-bottom: 75px; }
+ 
 
 }
 
 /* media css starts here */
-@media only screen and (min-width: 1024px) {
-  .faqs-head-lt {
-    flex: 0 0 62%;
-  }
-  .faqs-head-rt {
-    flex: 0 0 calc(40% - 30px);
-  }
-  .faqs-wrap-head {
-    padding-bottom: 48px;
-  }
 
-}
 
 @media only screen and (min-width: 768px) {
   .faqs-wrap {
     padding: 80px 0 21px;
   }
-  .faqs-wrap-head {
-    border-bottom: 2px dashed var(--Beige);
-  }
-  .faqs-head-lt h1 {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 48px;
-    margin-bottom: 0;
-    padding-right: 30px;
-  }
+
 }
 @media only screen and (max-width: 1023px) and (min-width: 769px) {
-  .faqs-head-lt {
-    flex: 1;
-  }
-  .faqs-head-rt {
-    flex: 1;
-  }
-  .faqs-wrap-head {
-    padding-bottom: 32px;
-  }
   .faqs-main {
     padding-bottom: 0;
   }
@@ -169,21 +113,5 @@ ul.category-links > li a {
     padding: 40px 0 20px;
   }
   .faqs-head h2 { margin-bottom: 22px; }
-  .faqs-head-lt {
-    margin-bottom: 14px;
-  }
-  .faqs-head-lt h1 {
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 40px;
-    text-align: center;
-  }
-  .faqs-wrap-head{justify-content: center;}
-.faqs-head-rt {
-  flex-direction: column;
-}
-.faqs-head-rt .button {
-  width: 100%;
-  justify-content: center;
-}
+ 
 }

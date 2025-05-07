@@ -1,45 +1,61 @@
-class Accordions {
-  constructor(ele) {
-    this.ele = document.querySelectorAll(ele);
+export class UIAccordion {
+  constructor(listSelector, headerSelector, contentSelector) {
+    this.listSelector = listSelector;
+    this.headerSelector = headerSelector;
+    this.contentSelector = contentSelector;
+    this.items = document.querySelectorAll(this.listSelector);
   }
 
   init() {
-    this.ele.forEach((ele) => {
-      ele.addEventListener('click', (e) => {
-        e.preventDefault();
+    if (!this.items.length) return;
+
+    this.items.forEach((el) => {
+      const header = el.querySelector(this.headerSelector);
+      const content = el.querySelector(this.contentSelector);
+      const line = el.querySelector('.accordion-line.is-second');
+
+      if (!header || !content) return;
+
+      header.addEventListener('click', () => {
+        const isOpen = el.dataset.open === 'true';
 
         // Close all
-        this.ele.forEach((el) => {
-          const lines = el.querySelectorAll('.accordion-line.is-second');
-          lines.forEach((line) => {
-            if (line) {
-              line.style.transform = 'rotate(90deg)';
-            }
-          });
-          const isContent = el.querySelectorAll('.accordion-content');
-          isContent.forEach((ele) => {
-            if (ele) {
-              ele.style.maxHeight = `0px`;
-            }
-          });
+        this.items.forEach((item) => {
+          item.dataset.open = 'false';
+
+          const itemHeader = item.querySelector(this.headerSelector);
+          const itemContent = item.querySelector(this.contentSelector);
+          const itemLine = item.querySelector('.accordion-line.is-second');
+
+          itemHeader?.parentElement.classList.remove('open');
+          itemHeader?.classList.remove('open');
+          if (itemContent) itemContent.style.maxHeight = '';
+          if (itemLine) itemLine.style.transform = 'rotate(90deg)';
         });
 
-        const eleclosest = e.target.closest('.accordion-list');
-        if (!eleclosest) return;
-
-        const line = eleclosest.querySelector('.accordion-line.is-second');
-        if (!line) return;
-
-        const isOpen = line.style.transform === 'rotate(0deg)';
-        line.style.transform = isOpen ? 'rotate(90deg)' : 'rotate(0deg)';
-
-        const isContent = eleclosest.querySelector('.accordion-content');
-        if (isContent) {
-          isContent.style.maxHeight = `${isContent.scrollHeight}px`;
+        // Open if it wasn't already
+        if (!isOpen) {
+          el.dataset.open = 'true';
+          header.parentElement.classList.add('open');
+          header.classList.add('open');
+          content.style.maxHeight = `${content.scrollHeight}px`;
+          if (line) line.style.transform = 'rotate(0deg)';
         }
       });
+
+      // Update height on window resize if open
+      const onResize = () => {
+        if (el.dataset.open === 'true') {
+          content.style.maxHeight = `${content.scrollHeight}px`;
+        }
+      };
+      window.addEventListener('resize', onResize);
     });
   }
 }
 
-export const Accordion = new Accordions('.accordion-main');
+export const Accordion = new UIAccordion(
+  '.accordion-list',
+  '.accordion-header',
+  '.accordion-content'
+);

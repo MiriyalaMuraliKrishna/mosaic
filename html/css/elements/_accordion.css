@@ -10,8 +10,7 @@
 
 
 .accordion-content{max-height: 0; transition: max-height 0.9s; overflow: hidden; } 
-.accordion-desc {padding: 2px 29px 15px 78px;}
-.accordion-desc ul>li::before { top: 9px; left: -16px; width: 5px; height: 5px; } 
+.accordion-desc {padding: 28px 4px 12px 64px;}
 .accordion-head { justify-content: space-between; gap: 20px; } 
 .accordion-head-lt h3 { margin-bottom: 0; font-size: 2.5rem; }
 

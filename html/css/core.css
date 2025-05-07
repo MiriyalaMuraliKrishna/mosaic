@@ -9,6 +9,7 @@
 @import url('./elements/_accordion.css');
 
 
+@import url('./sections/faqs-banner-section.css');
 @import url('./sections/faqs-sections.css');
 @import url('./sections/unlock-cta-section.css');
 

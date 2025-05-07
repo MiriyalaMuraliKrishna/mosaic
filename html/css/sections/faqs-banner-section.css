@@ -1,0 +1,86 @@
+
+.faqs-banner-main {
+    justify-content: space-between;
+  }
+  .faqs-banner-text {
+
+font-size: 23px;
+
+font-weight: 300;
+line-height: 38px; 
+letter-spacing: -0.69px;
+  }
+  .faqs-banner-text h1{margin-bottom: 30px;}
+  .faqs-banner-image {
+    gap: 8px;
+  }
+  .faqs-banner-image:only-child {
+    flex: 1;
+  }
+  .faqs-banner-image span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .faqs-banner-image button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .faqs-banner-image .button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+  }
+  .faqs-banner-ellipse{
+
+opacity: 0.25;
+background: radial-gradient(50% 50% at 50% 50%, #1AD1B1 0%, rgba(26, 209, 177, 0.00) 100%);
+z-index: -1;
+  } 
+
+  
+/* media css starts here */
+@media only screen and (min-width: 1024px) {
+  .faqs-banner-main { padding: 274px 0 93px; }
+  .faqs-banner-text { flex: 0 0 747px; } 
+  .faqs-banner-text h1{max-width: 637px;} 
+  .faqs-banner-image { flex:1; top: -281px; right: -492px; width: 1064px; height: 928px; bottom: auto; } 
+  .faqs-banner-ellipse{ top: -762px; right: -254px; width: 1973px; height: 1973px; } 
+}
+
+
+  @media only screen and (max-width: 1023px) and (min-width: 769px) {
+    .faqs-banner-text {
+      flex: 1;
+    }
+    .faqs-banner-image {
+      flex: 1;
+    }
+    .faqs-banner-main {
+      padding-bottom: 32px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 200px) {
+
+    .faqs-banner-text {
+      margin-bottom: 14px;
+    }
+    .faqs-banner-text h1 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 40px;
+      text-align: center;
+    }
+    .faqs-banner-main{justify-content: center;}
+  .faqs-banner-image {
+    flex-direction: column;
+  }
+  .faqs-banner-image .button {
+    width: 100%;
+    justify-content: center;
+  }
+  }
+  
