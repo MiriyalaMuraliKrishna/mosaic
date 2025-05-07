@@ -1,8 +1,48 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"
+    />
+    <meta name="keywords" content="HTML, CSS, XML, PHP, JavaScript, jQuery" />
+    <meta
+      name="description"
+      content="Furble an Pet Food, products
+    & prescriptions development..."
+    />
+    <!-- Title -->
+    <title>Mosai: 011 Faq's Page</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="150x150"
+      href="images/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="180x180"
+      href="images/web-app-manifest-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/web-app-manifest-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="images/apple-touch-icon.png"
+    />
 
     <!-- Font Base -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -81,24 +121,30 @@
                   </li>
                 </ul>
               </div>
-              <div class="faqs-answer f-500 fs-20 radius-30">
-                <video src="images/faq-ac31441e.mp4"></video>
-                <p>Can’t find the answer you’re looking for? We can help.</p>
-                <a href="#"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="11"
-                    height="11"
-                    viewBox="0 0 11 11"
-                    fill="none"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M8.25 1.5H0.560665V0H10.0607H10.8107V0.75V9.75H9.31067V2.56066L1.06066 10.8107L0 9.75L8.25 1.5Z"
-                      fill="#1AD1B1"
-                    /></svg
-                ></a>
+              <div class="faqs-answer f-500 fs-20 radius-30 relative">
+                <div class="faqs-answer-ellipse absolute radius-50"></div>
+                <video autoplay muted loop>
+                  <source src="images/faq-ac31441e.mp4" type="video/mp4" />
+                </video>
+                <div class="faqs-answer-desc">
+                  <p>Can’t find the answer you’re looking for? We can help.</p>
+                  <a href="#">
+                    <span class="hide">Read More</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 11 11"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.25 1.5H0.560665V0H10.0607H10.8107V0.75V9.75H9.31067V2.56066L1.06066 10.8107L0 9.75L8.25 1.5Z"
+                        fill="#1AD1B1"
+                      /></svg
+                  ></a>
+                </div>
               </div>
             </div>
             <div class="faqs-right flex flex-col">
@@ -801,8 +847,9 @@
             <ul class="foter-nav-links no-disc flex" role="navigation">
               <li>
                 <a href="">
-                  <span class="stripe-line line-green d-block"></span>Solutions
-                </a>
+                  <span class="stripe-line line-green d-block"></span
+                  >Solutions </a
+                ><!-- if no need link add clss no_link in a tag -->
                 <ul class="flex no-disc m-0">
                   <li><a href="">Customization at Scale</a></li>
                   <li><a href="">On-Demand Production</a></li>

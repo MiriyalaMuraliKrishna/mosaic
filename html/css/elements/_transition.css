@@ -1,3 +1,9 @@
 :root{
     --b-transition: all .3s ease-in-out;
+    --b-transition-4: all .4s ease-in-out;
+    --b-transition-5: all .5s ease-in-out;
+    --b-transition-6: all .6s ease-in-out;
+    --b-transition-7: all .7s ease-in-out;
+    --b-transition-8: all .8s ease-in-out;
+    --b-transition-9: all .9s ease-in-out;
 }

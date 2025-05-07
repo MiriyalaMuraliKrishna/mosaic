@@ -35,19 +35,18 @@ letter-spacing: -0.69px;
   }
   .faqs-banner-ellipse{
 
-opacity: 0.25;
+opacity: 0.30;
 background: radial-gradient(50% 50% at 50% 50%, #1AD1B1 0%, rgba(26, 209, 177, 0.00) 100%);
 z-index: -1;
   } 
 
-  
 /* media css starts here */
 @media only screen and (min-width: 1024px) {
   .faqs-banner-main { padding: 274px 0 93px; }
   .faqs-banner-text { flex: 0 0 747px; } 
   .faqs-banner-text h1{max-width: 637px;} 
   .faqs-banner-image { flex:1; top: -281px; right: -492px; width: 1064px; height: 928px; bottom: auto; } 
-  .faqs-banner-ellipse{ top: -762px; right: -254px; width: 1973px; height: 1973px; } 
+  .faqs-banner-ellipse{ top: -762px; right: 0; width: 1973px; height: 1973px; } 
 }
 
 

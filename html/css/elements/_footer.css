@@ -23,6 +23,8 @@ ul.foter-nav-links > li > a{gap: 7px; color: var(--Green); font-size: 14px; font
 ul.foter-nav-links > li > ul > li > a{color: var(--White); font-size: 16px; line-height: 22px; display: block;}
 
 
+a.no_link{pointer-events: none;}
+
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .footer{gap: 80px; padding: 80px 0 160px;}

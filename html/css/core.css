@@ -9,6 +9,12 @@
 @import url('./elements/_accordion.css');
 
 
+/*-- supprt page --*/
+@import url('./sections/support-banner-section.css');
+@import url('./sections/support-section.css');
+
+
+/*-- faq page --*/
 @import url('./sections/faqs-banner-section.css');
 @import url('./sections/faqs-sections.css');
 @import url('./sections/unlock-cta-section.css');
