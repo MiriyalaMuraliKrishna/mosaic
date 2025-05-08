@@ -16,12 +16,22 @@ export const Menu = {
     let mediamobile = window.matchMedia('(max-width: 1023px)');
 
     // scroll fun //
-    const myscroll = 0;
+    let lastscroll = 0;
     const elescroll = () => {
-      const scroll = window.scrollY || myscroll;
-      scroll > 138
-        ? _.$ele.classList.remove('sticky')
-        : _.$ele.classList.add('sticky');
+      const scroll = window.scrollY;
+      console.log(scroll, lastscroll);
+      let headerHeight = 138;
+      if (scroll <= headerHeight) {
+        _.$ele.classList.remove('sticky-up', 'sticky-down');
+      } else if (scroll > lastscroll) {
+        _.$ele.classList.remove('sticky-up');
+        _.$ele.classList.add('sticky-down');
+      } else if (scroll < lastscroll - 2) {
+        _.$ele.classList.add('sticky-up');
+        _.$ele.classList.remove('sticky-down');
+      }
+      lastscroll = scroll;
+      console.log(scroll, lastscroll);
     };
     window.addEventListener('scroll', elescroll);
     // scroll fun //

@@ -1,6 +1,8 @@
 
 
-header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; z-index: 1800; }
+header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; z-index: 1800;  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;}
+.site-header.sticky-down{transform: translateY(-100%); background-color: transparent;}
+.site-header.sticky-up{transform: translateY(0%); background-color: var(--Black);}
 .header_right{flex: 1;}
 .logo a{display: inline-block; width: 100%;}
 .logo a img{object-fit: contain;}
