@@ -1,5 +1,5 @@
 
-
+.footer-logo{max-width: 176px;}
 ul.footer-links{margin: 0; padding-bottom: 68px;}
 ul.footer-links li{margin: 0;}
 ul.footer-links li a{ padding-top: 20px; display: flex; flex-direction: column; gap: 20px; color: var(--White); font-size: 18px; line-height: 20px; letter-spacing: -0.18px; }

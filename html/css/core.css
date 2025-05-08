@@ -4,10 +4,15 @@
 @import url('./elements/_fonts.css');
 @import url('./elements/_transition.css');
 @import url('./elements/_reset.css');
+@import url('./elements/_header.css');
 @import url('./elements/_footer.css');
 @import url('./elements/_animate.css');
 @import url('./elements/_accordion.css');
 
+/*-- resource page --*/
+@import url('./sections/resources-banner-section.css');
+@import url('./sections/resources-browse-section.css');
+@import url('./sections/featured-articles-section.css');
 
 /*-- supprt page --*/
 @import url('./sections/support-banner-section.css');

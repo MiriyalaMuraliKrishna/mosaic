@@ -26,4 +26,5 @@
     --White: #ffffff;
     --Green: #1AD1B1;
     --Muted---Light: rgba(255, 255, 255, 0.40);
+    --Green-Radial-Gradient: radial-gradient(50% 50% at 50% 50%, #1AD1B1 0%, rgba(26, 209, 177, 0.00) 100%);
 }

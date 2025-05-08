@@ -9,8 +9,7 @@ export const mylenis = {
         wheelMultiplier: 0.7,
         gestureOrientation: 'vertical',
         normalizeWheel: false,
-        smoothTouch: true,
-        smoothWheel: true,
+        smoothTouch: false,
       });
 
       function raf(time) {
