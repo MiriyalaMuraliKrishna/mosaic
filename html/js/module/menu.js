@@ -2,6 +2,7 @@ export const Menu = {
   $ele: document.querySelector('header.site-header'),
   $nav: document.querySelector('.header_right'),
   $btn: document.querySelector('.humburger-btn'),
+  $footerlinks: document.querySelectorAll('ul.foter-nav-links > li > a'),
   init() {
     const _ = this;
     if (!_.$ele || !_.$btn) return;
@@ -19,7 +20,6 @@ export const Menu = {
     let lastscroll = 0;
     const elescroll = () => {
       const scroll = window.scrollY;
-      console.log(scroll, lastscroll);
       let headerHeight = 138;
       if (scroll <= headerHeight) {
         _.$ele.classList.remove('sticky-up', 'sticky-down');
@@ -31,7 +31,6 @@ export const Menu = {
         _.$ele.classList.remove('sticky-down');
       }
       lastscroll = scroll;
-      console.log(scroll, lastscroll);
     };
     window.addEventListener('scroll', elescroll);
     // scroll fun //
@@ -92,5 +91,20 @@ export const Menu = {
       } else {
       }
     });
+    // footer fun starts here
+    _.$footerlinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        _.$footerlinks.forEach((item) => {
+          if (item !== link) {
+            item.classList.remove('open');
+            $(item.parentElement.querySelector('ul')).slideUp(800);
+          }
+        });
+        e.currentTarget.classList.toggle('open');
+        $(e.currentTarget.closest('li').children[1]).slideToggle(800);
+      });
+    });
+    // footer fun ends here
   },
 };

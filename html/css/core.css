@@ -13,6 +13,7 @@
 @import url('./sections/resources-banner-section.css');
 @import url('./sections/resources-browse-section.css');
 @import url('./sections/featured-articles-section.css');
+@import url('./sections/blg-resource-section.css');
 
 /*-- supprt page --*/
 @import url('./sections/support-banner-section.css');

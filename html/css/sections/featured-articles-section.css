@@ -3,17 +3,25 @@
 .featured-articles-main{padding: 26px 0 0;}
 .featured-articles-head{padding-bottom: 71px;}
 
+.featured-articles-post{padding: 87px 82px 94px;}
 .featured-articles-bg{background-color: var(--White-10);}
+.featured-articles-desc{max-width: 538px;}
 .featured-articles-right{gap: 25px;}
 .featured-articles-sm{padding: 62px 64px 60px;}
 .featured-articles-sm .featured-articles-text{max-width: 343px;}
-.featured-articles-image{z-index: -1;}
+.featured-articles-image{top: -92px; right: 50px; z-index: -1;}
+.featured-articles-sm .featured-articles-image{top: 42px; right: -25px;}
+.featured-articles-sm:last-child .featured-articles-image{top: -156px; right: 72px;}
+.featured-articles-desc h2{margin-bottom: 25px;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .featured-articles-row{gap: 25px;}
+    .featured-articles-row{gap: 25px; padding: 0 44px 0 36px;}
     .featured-articles-post{flex: 1;}
     .featured-articles-right{flex: 1;}
 }
-
+@media only screen and (min-width: 768px){
+    .featured-articles-post .featured-articles-desc{padding-top: 255px;}
+    .featured-articles-post .featured-articles-desc h2{font-size: 40px;line-height: 52px; margin-bottom: 23px;}
+}
 
