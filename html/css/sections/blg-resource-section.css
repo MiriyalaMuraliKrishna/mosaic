@@ -7,3 +7,12 @@ ul.blg-resource-lists li{padding: 30px; gap: 29px; flex: 0  0 calc(50% - 12.5px)
 .blg-resource-bg{opacity: 0.1;}
 .blg-resource-icon{width: 49px;}
 .blg-resource-text{flex: 1; gap: 8px;}
+.blg-resource-text h2{letter-spacing: 0;}
+.blg-resource-shwmore{padding-top: 40px;}
+.blg-resource-link{gap: 12px;}
+
+
+.case-stdy-lists{gap: 25px;}
+.case-stdy-list{flex: 1;}
+.case-stdy-list h2{font-size: 26px; line-height: 40px; font-family: var(--body-font); letter-spacing: 0;}
+.case-stdy-text{bottom: 0; left: 0;}

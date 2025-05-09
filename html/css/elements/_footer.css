@@ -108,8 +108,5 @@ a.no_link{pointer-events: none;}
     ul.foter-nav-links > li > a.open svg{transform: translateY(-50%) rotate(-90deg);}
     ul.foter-nav-links > li > ul{display: none;}
     .footer-list:nth-child(2) ul.foter-nav-links > li:last-child > a{border-bottom: 1px solid var(--Green);}
+    
 }
-
-
-
-
