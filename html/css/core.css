@@ -9,6 +9,12 @@
 @import url('./elements/_animate.css');
 @import url('./elements/_accordion.css');
 
+
+/*-- 06 prod meterials section page --*/
+@import url('./sections/meterials-banner-section.css');
+@import url('./sections/prod-meterials-section.css');
+@import url('./sections/all-meterials-section.css');
+
 /*-- resource page --*/
 @import url('./sections/resources-banner-section.css');
 @import url('./sections/resources-browse-section.css');
