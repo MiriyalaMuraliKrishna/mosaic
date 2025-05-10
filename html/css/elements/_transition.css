@@ -7,3 +7,5 @@
     --b-transition-8: all .8s ease-in-out;
     --b-transition-9: all .9s ease-in-out;
 }
+
+.transition-8{--b-transition-8: all .8s ease-in-out;}
