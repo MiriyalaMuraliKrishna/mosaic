@@ -25,7 +25,7 @@ a:hover{color: var(--White);}
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{clear: both; margin: 0; color: var(--White); font-weight: 500; font-family: var(--body-font); line-height: 125%; text-transform: none;}
 .h1, h1{font-size: 84px; line-height: 90px; letter-spacing: -0.84px; margin-bottom: 10px;}
-.h2, h2{font-size: 48px; line-height: 54px; margin-bottom: 21px;}
+.h2, h2{font-size: 64px; line-height: 74px; letter-spacing: -1.92px; margin-bottom: 21px;} /*-- fixed 10 may --*/
 .h3, h3{font-size: 44px; line-height: 54px; letter-spacing: -1.32px; margin-bottom: 21px;} /*-- fixed 09 may --*/
 .h4, h4{font-size: 32px; line-height: 38px; letter-spacing: -0.96px; margin-bottom: 20px;}
 .h5, h5{font-size: 24px; line-height: 28px; margin-bottom: 16px;}
@@ -33,9 +33,8 @@ a:hover{color: var(--White);}
 
 
 h2 span{ padding-bottom: 5px; background-repeat: no-repeat; background-position: left bottom; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='153' height='10' viewBox='0 0 153 10' fill='none'%3E%3Cpath d='M2 5.34595C4.35043 4.56654 11.1684 0.766394 13.6798 2.84482C14.6075 3.61255 15.2747 4.5859 16.1102 5.44034C18.8008 8.1921 19.8545 8.68426 23.236 6.83248C25.2849 5.71051 27.5328 3.98841 30.0316 4.5437C32.3307 5.05462 33.2656 8.24479 36.0721 8.13024C39.7654 7.97949 43.1875 3.69987 46.4069 2.23133C48.551 1.25334 50.7557 5.71077 52.9429 6.1482C56.385 6.83662 59.7401 0.757295 63.1598 2.23133C65.7332 3.34054 66.3938 6.84462 69.625 5.93584C72.5456 5.11444 77.1935 0.980355 80.1487 3.10437C82.7966 5.00755 83.9082 7.11671 87.3217 5.48753C91.7324 3.38243 94.4184 2.16147 98.6476 5.15719C102.195 7.6699 103.896 4.48108 107.472 3.31673C110.538 2.31855 112.523 6.07185 115.825 5.06281C119.411 3.9673 120.861 1.70683 124.414 3.55269C128.728 5.79356 132.401 2.89201 136.778 2.89201C139.083 2.89201 141.004 4.21567 143.196 4.73247C145.927 5.37613 148.735 5.11883 151.502 4.92123' stroke='%236EC4E6' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"); }
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--Deep-Teal);}
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--Golden-Yellow);}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--Green);}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--Green);}
 address{font-size: 1.125rem; line-height: 1.5rem; margin-bottom: 24px;}
 abbr[title] {border-bottom: 1px dotted var(--Navy); cursor: help;}
 b, strong {font-weight: 500;}
@@ -120,8 +119,8 @@ hr{width: 100%; height: 1px; margin: 0 0 26px; background-color: var(--Beige); d
 /* Buttons */
 button, .button{ gap: 16px; padding: 14px 35px 15px; border-radius: 90px; font-size: 16px; font-weight: 600; line-height: 23px; letter-spacing: 0.16px; border: 1px solid var(--Green); color: var(--Green); background: transparent; font-family: var(--heading-font); width: fit-content; cursor: pointer; vertical-align: middle; text-decoration: none; text-transform: none; text-align: center; outline: 0; position: relative; -webkit-writing-mode: horizontal-tb; -ms-writing-mode: horizontal-tb; writing-mode: horizontal-tb; text-orientation: mixed; box-shadow: none;  z-index: 1; margin: 0; transition: var(--b-transition); overflow: hidden;}
 button:hover, .button:hover{background: var(--Green);}
-button svg, .button svg path{transition: var(--b-transition);}
-button:hover svg, .button:hover svg path{fill: var(--White);}
+button svg circle, .button svg circle, .button svg path{transition: var(--b-transition);}
+button:hover svg circle, .button:hover svg circle, .button:hover svg path{fill: var(--White);}
 .btn-reverse{border-color: var(--Black); color: var(--Black);}
 .btn-reverse:hover{background-color: var(--Black);}
 
@@ -138,7 +137,7 @@ a.text-link span.pink{background-color: var(--Blush-Pink);}
 
 span.text-link{transition: var(--b-transition); cursor: pointer;}
 a.text-link:hover, span.text-link:hover{color: var(--White);}
-a.text-link:hover span:not(.hide-mobile){background-color: var(--Golden-Yellow);}
+a.text-link:hover span:not(.hide-mobile){background-color: var(--Green);}
 a.text-link:hover span svg{transform: translateX(2px);}
 a.text-link.white{color: var(--White);}
 
@@ -160,7 +159,7 @@ a.text-link i{top: 2px; position: relative;}
 /* text btn link */
 
 .category-tag{margin-bottom: 20px; padding: 0; gap: 8px;}
-.category-tag a{background-color: var(--Golden-Yellow); color: var(--Deep-Teal); font-size: 12px; line-height: 12px; font-weight: 500; padding: 3px 8px 4px 8px; width: fit-content; border-radius: 20px;}
+.category-tag a{background-color: var(--Green); color: var(--Deep-Teal); font-size: 12px; line-height: 12px; font-weight: 500; padding: 3px 8px 4px 8px; width: fit-content; border-radius: 20px;}
 .category-tag a.light-green-bg{background-color: var(--Light-Green); color: var(--Forest-Green);}
 .category-tag a.light-pink-bg{background-color: var(--Light-Pink); color: var(--Blush-Pink);}
 .category-tag a:hover{opacity: 0.5;}
@@ -207,17 +206,17 @@ span.optional-text.lg{font-size: 32px; line-height: 56px;}
 span.optional-text.orange{color: var(--Orange-Glow);}
 span.optional-text.pink{color: var(--Blush-Pink);}
 span.optional-text.skyblue{color: var(--Sky-Blue);}
-span.optional-text.golden-yellow{color: var(--Golden-Yellow);}
+span.optional-text.golden-yellow{color: var(--Green);}
 
 span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; display: block;}
 
 .sky-blue{color: var(--Sky-Blue);}
 .orange-glow{color: var(--Orange-Glow);}
-.golden-yellow{color: var(--Golden-Yellow);}
+.golden-yellow{color: var(--Green);}
 .blush-pink{color: var(--Blush-Pink);}
 .peach-blossom{color: var(--Peach-Blossom);}
 
-.golden-yellow-bg{background-color: var(--Golden-Yellow); color: var(--Dark-Yellow);}
+.golden-yellow-bg{background-color: var(--Green); color: var(--Dark-Yellow);}
 .light-green-bg{background-color: var(--Light-Green); color:var(--Forest-Green)}
 .light-pink-bg{background-color: var(--Light-Pink); color: var(--Blush-Pink);}
 .sky-blue-bg{background-color: var(--Sky-Blue-30); color: var(--Deep-Teal);}
@@ -233,6 +232,9 @@ span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; displ
 .gray-bg{background: var(--Gray);}
 .deep-teal-bg{background-color: var(--Deep-Teal);}
 .green-bg{background-color: var(--Green);}
+
+.white-40{color: var(--White-40);}
+.white-60{color: var(--White-60);}
 
 
 .text-upper{text-transform: uppercase;}
@@ -255,6 +257,7 @@ span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; displ
 .fs-15{font-size: 0.938rem; line-height: 1.188rem;}
 .fs-16{font-size: 16px; line-height: 20px;}
 .fs-md{color: var(--Muted---Light); font-size: 16.5px; font-weight: 400; line-height: 26px; letter-spacing: -0.495px;}
+.fs-21{ font-size: 21px;}
 .fs-18{font-size: 18px; line-height: 24px;}
 .fs-20{font-size: 20px; line-height: 28px;}
 .fs-22{font-size: 1.375rem; line-height: 2.063rem;}
@@ -267,6 +270,8 @@ span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; displ
 .fs-72{font-size: 72px; line-height: 125%;}
 .fs-64{font-size: 64px; line-height: 125%;}
 .fs-80{font-size: 80px; line-height: 125%;}
+
+.no-letter-space{letter-spacing: 0;}
 
 
 .lh-14{line-height: 14px;}
@@ -376,7 +381,7 @@ figcaption strong, .video-figcaption strong{font-weight: 500;}
 .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6{color: var(--White);}
 .inverted .h1, .inverted .h2, .inverted .h3, .inverted .h4, .inverted .h5, .inverted .h6{color: var(--White);}
 .inverted h1 a, .inverted h2 a, .inverted h3 a, .inverted h4 a{color: var(--White);}
-.inverted h1 a:hover, .inverted h2 a:hover, .inverted h3 a:hover, .inverted h4 a:hover{color: var(--Golden-Yellow);}
+.inverted h1 a:hover, .inverted h2 a:hover, .inverted h3 a:hover, .inverted h4 a:hover{color: var(--Green);}
 .inverted dl dt::before{background-color: var(--White);}
 .inverted p a{color: var(--White);}
 .inverted p a:hover{color: var(--Orange);}
@@ -429,7 +434,7 @@ ul.slick-dots.orange:not(.pagination) li.slick-active{background-color: var(--RF
 .container:not(.sm).p-0{padding: 0;}
 
 
-a.mPS2id-clicked{color: var(--Golden-Yellow);}
+a.mPS2id-clicked{color: var(--Green);}
 
 
 .title{margin-bottom: 19px; font-family: var(--heading-font); font-size: 130px; font-weight: 400; line-height: 148px; letter-spacing: -1.3px;}

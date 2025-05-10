@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Meta -->
   <meta charset="utf-8" />
@@ -103,6 +104,23 @@
     <section class="resources-browse-section">
       <div class="container">
         <div class="resources-browse-main">
+          <div class="resources-browse-head flex flex-vcenter">
+            <span class="resources-browse-blk fs-21 lh-30 f-600 white-60">Browse Resources </span>
+            <form action="" class="resources-browse-form relative flex">
+              <input type="search" placeholder="Search" name="" id="">
+              <button class="absolute" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38"
+                  viewBox="0 0 38 38" fill="none">
+                  <circle cx="19" cy="19" r="19" fill="#1AD1B1" />
+                  <path
+                    d="M16.9967 23.9986C20.8613 23.9986 23.9941 20.8657 23.9941 17.0011C23.9941 13.1365 20.8613 10.0037 16.9967 10.0037C13.1321 10.0037 9.99921 13.1365 9.99921 17.0011C9.99921 20.8657 13.1321 23.9986 16.9967 23.9986ZM16.9967 12.0029C19.7571 12.0029 21.9949 14.2407 21.9949 17.0011C21.9949 19.7616 19.7571 21.9993 16.9967 21.9993C14.2362 21.9993 11.9985 19.7616 11.9985 17.0011C11.9985 14.2407 14.2363 12.0029 16.9967 12.0029Z"
+                    fill="black" />
+                  <path
+                    d="M24.9946 25.9971C25.2603 25.9987 25.5157 25.8944 25.7043 25.7072C26.0963 25.3184 26.0989 24.6855 25.7101 24.2936C25.7082 24.2916 25.7062 24.2897 25.7043 24.2878L21.9457 20.5291C21.5399 20.1371 20.8932 20.1483 20.5012 20.5541C20.1092 20.9599 20.1204 21.6066 20.5262 21.9986L24.2848 25.7072C24.4735 25.8944 24.7288 25.9987 24.9946 25.9971Z"
+                    fill="black" />
+                </svg><span class="hide">Submit</span></button>
+            </form>
+            <span class="stripe-line line-light d-block"></span>
+          </div>
           <div class="resources-browse-text inverted">
             <ul class="browse-links flex no-disc m-0">
               <li class="m-0"><a class="flex fs-22 lh-24 f-600" href="">Browse All<span
@@ -144,8 +162,8 @@
             <div class="featured-articles-text relative">
               <span class="optional-text text-upper flex flex-vcenter">Innovation<span
                   class="stripe-line line-white d-block"></span></span>
-              <div class="featured-articles-desc">
-                <h2 class="f-600">How Multi-Material 3D Printing is Revolutionizing Manufacturing</h2>
+              <div class="featured-articles-desc inverted">
+                <h2 class="f-600"><a href="">How Multi-Material 3D Printing is Revolutionizing Manufacturing</a></h2>
                 <a href="#" class="button flex flex-center text-upper">Read More
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                     <path
@@ -159,16 +177,15 @@
           <div class="featured-articles-right flex flex-col">
             <div class="featured-articles-sm radius-40 relative flex o-hidden">
               <div class="featured-articles-bg radius-40 background-bg"></div>
-
               <div class="featured-articles-image absolute">
                 <picture class="object-fit"><img src="images/path1700.svg" alt=""></picture>
               </div>
               <div class="featured-articles-text relative">
                 <span class="optional-text text-upper flex flex-vcenter">SUSTAINABILITY<span
                     class="stripe-line line-white d-block"></span></span>
-                <div class="featured-articles-desc">
-                  <h2 class="fs-22 lh-32 f-600">How Multi-Material 3D Printing Reduces Waste and Improves Efficiency
-                  </h2>
+                <div class="featured-articles-desc inverted">
+                  <h2 class="fs-22 lh-32 f-600"><a href="">How Multi-Material 3D Printing Reduces Waste and Improves Efficiency
+                  </a></h2>
                   <a href="#" class="button flex flex-center text-upper">Read More
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                       <path
@@ -187,9 +204,9 @@
               <div class="featured-articles-text relative">
                 <span class="optional-text text-upper flex flex-vcenter">Technology<span
                     class="stripe-line line-white d-block"></span></span>
-                <div class="featured-articles-desc">
-                  <h2 class="fs-22 lh-32 f-600">The Future of Automated 3D Printing: Faster, Smarter, and More Scalable
-                  </h2>
+                <div class="featured-articles-desc inverted">
+                  <h2 class="fs-22 lh-32 f-600"><a href="">The Future of Automated 3D Printing: Faster, Smarter, and More Scalable
+                  </a></h2>
                   <a href="#" class="button flex flex-center text-upper">Read More
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                       <path
@@ -206,7 +223,7 @@
     </section>
     <section class="blg-resource-section">
       <div class="container">
-        <div class="blg-resource-main">
+        <div class="blg-resource-main flex flex-col">
           <div class="blg-resource-rows flex flex-col">
             <div class="blg-resource-head flex flex-vcenter">
               <div class="blg-resource-title">
@@ -217,8 +234,8 @@
             <ul class="blg-resource-lists flex no-disc m-0">
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
-                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51"
-                    fill="none">
+                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51" fill="none">
                     <path
                       d="M31.7666 1.1441H17.191C15.8493 1.1441 14.7617 2.2317 14.7617 3.57334V8.43184C14.7617 9.77348 15.8493 10.8611 17.191 10.8611H31.7666C33.1085 10.8611 34.1961 9.77348 34.1961 8.43184V3.57334C34.1961 2.2317 33.1085 1.1441 31.7666 1.1441Z"
                       stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
@@ -234,13 +251,16 @@
                     <path d="M14.7617 35.1538H14.7863" stroke="#1AD1B1" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
-                <div class="blg-resource-text flex flex-col"><a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a> <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2></div>
+                <div class="blg-resource-text flex flex-col inverted"><a class="btn-transparency fs-10 f-600 text-upper"
+                    href="#">Application Guide</a>
+                  <h2 class="h6 mb-0"><a href="">Getting Started with Multi-Material Printing</a></h2>
+                </div>
                 <div class="blg-resource-link"></div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
-                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51"
-                    fill="none">
+                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51" fill="none">
                     <path
                       d="M31.7666 1.1441H17.191C15.8493 1.1441 14.7617 2.2317 14.7617 3.57334V8.43184C14.7617 9.77348 15.8493 10.8611 17.191 10.8611H31.7666C33.1085 10.8611 34.1961 9.77348 34.1961 8.43184V3.57334C34.1961 2.2317 33.1085 1.1441 31.7666 1.1441Z"
                       stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
@@ -256,13 +276,16 @@
                     <path d="M14.7617 35.1538H14.7863" stroke="#1AD1B1" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
-                <div class="blg-resource-text flex flex-col"><a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a> <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2></div>
+                <div class="blg-resource-text flex flex-col inverted"><a class="btn-transparency fs-10 f-600 text-upper"
+                    href="#">Application Guide</a>
+                  <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
+                </div>
                 <div class="blg-resource-link"></div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
-                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51"
-                    fill="none">
+                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51" fill="none">
                     <path
                       d="M31.7666 1.1441H17.191C15.8493 1.1441 14.7617 2.2317 14.7617 3.57334V8.43184C14.7617 9.77348 15.8493 10.8611 17.191 10.8611H31.7666C33.1085 10.8611 34.1961 9.77348 34.1961 8.43184V3.57334C34.1961 2.2317 33.1085 1.1441 31.7666 1.1441Z"
                       stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
@@ -278,13 +301,16 @@
                     <path d="M14.7617 35.1538H14.7863" stroke="#1AD1B1" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
-                <div class="blg-resource-text flex flex-col"><a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a> <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2></div>
+                <div class="blg-resource-text flex flex-col inverted"><a class="btn-transparency fs-10 f-600 text-upper"
+                    href="#">Application Guide</a>
+                  <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
+                </div>
                 <div class="blg-resource-link"></div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
-                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51"
-                    fill="none">
+                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51" fill="none">
                     <path
                       d="M31.7666 1.1441H17.191C15.8493 1.1441 14.7617 2.2317 14.7617 3.57334V8.43184C14.7617 9.77348 15.8493 10.8611 17.191 10.8611H31.7666C33.1085 10.8611 34.1961 9.77348 34.1961 8.43184V3.57334C34.1961 2.2317 33.1085 1.1441 31.7666 1.1441Z"
                       stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
@@ -300,14 +326,20 @@
                     <path d="M14.7617 35.1538H14.7863" stroke="#1AD1B1" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
-                <div class="blg-resource-text flex flex-col"><a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a> <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2></div>
+                <div class="blg-resource-text flex flex-col inverted"><a class="btn-transparency fs-10 f-600 text-upper"
+                    href="#">Application Guide</a>
+                  <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
+                </div>
                 <div class="blg-resource-link"></div>
               </li>
             </ul>
             <div class="blg-resource-shwmore">
-              <a class="blg-resource-link flex flex-vcenter" href="#">Show all 8 Application Guides<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.31055 8.84473L9.31055 1.15539L10.8105 1.15539L10.8105 10.6554L10.8105 11.4054L10.0605 11.4054L1.06055 11.4054L1.06055 9.90539L8.24989 9.90539L-0.000117348 1.65539L1.06054 0.594726L9.31055 8.84473Z" fill="#1AD1B1"/>
-              </svg></a>
+              <a class="blg-resource-link flex flex-vcenter" href="#">Show all 8 Application Guides<svg
+                  xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.31055 8.84473L9.31055 1.15539L10.8105 1.15539L10.8105 10.6554L10.8105 11.4054L10.0605 11.4054L1.06055 11.4054L1.06055 9.90539L8.24989 9.90539L-0.000117348 1.65539L1.06054 0.594726L9.31055 8.84473Z"
+                    fill="#1AD1B1" />
+                </svg></a>
             </div>
           </div>
           <div class="blg-resource-rows flex flex-col">
@@ -326,7 +358,7 @@
                   <div class="case-stdy-bg background-bg radius-30"></div>
 
                   <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
-                  <div class="case-stdy-desc">
+                  <div class="case-stdy-desc flex flex-col inverted"">
                     <span class="case-date">03/04</span>
                     <h2>How Innovative Teams Are Scaling Production with Advanced 3D Printing Solutions</h2>
                   </div>
@@ -339,7 +371,7 @@
                 <div class="case-stdy-text absolute flex flex-col">
                   <div class="case-stdy-bg background-bg radius-30"></div>
                   <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
-                  <div class="case-stdy-desc">
+                  <div class="case-stdy-desc flex flex-col inverted"">
                     <span class="case-date">03/04</span>
                     <h2>Real-World Success Stories Powered by Automation and Multi-Material Technology</h2>
                   </div>
@@ -347,9 +379,12 @@
               </div>
             </div>
             <div class="blg-resource-shwmore">
-              <a class="blg-resource-link flex flex-vcenter" href="#">Show all 8 Application Guides<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.31055 8.84473L9.31055 1.15539L10.8105 1.15539L10.8105 10.6554L10.8105 11.4054L10.0605 11.4054L1.06055 11.4054L1.06055 9.90539L8.24989 9.90539L-0.000117348 1.65539L1.06054 0.594726L9.31055 8.84473Z" fill="#1AD1B1"/>
-              </svg></a>
+              <a class="blg-resource-link flex flex-vcenter" href="#">Show all 8 Application Guides<svg
+                  xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.31055 8.84473L9.31055 1.15539L10.8105 1.15539L10.8105 10.6554L10.8105 11.4054L10.0605 11.4054L1.06055 11.4054L1.06055 9.90539L8.24989 9.90539L-0.000117348 1.65539L1.06054 0.594726L9.31055 8.84473Z"
+                    fill="#1AD1B1" />
+                </svg></a>
             </div>
           </div>
           <div class="blg-resource-rows flex flex-col">
@@ -362,8 +397,8 @@
             <ul class="blg-resource-lists flex no-disc m-0">
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
-                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51"
-                    fill="none">
+                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51" fill="none">
                     <path
                       d="M31.7666 1.1441H17.191C15.8493 1.1441 14.7617 2.2317 14.7617 3.57334V8.43184C14.7617 9.77348 15.8493 10.8611 17.191 10.8611H31.7666C33.1085 10.8611 34.1961 9.77348 34.1961 8.43184V3.57334C34.1961 2.2317 33.1085 1.1441 31.7666 1.1441Z"
                       stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
@@ -379,13 +414,16 @@
                     <path d="M14.7617 35.1538H14.7863" stroke="#1AD1B1" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
-                <div class="blg-resource-text flex flex-col"><a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a> <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2></div>
+                <div class="blg-resource-text flex flex-col inverted"><a class="btn-transparency fs-10 f-600 text-upper"
+                    href="#">Application Guide</a>
+                  <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
+                </div>
                 <div class="blg-resource-link"></div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
-                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51"
-                    fill="none">
+                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51" fill="none">
                     <path
                       d="M31.7666 1.1441H17.191C15.8493 1.1441 14.7617 2.2317 14.7617 3.57334V8.43184C14.7617 9.77348 15.8493 10.8611 17.191 10.8611H31.7666C33.1085 10.8611 34.1961 9.77348 34.1961 8.43184V3.57334C34.1961 2.2317 33.1085 1.1441 31.7666 1.1441Z"
                       stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
@@ -401,13 +439,16 @@
                     <path d="M14.7617 35.1538H14.7863" stroke="#1AD1B1" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
-                <div class="blg-resource-text flex flex-col"><a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a> <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2></div>
+                <div class="blg-resource-text flex flex-col inverted"><a class="btn-transparency fs-10 f-600 text-upper"
+                    href="#">Application Guide</a>
+                  <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
+                </div>
                 <div class="blg-resource-link"></div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
-                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51"
-                    fill="none">
+                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51" fill="none">
                     <path
                       d="M31.7666 1.1441H17.191C15.8493 1.1441 14.7617 2.2317 14.7617 3.57334V8.43184C14.7617 9.77348 15.8493 10.8611 17.191 10.8611H31.7666C33.1085 10.8611 34.1961 9.77348 34.1961 8.43184V3.57334C34.1961 2.2317 33.1085 1.1441 31.7666 1.1441Z"
                       stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
@@ -423,13 +464,16 @@
                     <path d="M14.7617 35.1538H14.7863" stroke="#1AD1B1" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
-                <div class="blg-resource-text flex flex-col"><a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a> <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2></div>
+                <div class="blg-resource-text flex flex-col inverted"><a class="btn-transparency fs-10 f-600 text-upper"
+                    href="#">Application Guide</a>
+                  <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
+                </div>
                 <div class="blg-resource-link"></div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
-                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51"
-                    fill="none">
+                <div class="blg-resource-icon" data-animate="icon" data-duration="3000"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51" fill="none">
                     <path
                       d="M31.7666 1.1441H17.191C15.8493 1.1441 14.7617 2.2317 14.7617 3.57334V8.43184C14.7617 9.77348 15.8493 10.8611 17.191 10.8611H31.7666C33.1085 10.8611 34.1961 9.77348 34.1961 8.43184V3.57334C34.1961 2.2317 33.1085 1.1441 31.7666 1.1441Z"
                       stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
@@ -445,14 +489,65 @@
                     <path d="M14.7617 35.1538H14.7863" stroke="#1AD1B1" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
-                <div class="blg-resource-text flex flex-col"><a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a> <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2></div>
+                <div class="blg-resource-text flex flex-col inverted"><a class="btn-transparency fs-10 f-600 text-upper"
+                    href="#">Application Guide</a>
+                  <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
+                </div>
                 <div class="blg-resource-link"></div>
               </li>
             </ul>
             <div class="blg-resource-shwmore">
-              <a class="blg-resource-link flex flex-vcenter" href="#">Show all 8 Application Guides<svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.31055 8.84473L9.31055 1.15539L10.8105 1.15539L10.8105 10.6554L10.8105 11.4054L10.0605 11.4054L1.06055 11.4054L1.06055 9.90539L8.24989 9.90539L-0.000117348 1.65539L1.06054 0.594726L9.31055 8.84473Z" fill="#1AD1B1"/>
-              </svg></a>
+              <a class="blg-resource-link flex flex-vcenter" href="#">Show all 8 Application Guides<svg
+                  xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.31055 8.84473L9.31055 1.15539L10.8105 1.15539L10.8105 10.6554L10.8105 11.4054L10.0605 11.4054L1.06055 11.4054L1.06055 9.90539L8.24989 9.90539L-0.000117348 1.65539L1.06054 0.594726L9.31055 8.84473Z"
+                    fill="#1AD1B1" />
+                </svg></a>
+            </div>
+          </div>
+          <div class="blg-resource-rows flex flex-col">
+            <div class="blg-resource-head flex flex-vcenter">
+              <div class="blg-resource-title">
+                <h2 class="h3 mb-0">Whitepapers</h2>
+              </div>
+              <div class="blg-resource-span"><span class="white-40 fs-md">12 resources</span></div>
+            </div>
+            <div class="case-stdy-lists flex">
+              <div class="case-stdy-list radius-30 relative">
+                <picture class="case-stdy-thumb object-fit radius-img-30">
+                  <img src="images/case-thumb3@2x.jpg" alt="">
+                </picture>
+                <div class="case-stdy-text absolute flex flex-col">
+                  <div class="case-stdy-bg background-bg radius-30"></div>
+
+                  <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
+                  <div class="case-stdy-desc flex flex-col inverted"">
+                    <span class="case-date">03/04</span>
+                    <h2>Transforming Ideas into Impact: Companies Using Mosaic to Build Smarter and Faster</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="case-stdy-list radius-30 relative">
+                <picture class="case-stdy-thumb object-fit radius-img-30">
+                  <img src="images/case-thumb4@2x.jpg" alt="">
+                </picture>
+                <div class="case-stdy-text absolute flex flex-col">
+                  <div class="case-stdy-bg background-bg radius-30"></div>
+                  <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
+                  <div class="case-stdy-desc flex flex-col inverted"">
+                    <span class="case-date">03/04</span>
+                    <h2>How Innovative Teams Are Scaling Production with Advanced 3D Printing Solutions</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blg-resource-shwmore">
+              <a class="blg-resource-link flex flex-vcenter" href="#">Show all 8 Application Guides<svg
+                  xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.31055 8.84473L9.31055 1.15539L10.8105 1.15539L10.8105 10.6554L10.8105 11.4054L10.0605 11.4054L1.06055 11.4054L1.06055 9.90539L8.24989 9.90539L-0.000117348 1.65539L1.06054 0.594726L9.31055 8.84473Z"
+                    fill="#1AD1B1" />
+                </svg></a>
             </div>
           </div>
         </div>
@@ -547,8 +642,11 @@
             <ul class="foter-nav-links no-disc flex" role="navigation">
               <li>
                 <a href="">
-                  <span class="stripe-line line-green d-block"></span>Solutions<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z" fill="#1AD1B1"/>
+                  <span class="stripe-line line-green d-block"></span>Solutions<svg xmlns="http://www.w3.org/2000/svg"
+                    width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path
+                      d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z"
+                      fill="#1AD1B1" />
                   </svg>
                 </a><!-- if no need link add clss no_link in a tag -->
                 <ul class="flex no-disc m-0">
@@ -563,7 +661,9 @@
               <li>
                 <a href=""><span class="stripe-line line-green d-block"></span>Use
                   Cases<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z" fill="#1AD1B1"/>
+                    <path
+                      d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z"
+                      fill="#1AD1B1" />
                   </svg></a>
                 <ul class="flex no-disc m-0">
                   <li><a href="">Logistics</a></li>
@@ -592,8 +692,11 @@
             <ul class="foter-nav-links no-disc flex" role="navigation">
 
               <li>
-                <a href=""><span class="stripe-line line-green d-block"></span>Products<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z" fill="#1AD1B1"/>
+                <a href=""><span class="stripe-line line-green d-block"></span>Products<svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path
+                      d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z"
+                      fill="#1AD1B1" />
                   </svg>
                 </a>
                 <ul class="flex no-disc m-0">
@@ -606,8 +709,11 @@
               </li>
               <li>
                 <a href="">
-                  <span class="stripe-line line-green d-block"></span>Materials<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z" fill="#1AD1B1"/>
+                  <span class="stripe-line line-green d-block"></span>Materials<svg xmlns="http://www.w3.org/2000/svg"
+                    width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path
+                      d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z"
+                      fill="#1AD1B1" />
                   </svg></a>
                 <ul class="flex no-disc m-0">
                   <li><a href="">Stitch</a></li>
@@ -625,9 +731,12 @@
                 </ul>
               </li>
               <li>
-                <a href=""><span class="stripe-line line-green d-block"></span>Company<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                  <path d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z" fill="#1AD1B1"/>
-                </svg></a>
+                <a href=""><span class="stripe-line line-green d-block"></span>Company<svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path
+                      d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
                 <ul class="flex no-disc m-0">
                   <li><a href="">About Mosaic</a></li>
                   <li><a href="">Careers</a></li>
@@ -636,7 +745,7 @@
                 </ul>
               </li>
             </ul>
-        </div>
+          </div>
         </div>
         <div class="hide-desktop">
           <div class="copyrights-main flex flex-col muted-light fs-13 lh-20">
@@ -682,7 +791,8 @@
       </div>
     </div>
   </footer>
-  <script defer src="dist/DrawSVGPlugin.js"></script>
-  <script defer src="dist/core.bundle.js"></script>
+  <!-- <script defer src="dist/DrawSVGPlugin.js"></script>
+  <script defer src="dist/core.bundle.js"></script> -->
 </body>
+
 </html>

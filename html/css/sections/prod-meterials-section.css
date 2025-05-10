@@ -1,1 +1,33 @@
-.prod-meterials-section{}
+
+ul.prod-meterials-links{gap: 25px;}
+ul.prod-meterials-links > li{flex: 0 0 calc(25%  - 19px);}
+ul.prod-meterials-links > li > a{gap: 20px 0; padding-top: 12px; color: var(--White);}
+
+.prod-meterials-row{gap: 159px 0;}
+.prod-meterials-head{max-width: 768px; letter-spacing: -0.63px;}
+.prod-meterials-head h2{margin-bottom: 0;}
+
+
+
+
+.prod-meterials-list{gap: 119px;}
+.prod-meterials-left{flex: 0 0 300px;}
+.prod-meterials-left:nth-child(1):last-child{flex: 1;}
+
+.prod-meterials-image{margin-bottom: 57px;}
+ul.prod-meterials-typicals{gap: 18px 0;}
+ul.prod-meterials-typicals > li{gap: 15px 26px;}
+.prod-typicals-icon{width: 22px;}
+
+.prod-meterials-center{flex: 1;}
+.prod-meterials-text{padding-bottom: 79px;}
+.prod-meterials-text h2{margin-bottom: 16px;}
+.prod-meterials-highlights{padding-bottom: 34px;}
+.prod-meterials-highlights span{margin-bottom: 20px; display: block;}
+
+
+
+.prod-meterials-buy{padding-bottom: 35px;}
+.prod-meterials-dwlds{gap: 29px 0;}
+
+

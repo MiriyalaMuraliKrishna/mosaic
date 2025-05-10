@@ -4,10 +4,15 @@
 
 
 .resources-browse-main{padding: 0 0 113px;}
+.resources-browse-head{gap: 29px 0; padding-bottom: 70px;}
+.resources-browse-blk{width: fit-content;}
+.resources-browse-form{flex: 1; max-width: 320px; margin-left: auto;}
+.resources-browse-form input{padding: 13px 66px 12px 24px; font-size: 18px; line-height: 28px; letter-spacing: -0.54px; background-color: var(--White-20);}
+.resources-browse-form button{top: 7px; right: 8px; padding: 0; margin: 0; width: 38px; height: 38px; border: none;}
+
 ul.browse-links{gap: 25px;}
 ul.browse-links > li{flex: 0 0 calc(25%  - 19px);}
 ul.browse-links > li > a{gap: 20px 0; padding-top: 12px;}
-
 
 
 

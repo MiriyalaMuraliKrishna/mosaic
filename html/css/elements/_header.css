@@ -33,7 +33,7 @@ ul.main_menu > li > ul > li.hide-nav-overview > a{display: none;}
     ul.main_menu > li > ul > li > a{font-size: 14px; line-height: 18px; color: var(--Deep-Teal); text-decoration: none;}
 
 
-    ul.main_menu > li > ul > li.current-menu-item > a, ul.main_menu > li > ul > li > a:hover{color: var(--Golden-Yellow);}
+    ul.main_menu > li > ul > li.current-menu-item > a, ul.main_menu > li > ul > li > a:hover{color: var(--Green);}
 
     .humburger-btn{display: none;}
 }
@@ -80,8 +80,8 @@ ul.main_menu > li > ul > li.hide-nav-overview > a{display: none;}
     ul.main_menu > li.nav-item-dog::before, ul.main_menu > li.nav-item-cat::before{ width: 16px; height: 16px; border-radius: 0; background-color: transparent;}
 
     ul.main_menu > li > a{font-size: 24px; line-height: 28px; font-weight: 500; color: var(--White); display: flex; align-items: center; flex-wrap: wrap;}
-    ul.main_menu > li > a:hover{color: var(--Golden-Yellow);}
-    ul.main_menu > li.menu-item-has-children > a:hover::after{background-color: var(--Golden-Yellow);}
+    ul.main_menu > li > a:hover{color: var(--Green);}
+    ul.main_menu > li.menu-item-has-children > a:hover::after{background-color: var(--Green);}
     ul.main_menu > li.menu-item-has-children.open > a{padding: 4px 16px 7px 16px; gap: 4px; flex-direction: row-reverse; width: fit-content; background-color: var(--Dark-Blue); color: var(--White); border-radius: 24px; font-size: 16px; font-weight: 500; line-height: 22px; }
     ul.main_menu > li.menu-item-has-children.open::before{display: none;}
     ul.main_menu > li > ul{display: none; margin: 0; padding-top: 15px;}

@@ -19,6 +19,8 @@
     .featured-articles-row{gap: 25px; padding: 0 44px 0 36px;}
     .featured-articles-post{flex: 1;}
     .featured-articles-right{flex: 1;}
+    .featured-articles-right:nth-child(1):last-child{flex-direction: row;}
+    .featured-articles-right:nth-child(1):last-child .featured-articles-sm{flex: 1;}
 }
 @media only screen and (min-width: 768px){
     .featured-articles-post .featured-articles-desc{padding-top: 255px;}

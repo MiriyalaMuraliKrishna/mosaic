@@ -8,6 +8,7 @@
 @import url('./elements/_footer.css');
 @import url('./elements/_animate.css');
 @import url('./elements/_accordion.css');
+@import url('./elements/_formidable.css');
 
 
 /*-- 06 prod meterials section page --*/
@@ -30,5 +31,4 @@
 @import url('./sections/faqs-banner-section.css');
 @import url('./sections/faqs-sections.css');
 @import url('./sections/unlock-cta-section.css');
-
 
