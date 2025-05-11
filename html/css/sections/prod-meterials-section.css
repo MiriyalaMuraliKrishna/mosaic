@@ -3,11 +3,11 @@ ul.prod-meterials-links{gap: 25px;}
 ul.prod-meterials-links > li{flex: 0 0 calc(25%  - 19px);}
 ul.prod-meterials-links > li > a{gap: 20px 0; padding-top: 12px; color: var(--White);}
 
-.prod-meterials-row{gap: 159px 0;}
-.prod-meterials-head{max-width: 768px; letter-spacing: -0.63px;}
+.prod-meterials-rows{gap: 99px 0;padding: 115px 0 137px;}
+.prod-meterials-row{gap: 120px 0;}
+.prod-meterials-row:last-child span.stripe-line:last-child{display: none;}
+.prod-meterials-head{max-width: 768px; padding-bottom: 39px; letter-spacing: -0.63px;}
 .prod-meterials-head h2{margin-bottom: 0;}
-
-
 
 
 .prod-meterials-list{gap: 119px;}
@@ -15,9 +15,12 @@ ul.prod-meterials-links > li > a{gap: 20px 0; padding-top: 12px; color: var(--Wh
 .prod-meterials-left:nth-child(1):last-child{flex: 1;}
 
 .prod-meterials-image{margin-bottom: 57px;}
-ul.prod-meterials-typicals{gap: 18px 0;}
+ul.prod-meterials-typicals{gap: 18px 0; padding-top: 28px;}
 ul.prod-meterials-typicals > li{gap: 15px 26px;}
+ul.prod-meterials-typicals > li:last-child span.stripe-line{display: none;}
+
 .prod-typicals-icon{width: 22px;}
+.prod-typicals-text{flex: 1;}
 
 .prod-meterials-center{flex: 1;}
 .prod-meterials-text{padding-bottom: 79px;}

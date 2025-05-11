@@ -1,6 +1,6 @@
 
 
-
-.meterials-banner-main{padding: 282px 0 86px;}
+.meterials-banner-ellipse{ top: -762px; left: 50%; transform: translateX(-50%);  width: 1973px; height: 1973px; border-radius: 1973px; opacity: 0.25; z-index: -1; background: var(--Green-Radial-Gradient); }
+.meterials-banner-main{padding: 282px 0 187px;}
 .meterials-banner-text{letter-spacing: 0.69px;}
 .meterials-banner-text p{margin-bottom: 19px;}

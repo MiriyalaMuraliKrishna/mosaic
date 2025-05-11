@@ -32,7 +32,7 @@ a:hover{color: var(--White);}
 .h6, h6{font-size: 20px; line-height: 28px; letter-spacing: -0.96px; margin-bottom: 13px;}
 
 
-h2 span{ padding-bottom: 5px; background-repeat: no-repeat; background-position: left bottom; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='153' height='10' viewBox='0 0 153 10' fill='none'%3E%3Cpath d='M2 5.34595C4.35043 4.56654 11.1684 0.766394 13.6798 2.84482C14.6075 3.61255 15.2747 4.5859 16.1102 5.44034C18.8008 8.1921 19.8545 8.68426 23.236 6.83248C25.2849 5.71051 27.5328 3.98841 30.0316 4.5437C32.3307 5.05462 33.2656 8.24479 36.0721 8.13024C39.7654 7.97949 43.1875 3.69987 46.4069 2.23133C48.551 1.25334 50.7557 5.71077 52.9429 6.1482C56.385 6.83662 59.7401 0.757295 63.1598 2.23133C65.7332 3.34054 66.3938 6.84462 69.625 5.93584C72.5456 5.11444 77.1935 0.980355 80.1487 3.10437C82.7966 5.00755 83.9082 7.11671 87.3217 5.48753C91.7324 3.38243 94.4184 2.16147 98.6476 5.15719C102.195 7.6699 103.896 4.48108 107.472 3.31673C110.538 2.31855 112.523 6.07185 115.825 5.06281C119.411 3.9673 120.861 1.70683 124.414 3.55269C128.728 5.79356 132.401 2.89201 136.778 2.89201C139.083 2.89201 141.004 4.21567 143.196 4.73247C145.927 5.37613 148.735 5.11883 151.502 4.92123' stroke='%236EC4E6' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"); }
+h2 span{ color: var(--Purple);}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--Green);}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--Green);}
 address{font-size: 1.125rem; line-height: 1.5rem; margin-bottom: 24px;}
@@ -228,6 +228,7 @@ span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; displ
 .sky-blue-bg a{color: var(--Deep-Teal);}
 
 .white-bg{background-color: var(--White);}
+.white-bg-10{background-color: var(--White-10);}
 .black-bg{background-color: var(--Black);}
 .gray-bg{background: var(--Gray);}
 .deep-teal-bg{background-color: var(--Deep-Teal);}
