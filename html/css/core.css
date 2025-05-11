@@ -22,6 +22,11 @@
 @import url('./sections/featured-articles-section.css');
 @import url('./sections/blg-resource-section.css');
 
+/*-- 09 - Resources Default page --*/
+@import url('./sections/res-default-banner-section.css');
+
+
+
 /*-- supprt page --*/
 @import url('./sections/support-banner-section.css');
 @import url('./sections/support-section.css');
