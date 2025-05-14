@@ -16,25 +16,6 @@ export const Menu = {
     let mediadesktop = window.matchMedia('(min-width: 1024px)');
     let mediamobile = window.matchMedia('(max-width: 1023px)');
 
-    // scroll fun //
-    let lastscroll = 0;
-    const elescroll = () => {
-      const scroll = window.scrollY;
-      let headerHeight = 138;
-      if (scroll <= headerHeight) {
-        _.$ele.classList.remove('sticky-up', 'sticky-down');
-      } else if (scroll > lastscroll) {
-        _.$ele.classList.remove('sticky-up');
-        _.$ele.classList.add('sticky-down');
-      } else if (scroll < lastscroll - 2) {
-        _.$ele.classList.add('sticky-up');
-        _.$ele.classList.remove('sticky-down');
-      }
-      lastscroll = scroll;
-    };
-    window.addEventListener('scroll', elescroll);
-    // scroll fun //
-
     // mobile menu //
     const mobilemenu = () => {
       document

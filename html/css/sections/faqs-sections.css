@@ -5,13 +5,13 @@
   margin-bottom: 32px;
 }
 
-.faqs-head .category-links {
-  margin: 0 0 0 16px;
+ul.category-links{
+  margin: 0;
 }
-.faqs-head ul.category-links > li {
+ul.category-links > li {
   margin-bottom: 13px;
 }
-.faqs-head ul.category-links > li:last-child {
+ul.category-links > li:last-child {
   margin-bottom: 0;
 }
 
@@ -55,63 +55,37 @@ ul.category-links > li a {
 
 
 /* media css starts here */
+@media only screen  and (min-width: 1440px){
+  .faqs-main{ gap: 80px 256px;}
+}
 @media only screen  and (min-width: 1024px){
-    .faqs-main{ gap: 80px 256px;}
     .faqs-text{padding-top: 20px; flex: 0 0 320px;}
     .faqs-head{padding-bottom: 60px;}
     .faqs-head h2{margin-bottom: 8px;}
     .faqs-right{flex: 1; gap: 82px 0;}
     .faqs-text:nth-child(1):last-child, .faqs-right:nth-child(1):last-child{width: 100%; flex: 0 0 100%;}
-
     
+}
+@media only screen and (max-width: 1439px) and (min-width: 1024px){
+  .faqs-main{ gap: 80px;}
+
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
-    .faqs-main{padding: 32px 0 64px; display: block;}
-    .faqs-text{padding-bottom: 80px;}
-    .faqs-head{padding-bottom: 33px;}
-    .faqs-head h2{margin-bottom: 8px;}
-    .faqs-answer{flex: 1;}
-
-    
-
- 
-
+  .faqs-main{ gap: 80px; flex-direction: column;}
+  .faqs-text{padding-top: 20px; flex: 0 0 320px;}
+  .faqs-head{padding-bottom: 60px;}
+  .faqs-head h2{margin-bottom: 8px;}
+  .faqs-right{flex: 1; gap: 82px 0;}
+  .faqs-text:nth-child(1):last-child, .faqs-right:nth-child(1):last-child{width: 100%; flex: 0 0 100%;}
+  
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .faqs-main{padding: 41px 0 40px; display: block;}
+    .faqs-main{padding: 54px 0 40px; gap: 0; flex-direction: column;}
     .faqs-text{padding-bottom: 80px;}
     .faqs-head{padding-bottom: 33px;}
     .faqs-head h2{margin-bottom: 8px;}
     .faqs-vactor{width: 257px; height: 63px; right: 26px; bottom: -42px;}
-    
- 
+    .faqs-right{flex: 1; gap: 43px 0;}
+    .faqs-q-list{gap: 38px 0;}
 
-}
-
-/* media css starts here */
-
-
-@media only screen and (min-width: 768px) {
-  .faqs-wrap {
-    padding: 80px 0 21px;
-  }
-
-}
-@media only screen and (max-width: 1023px) and (min-width: 769px) {
-  .faqs-main {
-    padding-bottom: 0;
-  }
-  .faqs-wrap {
-    padding: 64px 0;
-  }
-}
-@media only screen and (max-width: 768px) and (min-width: 200px) {
-  .faqs-wrap {
-    padding: 20px 0 0;
-  }
-  .faqs-main {
-    padding: 40px 0 20px;
-  }
-  .faqs-head h2 { margin-bottom: 22px; }
- 
 }

@@ -16,7 +16,7 @@
 @import url('./sections/prod-meterials-section.css');
 @import url('./sections/all-meterials-section.css');
 
-/*-- resource page --*/
+/*-- 07 - Resources Landing page --*/
 @import url('./sections/resources-banner-section.css');
 @import url('./sections/resources-browse-section.css');
 @import url('./sections/featured-articles-section.css');
@@ -24,6 +24,10 @@
 
 /*-- 09 - Resources Default page --*/
 @import url('./sections/res-default-banner-section.css');
+@import url('./sections/result-box-section.css');
+@import url('./sections/res-content-section.css');
+
+
 
 
 
@@ -36,4 +40,7 @@
 @import url('./sections/faqs-banner-section.css');
 @import url('./sections/faqs-sections.css');
 @import url('./sections/unlock-cta-section.css');
+
+/*-- 404 page --*/
+@import url('./sections/page-not-section.css');
 

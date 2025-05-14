@@ -37,15 +37,13 @@
 
 <body>
   <header class="site-header">
-    <div class="container lg">
+    <div class="container no-auto">
       <div class="header flex flex-vcenter">
         <div class="logo">
           <a href="index.html">
             <img width="177" height="49" src="images/logo.svg" alt="logo" />
           </a>
         </div>
-
-
         <div role="button" aria-label="Open menu" class="humburger-btn mbl-blue-bg white-bg flex flex-center radius-50">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path
@@ -1913,13 +1911,13 @@
           </div>
           <ul class="footer-links no-disc" role="navigation">
             <li>
-              <a href="">Support Ticket<span class="stripe-line line-light d-block"></span></a>
+              <a href="" class="stripe-btn-line">Support Ticket<span class="stripe-line line-light d-block"></span></a>
             </li>
             <li>
-              <a href="">FAQs<span class="stripe-line line-light d-block"></span></a>
+              <a href="" class="stripe-btn-line">FAQs<span class="stripe-line line-light d-block"></span></a>
             </li>
             <li>
-              <a href="">Troubleshooting Guides<span class="stripe-line line-light d-block"></span></a>
+              <a href="" class="stripe-btn-line">Troubleshooting Guides<span class="stripe-line line-light d-block"></span></a>
             </li>
           </ul>
           <div class="hide-mobile hide-tablet">
@@ -2118,7 +2116,16 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="dist/core.bundle.js"></script> -->
+  <script defer src="dist/DrawSVGPlugin.js"></script>
+  <script defer src="dist/core.bundle.js"></script>
+  <script>
+    class StickyPage{
+      constructor(){
+        
+      }
+    }
+    new StickyPage()
+  </script><!-- this is just basic scroll remove once you install pagescroll id plugin & let me know-->
 </body>
 
 </html>

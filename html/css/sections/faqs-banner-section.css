@@ -48,38 +48,15 @@ z-index: -1;
   .faqs-banner-image { flex:1; top: -281px; right: -492px; width: 1064px; height: 928px; bottom: auto; } 
   .faqs-banner-ellipse{ top: -762px; right: 0; width: 1973px; height: 1973px; } 
 }
-
-
-  @media only screen and (max-width: 1023px) and (min-width: 769px) {
-    .faqs-banner-text {
-      flex: 1;
-    }
-    .faqs-banner-image {
-      flex: 1;
-    }
-    .faqs-banner-main {
-      padding-bottom: 32px;
-    }
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .faqs-banner-text { flex: 1; } 
+    .faqs-banner-image { flex: 1; } 
+    .faqs-banner-main { padding-bottom: 32px; }
 }
-
-@media only screen and (max-width: 768px) and (min-width: 200px) {
-
-    .faqs-banner-text {
-      margin-bottom: 14px;
-    }
-    .faqs-banner-text h1 {
-      font-size: 32px;
-      font-weight: 500;
-      line-height: 40px;
-      text-align: center;
-    }
-    .faqs-banner-main{justify-content: center;}
-  .faqs-banner-image {
-    flex-direction: column;
-  }
-  .faqs-banner-image .button {
-    width: 100%;
-    justify-content: center;
-  }
-  }
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+  .faqs-banner-main{flex-direction: column;}
+  .faqs-banner-text{font-size: 21px; line-height: 32px; letter-spacing: 0.63px;}
+  .faqs-banner-text h1{font-size: 50px; line-height: 60px; letter-spacing: 0.5px; margin-bottom: 29px;}
+  
+}
   

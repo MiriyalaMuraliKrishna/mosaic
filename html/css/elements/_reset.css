@@ -25,7 +25,7 @@ a:hover{color: var(--White);}
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{clear: both; margin: 0; color: var(--White); font-weight: 500; font-family: var(--body-font); line-height: 125%; text-transform: none;}
 .h1, h1{font-size: 84px; line-height: 90px; letter-spacing: -0.84px; margin-bottom: 10px;}
-.h2, h2{font-size: 64px; line-height: 74px; letter-spacing: -1.92px; margin-bottom: 21px;} /*-- fixed 10 may --*/
+.h2, h2{font-size: 64px; line-height: 74px; letter-spacing: -1.92px; margin-bottom: 36px;} /*-- fixed 10 may --*/
 .h3, h3{font-size: 44px; line-height: 54px; letter-spacing: -1.32px; margin-bottom: 21px;} /*-- fixed 09 may --*/
 .h4, h4{font-size: 32px; line-height: 38px; letter-spacing: -0.96px; margin-bottom: 20px;}
 .h5, h5{font-size: 24px; line-height: 28px; margin-bottom: 16px;}
@@ -37,16 +37,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--Green);}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color: var(--Green);}
 address{font-size: 1.125rem; line-height: 1.5rem; margin-bottom: 24px;}
 abbr[title] {border-bottom: 1px dotted var(--Navy); cursor: help;}
-b, strong {font-weight: 500;}
+b, strong {font-weight: 600;}
 cite, dfn, em, i {font-style: italic;} 
-p{margin-bottom: 26px;}/*-- dont change here --*/
+p{margin-bottom: 22px;}/*-- dont change here now --*/
 p:last-child{margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 0.938rem; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
 pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 24px; max-width: 100%; overflow: auto; padding: 12px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
 blockquote, q{-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; quotes: none; }
-blockquote{padding: 0 0 0 46px; margin: 56px 0 56px; color: var(--Deep-Teal); font-size: 28px;line-height: 38px; letter-spacing: 0px; font-weight: 500; font-family: var(--heading-font); font-style: italic; position: relative; border-radius: 0;}
-/* blockquote::before{width: 31.66px; height: 24px; top: 0; left: 0; background-repeat: no-repeat; background-size: contain; content: ""; display: block; position: absolute;} */
-blockquote::after{top: 2px; left: 15px; width: 2px; height: calc(100% - 2px); background-color: var(--Light-Gray); content: ""; display: block; position: absolute;}
+blockquote{padding: 90px 113px 97px 112px; margin: 56px 0 56px; color: var(--White); font-size: 27px;line-height: 59px; letter-spacing: 0.27px; font-weight: 400; font-family: var(--heading-font); font-style: normal; position: relative; border-radius: 30px;}
+
 
 blockquote cite, blockquote small {font-size: 1rem;}
 blockquote em, blockquote i, blockquote cite {font-style: normal;}
@@ -95,9 +94,6 @@ p:empty{display: none;}
 
 hr{width: 100%; height: 1px; margin: 0 0 26px; background-color: var(--Beige); display: block; border: none;}
 
-
-
-
 ::selection {background-color: var(--White); color: var(--Black);}
 ::-moz-selection {background-color: var(--White); color: var(--Black);}
 
@@ -126,6 +122,8 @@ button:hover svg circle, .button:hover svg circle, .button:hover svg path{fill: 
 
 .btn-transparency{padding: 6.5px 13px 6px; display: inline-block; width: fit-content; letter-spacing: 1.5px; color: var(--White); border-radius: 90px; background: var(--White-5); backdrop-filter: blur(22px); }
 .btn-transparency:hover{background-color: var(--Green);}
+
+.button.arrow-left svg{transform: rotate(-90deg);}
 
 /* text btn link */
 a.text-link, span.text-link{ align-items: center; color: var(--Green); font-size: 16px; gap: 13px; letter-spacing: 0.16px; line-height: 23px; font-weight: 600; text-decoration: none; }
@@ -207,6 +205,7 @@ span.optional-text.orange{color: var(--Orange-Glow);}
 span.optional-text.pink{color: var(--Blush-Pink);}
 span.optional-text.skyblue{color: var(--Sky-Blue);}
 span.optional-text.golden-yellow{color: var(--Green);}
+span.optional-text.mb-0{margin-bottom: 0;}
 
 span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; display: block;}
 
@@ -446,9 +445,8 @@ a.mPS2id-clicked{color: var(--Green);}
     .container.lg{max-width: 1360px;}
     .container{max-width: 1350px; width: 100%; margin: 0 auto;}
     .container.md{max-width: 1200px;}
-    .container.x-md{max-width: 1064px;}
-    .container.sm{max-width: 960px;}
-    .container.ssm{max-width: 900px;}
+    .container.x-md{max-width: 1122px;}
+    .container.sm{max-width: 895px;}
 .container.no-auto{margin: 0;}
 
 

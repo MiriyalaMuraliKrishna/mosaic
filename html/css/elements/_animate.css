@@ -1,7 +1,9 @@
 
 
 
-.stripe-line{width: 100%; height: 1px; display: block;}
+.stripe-btn-line{overflow: hidden;}
+.stripe-line{width: 100%; height: 1px; display: block; transition: background-color 0.3s ease-in-out;}
+.stripe-open .stripe-line{background-color: var(--Green);}
 .line-white{background-color: var(--White);}
 .line-light{background-color: var(--White-15);}
 .line-green{background-color: var(--Green);}

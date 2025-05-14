@@ -5,6 +5,8 @@ import { Animation } from './module/animation';
 import { Effects } from './module/effects';
 import { Accordion } from './module/accordion';
 import { Menu } from './module/menu';
+import { HeaderScroll } from './module/headerscroll';
+import { Stripe } from './module/stripeline';
 
 (() => {
   mylenis.init();
@@ -13,6 +15,8 @@ import { Menu } from './module/menu';
   Effects.init();
   Accordion.init();
   Menu.init();
+  HeaderScroll.init();
+  Stripe.init();
 })();
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {

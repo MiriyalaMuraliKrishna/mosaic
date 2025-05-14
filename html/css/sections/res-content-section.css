@@ -1,0 +1,73 @@
+
+
+
+
+.res-content-main{padding: 119px 0 0;}
+
+.full-width-image{padding: 98px 0 120px;}
+.res-content-main ul{padding-top: 16px;}
+
+
+.content-cta-wrap{padding: 105px 0 117px;}
+.content-cta-main{min-height: 319px; padding: 77px 90px 83px; background-color: var(--White-7);}
+.content-cta-image{top: -95px; right: -47px;}
+.content-cta-ellipse{
+    top: -111px;
+    right: -105.5px;
+    width: 695px;
+    height: 695px;
+    flex-shrink: 0;
+    border-radius: 695px;
+    opacity: 0.2;
+    background: var(--Green-Radial-Gradient)
+}
+.content-cta-text{max-width: 450px;}
+.content-cta-text h2{margin-bottom: 28px; letter-spacing: 0;}
+.res-content-main h3{padding-bottom: 15px;}
+.res-content-main h4{padding-bottom: 16px;}
+
+
+
+.fluid-image-captions{gap: 25px; padding: 97px 0 120px;}
+.fluid-image-caption{flex: 1; gap: 31px;}
+.fluid-image-thumb{flex: 1;}
+.fluid-image-icon{flex: 0 0 158px; max-width: 158px;}
+.fluid-image-caption:nth-child(odd) .fluid-image-icon{margin-left: auto;}
+.fluid-image-caption:nth-child(even){padding-top: 163px;}
+
+
+
+.highlightbox-wrap{padding: 43px 0 59px;}
+.highlightbox-main{gap: 45px; padding: 37px 51px 42px;}
+.highlightbox-bg{opacity: 0.2; background-color: var(--Green);}
+.highlightbox-icon{flex: 0 0 45px;}
+.highlightbox-text{max-width: 529px; letter-spacing: -0.6px; flex: 1;}
+
+.caption-link-main{gap: 10px; padding-bottom: 119px;}
+.caption-link{justify-content: space-between;}
+
+
+.res-content-line{padding-bottom: 119px;}
+
+
+.res-content-main .accordion-main{padding: 40px 0 50px;}
+
+.blockquote-ellipse{
+    top: 19px;
+    left: -138px;
+    width: 695px;
+    height: 695px;
+    flex-shrink: 0;
+    border-radius: 695px;
+    opacity: 0.15;
+    background: var(--Green-Radial-Gradient)
+}
+.quote-avatar-main{padding-top: 19px;}
+.quote-avatar{gap: 20px; flex: 1;}
+.quote-avatar-text span{color: var(--White);}
+.quote-avatar-img{width: 56px; height: 56px;}
+.quote-avatar-logo{width: 86px;}
+.quote-avatar-logo img{object-fit: contain;}
+
+
+.res-content-last-line{padding: 102px 0 70px;}

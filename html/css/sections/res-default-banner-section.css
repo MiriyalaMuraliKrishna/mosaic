@@ -1,0 +1,11 @@
+
+
+
+.result-default-overlay{
+    background: linear-gradient(0deg, var(--Black) 0%, var(--Black) 37.07%, rgba(102, 102, 102, 0.00) 100%);
+}
+.result-default-thumb img{opacity: 0.4;}
+
+
+.res-default-banner-main{padding: 432px 0 199px; max-width: 1011px;}
+.res-default-banner-top{margin-bottom: 32px; justify-content: space-between;}

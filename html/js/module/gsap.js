@@ -1,7 +1,6 @@
 import Lenis from 'lenis';
 import { gsap } from 'gsap';
 
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 var DrawSVGPlugin = DrawSVGPlugin || window.DrawSVGPlugin;
 var CountUp = CountUp || window.CountUp;
 
@@ -12,12 +11,7 @@ export const Gsap = {
 
   init() {
     const _ = this;
-    const lenis = new Lenis();
-    lenis.on('scroll', ScrollTrigger.update);
-    gsap.ticker.add((time) => {
-      lenis.raf(time * 1000);
-    });
-    gsap.ticker.lagSmoothing(0);
+
     _.eles.forEach((ele) => {
       const $paths = ele.querySelectorAll('path');
       const $duration = +ele.dataset.duration / 2000 || 1.5;

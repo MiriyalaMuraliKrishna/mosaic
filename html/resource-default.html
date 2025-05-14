@@ -37,15 +37,13 @@
 
 <body>
   <header class="site-header">
-    <div class="container lg">
+    <div class="container no-auto">
       <div class="header flex flex-vcenter">
         <div class="logo">
           <a href="index.html">
             <img width="177" height="49" src="images/logo.svg" alt="logo" />
           </a>
         </div>
-
-
         <div role="button" aria-label="Open menu" class="humburger-btn mbl-blue-bg white-bg flex flex-center radius-50">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path
@@ -84,119 +82,489 @@
       </div>
   </header>
   <main class="site-main-cover"><!-- site starts here -->
-    <section class="res-default-banner-section">
+    <section class="res-default-banner-section relative">
+      <div class="result-default-image background-bg">
+        <picture class="result-default-thumb object-fit">
+          <source srcset="images/blog-hero@2x.jpg" media="(min-width: 1024px)">
+          <img src="images/blog-hero@2x.jpg" alt="blog-hero">
+        </picture>
+        <div class="result-default-overlay background-text"></div>
+      </div>
       <div class="container">
         <div class="res-default-banner-main">
-          <span class="optional-text text-upper flex flex-col">Innovation<span
-              class="stripe-line line-white d-block"></span></span>
+          <div class="res-default-banner-top flex">
+            <span class="optional-text text-upper flex flex-col mb-0">Innovation<span
+                class="stripe-line line-white d-block"></span></span>
+            <div class="res-default-banner-date fs-md fs-21">
+              03/04
+            </div>
+          </div>
           <h1>How Multi-Material 3D Printing is Revolutionizing Manufacturing</h1>
-
         </div>
       </div>
     </section>
-    <section class="result-box-section">
+    <section class="result-box-section relative">
       <div class="container">
-        <div class="result-box-main white-bg-10 radius-30">
-          <div class="result-box-head flex">
+        <div class="result-box-main white-bg-10 radius-30 relative">
+          <div class="result-box-ellipse absolute"></div>
+          <div class="result-box-head flex flex-vcenter">
             <div class="result-box-title">
-              <h2>Results that speak for themselves</h2>
+              <h2 class="h3 mb-0">Results that speak for themselves</h2>
             </div>
             <div class="result-box-desc">
               <p>Frame line editor align move stroke outline polygon plugin. Overflow layer polygon polygon arrow scale.
-                Scale
-                image reesizing arrange editor pencil thumbnail flows mask library component stroke edito.</p>
+                Scale image reesizing arrange editor pencil thumbnail flows mask library component stroke edito.</p>
             </div>
           </div>
           <div class="result-box-row flex">
             <div class="result-box-list">
-              <svg xmlns="http://www.w3.org/2000/svg" width="83" height="81" viewBox="0 0 83 81" fill="none">
-                <path d="M1 40.5001L27.92 67.4207L81.7618 13.5795" stroke="#1AD1B1" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-              <span class="fs-21 lh-30 f-600">Result Title</span>
-              <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit.</p>
+              <div class="result-box-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="83" height="81" viewBox="0 0 83 81" fill="none">
+                  <path d="M1 40.5001L27.92 67.4207L81.7618 13.5795" stroke="#1AD1B1" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="result-box-text">
+                <span class="fs-21 lh-30 f-600 d-block">Result Title</span>
+                <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit.</p>
+              </div>
             </div>
             <div class="result-box-list">
-              <svg xmlns="http://www.w3.org/2000/svg" width="83" height="81" viewBox="0 0 83 81" fill="none">
-                <path d="M1 40.5001L27.92 67.4207L81.7618 13.5795" stroke="#1AD1B1" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-              <span class="fs-21 lh-30 f-600">Result Title</span>
-              <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit.</p>
+              <div class="result-box-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="83" height="81" viewBox="0 0 83 81" fill="none">
+                  <path d="M1 40.5001L27.92 67.4207L81.7618 13.5795" stroke="#1AD1B1" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="result-box-text">
+                <span class="fs-21 lh-30 f-600 d-block">Result Title</span>
+                <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit.</p>
+              </div>
             </div>
             <div class="result-box-list">
-              <svg xmlns="http://www.w3.org/2000/svg" width="83" height="81" viewBox="0 0 83 81" fill="none">
-                <path d="M1 40.5001L27.92 67.4207L81.7618 13.5795" stroke="#1AD1B1" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-              <span class="fs-21 lh-30 f-600">Result Title</span>
-              <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit.</p>
+              <div class="result-box-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="83" height="81" viewBox="0 0 83 81" fill="none">
+                  <path d="M1 40.5001L27.92 67.4207L81.7618 13.5795" stroke="#1AD1B1" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="result-box-text">
+                <span class="fs-21 lh-30 f-600 d-block">Result Title</span>
+                <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="container">
-      <h2>Sample Heading 2</h2>
-      <p>Ut cras diam nec tincidunt id libero turpis. Turpis consectetur nec lacus, in. Aliquet aliquam hac in egestas arcu id auctor. Urna, mattis et amet morbi turpis tellus sapien auctor. Sem neque tortor in semper. Feugiat placerat et sit auctor. Faucibus lectus mollis dignissim cursus elementum ut arcu integer. Egestas et at vulputate molestie feugiat. Vitae sed nec, proin amet. Semper lobortis interdum ullamcorper dui urna eu.</p>
-      <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor. Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
-      <div>
-        <figure class="radius-img-30 object-fit"><img src="images/media@2x.jpg" alt=""></figure>
-      </div>
-      <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor. Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
-      <ul>
-        <li>Validate designs faster with true-to-function parts</li>
-        <li>Combine flexible and rigid materials in one print</li>
-        <li>Combine flexible and rigid materials in one print</li>
-      </ul>
-      <div>
-        <h2>A concise headline fits here driving conversions from posts.</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" width="439" height="291" viewBox="0 0 439 291" fill="none">
-          <path d="M287.877 186.613C283.358 187.67 278.912 188.071 274.649 187.853C253.331 186.686 235.657 169.705 228.333 138.84C217.437 92.7047 233.18 30.6095 263.898 -8.59963C267.98 -13.8107 272.316 -18.622 276.908 -22.958C304.749 -49.195 334.12 -50.2886 353.143 -29.8453V-29.8082M287.877 186.613C287.658 185.738 287.476 184.864 287.294 183.989M287.877 186.613C287.987 187.196 288.095 187.743 288.241 188.325C304.931 258.984 361.815 276.039 414.654 226.224C467.493 176.445 497.047 77.9465 480.32 7.36073C466.254 -52.1832 423.582 -73.6473 378.869 -49.0494M286.638 180.49C285.18 180.564 283.759 180.527 282.302 180.454M286.638 180.49C286.456 179.688 286.309 178.851 286.164 178.013L286.128 177.977M286.638 180.49C286.783 181.474 286.966 182.459 287.184 183.443M282.302 180.454C280.807 180.346 279.313 180.163 277.819 179.909M282.302 180.454C283.905 181.585 285.508 182.604 287.184 183.443M282.302 180.454C281.062 179.581 279.896 178.595 278.729 177.539M277.819 179.909C276.981 179.762 276.142 179.581 275.304 179.361M277.819 179.909C277.783 180.163 277.673 180.382 277.564 180.6M275.304 179.361C275.269 179.361 275.232 179.361 275.159 179.325M275.304 179.361C276.034 179.799 276.799 180.236 277.564 180.6M275.159 179.325C258.615 175.098 245.241 159.793 239.338 134.575C229.317 92.2678 243.274 35.6022 270.896 -1.2384C275.196 -6.99632 279.823 -12.2802 284.78 -16.9459C287.403 -19.3502 289.954 -21.5731 292.578 -23.5406L292.614 -23.5776C311.818 -38.1902 331.278 -40.3033 346.474 -31.2301M275.159 179.325C263.462 172.328 254.206 158.626 249.541 138.84C239.993 98.3898 252.311 44.7852 277.527 7.98035C282.811 0.255027 288.642 -6.70505 294.982 -12.6814C312.693 -29.3342 330.949 -35.165 346.474 -31.2301M346.474 -31.2301H346.51M346.51 -31.2301C347.603 -30.6105 348.624 -29.9181 349.608 -29.1899M346.51 -31.2301C348.587 -30.6833 350.554 -29.9909 352.486 -29.1528M349.608 -29.1899H349.644M349.608 -29.1899C335.76 -30.0637 320.236 -23.7233 305.149 -9.58333C296.914 -1.82226 289.48 7.65332 283.03 18.2569M349.644 -29.1899C350.19 -28.7887 350.7 -28.3876 351.247 -27.9507M349.644 -29.1899C350.554 -29.1528 351.393 -29.08 352.268 -28.9344M351.247 -27.9507V-27.9864M351.247 -27.9507H351.284M351.247 -27.9507H351.283C351.612 -28.3148 351.939 -28.6431 352.268 -28.9344M351.247 -27.9507C350.336 -27.0755 349.461 -26.1646 348.587 -25.2538M287.294 183.989C283.905 183.333 280.661 182.24 277.564 180.6M287.294 183.989C287.257 183.807 287.221 183.625 287.184 183.443M352.486 -29.1528L353.141 -29.8082C353.397 -30.0637 353.653 -30.2822 353.908 -30.5377C362.18 -38.3359 370.561 -44.4936 378.869 -49.0494M352.486 -29.1528C352.413 -29.1158 352.34 -29.0429 352.268 -28.9344M278.729 177.539C270.166 169.814 263.424 157.861 259.671 141.936C250.708 104.038 260.947 54.6249 283.03 18.2569M278.729 177.539C270.166 169.814 263.424 157.861 259.672 141.936C250.708 104.038 260.947 54.6249 283.03 18.2569M286.128 177.977C284.269 176.046 282.557 173.858 280.917 171.49C276.142 164.493 272.353 155.675 269.839 145.107C261.603 110.343 269.546 65.8481 287.95 30.6837C295.456 16.3253 304.712 3.53449 315.28 -6.41377C326.395 -16.9088 337.801 -23.1036 348.587 -25.2538M286.128 177.977C285.253 172.583 284.597 167.081 284.196 161.469C281.9 132.135 286.128 100.03 295.456 69.5658C304.858 38.8459 319.47 9.76639 337.946 -13.1925M348.587 -25.2538C344.906 -21.5003 341.409 -17.4914 338.019 -13.2639M284.16 161.542C282.557 157.46 281.098 153.015 279.969 148.204C272.68 117.448 278.074 79.1129 292.177 46.3157C300.485 26.9302 311.855 9.51087 325.447 -3.27994C329.601 -7.17901 333.756 -10.4585 337.946 -13.1925M337.946 -13.1925C337.982 -13.2282 337.982 -13.2639 338.019 -13.2639M337.946 -13.1925C337.983 -13.2282 337.983 -13.2639 338.019 -13.2639M296.076 211.794C282.776 219.118 269.656 222.362 257.448 221.742M257.448 221.742C232.45 220.466 211.132 203.158 199.435 171.49M257.448 221.742C248.229 236.939 237.552 250.567 225.709 261.718C179.355 305.41 129.833 297.612 107.166 247.251C103.997 240.254 101.337 232.42 99.2954 223.782C99.1498 223.2 99.0399 222.654 98.9313 222.07M199.435 171.49C197.577 166.461 195.937 161.105 194.589 155.384M199.435 171.49C186.425 180.6 173.416 175.17 169.334 157.861C164.78 138.73 172.797 112.019 187.118 98.5368C188.247 97.4419 189.414 96.4952 190.58 95.6942M199.435 171.49C197.577 166.461 195.938 161.105 194.589 155.384M194.589 155.384C190.216 136.908 189.012 116.574 190.58 95.6929C193.604 54.5521 207.306 11.3697 228.551 -23.5048M194.589 155.384C190.217 136.908 189.012 116.574 190.58 95.6942M228.551 -23.5048C237.771 -38.6999 248.448 -52.3288 260.291 -63.4792C306.68 -107.173 356.167 -99.3375 378.869 -49.0494M228.551 -23.5048C207.307 11.3697 193.604 54.5521 190.58 95.6942M228.551 -23.5048C216.343 -24.1244 203.225 -20.8807 189.925 -13.5923M164.233 5.68461L164.196 5.64754C145.175 -14.8315 115.804 -13.7379 87.9623 12.4991C48.8988 49.2682 27.0335 122.077 39.3874 174.297C48.1692 211.356 71.9291 228.447 98.9313 222.07M98.9313 222.07C98.7129 221.197 98.5302 220.32 98.3488 219.446M97.6921 215.948C96.2344 216.057 94.8138 215.984 93.3919 215.911M97.6921 215.948C97.5107 215.109 97.3638 214.272 97.2181 213.433M97.6921 215.948C97.8377 216.968 98.0204 217.952 98.2389 218.937M93.3919 215.911C90.9876 215.766 88.6547 215.402 86.359 214.818M93.3919 215.911C94.9594 217.041 96.5628 218.062 98.2389 218.937M93.3919 215.911C83.0795 208.442 74.9901 195.468 70.7256 177.429C59.1383 128.49 79.6173 60.3457 116.204 25.9095C131.29 11.7338 146.815 5.42908 160.662 6.26847M86.359 214.818C86.3232 214.818 86.2862 214.818 86.2504 214.782M86.359 214.818C90.1495 217.114 94.1571 218.644 98.3488 219.446M86.359 214.818C86.3232 214.818 86.2862 214.818 86.2491 214.782C69.6691 210.555 56.3315 195.251 50.3922 170.033M86.2504 214.782C69.6691 210.555 56.3328 195.25 50.3922 170.033M86.2504 214.782C74.5161 207.785 65.2603 194.083 60.596 174.332C49.0444 125.392 69.4877 57.2119 106.037 22.8114C123.748 6.1215 142.041 0.292109 157.529 4.264M50.3922 170.033C38.8036 121.129 59.2839 52.9845 95.8332 18.5482C98.4573 16.1068 101.009 13.9197 103.633 11.9165M50.3922 170.033C38.8036 121.13 59.2839 52.9845 95.8346 18.5482C98.4574 16.1068 101.009 13.9197 103.633 11.9165M103.633 11.9165L103.668 11.8794C122.873 -2.73315 142.332 -4.81044 157.529 4.264M157.529 4.264H157.564M157.564 4.264C158.658 4.88361 159.679 5.53896 160.662 6.26847M157.564 4.264C159.642 4.77372 161.609 5.46616 163.541 6.30423M160.662 6.26847H160.698M160.698 6.26847C161.245 6.66831 161.756 7.06946 162.301 7.50637M160.698 6.26847C161.609 6.30422 162.447 6.41411 163.322 6.52267M162.301 7.50637L162.339 7.54344M162.301 7.50637C162.63 7.14228 162.958 6.81394 163.322 6.52267M162.301 7.50637C161.391 8.38151 160.517 9.2924 159.642 10.2033M98.3488 219.446C98.3117 219.264 98.276 219.118 98.2389 218.937M163.541 6.30423L164.197 5.64885C164.452 5.39333 164.707 5.17488 164.963 4.91935C173.235 -2.87879 181.615 -9.03653 189.925 -13.5923M163.541 6.30423C163.468 6.33997 163.395 6.41411 163.322 6.52267M97.2552 213.47L97.2181 213.433M97.2181 213.433H97.1824M97.1824 213.433C89.931 205.745 84.2459 194.703 80.8937 180.564C69.305 131.624 89.7854 63.4438 126.335 29.0433C137.449 18.584 148.855 12.3905 159.642 10.2033M97.1824 213.433C96.2715 208.076 95.6148 202.574 95.215 196.999V196.962M159.642 10.2033C155.961 13.9938 152.426 18.0014 149.074 22.2288C149.001 22.2288 149.001 22.2659 149.001 22.2659M95.215 196.962C93.6116 192.881 92.154 188.471 91.0233 183.662C79.436 134.758 99.9521 66.6134 136.501 32.1771C140.693 28.278 144.811 24.9986 149.001 22.2659M95.215 196.962C90.6963 138.072 112.159 68.0353 149.001 22.2659M107.168 247.251C62.4548 271.885 19.7451 250.42 5.67931 190.84C-11.0463 120.218 18.5072 21.7191 71.3452 -28.0235C117.734 -71.7156 167.221 -63.8804 189.925 -13.5923M410.318 73.355C405.799 54.2237 390.385 49.5965 376.063 63.0784C361.742 76.5616 353.725 103.237 358.281 122.404C362.8 141.536 378.213 146.164 392.535 132.68C406.819 119.161 414.837 92.4863 410.318 73.355Z" stroke="#1AD1B1" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <h3>A concise headline fits here driving conversions from posts.</h3>
-      <p>Ut cras diam nec tincidunt id libero turpis. Turpis consectetur nec lacus, in. Aliquet aliquam hac in egestas arcu id auctor. Urna, mattis et amet morbi turpis tellus sapien auctor. Sem neque tortor in semper. Feugiat placerat et sit auctor. Faucibus lectus mollis dignissim cursus elementum ut arcu integer. Egestas et at vulputate molestie feugiat. Vitae sed nec, proin amet. Semper lobortis interdum ullamcorper dui urna eu.</p>
-      <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor. Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
-      <div class="flex">
-        <div>
-          <img src="images/image-caption1@2x.jpg" alt="">
+    <section class="res-content-section">
+      <div class="container sm">
+        <div class="res-content-main">
+
+          <h2>Sample Heading 2</h2>
+          <p>Ut cras diam nec tincidunt id libero turpis. Turpis consectetur nec lacus, in. Aliquet aliquam hac in
+            egestas arcu id auctor. Urna, mattis et amet morbi turpis tellus sapien auctor. Sem neque tortor in semper.
+            Feugiat placerat et sit auctor. Faucibus lectus mollis dignissim cursus elementum ut arcu integer. Egestas
+            et at vulputate molestie feugiat. Vitae sed nec, proin amet. Semper lobortis interdum ullamcorper dui urna
+            eu.</p>
+          <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus
+            lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla
+            tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum
+            diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor.
+            Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
+          <div class="fluid-container relative">
+            <div class="container">
+              <div class="full-width-image">
+                <figure class="radius-img-30 object-fit"><img src="images/media@2x.jpg" alt=""></figure>
+              </div>
+            </div>
+          </div>
+          <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus
+            lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla
+            tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum
+            diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor.
+            Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
+          <ul>
+            <li>Validate designs faster with true-to-function parts</li>
+            <li>Combine flexible and rigid materials in one print</li>
+            <li>Combine flexible and rigid materials in one print</li>
+          </ul>
+          <div class="fluid-container relative">
+            <div class="container x-md">
+              <div class="content-cta-wrap">
+                <div class="content-cta-main flex radius-30 relative o-hidden">
+                  <div class="content-cta-image absolute">
+                    <div class="content-cta-ellipse absolute"></div>
+                    <figure class="object-fit"><img src="images/Filament-Spools.svg" alt=""></figure>
+                  </div>
+                  <div class="content-cta-text">
+                    <h2 class="h4">A concise headline fits here driving conversions from posts.</h2>
+                    <div class="flex">
+                      <a href="#" class="button flex flex-center text-upper">Download File
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                          <path
+                            d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                            fill="#1AD1B1"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Sample Heading 3</h3>
+          <p>Ut cras diam nec tincidunt id libero turpis. Turpis consectetur nec lacus, in. Aliquet aliquam hac in
+            egestas arcu id auctor. Urna, mattis et amet morbi turpis tellus sapien auctor. Sem neque tortor in semper.
+            Feugiat placerat et sit auctor. Faucibus lectus mollis dignissim cursus elementum ut arcu integer. Egestas
+            et at vulputate molestie feugiat. Vitae sed nec, proin amet. Semper lobortis interdum ullamcorper dui urna
+            eu.</p>
+          <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus
+            lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla
+            tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum
+            diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor.
+            Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
+          <div class="fluid-container relative">
+            <div class="container">
+              <div class="fluid-image-captions flex flex-start">
+                <div class="fluid-image-caption flex flex-col">
+                  <div class="fluid-image-thumb">
+                    <figure class="radius-img-30"><img src="images/image-caption1@2x.jpg" alt=""></figure>
+                  </div>
+                  <div class="fluid-image-icon white-bg-10 radius-30">
+                    <div class="fluid-image-circle-main m-auto relative">
+                      <div class="all-meterials-circle"><svg xmlns="http://www.w3.org/2000/svg" width="74" height="75"
+                          viewBox="0 0 74 75" fill="none">
+                          <circle opacity="0.1" cx="35.5" cy="39.2949" r="32.5" stroke="white" stroke-width="6">
+                          </circle>
+                          <path d="M68 39.2949C68 21.3457 53.4493 6.79492 35.5 6.79492" stroke="#8B52FC"
+                            stroke-width="12" stroke-linecap="round"></path>
+                        </svg></div>
+                      <span class="fluid-image-count absolute">75%</span>
+                    </div>
+                    <span class="fs-16  lh-18 d-block f-500">stronger parts</span>
+                  </div>
+                </div>
+                <div class="fluid-image-caption flex flex-col">
+                  <div class="fluid-image-icon white-bg-10 radius-30">
+                    <div class="fluid-image-circle-main m-auto relative">
+                      <div class="all-meterials-circle"><svg xmlns="http://www.w3.org/2000/svg" width="74" height="75"
+                          viewBox="0 0 74 75" fill="none">
+                          <circle opacity="0.1" cx="35.5" cy="39.2949" r="32.5" stroke="white" stroke-width="6">
+                          </circle>
+                          <path d="M68 39.2949C68 21.3457 53.4493 6.79492 35.5 6.79492" stroke="#8B52FC"
+                            stroke-width="12" stroke-linecap="round"></path>
+                        </svg></div>
+                      <span class="fluid-image-count absolute">75%</span>
+                    </div>
+                    <span class="fs-16  lh-18 d-block f-500">stronger parts</span>
+                  </div>
+                  <div class="fluid-image-thumb">
+                    <figure class="radius-img-30"><img src="images/image-caption2@2x.jpg" alt=""></figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus
+            lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla
+            tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum
+            diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor.
+            Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
+          <ul>
+            <li>Validate designs faster with true-to-function parts</li>
+            <li>Combine flexible and rigid materials in one print</li>
+            <li>Reduce outsourcing and accelerate time to market</li>
+          </ul>
+          <div class="highlightbox-wrap">
+            <div class="highlightbox-main flex flex-vcenter radius-30 relative">
+              <div class="highlightbox-bg background-bg radius-30"></div>
+              <div class="highlightbox-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="59" height="57" viewBox="0 0 59 57" fill="none">
+                  <path d="M1 28.5002L19.9437 47.4443L57.8324 9.5561" stroke="#1AD1B1" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="highlightbox-text fs-20 lh-30 f-300">
+                <p><strong>Automating data transformation</strong> reduces processing time from hours to seconds</p>
+              </div>
+            </div>
+          </div>
+          <div class="caption-link-main flex flex-col">
+            <span class="stripe-line line-green d-block w-100"></span>
+            <a class="caption-link flex flex-vcenter" href="">
+              Case studies can have cleverly placed calls to action in the content<svg
+                xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                <path
+                  d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                  fill="#1AD1B1"></path>
+              </svg></a>
+          </div>
+          <div class="fluid-container relative">
+            <div class="container">
+              <div class="res-content-line">
+                <span class="stripe-line line-light d-block w-100"></span>
+              </div>
+            </div>
+          </div>
+          <h4>Sample Heading 4</h4>
+          <p>Ut cras diam nec tincidunt id libero turpis. Turpis consectetur nec lacus, in. Aliquet aliquam hac in
+            egestas arcu id auctor. Urna, mattis et amet morbi turpis tellus sapien auctor. Sem neque tortor in semper.
+            Feugiat placerat et sit auctor. Faucibus lectus mollis dignissim cursus elementum ut arcu integer. Egestas
+            et at vulputate molestie feugiat. Vitae sed nec, proin amet. Semper lobortis interdum ullamcorper dui urna
+            eu.</p>
+          <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus
+            lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla
+            tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum
+            diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor.
+            Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
+            <div class="accordion-main flex flex-col">
+              <div class="accordion-list transition relative">
+                <div class="accordion-header flex flex-vcenter transition relative">
+                  <div class="accordion-plus flex flex-center absolute">
+                    <div class="accordion-plus-circle background-bg radius-24 green-bg"></div>
+                    <div class="accordion-line"></div>
+                    <div class="accordion-line is-second"></div>
+                  </div>
+                  How does Array print nonstop without manual intervention?
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-desc fs-18 lh-28">
+                    <p>
+                      Designed for advanced engineering materials like PEEK,
+                      PEI, and Nylon, enabling the production of durable,
+                      heat-resistant parts. Ideal for aerospace, automotive,
+                      and industrial applications requiring superior
+                      mechanical properties and reliability.
+                    </p>
+                    <ul>
+                      <li>
+                        Validate designs
+                        <a href="#">faster with true-to-function</a> parts
+                      </li>
+                      <li>
+                        Validate designs faster with true-to-function parts
+                      </li>
+                      <li>
+                        Reduce outsourcing and accelerate time to market
+                      </li>
+                    </ul>
+                    <ol>
+                      <li>
+                        Validate designs
+                        <a href="#">faster with true-to-function</a> parts
+                      </li>
+                      <li>
+                        Validate designs faster with true-to-function parts
+                      </li>
+                      <li>
+                        Reduce outsourcing and accelerate time to market
+                      </li>
+                    </ol>
+                    <p>
+                      Designed for advanced
+                      <a href="#">engineering materials like PEEK</a>, PEI,
+                      and Nylon, enabling the production of durable,
+                      heat-resistant parts. Ideal for aerospace, automotive,
+                      and industrial applications requiring superior
+                      mechanical properties and reliability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-list transition relative">
+                <div class="accordion-header flex flex-vcenter transition relative">
+                  <div class="accordion-plus flex flex-center absolute">
+                    <div class="accordion-plus-circle background-bg radius-24 green-bg"></div>
+                    <div class="accordion-line"></div>
+                    <div class="accordion-line is-second"></div>
+                  </div>
+                  How does Array print nonstop without manual intervention?
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-desc fs-18 lh-28">
+                    <p>
+                      Designed for advanced engineering materials like PEEK,
+                      PEI, and Nylon, enabling the production of durable,
+                      heat-resistant parts. Ideal for aerospace, automotive,
+                      and industrial applications requiring superior
+                      mechanical properties and reliability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-list transition relative">
+                <div class="accordion-header flex flex-vcenter transition relative">
+                  <div class="accordion-plus flex flex-center absolute">
+                    <div class="accordion-plus-circle background-bg radius-24 green-bg"></div>
+                    <div class="accordion-line"></div>
+                    <div class="accordion-line is-second"></div>
+                  </div>
+                  Can Palette 3 Pro really mix colors seamlessly?
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-desc fs-18 lh-28">
+                    <p>
+                      Designed for advanced engineering materials like PEEK,
+                      PEI, and Nylon, enabling the production of durable,
+                      heat-resistant parts. Ideal for aerospace, automotive,
+                      and industrial applications requiring superior
+                      mechanical properties and reliability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-list transition relative">
+                <div class="accordion-header flex flex-vcenter transition relative">
+                  <div class="accordion-plus flex flex-center absolute">
+                    <div class="accordion-plus-circle background-bg radius-24 green-bg"></div>
+                    <div class="accordion-line"></div>
+                    <div class="accordion-line is-second"></div>
+                  </div>
+                  How does automated part removal save time and effort?
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-desc fs-18 lh-28">
+                    <p>
+                      Designed for advanced engineering materials like PEEK,
+                      PEI, and Nylon, enabling the production of durable,
+                      heat-resistant parts. Ideal for aerospace, automotive,
+                      and industrial applications requiring superior
+                      mechanical properties and reliability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-list transition relative">
+                <div class="accordion-header flex flex-vcenter transition relative">
+                  <div class="accordion-plus flex flex-center absolute">
+                    <div class="accordion-plus-circle background-bg radius-24 green-bg"></div>
+                    <div class="accordion-line"></div>
+                    <div class="accordion-line is-second"></div>
+                  </div>
+                  Which industries are unlocking new possibilities with
+                  Mosaic?
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-desc fs-18 lh-28">
+                    <p>
+                      Designed for advanced engineering materials like PEEK,
+                      PEI, and Nylon, enabling the production of durable,
+                      heat-resistant parts. Ideal for aerospace, automotive,
+                      and industrial applications requiring superior
+                      mechanical properties and reliability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fluid-container relative">
+              <div class="container x-md">
+                <blockquote class="white-bg-10 radius-30 relative">
+                  <div class="blockquote-ellipse absolute"></div>
+                <p>Mosaic’s Array system has completely transformed our workflow. The automation and multi-material
+                  capabilities allow us to scale production without constant oversight. We’ve cut lead times by 50% and
+                  improved part consistency- an absolute game-changer!</p>
+                  <div class="quote-avatar-main flex">
+                    <div class="quote-avatar flex flex-vcenter">
+                      <figure class="quote-avatar-img radius-img-50"><img src="images/avatar@2x.png" alt=""></figure>
+                      <div class="quote-avatar-text fs-20 muted-light"><span>Alex R.</span>, Manufacturing Engineer</div>
+                    </div>
+                    <div class="quote-avatar-logo">
+                      <figure class="object-fit"><img src="images/Stripe_Logo.svg" alt=""></figure>
+                    </div>
+                  </div>
+              </blockquote>
+              </div>
+            </div>
+          <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus
+            lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla
+            tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum
+            diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor.
+            Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
+          <ul>
+            <li>Validate designs faster with true-to-function parts</li>
+            <li>Combine flexible and rigid materials in one print</li>
+            <li>Reduce outsourcing and accelerate time to market</li>
+          </ul>
+          <div class="fluid-container relative">
+            <div class="container">
+              <div class="res-content-last-line">
+                <span class="stripe-line line-light d-block w-100"></span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="images/image-caption2@2x.jpg" alt="">
+      </div>
+    </section>
+    <section class="featured-articles-section">
+      <div class="featured-articles-main">
+        <div class="container">
+          <div class="featured-articles-head flex">
+            <div class="featured-articles-title">
+              <h2 class="mb-0 h4">Related Resources</h2>
+            </div>
+          </div>
+        </div>
+        <div class="featured-articles-row flex">
+          <div class="featured-articles-post radius-40 relative o-hidden">
+            <div class="featured-articles-bg radius-40 background-bg"></div>
+            <div class="featured-articles-image absolute">
+              <picture class="object-fit"><img src="images/Material-Pod.svg" alt=""></picture>
+            </div>
+            <div class="featured-articles-text relative">
+              <span class="optional-text text-upper flex flex-col">Innovation<span class="stripe-line line-white d-block"></span></span>
+              <div class="featured-articles-desc inverted">
+                <h2 class="f-600"><a href="resource-default.html">How Multi-Material 3D Printing is Revolutionizing Manufacturing</a></h2>
+                <a href="#" class="button flex flex-center text-upper">Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z" fill="#1AD1B1"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-articles-right flex flex-col">
+            <div class="featured-articles-sm radius-40 relative flex o-hidden">
+              <div class="featured-articles-bg radius-40 background-bg"></div>
+              <div class="featured-articles-image absolute">
+                <picture class="object-fit"><img src="images/path1700.svg" alt=""></picture>
+              </div>
+              <div class="featured-articles-text relative">
+                <span class="optional-text text-upper flex flex-col">SUSTAINABILITY<span class="stripe-line line-white d-block"></span></span>
+                <div class="featured-articles-desc inverted">
+                  <h2 class="fs-22 lh-32 f-600"><a href="">How Multi-Material 3D Printing Reduces Waste and Improves Efficiency
+                  </a></h2>
+                  <a href="#" class="button flex flex-center text-upper">Read More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                      <path d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z" fill="#1AD1B1"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="featured-articles-sm radius-40 relative flex o-hidden">
+              <div class="featured-articles-bg radius-40 background-bg"></div>
+              <div class="featured-articles-image absolute">
+                <picture class="object-fit"><img src="images/Print-Head.svg" alt=""></picture>
+              </div>
+              <div class="featured-articles-text relative">
+                <span class="optional-text text-upper flex flex-col">Technology<span class="stripe-line line-white d-block"></span></span>
+                <div class="featured-articles-desc inverted">
+                  <h2 class="fs-22 lh-32 f-600"><a href="">The Future of Automated 3D Printing: Faster, Smarter, and More Scalable
+                  </a></h2>
+                  <a href="#" class="button flex flex-center text-upper">Read More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                      <path d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z" fill="#1AD1B1"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor. Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
-      <ul>
-        <li>Validate designs faster with true-to-function parts</li>
-        <li>Combine flexible and rigid materials in one print</li>
-        <li>Reduce outsourcing and accelerate time to market</li>
-      </ul>
-      <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="59" height="57" viewBox="0 0 59 57" fill="none">
-          <path d="M1 28.5002L19.9437 47.4443L57.8324 9.5561" stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <p>Automating data transformation reduces processing time from hours to seconds</p>
-      </div>
-      <a href="">Case studies can have cleverly placed calls to action in the content</a>
-      <h4>Sample Heading 4</h4>
-      <p>Ut cras diam nec tincidunt id libero turpis. Turpis consectetur nec lacus, in. Aliquet aliquam hac in egestas arcu id auctor. Urna, mattis et amet morbi turpis tellus sapien auctor. Sem neque tortor in semper. Feugiat placerat et sit auctor. Faucibus lectus mollis dignissim cursus elementum ut arcu integer. Egestas et at vulputate molestie feugiat. Vitae sed nec, proin amet. Semper lobortis interdum ullamcorper dui urna eu.</p>
-      <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor. Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
-      <blockquote>
-        <p>Mosaic’s Array system has completely transformed our workflow. The automation and multi-material capabilities allow us to scale production without constant oversight. We’ve cut lead times by 50% and improved part consistency- an absolute game-changer!</p>
-        <div>
-          <figure><img src="" alt=""></figure>
-          <span>Alex R., Manufacturing Engineer</span>
-        </div>
-        <img src="images/Stripe_Logo.svg" alt="">
-      </blockquote>
-      <p>Aenean tortor ultrices id sodales eleifend consectetur in magna at. Tincidunt est urna sollicitudin risus lectus lobortis nunc mollis. Cursus eu imperdiet egestas ligula proin sit vitae blandit. Blandit odio nulla tempus neque lacus tempus. Facilisi in felis gravida scelerisque in luctus morbi. At sed facilisis ipsum diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed tristique mauris auctor. Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet egestas.</p>
-      <ul>
-        <li>Validate designs faster with true-to-function parts</li>
-        <li>Combine flexible and rigid materials in one print</li>
-        <li>Reduce outsourcing and accelerate time to market</li>
-      </ul>
-    </div>
+    </section>
     <section class="unlock-cta-section">
       <div class="container">
         <div class="unlock-cta-main flex flex-vcenter green-bg radius-30">
@@ -230,13 +598,13 @@
           </div>
           <ul class="footer-links no-disc" role="navigation">
             <li>
-              <a href="">Support Ticket<span class="stripe-line line-light d-block"></span></a>
+              <a href="" class="stripe-btn-line">Support Ticket<span class="stripe-line line-light d-block"></span></a>
             </li>
             <li>
-              <a href="">FAQs<span class="stripe-line line-light d-block"></span></a>
+              <a href="" class="stripe-btn-line">FAQs<span class="stripe-line line-light d-block"></span></a>
             </li>
             <li>
-              <a href="">Troubleshooting Guides<span class="stripe-line line-light d-block"></span></a>
+              <a href="" class="stripe-btn-line">Troubleshooting Guides<span class="stripe-line line-light d-block"></span></a>
             </li>
           </ul>
           <div class="hide-mobile hide-tablet">

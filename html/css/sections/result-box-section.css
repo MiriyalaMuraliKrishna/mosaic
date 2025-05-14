@@ -1,4 +1,37 @@
 
 
 
-.result-box-main{backdrop-filter: blur(30px);}
+.result-box-main{padding: 99px 117px 119px; backdrop-filter: blur(30px);}
+.result-box-ellipse{
+    left: -404px;
+    top: -404px;
+    width: 1066px;
+    height: 1066px;
+    flex-shrink: 0;
+    border-radius: 1066px;
+    opacity: 0.15;
+    background: var( --Green-Radial-Gradient);
+    z-index: -1;
+}
+.result-box-head{gap: 64px; padding-bottom: 74px;}
+.result-box-title{flex: 0 0 394px;}
+.result-box-desc{flex: 1;}
+
+
+.result-box-row{gap: 77px;}
+.result-box-list{flex: 1;}
+.result-box-icon{padding-bottom: 40px;}
+.result-box-text span{padding-bottom: 13px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

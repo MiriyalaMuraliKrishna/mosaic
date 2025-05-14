@@ -1,8 +1,8 @@
 
 
 .accordion-main{gap: 42px 0;}
-.accordion-header{gap: 21px; font-size: 24px; line-height: 32px; letter-spacing: -0.72px; cursor: pointer; position: relative; z-index: 1;}  
-.accordion-plus{ width: 42px; height: 42px;}
+.accordion-header{gap: 21px; padding-left: 63px; font-size: 24px; line-height: 32px; letter-spacing: -0.72px; cursor: pointer; position: relative; z-index: 1;}  
+.accordion-plus{ width: 42px; height: 42px; top: -6px; left: 0; }
 .accordion-plus-circle{opacity: 0.15;}
 
 .accordion-line.is-second { transition: transform .4s; position: absolute; transform: rotate(90deg); }
@@ -16,14 +16,11 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .accordion-main h3{margin-bottom: 26px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .accordion-list{margin-bottom: 9px;}
-    .accordion-header{padding: 21px 21px 22px 76px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    .accordion-header{padding: 15px 21px 18px 76px;}
-    .accordion-plus{top: calc(50% - 5px);}
+    .accordion-header{padding-left: 53px; font-size: 20px; line-height: 32px; letter-spacing: -0.6px;}
+    .accordion-plus{width: 34px; height: 34px;}
     .accordion-desc { padding: 2px 22px 15px 78px; }
 }

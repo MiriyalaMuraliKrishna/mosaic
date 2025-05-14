@@ -37,15 +37,13 @@
 
 <body>
   <header class="site-header">
-    <div class="container lg">
+    <div class="container no-auto">
       <div class="header flex flex-vcenter">
         <div class="logo">
           <a href="index.html">
             <img width="177" height="49" src="images/logo.svg" alt="logo" />
           </a>
         </div>
-
-
         <div role="button" aria-label="Open menu" class="humburger-btn mbl-blue-bg white-bg flex flex-center radius-50">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path
@@ -351,27 +349,32 @@
             </div>
             <div class="case-stdy-lists flex">
               <div class="case-stdy-list radius-30 relative">
-                <picture class="case-stdy-thumb object-fit radius-img-30">
-                  <img src="images/case-thumb@2x.jpg" alt="">
-                </picture>
-                <div class="case-stdy-text absolute flex flex-col">
+                <div class="case-stdy-image relative">
+                  <picture class="case-stdy-thumb object-fit radius-img-30">
+                    <img src="images/case-thumb@2x.jpg" alt="">
+                  </picture>
+                  <div class="case-stdy-overlay background-bg radius-30"></div>
                   <div class="case-stdy-bg background-bg radius-30"></div>
-
+                </div>
+                <div class="case-stdy-text absolute flex flex-col">
                   <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
-                  <div class="case-stdy-desc flex flex-col inverted"">
+                  <div class="case-stdy-desc flex flex-col inverted">
                     <span class="case-date">03/04</span>
                     <h2>How Innovative Teams Are Scaling Production with Advanced 3D Printing Solutions</h2>
                   </div>
                 </div>
               </div>
               <div class="case-stdy-list radius-30 relative">
-                <picture class="case-stdy-thumb object-fit radius-img-30">
-                  <img src="images/case-thumb2@2x.jpg" alt="">
-                </picture>
-                <div class="case-stdy-text absolute flex flex-col">
+                <div class="case-stdy-image relative">
+                  <picture class="case-stdy-thumb object-fit radius-img-30">
+                    <img src="images/case-thumb2@2x.jpg" alt="">
+                  </picture>
+                  <div class="case-stdy-overlay background-bg radius-30"></div>
                   <div class="case-stdy-bg background-bg radius-30"></div>
+                </div>
+                <div class="case-stdy-text absolute flex flex-col">
                   <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
-                  <div class="case-stdy-desc flex flex-col inverted"">
+                  <div class="case-stdy-desc flex flex-col inverted">
                     <span class="case-date">03/04</span>
                     <h2>Real-World Success Stories Powered by Automation and Multi-Material Technology</h2>
                   </div>
@@ -514,27 +517,34 @@
             </div>
             <div class="case-stdy-lists flex">
               <div class="case-stdy-list radius-30 relative">
-                <picture class="case-stdy-thumb object-fit radius-img-30">
-                  <img src="images/case-thumb3@2x.jpg" alt="">
-                </picture>
-                <div class="case-stdy-text absolute flex flex-col">
+                <div class="case-stdy-image relative">
+                  <picture class="case-stdy-thumb object-fit radius-img-30">
+                    <img src="images/case-thumb3@2x.jpg" alt="">
+                  </picture>
+                  <div class="case-stdy-overlay background-bg radius-30"></div>
                   <div class="case-stdy-bg background-bg radius-30"></div>
+                </div>
+
+                <div class="case-stdy-text absolute flex flex-col">
 
                   <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
-                  <div class="case-stdy-desc flex flex-col inverted"">
+                  <div class="case-stdy-desc flex flex-col inverted">
                     <span class="case-date">03/04</span>
                     <h2>Transforming Ideas into Impact: Companies Using Mosaic to Build Smarter and Faster</h2>
                   </div>
                 </div>
               </div>
               <div class="case-stdy-list radius-30 relative">
-                <picture class="case-stdy-thumb object-fit radius-img-30">
-                  <img src="images/case-thumb4@2x.jpg" alt="">
-                </picture>
-                <div class="case-stdy-text absolute flex flex-col">
+                <div class="case-stdy-image relative">
+                  <picture class="case-stdy-thumb object-fit radius-img-30">
+                    <img src="images/case-thumb4@2x.jpg" alt="">
+                  </picture>
+                  <div class="case-stdy-overlay background-bg radius-30"></div>
                   <div class="case-stdy-bg background-bg radius-30"></div>
+                </div>
+                <div class="case-stdy-text absolute flex flex-col">
                   <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
-                  <div class="case-stdy-desc flex flex-col inverted"">
+                  <div class="case-stdy-desc flex flex-col inverted">
                     <span class="case-date">03/04</span>
                     <h2>How Innovative Teams Are Scaling Production with Advanced 3D Printing Solutions</h2>
                   </div>
@@ -586,13 +596,13 @@
           </div>
           <ul class="footer-links no-disc" role="navigation">
             <li>
-              <a href="">Support Ticket<span class="stripe-line line-light d-block"></span></a>
+              <a href="" class="stripe-btn-line">Support Ticket<span class="stripe-line line-light d-block"></span></a>
             </li>
             <li>
-              <a href="">FAQs<span class="stripe-line line-light d-block"></span></a>
+              <a href="" class="stripe-btn-line">FAQs<span class="stripe-line line-light d-block"></span></a>
             </li>
             <li>
-              <a href="">Troubleshooting Guides<span class="stripe-line line-light d-block"></span></a>
+              <a href="" class="stripe-btn-line">Troubleshooting Guides<span class="stripe-line line-light d-block"></span></a>
             </li>
           </ul>
           <div class="hide-mobile hide-tablet">
@@ -791,8 +801,8 @@
       </div>
     </div>
   </footer>
-  <!-- <script defer src="dist/DrawSVGPlugin.js"></script>
-  <script defer src="dist/core.bundle.js"></script> -->
+  <script defer src="dist/DrawSVGPlugin.js"></script>
+  <script defer src="dist/core.bundle.js"></script>
 </body>
 
 </html>

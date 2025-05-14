@@ -1,4 +1,7 @@
 import Lenis from 'lenis';
+import 'lenis/dist/lenis.css';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export const mylenis = {
   init() {
@@ -18,26 +21,32 @@ export const mylenis = {
       }
       requestAnimationFrame(raf);
 
-      //   document
-      //     .querySelector('[data-lenis-start]')
-      //     .addEventListener('click', () => {
-      //       lenis.start();
-      //     });
-      //   document
-      //     .querySelector('[data-lenis-stop]')
-      //     .addEventListener('click', () => {
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((time) => {
+        lenis.raf(time * 1000);
+      });
+      gsap.ticker.lagSmoothing(0);
+
+      // document
+      //   .querySelector('[data-lenis-start]')
+      //   .addEventListener('click', () => {
+      //     lenis.start();
+      //   });
+      // document
+      //   .querySelector('[data-lenis-stop]')
+      //   .addEventListener('click', () => {
+      //     lenis.stop();
+      //   });
+      // document
+      //   .querySelector('[data-lenis-toggle]')
+      //   .addEventListener('click', function () {
+      //     this.classList.toggle('stop-scroll');
+      //     if (this.classList.contains('stop-scroll')) {
       //       lenis.stop();
-      //     });
-      //   document
-      //     .querySelector('[data-lenis-toggle]')
-      //     .addEventListener('click', function () {
-      //       this.classList.toggle('stop-scroll');
-      //       if (this.classList.contains('stop-scroll')) {
-      //         lenis.stop();
-      //       } else {
-      //         lenis.start();
-      //       }
-      //     });
+      //     } else {
+      //       lenis.start();
+      //     }
+      //   });
     }
   },
 };
