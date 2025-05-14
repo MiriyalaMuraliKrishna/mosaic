@@ -1,6 +1,7 @@
 import imagesLoaded from 'imagesloaded';
 import 'is-in-viewport';
 import 'jquery.appear';
+import { chart } from './chart';
 
 imagesLoaded.makeJQueryPlugin($);
 const $body = $('body');
@@ -41,7 +42,7 @@ export const Animation = {
     // Handle animations when images are loaded
     $body.imagesLoaded().progress(function (instance, image) {
       const $img = $(image.img);
-      if ($img.data('animation')) {
+      if ($img.data('animate')) {
         $img.appear(
           function () {
             const delay = $img.data('animation-delay');
@@ -61,12 +62,8 @@ export const Animation = {
     if (timeline) {
       timeline.restart().play(); // Restart and play timeline when visible
     }
-
-    if (type === 'counter') {
-      const $counter = $el[0];
-      if ($counter.counter && $counter.counter.paused) {
-        $counter.counter.start();
-      }
+    if (type === 'chart') {
+      chart.play();
     }
   },
 
@@ -76,6 +73,7 @@ export const Animation = {
     if (timeline) {
       timeline.pause(0); // Pause and reset timeline when not visible
     }
+    console.log(type);
   },
 
   // Handle scroll events to trigger animations

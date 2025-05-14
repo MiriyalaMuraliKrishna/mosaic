@@ -10,8 +10,13 @@ ul.blg-resource-lists li:nth-child(1):last-child{flex: 1;}
 .blg-resource-text{flex: 1; gap: 8px;}
 .blg-resource-text h2{letter-spacing: 0;}
 .blg-resource-shwmore{padding-top: 40px;}
-.blg-resource-link{gap: 12px;}
+.blg-resource-link{gap: 12px; width: fit-content;}
+.blg-resource-link:hover{color: var(--Green);}
+.blg-resource-link.up:hover svg{animation: moveuprrow 0.5s forwards ease-in-out;}
+@keyframes moveuprrow { 0%{transform: translate3d(0px,0px,0px);} 100%{transform:  translate3d(3px,-3px,0px) rotate(0deg); }}
 
+.blg-resource-link.down:hover svg{animation: movedownarrow 0.5s forwards ease-in-out;}
+@keyframes movedownarrow { 0%{transform: translate3d(0px,0px,0px);} 100%{transform:  translate3d(2px,4px,0px) rotate(5deg);} }
 
 .case-stdy-lists{gap: 25px;}
 .case-stdy-list{flex: 1; }

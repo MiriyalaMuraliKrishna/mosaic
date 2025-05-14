@@ -1,4 +1,3 @@
-import Lenis from 'lenis';
 import { gsap } from 'gsap';
 
 var DrawSVGPlugin = DrawSVGPlugin || window.DrawSVGPlugin;
@@ -18,7 +17,7 @@ export const Gsap = {
       var tl = gsap.timeline({
         paused: true,
       });
-      console.log('tl', tl);
+
       $paths.forEach(function ($path) {
         tl.fromTo(
           $path,

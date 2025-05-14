@@ -19,5 +19,9 @@
 .all-meterials-lg-icon img{max-width: 162px; margin: auto; display: block; object-fit: contain;}
 .all-meterials-sm-icon{flex: 0 0 153px; padding: 30px 26px 26px 27px; backdrop-filter: blur(67px); }
 
-.all-meterials-circle-main{width: 74px; height: 75px; margin-bottom: 4px;}
+.all-meterials-circle-main{width: 86px; height: 86px; margin-bottom: 4px;}
+.all-meterials-circle svg{width: 86px; height: 86px;}
 .all-meterials-count{top: 50%; left: 50%; transform: translate(-50%,-50%);}
+
+
+.all-meterials-chart-main svg rect:nth-child(even){height: 0; transition: all 1.25s ease;}

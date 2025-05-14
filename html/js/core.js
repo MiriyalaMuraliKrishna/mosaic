@@ -7,7 +7,6 @@ import { Accordion } from './module/accordion';
 import { Menu } from './module/menu';
 import { HeaderScroll } from './module/headerscroll';
 import { Stripe } from './module/stripeline';
-
 (() => {
   mylenis.init();
   Gsap.init();
