@@ -12,7 +12,7 @@
 .featured-articles-image{top: -92px; right: 50px; z-index: -1;}
 .featured-articles-sm .featured-articles-image{top: 42px; right: -25px;}
 .featured-articles-sm:last-child .featured-articles-image{top: -156px; right: 72px;}
-.featured-articles-desc h2{margin-bottom: 25px;}
+.featured-articles-desc h2{margin-bottom: 25px; letter-spacing: 0;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){

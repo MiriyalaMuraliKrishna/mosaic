@@ -6,6 +6,8 @@
     --b-transition-7: all .7s ease-in-out;
     --b-transition-8: all .8s ease-in-out;
     --b-transition-9: all .9s ease-in-out;
+    --b-transition-10: all 1s ease;
 }
 
 .transition-8{--b-transition-8: all .8s ease-in-out;}
+.transition-10{--b-transition-10: --b-transition-10;}

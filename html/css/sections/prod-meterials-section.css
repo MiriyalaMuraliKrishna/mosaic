@@ -34,3 +34,4 @@ ul.prod-meterials-typicals > li:last-child span.stripe-line{display: none;}
 .prod-meterials-dwlds{gap: 29px 0;}
 
 
+.prod-meterials-right{padding-left: 53px; border-left: 1px solid var(--White-15);}

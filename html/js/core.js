@@ -7,6 +7,9 @@ import { Accordion } from './module/accordion';
 import { Menu } from './module/menu';
 import { HeaderScroll } from './module/headerscroll';
 import { Stripe } from './module/stripeline';
+import { Browse } from './module/browse';
+import { sticky } from './module/stickmeterial';
+
 (() => {
   mylenis.init();
   Gsap.init();
@@ -16,6 +19,8 @@ import { Stripe } from './module/stripeline';
   Menu.init();
   HeaderScroll.init();
   Stripe.init();
+  Browse.init();
+  sticky.init();
 })();
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {

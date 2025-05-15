@@ -10,14 +10,31 @@
 .resources-browse-form input{padding: 13px 66px 12px 24px; font-size: 18px; line-height: 28px; letter-spacing: -0.54px; background-color: var(--White-20);}
 .resources-browse-form button{top: 7px; right: 8px; padding: 0; margin: 0; width: 38px; height: 38px; border: none;}
 
-ul.browse-links{gap: 25px;}
-ul.browse-links > li{flex: 0 0 calc(25%  - 19px);}
 ul.browse-links > li > a{gap: 20px 0; padding-top: 12px;}
 
 
 
 
-
+/*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .resources-browse-mobile{display: none;}
+}
+@media only screen and (min-width: 1024px){
+    ul.browse-links{gap: 25px;}
+    ul.browse-links > li{flex: 0 0 calc(25%  - 19px);}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    ul.browse-links{gap: 25px;}
+    ul.browse-links > li{flex: 0 0 calc(33.333333333%  - 17px);}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .resources-browse-mobile{gap: 13px; cursor: pointer; justify-content: space-between;}
+    .resources-browse-mobile.open{color: var(--Green);}
+    .resources-browse-mobile.open .stripe-line{background-color: var(--Green);}
+    ul.browse-links{max-height: 0; transition: var(--b-transition-10); overflow: hidden; display: block;}
+    ul.browse-links > li{margin-bottom: 0;}
+    ul.browse-links > li > a{padding-top: 16px; font-size: 18px; font-weight: 500;}
+}
 
 
 
