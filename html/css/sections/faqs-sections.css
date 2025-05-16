@@ -80,12 +80,12 @@ ul.category-links > li a {
   
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .faqs-main{padding: 54px 0 40px; gap: 0; flex-direction: column;}
-    .faqs-text{padding-bottom: 80px;}
+    .faqs-main{padding: 52px 0 0; gap: 0; flex-direction: column;}
+    .faqs-text{padding-bottom: 25px;}
     .faqs-head{padding-bottom: 33px;}
     .faqs-head h2{margin-bottom: 8px;}
     .faqs-vactor{width: 257px; height: 63px; right: 26px; bottom: -42px;}
     .faqs-right{flex: 1; gap: 43px 0;}
     .faqs-q-list{gap: 38px 0;}
-
+    .faqs-answer{margin-top: 72px;}
 }

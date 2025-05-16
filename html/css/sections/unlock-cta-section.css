@@ -11,6 +11,7 @@
     .unlock-cta-main{padding: 39px 40px 44px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    .unlock-cta-section{padding-top: 70px;}
     .unlock-cta-main{padding: 39px 40px 40px; gap: 25px; align-items: flex-start; flex-direction: column;}
     .unlock-cta-main h2{margin-bottom: 15px;}
     .unlock-cta-text{font-size: 15.5px; line-height: 24px; letter-spacing: -0.465px;}

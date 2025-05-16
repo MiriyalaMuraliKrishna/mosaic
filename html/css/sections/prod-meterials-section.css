@@ -1,6 +1,5 @@
 
-ul.prod-meterials-links{gap: 25px;}
-ul.prod-meterials-links > li{flex: 0 0 calc(25%  - 19px);}
+
 ul.prod-meterials-links > li > a{gap: 20px 0; padding-top: 12px; color: var(--White);}
 ul.prod-meterials-links > li > a:hover{color: var(--Green);}
 .prod-meterials-rows{gap: 99px 0;padding: 115px 0 137px;}
@@ -35,3 +34,16 @@ ul.prod-meterials-typicals > li:last-child span.stripe-line{display: none;}
 
 
 .prod-meterials-right{padding-left: 53px; border-left: 1px solid var(--White-15);}
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    ul.prod-meterials-links{gap: 25px;}
+    ul.prod-meterials-links > li{flex: 0 0 calc(25%  - 19px);}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    ul.prod-meterials-links{gap: 21px; flex-direction: column;}
+    ul.prod-meterials-links > li > a{padding-top: 0; gap: 13px 0; font-size: 18px; font-weight: 500;}
+}

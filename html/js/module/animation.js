@@ -2,6 +2,7 @@ import imagesLoaded from 'imagesloaded';
 import 'is-in-viewport';
 import 'jquery.appear';
 import { chart } from './chart';
+import { svgprogress } from './svgprogress';
 
 imagesLoaded.makeJQueryPlugin($);
 const $body = $('body');
@@ -62,6 +63,7 @@ export const Animation = {
     if (timeline) {
       timeline.restart().play(); // Restart and play timeline when visible
     }
+    if (svgprogress) svgprogress.play();
     if (type === 'chart') {
       chart.play();
     }

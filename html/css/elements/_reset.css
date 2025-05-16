@@ -476,7 +476,7 @@ a.mPS2id-clicked{color: var(--Green);}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body{font-size: 16px;}
     
-    .container{padding: 0 16px;}
+    .container{padding: 0 20px;}
     .fluid-container .container{padding-left: 0; padding-right: 0;}
     
     .mobile-0{padding-left: 0; padding-right: 0;}

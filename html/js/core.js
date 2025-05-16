@@ -9,6 +9,9 @@ import { HeaderScroll } from './module/headerscroll';
 import { Stripe } from './module/stripeline';
 import { Browse } from './module/browse';
 import { sticky } from './module/stickmeterial';
+import { svgprogress } from './module/svgprogress';
+import { Blockquote } from './module/blockquote';
+import { Video } from './module/video';
 
 (() => {
   mylenis.init();
@@ -21,6 +24,9 @@ import { sticky } from './module/stickmeterial';
   Stripe.init();
   Browse.init();
   sticky.init();
+  svgprogress.init();
+  Blockquote.init();
+  Video.init();
 })();
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {

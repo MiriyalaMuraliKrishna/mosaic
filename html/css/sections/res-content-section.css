@@ -34,8 +34,7 @@
 .fluid-image-icon{flex: 0 0 158px; max-width: 158px;}
 .fluid-image-caption:nth-child(odd) .fluid-image-icon{margin-left: auto;}
 .fluid-image-caption:nth-child(even){padding-top: 163px;}
-
-
+.fluid-video video{width: 100%; height: 100%;}
 
 .highlightbox-wrap{padding: 43px 0 59px;}
 .highlightbox-main{gap: 45px; padding: 37px 51px 42px;}
@@ -52,16 +51,9 @@
 
 .res-content-main .accordion-main{padding: 40px 0 50px;}
 
-.blockquote-ellipse{
-    top: 19px;
-    left: -138px;
-    width: 695px;
-    height: 695px;
-    flex-shrink: 0;
-    border-radius: 695px;
-    opacity: 0.15;
-    background: var(--Green-Radial-Gradient)
-}
+.blockquote-ellipse{ top: 19px; left: -138px; width: 695px; height: 695px; flex-shrink: 0; border-radius: 695px; opacity: 0.15; background: var(--Green-Radial-Gradient); z-index: -1; }
+blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(--White-10);}
+
 .quote-avatar-main{padding-top: 19px;}
 .quote-avatar{gap: 20px; flex: 1;}
 .quote-avatar-text span{color: var(--White);}
