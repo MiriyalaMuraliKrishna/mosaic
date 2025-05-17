@@ -41,6 +41,17 @@
 @import url('./sections/faqs-sections.css');
 @import url('./sections/unlock-cta-section.css');
 
+
+/*-- careers page --*/
+@import url('./sections/careers-banner-section.css');
+@import url('./sections/common-grid-section.css');
+@import url('./sections/optional-repeater-section.css');
+@import url('./sections/sticky-feature-section.css');
+@import url('./sections/open-postion-section.css');
+@import url('./sections/life-at-section.css');
+
+
+
 /*-- 404 page --*/
 @import url('./sections/page-not-section.css');
 

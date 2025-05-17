@@ -1,0 +1,19 @@
+
+
+
+.open-postion-wrap{padding: 22px 0 127px;}
+.open-postion-main{gap: 51px; padding: 125px 0 123px;}
+.open-postion-image{flex: 0 0 524px; transform: translateX(-41px);}
+.open-postion-text{flex: 1; max-width: 476px;}
+.open-postion-text span.optional-text{margin-bottom: 25px; }
+.open-postion-text h2{margin-bottom: 9px;}
+.open-postion-text p{margin-bottom: 28px;}
+.open-postion-ellipse{ top: -280px; left: -169px; width: 1066px; height: 1066px; border-radius: 1066px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1;}
+
+
+
+
+
+
+
+

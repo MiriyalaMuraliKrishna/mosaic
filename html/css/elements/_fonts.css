@@ -2,3 +2,4 @@
     --body-font: "Inter", sans-serif;
     --heading-font:  "IBM Plex Sans", sans-serif;
 }
+.body-font{font-family: var(--body-font);}

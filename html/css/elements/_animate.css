@@ -64,6 +64,10 @@
 .line-light{background-color: var(--White-15);}
 .line-green{background-color: var(--Green);}
 
+/*-- stripe line animation starts now --*/
+[data-animate="line"]{width: 0; transition: width 1s ease;}
+[data-animate="line"].visible{width: 100%;}
+
 
 
 

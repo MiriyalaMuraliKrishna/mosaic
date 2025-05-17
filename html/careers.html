@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="./style.css" media="all" />
   <link rel="stylesheet" href="./style.bundle.css" media="all" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container no-auto">
@@ -83,15 +84,35 @@
   <main class="site-main-cover"><!-- site starts here -->
     <section class="careers-banner-section relative">
       <div class="background-bg careers-banner-bg">
-        <picture class="object-fit">
+        <!-- <picture class="object-fit">
           <source src="" media="(min-width:1024px)">
           <img src="" alt="">
-        </picture>
+        </picture> -->
       </div>
+      <div class="background-bg careers-banner-video">
+        <!-- <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div> -->
+        <!-- <div data-vbg="https://vimeo.com/70459392"></div> -->
+        <video autoplay muted loop>
+          <source src="images/array.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="background-text careers-banner-overlay black-bg"></div>
       <div class="container">
-        <div class="careers-banner-main">
-          <h1></h1>
-          <p></p>
+        <div class="careers-banner-main relative z-3">
+          <div class="careers-banner-text fs-21 lh-30">
+            <span data-animate="line" class="stripe-line line-white d-block"></span>
+            <h1 class="title body-font">Friendly Careers Heading</h1>
+            <p>See how businesses innovate with advanced 3D printing solutions.</p>
+            <div class="careers-banner-btns flex">
+              <a href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -99,11 +120,14 @@
       <div class="container">
         <div class="optional-repeater-main flex flex-vcenter">
           <div class="optional-repeater-text">
-            <h2></h2>
-            <p></p>
+            <h2>Personable introduction to set the tone for the company</h2>
+            <p>Mask text create boolean fill group. Community undo font undo arrow outline slice. Scale clip italic
+              arrow flatten. Move inspect figjam polygon ipsum blur pencil. Device blur device bold frame. Arrange
+              follower vertical blur invite. Image move variant.</p>
           </div>
           <div class="optional-repeater-image">
-            <figure class="object-fit"><img src="" alt=""></figure>
+            <figure class="object-fit radius-img-30"><img src="images/optinal-thumb1@2x.jpg" alt="optinal-thumb1">
+            </figure>
           </div>
         </div>
       </div>
@@ -112,83 +136,226 @@
       <div class="container">
         <div class="common-grid-main flex">
           <div class="common-grid-list">
-            <div class="common-grid-icon"></div>
-            <div class="common-grid-text">
-              <h2 class="h4"></h2>
-              <p></p>
+            <div class="common-grid-icon" data-animate="icon">
+              <svg width="83" height="81" viewBox="0 0 83 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.05859 64.0395L10.5286 73.5095L29.4693 54.5695" stroke="#1AD1B1" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M1.05859 16.6887L10.5286 26.1587L29.4693 7.21867" stroke="#1AD1B1" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M44.1211 11.9536H82.0018" stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M44.1211 40.3643H82.0018" stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M44.1211 68.7748H82.0018" stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="common-grid-text white-60">
+              <h2 class="h4">Secondary Culture Point</h2>
+              <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit. </p>
             </div>
           </div>
           <div class="common-grid-list">
-            <div class="common-grid-icon"></div>
-            <div class="common-grid-text">
-              <h2 class="h4"></h2>
-              <p></p>
+            <div class="common-grid-icon" data-animate="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81" fill="none">
+                <path
+                  d="M48.5578 28.5829C48.5578 30.6893 47.7214 32.7092 46.2319 34.1986C44.7422 35.6881 42.7223 36.5247 40.6159 36.5247H16.7902L0.90625 52.4087V8.72809C0.90625 6.62178 1.74294 4.60154 3.23238 3.1121C4.72183 1.62265 6.74175 0.785963 8.84806 0.785963H40.6159C42.7223 0.785963 44.7422 1.62265 46.2319 3.1121C47.7214 4.60154 48.5578 6.62178 48.5578 8.72809V28.5829Z"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M64.4437 28.583H72.3855C74.4921 28.583 76.512 29.4196 78.0015 30.9091C79.4906 32.3985 80.3276 34.4185 80.3276 36.5248V80.2057L64.4437 64.3217H40.6179C38.5116 64.3217 36.4914 63.4847 35.0019 61.9956C33.5125 60.5062 32.6758 58.4863 32.6758 56.3799V52.4087"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="common-grid-text white-60">
+              <h2 class="h4">Secondary Culture Point</h2>
+              <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit. </p>
             </div>
           </div>
           <div class="common-grid-list">
-            <div class="common-grid-icon"></div>
-            <div class="common-grid-text">
-              <h2 class="h4"></h2>
-              <p></p>
+            <div class="common-grid-icon" data-animate="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81" fill="none">
+                <path d="M40.4297 34.1426V47.371" stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M40.4297 5.71768V16.1311" stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M64.7284 43.8998V23.0733C64.7284 19.2389 61.6202 16.1308 57.7862 16.1308H23.075C19.241 16.1308 16.1328 19.2389 16.1328 23.0733V43.8998"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M66.0455 68.1977C69.7795 61.8962 71.7235 54.6955 71.6688 47.3712L43.2474 34.7396C41.453 33.9423 39.4048 33.9423 37.6101 34.7396L9.18894 47.3712C9.02821 57.2417 12.4991 66.8277 18.9426 74.307"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M5.71875 71.6686C7.80124 73.4043 9.88406 75.1399 14.3966 75.1399C23.0744 75.1399 23.0744 68.1977 31.7522 68.1977C36.2643 68.1977 38.3471 69.933 40.43 71.6686C42.5124 73.4043 44.5953 75.1399 49.1074 75.1399C57.7852 75.1399 57.7852 68.1977 66.463 68.1977C70.9755 68.1977 73.0583 69.933 75.1408 71.6686"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="common-grid-text white-60">
+              <h2 class="h4">Secondary Culture Point</h2>
+              <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit. </p>
             </div>
           </div>
           <div class="common-grid-list">
-            <div class="common-grid-icon"></div>
-            <div class="common-grid-text">
-              <h2 class="h4"></h2>
-              <p></p>
+            <div class="common-grid-icon" data-animate="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="83" height="81" viewBox="0 0 83 81" fill="none">
+                <path d="M1 40.5001L27.92 67.4207L81.7618 13.5795" stroke="#1AD1B1" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="common-grid-text white-60">
+              <h2 class="h4">Secondary Culture Point</h2>
+              <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit. </p>
             </div>
           </div>
           <div class="common-grid-list">
-            <div class="common-grid-icon"></div>
-            <div class="common-grid-text">
-              <h2 class="h4"></h2>
-              <p></p>
+            <div class="common-grid-icon" data-animate="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81" fill="none">
+                <path d="M42.702 59.3987H56.1292V75.3008H4.49219V59.3987H20.2205" stroke="#1AD1B1"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18.7312 16.5958L24.2735 27.0791L20.0345 29.3201L14.4922 18.8368L18.7312 16.5958Z"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M58.4761 44.9525L42.7033 59.3985L36.5114 65.0685C32.1581 69.054 25.2905 68.3136 21.8866 63.4834C20.9921 62.2163 20.4455 60.8196 20.2219 59.3985C20.1374 58.8868 20.0977 58.3699 20.0977 57.8579C20.0977 54.2551 22.0804 50.7467 25.6136 49.0324L52.8855 35.7792"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M65.7602 22.9683L45.5547 10.5946" stroke="#1AD1B1" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M52.8809 33.9604L38.9219 18.4262" stroke="#1AD1B1" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M20.0977 18.8358L36.0362 6.9177C38.944 4.7434 43.1001 5.61757 44.8862 8.77879C46.712 12.0112 45.207 16.1098 41.7234 17.3924L22.9762 24.2939L20.0977 18.8358Z"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M76.6638 34.832C76.6638 41.4098 71.3314 46.7422 64.7536 46.7422C58.1761 46.7422 52.8438 41.4098 52.8438 34.832C52.8438 28.2542 58.1761 22.9218 64.7536 22.9218C71.3314 22.9218 76.6638 28.2542 76.6638 34.832Z"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M70.0209 34.8321C70.0209 37.7395 67.664 40.0964 64.7566 40.0964C61.8491 40.0964 59.4922 37.7395 59.4922 34.8321C59.4922 31.9246 61.8491 29.5677 64.7566 29.5677C67.664 29.5677 70.0209 31.9246 70.0209 34.8321Z"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M35.5756 57.658C35.5756 60.5654 33.2187 62.9224 30.3112 62.9224C27.4038 62.9224 25.0469 60.5654 25.0469 57.658C25.0469 54.7506 27.4038 52.3936 30.3112 52.3936C33.2187 52.3936 35.5756 54.7506 35.5756 57.658Z"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.6824 21.5525H7.55225L6.42969 26.1292" stroke="#1AD1B1" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M18.4703 27.226L12.7749 33.0278L8.72266 30.6226" stroke="#1AD1B1" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="common-grid-text white-60">
+              <h2 class="h4">Secondary Culture Point</h2>
+              <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit. </p>
             </div>
           </div>
           <div class="common-grid-list">
-            <div class="common-grid-icon"></div>
-            <div class="common-grid-text">
-              <h2 class="h4"></h2>
-              <p></p>
+            <div class="common-grid-icon" data-animate="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="81" height="83" viewBox="0 0 81 83" fill="none">
+                <path
+                  d="M52.5125 1.23825H28.418C26.2002 1.23825 24.4023 3.03613 24.4023 5.25394V13.2853C24.4023 15.5031 26.2002 17.301 28.418 17.301H52.5125C54.7306 17.301 56.5285 15.5031 56.5285 13.2853V5.25394C56.5285 3.03613 54.7306 1.23825 52.5125 1.23825Z"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M56.5288 9.26962H64.5602C66.69 9.26962 68.7331 10.1158 70.2394 11.6221C71.7454 13.1281 72.5913 15.1709 72.5913 17.301V73.521C72.5913 75.6515 71.7454 77.6943 70.2394 79.2002C68.7331 80.7065 66.69 81.5527 64.5602 81.5527H16.3715C14.2414 81.5527 12.1986 80.7065 10.6923 79.2002C9.18605 77.6943 8.33984 75.6515 8.33984 73.521V17.301C8.33984 15.1709 9.18605 13.1281 10.6923 11.6221C12.1986 10.1158 14.2414 9.26962 16.3715 9.26962H24.4029"
+                  stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M40.4648 37.3796H56.5279" stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M40.4648 57.4585H56.5279" stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M24.4023 37.3796H24.443" stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M24.4023 57.4585H24.443" stroke="#1AD1B1" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="common-grid-text white-60">
+              <h2 class="h4">Secondary Culture Point</h2>
+              <p>Asset scrolling slice italic ellipse rectangle arrow effect comment edit. </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="optional-repeater-section">
+    <section class="optional-repeater-section reverse">
       <div class="container">
         <div class="optional-repeater-main flex flex-vcenter">
           <div class="optional-repeater-text">
-            <h2></h2>
-            <p></p>
+            <h2>Personable introduction to set the tone for the company</h2>
+            <p>Mask text create boolean fill group. Community undo font undo arrow outline slice. Scale clip italic
+              arrow flatten. Move inspect figjam polygon ipsum blur pencil. Device blur device bold frame. Arrange
+              follower vertical blur invite. Image move variant.</p>
           </div>
           <div class="optional-repeater-image">
-            <figure class="object-fit"><img src="" alt=""></figure>
+            <figure class="object-fit radius-img-30"><img src="images/optinal-thumb1@2x.jpg" alt="optinal-thumb1">
+            </figure>
           </div>
         </div>
       </div>
     </section>
-    <section class="relative">
-      <div class="background-bg">
-        <picture class="object-fit">
-          <source src="" media="(min-width:1024px)">
-          <img src="" alt="">
-        </picture>
-      </div>
+    <section class="sticky-feature-section relative o-hidden">
       <div class="container">
-        <div class="flex">
-          <div class="">
-            <ul class="flex">
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
+        <div class="sticky-feature-main flex">
+          <div class="sticky-feature-left">
+            <ul class="sticky-feature-links flex flex-col no-disc m-0">
+              <li class="mb-0"><a href="">High-Temp Materials</a></li>
+              <li class="mb-0"><a href="">Print Automation</a></li>
+              <li class="mb-0"><a href="">Auto Part Removal</a></li>
             </ul>
           </div>
-          <div class="">
-
-            <h2></h2>
-            <p></p>
+          <div class="sticky-feature-right relative">
+            <div class="background-bg sticky-feature-video">
+              <!-- <video autoplay muted loop>
+                <source src="images/media.mp4" type="video/mp4" />
+              </video> -->
+              <figure class="object-fit"><img src="images/media1@2x.jpg" alt=""></figure>
+              <div class="sticky-feature-overlay background-text"></div>
+              <div class="sticky-feature-gradient background-text"></div>
+            </div>
+            <div class="sticky-feature-text fs-21 lh-30 f-300">
+              <span data-animate="line" class="stripe-line line-green d-block"></span>
+              <h2 data-animate="fade-in-up" class="h3">Autonomous Print Management</h2>
+              <p>Automatically schedules, queues, and prioritizes print jobs, ensuring non-stop production with minimal
+                downtime and no manual supervision.</p>
+              <a href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="open-postion-section highlight-green">
+      <div class="container">
+        <div class="open-postion-wrap">
+          <div class="open-postion-main flex flex-vcenter relative">
+            <div class="open-postion-ellipse absolute"></div>
+            <div class="open-postion-bg white-bg-10 radius-40 background-bg"></div>
+            <div class="open-postion-image">
+              <figure class="object-fit radius-img-30"><img src="images/open-postion@2x.jpg" alt=""></figure>
+              <div class="play-btn-main"></div>
+            </div>
+            <div class="open-postion-text">
+              <span class="optional-text text-upper white-40 d-block">Open POsitions</span>
+              <h2><span>Join us</span> Today! </h2>
+              <p>Mollis arcu viverra platea iaculis nisl. Faucibus sed volutpat nulla nec sed ipsum. Sit nulla faucibus
+                ultrices sit nunc.</p>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Our Open Positions
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="life-at-section">
+      <div class="container">
+        <div class="life-at-main">
+          <div class="life-at-head">
+            <h2 class="title green"><span>Life</span> at Mosaic</h2>
+          </div>
+          <div class="fluid-container relative">
+            <div class="life-at-wrap">
+              <div class="life-at-images flex">
+                <figure class="radius-img-20"><img src="images/marque1@2x.jpg" alt=""></figure>
+                <figure class="radius-img-20"><img src="images/marque2@2x.jpg" alt=""></figure>
+                <figure class="radius-img-20"><img src="images/marque3@2x.jpg" alt=""></figure>
+                <figure class="radius-img-20"><img src="images/marque4@2x.jpg" alt=""></figure>
+                <figure class="radius-img-20"><img src="images/marque5@2x.jpg" alt=""></figure>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -232,7 +399,8 @@
               <a href="" class="stripe-btn-line">FAQs<span class="stripe-line line-light d-block"></span></a>
             </li>
             <li>
-              <a href="" class="stripe-btn-line">Troubleshooting Guides<span class="stripe-line line-light d-block"></span></a>
+              <a href="" class="stripe-btn-line">Troubleshooting Guides<span
+                  class="stripe-line line-light d-block"></span></a>
             </li>
           </ul>
           <div class="hide-mobile hide-tablet">
@@ -431,7 +599,8 @@
       </div>
     </div>
   </footer>
-  <script src="dist/core.bundle.js"></script>
+  <script defer src="dist/DrawSVGPlugin.js"></script>
+  <script defer src="dist/core.bundle.js"></script>
 </body>
 
 </html>

@@ -12,6 +12,7 @@ import { sticky } from './module/stickmeterial';
 import { svgprogress } from './module/svgprogress';
 import { Blockquote } from './module/blockquote';
 import { Video } from './module/video';
+import { iframe } from './module/iframe';
 
 (() => {
   mylenis.init();
@@ -27,6 +28,7 @@ import { Video } from './module/video';
   svgprogress.init();
   Blockquote.init();
   Video.init();
+  iframe.init();
 })();
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
