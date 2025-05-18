@@ -13,6 +13,7 @@ import { svgprogress } from './module/svgprogress';
 import { Blockquote } from './module/blockquote';
 import { Video } from './module/video';
 import { iframe } from './module/iframe';
+import { jslineanimation } from './module/js-line-animation';
 
 (() => {
   mylenis.init();
@@ -29,7 +30,9 @@ import { iframe } from './module/iframe';
   Blockquote.init();
   Video.init();
   iframe.init();
+  jslineanimation.init();
 })();
+
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {
   scrolled = window.scrollY;

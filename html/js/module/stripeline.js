@@ -1,17 +1,21 @@
 export const Stripe = {
   lines: document.querySelectorAll('.stripe-btn-line'),
+  animationFrames: new WeakMap(), // track animations per element
 
   init() {
     const _ = this;
     _.lines.forEach((line) => {
-      line.addEventListener('mouseover', _.eventHandlerOn.bind(_));
+      line.addEventListener('mouseenter', _.eventHandlerOn.bind(_));
       line.addEventListener('mouseleave', _.eventHandlerOff.bind(_));
     });
   },
 
   eventHandlerOn(e) {
-    const span = e.currentTarget.querySelector('span');
-    e.currentTarget.classList.add('stripe-open');
+    const target = e.currentTarget;
+    const span = target.querySelector('span');
+    if (!span) return;
+
+    target.classList.add('stripe-open');
     span.style.transformStyle = 'preserve-3d';
 
     let progress = 1;
@@ -20,9 +24,9 @@ export const Stripe = {
       if (progress <= 100) {
         span.style.transform = `translate3d(${progress}%, 0, 0) scale3d(1, 1, 1)`;
         progress += 1;
-        requestAnimationFrame(animateForward);
+        const id = requestAnimationFrame(animateForward);
+        this.animationFrames.set(target, id);
       } else {
-        // After reaching 100%, start reverse from -99% to -1%
         animateReverse(-99);
       }
     };
@@ -30,7 +34,10 @@ export const Stripe = {
     const animateReverse = (reverseProgress) => {
       if (reverseProgress <= 0) {
         span.style.transform = `translate3d(${reverseProgress}%, 0, 0) scale3d(1, 1, 1)`;
-        requestAnimationFrame(() => animateReverse(reverseProgress + 1));
+        const id = requestAnimationFrame(() =>
+          animateReverse(reverseProgress + 1)
+        );
+        this.animationFrames.set(target, id);
       }
     };
 
@@ -38,10 +45,18 @@ export const Stripe = {
   },
 
   eventHandlerOff(e) {
-    e.currentTarget.classList.remove('stripe-open');
-    const span = e.currentTarget.querySelector('span');
+    const target = e.currentTarget;
+    target.classList.remove('stripe-open');
+    const span = target.querySelector('span');
     if (span) {
-      span.style.transform = 'translate3d(0%, 0px, 0px) scale3d(1, 1, 1)';
+      span.style.transform = 'translate3d(0%, 0, 0) scale3d(1, 1, 1)';
+    }
+
+    // Cancel any ongoing animation
+    const frameId = this.animationFrames.get(target);
+    if (frameId) {
+      cancelAnimationFrame(frameId);
+      this.animationFrames.delete(target);
     }
   },
 };

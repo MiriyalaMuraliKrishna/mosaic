@@ -1,5 +1,5 @@
 
-*[data-animate] { visibility: hidden; animation-delay: 0.15s; -webkit-animation-duration: 0.75s; animation-duration: 0.75s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; transition: all 0.75s ease-in-out;}
+*[data-animate] {visibility: hidden; animation-delay: 0.15s; -webkit-animation-duration: 0.75s; animation-duration: 0.75s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out;}
 *[data-animate].visible { visibility: visible; }
 
 .fade-in-right { -webkit-animation-name: fadeInRight; animation-name: fadeInRight; }
