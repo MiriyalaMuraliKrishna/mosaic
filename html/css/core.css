@@ -52,6 +52,12 @@
 
 
 
+/*-- contact page --*/
+@import url('./sections/contact-banner-section.css');
+@import url('./sections/contact-form-section.css');
+
+
+
 /*-- 404 page --*/
 @import url('./sections/page-not-section.css');
 

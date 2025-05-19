@@ -16,11 +16,7 @@ ul.social-icons li { display: inline-block; margin: 0;}
 ul.social-icons li a {color: var(--White); font-size: 20px; line-height: 24px;}
 ul.social-icons li a:hover{color: var(--Green);}
 ul.social-icons li a:hover i{animation: iconflip 0.75s ease-in-out forwards;}
-@keyframes iconflip {
-    0%{transform: scaleX(-1); }
-    100%{transform: scaleX(1); }
-}
-
+@keyframes iconflip { 0%{transform: scaleX(-1); } 100%{transform: scaleX(1); } }
 
 ul.foter-nav-links{margin: 0;}
 ul.foter-nav-links > li{margin: 0;}
