@@ -33,7 +33,7 @@ body .frm_forms .frm_form_fields .frm_form_field .frm_primary_label span:not(.fr
 
 
 
-body .frm_forms .frm_form_fields .frm_form_field input, body .frm_forms .frm_form_fields .frm_form_field textarea, input, select, textarea{ width: 100%; font-size: 17px; font-weight: 400; line-height: 28px; letter-spacing: -0.51px; box-shadow: none; padding: 15px 16px 16px; vertical-align: middle; height: auto; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border: none; border-radius: 10px; background: var(--White-10); color: var(--Muted---Light); font-family: var(--body-font); appearance: none; opacity: 1; outline: none;}
+body .frm_forms .frm_form_fields .frm_form_field input, body .frm_forms .frm_form_fields .frm_form_field textarea, input, select, textarea{ width: 100%; font-size: 17px; font-weight: 400; line-height: 28px; letter-spacing: -0.51px; box-shadow: none; padding: 15px 16px 16px; vertical-align: middle; height: auto; border: none; border-radius: 10px; background: var(--White-10); color: var(--Muted---Light); font-family: var(--body-font); appearance: none; opacity: 1; outline: none; transform: var( --b-transition-5);}
 
 
 body .frm_forms .frm_form_fields .frm_form_field textarea, textarea{height: 230px;} 

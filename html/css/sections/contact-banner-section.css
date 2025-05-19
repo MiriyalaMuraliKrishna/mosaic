@@ -3,7 +3,7 @@
 
 
 
-
+.contact-banner-ellipse{ top: -762px; left: -102px; width: 1973px; height: 1973px; flex-shrink: 0; border-radius: 1973px; opacity: 0.25; background: var(--Green-Radial-Gradient); z-index: -1; }
 .contact-banner-main{padding: 306px 0 124px;}
 .contact-banner-text{max-width: 896px;}
 .contact-banner-text span.optional-text{padding-bottom: 10px;}

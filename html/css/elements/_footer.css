@@ -102,7 +102,7 @@ a.no_link{pointer-events: none;}
     ul.foter-nav-links > li > a{gap: 19px 0; padding-bottom: 20px; position: relative;}
     ul.foter-nav-links > li > a svg{top: 50%; transform: translateY(-50%); right: 0; position: absolute; transition: var(--b-transition);}
     ul.foter-nav-links > li > a.open svg{transform: translateY(-50%) rotate(-90deg);}
-    ul.foter-nav-links > li > ul{display: none;}
-    .footer-list:nth-child(2) ul.foter-nav-links > li:last-child > a{border-bottom: 1px solid var(--Green);}
+    ul.foter-nav-links > li > ul{display: none; padding-bottom: 18px;}
+    .footer-list:nth-child(2) ul.foter-nav-links > li:last-child{border-bottom: 1px solid var(--Green);}
     
 }

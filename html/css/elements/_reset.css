@@ -464,7 +464,7 @@ a.mPS2id-clicked{color: var(--Green);}
     .container.md{max-width: 1200px;}
     .container.x-md{max-width: 1122px;}
     .container.sm{max-width: 895px;}
-.container.no-auto{margin: 0;}
+    .container.no-auto{margin: 0;}
 
 
     .hide-desktop{display: none;}
@@ -473,11 +473,15 @@ a.mPS2id-clicked{color: var(--Green);}
 }
 @media only screen and (max-width: 1399px) and (min-width: 768px){
     .container:not(.sm){padding: 0 40px; max-width: 100%;}
+    .title{font-size: 110px; line-height: 118px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .hide-tablet{display: none;}
     .ipad-0{padding-left: 0; padding-right: 0;}
     .fluid-container .container{padding-left: 0; padding-right: 0;}
+
+    .title{font-size: 76px; line-height: 88px; letter-spacing: -0.56px;}
+
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body{font-size: 16px;}
@@ -488,16 +492,14 @@ a.mPS2id-clicked{color: var(--Green);}
     .mobile-0{padding-left: 0; padding-right: 0;}
     .hide-mobile{display: none;} 
 
-    .h3 , h3{font-size: 32px; line-height: 40px;}
-    .h4, h4{font-size: 28px; line-height: 36px;}
-    h2 span{padding-bottom: 9px;}
+
+    .title{font-size: 56px; line-height: 68px; letter-spacing: -0.56px;}
 
     .image-caption{margin: 22px 0 25px;}
     .image-caption figure img{min-height: 576px;}
     figcaption{padding: 24px;}
 
     .button.transparent{font-size: 16px;}
-    a.text-link{font-size: 16px;}
     
     blockquote{margin: 22px 0 23px;}
     span.optional-text{font-size: 16px; line-height: 20px;}

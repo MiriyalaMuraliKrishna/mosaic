@@ -22,17 +22,17 @@
 
 .contact-form .vertical_radio{flex: 1;}
 .contact-form .vertical_radio .frm_opt_container{width: 100%; gap: 9px; display: flex; flex-wrap: wrap;}
-.contact-form .vertical_radio .frm_radio label{font-weight: 500; padding: 18px 27px;border-radius: 90px; border: 1px solid var(--Line---Light); position: relative; letter-spacing: -0.51px; overflow: hidden; cursor: pointer;} 
-.contact-form .vertical_radio .frm_radio label input{top: 0; left: 0; width: 100%; height: 100%; margin: 0;  background-color: transparent;  position: absolute; z-index: -1;}
-.contact-form .vertical_radio .frm_radio label input:checked{background-color: var(--White); color: var(--Black);}
-.contact-form .vertical_radio .frm_radio label:has(input[type="radio"]:checked){color: var(--Black);}
+.contact-form .vertical_radio .frm_radio label{font-weight: 500; padding: 18px 27px; position: relative; letter-spacing: -0.51px; overflow: hidden; cursor: pointer; transition: var(--b-transition-10);} 
+.contact-form .vertical_radio .frm_radio label input{top: 0; left: 0; width: 100%; height: 100%; margin: 0; border-radius: 90px; border: 1px solid var(--Line---Light); background-color: transparent;  position: absolute; z-index: -1; transition: var(--b-transition-10);}
+.contact-form .vertical_radio .frm_radio label input:hover,.contact-form .vertical_radio .frm_radio label input:checked{background-color: var(--White); border-color: var(--White); color: var(--Black);}
+.contact-form .vertical_radio .frm_radio label:hover, .contact-form .vertical_radio .frm_radio label:has(input[type="radio"]:checked){color: var(--Black);}
 
 
-.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label{font-weight: 500; padding: 18px 27px;border-radius: 90px; border: 1px solid var(--Line---Light); position: relative; letter-spacing: -0.51px; overflow: hidden; cursor: pointer;} 
-.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input{top: 0; left: 0; width: 100%; height: 100%; margin: 0;  background-color: transparent;  position: absolute; z-index: -1;}
-.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input:checked{background-color: var(--White); color: var(--Black);}
+.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label{font-weight: 500; padding: 18px 27px; position: relative; letter-spacing: -0.51px; overflow: hidden; cursor: pointer; transition: var(--b-transition-10);} 
+.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input{top: 0; left: 0; width: 100%; height: 100%; margin: 0;  background-color: transparent;  position: absolute; z-index: -1; border: 1px solid var(--Line---Light); border-radius: 90px; transition: var(--b-transition-10);}
+.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:hover input, .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input:checked{background-color: var(--White); color: var(--Black);}
 .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input:checked::before{display: none;}
-.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:has(input[type="checkbox"]:checked){color: var(--Black);}
+.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:hover, .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:has(input[type="checkbox"]:checked){color: var(--Black);}
 
 
 
