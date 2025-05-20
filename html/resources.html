@@ -64,7 +64,7 @@
       </div>
   </header>
   <main class="site-main-cover"><!-- site starts here -->
-    <section class="resources-banner-section">
+    <section class="resources-banner-section relative z-2">
       <div class="container">
         <div class="resources-banner-main">
           <div class="resources-banner-text fs-23 lh-38 f-300">
@@ -82,7 +82,7 @@
       </div>
     </section>
     <section class="resources-browse-section relative">
-      <div class="resources-browse-ellipse absolute"></div>
+      <div class="resources-browse-ellipse absolute transition-10 radius-50"></div>
       <div class="container">
         <div class="resources-browse-main">
           <div class="resources-browse-head flex flex-vcenter">
@@ -132,7 +132,7 @@
         </div>
       </div>
     </section>
-    <section class="featured-articles-section">
+    <section class="featured-articles-section relative z-2">
       <div class="featured-articles-main">
         <div class="container">
           <div class="featured-articles-head flex">
@@ -145,7 +145,10 @@
           <div class="featured-articles-post radius-40 relative o-hidden">
             <div class="featured-articles-bg radius-40 background-bg"></div>
             <div class="featured-articles-image absolute">
-              <picture class="object-fit"><img src="images/Material-Pod.svg" alt=""></picture>
+              <picture class="object-fit">
+                <source srcset="images/Material-Pod.svg" media="(min-width: 768px)">
+                <img src="images/Filament-Spools-mobile.svg" alt="">
+              </picture>
             </div>
             <div class="featured-articles-text relative">
               <span class="optional-text text-upper flex flex-col">Innovation<span
@@ -166,7 +169,10 @@
             <div class="featured-articles-sm radius-40 relative flex o-hidden">
               <div class="featured-articles-bg radius-40 background-bg"></div>
               <div class="featured-articles-image absolute">
-                <picture class="object-fit"><img src="images/path1700.svg" alt=""></picture>
+                <picture class="object-fit">
+                  <source srcset="images/path1700.svg" media="(min-width: 768px)">
+                  <img src="images/process.svg" alt="">
+                </picture>
               </div>
               <div class="featured-articles-text relative">
                 <span class="optional-text text-upper flex flex-col">SUSTAINABILITY<span
@@ -187,7 +193,10 @@
             <div class="featured-articles-sm radius-40 relative flex o-hidden">
               <div class="featured-articles-bg radius-40 background-bg"></div>
               <div class="featured-articles-image absolute">
-                <picture class="object-fit"><img src="images/Print-Head.svg" alt=""></picture>
+                <picture class="object-fit">
+                  <source srcset="images/Print-Head.svg" media="(min-width: 768px)">
+                  <img src="images/Print-Head-Mobile.svg" alt="">
+                </picture>
               </div>
               <div class="featured-articles-text relative">
                 <span class="optional-text text-upper flex flex-col">Technology<span
@@ -243,7 +252,16 @@
                     href="#">Application Guide</a>
                   <h2 class="h6 mb-0"><a href="">Getting Started with Multi-Material Printing</a></h2>
                 </div>
-                <div class="blg-resource-link"></div>
+                <div class="blg-resource-links">
+                  <a class="blg-resource-link up flex flex-vcenter" href="#">
+                    <span class="hide">Array</span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 1.59473H0.560665V0.0947266H10.0607H10.8107V0.844727V9.84473H9.31067V2.65539L1.06066 10.9054L0 9.84473L8.25 1.59473Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                </div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
@@ -268,7 +286,16 @@
                     href="#">Application Guide</a>
                   <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
                 </div>
-                <div class="blg-resource-link"></div>
+                <div class="blg-resource-links">
+                  <a class="blg-resource-link up flex flex-vcenter" href="#">
+                    <span class="hide">Array</span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 1.59473H0.560665V0.0947266H10.0607H10.8107V0.844727V9.84473H9.31067V2.65539L1.06066 10.9054L0 9.84473L8.25 1.59473Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                </div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
@@ -293,7 +320,16 @@
                     href="#">Application Guide</a>
                   <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
                 </div>
-                <div class="blg-resource-link"></div>
+                <div class="blg-resource-links">
+                  <a class="blg-resource-link up flex flex-vcenter" href="#">
+                    <span class="hide">Array</span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 1.59473H0.560665V0.0947266H10.0607H10.8107V0.844727V9.84473H9.31067V2.65539L1.06066 10.9054L0 9.84473L8.25 1.59473Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                </div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
@@ -318,7 +354,16 @@
                     href="#">Application Guide</a>
                   <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
                 </div>
-                <div class="blg-resource-link"></div>
+                <div class="blg-resource-links">
+                  <a class="blg-resource-link up flex flex-vcenter" href="#">
+                    <span class="hide">Array</span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 1.59473H0.560665V0.0947266H10.0607H10.8107V0.844727V9.84473H9.31067V2.65539L1.06066 10.9054L0 9.84473L8.25 1.59473Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                </div>
               </li>
             </ul>
             <div class="blg-resource-shwmore flex">
@@ -339,14 +384,14 @@
             </div>
             <div class="case-stdy-lists flex">
               <div class="case-stdy-list radius-30 relative">
-                <div class="case-stdy-image relative">
+                <div class="case-stdy-image absolute">
                   <picture class="case-stdy-thumb object-fit radius-img-30">
                     <img src="images/case-thumb@2x.jpg" alt="">
                   </picture>
                   <div class="case-stdy-overlay background-bg radius-30"></div>
                   <div class="case-stdy-bg background-bg radius-30"></div>
                 </div>
-                <div class="case-stdy-text absolute flex flex-col">
+                <div class="case-stdy-text relative flex flex-col">
                   <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
                   <div class="case-stdy-desc flex flex-col inverted">
                     <span class="case-date">03/04</span>
@@ -355,14 +400,14 @@
                 </div>
               </div>
               <div class="case-stdy-list radius-30 relative">
-                <div class="case-stdy-image relative">
+                <div class="case-stdy-image absolute">
                   <picture class="case-stdy-thumb object-fit radius-img-30">
                     <img src="images/case-thumb2@2x.jpg" alt="">
                   </picture>
                   <div class="case-stdy-overlay background-bg radius-30"></div>
                   <div class="case-stdy-bg background-bg radius-30"></div>
                 </div>
-                <div class="case-stdy-text absolute flex flex-col">
+                <div class="case-stdy-text relative flex flex-col">
                   <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
                   <div class="case-stdy-desc flex flex-col inverted">
                     <span class="case-date">03/04</span>
@@ -411,7 +456,16 @@
                     href="#">Application Guide</a>
                   <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
                 </div>
-                <div class="blg-resource-link"></div>
+                <div class="blg-resource-links">
+                  <a class="blg-resource-link up flex flex-vcenter" href="#">
+                    <span class="hide">Array</span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 1.59473H0.560665V0.0947266H10.0607H10.8107V0.844727V9.84473H9.31067V2.65539L1.06066 10.9054L0 9.84473L8.25 1.59473Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                </div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
@@ -436,7 +490,16 @@
                     href="#">Application Guide</a>
                   <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
                 </div>
-                <div class="blg-resource-link"></div>
+                <div class="blg-resource-links">
+                  <a class="blg-resource-link up flex flex-vcenter" href="#">
+                    <span class="hide">Array</span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 1.59473H0.560665V0.0947266H10.0607H10.8107V0.844727V9.84473H9.31067V2.65539L1.06066 10.9054L0 9.84473L8.25 1.59473Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                </div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
@@ -461,7 +524,16 @@
                     href="#">Application Guide</a>
                   <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
                 </div>
-                <div class="blg-resource-link"></div>
+                <div class="blg-resource-links">
+                  <a class="blg-resource-link up flex flex-vcenter" href="#">
+                    <span class="hide">Array</span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 1.59473H0.560665V0.0947266H10.0607H10.8107V0.844727V9.84473H9.31067V2.65539L1.06066 10.9054L0 9.84473L8.25 1.59473Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                </div>
               </li>
               <li class="flex flex-vcenter relative mb-0">
                 <div class="blg-resource-bg white-bg background-bg radius-25"></div>
@@ -486,7 +558,16 @@
                     href="#">Application Guide</a>
                   <h2 class="h6 mb-0">Getting Started with Multi-Material Printing</h2>
                 </div>
-                <div class="blg-resource-link"></div>
+                <div class="blg-resource-links">
+                  <a class="blg-resource-link up flex flex-vcenter" href="#">
+                    <span class="hide">Array</span>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 1.59473H0.560665V0.0947266H10.0607H10.8107V0.844727V9.84473H9.31067V2.65539L1.06066 10.9054L0 9.84473L8.25 1.59473Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                </div>
               </li>
             </ul>
             <div class="blg-resource-shwmore flex">
@@ -507,7 +588,7 @@
             </div>
             <div class="case-stdy-lists flex">
               <div class="case-stdy-list radius-30 relative">
-                <div class="case-stdy-image relative">
+                <div class="case-stdy-image absolute">
                   <picture class="case-stdy-thumb object-fit radius-img-30">
                     <img src="images/case-thumb3@2x.jpg" alt="">
                   </picture>
@@ -515,7 +596,7 @@
                   <div class="case-stdy-bg background-bg radius-30"></div>
                 </div>
 
-                <div class="case-stdy-text absolute flex flex-col">
+                <div class="case-stdy-text relative flex flex-col">
 
                   <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
                   <div class="case-stdy-desc flex flex-col inverted">
@@ -525,14 +606,14 @@
                 </div>
               </div>
               <div class="case-stdy-list radius-30 relative">
-                <div class="case-stdy-image relative">
+                <div class="case-stdy-image absolute">
                   <picture class="case-stdy-thumb object-fit radius-img-30">
                     <img src="images/case-thumb4@2x.jpg" alt="">
                   </picture>
                   <div class="case-stdy-overlay background-bg radius-30"></div>
                   <div class="case-stdy-bg background-bg radius-30"></div>
                 </div>
-                <div class="case-stdy-text absolute flex flex-col">
+                <div class="case-stdy-text relative flex flex-col">
                   <a class="btn-transparency fs-10 f-600 text-upper" href="#">Application Guide</a>
                   <div class="case-stdy-desc flex flex-col inverted">
                     <span class="case-date">03/04</span>

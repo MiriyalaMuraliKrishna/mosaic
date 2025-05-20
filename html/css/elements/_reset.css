@@ -495,13 +495,16 @@ a.mPS2id-clicked{color: var(--Green);}
 
     .title{font-size: 56px; line-height: 68px; letter-spacing: -0.56px;}
     .h1, h1{font-size: 50px; line-height: 60px; letter-spacing: -0.5px;}
+    .h2, h2{font-size: 42px; line-height: 54px; letter-spacing: -1.26px;}
+    .h3, h3{font-size: 34px; line-height: 40px; letter-spacing: -1.02px;}
+    .h4, h4{font-size: 32px; line-height: 38px; letter-spacing: -0.96px;}
 
     
 
     .image-caption{margin: 22px 0 25px;}
     .image-caption figure img{min-height: 576px;}
     figcaption{padding: 24px;}
-
+ 
     .button.transparent{font-size: 16px;}
     
     blockquote{margin: 22px 0 23px;}

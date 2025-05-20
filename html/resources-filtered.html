@@ -100,7 +100,7 @@
       </div>
     </section>
     <section class="resources-browse-section relative">
-      <div class="resources-browse-ellipse absolute"></div>
+      <div class="resources-browse-ellipse absolute transition-10 radius-50"></div>
       <div class="container">
         <div class="resources-browse-main">
           <div class="resources-browse-head flex flex-vcenter">
@@ -144,7 +144,7 @@
         </div>
       </div>
     </section>
-    <section class="featured-articles-section">
+    <section class="featured-articles-section relative z-2">
       <div class="featured-articles-main">
         <div class="container">
           <div class="featured-articles-head flex">
@@ -157,7 +157,10 @@
           <div class="featured-articles-post radius-40 relative o-hidden">
             <div class="featured-articles-bg radius-40 background-bg"></div>
             <div class="featured-articles-image absolute">
-              <picture class="object-fit"><img src="images/Material-Pod.svg" alt=""></picture>
+              <picture class="object-fit">
+                <source srcset="images/Material-Pod.svg" media="(min-width: 768px)">
+                <img src="images/Filament-Spools-mobile.svg" alt="">
+              </picture>
             </div>
             <div class="featured-articles-text relative">
               <span class="optional-text text-upper flex flex-col">Innovation<span
@@ -178,7 +181,10 @@
             <div class="featured-articles-sm radius-40 relative flex o-hidden">
               <div class="featured-articles-bg radius-40 background-bg"></div>
               <div class="featured-articles-image absolute">
-                <picture class="object-fit"><img src="images/path1700.svg" alt=""></picture>
+                <picture class="object-fit">
+                  <source srcset="images/path1700.svg" media="(min-width: 768px)">
+                  <img src="images/process.svg" alt="">
+                </picture>
               </div>
               <div class="featured-articles-text relative">
                 <span class="optional-text text-upper flex flex-col">SUSTAINABILITY<span
@@ -199,7 +205,10 @@
             <div class="featured-articles-sm radius-40 relative flex o-hidden">
               <div class="featured-articles-bg radius-40 background-bg"></div>
               <div class="featured-articles-image absolute">
-                <picture class="object-fit"><img src="images/Print-Head.svg" alt=""></picture>
+                <picture class="object-fit">
+                  <source srcset="images/Print-Head.svg" media="(min-width: 768px)">
+                  <img src="images/Print-Head-Mobile.svg" alt="">
+                </picture>
               </div>
               <div class="featured-articles-text relative">
                 <span class="optional-text text-upper flex flex-col">Technology<span
