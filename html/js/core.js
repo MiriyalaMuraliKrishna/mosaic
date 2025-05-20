@@ -14,6 +14,7 @@ import { Blockquote } from './module/blockquote';
 import { Video } from './module/video';
 import { iframe } from './module/iframe';
 import { jslineanimation } from './module/js-line-animation';
+import { support } from './module/support';
 
 (() => {
   mylenis.init();
@@ -31,6 +32,7 @@ import { jslineanimation } from './module/js-line-animation';
   Video.init();
   iframe.init();
   jslineanimation.init();
+  support.init();
 })();
 
 let scrolled = window.scrollY;

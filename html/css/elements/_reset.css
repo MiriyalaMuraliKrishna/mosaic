@@ -484,7 +484,7 @@ a.mPS2id-clicked{color: var(--Green);}
 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    body{font-size: 16px;}
+    body{font-size: 17px; line-height: 26px; letter-spacing: -0.51px;} /*-- general page --*/
     
     .container{padding: 0 20px;}
     .fluid-container .container{padding-left: 0; padding-right: 0;}
@@ -494,6 +494,9 @@ a.mPS2id-clicked{color: var(--Green);}
 
 
     .title{font-size: 56px; line-height: 68px; letter-spacing: -0.56px;}
+    .h1, h1{font-size: 50px; line-height: 60px; letter-spacing: -0.5px;}
+
+    
 
     .image-caption{margin: 22px 0 25px;}
     .image-caption figure img{min-height: 576px;}
@@ -502,9 +505,6 @@ a.mPS2id-clicked{color: var(--Green);}
     .button.transparent{font-size: 16px;}
     
     blockquote{margin: 22px 0 23px;}
-    span.optional-text{font-size: 16px; line-height: 20px;}
-
-    span.optional-text.md{margin-bottom: 6px;}
 
     .line-m-clamp{ display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden;}
     .m-clamp-3{ -webkit-line-clamp: 3; }
@@ -512,4 +512,7 @@ a.mPS2id-clicked{color: var(--Green);}
     .play-btn img{width: 24px; height: 30px;}
     img.aligncenter, img.alignleft, img.alignnone, img.alignright{margin: 25px auto; clear: both; float: none; display: block; width: 100%;}
 
+}
+@media only screen and (max-width: 374px) and (min-width: 200px){
+  a.text-link, span.text-link{font-size: 15px;}
 }

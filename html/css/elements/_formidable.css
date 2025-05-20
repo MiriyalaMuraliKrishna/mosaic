@@ -176,11 +176,11 @@ body .contact-form .frm_forms .frm_form_fields .frm_submit button.frm_button_sub
 body .frm_style_formidable-style.with_frm_style .frm_error_style{display: none;}
 
 
-.frm_field_wrapper{gap: 16px; padding-top: 30px;}
+.contact-form .frm_field_wrapper{gap: 16px; padding-top: 30px;}
 .contact-form .frm_field_wrapper .vertical_radio .frm_opt_container,
 .contact-form .frm_field_wrapper .vertical_radio .frm_opt_container{padding-bottom: 0;}
-.frm_filed_wrapper .vertical_radio{flex: 1;}
-.frm_field_wrapper button{width: fit-content;}
+.contact-form .frm_filed_wrapper .vertical_radio{flex: 1;}
+.contact-form .frm_field_wrapper button{width: fit-content;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 561px){
@@ -267,14 +267,18 @@ body .frm_style_formidable-style.with_frm_style .frm_error_style{display: none;}
   
     body .frm_forms form .frm_required_field div.frm_error, div.frm_error{bottom: -15px; position: static;}
 
-    body.page-template-contact .frm_forms .frm_form_fields .frm_fields_container .frm_filed_wrapper{flex-direction: column-reverse;}
-    body .newsletter-form .frm_forms form .frm_required_field div.frm_error, div.frm_error { bottom: -14px; position: absolute; font-size: 11px;} 
+
+
 }
 
 @media screen and (max-width: 560px) and (min-width: 200px){
     body .frm_forms .frm_form_fields .frm_fields_container{gap: 16px; flex-direction: column;}
     body .frm_forms .frm_form_fields .frm_form_field{width: 100%;}
     body .frm_forms .frm_form_fields .frm_form_field textarea{height: 162px;}
+
+    
+    .contact-form  .frm_field_wrapper{flex-direction: column;}
+    .contact-form .frm_field_wrapper button{justify-content: center; width: 100%;} 
 }
 @media screen and (max-width: 389px) and (min-width: 200px){
     body .frm_forms .frm_form_fields .frm_form_field.vertical_checkbox .frm_opt_container, body .frm_forms .frm_form_fields .vertical_radio .frm_opt_container{flex-direction: column; margin-bottom: 8px;}

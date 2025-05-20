@@ -4,10 +4,8 @@
 
 
 
-.contact-form-main{padding: 0 0 0;}
-.contact-form-main{gap: 141px;}
-.contact-form{flex: 1;}
-.contact-address{flex: 0 0 320px;}
+.contact-form-main{padding: 0 0 46px;}
+
 
 
 .contact-frm-head{gap: 16px; padding-bottom: 40px;}
@@ -35,12 +33,32 @@
 .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:hover, .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:has(input[type="checkbox"]:checked){color: var(--Black);}
 
 
-
-
-
-
-
-
+/* media css starts here */
+@media only screen and (min-width: 1440px){
+    .contact-form-main{gap: 141px;}
+}
+@media only screen and (min-width: 1024px){
+    .contact-form{flex: 1;}
+    .contact-address{flex: 0 0 320px;}
+}
+@media only screen and (max-width: 1439px) and (min-width: 1024px){
+    .contact-form-main{gap: 101px;}
+}
+@media only screen and (max-width: 1199px) and (min-width: 1024px){
+    .contact-form-main{gap: 61px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+    .contact-form-main{gap: 61px; padding: 0 0 100px; flex-direction: column;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .contact-form-main{gap: 56px; padding: 0 0 88px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .frm_field_container{flex-direction: column; padding-bottom: 60px;}
+    .frm_opt_container{padding-bottom: 60px;}
+    .contact-form .vertical_radio .frm_radio label,
+    .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label{padding: 18px; font-size: 15px; line-height: 19px; letter-spacing: -0.45px;}
+}
 
 
 
