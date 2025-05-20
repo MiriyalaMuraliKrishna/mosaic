@@ -15,6 +15,9 @@ import { Video } from './module/video';
 import { iframe } from './module/iframe';
 import { jslineanimation } from './module/js-line-animation';
 import { support } from './module/support';
+import { Stickyfeature } from './module/careerstickyfeature';
+// import { chart } from './module/chart';
+// import { circle } from './module/circle-progress';
 
 (() => {
   mylenis.init();
@@ -33,6 +36,9 @@ import { support } from './module/support';
   iframe.init();
   jslineanimation.init();
   support.init();
+  Stickyfeature.init();
+  // chart.init();
+  // circle.init();
 })();
 
 let scrolled = window.scrollY;

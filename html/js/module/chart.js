@@ -1,9 +1,8 @@
 class Charts {
   constructor() {
-    this.chart = document.querySelector('.all-meterials-chart-main svg');
+    this.chart = document.querySelector('[data-animate*="chart"]');
     this.originalData = []; // Store original y and height values
   }
-
   init() {
     this.chart?.querySelectorAll('rect:nth-child(even)').forEach((rect, i) => {
       // Save original values
@@ -28,6 +27,5 @@ class Charts {
     });
   }
 }
-
 export const chart = new Charts();
 chart.init();

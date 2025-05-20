@@ -10,7 +10,7 @@ class Browses {
   }
   init() {
     this.flag ? this.flag.addEventListener('click', this.eventHandler) : '';
-    console.log(this.links);
+    // console.log(this.links);
     this.links.forEach((ele) => {
       ele.addEventListener('mouseover', this.browseHandler);
     });

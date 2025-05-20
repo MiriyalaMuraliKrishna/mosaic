@@ -2,6 +2,8 @@ import imagesLoaded from 'imagesloaded';
 import 'is-in-viewport';
 import 'jquery.appear';
 import { chart } from './chart';
+import { circle } from './circle-progress';
+
 import { svgprogress } from './svgprogress';
 
 imagesLoaded.makeJQueryPlugin($);
@@ -67,6 +69,9 @@ export const Animation = {
     if (type === 'chart') {
       chart.play();
     }
+    if (type === 'progress') {
+      circle.play();
+    }
   },
 
   // Reset animation and timeline when the element leaves the viewport
@@ -75,7 +80,6 @@ export const Animation = {
     if (timeline) {
       timeline.pause(0); // Pause and reset timeline when not visible
     }
-    console.log(type);
   },
 
   // Handle scroll events to trigger animations

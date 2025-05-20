@@ -7,7 +7,6 @@ gsap.registerPlugin(DrawSVGPlugin);
 
 export const Gsap = {
   eles: document.querySelectorAll('[data-animate*="icon"]'),
-  textslideup: document.querySelectorAll('[data-animate*="txt-slide-up"]'),
 
   init() {
     const _ = this;
@@ -32,22 +31,5 @@ export const Gsap = {
       });
       ele.tl = tl;
     });
-
-    // _.textslideup.forEach((ele) => {
-    //   var tl = gsap.timeline({
-    //     paused: true,
-    //   });
-    //   tl.fromTo(
-    //     ele,
-    //     { yPercent: 110 },
-    //     {
-    //       yPercent: 0,
-    //       duration: 1.25,
-    //       ease: 'expo.out',
-    //       stagger: { amount: 0.2, ease: 'expo.out' },
-    //     }
-    //   );
-    //   ele.tl = tl;
-    // });
   },
 };

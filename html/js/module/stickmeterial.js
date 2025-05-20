@@ -1,7 +1,7 @@
 import 'sticksy';
 
 export const sticky = {
-  header: document.querySelector('.site-header'),
+  header: document.querySelector('header.site-header'),
   stickeles: document.querySelectorAll('.sticky-widget'),
   init() {
     const _ = this;

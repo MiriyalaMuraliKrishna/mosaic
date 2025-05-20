@@ -20,7 +20,10 @@
 .all-meterials-sm-icon{flex: 0 0 153px; padding: 30px 26px 26px 27px; backdrop-filter: blur(67px); }
 
 .all-meterials-circle-main{width: 86px; height: 86px; margin-bottom: 4px;}
-.all-meterials-circle svg{width: 86px; height: 86px;}
+.progress-inner{width: 74px; height: 74px;}
+.progress-inner svg{width: 100%; height: 100%;}
+.progress-circle{top: 0; left: 0; width: 86px; height: 86px;}
+.progress-circle svg circle { stroke-dasharray: 450; stroke-dashoffset: 400; }
 .all-meterials-count{top: 50%; left: 50%; transform: translate(-50%,-50%);}
 
 

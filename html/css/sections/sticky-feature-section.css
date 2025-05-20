@@ -7,16 +7,13 @@
 
 ul.sticky-feature-links{gap: 24px 0;}
 ul.sticky-feature-links > li > a{color: var(--White-20);}
-ul.sticky-feature-links > li > a:hover{color: var(--White);}
-
+ul.sticky-feature-links > li > a.open, ul.sticky-feature-links > li > a:hover{color: var(--White);}
 
 
 
 .sticky-feature-text{max-width: 435px; padding: 110px 0 334px;}
 .sticky-feature-text h2{margin-bottom: 26px; padding-top: 24px;}
 .sticky-feature-text p{margin-bottom: 26px;}
-
-
 
 
 .sticky-feature-video{min-width: 1232px;}
