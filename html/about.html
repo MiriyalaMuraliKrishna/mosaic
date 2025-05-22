@@ -44,7 +44,8 @@
             <img width="177" height="49" src="images/logo.svg" alt="logo" />
           </a>
         </div>
-        <div role="button" aria-label="Open menu" class="humburger-btn mbl-blue-bg white-bg flex flex-col flex-center radius-50">
+        <div role="button" aria-label="Open menu"
+          class="humburger-btn mbl-blue-bg white-bg flex flex-col flex-center radius-50">
           <span class="humburger-line"></span>
           <span class="humburger-line"></span>
           <span class="humburger-line"></span>
@@ -78,7 +79,7 @@
         <div class="about-banner-main relative z-3">
           <div class="about-banner-text fs-21 lh-30">
             <span data-animate="line" class="stripe-line line-white d-block"></span>
-            <h1 class="title body-font">About Mosaic</h1>
+            <h1 class="title body-font" data-anim="title">About Mosaic</h1>
             <p>See how businesses innovate with advanced 3D printing solutions.</p>
             <div class="about-banner-btns flex">
               <a href="#" class="button flex flex-center text-upper">Read More
@@ -97,27 +98,35 @@
       <div class="container xx-md">
         <div class="scroll-content-main">
           <div class="scroll-content-text white-50 fs-38 lh-68 f-400">
-            <p>Mosaic Manufacturing transforms 3D printing with high-performance, multi-material solutions. From automated production systems to industrial-grade printers and filament splicing technology, their innovations enable faster, stronger, and more versatile printing - helping businesses scale, reduce waste, and unlock new creative possibilities. </p>
+            <p>Mosaic Manufacturing transforms 3D printing with high-performance, multi-material solutions. From
+              automated production systems to industrial-grade printers and filament splicing technology, their
+              innovations enable faster, stronger, and more versatile printing - helping businesses scale, reduce waste,
+              and unlock new creative possibilities. </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="open-postion-section highlight-green">
+    <section class="unlock-3d-section highlight-green">
       <div class="container">
-        <div class="open-postion-wrap">
-          <div class="open-postion-main flex flex-vcenter relative">
-            <div class="open-postion-ellipse absolute"></div>
-            <div class="open-postion-bg white-bg-10 radius-40 background-bg"></div>
-            <div class="open-postion-image">
-              <figure class="object-fit radius-img-30"><img src="images/open-postion@2x.jpg" alt=""></figure>
-              <div class="play-btn-main"></div>
+        <div class="unlock-3d-wrap">
+          <div class="unlock-3d-main flex flex-vcenter relative">
+            <div class="unlock-3d-ellipse absolute"></div>
+            <div class="unlock-3d-bg white-bg-10 radius-40 background-bg"></div>
+            <div class="unlock-3d-image">
+              <figure class="object-fit radius-img-30"><img src="images/IMG_5441-Enhanced@2x.jpg" alt=""></figure>
+              <div class="play-btn-main green-bg radius-50">
+                <a href="javascript:void(0)" class="play-btn flex flex-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                    <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="open-postion-text">
-              <span class="optional-text text-upper white-40 d-block">Open POsitions</span>
-              <h2><span>Join us</span> Today! </h2>
-              <p>Mollis arcu viverra platea iaculis nisl. Faucibus sed volutpat nulla nec sed ipsum. Sit nulla faucibus
-                ultrices sit nunc.</p>
-              <a target="_blank" href="#" class="button flex flex-center text-upper">Our Open Positions
+            <div class="unlock-3d-text">
+              <span class="optional-text text-upper white-40 d-block">Optional Preheader</span>
+              <h2><span>Unlock</span> the Future of 3D Printing Today</h2>
+
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Get Started Now
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                   <path
                     d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
@@ -129,62 +138,129 @@
         </div>
       </div>
     </section>
-    
-    <section class="3d-unlock-section">
-      <div class="container">
-        <div class="3d-unlock-main flex flex-vcenter relative">
-          <div class="3d-unlock-bg background-bg"></div>
-          <div class="3d-unlock-video">
-            <video src=""></video>
-          </div>
-          <div class="3d-unlock-text">
-            <span class="optional-text"></span>
-            <h2></h2>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section class="overview-section">
       <div class="container">
         <div class="overview-wrap">
-          <div class="overview-head">
-            <h2></h2>
+          <div class="overview-head aligncenter">
+            <h2 data-anim="title" data-duration="500">Overview of<br /> Our Mission, Vision & Purpose</h2>
+            <div class="overview-head-btns flex flex-center"><a target="_blank" href="#"
+                class="button flex flex-center text-upper">Optional CTA
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a></div>
           </div>
           <div class="overview-main flex flex-vcenter relative">
-            <div class="overview-list">
-              <div class="overview-image">
-                <figure class="object-fit"></figure>
+            <div class="overview-list relative">
+              <div class="overview-image absolute">
+                <figure class="object-fit">
+                  <img src="images/Print_Bed_Stack_Empty.svg" alt="">
+                </figure>
               </div>
-              <div class="overview-text">
-                <h2></h2>
-                <p></p>
+              <div class="overview-text muted-light">
+                <h2 class="h3">Mission: Build<br> Without Limits</h2>
+                <p>We’re on a mission to empower creators, engineers, and manufacturers with tools that remove the
+                  traditional limits of 3D printing. From multi-material capabilities to automated production, we’re
+                  enabling faster innovation, better results, and smarter workflows.</p>
+                <a class="text-link up flex flex-vcenter text-upper" href="#">Read More<svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 1.59467H0.560665V0.0946655H10.0607H10.8107V0.844666V9.84467H9.31067V2.65532L1.06066 10.9053L0 9.84467L8.25 1.59467Z"
+                      fill="#1AD1B1"></path>
+                  </svg></a>
               </div>
             </div>
-            <div class="overview-list">
-              <div class="overview-image">
-                <figure class="object-fit"></figure>
+            <div class="overview-list relative">
+              <div class="overview-image absolute">
+                <figure class="object-fit">
+                  <img src="images/Material-Pod.svg" alt="">
+                </figure>
               </div>
-              <div class="overview-text">
-                <h2></h2>
-                <p></p>
+              <div class="overview-text muted-light">
+                <h2 class="h3">Vision: The Future, Printed</h2>
+                <p>Our vision is a world where 3D printing is frictionless, intelligent, and integral to every stage of
+                  product development and manufacturing. We believe in pushing the boundaries of what’s possible—and
+                  making it available to everyone.</p>
+                <a class="text-link up flex flex-vcenter text-upper" href="#">Read More<svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 1.59467H0.560665V0.0946655H10.0607H10.8107V0.844666V9.84467H9.31067V2.65532L1.06066 10.9053L0 9.84467L8.25 1.59467Z"
+                      fill="#1AD1B1"></path>
+                  </svg></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="modular-section">
+    <section class="modular-option-section">
       <div class="container">
-        <div class="modular-main flex">
-          <div class="modular-text">
-            <h2></h2>
-            <p></p>
+        <div class="modular-option-main flex flex-vcenter white-bg-10 radius-40">
+          <div class="modular-option-text">
+            <h2 class="h3"><span>Modular</span> & Scalable Handling</h2>
+            <p>Automatically detects, tracks, and optimizes filament usage, ensuring smooth multi-material transitions
+              and reducing waste for efficient printing</p>
+            <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                <path
+                  d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                  fill="#1AD1B1"></path>
+              </svg>
+            </a>
           </div>
-          <div class="modular-image flex">
-            <div></div>
-            <div></div>
-            <div>
-              <figure></figure>
+          <div class="modular-option-image flex flex-vcenter">
+            <div class="modular-option-graph flex flex-col">
+              <div class="all-meterials-sm-icon white-bg-10 radius-30">
+                <div class="all-meterials-chart-main m-auto relative" data-animate="chart">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="105" height="51" viewBox="0 0 105 51" fill="none">
+                    <rect opacity="0.15" y="0.196289" width="11.6621" height="49.9743" rx="5.83103" fill="white" />
+                    <rect y="33.0957" width="11.6621" height="17.0746" rx="5.83103" fill="#8B52FC" />
+                    <rect opacity="0.15" x="69.9727" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
+                      fill="white" />
+                    <rect x="70" y="11.1963" width="12" height="39" rx="6" fill="#8B52FC" />
+                    <rect opacity="0.15" x="23.3242" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
+                      fill="white" />
+                    <rect x="23.334" y="26.1963" width="11.6667" height="24" rx="5.83333" fill="#8B52FC" />
+                    <rect opacity="0.15" x="93.2969" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
+                      fill="white" />
+                    <rect x="93" y="0.196289" width="12" height="50" rx="6" fill="#8B52FC" />
+                    <rect opacity="0.15" x="46.6484" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
+                      fill="white" />
+                    <rect x="46.666" y="21.1963" width="11.6667" height="29" rx="5.83333" fill="#8B52FC" />
+                  </svg>
+                </div>
+                <span class="fs-16 lh-18 d-block  f-500">Increased
+                  performance</span>
+              </div>
+              <div class="all-meterials-sm-icon white-bg-10 radius-30">
+                <div class="half-circle-main m-auto relative" data-animate="half-circle">
+                  <div class="half-circle-pos relative o-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="101" height="63" viewBox="0 0 101 63" fill="none">
+                      <path opacity="0.1"
+                        d="M91 52.133C91 41.0949 86.733 30.5088 79.1378 22.7037C71.5426 14.8986 61.2413 10.5137 50.5 10.5137C39.7587 10.5137 29.4574 14.8986 21.8622 22.7037C14.267 30.5088 10 41.0949 10 52.133"
+                        stroke="white" stroke-width="20" stroke-linecap="round" />
+                    </svg>
+                    <div class="all-meterials-half-circle absolute">
+                      <svg width="101" viewBox="0 0 101 101" height="101">
+                        <circle stroke="#8B52FC" stroke-width="20px" stroke-linecap="round" fill="none" cy="50.5"
+                          cx="50.5" r="40"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="all-meterials-parts flex flex-center">
+                    <span class="half-circle-count fs-26 lh-30 d-block f-500">75%</span>
+                    <span class="fs-16 lh-18 d-block">stronger parts</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modular-option-array">
+              <figure class="modular-option-thumb">
+                <img src="images/media-array@2x.png" alt="">
+              </figure>
             </div>
           </div>
         </div>

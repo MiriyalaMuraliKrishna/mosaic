@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 export const anime = {
   eles: document.querySelectorAll('.scroll-content-text'),
-  h1: document.querySelectorAll('h1.title'),
+  h1: document.querySelectorAll('[data-anim*="title"]'),
   init() {
     this.eles.forEach((el) => {
       const target = el.querySelector('p') || el.querySelector('h2');
@@ -44,10 +44,12 @@ export const anime = {
         });
       });
     });
+    this.title();
   },
   title() {
     this.h1.forEach((ele) => {
-      const p = document.fonts.ready.then(() => {
+      document.fonts.ready.then(() => {
+        let $duration = +ele.dataset.duration / 1000 || 1.5;
         const charSplit = new SplitText(ele, {
           type: 'chars',
           charsClass: 'chars',
@@ -65,8 +67,8 @@ export const anime = {
           paused: true,
           scrollTrigger: {
             trigger: ele,
-            start: 'top 0%',
-            end: 'bottom 0%',
+            start: 'top 75%',
+            end: 'bottom 50%',
             toggleActions: 'play none none none', // ✅ only play once
             // scrub: 0.75,
             // once: true,
@@ -79,7 +81,7 @@ export const anime = {
           rotateX: 0,
           ease: 'power4.out',
           stagger: 0.05,
-          duration: 1.5,
+          duration: $duration,
         });
 
         // ✅ Manually play if already in view

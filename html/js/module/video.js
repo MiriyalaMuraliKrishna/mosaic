@@ -4,7 +4,6 @@ class Videos {
   }
   init() {
     if (this.fluidvideo) {
-      // console.log(this.fluidvideo);
       this.fluidvideo.style.opacity = 1;
       this.fluidvideo.style.visibility = 'visible';
     }

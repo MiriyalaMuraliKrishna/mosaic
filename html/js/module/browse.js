@@ -10,7 +10,6 @@ class Browses {
   }
   init() {
     this.flag ? this.flag.addEventListener('click', this.eventHandler) : '';
-    // console.log(this.links);
     this.links.forEach((ele) => {
       ele.addEventListener('mouseover', this.browseHandler);
     });
@@ -32,7 +31,6 @@ class Browses {
     const rect = e.currentTarget.getBoundingClientRect();
     const top = rect.top + window.scrollY - 533;
     const left = rect.left + window.scrollX - 533;
-    console.log(top);
     this.browsellipse.style.top = `${top}px`;
     this.browsellipse.style.left = `${left}px`;
   }

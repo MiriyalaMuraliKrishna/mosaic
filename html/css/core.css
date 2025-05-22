@@ -44,6 +44,9 @@
 /*-- about page --*/
 @import url('./sections/about-banner-section.css');
 @import url('./sections/scroll-content-section.css');
+@import url('./sections/unlock-3d-section.css');
+@import url('./sections/overview-section.css');
+@import url('./sections/modular-option-section.css');
 
 
 /*-- careers page --*/

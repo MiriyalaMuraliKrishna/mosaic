@@ -3,7 +3,6 @@ import 'is-in-viewport';
 import 'jquery.appear';
 import { chart } from './chart';
 import { circle } from './circle-progress';
-
 import { svgprogress } from './svgprogress';
 
 imagesLoaded.makeJQueryPlugin($);
@@ -69,7 +68,7 @@ export const Animation = {
     if (type === 'chart') {
       chart.play();
     }
-    if (type === 'progress') {
+    if (type === 'progress' || type === 'half-circle') {
       circle.play();
     }
   },

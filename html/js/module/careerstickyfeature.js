@@ -19,7 +19,6 @@ class Stickyfeatures {
     this.links.forEach((ele) => {
       const link = ele.querySelector('a');
       if (link) link.classList.add('open');
-      console.log(ele, link);
 
       new Sticksy(ele, {
         topSpacing: headerHeight,

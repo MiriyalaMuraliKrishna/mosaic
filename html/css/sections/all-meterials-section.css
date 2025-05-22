@@ -28,3 +28,11 @@
 
 
 .all-meterials-chart-main svg rect:nth-child(even){height: 0; transition: all 1.25s ease;}
+.all-meterials-half-circle{
+    width: 101px;
+    height: 101px;
+    top: 0;
+    left: 0;
+    transform: rotate(-180deg);
+}
+.half-circle-pos{width: 101px; height: 63px;}

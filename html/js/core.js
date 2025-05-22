@@ -17,14 +17,11 @@ import { iframe } from './module/iframe';
 import { jslineanimation } from './module/js-line-animation';
 import { support } from './module/support';
 import { Stickyfeature } from './module/careerstickyfeature';
-// import { chart } from './module/chart';
-// import { circle } from './module/circle-progress';
 
 (() => {
   mylenis.init();
   Gsap.init();
   anime.init();
-  anime.title();
   Animation.init();
   Effects.init();
   Accordion.init();
@@ -40,8 +37,6 @@ import { Stickyfeature } from './module/careerstickyfeature';
   jslineanimation.init();
   support.init();
   Stickyfeature.init();
-  // chart.init();
-  // circle.init();
 })();
 
 let scrolled = window.scrollY;
