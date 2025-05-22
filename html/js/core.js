@@ -1,6 +1,7 @@
 import { mylenis } from './module/lenis';
 import { Gsap } from './module/gsap';
 import { Scroll } from './module/scroll';
+import { anime } from './module/anime';
 import { Animation } from './module/animation';
 import { Effects } from './module/effects';
 import { Accordion } from './module/accordion';
@@ -22,6 +23,8 @@ import { Stickyfeature } from './module/careerstickyfeature';
 (() => {
   mylenis.init();
   Gsap.init();
+  anime.init();
+  anime.title();
   Animation.init();
   Effects.init();
   Accordion.init();

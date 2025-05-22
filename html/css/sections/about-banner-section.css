@@ -1,0 +1,8 @@
+
+
+
+.about-banner-bg img{opacity: 0.3;}
+.about-banner-overlay{background: linear-gradient(0deg, var(--Black) 0%,hsla(0,0%,45%,0))}
+.about-banner-main{padding: 396px 0 177px; max-width: 805px;}
+.about-banner-text h1{padding-top: 20px; margin-bottom: 17px;}
+.about-banner-btns{padding-top: 12px;}

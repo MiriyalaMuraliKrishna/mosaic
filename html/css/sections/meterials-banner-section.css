@@ -1,6 +1,21 @@
 
 
 .meterials-banner-ellipse{ top: -762px; left: 50%; transform: translateX(-50%);  width: 1973px; height: 1973px; border-radius: 1973px; opacity: 0.25; z-index: -1; background: var(--Green-Radial-Gradient); }
-.meterials-banner-main{padding: 282px 0 187px;}
-.meterials-banner-text{letter-spacing: 0.69px;}
 .meterials-banner-text p{margin-bottom: 19px;}
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .meterials-banner-main{padding: 282px 0 187px;}
+    .meterials-banner-text{letter-spacing: 0.69px;}
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .meterials-banner-main{padding: 202px 0 117px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .meterials-banner-main{padding: 182px 0 117px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .meterials-banner-main{padding: 172px 0 59px;}
+    .meterials-banner-text{font-size: 21px; line-height: 32px; letter-spacing: 0.63px;}
+}

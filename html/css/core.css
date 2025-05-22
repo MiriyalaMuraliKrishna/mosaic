@@ -41,6 +41,10 @@
 @import url('./sections/faqs-sections.css');
 @import url('./sections/unlock-cta-section.css');
 
+/*-- about page --*/
+@import url('./sections/about-banner-section.css');
+@import url('./sections/scroll-content-section.css');
+
 
 /*-- careers page --*/
 @import url('./sections/careers-banner-section.css');

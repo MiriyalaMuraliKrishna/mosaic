@@ -1,30 +1,55 @@
 class Progress {
-  constructor() {
-    this.circle = document.querySelector('[data-animate*="progress"]');
-    this.circlePath = this.circle.querySelector('.progress-circle svg circle');
-    this.radius = +this.circlePath.getAttribute('r');
-    this.circumference = 2 * Math.PI * this.radius;
+  constructor(selector) {
+    this.circles = document.querySelectorAll(selector);
   }
 
   init() {
-    this.circlePath.style.strokeDasharray = this.circumference;
-    this.circlePath.style.strokeDashoffset = this.circumference;
+    this.circles.forEach((ele) => {
+      const circle = ele.querySelector('.progress-circle svg circle');
+      if (!circle) return;
+
+      const radius = +circle.getAttribute('r');
+      const circumference = 2 * Math.PI * radius;
+
+      circle.style.strokeDasharray = `${circumference}`;
+      circle.style.strokeDashoffset = `${circumference}`;
+
+      // Store for later use
+      ele._circle = circle;
+      ele._circumference = circumference;
+    });
   }
 
   play() {
-    const number = this.circle.querySelector(
-      '.all-meterials-count'
-    ).textContent;
-    const progress = parseFloat(number);
-    const offset = this.circumference * (1 - progress / 100);
+    this.circles.forEach((ele) => {
+      const countEl = ele.querySelector('.all-meterials-count');
+      const circle = ele._circle;
+      const circumference = ele._circumference;
 
-    // Animate
-    requestAnimationFrame(() => {
-      this.circlePath.style.transition = 'stroke-dashoffset 2s ease';
-      this.circlePath.style.strokeDashoffset = offset;
+      if (!countEl || !circle || !circumference) return;
+
+      const text = countEl.textContent.trim();
+      let progress;
+
+      if (text.includes('/')) {
+        const [start, end] = text.split('/').map(Number);
+        if (!isNaN(start) && !isNaN(end) && end !== 0) {
+          progress = (start / end) * 100;
+        } else {
+          progress = 0;
+        }
+      } else {
+        progress = parseFloat(text);
+      }
+
+      const offset = circumference * (1 - progress / 100);
+
+      requestAnimationFrame(() => {
+        circle.style.transition = 'stroke-dashoffset 2s ease';
+        circle.style.strokeDashoffset = offset;
+      });
     });
   }
 }
-
-export const circle = new Progress();
+export const circle = new Progress('[data-animate*="progress"]');
 circle.init();

@@ -9,9 +9,7 @@ ul.prod-meterials-links > li > a:hover{color: var(--Green);}
 .prod-meterials-head h2{margin-bottom: 0;}
 
 
-.prod-meterials-list{gap: 119px;}
-.prod-meterials-left{flex: 0 0 300px;}
-.prod-meterials-left:nth-child(1):last-child{flex: 1;}
+
 
 .prod-meterials-image{margin-bottom: 57px;}
 ul.prod-meterials-typicals{gap: 18px 0; padding-top: 28px;}
@@ -33,17 +31,45 @@ ul.prod-meterials-typicals > li:last-child span.stripe-line{display: none;}
 .prod-meterials-dwlds{gap: 29px 0;}
 
 
-.prod-meterials-right{padding-left: 53px; border-left: 1px solid var(--White-15);}
+.prod-meterials-ellipse{opacity: 0; width: 1066px; height: 1066px; top: calc(50% - 352px); left: 50%; transform: translate(-50%,-50%); z-index: -1;}
+.prod-meterials-right:hover .prod-meterials-ellipse{opacity: 0.2;}
+
+
+
 
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     ul.prod-meterials-links{gap: 25px;}
     ul.prod-meterials-links > li{flex: 0 0 calc(25%  - 19px);}
+
+    .prod-meterials-list{gap: 119px;}
+    .prod-meterials-left{flex: 0 0 300px;}
+    .prod-meterials-left:nth-child(1):last-child{flex: 1;}
+    .prod-meterials-right{padding-left: 53px; border-left: 1px solid var(--White-15);}
+
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .prod-meterials-list{gap: 40px;}
+    .prod-meterials-left{flex: 0 0 260px;}
+    .prod-meterials-right{padding-left: 40px; flex: 0 0 280px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
+    ul.prod-meterials-links{gap: 25px;}
+    ul.prod-meterials-links > li{flex: 0 0 calc(50%  - 12.5px);}
+
+    .prod-meterials-list{gap: 40px;}
+    .prod-meterials-left{flex: 0 0 260px;}
+    .prod-meterials-left:nth-child(1):last-child{flex: 1;}
+    .prod-meterials-right{flex: 0 0 100%; padding-top: 53px; border-top: 1px solid var(--White-15);}
+
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     ul.prod-meterials-links{gap: 21px; flex-direction: column;}
     ul.prod-meterials-links > li > a{padding-top: 0; gap: 13px 0; font-size: 18px; font-weight: 500;}
+    .prod-meterials-rows{padding: 80px 0 137px;}
+    .prod-meterials-row{gap: 21px 0;}
+    .prod-meterials-head h2{margin-bottom: 15px;}
+    .prod-meterials-list{flex-direction: column;}
+    .prod-meterials-image{max-width: 182px;}
 }

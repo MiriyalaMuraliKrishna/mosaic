@@ -16,9 +16,9 @@ ul.main_menu > li > ul > li.hide-nav-overview > a{display: none;}
  
 
     .navigation{padding: 15px 43px 19px;  width: fit-content; margin-left: auto; background-color: var(--White-10);}
-    ul.main_menu{gap: 16px 26px; justify-content: flex-end;}
+    ul.main_menu{gap: 16px 39.55px; justify-content: flex-end;}
     ul.main_menu > li{margin: 0; position: static;}
-    ul.main_menu > li > a{display: inline-block; font-size: 17px; line-height: 22px; font-weight: 500; color: var(--White);}
+    ul.main_menu > li > a{display: inline-block; font-size: 17px; line-height: 22px; letter-spacing: 0; font-weight: 600; color: var(--White);}
     ul.main_menu > li.current-post-ancestor > a, ul.main_menu > li.current-menu-item > a, ul.main_menu > li.current-menu-parent > a, ul.main_menu > li:hover > a, ul.main_menu > li > a:hover{color: var(--Green);}
 
     ul.main_menu > li > ul{padding: 0 40px; max-height: 0; overflow: hidden; transition: all 1.5s ease; top: 100%; left: -30px; min-width: 244px; margin: 0; position: absolute; border-radius: 0 0 16px 16px; background-color: var(--White); box-shadow: 0 2px 2px var(--Black-15); z-index: 800;}
@@ -40,15 +40,17 @@ ul.main_menu > li > ul > li.hide-nav-overview > a{display: none;}
 @media only screen and (min-width: 1360px){
     ul.main_menu > li{position: relative;}
 }
-@media only screen and (min-width: 1440px){
-    .header{padding-left: 40px;}
+@media only screen and (min-width: 1400px){
+    .header{ padding-left: 7px; margin-left: 33px; }
 }
 @media only screen and (max-width: 1439px) and (min-width: 1360px){
 }
 @media only screen and (max-width: 1359px) and (min-width: 1024px){
-    ul.main_menu{gap: 16px;}
+    ul.main_menu{gap: 16px 32px;}
 }
 @media only screen and (max-width: 1199px) and (min-width: 1024px){
+    ul.main_menu{gap: 18px;}
+    ul.main_menu > li > a{font-size: 16px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 200px){
     .header{padding: 12px 0px 12px 0; gap: 16px;}
