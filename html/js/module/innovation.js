@@ -1,12 +1,15 @@
 class Innovation {
   constructor(selector) {
     this.ele = document.querySelector(selector);
-    this.line = this.ele.querySelector('.innovation-line');
-    this.items = Array.from(this.ele.querySelectorAll('.innovation-list'));
+    this.line = this.ele?.querySelector('.innovation-line');
+    this.items = this.ele
+      ? Array.from(this.ele.querySelectorAll('.innovation-list'))
+      : '';
     this.activeItem = null;
   }
 
   init() {
+    if (!this.ele || !this.line || this.items.length === 0) return;
     this.items.forEach((item) => {
       item.style.opacity = 0.4;
       item.style.transition = 'opacity 1s ease';
