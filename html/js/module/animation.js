@@ -3,6 +3,7 @@ import 'is-in-viewport';
 import 'jquery.appear';
 import { chart } from './chart';
 import { circle } from './circle-progress';
+import { halfCircle } from './halfCircle';
 import { svgprogress } from './svgprogress';
 
 imagesLoaded.makeJQueryPlugin($);
@@ -65,12 +66,9 @@ export const Animation = {
       timeline.restart().play(); // Restart and play timeline when visible
     }
     if (svgprogress) svgprogress.play();
-    if (type === 'chart') {
-      chart.play();
-    }
-    if (type === 'progress' || type === 'half-circle') {
-      circle.play();
-    }
+    type === 'chart' ? chart.play() : null;
+    type === 'progress' ? circle.play() : null;
+    type === 'half-circle' ? halfCircle.play() : null;
   },
 
   // Reset animation and timeline when the element leaves the viewport

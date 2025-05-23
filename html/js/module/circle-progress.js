@@ -1,8 +1,6 @@
 class Progress {
   constructor(selector) {
     this.circles = document.querySelectorAll(selector);
-    this.halfinit();
-    this.halfcircleplay();
   }
 
   init() {
@@ -52,46 +50,6 @@ class Progress {
     });
     this.halfcircleplay();
   }
-  halfinit() {
-    this.circles.forEach((ele) => {
-      const circle = ele.querySelector('.all-meterials-half-circle svg circle');
-      if (!circle) return;
-
-      const radius = +circle.getAttribute('r');
-      const circumference = 2 * Math.PI * radius;
-
-      circle.style.strokeDasharray = `${circumference}`;
-      circle.style.strokeDashoffset = `${circumference}`; // fully hidden at start
-
-      ele._circle = circle;
-      ele._circumference = circumference;
-    });
-  }
-
-  halfcircleplay() {
-    this.circles.forEach((ele) => {
-      const countEl = ele.querySelector('.half-circle-count');
-      const circle = ele._circle;
-      const circumference = ele._circumference;
-
-      if (!countEl || !circle || !circumference) return;
-
-      let progress = parseFloat(countEl.textContent.trim()); // e.g., "10%"
-
-      if (isNaN(progress)) progress = 0;
-      if (progress > 100) progress = 100;
-
-      const visibleHalf = circumference / 2;
-      const offset = circumference - visibleHalf * (progress / 100);
-
-      requestAnimationFrame(() => {
-        circle.style.transition = 'stroke-dashoffset 2s ease';
-        circle.style.strokeDashoffset = offset;
-      });
-    });
-  }
 }
 export const circle = new Progress('[data-animate*="progress"]');
 circle.init();
-export const halfcircle = new Progress('[data-animate*="half-circle"]');
-halfcircle.halfinit();

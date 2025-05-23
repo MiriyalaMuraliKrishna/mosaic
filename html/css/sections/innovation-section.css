@@ -1,0 +1,33 @@
+
+
+
+span.year{padding-bottom: 28px;}
+.innovation-main{padding: 128px 0 0;}
+
+.innovation-lines{top: 0; left: 0; width: 4px; height: 100%; min-height: 100vh; background-color: var(--Line---Light); border-radius: 4px;}
+.innovation-line{top: 0; left: -1px; width: 4px; height: 0; background-color: var(--Green); border-radius: 4px;}
+
+.innovation-text{flex: 0 0 677px; padding-right: 133px;}
+.innovation-lists{flex: 1; padding-left: 128px;}
+.innovation-list{opacity: 0.4; margin-bottom: 45px;}
+.innovation-list *{transition: var(--b-transition-10);}
+.innovation-list .stripe-line{margin-top: 44px;}
+.innovation-list:last-child{margin-bottom: 0;}
+.innovation-list:last-child p{margin-bottom: 0;}
+.innovation-list:last-child .stripe-line{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

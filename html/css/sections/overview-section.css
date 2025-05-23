@@ -1,6 +1,6 @@
 
 
-.overview-main{align-items: flex-start;}
+.overview-main{padding: 0 0 143px; align-items: flex-start;}
 .overview-head{max-width: 711px; padding-bottom: 137px;}
 .overview-image{max-width: 392px; max-height: 593px; z-index: -1;}
 .overview-text h2{margin-bottom: 20px;}
