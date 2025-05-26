@@ -36,3 +36,21 @@
     transform: rotate(-180deg);
 }
 .half-circle-pos{width: 101px; height: 63px;}
+
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .all-meterials-section .container{padding: 0;}
+    .all-meterials-main{padding: 0 21px 80px 20px;}
+    .all-meterials-bg{border-radius: 0;}
+    .all-meterials-images{flex: 1; max-width: 373px; margin: -18.5px auto 60px;}
+    .all-meterials-thumb{gap: 20px;}
+    .all-meterials-lg-icon{flex: 0 0 179px; min-height: 179px; border-radius: 20px;}
+    .all-meterials-lg-icon img{max-width: 133px;}
+    .all-meterials-thumb:nth-child(2n+1) .all-meterials-sm-icon{padding: 19px; border-radius: 25px;}
+    .all-meterials-thumb:nth-child(2n+1) .all-meterials-sm-icon span{font-size: 14px;}
+    .all-meterials-circle-main{height: 72px; width: 72px;}
+    .progress-inner{height: 60px; width: 60px;}
+    .all-meterials-count{font-size: 18px; letter-spacing: -0.54px;}
+    .progress-circle{height: 72px; left: -7px; top: 3px; width: 72px; transform: rotate(-93deg);}
+    .all-meterials-text{max-width: 100%; width: 100%; }
+}
