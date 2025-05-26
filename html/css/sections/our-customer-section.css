@@ -11,9 +11,9 @@
 
 /* media css starts here */
 @media only screen and (min-width: 1024px){
-    .our-customer-main{gap: 113px;}
-    .our-customer-image{flex: 0 0 437px;}
-    .our-customer-text{flex: 1;}
+    .our-customer-main{gap: 113px; padding: 140px 0 119px;}
+    .our-customer-left{width: 437px;}
+    .our-customer-right{width: calc(100% - 550px);}
 }
 
 

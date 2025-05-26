@@ -18,6 +18,7 @@ import { jslineanimation } from './module/js-line-animation';
 import { support } from './module/support';
 import { Stickyfeature } from './module/careerstickyfeature';
 import { innovation } from './module/innovation';
+import { slider } from './module/slider';
 
 (() => {
   mylenis.init();
@@ -39,6 +40,7 @@ import { innovation } from './module/innovation';
   support.init();
   Stickyfeature.init();
   innovation.init();
+  slider.init();
 })();
 
 let scrolled = window.scrollY;
