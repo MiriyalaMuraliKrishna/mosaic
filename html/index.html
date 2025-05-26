@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-CA" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1" />
+  <meta name="keywords" content="HTML, CSS, XML, PHP, JavaScript, jQuery" />
+  <meta name="description" content="Mosaic is expand your 3d printing horizons etc..." />
+  <!-- Title -->
+  <title>Mosaic: 01 Home Page Template</title>
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="150x150" href="images/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="180x180" href="images/web-app-manifest-192x192.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/web-app-manifest-512x512.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/apple-touch-icon.png" />
+
+  <!-- Font Base -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- Icon Base -->
+  <script src="https://kit.fontawesome.com/daf2e8de71.js" crossorigin="anonymous"></script>
+  <!-- CSS Base -->
+  <link rel="stylesheet" href="./style.css" media="all" />
+  <link rel="stylesheet" href="./style.bundle.css" media="all" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container no-auto">
+      <div class="header flex flex-vcenter">
+        <div class="logo">
+          <a href="index.html">
+            <img width="177" height="49" src="images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div role="button" aria-label="Open menu"
+          class="humburger-btn mbl-blue-bg white-bg flex flex-col flex-center radius-50">
+          <span class="humburger-line"></span>
+          <span class="humburger-line"></span>
+          <span class="humburger-line"></span>
+        </div>
+        <div class="header_right">
+          <nav role="navigation" class="navigation flex radius-70">
+            <ul class="main_menu m-0 flex no-disc">
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Use Cases</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="products-meterial.html">Materials</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="support.html">Support</a></li>
+              <li><a href="#">Company</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </header>
+  <main class="site-main-cover"><!-- site starts here -->
+    <section class="calc-part-section green-bg">
+      <div class="container">
+        <div class="calc-part-main inverted-blk">
+          <div class="calc-part-text">
+            <h2>Reduce Your Total Cost Per Part</h2>
+            <p>Transform the economics of your 3D printing operations with Array, our automated, factory-connected platform built for high-throughput production.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+       <section class="our-customer-section">
+      <div class="container">
+        <div class="our-customer-main flex flex-vcenter">
+          <div class="our-customer-image relative">
+            <picture class="object-fit radius-img-30">
+              <img src="images/video@2x.jpg" alt="">
+            </picture>
+          </div>
+          <div class="our-customer-text">
+            <h2 class="fs-44 lh-54">What Our Customers Say</h2>
+            <blockquote>
+              <p>Mosaic’s Array system has completely transformed our workflow. The automation and multi-material
+              capabilities allow us to scale production without constant oversight. We’ve cut lead times by 50% and
+              improved part consistency- an absolute game-changer!</p>
+            </blockquote>
+              <div class="our-customer-avatar fs-20 flex flex-col">
+                  <figure class="our-customer-avatar-logo object-fit">
+                    <img src="images/Stripe_Logo.svg" alt="">
+                  </figure>
+                  <div class="d-block muted-light"><span class="white">Alex R.</span>, Manufacturing Engineer</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-articles-section relative z-2">
+      <div class="featured-articles-main">
+        <div class="container">
+          <div class="featured-articles-head flex">
+            <div class="featured-articles-title">
+              <h2 class="mb-0">Featured Articles</h2>
+            </div>
+          </div>
+        </div>
+        <div class="featured-articles-row flex">
+          <div class="featured-articles-post radius-40 relative o-hidden">
+            <div class="featured-articles-bg radius-40 background-bg"></div>
+            <div class="featured-articles-image absolute">
+              <picture class="object-fit">
+                <source srcset="images/Material-Pod.svg" media="(min-width: 768px)">
+                <img src="images/Filament-Spools-mobile.svg" alt="">
+              </picture>
+            </div>
+            <div class="featured-articles-text relative">
+              <span class="optional-text text-upper flex flex-col">Innovation<span
+                  class="stripe-line line-white d-block"></span></span>
+              <div class="featured-articles-desc inverted">
+                <h2 class="f-600"><a href="resource-default.html">How Multi-Material 3D Printing is Revolutionizing
+                    Manufacturing</a></h2>
+                <a href="#" class="button flex flex-center text-upper">Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path
+                      d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                      fill="#1AD1B1"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-articles-right flex flex-col">
+            <div class="featured-articles-sm radius-40 relative flex o-hidden">
+              <div class="featured-articles-bg radius-40 background-bg"></div>
+              <div class="featured-articles-image absolute">
+                <picture class="object-fit">
+                  <source srcset="images/path1700.svg" media="(min-width: 768px)">
+                  <img src="images/process.svg" alt="">
+                </picture>
+              </div>
+              <div class="featured-articles-text relative">
+                <span class="optional-text text-upper flex flex-col">SUSTAINABILITY<span
+                    class="stripe-line line-white d-block"></span></span>
+                <div class="featured-articles-desc inverted">
+                  <h2 class="fs-22 lh-32 f-600"><a href="">How Multi-Material 3D Printing Reduces Waste and Improves
+                      Efficiency
+                    </a></h2>
+                  <a href="#" class="button flex flex-center text-upper">Read More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                      <path
+                        d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                        fill="#1AD1B1"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="featured-articles-sm radius-40 relative flex o-hidden">
+              <div class="featured-articles-bg radius-40 background-bg"></div>
+              <div class="featured-articles-image absolute">
+                <picture class="object-fit">
+                  <source srcset="images/Print-Head.svg" media="(min-width: 768px)">
+                  <img src="images/Print-Head-Mobile.svg" alt="">
+                </picture>
+              </div>
+              <div class="featured-articles-text relative">
+                <span class="optional-text text-upper flex flex-col">Technology<span
+                    class="stripe-line line-white d-block"></span></span>
+                <div class="featured-articles-desc inverted">
+                  <h2 class="fs-22 lh-32 f-600"><a href="">The Future of Automated 3D Printing: Faster, Smarter, and
+                      More Scalable
+                    </a></h2>
+                  <a href="#" class="button flex flex-center text-upper">Read More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                      <path
+                        d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                        fill="#1AD1B1"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="unlock-cta-section">
+      <div class="container">
+        <div class="unlock-cta-main flex flex-vcenter green-bg radius-30">
+          <div class="unlock-cta-text inverted-blk">
+            <h2 class="h4">Unlock the Future of 3D Printing Today</h2>
+            <p>
+              Enhance productivity, print with more materials, and scale
+              effortlessly with cutting-edge automation.
+            </p>
+          </div>
+          <div class="unlock-cta-btn">
+            <a href="#" class="button btn-reverse flex flex-center text-upper">GET Started
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                <path
+                  d="M10.998 9.84473H9.49805V2.65527L1.24805 10.9053L0.1875 9.84473L8.4375 1.59473H0.748047V0.0947266H10.998V9.84473Z"
+                  fill="black" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main><!-- site starts here -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer flex">
+        <div class="footer-lt">
+          <div class="footer-logo">
+            <a class="flex" href="index.html">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+          </div>
+          <ul class="footer-links no-disc" role="navigation">
+            <li>
+              <a href="" class="stripe-btn-line">Support Ticket<span class="stripe-line line-light d-block"></span></a>
+            </li>
+            <li>
+              <a href="" class="stripe-btn-line">FAQs<span class="stripe-line line-light d-block"></span></a>
+            </li>
+            <li>
+              <a href="" class="stripe-btn-line">Troubleshooting Guides<span
+                  class="stripe-line line-light d-block"></span></a>
+            </li>
+          </ul>
+          <div class="hide-mobile hide-tablet">
+            <div class="copyrights-main flex flex-col muted-light fs-13 lh-20">
+              <div class="copyrights-text">
+                <p>
+                  Copyright © 2025 Mosaic Manufacturing.<br />
+                  All Rights Reserved.
+                </p>
+              </div>
+              <ul class="copyrights-menu flex m-0 no-disc">
+                <li class="mb-0">
+                  <a href="">Privacy Policy</a>
+                </li>
+                <li class="mb-0">
+                  <a href="">Terms & Conditions</a>
+                </li>
+                <li class="mb-0">
+                  <a href="">Warranty</a>
+                </li>
+                <li class="mb-0">
+                  <a href="">Patents</a>
+                </li>
+              </ul>
+              <ul class="social-icons flex m-0 no-disc">
+                <li>
+                  <a target="_blank" rel="noopener" href="https://www.facebook.com/" class="flex flex-center">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noopener" href="https://www.instagram.com/" class="flex flex-center">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noopener" href="https://x.com/" class="flex flex-center">
+                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-rt inverted flex flex-col">
+          <div class="footer-list">
+            <ul class="foter-nav-links no-disc flex" role="navigation">
+              <li>
+                <a href="">
+                  <span class="stripe-line line-green d-block"></span>Solutions<svg xmlns="http://www.w3.org/2000/svg"
+                    width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path
+                      d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z"
+                      fill="#1AD1B1" />
+                  </svg>
+                </a><!-- if no need link add clss no_link in a tag -->
+                <ul class="flex no-disc m-0">
+                  <li><a href="">Customization at Scale</a></li>
+                  <li><a href="">On-Demand Production</a></li>
+                  <li><a href="">Digital Inventory Management</a></li>
+                  <li><a href="">Supply-Chain Reorganization</a></li>
+                  <li><a href="">Product Lifecycle Support</a></li>
+                  <li><a href="">Sustainable Manufacturing</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href=""><span class="stripe-line line-green d-block"></span>Use
+                  Cases<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path
+                      d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                <ul class="flex no-disc m-0">
+                  <li><a href="">Logistics</a></li>
+                  <li><a href="">Aerospace / Defence</a></li>
+                  <li><a href="">Supply Chain</a></li>
+                  <li><a href="">Consumer Goods</a></li>
+                  <li><a href="">Contract Manufacturing</a></li>
+                  <li><a href="">Education</a></li>
+                  <li><a href="">Healthcare</a></li>
+                  <li><a href="">Orthotics</a></li>
+                  <li><a href="">Lighting</a></li>
+                  <li><a href="">Spare Parts</a></li>
+                  <li><a href="">Robotics</a></li>
+                  <li><a href="">Emblems</a></li>
+                  <li><a href="">Automation</a></li>
+                  <li><a href="">Jigs and Fixtures</a></li>
+                  <li><a href="">Apparel and Fashion</a></li>
+                  <li><a href="">Tooling</a></li>
+                  <li><a href="">Furniture and Interior Design</a></li>
+                  <li><a href="">End-Use Parts</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <ul class="foter-nav-links no-disc flex" role="navigation">
+
+              <li>
+                <a href=""><span class="stripe-line line-green d-block"></span>Products<svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path
+                      d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z"
+                      fill="#1AD1B1" />
+                  </svg>
+                </a>
+                <ul class="flex no-disc m-0">
+                  <li><a href="">Array</a></li>
+                  <li><a href="">Element</a></li>
+                  <li><a href="">Palette X</a></li>
+                  <li><a href="">Canvas</a></li>
+                  <li><a href="">Mosaic Solutions</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">
+                  <span class="stripe-line line-green d-block"></span>Materials<svg xmlns="http://www.w3.org/2000/svg"
+                    width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path
+                      d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                <ul class="flex no-disc m-0">
+                  <li><a href="">Stitch</a></li>
+                  <li><a href="">PLA</a></li>
+                  <li><a href="">Aero</a></li>
+                  <li><a href="">TPU</a></li>
+                  <li><a href="">Matrix</a></li>
+                  <li><a href="">PEEK</a></li>
+                  <li><a href="">Flex</a></li>
+                  <li><a href="">PEEK</a></li>
+                  <li><a href="">ASA</a></li>
+                  <li><a href="">Dissolve LT</a></li>
+                  <li><a href="">ABS</a></li>
+                  <li><a href="">HIPS</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href=""><span class="stripe-line line-green d-block"></span>Company<svg
+                    xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path
+                      d="M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z"
+                      fill="#1AD1B1" />
+                  </svg></a>
+                <ul class="flex no-disc m-0">
+                  <li><a href="">About Mosaic</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Resources</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hide-desktop">
+          <div class="copyrights-main flex flex-col muted-light fs-13 lh-20">
+            <div class="copyrights-text">
+              <p>
+                Copyright © 2025 Mosaic Manufacturing.<br />
+                All Rights Reserved.
+              </p>
+            </div>
+            <ul class="copyrights-menu flex m-0 no-disc">
+              <li class="mb-0">
+                <a href="">Privacy Policy</a>
+              </li>
+              <li class="mb-0">
+                <a href="">Terms & Conditions</a>
+              </li>
+              <li class="mb-0">
+                <a href="">Warranty</a>
+              </li>
+              <li class="mb-0">
+                <a href="">Patents</a>
+              </li>
+            </ul>
+            <ul class="social-icons flex m-0 no-disc">
+              <li>
+                <a target="_blank" rel="noopener" href="https://www.facebook.com/" class="flex flex-center">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="https://www.instagram.com/" class="flex flex-center">
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="https://x.com/" class="flex flex-center">
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="dist/core.bundle.js"></script>
+</body>
+
+</html>
