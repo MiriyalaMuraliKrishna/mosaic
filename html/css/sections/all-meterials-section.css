@@ -37,9 +37,15 @@
 }
 .half-circle-pos{width: 101px; height: 63px;}
 
+@media only screen and (max-width: 1279px) and (min-width: 1024px){
+    .all-meterials-main {padding: 40px;}
+    .all-meterials-images{flex: 0 0 430px;}
+    .all-meterials-text{max-width: 350px;}
+    .all-meterials-text h2{font-size: 48px; line-height: 58px;}
+}
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    .all-meterials-main{padding: 40px;}
+    .all-meterials-main{padding: 60px;}
     .all-meterials-images{margin: 0 auto 60px;}
     .all-meterials-text{max-width: 100%; width: 100%;}
 }
@@ -58,4 +64,13 @@
     .all-meterials-count{font-size: 18px; letter-spacing: -0.54px;}
     .progress-circle{height: 72px; left: -7px; top: 3px; width: 72px; transform: rotate(-93deg);}
     .all-meterials-text{max-width: 100%; width: 100%; }
+}
+@media screen and (max-width: 413px) and (min-width: 200px) {
+    .all-meterials-lg-icon{flex: 0 0 155px;}
+}
+@media screen and (max-width: 375px) and (min-width: 200px) {
+    .all-meterials-images{gap: 20px;}
+    .all-meterials-thumb{display: block; text-align: center;}
+    .all-meterials-thumb:nth-child(2n+1) .all-meterials-sm-icon{margin-top: 20px;}
+    .all-meterials-sm-icon{margin-top: 20px;}
 }
