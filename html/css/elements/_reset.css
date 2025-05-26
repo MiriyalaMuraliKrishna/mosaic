@@ -246,6 +246,7 @@ span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; displ
 .deep-teal-bg{background-color: var(--Deep-Teal);}
 .green-bg{background-color: var(--Green);}
 
+.white{color: var(--White);}
 .white-40{color: var(--White-40);}
 .white-50{color: var(--White-50);}
 .white-60{color: var(--White-60);}
@@ -282,6 +283,7 @@ span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; displ
 .fs-32{ font-size: 2rem; line-height: 2rem; }
 .fs-38{ font-size: 38px; line-height: 48px; }
 .fs-40{ font-size: 2.5rem; line-height: 2.5rem;}
+.fs-44{ font-size: 44px;}
 .fs-72{font-size: 72px; line-height: 125%;}
 .fs-64{font-size: 64px; line-height: 125%;}
 .fs-80{font-size: 80px; line-height: 125%;}
@@ -300,6 +302,7 @@ span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; displ
 .lh-34{line-height: 34px;}
 .lh-38{line-height: 38px;}
 .lh-50{line-height: 50px;}
+.lh-54{line-height: 54px;}
 .lh-68{line-height: 68px;}
 
 .radius-2, .radius-img-2 img{border-radius: 2px;}

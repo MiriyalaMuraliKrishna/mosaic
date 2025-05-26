@@ -11,6 +11,18 @@
 @import url('./elements/_formidable.css');
 
 
+/*-- 01 Home page --*/
+@import url('./sections/calc-part-section.css');
+@import url('./sections/our-customer-section.css');
+
+
+
+
+
+
+
+
+
 /*-- 06 prod meterials section page --*/
 @import url('./sections/meterials-banner-section.css');
 @import url('./sections/prod-meterials-section.css');
