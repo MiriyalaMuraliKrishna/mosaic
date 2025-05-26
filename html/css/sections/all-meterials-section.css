@@ -69,8 +69,9 @@
     .all-meterials-lg-icon{flex: 0 0 155px;}
 }
 @media screen and (max-width: 374px) and (min-width: 200px) {
-    .all-meterials-images{gap: 20px;}
-    .all-meterials-thumb{display: block; text-align: center;}
-    .all-meterials-thumb:nth-child(2n+1) .all-meterials-sm-icon{margin-top: 20px;}
-    .all-meterials-sm-icon{margin-top: 20px;}
+    .all-meterials-thumb{gap: 10px;}
+     .all-meterials-lg-icon { flex: 0 0 125px; min-height: 155px;}
+     .all-meterials-lg-icon img { max-width: 100px; }
+     .all-meterials-sm-icon{flex: 0 0 123px; padding: 15px; }
+     .all-meterials-thumb.row-reverse .all-meterials-sm-icon svg{width: 90px;}
 }
