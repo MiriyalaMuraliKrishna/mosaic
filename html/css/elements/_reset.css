@@ -241,6 +241,7 @@ span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; displ
 
 .white-bg{background-color: var(--White);}
 .white-bg-10{background-color: var(--White-10);}
+.white-bg-20{background-color: var(--White-20);}
 .black-bg{background-color: var(--Black);}
 .gray-bg{background: var(--Gray);}
 .deep-teal-bg{background-color: var(--Deep-Teal);}

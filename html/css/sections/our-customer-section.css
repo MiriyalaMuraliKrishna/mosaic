@@ -1,5 +1,6 @@
 
 
+
 .our-customer-text h2{margin-bottom: 30px;}
 
 .our-customer-text blockquote{padding: 0; margin: 0;}
@@ -8,12 +9,16 @@
 .our-customer-avatar{gap: 28px; padding-top: 47px;}
 .our-customer-avatar-logo{max-width: 85px;}
 
+.swiper-buttons{width: 92px; gap: 12px; top: 0; right: 0;}
+.swiper-button{width: 40px; height: 40px; margin: 0; position: static;}
+.swiper-button::after, .swiper-button::before{display: none;}
 
 /* media css starts here */
 @media only screen and (min-width: 1024px){
     .our-customer-main{gap: 113px; padding: 140px 0 119px;}
     .our-customer-left{width: 437px;}
     .our-customer-right{width: calc(100% - 550px);}
+    .our-customer-head{padding-right: 92px;}
 }
 
 

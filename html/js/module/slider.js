@@ -9,18 +9,35 @@ class Slider {
     this.customSlider();
   }
   customSlider() {
-    const left = this.customele.querySelector('.our-customer-for');
-    const right = this.customele.querySelector('.our-customer-right');
+    const left = this.customele.querySelector('.our-customer-left');
+    const right = this.customele.querySelector('.our-customer-nav');
     // console.log(left);
-    new Swiper(left, {
+    const leftswiper = new Swiper(left, {
+      effect: 'coverflow',
       slidesPerView: 1,
-      speed: 400,
-      spaceBetween: 100,
+      speed: 800,
+      spaceBetween: 0,
+      coverflowEffect: {
+        rotate: 100,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      watchSlidesProgress: true,
     });
-    new Swiper(right, {
+
+    const rightswiper = new Swiper(right, {
       slidesPerView: 1,
-      speed: 400,
-      spaceBetween: 100,
+      speed: 800,
+      spaceBetween: 0,
+      thumbs: {
+        swiper: leftswiper,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
   }
 }
