@@ -156,9 +156,11 @@
           <div class="overview-main flex flex-vcenter relative">
             <div class="overview-list relative">
               <div class="overview-image absolute">
-                <figure class="object-fit">
-                  <img src="images/Print_Bed_Stack_Empty.svg" alt="">
-                </figure>
+                <div class="overview-slide-thumb transition-10" data-animate="overview-slide-left">
+                  <figure class="object-fit">
+                    <img src="images/Print_Bed_Stack_Empty.svg" alt="">
+                  </figure>
+                </div>
               </div>
               <div class="overview-text muted-light">
                 <h2 class="h3">Mission: Build<br> Without Limits</h2>
@@ -175,9 +177,11 @@
             </div>
             <div class="overview-list relative">
               <div class="overview-image absolute">
-                <figure class="object-fit">
-                  <img src="images/Material-Pod.svg" alt="">
-                </figure>
+                <div class="overview-slide-thumb transition-10" data-animate="overview-slide-right">
+                  <figure class="object-fit">
+                    <img src="images/Material-Pod.svg" alt="">
+                  </figure>
+                </div>
               </div>
               <div class="overview-text muted-light">
                 <h2 class="h3">Vision: The Future, Printed</h2>
@@ -269,8 +273,10 @@
     <section class="innovation-section">
       <div class="container">
         <div class="innovation-main flex">
-          <div class="innovation-text">
-            <h2>Our Journey in 3D Printing Innovation</h2>
+          <div class="innovation-text relative">
+            <div class="sticky-widget">
+              <h2>Our Journey in 3D Printing Innovation</h2>
+            </div>
           </div>
           <div class="innovation-lists flex flex-col relative">
             <div class="innovation-lines absolute">
@@ -557,8 +563,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  <script src="dist/core.bundle.js"></script>
+  <script defer src="dist/DrawSVGPlugin.js"></script>
+  <script defer src="dist/core.bundle.js"></script>
 </body>
-
 </html>
