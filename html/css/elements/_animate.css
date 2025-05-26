@@ -63,6 +63,7 @@
 .line-white{background-color: var(--White);}
 .line-light{background-color: var(--White-15);}
 .line-green{background-color: var(--Green);}
+.line-black{background-color: var(--Black);}
 
 /*-- stripe line animation starts now --*/
 [data-animate="line"]{width: 0; transition: width 1s ease;}

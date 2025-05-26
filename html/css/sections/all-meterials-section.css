@@ -18,6 +18,7 @@
 .all-meterials-lg-icon{flex:  0 0 218px; min-height: 218px;}
 .all-meterials-lg-icon img{max-width: 162px; margin: auto; display: block; object-fit: contain;}
 .all-meterials-sm-icon{flex: 0 0 153px; padding: 30px 26px 26px 27px; backdrop-filter: blur(67px); }
+.all-meterials-sm-x{flex: 0 0 153px; padding: 19px 26px 35px 27px; backdrop-filter: blur(67px); }
 
 .all-meterials-circle-main{width: 86px; height: 86px; margin-bottom: 4px;}
 .progress-inner{width: 74px; height: 74px;}
@@ -36,6 +37,8 @@
     transform: rotate(-180deg);
 }
 .half-circle-pos{width: 101px; height: 63px;}
+
+.all-meterials-x{ color: var(--Purple); font-size: 60px; line-height: 70px; font-weight: 400; letter-spacing: -1.8px; }
 
 @media only screen and (max-width: 1279px) and (min-width: 1024px){
     .all-meterials-main {padding: 40px;}
