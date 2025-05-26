@@ -2,6 +2,8 @@
 
 .featured-articles-main{padding: 26px 0 0;}
 .featured-articles-head{padding-bottom: 71px;}
+.featured-articles-title{flex: 1;}
+.featured-articles-link{width: fit-content;}
 
 .featured-articles-post{padding: 87px 82px 94px;}
 .featured-articles-bg{background-color: var(--White-10);}
