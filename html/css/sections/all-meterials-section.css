@@ -38,6 +38,11 @@
 .half-circle-pos{width: 101px; height: 63px;}
 
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .all-meterials-main{padding: 40px;}
+    .all-meterials-images{margin: 0 auto 60px;}
+    .all-meterials-text{max-width: 100%; width: 100%;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .all-meterials-section .container{padding: 0;}
     .all-meterials-main{padding: 0 21px 80px 20px;}

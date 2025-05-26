@@ -7,11 +7,17 @@
 .unlock-cta-text:nth-child(1):last-child{max-width: 100%;}
 .unlock-cta-btn{margin-left: auto; padding-bottom: 6px;}
 
+@media only screen and (max-width: 1279px) and (min-width: 1024px){
+    .all-meterials-main {padding: 60px;}
+    .all-meterials-images{flex: 0 0 430px;}
+    .all-meterials-text{max-width: 350px;}
+}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
+    .unlock-cta-section{padding-top: 80px;}
     .unlock-cta-main{padding: 39px 40px 44px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .unlock-cta-section{padding-top: 70px;}
+    .unlock-cta-section{padding-top: 90px;}
     .unlock-cta-main{padding: 39px 40px 40px; gap: 25px; align-items: flex-start; flex-direction: column;}
     .unlock-cta-main h2{margin-bottom: 15px;}
     .unlock-cta-text{font-size: 15.5px; line-height: 24px; letter-spacing: -0.465px;}
