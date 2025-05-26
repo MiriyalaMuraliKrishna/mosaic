@@ -68,7 +68,7 @@
 @media screen and (max-width: 413px) and (min-width: 200px) {
     .all-meterials-lg-icon{flex: 0 0 155px;}
 }
-@media screen and (max-width: 375px) and (min-width: 200px) {
+@media screen and (max-width: 374px) and (min-width: 200px) {
     .all-meterials-images{gap: 20px;}
     .all-meterials-thumb{display: block; text-align: center;}
     .all-meterials-thumb:nth-child(2n+1) .all-meterials-sm-icon{margin-top: 20px;}
