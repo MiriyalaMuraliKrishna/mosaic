@@ -19,6 +19,7 @@ import { support } from './module/support';
 import { Stickyfeature } from './module/careerstickyfeature';
 import { innovation } from './module/innovation';
 import { slider } from './module/slider';
+import { magnificPopup } from './module/magnificpopup';
 
 (() => {
   mylenis.init();
@@ -41,6 +42,7 @@ import { slider } from './module/slider';
   Stickyfeature.init();
   innovation.init();
   slider.init();
+  magnificPopup.init();
 })();
 
 let scrolled = window.scrollY;
