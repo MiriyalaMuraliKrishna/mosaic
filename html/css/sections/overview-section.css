@@ -26,6 +26,19 @@
     .overview-slide-right{transform: translateX(0%);}
 }
 
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .overview-head{padding-bottom: 67px; z-index: 2; position: relative;}
+    .overview-head h2{font-size: 46px; letter-spacing: -0.46px; margin-bottom: 29px;}
+    .overview-main{gap: 82px; padding: 0 0 100px;}
+    .overview-image{position: relative; margin-bottom: 51px; left: -50px;}
+    .overview-ellipse{height: 576px; width: 576px; border-radius: 576px;}
+    .overview-ellipse.left{left: -160px; top: -160px;}
+    .overview-slide-thumb{width: 290px;}
+    .overview-list:last-child .overview-image{position: relative; left: 10px;}
+    .overview-list:last-child .overview-slide-thumb{width: 174px;}
+    .overview-ellipse.right{right: 0; top: -175px;}
+}
+
 
 
 

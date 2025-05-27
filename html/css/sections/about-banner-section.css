@@ -6,3 +6,13 @@
 .about-banner-main{padding: 396px 0 177px; max-width: 805px;}
 .about-banner-text h1{padding-top: 20px; margin-bottom: 17px;}
 .about-banner-btns{padding-top: 12px;}
+
+
+@media screen  and (max-width: 767px) and (min-width: 200px){
+    .about-banner-bg img{opacity: .5;}
+    .about-banner-main{padding: 310px 0 0;}
+    .about-banner-text{font-size: 19px; font-weight: 300; letter-spacing: -0.57px;}
+    .about-banner-text h1{margin-bottom: 9px;}
+    .about-banner-text p{margin-bottom: 20px;}
+    .about-banner-btns{padding-top: 0;}
+}
