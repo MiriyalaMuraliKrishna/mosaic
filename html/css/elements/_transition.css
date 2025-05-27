@@ -8,6 +8,6 @@
     --b-transition-9: all .9s ease-in-out;
     --b-transition-10: all 1s ease;
 }
-
+.transition-5{transition: var(--b-transition-5);}
 .transition-8{transition: var(--b-transition-8);}
 .transition-10{transition: var(--b-transition-10);}

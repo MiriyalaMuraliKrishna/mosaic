@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="./style.bundle.css" media="all" />
 </head>
 
-<body>
+<body class="home">
   <header class="site-header">
     <div class="container no-auto">
       <div class="header flex flex-vcenter">
@@ -67,7 +67,17 @@
       </div>
   </header>
   <main class="site-main-cover"><!-- site starts here -->
-    <section class="unlock-3d-section highlight-green">
+    <img src="images/dummy.png" alt="">
+    <section class="scroll-content-section">
+      <div class="container xx-md">
+        <div class="scroll-content-main">
+          <div class="scroll-content-text white-50 fs-38 lh-68 f-400">
+            <p>Mosaic Manufacturing transforms 3D printing with high-performance, multi-material solutions. From automated production systems to industrial-grade printers and filament splicing technology, their innovations enable faster, stronger, and more versatile printing - helping businesses scale, reduce waste, and unlock new creative possibilities. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="unlock-3d-section highlight-green relative z-0">
       <div class="container">
         <div class="unlock-3d-wrap">
           <div class="unlock-3d-main flex flex-vcenter relative">
@@ -99,22 +109,268 @@
         </div>
       </div>
     </section>
-    <section class="calc-part-section green-bg">
-      <div class="container">
-        <div class="calc-part-main inverted-blk">
-          <div class="calc-part-text">
-            <div class="calc-part-line">
-              <span class="stripe-line line-black d-block" data-animate="line"></span>
+    <section class="use-cases-sections relative">
+      <div class="use-cases-container background-bg">
+        <!-- <div class="background-bg use-cases-bg o-hidden">
+        <picture class="object-fit">
+          <source srcset="images/use-case-media@2x.png" media="(min-width:1024px)">
+          <img src="images/careers-banner@2x.jpg" alt="">
+        </picture>
+        <div class="use-cases-overlay background-text"></div>
+      </div> -->
+        <div class="background-bg use-cases-video o-hidden">
+          <div data-vbg="https://www.youtube.com/watch?v=qzCK5sJbEvc"></div>
+          <!-- <div data-vbg="https://vimeo.com/70459392"></div> -->
+          <!-- <video autoplay muted loop>
+            <source src="images/array.mp4" type="video/mp4" />
+          </video> -->
+          <div class="use-cases-overlay background-text"></div>
+        </div>
+      </div>
+      <div class="container x-md">
+        <div class="use-cases-wrap">
+          <div class="use-cases-main">
+            <div class="use-cases-head">
+              <span class="optional-text white-40 text-upper d-block">Use Cases</span>
+              <h2 class="f-400 green"><span>Seamless</span> 3D Printing Innovation – From Prototyping to <span>Scalable
+                  Production</span></h2>
             </div>
-            <h2>Reduce Your<br> Total Cost Per Part</h2>
-            <div class="calc-part-desc">
-              <p>Transform the economics of your 3D printing operations with Array, our automated, factory-connected
-                platform built for high-throughput production.</p>
+            <ul class="use-cases-links flex no-disc m-0">
+              <li class="mb-0"><a class="flex flex-col" href="javascript:void(0)" data-page="Industries">Industries<span
+                    class="stripe-line line-light d-block"></span></a></li>
+              <li class="mb-0"><a class="flex flex-col" href="javascript:void(0)"
+                  data-page="Application">Application<span class="stripe-line line-light d-block"></span></a></li>
+            </ul>
+            <div class="use-cases-row">
+              <div class="use-cases-slider" data-slider="Industries">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide use-cases-slide transition-5">
+                    <div class="use-cases-image">
+                      <picture class="object-fit radius-img-30">
+                        <img src="images/case-card1@2x.jpg" alt="">
+                      </picture>
+
+                    </div>
+                    <div class="use-cases-text background-text">
+                      <div class="use-cases-text-overlay background-bg"></div>
+                      <h2 class="fs-31 lh-36 no-letter-space f-400">Smarter Textiles Prototyping</h2>
+                      <div class="use-cases-desc">
+                        <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                        <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                        <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                        <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                        <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                      </div>
+                      <a class="text-link white up flex flex-vcenter text-upper" href="#"><span class="hide">Learn
+                          More</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"
+                          fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.8106 10.3447V0.594727H0.560608V2.09473H8.25L0 10.3447L1.06055 11.4053L9.31061 3.15521V10.3447H10.8106Z"
+                            fill="white" />
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide use-cases-slide transition-5">
+                    <div class="use-cases-image">
+                      <picture class="object-fit radius-img-30">
+                        <img src="images/case-card2@2x.jpg" alt="">
+                      </picture>
+
+                    </div>
+                    <div class="use-cases-text background-text">
+                      <div class="use-cases-text-overlay background-bg"></div>
+                      <h2 class="fs-31 lh-36 no-letter-space f-400">Smarter Textiles Prototyping</h2>
+                      <div class="use-cases-desc">
+                        <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                      </div>
+                      <a class="text-link white up flex flex-vcenter text-upper" href="#"><span class="hide">Learn
+                          More</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"
+                          fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.8106 10.3447V0.594727H0.560608V2.09473H8.25L0 10.3447L1.06055 11.4053L9.31061 3.15521V10.3447H10.8106Z"
+                            fill="white" />
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide use-cases-slide transition-5">
+                    <div class="use-cases-image">
+                      <picture class="object-fit radius-img-30">
+                        <img src="images/case-card3@2x.jpg" alt="">
+                      </picture>
+
+                    </div>
+                    <div class="use-cases-text background-text">
+                      <div class="use-cases-text-overlay background-bg"></div>
+
+                      <h2 class="fs-31 lh-36 no-letter-space f-400">Smarter Textiles Prototyping</h2>
+                      <div class="use-cases-desc">
+                        <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                      </div>
+                      <a class="text-link white up flex flex-vcenter text-upper" href="#"><span class="hide">Learn
+                          More</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"
+                          fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.8106 10.3447V0.594727H0.560608V2.09473H8.25L0 10.3447L1.06055 11.4053L9.31061 3.15521V10.3447H10.8106Z"
+                            fill="white" />
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide use-cases-slide transition-5">
+                    <div class="use-cases-image">
+                      <picture class="object-fit radius-img-30">
+                        <img src="images/case-card1@2x.jpg" alt="">
+                      </picture>
+
+                    </div>
+                    <div class="use-cases-text background-text">
+                      <div class="use-cases-text-overlay background-bg"></div>
+
+                      <h2 class="fs-31 lh-36 let f-400">Smarter Textiles Prototyping</h2>
+                      <div class="use-cases-desc">
+                        <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                      </div>
+                      <a class="text-link white up flex flex-vcenter text-upper" href="#"><span class="hide">Learn
+                          More</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"
+                          fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.8106 10.3447V0.594727H0.560608V2.09473H8.25L0 10.3447L1.06055 11.4053L9.31061 3.15521V10.3447H10.8106Z"
+                            fill="white" />
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button swiper-button-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="#1AD1B1" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.7482 18.295L22.0411 12.0021L20.6269 10.5879L12.6269 18.5879L11.9198 19.295L12.6269 20.0021L20.6269 28.0021L22.0411 26.5879L15.7482 20.295L29.334 20.295V18.295L15.7482 18.295Z"
+                      fill="black" />
+                  </svg>
+                </div>
+                <div class="swiper-button swiper-button-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="20" fill="#1AD1B1" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M24.2518 18.295L17.9589 12.0021L19.3731 10.5879L27.3731 18.5879L28.0802 19.295L27.3731 20.0021L19.3731 28.0021L17.9589 26.5879L24.2518 20.295L10.666 20.295V18.295L24.2518 18.295Z"
+                      fill="black" />
+                  </svg>
+                </div>
+              </div>
+              <div class="use-cases-slider" data-slider="Application">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide use-cases-slide transition-5">
+                    <div class="use-cases-image">
+                      <picture class="object-fit radius-img-30">
+                        <img src="images/case-card1@2x.jpg" alt="">
+                      </picture>
+
+                    </div>
+                    <div class="use-cases-text background-text">
+                      <div class="use-cases-text-overlay background-bg"></div>
+
+                      <h2 class="fs-31 lh-36 no-letter-space f-400">Smarter Textiles Prototyping</h2>
+                      <div class="use-cases-desc">
+                        <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                      </div>
+                      <a class="text-link white up flex flex-vcenter text-upper" href="#"><span class="hide">Learn
+                          More</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"
+                          fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.8106 10.3447V0.594727H0.560608V2.09473H8.25L0 10.3447L1.06055 11.4053L9.31061 3.15521V10.3447H10.8106Z"
+                            fill="white" />
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide use-cases-slide transition-5">
+                    <div class="use-cases-image">
+                      <picture class="object-fit radius-img-30">
+                        <img src="images/case-card1@2x.jpg" alt="">
+                      </picture>
+
+                    </div>
+                    <div class="use-cases-text background-text">
+                      <div class="use-cases-text-overlay background-bg"></div>
+
+                      <h2 class="fs-31 lh-36 no-letter-space f-400">Smarter Textiles Prototyping</h2>
+                      <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide use-cases-slide transition-5">
+                    <div class="use-cases-image">
+                      <picture class="object-fit radius-img-30">
+                        <img src="images/case-card1@2x.jpg" alt="">
+                      </picture>
+
+                    </div>
+                    <div class="use-cases-text background-text">
+                      <div class="use-cases-text-overlay background-bg"></div>
+
+                      <h2 class="fs-31 lh-36 no-letter-space f-400">Smarter Textiles Prototyping</h2>
+                      <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide use-cases-slide transition-5">
+                    <div class="use-cases-image">
+                      <picture class="object-fit radius-img-30">
+                        <img src="images/case-card1@2x.jpg" alt="">
+                      </picture>
+
+                    </div>
+                    <div class="use-cases-text background-text">
+                      <div class="use-cases-text-overlay background-bg"></div>
+
+                      <h2 class="fs-31 lh-36 let f-400">Smarter Textiles Prototyping</h2>
+                      <p>Accelerating innovation in wearables with multi-material 3D printed fabrics.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button swiper-button-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="#1AD1B1" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.7482 18.295L22.0411 12.0021L20.6269 10.5879L12.6269 18.5879L11.9198 19.295L12.6269 20.0021L20.6269 28.0021L22.0411 26.5879L15.7482 20.295L29.334 20.295V18.295L15.7482 18.295Z"
+                      fill="black" />
+                  </svg>
+                </div>
+                <div class="swiper-button swiper-button-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="20" fill="#1AD1B1" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M24.2518 18.295L17.9589 12.0021L19.3731 10.5879L27.3731 18.5879L28.0802 19.295L27.3731 20.0021L19.3731 28.0021L17.9589 26.5879L24.2518 20.295L10.666 20.295V18.295L24.2518 18.295Z"
+                      fill="black" />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="calc-part-tot flex white-bg-20 radius-40">
+        </div>
+      </div>
+    </section>
+    <section class="calc-part-section green-bg">
+      <div class="container">
+        <div class="calc-part-wrap inverted-blk">
+          <div class="calc-part-main relative">
+            <div class="calc-part-text relative z-2">
+              <div class="calc-part-line">
+                <span class="stripe-line line-black d-block" data-animate="line"></span>
+              </div>
+              <h2>Reduce Your<br> Total Cost Per Part</h2>
+              <div class="calc-part-desc">
+                <p>Transform the economics of your 3D printing operations with Array, our automated, factory-connected
+                  platform built for high-throughput production.</p>
+              </div>
+            </div>
+            <div class="calc-part-image absolute">
+              <picture class="calc-part-thumb object-fit">
+                <img src="images/Print-Bed-Stack+High.svg" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="calc-part-tot flex white-bg-20 radius-40 relative z-3">
             <div class="calc-part-cost">
-              <h2 class="h4 f-600">Total Cost per Part Calculator</h2>
+              <div class="calc-part-head">
+                <h2 class="h4 f-600">Total Cost per Part Calculator</h2>
+              </div>
               <ol class="calc-part-steps flex flex-col">
                 <li class="mb-0">Select Materials</li>
                 <li class="mb-0">Product Details</li>
@@ -122,7 +378,34 @@
               </ol>
             </div>
             <div class="calc-part-choose">
-              <span class="fs-20 lh-24 f-600">Choose up to 5 materials</span>
+              <div class="calc-part-up flex flex-vcenter">
+                <span class="fs-20 lh-24 f-600">Choose up to 5 materials</span>
+                <span class="muted-dark">3/5</span>
+              </div>
+              <ul class="calc-part-inputs no-disc flex m-0">
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+                <li class="mb-0 transition-5">ABS</li>
+              </ul>
+              <div class="calc-part-btns">
+                <a target="_blank" href="#" class="button btn-reverse flex flex-center text-upper">Next Step
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.9053 9.84473V0.0947266H0.655335V1.59473H8.34473L0.0947266 9.84473L1.15527 10.9053L9.40534 2.65521V9.84473H10.9053Z"
+                      fill="black" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -134,160 +417,179 @@
           <div class="hide-desktop">
             <h2 class="fs-44 lh-54">What Our Customers Say</h2>
           </div>
-        <div class="our-customer-main flex flex-vcenter">
-          <div class="our-customer-left relative o-hidden radius-30">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="our-customer-image relative">
-                  <picture class="object-fit radius-img-30">
-                    <img src="images/video@2x.jpg" alt="">
-                  </picture>
-                  <div class="play-btn-main green-bg radius-50">
-                    <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc" class="popup-youtube play-btn flex flex-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
-                        <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
-                      </svg>
-                    </a>
+          <div class="our-customer-main flex flex-vcenter">
+            <div class="our-customer-left relative o-hidden radius-30">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="our-customer-image relative">
+                    <picture class="object-fit radius-img-30">
+                      <img src="images/video@2x.jpg" alt="">
+                    </picture>
+                    <div class="play-btn-main green-bg radius-50">
+                      <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc"
+                        class="popup-youtube play-btn flex flex-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                          <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="our-customer-image relative">
-                  <picture class="object-fit radius-img-30">
-                    <img src="images/video@2x.jpg" alt="">
-                  </picture>
-                  <div class="play-btn-main green-bg radius-50">
-                    <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc" class="popup-youtube play-btn flex flex-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
-                        <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
-                      </svg>
-                    </a>
+                <div class="swiper-slide">
+                  <div class="our-customer-image relative">
+                    <picture class="object-fit radius-img-30">
+                      <img src="images/video@2x.jpg" alt="">
+                    </picture>
+                    <div class="play-btn-main green-bg radius-50">
+                      <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc"
+                        class="popup-youtube play-btn flex flex-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                          <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+                <div class="swiper-slide">
 
-                <div class="our-customer-image relative">
-                  <picture class="object-fit radius-img-30">
-                    <img src="images/video@2x.jpg" alt="">
-                  </picture>
-                  <div class="play-btn-main green-bg radius-50">
-                    <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc" class="popup-youtube play-btn flex flex-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
-                        <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
-                      </svg>
-                    </a>
+                  <div class="our-customer-image relative">
+                    <picture class="object-fit radius-img-30">
+                      <img src="images/video@2x.jpg" alt="">
+                    </picture>
+                    <div class="play-btn-main green-bg radius-50">
+                      <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc"
+                        class="popup-youtube play-btn flex flex-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                          <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+                <div class="swiper-slide">
 
-                <div class="our-customer-image relative">
-                  <picture class="object-fit radius-img-30">
-                    <img src="images/video@2x.jpg" alt="">
-                  </picture>
-                  <div class="play-btn-main green-bg radius-50">
-                    <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc" class="popup-youtube play-btn flex flex-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
-                        <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
-                      </svg>
-                    </a>
+                  <div class="our-customer-image relative">
+                    <picture class="object-fit radius-img-30">
+                      <img src="images/video@2x.jpg" alt="">
+                    </picture>
+                    <div class="play-btn-main green-bg radius-50">
+                      <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc"
+                        class="popup-youtube play-btn flex flex-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                          <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="our-customer-right relative o-hidden">
-            <div class="our-customer-head hide-mobile">
-              <h2 class="fs-44 lh-54">What Our Customers Say</h2>
-            </div>
-            <div class="our-customer-nav">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="our-customer-text">
-                  <blockquote>
-                    <p>Mosaic’s Array system has completely transformed our workflow. The automation and multi-material
-                      capabilities allow us to scale production without constant oversight. We’ve cut lead times by 50%
-                      and
-                      improved part consistency- an absolute game-changer!</p>
-                  </blockquote>
-                  <div class="our-customer-avatar fs-20 flex flex-col">
-                    <figure class="our-customer-avatar-logo object-fit">
-                      <img src="images/Stripe_Logo.svg" alt="">
-                    </figure>
-                    <div class="d-block muted-light"><span class="white">Alex R.</span>, Manufacturing Engineer</div>
+            <div class="our-customer-right relative o-hidden">
+              <div class="our-customer-head hide-mobile">
+                <h2 class="fs-44 lh-54">What Our Customers Say</h2>
+              </div>
+              <div class="our-customer-nav">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="our-customer-text">
+                      <blockquote>
+                        <p>Mosaic’s Array system has completely transformed our workflow. The automation and
+                          multi-material
+                          capabilities allow us to scale production without constant oversight. We’ve cut lead times by
+                          50%
+                          and
+                          improved part consistency- an absolute game-changer!</p>
+                      </blockquote>
+                      <div class="our-customer-avatar fs-20 flex flex-col">
+                        <figure class="our-customer-avatar-logo object-fit">
+                          <img src="images/Stripe_Logo.svg" alt="">
+                        </figure>
+                        <div class="d-block muted-light"><span class="white">Alex R.</span>, Manufacturing Engineer
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="our-customer-text">
+                      <blockquote>
+                        <p>Mosaic’s Array system has completely transformed our workflow. The automation and
+                          multi-material
+                          capabilities allow us to scale production without constant oversight. We’ve cut lead times by
+                          50%
+                          and
+                          improved part consistency- an absolute game-changer!</p>
+                      </blockquote>
+                      <div class="our-customer-avatar fs-20 flex flex-col">
+                        <figure class="our-customer-avatar-logo object-fit">
+                          <img src="images/Stripe_Logo.svg" alt="">
+                        </figure>
+                        <div class="d-block muted-light"><span class="white">Alex R.</span>, Manufacturing Engineer
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="our-customer-text">
+                      <blockquote>
+                        <p>Mosaic’s Array system has completely transformed our workflow. The automation and
+                          multi-material
+                          capabilities allow us to scale production without constant oversight. We’ve cut lead times by
+                          50%
+                          and
+                          improved part consistency- an absolute game-changer!</p>
+                      </blockquote>
+                      <div class="our-customer-avatar fs-20 flex flex-col">
+                        <figure class="our-customer-avatar-logo object-fit">
+                          <img src="images/Stripe_Logo.svg" alt="">
+                        </figure>
+                        <div class="d-block muted-light"><span class="white">Alex R.</span>, Manufacturing Engineer
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="our-customer-text">
+                      <blockquote>
+                        <p>Mosaic’s Array system has completely transformed our workflow. The automation and
+                          multi-material
+                          capabilities allow us to scale production without constant oversight. We’ve cut lead times by
+                          50%
+                          and
+                          improved part consistency- an absolute game-changer!</p>
+                      </blockquote>
+                      <div class="our-customer-avatar fs-20 flex flex-col">
+                        <figure class="our-customer-avatar-logo object-fit">
+                          <img src="images/Stripe_Logo.svg" alt="">
+                        </figure>
+                        <div class="d-block muted-light"><span class="white">Alex R.</span>, Manufacturing Engineer
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-buttons flex absolute">
+                  <div class="swiper-button swiper-button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                      <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="#1AD1B1" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.7482 18.295L22.0411 12.0021L20.6269 10.5879L12.6269 18.5879L11.9198 19.295L12.6269 20.0021L20.6269 28.0021L22.0411 26.5879L15.7482 20.295L29.334 20.295V18.295L15.7482 18.295Z"
+                        fill="black" />
+                    </svg>
+                  </div>
+                  <div class="swiper-button swiper-button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                      <circle cx="20" cy="20" r="20" fill="#1AD1B1" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.2518 18.295L17.9589 12.0021L19.3731 10.5879L27.3731 18.5879L28.0802 19.295L27.3731 20.0021L19.3731 28.0021L17.9589 26.5879L24.2518 20.295L10.666 20.295V18.295L24.2518 18.295Z"
+                        fill="black" />
+                    </svg>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="our-customer-text">
-                  <blockquote>
-                    <p>Mosaic’s Array system has completely transformed our workflow. The automation and multi-material
-                      capabilities allow us to scale production without constant oversight. We’ve cut lead times by 50%
-                      and
-                      improved part consistency- an absolute game-changer!</p>
-                  </blockquote>
-                  <div class="our-customer-avatar fs-20 flex flex-col">
-                    <figure class="our-customer-avatar-logo object-fit">
-                      <img src="images/Stripe_Logo.svg" alt="">
-                    </figure>
-                    <div class="d-block muted-light"><span class="white">Alex R.</span>, Manufacturing Engineer</div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="our-customer-text">
-                  <blockquote>
-                    <p>Mosaic’s Array system has completely transformed our workflow. The automation and multi-material
-                      capabilities allow us to scale production without constant oversight. We’ve cut lead times by 50%
-                      and
-                      improved part consistency- an absolute game-changer!</p>
-                  </blockquote>
-                  <div class="our-customer-avatar fs-20 flex flex-col">
-                    <figure class="our-customer-avatar-logo object-fit">
-                      <img src="images/Stripe_Logo.svg" alt="">
-                    </figure>
-                    <div class="d-block muted-light"><span class="white">Alex R.</span>, Manufacturing Engineer</div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="our-customer-text">
-                  <blockquote>
-                    <p>Mosaic’s Array system has completely transformed our workflow. The automation and multi-material
-                      capabilities allow us to scale production without constant oversight. We’ve cut lead times by 50%
-                      and
-                      improved part consistency- an absolute game-changer!</p>
-                  </blockquote>
-                  <div class="our-customer-avatar fs-20 flex flex-col">
-                    <figure class="our-customer-avatar-logo object-fit">
-                      <img src="images/Stripe_Logo.svg" alt="">
-                    </figure>
-                    <div class="d-block muted-light"><span class="white">Alex R.</span>, Manufacturing Engineer</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-buttons flex absolute">
-              <div class="swiper-button swiper-button-prev">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                  <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="#1AD1B1"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7482 18.295L22.0411 12.0021L20.6269 10.5879L12.6269 18.5879L11.9198 19.295L12.6269 20.0021L20.6269 28.0021L22.0411 26.5879L15.7482 20.295L29.334 20.295V18.295L15.7482 18.295Z" fill="black"/>
-                </svg>
-              
-              </div>
-              <div class="swiper-button swiper-button-next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                  <circle cx="20" cy="20" r="20" fill="#1AD1B1"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2518 18.295L17.9589 12.0021L19.3731 10.5879L27.3731 18.5879L28.0802 19.295L27.3731 20.0021L19.3731 28.0021L17.9589 26.5879L24.2518 20.295L10.666 20.295V18.295L24.2518 18.295Z" fill="black"/>
-                </svg>
-              </div>
-            </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
     <section class="featured-articles-section relative z-2">
       <div class="featured-articles-main">
@@ -448,7 +750,7 @@
                   <a href="default.html">Warranty</a>
                 </li>
                 <li class="mb-0">
-                   <a href="default.html">Patents</a>
+                  <a href="default.html">Patents</a>
                 </li>
               </ul>
               <ul class="social-icons flex m-0 no-disc">
@@ -600,7 +902,7 @@
                 <a href="default.html">Warranty</a>
               </li>
               <li class="mb-0">
-                 <a href="default.html">Patents</a>
+                <a href="default.html">Patents</a>
               </li>
             </ul>
             <ul class="social-icons flex m-0 no-disc">
@@ -625,7 +927,7 @@
       </div>
     </div>
   </footer>
-  <script src="dist/core.bundle.js"></script>
+  <script defer src="dist/DrawSVGPlugin.js"></script>
+  <script defer src="dist/core.bundle.js"></script>
 </body>
-
 </html>

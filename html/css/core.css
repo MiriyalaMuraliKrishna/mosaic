@@ -14,6 +14,7 @@
 
 
 /*-- 01 Home page --*/
+@import url('./sections/use-cases-sections.css');
 @import url('./sections/calc-part-section.css');
 @import url('./sections/our-customer-section.css');
 

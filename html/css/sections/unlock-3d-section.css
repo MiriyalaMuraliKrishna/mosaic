@@ -13,9 +13,9 @@
 .unlock-3d-ellipse{ top: -280px; left: -169px; width: 1066px; height: 1066px; border-radius: 1066px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1;}
 
 
-
-
-
-
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    body.home .unlock-3d-wrap{padding-bottom: 38px;}
+}
 
 
