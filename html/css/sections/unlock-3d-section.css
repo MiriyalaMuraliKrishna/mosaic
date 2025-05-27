@@ -16,6 +16,15 @@
 
 
 
-
+@media screen and (max-width: 767px) and (min-width:200px) {
+    .unlock-3d-section .container{padding: 0;}
+    .unlock-3d-wrap{padding: 131px 0 90px;}
+    .unlock-3d-ellipse{ height: 759px; width: 759px;}
+    .unlock-3d-main{gap: 25px; padding: 0 20px 90px;}
+    .unlock-3d-bg{border-radius: 0;}
+    .unlock-3d-image{flex: 0 0 100%; transform: translateY(-35px);}
+    .unlock-3d-image img{border-radius: 20px;}
+    .unlock-3d-text span.optional-text{font-size: 12px; letter-spacing: 3px;}
+}
 
 

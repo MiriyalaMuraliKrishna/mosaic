@@ -25,3 +25,16 @@
     .modular-option-graph{flex: 0 0 158px; gap: 29px;}
     .modular-option-array{flex: 1;}
 }
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .modular-option-section .container{padding: 0;}
+    .modular-option-main{padding: 22px 20px 90px; border-radius: 0; flex-direction: column-reverse; gap: 57px;}
+    .modular-option-image{gap: 30px; justify-content: center;}
+    .modular-option-graph{gap: 25px; flex: 0 0 138px;}
+    .modular-option-graph .all-meterials-sm-icon{padding: 26px 11px 22px 20px; }
+    .modular-option-array{flex: 0 0 200px;}
+}
+@media only screen and (max-width: 413px) and (min-width: 200px){
+    .modular-option-image{gap: 20px;}
+    .modular-option-array{flex: 0 0 175px;}
+}

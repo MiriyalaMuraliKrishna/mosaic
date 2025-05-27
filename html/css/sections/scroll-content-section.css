@@ -5,7 +5,10 @@
 .scroll-content-text .chars{transition: color .3s ease; opacity: 0.4; color: var(--White-50);}
 
 
-
+@media screen  and (max-width: 767px) and (min-width: 200px){
+    .scroll-content-main{padding-top: 90px;}
+    .scroll-content-text{font-size: 23px; line-height: 42px; letter-spacing: -0.69px;}
+}
 
 
 
