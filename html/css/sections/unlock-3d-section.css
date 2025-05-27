@@ -13,14 +13,10 @@
 .unlock-3d-ellipse{ top: -280px; left: -169px; width: 1066px; height: 1066px; border-radius: 1066px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1;}
 
 
-<<<<<<< HEAD
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     body.home .unlock-3d-wrap{padding-bottom: 38px;}
-=======
-
-
-
+}
 @media screen and (max-width: 767px) and (min-width:200px) {
     .unlock-3d-section .container{padding: 0;}
     .unlock-3d-wrap{padding: 131px 0 90px;}
@@ -30,7 +26,6 @@
     .unlock-3d-image{flex: 0 0 100%; transform: translateY(-35px);}
     .unlock-3d-image img{border-radius: 20px;}
     .unlock-3d-text span.optional-text{font-size: 12px; letter-spacing: 3px;}
->>>>>>> bc0b29ee420f1f796e7dff1468dc4f19a9c469d1
 }
 
 
