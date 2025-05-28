@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+.optional-module-wrap{padding-bottom: 151px;}
+.optional-module-main{padding: 118px 158px 104px; overflow: hidden;}
+.modular-ellipse{width: 1066px; height: 1066px; opacity: 0.2; z-index: -1; background: var(--Purple-Radial-Gradient);}
+.modular-ellipse.left{left: -536px; top: -636px;}
+.modular-ellipse.right{right: -612px; top: 69px;}
+
+
+
+
+/*-- media css starts here --*/
+
+@media only screen and (min-width: 1024px){
+    .optional-module-main{gap: 111px;}
+    .optional-module-text{flex: 0 0 435px;}
+    .optional-module-image{flex: 1; gap: 44px;}
+    .optional-module-graph{flex: 0 0 158px; gap: 29px;}
+    .optional-module-array{flex: 1;}
+}
+@media only screen and (max-width: 1369px) and (min-width: 1024px){
+ .optional-module-main{gap: 60px; padding: 60px;}
+}
+@media only screen and (max-width: 1199px) and (min-width: 1024px){
+ .optional-module-text{flex: 0 0 350px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .optional-module-main{padding: 60px; flex-direction: column-reverse; gap: 60px;}
+    .optional-module-image{gap: 30px; justify-content: center;}
+    .optional-module-graph{gap: 25px; flex: 0 0 138px;}
+    .optional-module-array{flex: 0 0 200px;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .optional-module-section .container{padding: 0;}
+    .optional-module-main{padding: 22px 20px 90px; border-radius: 0; flex-direction: column-reverse; gap: 57px;}
+    .modular-ellipse{width: 606px; height: 606px;}
+    .modular-ellipse.left{left: -211px; top: 435px;}
+    .modular-ellipse.right{right: -230px; top: -212px;}
+    .optional-module-image{gap: 30px; justify-content: center;}
+    .optional-module-graph{gap: 25px; flex: 0 0 138px;}
+    .optional-module-graph .all-meterials-sm-icon{padding: 26px 11px 22px 20px; }
+    .optional-module-array{flex: 0 0 200px;}
+}
+@media only screen and (max-width: 413px) and (min-width: 200px){
+    .optional-module-image{gap: 20px;}
+    .optional-module-array{flex: 0 0 175px;}
+}

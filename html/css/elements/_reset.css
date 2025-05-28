@@ -129,6 +129,9 @@ button:hover svg circle, .button:hover svg circle, .button:hover svg path, butto
 .btn-reverse{border-color: var(--Black); color: var(--Black);}
 .btn-reverse:hover{background-color: var(--Black);}
 
+.button.btn-white{border-color: var(--White); color: var(--White);}
+.button.btn-white:hover{background-color: var(--Green); border-color: var(--Green);}
+
 .btn-transparency{padding: 6.5px 13px 6px; display: inline-block; width: fit-content; letter-spacing: 1.5px; color: var(--White); border-radius: 90px; background: var(--White-5); backdrop-filter: blur(22px); }
 .btn-transparency:hover{background-color: var(--Green);}
 
@@ -452,6 +455,9 @@ a.mPS2id-clicked{color: var(--Green);}
 
 [data-vbg]{opacity: 0; visibility: hidden;}
 [data-vbg].open{opacity: 1; visibility: visible;}
+
+.background-bg iframe{max-width: inherit; object-position: center top;}
+
 
 .swiper-horizontal{position: relative;}
 .swiper-horizontal .swiper-buttons{width: 92px; gap: 12px; top: 0; right: 0;}

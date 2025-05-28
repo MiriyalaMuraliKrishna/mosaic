@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 export const anime = {
   eles: document.querySelectorAll('.scroll-content-text'),
   h1: document.querySelectorAll('[data-anim*="title"]'),
+  h2: document.querySelectorAll('[data-anim*="subtitle"]'),
   init() {
     this.eles.forEach((el) => {
       const target = el.querySelector('p') || el.querySelector('h2');
@@ -44,52 +45,101 @@ export const anime = {
         });
       });
     });
-    this.title();
+    // this.title();
+    this.subtitle();
   },
-  title() {
-    this.h1.forEach((ele) => {
+  // title() {
+  //   this.h1.forEach((ele) => {
+  //     document.fonts.ready.then(() => {
+  //       let $duration = +ele.dataset.duration / 1000 || 1.5;
+  //       const charSplit = new SplitText(ele, {
+  //         type: 'chars',
+  //         charsClass: 'chars',
+  //       });
+
+  //       gsap.set(ele, { opacity: 1 });
+  //       gsap.set(charSplit.chars, {
+  //         opacity: 0,
+  //         y: 50,
+  //         rotateX: -90,
+  //         transformOrigin: '50% 100%',
+  //       });
+
+  //       var tl = gsap.timeline({
+  //         paused: true,
+  //         scrollTrigger: {
+  //           trigger: ele,
+  //           start: 'top 75%',
+  //           end: 'bottom 50%',
+  //           toggleActions: 'play none none none', // ✅ only play once
+  //           // scrub: 0.75,
+  //           // once: true,
+  //         },
+  //       });
+
+  //       tl.to(charSplit.chars, {
+  //         opacity: 1,
+  //         y: 0,
+  //         rotateX: 0,
+  //         ease: 'power4.out',
+  //         stagger: 0.05,
+  //         duration: $duration,
+  //       });
+
+  //       // ✅ Manually play if already in view
+  //       const rect = ele.getBoundingClientRect();
+  //       const isVisible =
+  //         rect.top < window.innerHeight * 0.75 &&
+  //         rect.bottom > window.innerHeight * 0.5;
+  //       isVisible ? tl.play() : '';
+  //     });
+  //   });
+  // },
+  subtitle() {
+    this.h2.forEach((ele) => {
       document.fonts.ready.then(() => {
-        let $duration = +ele.dataset.duration / 1000 || 1.5;
-        const charSplit = new SplitText(ele, {
-          type: 'chars',
-          charsClass: 'chars',
-        });
+        const duration = +ele.dataset.duration / 1000 || 1.5;
 
         gsap.set(ele, { opacity: 1 });
-        gsap.set(charSplit.chars, {
-          opacity: 0,
-          y: 50,
-          rotateX: -90,
-          transformOrigin: '50% 100%',
+
+        const lineSplit = SplitText.create(ele, {
+          type: 'words,lines',
+          linesClass: 'line',
+          autoSplit: true,
+          mask: 'lines',
         });
 
-        var tl = gsap.timeline({
-          paused: true,
+        gsap.set(lineSplit.lines, {
+          duration: 0.6,
+          yPercent: 100,
+          opacity: 0,
+          stagger: 0.1,
+          ease: 'expo.out',
+        });
+
+        const tl = gsap.timeline({
           scrollTrigger: {
             trigger: ele,
             start: 'top 75%',
             end: 'bottom 50%',
-            toggleActions: 'play none none none', // ✅ only play once
-            // scrub: 0.75,
-            // once: true,
+            toggleActions: 'play none none none',
           },
         });
 
-        tl.to(charSplit.chars, {
+        tl.from(lineSplit.lines, {
+          duration: duration,
+          yPercent: 0,
           opacity: 1,
-          y: 0,
-          rotateX: 0,
-          ease: 'power4.out',
-          stagger: 0.05,
-          duration: $duration,
+          stagger: 0.1,
+          ease: 'expo.out',
         });
 
-        // ✅ Manually play if already in view
+        // Manually play if already in view
         const rect = ele.getBoundingClientRect();
         const isVisible =
           rect.top < window.innerHeight * 0.75 &&
           rect.bottom > window.innerHeight * 0.5;
-        isVisible ? tl.play() : '';
+        if (isVisible) tl.play();
       });
     });
   },
