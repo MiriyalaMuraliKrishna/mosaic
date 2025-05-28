@@ -16,11 +16,13 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-
     body.home .unlock-3d-wrap{padding: 124px 0 38px;}
-
 }
 
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .unlock-3d-main{gap: 20px; padding: 125px 40px 123px 0;}
+    .unlock-3d-text h2{font-size: 54px; line-height: 64px;}
+}
 @media screen and (max-width: 1023px) and (min-width:768px) {
     .unlock-3d-wrap{padding: 90px 0;}
     .unlock-3d-main{padding: 60px 20px;}
