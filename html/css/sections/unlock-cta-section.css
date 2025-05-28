@@ -19,3 +19,7 @@
     .unlock-cta-text{font-size: 15.5px; line-height: 24px; letter-spacing: -0.465px;}
     .unlock-cta-btn{margin-left: 0;}
 }
+
+@media only screen and (max-width: 374px) and (min-width: 200px){
+    .unlock-cta-main {padding: 30px 25px 30px;}
+}
