@@ -12,12 +12,16 @@
 
 
 
-.modular-option-main{padding: 118px 158px 104px;}
+.modular-option-main{padding: 118px 158px 104px; overflow: hidden;}
+.modular-ellipse{width: 1066px; height: 1066px; opacity: 0.2; z-index: -1; background: var(--Purple-Radial-Gradient);}
+.modular-ellipse.left{left: -536px; top: -636px;}
+.modular-ellipse.right{right: -612px; top: 69px;}
 
 
 
 
 /*-- media css starts here --*/
+
 @media only screen and (min-width: 1024px){
     .modular-option-main{gap: 111px;}
     .modular-option-text{flex: 0 0 435px;}
@@ -25,10 +29,24 @@
     .modular-option-graph{flex: 0 0 158px; gap: 29px;}
     .modular-option-array{flex: 1;}
 }
-
+@media only screen and (max-width: 1369px) and (min-width: 1024px){
+ .modular-option-main{gap: 60px; padding: 60px;}
+}
+@media only screen and (max-width: 1199px) and (min-width: 1024px){
+ .modular-option-text{flex: 0 0 350px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .modular-option-main{padding: 60px; flex-direction: column-reverse; gap: 60px;}
+    .modular-option-image{gap: 30px; justify-content: center;}
+    .modular-option-graph{gap: 25px; flex: 0 0 138px;}
+    .modular-option-array{flex: 0 0 200px;}
+}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .modular-option-section .container{padding: 0;}
     .modular-option-main{padding: 22px 20px 90px; border-radius: 0; flex-direction: column-reverse; gap: 57px;}
+    .modular-ellipse{width: 606px; height: 606px;}
+    .modular-ellipse.left{left: -211px; top: 435px;}
+    .modular-ellipse.right{right: -230px; top: -212px;}
     .modular-option-image{gap: 30px; justify-content: center;}
     .modular-option-graph{gap: 25px; flex: 0 0 138px;}
     .modular-option-graph .all-meterials-sm-icon{padding: 26px 11px 22px 20px; }
