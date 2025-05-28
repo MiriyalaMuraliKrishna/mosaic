@@ -9,18 +9,31 @@
 
 
 
-.calc-part-main{padding: 150px 0 140px;}
+.calc-part-wrap{padding: 150px 0 140px;}
 .calc-part-desc{max-width: 435px; font-size: 16.5px; font-weight: 400; line-height: 26px; letter-spacing: -0.495px; }
 .calc-part-text{max-width: 900px; padding-bottom: 130px;}
 
-.calc-part-line{max-width: 320px; margin-bottom: 25px;}
+.calc-part-line{max-width: 781px; margin-bottom: 25px;}
 .calc-part-text h2{margin-bottom: 30px; font-size: 94px; font-weight: 400; line-height: 100px; letter-spacing: -2.82px;}
 
 
 
 
-.calc-part-cost{padding: 87px 94px 87px 91px; flex: 0 0 420px; letter-spacing: 0;}
+.calc-part-cost{padding: 87px 94px 87px 91px; flex: 0 0 447px; letter-spacing: 0;}
 .calc-part-cost h2{font-size: 33px; letter-spacing: 0;}
+.calc-part-head{padding-bottom: 29px;}
 ol.calc-part-steps{gap: 23px; letter-spacing: 0; font-size: 19px; font-weight: 600; line-height: normal;}
+ol.calc-part-steps li::before{width: 33px; height: 33px; top: -5px; left: -43px; background-color: var(--White); color: var(--Black);}
 
-.calc-part-choose{padding: 91px 117px 87px 131px; border-left: 1px solid #000;}
+.calc-part-choose{padding: 91px 113px 87px 128px; flex: 1; border-left: 1px solid var(--White-31);}
+ul.calc-part-inputs{gap: 9px;}
+ul.calc-part-inputs li{padding: 10px 46px; cursor: pointer; border-radius: 70px; border: 1px solid var(--Black); backdrop-filter: blur(17px); color: var(--Black); font-size: 16px; font-weight: 600; line-height: 24px; background-color: transparent;}
+ul.calc-part-inputs li:hover{background-color: var(--Black); color: var(--White);}
+.calc-part-up{padding-bottom: 31px; justify-content: space-between;}
+.calc-part-btns{padding-top: 34px;}
+
+
+.calc-part-image{top: -50px; right: -333px; max-width: 884px; max-height: 800px; z-index: -1;}
+.calc-part-image img{object-fit: contain;}
+
+.calc-part-tot{backdrop-filter: blur(9px);}
