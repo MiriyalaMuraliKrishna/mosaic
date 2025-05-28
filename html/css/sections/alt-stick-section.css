@@ -1,0 +1,26 @@
+
+
+
+.alt-stick-section{margin-bottom: 200px;}
+.alt-stick-section.last{margin-bottom: 0;}
+.alt-stick-bg{max-width: 796px;}
+
+.alt-stick-main{padding: 0 0 127px;}
+.alt-stick-text{max-width: 320px;}
+.alt-stick-text span.stripe-line{margin-bottom: 29px;}
+.alt-stick-text h2{margin-bottom: 31px;}
+
+.alt-stick-list span.fs-21{padding:6px 0 20px;}
+.alt-stick-list p{margin-bottom: 26px;}
+
+
+
+.alt-stick-left{flex: 1;}
+.alt-stick-right{flex: 1; gap: 99px 0;}
+
+
+
+
+
+
+

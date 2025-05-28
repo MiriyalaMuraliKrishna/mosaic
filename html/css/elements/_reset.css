@@ -469,12 +469,14 @@ a.mPS2id-clicked{color: var(--Green);}
     .container.xx-md{max-width: 1127px;}
     .container.x-md{max-width: 1122px;}
     .container.sm{max-width: 895px;}
-    .container.no-auto{margin: 0;}
-
-
+    
+    
     .hide-desktop{display: none;}
     .text-md-right{text-align: right;}
     .fluid-container{width: 100vw; left: -50vw; margin-left: 50%;}
+  }
+  @media only screen and (max-width: 1800px) and (min-width: 1024px){
+  .container.no-auto{margin: 0;}
 }
 @media only screen and (max-width: 1399px) and (min-width: 768px){
     .container:not(.sm){padding: 0 40px; max-width: 100%;}

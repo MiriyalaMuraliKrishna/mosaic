@@ -1,0 +1,42 @@
+class StickScroll {
+  constructor() {
+    this.eles = document.querySelectorAll('.alt-stick-section');
+  }
+  init() {
+    this.eles.forEach((ele) => {
+      const $selfStick = $(ele);
+      console.log($selfStick, 'check ele');
+
+      if ($selfStick) {
+        if (window.matchMedia('(min-width: 1024px)').matches) {
+          $selfStick.stickOnScroll({
+            topOffset: $('header.site-header').outerHeight(),
+            bottomOffset: 300,
+            footerElement: $('footer.site-footer'),
+            setParentOnStick: true,
+            setWidthOnStick: true,
+            viewport: window,
+          });
+        } else {
+          $selfStick.stickOnScroll({
+            topOffset:
+              $('header.site-header').outerHeight() +
+              18 -
+              $('.alt-feature-thumb').outerHeight(),
+            bottomOffset: 300,
+            footerElement: $('footer.site-footer'),
+            setParentOnStick: true,
+            setWidthOnStick: true,
+            viewport: window,
+          });
+        }
+      }
+      $selfStick
+        .closest('.alt-stick-section')
+        .css({ 'z-index': index, position: 'relative' })
+        .nextAll()
+        .css({ position: 'relative', 'z-index': 50 });
+    });
+  }
+}
+export const stickme = new StickScroll();

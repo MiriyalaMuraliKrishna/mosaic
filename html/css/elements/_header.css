@@ -40,8 +40,8 @@ ul.main_menu > li > ul > li.hide-nav-overview > a{display: none;}
 @media only screen and (min-width: 1360px){
     ul.main_menu > li{position: relative;}
 }
-@media only screen and (min-width: 1400px){
-    .header{ padding-left: 7px; margin-left: 33px; }
+@media only screen and (max-width: 1800px) and (min-width: 1400px){
+    .header{ padding-left: 7px; transform: translateX(33px); }
 }
 @media only screen and (max-width: 1439px) and (min-width: 1360px){
 }

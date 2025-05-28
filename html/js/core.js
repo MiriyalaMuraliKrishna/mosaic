@@ -20,6 +20,7 @@ import { Stickyfeature } from './module/careerstickyfeature';
 import { innovation } from './module/innovation';
 import { slider } from './module/slider';
 import { magnificPopup } from './module/magnificpopup';
+import { stickme } from './module/altstickscroll';
 
 (() => {
   mylenis.init();
@@ -43,6 +44,7 @@ import { magnificPopup } from './module/magnificpopup';
   innovation.init();
   slider.init();
   magnificPopup.init();
+  // stickme.init();
 })();
 
 let scrolled = window.scrollY;

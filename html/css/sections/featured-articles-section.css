@@ -13,6 +13,9 @@
 .featured-articles-sm .featured-articles-text{max-width: 343px;}
 
 /*-- media css starts here --*/
+@media only screen and (min-width: 1800px){
+    .featured-articles-main{max-width: 1800px; margin: auto;}
+}
 @media only screen and (min-width: 1360px){
     .featured-articles-row{gap: 25px; padding: 0 44px 0 36px;}
     .featured-articles-post{flex: 1;}
