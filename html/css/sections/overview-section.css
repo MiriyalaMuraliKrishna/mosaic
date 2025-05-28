@@ -26,6 +26,10 @@
     .overview-slide-right{transform: translateX(0%);}
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .overview-main{gap: 60px; padding: 0 0 90px;}
+    .overview-image{position: relative; margin-bottom: 51px;}
+}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .overview-head{padding-bottom: 67px; z-index: 2; position: relative;}
     .overview-head h2{font-size: 46px; letter-spacing: -0.46px; margin-bottom: 29px;}

@@ -17,6 +17,20 @@ span.year{padding-bottom: 28px;}
 .innovation-list:last-child .stripe-line{display: none;}
 
 
+@media screen and (max-width: 1299px) and (min-width: 1024px) {
+    .innovation-text{flex: 0 0 560px; padding-right: 60px;}
+    .innovation-lists{padding-left: 60px;}
+}
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .innovation-text{flex: 0 0 475px;}
+  .innovation-text h2{font-size: 54px; line-height: 64px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .innovation-main{padding: 90px 0 0;}
+    .innovation-text{flex: 0 0 100%; padding-right: 0; margin-bottom: 36px;}
+    .innovation-text h2{margin-bottom: 0;}
+    .innovation-lists{padding-left: 23px; }
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .innovation-main{padding: 90px 0 0;}
     .innovation-text{flex: 0 0 100%; padding-right: 0; margin-bottom: 36px;}
