@@ -1,3 +1,4 @@
+
 https://app.assembla.com/spaces/pd-misc/tickets/realtime_list?ticket=3698
 
 
@@ -10,3 +11,13 @@ https://app.markup.io/markup/5df80044-c301-4aad-9c45-4a25b5a0c446
 
 
 https://codepen.io/GreenSock/pen/xxmaNYj
+
+
+
+https://github.com/rgalus/sticky-js#available-options
+
+
+https://github.com/purtuga/jquery.stickOnScroll?tab=readme-ov-file
+
+
+https://gsap.com/community/forums/topic/32256-scroll-trigger-text-reveal/
