@@ -472,6 +472,7 @@ a.mPS2id-clicked{color: var(--Green);}
     .container.md{max-width: 1200px;}
     .container.xx-md{max-width: 1127px;}
     .container.x-md{max-width: 1122px;}
+
     .container.sm{max-width: 895px;}
     
     
@@ -482,11 +483,12 @@ a.mPS2id-clicked{color: var(--Green);}
   @media only screen and (max-width: 1800px) and (min-width: 1024px){
   .container.no-auto{margin: 0;}
 }
-@media only screen and (max-width: 1399px) and (min-width: 768px){
-    .container:not(.sm){padding: 0 40px; max-width: 100%;}
-    .title{font-size: 110px; line-height: 118px;}
+@media only screen and (max-width: 1399px) and (min-width: 1024px){
+  .title{font-size: 110px; line-height: 118px;}
+  .container:not(.sm){padding: 0 40px; max-width: 100%;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
+  .container{max-width: 100%; padding: 0 40px;}
     .hide-tablet{display: none;}
     .ipad-0{padding-left: 0; padding-right: 0;}
     .fluid-container .container{padding-left: 0; padding-right: 0;}
