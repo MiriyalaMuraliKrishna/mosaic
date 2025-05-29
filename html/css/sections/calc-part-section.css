@@ -24,6 +24,7 @@
 .calc-part-head{padding-bottom: 29px;}
 ol.calc-part-steps{gap: 33px; letter-spacing: 0; font-size: 19px; font-weight: 600; line-height: normal;}
 ol.calc-part-steps li::before{width: 33px; height: 33px; top: -5px; left: -43px; background-color: var(--White-20); color: var(--Black);}
+ol.calc-part-steps li:first-child:before{text-indent: -0.5px;}
 ol.calc-part-steps li.active::before{background-color: var(--White);}
 
 .calc-part-choose{padding: 91px 113px 87px 128px; flex: 1; border-left: 1px solid var(--White-31);}
