@@ -5,3 +5,9 @@
 .careers-banner-main{padding: 404px 0 160px; max-width: 1011px;}
 .careers-banner-text h1{padding-top: 20px; margin-bottom: 17px;}
 .careers-banner-btns{padding-top: 12px;}
+
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .careers-banner-main{padding: 312px 0 32px;}
+    .careers-banner-bg img{opacity: 0.4;}
+}

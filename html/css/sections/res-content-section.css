@@ -23,8 +23,10 @@
 }
 .content-cta-text{max-width: 450px;}
 .content-cta-text h2{margin-bottom: 28px; letter-spacing: 0;}
+.content-cta-text .flex{gap: 12px;}
 .res-content-main h3{padding-bottom: 15px;}
 .res-content-main h4{padding-bottom: 16px;}
+
 
 
 
@@ -63,3 +65,39 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
 
 
 .res-content-last-line{padding: 102px 0 70px;}
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .res-content-main{padding: 80px 0;}
+    .res-content-main h2{margin-bottom: 27px;}
+    .res-content-main .fluid-container .container{padding: 0;}
+    .res-content-main .fluid-container .full-width-image{padding: 60px 0 80px; width: calc(100% + 40px); margin-left: -20px;}
+    .res-content-main .fluid-container .full-width-image img{border-radius: 0;}
+    .content-cta-wrap{padding: 67px 0 80px;}
+    .content-cta-main{padding: 227px 41px 27px;}
+    .content-cta-text{max-width: 100%;}
+    .content-cta-text .flex{justify-content: center;}
+    .content-cta-text .flex .button{width: 100%;}
+    .content-cta-image{right: 0; top: -27px; width: 265px; left: 67px;}
+    .content-cta-ellipse{border-radius: 536px; height: 536px; right: -160px; top: -222px; width: 536px;}
+    .res-content-main h3{padding-bottom: 5px;}
+    .fluid-image-captions{padding: 58px 0 80px; }
+    .highlightbox-main{gap: 29px; padding: 34px 30px 38px 31px; align-items: flex-start;}
+    .highlightbox-icon{flex: 0 0 48px; }
+    .highlightbox-icon svg{width: 48px; height: 48px;}
+    .highlightbox-text{letter-spacing: -.57px; max-width: 100%; font-size: 19px;}
+    .caption-link-main{padding-bottom: 90px; }
+    .caption-link{align-items: flex-end; }
+    .caption-link span{font-size: 20px; line-height: 30px; letter-spacing: -0.6px; flex: 1; font-weight: 300;}
+    .caption-link svg{flex: 0 0 10px; margin-bottom: 10px;}
+    .res-content-line{padding-bottom: 80px;}
+    .res-content-main .accordion-main{padding: 28px 0 60px;}
+    .res-content-main .accordion-plus{top: 0;}
+    .res-content-main blockquote{margin: 22px 0 90px; font-size: 18px; letter-spacing: -0.18px; line-height: 36px; padding: 30px 40px 41px; border-radius: 20px !important;}
+    .res-content-main .blockquote-ellipse{border-radius: 524px; height: 524px; left: -131px; top: auto; width: 524px; bottom: -136px; }
+    .quote-avatar-main{flex-direction: column-reverse; gap: 15px; padding-top: 12px;}
+    .quote-avatar{gap: 10px; }
+    .quote-avatar-img{height: 36px; width: 36px;}
+    .quote-avatar-text{font-size: 15px;}
+    .quote-avatar-logo{width: 68px; }
+    .res-content-last-line{padding: 63px 0 0;}
+}

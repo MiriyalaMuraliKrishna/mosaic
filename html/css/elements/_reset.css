@@ -529,4 +529,5 @@ a.mPS2id-clicked{color: var(--Green);}
 }
 @media only screen and (max-width: 374px) and (min-width: 200px){
   a.text-link, span.text-link{font-size: 15px;}
+      .title{font-size: 46px; line-height: 56px;}
 }
