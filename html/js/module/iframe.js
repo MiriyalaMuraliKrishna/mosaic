@@ -5,7 +5,9 @@ export const iframe = {
   init() {
     this.ele.forEach((iframe) => {
       if (jQuery(iframe)) {
-        jQuery(iframe).youtube_background();
+        jQuery(iframe).youtube_background({
+          // lazyloading: true,
+        });
         setTimeout(() => {
           iframe.classList.add('open');
         }, 0);

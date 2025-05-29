@@ -1,6 +1,6 @@
 
 
-header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; z-index: 1800;  transition: top 0.5s ease-in-out, background-color 0.5s ease-in-out;}
+header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; z-index: 800;  transition: top 0.5s ease-in-out, background-color 0.5s ease-in-out;}
 .site-header.sticky-up{top: -138px; }
 .site-header.sticky-down{top: 0; background-color: var(--Black);}
 .header_right{flex: 1;}
