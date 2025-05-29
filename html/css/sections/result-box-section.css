@@ -24,6 +24,21 @@
 .result-box-text span{padding-bottom: 13px;}
 
 
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .result-box-section{overflow: hidden;}
+    .result-box-section .container{padding: 0;}
+    .result-box-main{padding: 90px 20px; border-radius: 0;}
+    .result-box-ellipse{height: 855px;}
+    .result-box-head{gap: 19px; padding-bottom: 30px;}
+    .result-box-row{gap: 40px;}
+    .result-box-list{flex: 0 0 100%; display: flex; flex-wrap: wrap; gap: 30px;} 
+    .result-box-icon{flex: 0 0 50px; padding-bottom: 0;}
+    .result-box-icon svg{width: 50px; height: 50px;}
+    .result-box-text{font-size: 18px; letter-spacing: -0.54px; line-height: 28px; color: var(--White-60); padding-top: 12px; flex: 1;}
+    .result-box-text span{padding-bottom: 5px; color: var(--White); }
+}
+
+
 
 
 

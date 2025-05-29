@@ -56,6 +56,9 @@
     .overview-list:last-child .overview-slide-thumb{width: 174px;}
     .overview-ellipse.right{right: 0; top: -175px;}
 }
+@media only screen and (max-width: 374px) and (min-width: 200px){
+   .overview-head h2{font-size: 40px; line-height: 48px;}
+}
 
 
 
