@@ -70,6 +70,14 @@
 [data-animate="line"].visible{width: 100%;}
 
 
+[data-anim*="title"]{
+  opacity: 0;
+  will-change: transform;
+}
+
+[data-anim*="title"] * {
+  will-change: transform;
+}
 
 
 [data-anim*="subtitle"]{

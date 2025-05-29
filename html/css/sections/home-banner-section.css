@@ -7,7 +7,8 @@
 background-image: linear-gradient(0deg, var(--Black) 0%,rgba(115, 115, 115, 0.00) 100%);
 
 }
-.home-banner-main{padding: 254px 0 160px; max-width: 1011px;}
+.home-banner-wrap{padding: 0 0 132px;}
+.home-banner-main{padding: 254px 0 144px; max-width: 1011px;}
 .home-banner-text{max-width: 743px;}
 .home-banner-text h1{margin-bottom: 18px;
  
@@ -20,6 +21,16 @@ background-image: linear-gradient(0deg, var(--Black) 0%,rgba(115, 115, 115, 0.00
 .home-banner-btns{padding-top: 12px;}
 
 
+.trust-by-main{max-width: 870px;}
+
+.trust-by-logos .swiper-wrapper{align-items: center;}
+.trust-by-logos .swiper-slide{width: 180px; flex-shrink: 0;}
+.trust-by-logo img{object-fit: contain; max-width: 180px; margin: auto;}
+
+.trust-by-logo img[data-logo="awwards"]{max-width: 132px;}
+.trust-by-logo img[data-logo="dan"]{max-width: 148px;}
+.trust-by-logo img[data-logo="css-winner"]{max-width: 154.5px;}
+.trust-by-logo img[data-logo="clutch"]{max-width: 86px;}
 
 
 
@@ -29,5 +40,8 @@ background-image: linear-gradient(0deg, var(--Black) 0%,rgba(115, 115, 115, 0.00
 
 
 
+/* media css starts here */
+@media only screen and (min-width: 1024px){
 
+}
 

@@ -25,7 +25,8 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
 .use-cases-text::-webkit-scrollbar { display: none; }
   
 .use-cases-text-overlay{opacity: 0.7; background: linear-gradient(180deg, var(--Black) 0%, rgba(0, 0, 0, 0.00) 100%);}
-.use-cases-text h2{margin-bottom: 21px;}
+.use-cases-slide:hover .use-cases-text-overlay{opacity: 0.8;}
+.use-cases-text h2{margin-bottom: 21px; max-width: 220px;}
 .use-cases-text p{margin-bottom: 19px;}
 .use-cases-desc{max-height: 0; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; }
 
@@ -41,3 +42,6 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
 .use-cases-bg, .use-cases-video{ min-height: 903px; max-height: 903px;}
 .use-cases-video{z-index: 1;}
 .use-cases-video video{width: 100%; height: 100%;}
+
+
+.use-cases-slide:nth-child(n+4){opacity: 0.15;}

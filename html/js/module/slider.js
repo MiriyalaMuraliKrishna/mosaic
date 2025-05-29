@@ -6,11 +6,15 @@ class Slider {
     this.usecaselink = document.querySelector('ul.use-cases-links');
     this.usecaseele = document.querySelectorAll('.use-cases-slider');
     this.serviceele = document.querySelectorAll('.services-carousel-slider');
+    this.logos = document.querySelector('.trust-by-logos');
   }
   init() {
-    if (!this.customele || !this.usecaseele) return;
+    if (!this.customele || !this.usecaseele || !this.serviceele || !this.logos)
+      return;
     this.customSlider();
     this.usecaseSlider();
+    this.serviceSlider();
+    this.trustlogoSlider();
   }
   customSlider() {
     const left = this.customele.querySelector('.our-customer-left');
@@ -76,7 +80,8 @@ class Slider {
         },
       });
     });
-
+  }
+  serviceSlider() {
     this.serviceele.forEach((servicecarousel) => {
       new Swiper(servicecarousel, {
         slidesPerView: 'auto',
@@ -91,6 +96,20 @@ class Slider {
           prevEl: '.swiper-button-prev',
         },
       });
+    });
+  }
+  trustlogoSlider() {
+    new Swiper(this.logos, {
+      slidesPerView: 'auto',
+      loop: true,
+      speed: 2000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 50,
+      freeMode: true,
+      freeModeMomentum: false,
     });
   }
 }
