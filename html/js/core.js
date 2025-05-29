@@ -21,6 +21,8 @@ import { innovation } from './module/innovation';
 import { slider } from './module/slider';
 import { magnificPopup } from './module/magnificpopup';
 import { stickme } from './module/altstickscroll';
+import { usecases } from './module/usecases';
+import { counter } from './module/counter';
 
 (() => {
   mylenis.init();
@@ -45,6 +47,8 @@ import { stickme } from './module/altstickscroll';
   slider.init();
   magnificPopup.init();
   // stickme.init();
+  usecases.init();
+  counter.init();
 })();
 
 let scrolled = window.scrollY;

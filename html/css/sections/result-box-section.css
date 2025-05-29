@@ -18,20 +18,27 @@
 .result-box-desc{flex: 1;}
 
 
-.result-box-row{gap: 77px;}
-.result-box-list{flex: 1;}
 .result-box-icon{padding-bottom: 40px;}
 .result-box-text span{padding-bottom: 13px;}
 
 
 
+/*-- media css starts here --*/
+@media only screen and (min-width: 1300px){
+    .result-box-row{gap: 77px;}
+    .result-box-list{flex: 0 0 calc(33.333333333% - 77px);}
+}
 
 
 
 
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .result-box-main{padding: 60px;}
+    .result-box-row{gap: 50px;}
+    .result-box-list{flex: 0 0 calc(33.333333333% - 34px);}
 
+}
 
+@media only screen and (max-width: 1023px) and (min-width: 768px){
 
-
-
-
+}

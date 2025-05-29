@@ -72,7 +72,7 @@ ul.no-disc > li::before{display: none;}
 li > ul {margin: 25px 0 26px 25px;}
 ol {counter-reset: section; list-style: none; margin: 0 0 32px 32px;}
 ol > li {counter-increment: li; position: relative; margin-bottom: 8px;}
-ol > li:before{width: 24px; height: 24px; background-color: var(--Sky-Blue); color: var(--White); counter-increment: section; content: counter(section, decimal); top: 0px; left: -32px; position: absolute; font-size: 16px; line-height: 24px; font-weight: 700; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
+ol > li:before{width: 24px; height: 24px; background-color: var(--Sky-Blue); color: var(--White); counter-increment: section; content: counter(section, decimal); top: 0px; left: -32px; position: absolute; font-size: 17px; line-height: 24px; font-weight: 600; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
 li > ol {margin: 25px 0 26px 25px;}
 ul.no-bullet li::before{display: none;}
 ol[style='list-style-type: upper-roman;']{margin-left: 22px;}
@@ -139,7 +139,6 @@ button:hover svg circle, .button:hover svg circle, .button:hover svg path, butto
 
 /* text btn link */
 a.text-link, span.text-link{ align-items: center; color: var(--Green); font-size: 16px; gap: 13px; letter-spacing: 0.16px; line-height: 23px; font-weight: 600; text-decoration: none; }
-a.text-link span:not(.hide-mobile){width: 32px; height: 32px; background: var(--Sky-Blue);}
 a.text-link em{color: var(--Deep-Teal); font-size: 20px; left: 0; position: relative; top: 1px; transition: all .5s ease;}
 a.text-link span svg{transition: var(--b-transition);}
 
@@ -147,7 +146,6 @@ a.text-link span.pink{background-color: var(--Blush-Pink);}
 
 span.text-link{transition: var(--b-transition); cursor: pointer;}
 a.text-link:hover, span.text-link:hover{color: var(--Green);}
-a.text-link:hover span:not(.hide-mobile){background-color: var(--Green);}
 a.text-link:hover span svg{transform: translateX(2px);}
 a.text-link.white{color: var(--White);}
 
