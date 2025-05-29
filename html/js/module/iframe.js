@@ -8,7 +8,7 @@ export const iframe = {
         jQuery(iframe).youtube_background();
         setTimeout(() => {
           iframe.classList.add('open');
-        }, 1500);
+        }, 0);
       }
     });
   },

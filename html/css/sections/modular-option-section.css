@@ -21,7 +21,6 @@
 
 
 /*-- media css starts here --*/
-
 @media only screen and (min-width: 1024px){
     .modular-option-main{gap: 111px;}
     .modular-option-text{flex: 0 0 435px;}

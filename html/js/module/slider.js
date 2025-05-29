@@ -5,6 +5,7 @@ class Slider {
     this.customele = document.querySelector('.our-customer-main');
     this.usecaselink = document.querySelector('ul.use-cases-links');
     this.usecaseele = document.querySelectorAll('.use-cases-slider');
+    this.serviceele = document.querySelectorAll('.services-carousel-slider');
   }
   init() {
     if (!this.customele || !this.usecaseele) return;
@@ -69,6 +70,22 @@ class Slider {
         slidesPerView: 3,
         speed: 800,
         spaceBetween: 77,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    });
+
+    this.serviceele.forEach((servicecarousel) => {
+      new Swiper(servicecarousel, {
+        slidesPerView: 'auto',
+        speed: 800,
+        spaceBetween: 26,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'progressbar',
+        },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',

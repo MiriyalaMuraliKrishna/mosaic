@@ -72,3 +72,12 @@
 
 
 
+[data-anim*="subtitle"]{
+    opacity: 0;
+    will-change: transform;
+  }
+  
+  [data-anim*="subtitle"] * {
+    will-change: transform;
+  }
+
