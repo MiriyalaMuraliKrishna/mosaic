@@ -7,6 +7,7 @@ export const sticky = {
     const _ = this;
     let height = _.header.getBoundingClientRect().height;
     _.stickeles.forEach((stickele) => {
+      if (!stickele) return;
       new Sticksy.initializeAll(
         stickele,
         {

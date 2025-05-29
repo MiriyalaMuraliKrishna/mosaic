@@ -5,6 +5,7 @@ class Blockquotes {
 
   init() {
     this.quotes.forEach((ele) => {
+      if (!ele) return;
       const text = ele.textContent;
       ele.innerHTML = ''; // Clear existing content
 

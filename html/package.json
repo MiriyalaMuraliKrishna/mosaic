@@ -26,6 +26,8 @@
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
+    "countup": "^1.8.2",
+    "countup.js": "^2.8.2",
     "gsap": "^3.13.0",
     "imagesloaded": "^5.0.0",
     "is-in-viewport": "^3.0.4",

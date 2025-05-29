@@ -65,6 +65,12 @@ export const Animation = {
     if (timeline) {
       timeline.restart().play(); // Restart and play timeline when visible
     }
+    if (type === 'counter') {
+      const $counter = $el[0];
+      if ($counter.counter && $counter.counter.paused) {
+        $counter.counter.start();
+      }
+    }
     if (svgprogress) svgprogress.play();
     type === 'chart' ? chart.play() : null;
     type === 'progress' ? circle.play() : null;

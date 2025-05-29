@@ -29,16 +29,12 @@
 
 
 .all-meterials-chart-main svg rect:nth-child(even){height: 0; transition: all 1.25s ease;}
-.all-meterials-half-circle{
-    width: 101px;
-    height: 101px;
-    top: 0;
-    left: 0;
-    transform: rotate(-180deg);
-}
+.all-meterials-half-circle{ width: 101px; height: 101px; top: 0; left: 0; transform: rotate(-180deg); }
 .half-circle-pos{width: 101px; height: 63px;}
 
 .all-meterials-x{ color: var(--Purple); font-size: 60px; line-height: 70px; font-weight: 400; letter-spacing: -1.8px; }
+.counter-main{ color: var(--Purple); font-size: 60px; line-height: 70px; font-weight: 400; letter-spacing: -1.8px; }
+
 
 @media only screen and (max-width: 1279px) and (min-width: 1024px){
     .all-meterials-main {padding: 40px;}

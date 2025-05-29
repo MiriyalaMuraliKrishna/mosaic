@@ -10,6 +10,7 @@ export class UIAccordion {
     if (!this.items.length) return;
 
     this.items.forEach((el) => {
+      if (!el) return;
       const header = el.querySelector(this.headerSelector);
       const content = el.querySelector(this.contentSelector);
       const line = el.querySelector('.accordion-line.is-second');

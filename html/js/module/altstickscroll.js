@@ -4,8 +4,8 @@ class StickScroll {
   }
   init() {
     this.eles.forEach((ele) => {
+      if (!ele) return;
       const $selfStick = $(ele);
-      console.log($selfStick, 'check ele');
 
       if ($selfStick) {
         if (window.matchMedia('(min-width: 1024px)').matches) {
