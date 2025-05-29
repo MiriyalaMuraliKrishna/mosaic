@@ -33,11 +33,16 @@
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .overview-head{padding-bottom: 90px;}
     .overview-main{gap: 60px; padding: 0 0 90px;}
-    .overview-image{position: relative; margin-bottom: 51px;}
+    .overview-image{position: relative;}
     .overview-head h2{font-size: 54px; line-height: 64px;}
     .overview-list{display: flex; flex-wrap: wrap; gap: 50px; align-items: center; }
     .overview-image , .overview-text {flex: 1;}
+    .overview-ellipse{width: 472px; height: 472px;}
+    .overview-ellipse.left{left: -102px; top: -122px;}
+    .overview-ellipse.right{right: -50px; top: -40px;}
+    .overview-list:nth-child(2) .overview-slide-thumb img{max-width: 280px; margin: 0 auto; display: block;}
 }
+
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .overview-head{padding-bottom: 67px; z-index: 2; position: relative;}
     .overview-head h2{font-size: 46px; letter-spacing: -0.46px; margin-bottom: 29px;}
@@ -46,6 +51,7 @@
     .overview-ellipse{height: 576px; width: 576px; border-radius: 576px;}
     .overview-ellipse.left{left: -160px; top: -160px;}
     .overview-slide-thumb{width: 290px;}
+    .overview-list:nth-child(1){z-index: 2;}
     .overview-list:last-child .overview-image{position: relative; left: 10px;}
     .overview-list:last-child .overview-slide-thumb{width: 174px;}
     .overview-ellipse.right{right: 0; top: -175px;}
