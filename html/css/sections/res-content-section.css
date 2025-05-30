@@ -66,6 +66,17 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
 
 .res-content-last-line{padding: 102px 0 70px;}
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .res-content-main{padding: 90px 0 0; }
+    .res-content-main .fluid-container .full-width-image{padding: 68px 0 90px;}
+    .content-cta-wrap{padding: 70px 0 77px;}
+    .content-cta-main{padding: 60px 40px; min-height: auto;}
+    .content-cta-image{right: -40px; top: -31px; width: 300px;}
+    .fluid-image-captions{padding: 67px 0 90px;}
+    .caption-link-main{padding-bottom: 90px;}
+    .res-content-line{padding-bottom: 90px;}
+    .res-content-main blockquote{margin: 40px 0 70px; padding: 60px 40px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .res-content-main{padding: 80px 0;}
     .res-content-main h2{margin-bottom: 27px;}

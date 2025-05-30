@@ -55,5 +55,10 @@
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px){
-
+    .result-box-main{padding: 60px 40px;}
+    .result-box-head{gap: 30px; padding-bottom: 60px; }
+    .result-box-title{flex: 0 0 100%; }
+    .result-box-row{gap: 15px; }
+    .result-box-list{flex: 0 0 calc(33.333% - 10px); }
+    .result-box-icon{padding-bottom: 15px; }
 }

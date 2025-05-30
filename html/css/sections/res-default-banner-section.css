@@ -11,6 +11,10 @@
 .res-default-banner-top{margin-bottom: 32px; justify-content: space-between;}
 
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .res-default-banner-main{padding: 250px 0 90px;}
+    .res-default-banner-main h1{font-size: 64px; line-height: 70px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .result-default-overlay{background: linear-gradient(0deg,var(--Black) 0,#010101 0,hsla(0,0%,40%,0) 100%); }
     .res-default-banner-main{padding: 236px 0 90px;}
