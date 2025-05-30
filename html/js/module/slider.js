@@ -1,21 +1,29 @@
 import Swiper from 'swiper/bundle';
 
-class Slider {
-  constructor() {
-    this.customele = document.querySelector('.our-customer-main');
-    this.usecaselink = document.querySelector('ul.use-cases-links');
-    this.usecaseele = document.querySelectorAll('.use-cases-slider');
-    this.serviceele = document.querySelectorAll('.services-carousel-slider');
-    this.logos = document.querySelector('.trust-by-logos');
-  }
+export const slider = {
+  customele: document.querySelector('.our-customer-main'),
+  usecaselink: document.querySelector('ul.use-cases-links'),
+  usecaseele: document.querySelectorAll('.use-cases-slider'),
+  serviceele: document.querySelectorAll('.services-carousel-slider'),
+  logos: document.querySelector('.trust-by-logos'),
+  featuredeles: document.querySelector('.featured-articles-slider'),
+
   init() {
-    if (!this.customele || !this.usecaseele || !this.serviceele || !this.logos)
-      return;
-    this.customSlider();
-    this.usecaseSlider();
-    this.serviceSlider();
-    this.trustlogoSlider();
-  }
+    // if (
+    //   !this.customele ||
+    //   !this.usecaseele ||
+    //   !this.serviceele ||
+    //   !this.logos ||
+    //   !this.featuredeles
+    // )
+    //   return;
+    // this.customSlider();
+    // this.usecaseSlider();
+    // this.serviceSlider();
+    // this.trustlogoSlider();
+    this.mobileSlider();
+  },
+
   customSlider() {
     const left = this.customele.querySelector('.our-customer-left');
     const right = this.customele.querySelector('.our-customer-nav');
@@ -34,6 +42,7 @@ class Slider {
       },
       watchSlidesProgress: true,
     });
+
     new Swiper(right, {
       slidesPerView: 1,
       speed: 800,
@@ -46,13 +55,16 @@ class Slider {
         prevEl: '.swiper-button-prev',
       },
     });
-  }
+  },
+
   usecaseSlider() {
     this.usecaselink.children[0].querySelector('a').classList.add('active');
+
     this.usecaselink.addEventListener('click', (e) => {
       const link = e.target.closest('a[data-page]');
       if (!link) return;
       const attr = link.dataset.page;
+
       this.usecaselink
         .querySelectorAll('a')
         .forEach((link) => link.classList.remove('active'));
@@ -65,11 +77,10 @@ class Slider {
       const targetEle = document.querySelector(
         `.use-cases-slider[data-slider="${attr}"]`
       );
-      targetEle ? $(targetEle).fadeIn(900) : '';
+      if (targetEle) $(targetEle).fadeIn(900);
     });
 
     this.usecaseele.forEach((usecaseele) => {
-      console.log(usecaseele);
       new Swiper(usecaseele, {
         slidesPerView: 3,
         speed: 800,
@@ -80,7 +91,8 @@ class Slider {
         },
       });
     });
-  }
+  },
+
   serviceSlider() {
     this.serviceele.forEach((servicecarousel) => {
       new Swiper(servicecarousel, {
@@ -97,7 +109,8 @@ class Slider {
         },
       });
     });
-  }
+  },
+
   trustlogoSlider() {
     new Swiper(this.logos, {
       slidesPerView: 'auto',
@@ -111,6 +124,21 @@ class Slider {
       freeMode: true,
       freeModeMomentum: false,
     });
-  }
-}
-export const slider = new Slider();
+  },
+
+  mobileSlider() {
+    new Swiper(this.featuredeles, {
+      slidesPerView: 1,
+      speed: 800,
+      spaceBetween: 26,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  },
+};
