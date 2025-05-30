@@ -78,7 +78,7 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
     .res-content-main blockquote{margin: 40px 0 70px; padding: 60px 40px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .res-content-main{padding: 80px 0;}
+    .res-content-main{padding: 80px 0 60px;}
     .res-content-main h2{margin-bottom: 27px;}
     .res-content-main .fluid-container .container{padding: 0;}
     .res-content-main .fluid-container .full-width-image{padding: 60px 0 80px; width: calc(100% + 40px); margin-left: -20px;}
@@ -91,7 +91,23 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
     .content-cta-image{right: 0; top: -27px; width: 265px; left: 67px;}
     .content-cta-ellipse{border-radius: 536px; height: 536px; right: -160px; top: -222px; width: 536px;}
     .res-content-main h3{padding-bottom: 5px;}
-    .fluid-image-captions{padding: 58px 0 80px; }
+    .fluid-image-captions{padding: 58px 0 80px; gap: 18px; max-width: 374px; margin: 0 auto;}
+    .fluid-image-caption{flex: 0 0 100%; gap: 20px; flex-direction: row; }
+    .fluid-image-caption:first-child{align-items: end; }
+    .fluid-image-caption:nth-child(2n){padding-top: 0; }
+    .fluid-image-thumb{flex: 0 0 216px;}
+    .fluid-image-thumb img{border-radius: 20px;}
+    .fluid-image-icon{flex: 0 0 138px; max-width: 138px;}
+    .half-circle-pos{height: 53px; width: 90px; }
+    .half-circle-pos svg{height: 53px; width: 90px; }
+    .half-circle-pos svg path{stroke-width: 15px;}
+    .all-meterials-sm-icon{padding: 23px 19px; border-radius: 25px;} 
+    .half-circle-count{font-size: 23px; letter-spacing: -0.69px;}
+    .all-meterials-half-circle{height: 53px; transform: rotate(-167deg); width: 90px;}
+    .all-meterials-half-circle svg{height: 53px; width: 90px;}
+    .all-meterials-parts span:last-child{font-size: 14px; letter-spacing: -0.42px;}
+    .all-meterials-sm-x{flex: 0 0 138px; padding: 15px 19px 26px 24px; border-radius: 25px;}
+    .all-meterials-sm-x > span{font-size: 14px; letter-spacing: -0.42px;}
     .highlightbox-main{gap: 29px; padding: 34px 30px 38px 31px; align-items: flex-start;}
     .highlightbox-icon{flex: 0 0 48px; }
     .highlightbox-icon svg{width: 48px; height: 48px;}
@@ -112,3 +128,15 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
     .quote-avatar-logo{width: 68px; }
     .res-content-last-line{padding: 63px 0 0;}
 }
+
+@media screen and (max-width: 413px) and (min-width: 200px) {
+    .fluid-image-thumb{flex: 0 0 175px; }
+}
+@media screen and (max-width: 374px) and (min-width: 200px) {
+     .fluid-image-caption{gap: 10px;}
+    .fluid-image-thumb{flex: 0 0 150px;}
+    .fluid-image-icon{flex: 0 0 120px; max-width: 120px;}
+    .all-meterials-sm-icon{padding: 15px 15px;}
+    .all-meterials-sm-x{padding: 15px;}
+}
+ 
