@@ -1,8 +1,9 @@
 
 
 .featured-articles-main{padding: 26px 0 0;}
-.featured-articles-head{padding-bottom: 71px;}
+.featured-articles-head{padding-bottom: 71px; align-items: center;}
 .featured-articles-title{flex: 1;}
+.featured-articles-title h2{font-size: 32px; line-height: 38px; letter-spacing: -0.96px;}
 .featured-articles-link{width: fit-content;}
 
 .featured-articles-post{padding: 87px 82px 94px;}
@@ -11,6 +12,9 @@
 .featured-articles-right{gap: 25px;}
 .featured-articles-sm{padding: 62px 64px 60px;}
 .featured-articles-sm .featured-articles-text{max-width: 343px;}
+
+.featured-articles-ellipse{background: var(--Green-Radial-Gradient); border-radius: 757px; flex-shrink: 0; height: 757px; opacity: .1; right: -163px; top: -181px; width: 757px;}
+.featured-articles-post .featured-articles-ellipse{right: -103px; top: -181px;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1800px){
@@ -64,8 +68,12 @@
     .featured-articles-sm:nth-child(2n+1) .featured-articles-image { right: -24px; top: 50%; transform: translateY(-50%); }
     .featured-articles-sm:nth-child(2n+2) .featured-articles-image{top: -130px;}
 }
+@media only screen and (min-width: 768px){
+    .featured-articles-slider{display: none;}
+}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .featured-articles-head{padding-bottom: 31px;}
+    body.page-template-resource-default .featured-articles-head{padding-bottom: 41px;}
     .featured-articles-title h2{font-size: 34px; line-height: 40px; letter-spacing: -1.02px;}
     .featured-articles-row{padding: 0 20px; gap: 20px; flex-direction: column;}
     .featured-articles-post{padding: 0 40px 60px;}
@@ -76,4 +84,11 @@
     .featured-articles-sm:nth-child(2n+1) .featured-articles-image{max-width: 254px;}
     .featured-articles-sm:nth-child(2n+2) .featured-articles-image{margin: -110px 26px 28px auto;}
     .featured-articles-sm .featured-articles-text{max-width: 100%;}
+    .featured-articles-row{display: none;}
+    .featured-articles-slider{margin: 0 20px; padding-bottom: 33px;}
+    .featured-articles-slider .featured-articles-bg{border-radius: 20px;}
+    .featured-articles-slider .swiper-button{top: -76px; transform: none;}
+    .featured-articles-slider .swiper-button.swiper-button-prev{left: auto; right: 55px;}
+    .featured-articles-btn{margin: 0 auto; width: fit-content; padding-top: 30px;}
+    .featured-articles-ellipse {right: -180px; top: -350px;}
 }
