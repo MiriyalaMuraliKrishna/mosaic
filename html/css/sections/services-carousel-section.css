@@ -50,6 +50,25 @@
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{border-radius: 25px; background-color: var(--Green);}
 
 
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .services-carousel-main{padding: 87px 0 64px;}
+    .services-carousel-title span.optional-text{font-size: 12px; letter-spacing: 3px; margin-bottom: 26px;}
+    .services-carousel-slider{padding-bottom: 30px;}
+    .services-carousel-slider .swiper-slide{width: 100%;}
+    .services-carousel-list{display: block;}
+    .services-carousel-image{width: 100%;}
+    .services-carousel-image img{border-radius: 0;}
+    .services-carousel-text{width: 100%; padding: 48px 40px 36px;}
+    .services-carousel-ellipse{display: none;}
+    .services-carousel-desc{max-width: 100%; font-size: 15.5px; letter-spacing: -0.465px; }
+    .services-carousel-desc h2{margin-bottom: 20px;}
+    .services-carousel-desc p{margin-bottom: 30px;}
+    .services-carousel-slider.swiper-horizontal .swiper-button{top: -88px; transform: none;}
+    .services-carousel-slider .swiper-button-prev{left: 0;}
+    .services-carousel-slider .swiper-button-next{right: auto; left: 50px;}
+}
+
+
 
 
 

@@ -51,6 +51,14 @@
     .optional-module-graph{gap: 25px; flex: 0 0 138px;}
     .optional-module-graph .all-meterials-sm-icon{padding: 26px 11px 22px 20px; }
     .optional-module-array{flex: 0 0 200px;}
+
+    body.home .optional-module-wrap{padding: 0;}    
+    body.home .optional-module-main{padding: 78px 20px 90px; flex-direction: column; gap: 54px;}
+    body.home .optional-module-graph .all-meterials-sm-icon{position: absolute; width: 138px;}
+    body.home .optional-module-graph .all-meterials-sm-icon:nth-child(2){display: none;}
+    body.home .optional-module-image{position: relative; justify-content: left;}
+    body.home .optional-module-array{flex: 0 0 290px; }
+    body.home .optional-module-graph{position: absolute; top: -43px; left: 222px; width: 138px; }
 }
 @media only screen and (max-width: 413px) and (min-width: 200px){
     .optional-module-image{gap: 20px;}

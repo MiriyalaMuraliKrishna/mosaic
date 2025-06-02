@@ -45,3 +45,12 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
 
 
 .use-cases-slide:nth-child(n+4){opacity: 0.15;}
+
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .use-cases-container{height: 363px; left: 0; top: 0; width: 100%;}
+    .use-cases-bg, .use-cases-video{max-height: 363px; min-height: 363px;}
+    .use-cases-wrap{padding: 285px 0 82px;}
+    .use-cases-head{padding-bottom: 60px;}
+    .use-cases-head h2{font-size: 40px; line-height: 50px; margin-bottom: 0;}
+}
