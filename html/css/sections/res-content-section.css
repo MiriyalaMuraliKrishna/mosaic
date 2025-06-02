@@ -76,6 +76,7 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
     .caption-link-main{padding-bottom: 90px;}
     .res-content-line{padding-bottom: 90px;}
     .res-content-main blockquote{margin: 40px 0 70px; padding: 60px 40px;}
+    .content-cta-text{max-width: 400px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .res-content-main{padding: 80px 0 60px;}
@@ -131,12 +132,16 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
 
 @media screen and (max-width: 413px) and (min-width: 200px) {
     .fluid-image-thumb{flex: 0 0 175px; }
+    .content-cta-main{padding: 227px 25px 27px; }
+    .content-cta-text h2{font-size: 30px; line-height: 36px;}
 }
 @media screen and (max-width: 374px) and (min-width: 200px) {
-     .fluid-image-caption{gap: 10px;}
+    .fluid-image-caption{gap: 10px;}
     .fluid-image-thumb{flex: 0 0 150px;}
     .fluid-image-icon{flex: 0 0 120px; max-width: 120px;}
     .all-meterials-sm-icon{padding: 15px 15px;}
     .all-meterials-sm-x{padding: 15px;}
+    .content-cta-text h2{font-size: 26px; line-height: 32px;}
+    .res-content-main blockquote{padding: 20px 20px 31px;}
 }
  

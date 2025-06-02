@@ -34,6 +34,7 @@
     .result-box-icon svg{width: 50px; height: 50px;}
     .result-box-text{font-size: 18px; letter-spacing: -0.54px; line-height: 28px; color: var(--White-60); padding-top: 12px; flex: 1;}
     .result-box-text span{padding-bottom: 5px; color: var(--White); }
+    .result-box-title{flex: 0 0 100%;}
 }
 
 
@@ -61,4 +62,5 @@
     .result-box-row{gap: 15px; }
     .result-box-list{flex: 0 0 calc(33.333% - 10px); }
     .result-box-icon{padding-bottom: 15px; }
+    .result-box-text{font-size: 16px;}
 }
