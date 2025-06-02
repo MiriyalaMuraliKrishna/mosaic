@@ -5,22 +5,14 @@ export const slider = {
   usecaselink: document.querySelector('ul.use-cases-links'),
   usecaseele: document.querySelectorAll('.use-cases-slider'),
   serviceele: document.querySelectorAll('.services-carousel-slider'),
-  logos: document.querySelector('.trust-by-logos'),
+  logos: document.querySelectorAll('.trust-by-logos'),
   featuredeles: document.querySelector('.featured-articles-slider'),
 
   init() {
-    // if (
-    //   !this.customele ||
-    //   !this.usecaseele ||
-    //   !this.serviceele ||
-    //   !this.logos ||
-    //   !this.featuredeles
-    // )
-    //   return;
-    // this.customSlider();
-    // this.usecaseSlider();
-    // this.serviceSlider();
-    // this.trustlogoSlider();
+    this.customSlider();
+    this.usecaseSlider();
+    this.serviceSlider();
+    this.trustlogoSlider();
     this.mobileSlider();
   },
 
@@ -112,17 +104,19 @@ export const slider = {
   },
 
   trustlogoSlider() {
-    new Swiper(this.logos, {
-      slidesPerView: 'auto',
-      loop: true,
-      speed: 2000,
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-      },
-      spaceBetween: 50,
-      freeMode: true,
-      freeModeMomentum: false,
+    this.logos.forEach((trustlogo) => {
+      new Swiper(trustlogo, {
+        slidesPerView: 'auto',
+        loop: true,
+        speed: 2000,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+        spaceBetween: 50,
+        freeMode: true,
+        freeModeMomentum: false,
+      });
     });
   },
 
