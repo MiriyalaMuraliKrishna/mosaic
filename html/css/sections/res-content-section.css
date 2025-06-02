@@ -66,6 +66,10 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
 
 .res-content-last-line{padding: 102px 0 70px;}
 
+@media screen and (max-width: 1099px) and (min-width: 1024px) {
+    .content-cta-main{padding: 77px 90px 83px 30px;}
+    .res-content-main blockquote{padding: 60px;}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .res-content-main{padding: 90px 0 0; }
     .res-content-main .fluid-container .full-width-image{padding: 68px 0 90px;}
@@ -76,7 +80,7 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
     .caption-link-main{padding-bottom: 90px;}
     .res-content-line{padding-bottom: 90px;}
     .res-content-main blockquote{margin: 40px 0 70px; padding: 60px 40px;}
-    .content-cta-text{max-width: 400px;}
+    .content-cta-text{max-width: 350px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .res-content-main{padding: 80px 0 60px;}

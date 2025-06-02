@@ -131,6 +131,7 @@ export const slider = {
       slidesPerView: 1,
       speed: 800,
       spaceBetween: 26,
+      autoHeight: true,
       pagination: {
         el: '.swiper-pagination',
         type: 'progressbar',
