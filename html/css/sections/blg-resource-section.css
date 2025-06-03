@@ -64,6 +64,7 @@ picture.case-stdy-thumb img{opacity: 0.3;}
     ul.blg-resource-lists > li{gap: 0 25px; padding: 23px 25px;}
     .blg-resource-text h2{padding-right: 16px; font-size: 19px; line-height: 26px; font-weight: 500;}
     .blg-resource-links{margin-top: -17px; flex: 0 0 100%; display: flex; flex-wrap: wrap; justify-content: flex-end;}
+    .blg-resource-link{text-transform: uppercase; font-size: 16px; font-weight: 600; letter-spacing: 0.16px;}
     
     .case-stdy-lists{flex-direction: column;}
     .case-stdy-text{padding: 41px 40px 41px;}

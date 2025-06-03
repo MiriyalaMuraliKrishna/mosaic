@@ -38,4 +38,26 @@ ul.calc-part-inputs li:hover{background-color: var(--Black); color: var(--White)
 .calc-part-image{top: -50px; right: -333px; max-width: 884px; max-height: 800px; z-index: -1;}
 .calc-part-image img{object-fit: contain;}
 
-.calc-part-tot{backdrop-filter: blur(9px);}
+.calc-part-tot{backdrop-filter: blur(9px);} 
+
+@media screen and (max-width: 1099px) and (min-width: 1024px){
+   .calc-part-cost{padding: 60px;}
+   .calc-part-choose{padding: 60px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .calc-part-wrap{padding: 100px 0 90px;}
+    .calc-part-text{padding-bottom: 90px; }
+    .calc-part-line{margin-bottom: 20px;}
+    .calc-part-text h2{font-size: 42px; font-weight: 500; letter-spacing: -0.84px; line-height: 54px; margin-bottom: 20px; }
+    .calc-part-desc{font-size: 15.5px; letter-spacing: -.465px; line-height: 24px; max-width: 258px; }
+    .calc-part-image{max-height: fit-content; max-width: 273px; right: -89px; top: 189px;}
+    .calc-part-tot{border-radius: 20px;}
+    .calc-part-cost{flex: 0 0 100%; padding: 46px 40px 0;}
+    .calc-part-head{padding-bottom: 31px;}
+    .calc-part-cost h2{font-size: 28px; line-height: normal; margin-bottom: 0;}
+    ol.calc-part-steps{font-size: 0; gap: 56px; position: absolute; left: 0;}
+    .calc-part-choose{padding: 0 40px 40px; border: none;}
+    .calc-part-up span.fs-20{font-size: 18px;}
+    .calc-part-up span.muted-dark{font-size: 16px;}
+    ul.calc-part-inputs li{padding: 10px 20px; flex: 0 0 calc(50% - 5px); text-align: center;}
+}
