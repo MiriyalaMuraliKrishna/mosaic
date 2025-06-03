@@ -17,8 +17,8 @@ export const slider = {
   },
 
   customSlider() {
-    const left = this.customele.querySelector('.our-customer-left');
-    const right = this.customele.querySelector('.our-customer-nav');
+    const left = this.customele?.querySelector('.our-customer-left');
+    const right = this.customele?.querySelector('.our-customer-nav');
 
     const leftswiper = new Swiper(left, {
       effect: 'coverflow',
@@ -33,6 +33,10 @@ export const slider = {
         slideShadows: true,
       },
       watchSlidesProgress: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
 
     new Swiper(right, {
@@ -50,9 +54,9 @@ export const slider = {
   },
 
   usecaseSlider() {
-    this.usecaselink.children[0].querySelector('a').classList.add('active');
+    this.usecaselink?.children[0].querySelector('a').classList.add('active');
 
-    this.usecaselink.addEventListener('click', (e) => {
+    this.usecaselink?.addEventListener('click', (e) => {
       const link = e.target.closest('a[data-page]');
       if (!link) return;
       const attr = link.dataset.page;
@@ -74,12 +78,26 @@ export const slider = {
 
     this.usecaseele.forEach((usecaseele) => {
       new Swiper(usecaseele, {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         speed: 800,
-        spaceBetween: 77,
+        spaceBetween: 20,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1300: {
+            slidesPerView: 3,
+            spaceBetween: 77,
+          },
         },
       });
     });
