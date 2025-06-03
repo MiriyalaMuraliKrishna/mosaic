@@ -47,10 +47,24 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
 .use-cases-slide:nth-child(n+4){opacity: 0.15;}
 
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .use-cases-head h2{font-size: 62px; line-height: 70px;}
+}
+
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .use-cases-container{height: 363px; left: 0; top: 0; width: 100%;}
     .use-cases-bg, .use-cases-video{max-height: 363px; min-height: 363px;}
     .use-cases-wrap{padding: 285px 0 82px;}
     .use-cases-head{padding-bottom: 60px;}
     .use-cases-head h2{font-size: 40px; line-height: 50px; margin-bottom: 0;}
+    ul.use-cases-links > li > a{gap: 20px 0;}
+    .use-cases-row{padding-top: 40px;}
+    .use-cases-slider .swiper-slide{width: 323px;}
+    .use-cases-text{padding: 51px 40px 71px 41px;}
+}
+
+@media screen and (max-width: 374px) and (min-width: 200px) {
+    .use-cases-head h2{font-size: 35px; line-height: 45px;}
+    .use-cases-slider .swiper-slide{width: 260px;}
+    .use-cases-text{padding: 31px 20px 41px 21px;}
 }

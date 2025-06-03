@@ -132,13 +132,7 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
     .quote-avatar-text{font-size: 15px;}
     .quote-avatar-logo{width: 68px; }
     .res-content-last-line{padding: 63px 0 0;}
-    .our-customer-wrap{padding: 90px 0 100px;}
-    .our-customer-image::before{position: absolute; content: ""; width: 100%; height: 100%; top: 0; left: 0; background: linear-gradient(180deg, transparent 21.76%, var(--Black) 100%); }
-    .our-customer-right{margin-top: -96px;}
-    .our-customer-text blockquote{font-size: 18px; letter-spacing: -0.18px; line-height: 36px;}
-    .our-customer-text{padding: 0 30px;}
-    .our-customer-avatar{gap: 22px; padding-top: 21px;}
-    .our-customer-avatar .muted-light{font-size: 16px;}
+    
 }
 
 @media screen and (max-width: 413px) and (min-width: 200px) {

@@ -50,6 +50,22 @@
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{border-radius: 25px; background-color: var(--Green);}
 
 
+@media screen and (max-width: 1549px) and (min-width: 1024px) {
+    .services-carousel-slider .swiper-button-prev{left: 0;}
+    .services-carousel-slider .swiper-button-next{right: 0;}
+}
+@media screen and (max-width: 1249px) and (min-width: 1024px) {
+    .services-carousel-slider .swiper-slide{width: 950px;}
+    .services-carousel-image{flex: 0 0 400px;}
+    .services-carousel-text{padding: 60px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .services-carousel-slider .swiper-button-prev{left: 0;}
+    .services-carousel-slider .swiper-button-next{right: 0;}
+    .services-carousel-slider .swiper-slide{width: 700px;}
+    .services-carousel-image{flex: 0 0 350px;}
+    .services-carousel-text{padding: 40px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .services-carousel-main{padding: 87px 0 64px;}
     .services-carousel-title span.optional-text{font-size: 12px; letter-spacing: 3px; margin-bottom: 26px;}
@@ -66,6 +82,10 @@
     .services-carousel-slider.swiper-horizontal .swiper-button{top: -88px; transform: none;}
     .services-carousel-slider .swiper-button-prev{left: 0;}
     .services-carousel-slider .swiper-button-next{right: auto; left: 50px;}
+}
+
+@media screen and (max-width: 413px) and (min-width: 200px) {
+    .services-carousel-text{padding: 48px 20px 36px;}
 }
 
 

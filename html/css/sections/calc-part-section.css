@@ -44,6 +44,14 @@ ul.calc-part-inputs li:hover{background-color: var(--Black); color: var(--White)
    .calc-part-cost{padding: 60px;}
    .calc-part-choose{padding: 60px;}
 }
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .calc-part-wrap{padding: 80px 0; }
+    .calc-part-text h2{font-size: 64px; line-height: 70px;}
+    .calc-part-image{max-height: 500px; max-width: 500px; right: -180px; top: 150px;}
+    .calc-part-cost{flex: 0 0 300px; padding: 60px; }
+    .calc-part-cost h2{font-size: 26px; line-height: 31px;}
+    .calc-part-choose{padding: 60px; }
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
     .calc-part-wrap{padding: 100px 0 90px;}
     .calc-part-text{padding-bottom: 90px; }
@@ -60,4 +68,8 @@ ul.calc-part-inputs li:hover{background-color: var(--Black); color: var(--White)
     .calc-part-up span.fs-20{font-size: 18px;}
     .calc-part-up span.muted-dark{font-size: 16px;}
     ul.calc-part-inputs li{padding: 10px 20px; flex: 0 0 calc(50% - 5px); text-align: center;}
+}
+
+@media screen and (max-width: 374px) and (min-width: 200px){
+    .calc-part-up span.fs-20{font-size: 14px;}
 }
