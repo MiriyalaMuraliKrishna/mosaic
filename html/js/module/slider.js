@@ -99,7 +99,24 @@ export const slider = {
             spaceBetween: 77,
           },
         },
+        on: {
+          slideChange: function () {
+            updateSlideOpacity(this);
+          },
+          init: function () {
+            updateSlideOpacity(this);
+          },
+        },
       });
+      function updateSlideOpacity(swiper) {
+        swiper.slides.forEach((slide, index) => {
+          // console.log(index, swiper.activeIndex + swiper.params.slidesPerView);
+          slide.style.opacity =
+            index < swiper.activeIndex + swiper.params.slidesPerView
+              ? '1'
+              : '0.15';
+        });
+      }
     });
   },
 
