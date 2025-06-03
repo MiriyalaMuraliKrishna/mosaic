@@ -47,8 +47,14 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
 .use-cases-slide:nth-child(n+4){opacity: 0.15;}
 
 
+@media screen and (max-width: 1399px) and (min-width: 1024px) {
+    .use-cases-slider .swiper-button-prev{left: 0;}
+    .use-cases-slider .swiper-button-next{right: 0;}
+}
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .use-cases-head h2{font-size: 62px; line-height: 70px;}
+    .use-cases-slider .swiper-button-prev{left: 0;}
+    .use-cases-slider .swiper-button-next{right: 0;}
 }
 
 @media screen and (max-width: 767px) and (min-width: 200px) {
