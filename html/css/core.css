@@ -41,6 +41,9 @@
 @import url('./sections/featured-articles-section.css');
 @import url('./sections/blg-resource-section.css');
 
+/*-- 08 - Resources Filtered page --*/
+@import url('./sections/fea-articles-grid-section.css');
+
 /*-- 09 - Resources Default page --*/
 @import url('./sections/res-default-banner-section.css');
 @import url('./sections/result-box-section.css');
@@ -87,4 +90,5 @@
 
 /*-- 404 page --*/
 @import url('./sections/page-not-section.css');
+
 

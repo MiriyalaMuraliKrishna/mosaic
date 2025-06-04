@@ -126,6 +126,9 @@ button.mfp-close:hover, button.mfp-arrow:hover{
   background-color: var(--White);
   color: var(--Green);
 }
+button.mfp-close:hover::before{
+  color: var(--Green);
+}
 button.mfp-close, button.mfp-arrow {
   overflow: visible;
   cursor: pointer;
@@ -266,6 +269,24 @@ button::-moz-focus-inner {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0;
+  transition: var(--b-transition-5);
+}
+
+.mfp-iframe-holder .mfp-close::before {
+	color: var(--White);
+	content: "\e59b";
+	font-family: Font Awesome\ 6 Pro;
+	font-size: 16px;
+	font-weight: 800;
+	height: 16px;
+	line-height: 16px;
+	position: absolute;
+	width: 16px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+  transition: var(--b-transition-5);
 }
 
 .mfp-iframe-scaler {

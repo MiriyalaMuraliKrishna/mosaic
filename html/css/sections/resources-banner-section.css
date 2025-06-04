@@ -16,5 +16,7 @@
     .resources-banner-main{padding: 156px 0 112px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .resources-banner-main{padding: 156px 0 66px;}
+    .resources-banner-main{padding: 156px 0 60px;}
+    .resources-banner-text{font-size: 21px; line-height: 30px; letter-spacing: -0.63px;}
+    .resources-banner-text p{margin-bottom: 20px; }
 }
