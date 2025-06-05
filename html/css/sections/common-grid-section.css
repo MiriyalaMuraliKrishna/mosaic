@@ -16,3 +16,17 @@
     .common-grid-main{gap: 121px 77px;}
     .common-grid-list{flex: 0 0 calc(33.333333% - 77px);}
 }
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .common-grid-main{gap: 50px;}
+    .common-grid-list{display: flex; flex-wrap: wrap; gap: 30px; width: 100%;}
+    .common-grid-icon{height: 50px; margin-bottom: 0; width: 50px;}
+    .common-grid-text{flex: 1;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .common-grid-main{gap: 40px;}
+    .common-grid-list{display: flex; flex-wrap: wrap; gap: 30px; width: 100%;}
+    .common-grid-icon{height: 50px; margin-bottom: 0; width: 50px;}
+    .common-grid-text{flex: 1; padding: 12px 10px 0 0; font-size: 18px; line-height: 28px; letter-spacing: -0.54px;}
+    .common-grid-text h2{margin-bottom: 5px; font-weight: 600; }
+}

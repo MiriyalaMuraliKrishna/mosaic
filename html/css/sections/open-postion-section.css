@@ -11,9 +11,28 @@
 .open-postion-ellipse{ top: -280px; left: -169px; width: 1066px; height: 1066px; border-radius: 1066px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1;}
 
 
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .open-postion-main{gap: 20px; padding: 125px 40px 123px 0;}
+    .open-postion-text h2{font-size: 54px; line-height: 64px;}
+}
 
+@media screen and (max-width: 1023px) and (min-width:768px) {
+    .open-postion-wrap{padding: 90px 0;}
+    .open-postion-main{padding: 60px 20px;}
+    .open-postion-image{flex: 0 0 100%; transform: none; position: relative;}
+}
 
-
+@media screen and (max-width: 767px) and (min-width:200px) {
+    .open-postion-section .container{padding: 0;}
+    .open-postion-wrap{padding: 131px 0 133px;}
+    .open-postion-ellipse{ height: 759px; width: 759px;}
+    .open-postion-main{gap: 25px; padding: 0 20px 90px;}
+    .open-postion-bg{border-radius: 0;}
+    .open-postion-image{flex: 0 0 100%; transform: translateY(-35px);}
+    .open-postion-image img{border-radius: 20px;}
+    .open-postion-text span.optional-text{font-size: 12px; letter-spacing: 3px;}
+    .open-postion-text p{margin-bottom: 7px; }
+}
 
 
 

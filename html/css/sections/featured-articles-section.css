@@ -72,6 +72,7 @@
     .featured-articles-slider{display: none;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    .featured-articles-section.gray-out{opacity: 0.5;}
     .featured-articles-head{padding-bottom: 40px;}
     .featured-articles-title h2{font-size: 27px; letter-spacing: -0.81px; line-height: 36px;}
     .featured-articles-row{padding: 0 20px; gap: 20px; flex-direction: column;}

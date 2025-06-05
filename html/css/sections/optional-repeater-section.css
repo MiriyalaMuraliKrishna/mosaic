@@ -24,3 +24,23 @@
     .reverse .optional-repeater-image{margin-left: -40px; margin-right: 0;}
     .optional-repeater-text h2{font-size: 54px; line-height: 64px; letter-spacing: -0.92px;}
 }
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .optional-repeater-main{padding: 90px 0; gap: 90px;}
+    .optional-repeater-text, .optional-repeater-image{width: 100%;}
+    .optional-repeater-image img{border-radius: 0;}
+    .reverse .optional-repeater-main{flex-direction: column-reverse;}
+    .reverse .optional-repeater-image img{border-radius: 0;}
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .optional-repeater-section .container{padding: 0;}
+    .optional-repeater-main{padding: 90px 0; gap: 90px;}
+    .optional-repeater-text{font-size: 18px; line-height: 28px; letter-spacing: -0.54px; padding: 0 20px;}
+    .optional-repeater-text h2{margin-bottom: 20px; letter-spacing: -1.26px; }
+    .optional-repeater-image img{border-radius: 0;}
+    .reverse .optional-repeater-main{flex-direction: column-reverse;}
+    .reverse .optional-repeater-image img{border-radius: 0;}
+}
+
+@media only screen and (max-width: 374px) and (min-width: 200px){
+    .optional-repeater-text h2{font-size: 32px; line-height: 44px;}
+}
