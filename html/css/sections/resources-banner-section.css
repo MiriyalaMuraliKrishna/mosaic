@@ -15,6 +15,9 @@
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .resources-banner-main{padding: 156px 0 112px;}
 }
+@media only screen and (min-width: 768px){
+    .resources-banner-text h1 br{display: none;}
+}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .resources-banner-main{padding: 156px 0 60px;}
     .resources-banner-text{font-size: 21px; line-height: 30px; letter-spacing: -0.63px;}
