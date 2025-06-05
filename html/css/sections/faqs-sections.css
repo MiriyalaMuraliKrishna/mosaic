@@ -64,6 +64,7 @@ ul.category-links > li a {
     .faqs-head{padding-bottom: 60px;}
     .faqs-head h2{margin-bottom: 8px;}
     .faqs-right{flex: 1; gap: 82px 0;}
+    .faqs-text:nth-child(1):nth-last-child(2){flex: 0 0 100%;}
     .faqs-text:nth-child(1):last-child, .faqs-right:nth-child(1):last-child{width: 100%; flex: 0 0 100%;}
     
 }

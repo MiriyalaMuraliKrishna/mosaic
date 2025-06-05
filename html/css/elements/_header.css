@@ -15,7 +15,7 @@ ul.main_menu > li > ul > li.hide-nav-overview > a{display: none;}
     .logo{top: -6px; position: relative; flex: 0 0 139px;}
  
 
-    .navigation{padding: 15px 43px 19px;  width: fit-content; margin-left: auto; background-color: var(--White-10);}
+    .navigation{padding: 15px 43px 19px;  width: fit-content; margin-left: auto; background-color: var(--White-10); backdrop-filter: blur(27px);}
     ul.main_menu{gap: 16px 39.55px; justify-content: flex-end;}
     ul.main_menu > li{margin: 0; position: static;}
     ul.main_menu > li > a{display: inline-block; font-size: 17px; line-height: 22px; letter-spacing: 0; font-weight: 600; color: var(--White);}
