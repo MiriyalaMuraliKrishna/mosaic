@@ -17,6 +17,10 @@ class Browses {
   // main logic here
   eventHandler(e) {
     e.preventDefault();
+    const nextSection = e.target.closest('section')?.nextElementSibling;
+    if (nextSection && nextSection.tagName.toLowerCase() === 'section') {
+      nextSection.classList.toggle('gray-out');
+    }
     e.target.classList.toggle('open');
     let $ul = e.target
       .closest('.resources-browse-text')
