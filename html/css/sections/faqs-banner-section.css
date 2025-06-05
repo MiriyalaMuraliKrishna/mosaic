@@ -2,14 +2,8 @@
 .faqs-banner-main {
     justify-content: space-between;
   }
-  .faqs-banner-text {
-
-font-size: 23px;
-
-font-weight: 300;
-line-height: 38px; 
-letter-spacing: -0.69px;
-  }
+  .faqs-banner-text { font-size: 23px; font-weight: 300; line-height: 38px; letter-spacing: -0.69px; }
+  .faqs-banner-text:nth-child(1):last-child{flex: 0 0 100%;}
   .faqs-banner-text h1{margin-bottom: 30px;}
   .faqs-banner-image {
     gap: 8px;
