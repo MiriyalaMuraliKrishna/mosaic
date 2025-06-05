@@ -83,7 +83,8 @@
     .featured-articles-sm:nth-child(2n+1) .featured-articles-image{max-width: 254px;}
     .featured-articles-sm:nth-child(2n+2) .featured-articles-image{margin: -110px 26px 28px auto;}
     .featured-articles-sm .featured-articles-text{max-width: 100%;}
-    .featured-articles-row{display: none;}
+    .featured-articles-row:not(.featured-articles-row.featured-articles-mob){display: none;}
+    .featured-articles-slider.featured-no-slider{display: none;}
     .featured-articles-slider{margin: 0 20px; padding-bottom: 44px;}
     .featured-articles-slider .featured-articles-bg{border-radius: 20px;}
     .featured-articles-slider .swiper-button{top: -76px; transform: none;}
