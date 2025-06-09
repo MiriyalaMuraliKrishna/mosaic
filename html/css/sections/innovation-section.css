@@ -15,6 +15,7 @@ span.year{padding-bottom: 28px;}
 .innovation-list:last-child{margin-bottom: 0;}
 .innovation-list:last-child p{margin-bottom: 0;}
 .innovation-list:last-child .stripe-line{display: none;}
+.innovation-text:nth-child(1):last-child{flex: 0 0 100%;}
 
 
 @media screen and (max-width: 1299px) and (min-width: 1024px) {

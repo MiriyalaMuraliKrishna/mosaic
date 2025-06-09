@@ -1,0 +1,18 @@
+
+
+.usecase-banner-video video{width: 100%; height: 100%;}
+.usecase-banner-overlay{opacity: 0.4;}
+.usecase-banner-main{padding: 308px 0 160px; max-width: 1011px;}
+.usecase-banner-text h1{padding-top: 20px; margin-bottom: 32px;}
+.usecase-banner-btns{padding-top: 17px;}
+
+
+@media screen and (min-width: 768px) {
+    .usecase-banner-text h1 br{display: none;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .usecase-banner-main{padding: 312px 0 32px;}
+    .usecase-banner-bg img{opacity: 0.4;}
+    .usecase-banner-overlay{opacity: 0;}
+    .usecase-banner-btns{padding-top: 2px;}
+}

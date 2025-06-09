@@ -8,6 +8,8 @@
 .overview-ellipse.right{right: -247px; top: -243px;}
 .overview-text h2{margin-bottom: 20px;}
 .overview-text p{margin-bottom: 31px;}
+.overview-list:nth-child(1):last-child{flex: 0 0 100%;}
+.overview-list:nth-child(1):last-child .overview-text{max-width: 100%;}
 
 
 /*-- media css starts here --*/

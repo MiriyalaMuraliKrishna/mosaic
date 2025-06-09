@@ -6,7 +6,7 @@
 .about-banner-main{padding: 396px 0 177px; max-width: 805px;}
 .about-banner-text h1{padding-top: 20px; margin-bottom: 17px;}
 .about-banner-btns{padding-top: 12px;}
-
+.about-banner-video video{width: 100%;}
 
 @media screen  and (max-width: 1023px) and (min-width: 768px){
 .about-banner-main{padding: 260px 0 90px;}
