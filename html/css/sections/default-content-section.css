@@ -1,0 +1,11 @@
+
+.default-content-head .h1{margin-bottom: 0;}
+
+
+@media screen and (min-width: 1024px) {
+    .default-content-wrap{padding: 120px 0 130px 114px;}
+    .default-content-head{margin-bottom: 80px;}
+    .default-content-main{gap: 20px;}
+    .default-content-article{flex: 1;}
+    .default-content-aside{flex: 0 0 320px; }
+}
