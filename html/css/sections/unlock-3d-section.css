@@ -17,6 +17,7 @@
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     body.home .unlock-3d-wrap{padding: 124px 0 38px;}
+    body.page-template-default .unlock-3d-wrap{padding: 102px 0 40px;}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1024px) {

@@ -94,5 +94,6 @@
 /*-- default page --*/
 @import url('./sections/default-banner-section.css');
 @import url('./sections/default-content-section.css');
+@import url('./sections/advanced-scroll-section.css');
 
 

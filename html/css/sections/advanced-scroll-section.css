@@ -1,0 +1,10 @@
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .advanced-scroll-main{gap: 141px;}
+    .advanced-scroll-head{flex: 0 0 546px;}
+    .advanced-scroll-lists{flex: 1;}
+}
