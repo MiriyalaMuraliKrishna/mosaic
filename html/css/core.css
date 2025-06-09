@@ -91,4 +91,7 @@
 /*-- 404 page --*/
 @import url('./sections/page-not-section.css');
 
+/*-- default page --*/
+@import url('./sections/default-banner-section.css');
+
 
