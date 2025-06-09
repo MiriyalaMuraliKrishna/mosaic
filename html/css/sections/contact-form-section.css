@@ -32,6 +32,7 @@
 .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input:checked::before{display: none;}
 .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:hover, .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:has(input[type="checkbox"]:checked){color: var(--Black);}
 
+.contact-address:nth-child(1):last-child{flex: 0 0 100%;}
 
 /* media css starts here */
 @media only screen and (min-width: 1440px){
