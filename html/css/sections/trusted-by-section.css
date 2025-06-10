@@ -1,0 +1,10 @@
+.trusted-by-main{max-width: 870px;}
+
+.trusted-by-logos .swiper-wrapper{align-items: center;}
+.trusted-by-logos .swiper-slide{width: 180px; flex-shrink: 0;}
+.trusted-by-logo img{object-fit: contain; max-width: 180px; margin: auto;}
+
+.trusted-by-logo img[data-logo="awwards"]{max-width: 132px;}
+.trusted-by-logo img[data-logo="dan"]{max-width: 148px;}
+.trusted-by-logo img[data-logo="css-winner"]{max-width: 154.5px;}
+.trusted-by-logo img[data-logo="clutch"]{max-width: 86px;}

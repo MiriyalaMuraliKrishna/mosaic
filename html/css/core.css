@@ -25,6 +25,10 @@
 
 /*-- 03 - Use Cases page --*/
 @import url('./sections/usecase-banner-section.css');
+@import url('./sections/use-intro-section.css');
+@import url('./sections/trusted-by-section.css');
+@import url('./sections/large-feature-section.css');
+@import url('./sections/product-stats-section.css');
 @import url('./sections/everything-faq-section.css');
 
 
