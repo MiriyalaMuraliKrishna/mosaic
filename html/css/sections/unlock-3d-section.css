@@ -31,6 +31,7 @@
 @media screen and (max-width: 767px) and (min-width:200px) {
     .unlock-3d-section .container{padding: 0;}
     .unlock-3d-wrap{padding: 131px 0 90px;}
+    body.page-template-default .unlock-3d-wrap{padding: 120px 0 90px;}
     .unlock-3d-ellipse{ height: 759px; width: 759px;}
     .unlock-3d-main{gap: 25px; padding: 0 20px 90px;}
     .unlock-3d-bg{border-radius: 0;}
