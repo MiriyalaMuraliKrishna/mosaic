@@ -1,0 +1,48 @@
+
+.advanced-scroll-head{font-weight: 300; font-size: 21px; line-height: 30px; letter-spacing: -0.63px;}
+.advanced-scroll-head span.optional-text{opacity: 0.4; text-transform: uppercase; margin-bottom: 288px; display: block; }
+.advanced-scroll-head span.stripe-line{margin-bottom: 13px;}
+.advanced-scroll-head h2 span{color: var(--Green);}
+.advanced-scroll-head p{padding-right: 30px;}
+
+
+.advanced-scroll-desc{width: 460px; font-size: 16.5px; line-height: 26px; letter-spacing: -0.495px; }
+.advanced-scroll-desc p{opacity: .4; width: 324px;}
+
+
+@media screen and (min-width: 1024px) {
+    .advanced-scroll-main{gap: 141px; padding: 0 0 160px;}
+    .advanced-scroll-head{flex: 0 0 546px; padding-top: 145px;}
+    .advanced-scroll-lists{flex: 1;}
+    .advanced-scroll-item{min-height: 790px;}
+    .advanced-scroll-img{left: 135px; margin-bottom: 58px; position: relative; top: 0; width: 515px; padding-top: 102px; }
+    .advanced-scroll-item[scroll-grid="2"] .advanced-scroll-img{width: 392px; padding-top: 67px; left: 251px; margin-bottom: 23px;}
+    .advanced-scroll-item[scroll-grid="3"] .advanced-scroll-img{width: 335px; padding-top: 58px; left: 251px; margin-bottom: 76px;}
+    
+}
+
+@media screen and (max-width: 1289px) and (min-width: 1024px) {
+    .advanced-scroll-img{max-width: 350px; left: 0;}
+    .advanced-scroll-item[scroll-grid="2"] .advanced-scroll-img{left: 0;}
+    .advanced-scroll-item[scroll-grid="3"] .advanced-scroll-img{left: 0;}
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .advanced-scroll-main{gap: 50px;}
+    .advanced-scroll-head{flex: 0 0 400px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 200px) {
+    .advanced-scroll-main{padding: 90px 0 100px;}
+    .advanced-scroll-head{margin-bottom: 47px; width: 100%;}
+    .advanced-scroll-head span.optional-text{margin-bottom: 60px;}
+    .advanced-scroll-head span.stripe-line{margin-bottom: 8px;}
+    .advanced-scroll-lists{width: 100%;}
+    .advanced-scroll-item{margin-bottom: 40px;}
+    .advanced-scroll-item:last-child{margin-bottom: 0;}
+    .advanced-scroll-img{left: 0; margin-bottom: 40px; position: relative; top: 0; width: 251px; padding-top: 0; }
+    .advanced-scroll-item[scroll-grid="2"] .advanced-scroll-img{width: 198px;}
+    .advanced-scroll-item[scroll-grid="3"] .advanced-scroll-img{width: 204px;}
+    .advanced-scroll-desc{width: 100%;}
+    .advanced-scroll-desc p{width: 100%;}
+}

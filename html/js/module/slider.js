@@ -6,6 +6,7 @@ export const slider = {
   usecaseele: document.querySelectorAll('.use-cases-slider'),
   serviceele: document.querySelectorAll('.services-carousel-slider'),
   logos: document.querySelectorAll('.trust-by-logos'),
+  brands: document.querySelectorAll('.trusted-by-logos'),
   featuredeles: document.querySelector('.featured-articles-slider'),
   productsliderfor: document.querySelector('.products-slider-for'),
   productslidernav: document.querySelector('.products-slider-nav'),
@@ -14,6 +15,7 @@ export const slider = {
     this.usecaseSlider();
     this.serviceSlider();
     this.trustlogoSlider();
+    this.trustbrandSlider();
     this.mobileSlider();
     this.productsliderFor();
   },
@@ -141,6 +143,22 @@ export const slider = {
 
   trustlogoSlider() {
     this.logos.forEach((trustlogo) => {
+      new Swiper(trustlogo, {
+        slidesPerView: 'auto',
+        loop: true,
+        speed: 2000,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+        spaceBetween: 50,
+        freeMode: true,
+        freeModeMomentum: false,
+      });
+    });
+  },
+  trustbrandSlider() {
+    this.brands.forEach((trustlogo) => {
       new Swiper(trustlogo, {
         slidesPerView: 'auto',
         loop: true,

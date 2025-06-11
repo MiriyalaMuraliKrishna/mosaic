@@ -95,6 +95,7 @@
     body.page-template-resource-filtered .featured-articles-btn{margin: 0; padding: 30px 20px 0;}
     .featured-articles-ellipse {right: -180px; top: -350px;}
     body.home .featured-articles-main{padding: 0;}
+    body.page-template-default .featured-articles-main{padding: 0;}
 }
 
 @media only screen and (max-width: 413px) and (min-width: 200px){

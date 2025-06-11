@@ -25,8 +25,15 @@
 
 /*-- 03 - Use Cases page --*/
 @import url('./sections/usecase-banner-section.css');
+<<<<<<< HEAD
 @import url('./sections/download-section.css');
 @import url('./sections/products-slider-section.css');
+=======
+@import url('./sections/use-intro-section.css');
+@import url('./sections/trusted-by-section.css');
+@import url('./sections/large-feature-section.css');
+@import url('./sections/product-stats-section.css');
+>>>>>>> d7ec6f309ba3df365a8c3326a6adc2f7a9c30310
 @import url('./sections/everything-faq-section.css');
 
 
@@ -99,5 +106,6 @@
 /*-- default page --*/
 @import url('./sections/default-banner-section.css');
 @import url('./sections/default-content-section.css');
+@import url('./sections/advanced-scroll-section.css');
 
 
