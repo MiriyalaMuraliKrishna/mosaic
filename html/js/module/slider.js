@@ -151,9 +151,16 @@ export const slider = {
           delay: 0,
           disableOnInteraction: false,
         },
-        spaceBetween: 50,
+        spaceBetween: 40,
         freeMode: true,
         freeModeMomentum: false,
+        breakpoints: {
+          768: {
+            spaceBetween: 50,
+          },
+          1024: {},
+          1300: {},
+        },
       });
     });
   },

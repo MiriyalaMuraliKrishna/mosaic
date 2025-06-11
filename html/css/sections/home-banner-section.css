@@ -21,7 +21,6 @@ background-image: linear-gradient(0deg, var(--Black) 0%,rgba(115, 115, 115, 0.00
 .home-banner-btns{padding-top: 12px;}
 
 
-.trust-by-main{max-width: 870px;}
 
 .trust-by-logos .swiper-wrapper{align-items: center;}
 .trust-by-logos .swiper-slide{width: 180px; flex-shrink: 0;}
@@ -33,31 +32,38 @@ background-image: linear-gradient(0deg, var(--Black) 0%,rgba(115, 115, 115, 0.00
 .trust-by-logo img[data-logo="clutch"]{max-width: 86px;}
 
 
-
-
-
-
-
+.home-endless-ellipse{ width: 511px; height: 511px; opacity: 0.23; background: radial-gradient(50% 50% at 50% 50%, var(--Purple) 0%, rgba(139, 82, 252, 0.00) 100%); }
+.home-endless-image{max-width: 124px; margin-bottom: 13px;}
+.home-endless-image{top: -183px; left: 0;}
+.home-endless-main span.fs-22{margin-bottom: 20px;}
 
 
 /* media css starts here */
 @media only screen and (min-width: 1024px){
-
+    .trust-by-main{max-width: 870px;}
+    .home-endless-pos{position: absolute; max-width: 320px; padding: 79px 55px 45px 45px; top: auto; right: 0; bottom: 8px; z-index: 1; }
 }
-
-
+@media only screen and (max-width: 1299px) and (min-width: 1024px){
+    .home-endless-pos{bottom: 80px; right: 40px;}
+}
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .home-banner-text h1{font-size: 66px; line-height: 78px;}
+    .home-endless-pos{margin: 184px 0 10px; padding: 79px 55px 45px 45px; max-width: 320px; position: relative;}
 }
-
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .home-banner-section{min-height: 570px;}
     .home-banner-wrap{padding: 0;}
-    .home-banner-main{padding: 173px 0 193px;}
+    .home-banner-main{padding: 173px 0 94px;}
     .home-banner-text h1{font-size: 56px; letter-spacing: -0.56px; line-height: 68px; margin-bottom: 22px;}
-
+    
+    .trust-by-main span.optional-text{font-size: 12px; line-height: 18px; letter-spacing: 3px;}
+    .trust-by-logos .swiper-slide{width: fit-content;}
+    .trust-by-logo img{max-width: 132px;}
+    .trust-by-logo img[data-logo="awwards"]{max-width: 86px;}
+    .trust-by-logo img[data-logo="dan"]{max-width: 120px;}
+    .trust-by-logo img[data-logo="css-winner"]{max-width: 132px;}
+    .home-endless-pos{margin: 184px 0 10px;  padding: 79px 55px 45px 45px; position: relative;}
 }
-
 @media only screen and (max-width: 374px) and (min-width: 200px){
     .home-banner-text h1{font-size: 50px; line-height: 62px;}
 }
