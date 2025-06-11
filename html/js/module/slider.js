@@ -7,15 +7,16 @@ export const slider = {
   serviceele: document.querySelectorAll('.services-carousel-slider'),
   logos: document.querySelectorAll('.trust-by-logos'),
   featuredeles: document.querySelector('.featured-articles-slider'),
-
+  productsliderfor: document.querySelector('.products-slider-for'),
+  productslidernav: document.querySelector('.products-slider-nav'),
   init() {
     this.customSlider();
     this.usecaseSlider();
     this.serviceSlider();
     this.trustlogoSlider();
     this.mobileSlider();
+    this.productsliderFor();
   },
-
   customSlider() {
     const left = this.customele?.querySelector('.our-customer-left');
     const right = this.customele?.querySelector('.our-customer-nav');
@@ -168,6 +169,30 @@ export const slider = {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+    });
+  },
+  productsliderFor() {
+    const productnav = new Swiper(this.productslidernav, {
+      slidesPerView: 1,
+      speed: 800,
+      spaceBetween: 26,
+      autoHeight: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    const productfor = new Swiper(this.productsliderfor, {
+      slidesPerView: 1,
+      speed: 800,
+      spaceBetween: 26,
+      autoHeight: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: productnav,
       },
     });
   },
