@@ -6,9 +6,9 @@
 
 
 
-
+.use-intro-main{gap: 77px;}
 .use-intro-image{flex: 1;}
-.use-intro-text{flex: 1;}
+.use-intro-text{flex: 1; padding-top: 270px;}
 
 
 

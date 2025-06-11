@@ -32,9 +32,11 @@ a:hover{color: var(--White);}
 .h6, h6{font-size: 20px; line-height: 28px; letter-spacing: -0.96px; margin-bottom: 13px;}
 
 
-h2 span{ color: var(--Purple);}
+h2 span{ color: var(--Green);}
 h2.green span{ color: var(--Green);}
+h2.purple span{ color: var(--Purple);}
 .highlight-green h2 span{color: var(--Green);}
+.highlight-purple h2 span{color: var(--Purple);}
 
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color: var(--Green);}
@@ -440,7 +442,7 @@ ul.slick-dots:not(.pagination) li button{display: none; padding: 0;}
 ul.slick-dots.orange:not(.pagination) li.slick-active{background-color: var(--RF-Orange); border-color: var(--RF-Orange);}
 
 
-.w-100{width: 100%;}
+.w-100, span.w-100{width: 100%;}
 .container:not(.sm).p-0{padding: 0;}
 
 

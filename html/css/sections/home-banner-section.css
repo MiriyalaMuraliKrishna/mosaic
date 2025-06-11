@@ -31,7 +31,7 @@ background-image: linear-gradient(0deg, var(--Black) 0%,rgba(115, 115, 115, 0.00
 .trust-by-gradient.right::before { top: 0; left: -100px; width: 100px; height: 100%; background-image: linear-gradient(270deg, var(--Black), transparent); content: ""; position: absolute; }
 
 
-.home-endless-svg{width: 357px; height: 198px; bottom: 0; right: 0; z-index: 1;}
+.home-endless-svg{width: 357px; height: 198px; bottom: -64px; right: 0; z-index: 1;}
 
 .trust-by-logos .swiper-wrapper{align-items: center;}
 .trust-by-logos .swiper-slide{width: 180px; flex-shrink: 0;}
@@ -44,8 +44,7 @@ background-image: linear-gradient(0deg, var(--Black) 0%,rgba(115, 115, 115, 0.00
 
 
 .home-endless-ellipse{ width: 511px; height: 511px; opacity: 0.23; background: radial-gradient(50% 50% at 50% 50%, var(--Purple) 0%, rgba(139, 82, 252, 0.00) 100%); }
-.home-endless-image{max-width: 124px; margin-bottom: 13px;}
-.home-endless-image{top: -183px; left: 0;}
+.home-endless-image{max-width: 124px; margin-bottom: 13px; top: -84px; left: 45px;}
 .home-endless-main span.fs-22{margin-bottom: 20px;}
 
 
