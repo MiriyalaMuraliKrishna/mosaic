@@ -11,7 +11,9 @@
     .usecase-banner-text h1 br{display: none;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .usecase-banner-main{padding: 312px 0 32px;}
+    .usecase-banner-main{padding: 143px 0 107px;}
+    .usecase-banner-text{font-size: 19px; line-height: 27px; letter-spacing: -0.57px;}
+    .usecase-banner-text h1{max-width: 300px; margin-bottom: 18px;}
     .usecase-banner-bg img{opacity: 0.4;}
     .usecase-banner-overlay{opacity: 0;}
     .usecase-banner-btns{padding-top: 2px;}

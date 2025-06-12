@@ -516,6 +516,8 @@ a.mPS2id-clicked{color: var(--Green);}
     .h3, h3{font-size: 34px; line-height: 40px; letter-spacing: -1.02px;}
     .h4, h4{font-size: 32px; line-height: 38px; letter-spacing: -0.96px;}
 
+    span.optional-text{ font-size: 12px; font-weight: 600; line-height: 18px; letter-spacing: 3px; }
+
     
 
     .image-caption{margin: 22px 0 25px;}

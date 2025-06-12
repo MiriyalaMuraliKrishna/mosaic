@@ -35,6 +35,7 @@
  .modular-option-text{flex: 0 0 350px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
+    body.page-template-usecases .modular-option-wrap{padding-bottom: 100px;}
     .modular-option-main{padding: 60px; flex-direction: column-reverse; gap: 60px;}
     .modular-option-image{gap: 30px; justify-content: center;}
     .modular-option-graph{gap: 25px; flex: 0 0 138px;}
@@ -50,6 +51,7 @@
     .modular-option-graph{gap: 25px; flex: 0 0 138px;}
     .modular-option-graph .all-meterials-sm-icon{padding: 26px 11px 22px 20px; }
     .modular-option-array{flex: 0 0 200px;}
+
 }
 @media only screen and (max-width: 413px) and (min-width: 200px){
     .modular-option-image{gap: 20px;}

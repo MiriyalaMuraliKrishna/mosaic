@@ -9,10 +9,8 @@
 .everything-answer-desc{padding: 0 24px;}
 .everything-answer-desc p{margin-bottom: 5px;}
 
-
 .everything-answer{padding: 30px 24px 40px; background: var(--White-10); backdrop-filter: blur(40px); } 
 .everything-answer-ellipse{ bottom: 0; left: 50%; transform: translateX(-50%); width: 757px; height: 757px; opacity: 0.2; border-radius: 50%; background: radial-gradient(50% 50% at 50% 50%, #1AD1B1 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1; }
-
 .everything-answer video{max-width: 242px; mix-blend-mode: difference; margin: auto; object-fit: contain;}
 
 
@@ -24,7 +22,12 @@
     .everything-right{flex: 0 0 317px;}
     .everything-main .accordion-main{gap: 53px 0;}
 }
-
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .everything-wrap{padding: 21px 0 140px;}
+    .everything-head h2{font-size: 48px; letter-spacing: -.32px; line-height: 58px; margin-bottom: 21px;}
+    .everything-main{display: block;}
+    .everything-left{padding-bottom: 80px;}
+}
 
 
 

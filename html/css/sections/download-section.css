@@ -10,7 +10,7 @@
 .download-wrap{padding: 109px 0 162px;}
 
 .download-main{ backdrop-filter: blur(67px); }
-.download-text{padding: 88px 114px 90px; color: var(--Muted---Light); font-size: 16.5px; font-weight: 400; line-height: 26px; letter-spacing: -0.495px; }
+.download-text{color: var(--Muted---Light); font-size: 16.5px; font-weight: 400; line-height: 26px; letter-spacing: -0.495px; }
 .download-text h2{margin-bottom: 0;}
 form.download-form{gap: 10px; padding-top: 6px;}
 form.download-form input{flex: 1; border-radius: 90px; border: 1px solid var(--Line---Light); background-color: transparent; }
@@ -18,8 +18,18 @@ form.download-form button{width: fit-content;}
 
 /* media css starts here */
 @media screen and (min-width: 1024px){
-    .download-text{max-width: 780px;}
-    .download-image{top: -85px; right: 75px; width: 561px; height: 462px;}
+    .download-image{width: 561px; height: 462px;}
+}
+@media screen and (min-width: 1400px){
+    .download-text{max-width: 780px; padding: 88px 114px 90px; }
+    .download-image{top: -85px; right: 75px;}
+}
+@media screen and (max-width: 1399px) and (min-width: 1024px){
+    .download-text{max-width: 500px; padding: 80px 40px;}
+    .download-image{top: -85px; right: 75px;}
+}
+@media screen and (max-width: 1299px) and (min-width: 1024px){
+    .download-image{right: -75px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 200px){
     .download-main{flex-direction: column;}
@@ -27,7 +37,4 @@ form.download-form button{width: fit-content;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .download-text{padding: 80px;}
-}
-@media screen and (max-width: 1023px) and (min-width: 768px){
-    
 }
