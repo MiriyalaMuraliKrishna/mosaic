@@ -22,6 +22,10 @@
 @import url('./sections/calc-part-section.css');
 @import url('./sections/our-customer-section.css');
 
+/*-- 02 - Solutions page --*/
+@import url('./sections/solutions-banner-section.css');
+
+
 
 /*-- 03 - Use Cases page --*/
 @import url('./sections/usecase-banner-section.css');
@@ -30,6 +34,7 @@
 @import url('./sections/large-feature-section.css');
 @import url('./sections/product-stats-section.css');
 @import url('./sections/download-section.css');
+@import url('./sections/products-slider-section.css');
 @import url('./sections/everything-faq-section.css');
 
 

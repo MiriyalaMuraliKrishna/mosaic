@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.solutions-banner-video video{width: 100%; height: 100%;}
+.solutions-banner-overlay{opacity: 0.4;}
+.solutions-banner-main{padding: 308px 0 160px; max-width: 1011px;}
+.solutions-banner-text h1{padding-top: 20px; margin-bottom: 32px;}
+.solutions-banner-btns{padding-top: 17px;}
+
+
+@media screen and (min-width: 768px) {
+    .solutions-banner-text h1 br{display: none;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .solutions-banner-main{padding: 143px 0 107px;}
+    .solutions-banner-text{font-size: 19px; line-height: 27px; letter-spacing: -0.57px;}
+    .solutions-banner-text h1{max-width: 300px; margin-bottom: 18px;}
+    .solutions-banner-bg img{opacity: 0.4;}
+    .solutions-banner-overlay{opacity: 0;}
+    .solutions-banner-btns{padding-top: 2px;}
+}
