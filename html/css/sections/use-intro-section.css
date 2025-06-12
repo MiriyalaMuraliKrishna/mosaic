@@ -3,15 +3,28 @@
 
 
 
+.use-intro-text h2{padding: 34px 0 15px;}
 
 
 
-.use-intro-main{gap: 77px;}
-.use-intro-image{flex: 1;}
-.use-intro-text{flex: 1; padding-top: 270px;}
-
-
-
-
-
-
+/*-- media css starts here --*/
+@media only screen and (min-width: 1440px){
+    .use-intro-main{gap: 77px;}
+    .use-intro-image{flex: 0 0 677px;}
+    .use-intro-text{flex: 0 0 487px; padding-top: 270px;}
+}
+@media only screen and (min-width: 1024px){
+    .use-intro-wrap{padding: 140px 0 113px;}
+}
+@media screen and (max-width: 1439px) and (min-width: 1024px){
+    .use-intro-main{gap: 40px;}
+    .use-intro-image{flex: 0 0 477px;}
+    .use-intro-text{flex: 1; max-width: 487px; padding-top: 170px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .use-intro-wrap{padding: 140px 0 113px;}
+    .use-intro-main{gap: 80px 0; flex-direction: column;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    
+}

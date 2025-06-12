@@ -1,0 +1,34 @@
+
+
+
+.large-feature-wrap{padding: 126px 0 0;}
+.large-feature-head{padding-bottom: 115px;}
+.large-feature-icon{padding-bottom: 235px; max-width: 49px;}
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .large-feature-main{padding: 107px 125px 94px 125px;}
+   .large-feature-text{max-width: 923px;}    
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .large-feature-main{padding: 80px;}
+    .large-feature-head{padding-bottom: 57px;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,7 @@
 
+
+.trusted-by-main{padding: 62px 0 52px;}
+.trusted-by-head{padding-bottom: 33px;}
 .trusted-by-logos .swiper-wrapper{align-items: center;}
 .trusted-by-logos .swiper-slide{width: 180px; flex-shrink: 0;}
 .trusted-by-logo img{object-fit: contain; max-width: 180px; margin: auto;}
@@ -7,3 +10,7 @@
 .trusted-by-logo img[data-logo="dan"]{max-width: 148px;}
 .trusted-by-logo img[data-logo="css-winner"]{max-width: 154.5px;}
 .trusted-by-logo img[data-logo="clutch"]{max-width: 86px;}
+
+
+.trusted-by-gradient.left{ top: 0; left: 0; right: auto; width: 100px; height: 100%; background-image: linear-gradient(270deg, transparent, var(--Black)); content: ""; position: absolute; }
+.trusted-by-gradient.right { top: 0; left: auto; right: 0px; width: 100px; height: 100%; background-image: linear-gradient(270deg, var(--Black), transparent); content: ""; position: absolute; }

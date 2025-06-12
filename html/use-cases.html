@@ -103,7 +103,7 @@
     <section class="use-intro-section">
       <div class="container">
         <div class="use-intro-wrap">
-          <div class="use-intro-main flex">
+          <div class="use-intro-main flex flex-start">
             <div class="use-intro-image relative">
               <figure class="radius-img-30"><img src="images/usemedia@2x.jpg" alt=""></figure>
               <div class="play-btn-main green-bg radius-50">
@@ -127,15 +127,57 @@
     </section>
     <section class="trusted-by-section">
       <div class="container">
-        <div class="trusted-by-main">
-          <div class="aligncenter">
+        <div class="trusted-by-main white-bg-10 radius-30 relative o-hidden">
+          <div class="trusted-by-gradient z-2 left background-text"></div>
+          <div class="trusted-by-gradient z-2 right background-text"></div>
+          <div class="trusted-by-head aligncenter">
             <span class="optional-text white-40 text-upper d-block w-100">Trusted by</span>
           </div>
-          <div class="trusted-by-logos">
+          <div class="trusted-by-logos relative">
             <div class="swiper-wrapper">
               <div class="trusted-by-logo swiper-slide">
                 <figure class="object-fit">
                   <img data-logo="css" src="images/css@2x.png" alt="">
+                </figure>
+              </div>
+              <div class="trusted-by-logo swiper-slide">
+                <figure class="object-fit">
+                  <img data-logo="awwards" src="images/awwards@2x.png" alt="">
+                </figure>
+              </div>
+              <div class="trusted-by-logo swiper-slide">
+                <figure class="object-fit">
+                  <img data-logo="dan" src="images/dan@2x.png" alt="">
+                </figure>
+              </div>
+              <div class="trusted-by-logo swiper-slide">
+                <figure class="object-fit">
+                  <img data-logo="css-winner" src="images/css-winner@2x.png" alt="">
+                </figure>
+              </div>
+              <div class="trusted-by-logo swiper-slide">
+                <figure class="object-fit">
+                  <img data-logo="clutch" src="images/clutch@2x.png" alt="clutch@2x">
+                </figure>
+              </div>
+              <div class="trusted-by-logo swiper-slide">
+                <figure class="object-fit">
+                  <img data-logo="awwards" src="images/awwards@2x.png" alt="">
+                </figure>
+              </div>
+              <div class="trusted-by-logo swiper-slide">
+                <figure class="object-fit">
+                  <img data-logo="dan" src="images/dan@2x.png" alt="">
+                </figure>
+              </div>
+              <div class="trusted-by-logo swiper-slide">
+                <figure class="object-fit">
+                  <img data-logo="css-winner" src="images/css-winner@2x.png" alt="">
+                </figure>
+              </div>
+              <div class="trusted-by-logo swiper-slide">
+                <figure class="object-fit">
+                  <img data-logo="clutch" src="images/clutch@2x.png" alt="clutch@2x">
                 </figure>
               </div>
               <div class="trusted-by-logo swiper-slide">
@@ -166,23 +208,32 @@
     <section class="large-feature-section">
       <div class="container">
         <div class="large-feature-wrap">
-          <h2>Why Us</h2>
+          <div class="large-feature-head aligncenter">
+            <h2 class="title" data-anim="title">Why <span>Us</span></h2>
+          </div>
           <div class="large-feature-main relative">
             <div class="background-bg">
-
               <figure class="object-fit radius-img-30">
                 <img src="images/video-why@2x.jpg" alt="">
               </figure>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="49" height="79" viewBox="0 0 49 79" fill="none">
-              <path d="M35.0847 0L29.3262 18.0331L38.9824 48.3327L48.9992 43.7319L35.0847 0Z" fill="white" />
-              <path d="M46.4223 79L37.6053 51.3999L3.89765 66.7336L0 79H10.0168H46.4223Z" fill="white" />
-              <path
-                d="M36.9443 49.252L28.1896 21.7124L22.6959 39.0281L22.6714 39.0101L16.51 58.5252L16.4922 58.5746L36.9443 49.252Z"
-                fill="white" />
-            </svg>
-            <h2>Control multiple printers from a single interface, optimizing production flow and minimizing downtime.
-            </h2>
+            <div class="large-feature-text">
+              <div class="large-feature-icon" data-animate="fade-in"> 
+                <figure class="object-fit">
+                  <img src="images/emblem.svg" alt="">
+                </figure>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="49" height="79" viewBox="0 0 49 79" fill="none">
+                  <path d="M35.0847 0L29.3262 18.0331L38.9824 48.3327L48.9992 43.7319L35.0847 0Z" fill="white" />
+                  <path d="M46.4223 79L37.6053 51.3999L3.89765 66.7336L0 79H10.0168H46.4223Z" fill="white" />
+                  <path
+                    d="M36.9443 49.252L28.1896 21.7124L22.6959 39.0281L22.6714 39.0101L16.51 58.5252L16.4922 58.5746L36.9443 49.252Z"
+                    fill="white" />
+                </svg> -->
+              </div>
+              <h2 class="h3"><span>Control multiple printers</span> from a single interface, optimizing production flow
+                and minimizing downtime.
+              </h2>
+            </div>
           </div>
         </div>
       </div>
@@ -190,9 +241,9 @@
     <section class="product-stats-section">
       <div class="container">
         <div class="product-stats-main">
-          <div class="product-stats-head flex flex-vcenter">
+          <div class="product-stats-head flex flex-vcenter relative z-2">
             <div class="product-stats-title">
-              <h2>How the product saves time/money.</h2>
+              <h2 class="h3">How the product saves time/money.</h2>
             </div>
             <div class="product-stats-desc">
               <p>
@@ -233,6 +284,183 @@
                 <span class="product-stats-name">Stronger Parts</span>
                 <p>Durable, high-temp materials.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="download-section">
+      <div class="container">
+        <div class="download-wrap">
+          <div class="download-main white-bg-10 radius-30 relative o-hidden">
+            <div class="download-text">
+              <h2 class="h3">Download the Guide</h2>
+              <p>Mollis arcu viverra platea iaculis nisl. Faucibus sed volutpat nulla nec.</p>
+              <form action="" class="download-form flex">
+                <input type="text" placeholder="Enter your email...">
+                <button type="submit" class="button flex flex-center text-upper">Submit
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z" fill="#1AD1B1"></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="download-image absolute">
+              <figure class="object-fit">
+                <img src="images/Print-Bed--Stack-Empty.svg" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="alt-stick-section">
+
+      <div class="container xx-md">
+        <div class="alt-stick-main flex">
+          <div class="alt-stick-left relative">
+            <div class="alt-stick-bg background-bg">
+              <picture class="alt-stick-thumb object-fit">
+                <img src="images/stick-media1@2x.jpg" alt="stick-media1">
+              </picture>
+              <div class="alt-stick-overlay top absolute"></div>
+              <div class="alt-stick-overlay bottom absolute"></div>
+            </div>
+            <div class="alt-stick-text">
+
+              <span class="stripe-line line-green d-block w-100"></span>
+              <h2 class="h3">Adaptive Print Optimization</h2>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="alt-stick-right flex flex-col">
+            <div class="alt-stick-list">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <span class="fs-21 lh-30 f-600 no-letter-space d-block">Smart Print Tuning</span>
+              <p>Automatically adjusts print speed, temperature, and material flow in real time to optimize performance.
+                This intelligent calibration ensures every print is precisely.</p>
+              <a class="text-link up flex flex-vcenter text-upper" href="#">Learn More<svg
+                  xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.25 1.59467H0.560665V0.0946655H10.0607H10.8107V0.844666V9.84467H9.31067V2.65532L1.06066 10.9053L0 9.84467L8.25 1.59467Z"
+                    fill="#1AD1B1"></path>
+                </svg></a>
+            </div>
+            <div class="alt-stick-list">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <span class="fs-21 lh-30 f-600 no-letter-space d-block">Consistent High Quality</span>
+              <p>Delivers repeatable, professional-grade results across every print job. By minimizing errors and
+                reducing the need for user intervention, it ensures that each part meets the highest standards of
+                precision.</p>
+              <a class="text-link up flex flex-vcenter text-upper" href="#">Learn More<svg
+                  xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.25 1.59467H0.560665V0.0946655H10.0607H10.8107V0.844666V9.84467H9.31067V2.65532L1.06066 10.9053L0 9.84467L8.25 1.59467Z"
+                    fill="#1AD1B1"></path>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="alt-stick-section">
+
+      <div class="container xx-md">
+        <div class="alt-stick-main flex">
+          <div class="alt-stick-left relative">
+            <div class="alt-stick-bg background-bg">
+              <picture class="alt-stick-thumb object-fit">
+                <img src="images/stick-media2@2x.jpg" alt="stick-media2">
+              </picture>
+              <div class="alt-stick-overlay top absolute"></div>
+              <div class="alt-stick-overlay bottom absolute"></div>
+            </div>
+            <div class="alt-stick-text">
+
+              <span class="stripe-line line-green d-block w-100"></span>
+              <h2 class="h3">Continuous Printing System</h2>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="alt-stick-right flex flex-col">
+            <div class="alt-stick-list">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <span class="fs-21 lh-30 f-600 no-letter-space d-block">Continuous Printing System</span>
+              <p>Enables seamless, high-volume production by automatically ejecting finished prints and preparing the
+                next job. This eliminates downtime, allowing businesses to scale manufacturing without constant
+                monitoring or manual intervention. The result is a continuous, reliable workflow that maximizes output,
+                reduces labor costs, and ensures your printers are always working—even when you’re not.</p>
+              <a class="text-link up flex flex-vcenter text-upper" href="#">Learn More<svg
+                  xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.25 1.59467H0.560665V0.0946655H10.0607H10.8107V0.844666V9.84467H9.31067V2.65532L1.06066 10.9053L0 9.84467L8.25 1.59467Z"
+                    fill="#1AD1B1"></path>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="alt-stick-section last">
+      <div class="container xx-md">
+        <div class="alt-stick-main flex">
+          <div class="alt-stick-left relative">
+            <div class="alt-stick-bg background-bg">
+              <picture class="alt-stick-thumb object-fit">
+                <img src="images/stick-media3@2x.jpg" alt="stick-media3">
+              </picture>
+              <div class="alt-stick-overlay top absolute"></div>
+              <div class="alt-stick-overlay bottom absolute"></div>
+            </div>
+            <div class="alt-stick-text">
+
+              <span class="stripe-line line-green d-block w-100"></span>
+              <h2 class="h3">High-Temp Compatibility</h2>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="alt-stick-right flex flex-col">
+            <div class="alt-stick-list">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <span class="fs-21 lh-30 f-600 no-letter-space d-block">Engineered for Advanced Materials</span>
+              <p>Designed to support high-performance materials like PEEK, PEI, and Nylon, enabling the production of
+                parts that are strong, durable, and heat-resistant—perfect for demanding environments.</p>
+              <a class="text-link up flex flex-vcenter text-upper" href="#">Learn More<svg
+                  xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.25 1.59467H0.560665V0.0946655H10.0607H10.8107V0.844666V9.84467H9.31067V2.65532L1.06066 10.9053L0 9.84467L8.25 1.59467Z"
+                    fill="#1AD1B1"></path>
+                </svg></a>
+            </div>
+            <div class="alt-stick-list">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <span class="fs-21 lh-30 f-600 no-letter-space d-block">Built for Industrial Demands</span>
+              <p>Automatically adjusts print speed, temperature, and material flow in real time to optimize performance.
+                This intelligent calibration ensures every print is precisely.</p>
+              <a class="text-link up flex flex-vcenter text-upper" href="#">Learn More<svg
+                  xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.25 1.59467H0.560665V0.0946655H10.0607H10.8107V0.844666V9.84467H9.31067V2.65532L1.06066 10.9053L0 9.84467L8.25 1.59467Z"
+                    fill="#1AD1B1"></path>
+                </svg></a>
             </div>
           </div>
         </div>
@@ -333,7 +561,7 @@
             </div>
             <div class="our-customer-right relative o-hidden">
               <div class="our-customer-head hide-mobile">
-                <h2 class="fs-44 lh-54">What Our Customers Say</h2>
+                <h2 class="h3">What Our Customers Say</h2>
               </div>
               <div class="our-customer-nav">
                 <div class="swiper-wrapper">
@@ -1058,7 +1286,7 @@
                   <li><a href="">Canvas</a></li>
                   <li><a href="">Mosaic Solutions</a></li>
                 </ul>
-              </li> 
+              </li>
               <li>
                 <a href="">
                   <span class="stripe-line line-green d-block"></span>Materials<svg xmlns="http://www.w3.org/2000/svg"

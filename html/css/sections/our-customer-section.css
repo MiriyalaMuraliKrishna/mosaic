@@ -18,6 +18,7 @@
     .our-customer-left{width: 437px;}
     .our-customer-right{width: calc(100% - 550px);}
     .our-customer-head{padding-right: 92px;}
+    .swiper-horizontal .swiper-buttons{top: -47px;}
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 1024px){
@@ -30,7 +31,9 @@
     .our-customer-main{gap: 40px;}
     .our-customer-left{width: 300px;}
     .our-customer-right{width: calc(100% - 340px);}
-    .our-customer-text blockquote{font-size: 20px; line-height: 52px;}
+    .our-customer-head{padding-bottom: 40px;}
+    .our-customer-text blockquote{font-size: 20px; line-height: 42px;}
+    .swiper-horizontal .swiper-buttons{top: -22px;}
 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
