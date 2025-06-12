@@ -29,7 +29,11 @@
 .zoom-out-md{ -webkit-animation-name: zoomOut; animation-name: zoomOut; }
 @-webkit-keyframes zoomOut { 0% { transform: scale(1.25); } 100% { transform: scale(1); } }
 @keyframes zoomOut { 0% { transform: scale(1.25); } 100% { transform: scale(1); } }
+
+
   
+.scale-dot-in{ -webkit-animation-name: scaleDot; animation-name: scaleDot; animation-duration: 2s; animation-iteration-count: infinite; transform-origin: center center; opacity: 0; }
+@keyframes scaleDot { 0%, 100%{transform: scale(1); opacity: 0.75;} 50%{transform: scale(1.025); opacity: 1;} }
   
 .scale-x-in-left{ -webkit-animation-name: scaleInXLeft; animation-name: scaleInXLeft; transform-origin: left center; transform: scaleX(0); -webkit-animation-duration: 2s; animation-duration: 2s; -webkit-animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
 @-webkit-keyframes scaleInXLeft { 0% { transform: scaleX(0); } 100% { transform: scaleX(1); } }
