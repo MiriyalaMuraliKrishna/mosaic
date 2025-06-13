@@ -38,3 +38,6 @@ form.download-form button{width: fit-content;}
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .download-text{padding: 80px;}
 }
+@media screen and (max-width:767px) and (min-width: 200px){
+    
+}

@@ -11,7 +11,7 @@
 @import url('./elements/_formidable.css');
 @import url('./elements/magnific-popup.css');
 @import url('./elements/swiper-bundle.min.css');
-
+@import url('./elements/slick.css');
 
 /*-- 01 Home page --*/
 @import url('./sections/home-banner-section.css');
