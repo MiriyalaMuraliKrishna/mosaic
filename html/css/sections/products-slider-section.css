@@ -11,8 +11,8 @@
     .products-slider-nav{padding-top: 73px;}
     
     .products-slider-text{text-align: center; font-size: 22px; font-weight: 300; line-height: 28px; letter-spacing: -0.66px; }
-    .products-slider-title{ padding-top: 75px; padding-bottom: 9px; opacity: 0.23; font-size: 33px; font-weight: 400; line-height: 42px; letter-spacing: -0.33px; }
-    .slick-current .products-slider-title{transition: font-size 0s ease; padding-top: 0; opacity: 1; font-size: 130px; font-weight: 400; line-height: 148px; letter-spacing: -1.3px; }
+    .products-slider-title{padding-bottom: 9px; opacity: 0.23; font-size: 130px; font-weight: 400; line-height: 148px; letter-spacing: -1.3px; }
+    .slick-current .products-slider-title{opacity: 1; }
     .products-slider-btn{padding-top: 8px;}
     
     .products-slider-for.swiper-horizontal .slick-slide{visibility: hidden; opacity: 0;}
@@ -22,8 +22,8 @@
     
     
     .products-slider-nav .slick-list{overflow: inherit;}
-    .products-slider-nav .slick-current.slick-slide{width: 600px;}
-    .products-slider-nav .slick-slide{width: 195px; margin: 0 45px;}
+    .products-slider-nav .slick-current.slick-slide{transform: scale(1);}
+    .products-slider-nav .slick-slide{ transform: scale(0.2); margin: 0 45px;}
     .products-slider-desc{opacity: 0; }
     .slick-current .products-slider-desc{opacity: 1;}
 }
