@@ -13,12 +13,9 @@ body.page-template-products-hardware .scroll-content-text{font-size: 48px; line-
 /* media css starts here */
 @media only screen and (min-width: 1024px){
     body.home .scroll-content-main{padding: 135px 0 0;}
-<<<<<<< HEAD
     body.page-template-products-hardware  .scroll-content-main{padding: 33px 0 0;}
     
-=======
     body.page-template-solutions .scroll-content-main{padding: 89px 0 0;}
->>>>>>> 612ad4adfb117a70b8a802dae5ef0bf6c8cbdc40
 }
 
 
