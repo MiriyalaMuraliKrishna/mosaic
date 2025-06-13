@@ -290,9 +290,9 @@
       </div>
     </section>
     <section class="download-section">
-      <div class="container">
+      <div class="container ipad-0 mobile-0">
         <div class="download-wrap">
-          <div class="download-main white-bg-20 radius-30 relative o-hidden">
+          <div class="download-main white-bg-10 radius-30 relative o-hidden">
             <div class="download-text relative z-2">
               <h2 class="h3">Download the Guide</h2>
               <p>Mollis arcu viverra platea iaculis nisl. Faucibus sed volutpat nulla nec.</p>
@@ -308,9 +308,11 @@
               </form>
             </div>
             <div class="download-image absolute">
-              <figure class="object-fit">
-                <img src="images/Print-Bed--Stack-Empty.svg" alt="">
-              </figure>
+              <picture class="object-fit">
+                <source srcset="images/Print-Bed--Stack-Empty.svg" media="(min-width:768px)">
+                <img src="images/Print-Bed--Stack-Empty-Mobile.svg" alt="">
+              </picture>
+              <div class="download-ellipse radius-50 absolute"></div>
             </div>
           </div>
         </div>
