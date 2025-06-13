@@ -10,7 +10,7 @@
 /* media css starts here */
 @media only screen and (min-width: 1024px){
     body.home .scroll-content-main{padding: 135px 0 0;}
-    
+    body.page-template-solutions .scroll-content-main{padding: 89px 0 0;}
 }
 
 
