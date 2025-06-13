@@ -17,7 +17,12 @@
     .large-feature-head{padding-bottom: 57px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
-    
+    .large-feature-wrap{padding: 85px 0 0;}
+    .large-feature-bg{width: calc(100% + 40px); left: -20px;}
+    .large-feature-bg img{border-radius: 0;}
+    .large-feature-main{padding: 20px 0 4px;}
+    .large-feature-icon{max-width: 28px;}
+    .large-feature-head{padding-bottom: 60px;}
 }
 
 

@@ -15,12 +15,20 @@
 
 
 .solutions-banner-video video{width: 100%; height: 100%;}
-.solutions-banner-overlay{opacity: 0.4;}
-.solutions-banner-main{padding: 308px 0 160px; max-width: 1011px;}
+.solutions-banner-bg img{opacity: 0.4;}
+.solutions-banner-overlay{background: linear-gradient(0deg,var(--Black) 0,hsla(0,0%,45%,0) 33.7%);}
 .solutions-banner-text h1{padding-top: 20px; margin-bottom: 32px;}
 .solutions-banner-btns{padding-top: 17px;}
 
 
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .solutions-banner-main{padding: 318px 0 117px; max-width: 860px;}
+    .solutions-banner-text h1{letter-spacing: -1.22px;}
+
+}
 @media screen and (min-width: 768px) {
     .solutions-banner-text h1 br{display: none;}
 }

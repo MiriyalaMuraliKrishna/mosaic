@@ -77,9 +77,9 @@
       <div class="background-bg usecase-banner-video">
         <!-- <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div> -->
         <!-- <div data-vbg="https://vimeo.com/70459392"></div> -->
-        <video autoplay muted loop>
+        <!-- <video autoplay muted loop>
           <source src="images/array.mp4" type="video/mp4" />
-        </video>
+        </video> -->
       </div>
       <div class="background-text usecase-banner-overlay black-bg"></div>
       <div class="container">
@@ -126,8 +126,8 @@
       </div>
     </section>
     <section class="trusted-by-section">
-      <div class="container">
-        <div class="trusted-by-main white-bg-10 radius-30 relative o-hidden">
+      <div class="container mobile-0">
+        <div class="trusted-by-main white-bg-t radius-30 relative o-hidden">
           <div class="trusted-by-gradient z-2 left background-text"></div>
           <div class="trusted-by-gradient z-2 right background-text"></div>
           <div class="trusted-by-head aligncenter">
@@ -212,7 +212,7 @@
             <h2 class="title" data-anim="title">Why <span>Us</span></h2>
           </div>
           <div class="large-feature-main relative">
-            <div class="background-bg">
+            <div class="large-feature-bg background-bg">
               <figure class="object-fit radius-img-30">
                 <img src="images/video-why@2x.jpg" alt="">
               </figure>
@@ -290,9 +290,9 @@
       </div>
     </section>
     <section class="download-section">
-      <div class="container">
+      <div class="container ipad-0 mobile-0">
         <div class="download-wrap">
-          <div class="download-main white-bg-20 radius-30 relative o-hidden">
+          <div class="download-main white-bg-10 radius-30 relative o-hidden">
             <div class="download-text relative z-2">
               <h2 class="h3">Download the Guide</h2>
               <p>Mollis arcu viverra platea iaculis nisl. Faucibus sed volutpat nulla nec.</p>
@@ -308,9 +308,11 @@
               </form>
             </div>
             <div class="download-image absolute">
-              <figure class="object-fit">
-                <img src="images/Print-Bed--Stack-Empty.svg" alt="">
-              </figure>
+              <picture class="object-fit">
+                <source srcset="images/Print-Bed--Stack-Empty.svg" media="(min-width:768px)">
+                <img src="images/Print-Bed--Stack-Empty-Mobile.svg" alt="">
+              </picture>
+              <div class="download-ellipse radius-50 absolute"></div>
             </div>
           </div>
         </div>
