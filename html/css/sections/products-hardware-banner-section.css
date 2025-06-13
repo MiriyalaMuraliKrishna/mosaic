@@ -1,0 +1,20 @@
+
+
+.products-hardware-banner-video video{width: 100%; height: 100%;}
+.products-hardware-banner-overlay{opacity: 0.4;}
+.products-hardware-banner-main{padding: 308px 0 160px; max-width: 1011px;}
+.products-hardware-banner-text h1{padding-top: 20px; margin-bottom: 32px;}
+.products-hardware-banner-btns{padding-top: 17px;}
+
+
+@media screen and (min-width: 768px) {
+    .products-hardware-banner-text h1 br{display: none;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .products-hardware-banner-main{padding: 143px 0 107px;}
+    .products-hardware-banner-text{font-size: 19px; line-height: 27px; letter-spacing: -0.57px;}
+    .products-hardware-banner-text h1{max-width: 300px; margin-bottom: 18px;}
+    .products-hardware-banner-bg img{opacity: 0.4;}
+    .products-hardware-banner-overlay{opacity: 0;}
+    .products-hardware-banner-btns{padding-top: 2px;}
+}

@@ -39,9 +39,8 @@
 
 
 
-
-
-
+/*-- 04 products Hardware page --*/
+@import url('./sections/products-hardware-banner-section.css');
 
 /*-- 06 prod meterials section page --*/
 @import url('./sections/meterials-banner-section.css');
