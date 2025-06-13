@@ -16,17 +16,24 @@
 
 /* media css starts here */
 @media screen and (min-width: 1024px){
-    .everything-wrap{padding: 21px 0 160px;}
+    .everything-wrap{padding: 133px 0 141px;}
     .everything-main{gap: 0 288px;}
     .everything-left{flex: 1;}
     .everything-right{flex: 0 0 317px;}
     .everything-main .accordion-main{gap: 53px 0;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
-    .everything-wrap{padding: 21px 0 140px;}
+    .everything-wrap{padding: 133px 0 141px;}
     .everything-head h2{font-size: 48px; letter-spacing: -.32px; line-height: 58px; margin-bottom: 21px;}
     .everything-main{display: block;}
     .everything-left{padding-bottom: 80px;}
+}
+@media screen and (max-width:767px) and (min-width: 200px){
+    .everything-wrap{padding: 87px 0 64px;}
+    .everything-main{display: block;}
+    .everything-head{padding-bottom: 22px;}
+    .everything-head h2{font-size: 42px; letter-spacing: -0.26px; line-height: 56px; margin-bottom: 21px;}
+    .everything-left{padding-bottom: 72px;}
 }
 
 

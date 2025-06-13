@@ -367,6 +367,7 @@ figcaption strong, .video-figcaption strong{font-weight: 500;}
 .video-caption-poster img{border-radius: 24px 24px 0 0;}
 .video-caption-poster iframe{opacity: 0; visibility: hidden; transition: var(--b-transition);}
 
+.play-btn-main.lg{width: 102px; height: 102px;}
 .play-btn-main {width: 82px; height: 82px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; right: 0; bottom: 0; position: absolute; overflow: hidden;}
 .play-btn{width: 100%; height: 100%;}
 .play-btn svg{width: 100%; height: 100%; object-fit: contain;}
@@ -426,15 +427,18 @@ figcaption strong, .video-figcaption strong{font-weight: 500;}
 
 
 
-button.slick-arrow{width: 48px; height: 48px; padding: 0; font-size: 1.5rem; line-height: 1.5rem; position: relative; z-index: 1; cursor: pointer; transition: var(--b-transition); color: var(--White); background: var(--Blue);}
-button.slick-arrow:hover{background-color: var(--Deep-Teal);}
-button.slick-arrow.slick-disabled{pointer-events: none; background: rgba(0, 0, 0, 0.20);}
+button.slick-arrow{width: 40px; height: 40px; top: 50%; transform: translateY(-50%); position: absolute; padding: 0; border: none;  z-index: 1; cursor: pointer; transition: var(--b-transition);}
+button.slick-arrow:hover{background: var(--Purple);}
+button.slick-arrow:hover svg{animation: none;}
+button.slick-arrow:hover svg path{fill: var(--White);}
+button.slick-arrow.slick-disabled{opacity: 0.35; pointer-events: none;}
 
 
 button.slick-arrow:not(.slick-disabled).orange{background-color: var(--RF-Orange);}
 
 button.slick-arrow::before{display: none;}
-button.slick-arrow.slick-next { order: 3; }
+button.slick-arrow.slick-prev { left: -117px; }
+button.slick-arrow.slick-next { right: -117px; }
 
 ul.slick-dots:not(.pagination){margin: 0; gap: 4px; order: 2; align-items: center; justify-content: center; display: flex; flex-wrap: wrap; flex: 1; order: 2;}
 ul.slick-dots:not(.pagination) li{margin: 0; width: 16px; height: 16px;  background-color: transparent; border: 1px solid var(--Text-Gray); cursor: pointer;}
@@ -470,6 +474,8 @@ a.mPS2id-clicked{color: var(--Green);}
 .swiper-horizontal .swiper-button{width: 40px; height: 40px; margin: 0; top: 50%; transform: translateY(-50%);}
 .swiper-horizontal .swiper-button::after, .swiper-horizontal .swiper-button::before{display: none;}
 
+.slick-progress{background-color: var(--White-15); border-radius: 25px; height: 4px; width: 100%; }
+.slick-progress span{width: 0; border-radius: 4px; transition: width 0.5s ease; height: 100%; border-radius: 4px; background-color: var(--Green);}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -501,7 +507,8 @@ a.mPS2id-clicked{color: var(--Green);}
     .fluid-container .container{padding-left: 0; padding-right: 0;}
 
     .title{font-size: 76px; line-height: 88px; letter-spacing: -0.56px;}
-
+    button.slick-arrow.slick-prev { left: -10px; }
+    button.slick-arrow.slick-next { right: -10px; }
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body{font-size: 17px; line-height: 26px; letter-spacing: -0.51px;} /*-- general page --*/
@@ -536,6 +543,10 @@ a.mPS2id-clicked{color: var(--Green);}
 
     .play-btn img{width: 24px; height: 30px;}
     img.aligncenter, img.alignleft, img.alignnone, img.alignright{margin: 25px auto; clear: both; float: none; display: block; width: 100%;}
+
+  .play-btn-main.lg{width: 72px; height: 72px;}
+  button.slick-arrow.slick-prev { left: -10px; }
+  button.slick-arrow.slick-next { right: -10px; }
 
 }
 @media only screen and (max-width: 374px) and (min-width: 200px){
