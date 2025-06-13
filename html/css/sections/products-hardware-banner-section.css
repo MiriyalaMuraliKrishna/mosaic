@@ -1,7 +1,7 @@
 
 
 .products-hardware-banner-video video{width: 100%; height: 100%;}
-.products-hardware-banner-overlay{opacity: 0.4;}
+.products-hardware-banner-overlay{background: linear-gradient(180deg, transparent 0%, transparent 77.4%, var(--Black) 100%);}
 .products-hardware-banner-main{padding: 308px 0 160px; max-width: 1011px;}
 .products-hardware-banner-text h1{padding-top: 20px; margin-bottom: 32px;}
 .products-hardware-banner-btns{padding-top: 17px;}

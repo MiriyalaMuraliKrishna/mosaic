@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="./style.bundle.css" media="all" />
 </head>
 
-<body>
+<body class="page-template-products-hardware">
   <header class="site-header">
     <div class="container no-auto">
       <div class="header flex flex-vcenter">
@@ -102,23 +102,28 @@
     </section>
     <section class="automated-grid-section">
         <div class="container">
-            <div class="automated-grid-main">
+            <div class="automated-grid-main relative">
+                <div class="automated-grid-ellipse absolute radius-50"></div>
                 <div class="automated-grid-top flex">
                     <div class="automated-grid-lt">
-                        <figure class="object-fit">
-                            <img src="images/storage.svg" alt="storage">
-                        </figure>
-                        <p>Storage Cart for Finished Parts</p>
+                        <div class="automated-grid-item flex radius-20">
+                            <div class="automated-grid-image">
+                                <figure class="object-fit">
+                                    <img src="images/storage.svg" alt="storage">
+                                </figure>
+                            </div>
+                            <p>Storage Cart for Finished Parts</p>
+                        </div>
                     </div>
-                    <div class="automated-grid-rt">
-                        <div class="automated-grid-item">
+                    <div class="automated-grid-rt flex">
+                        <div class="automated-grid-item flex radius-20">
                             <div class="automated-grid-subtitle">Automated</div>
                             <div class="automated-grid-desc">
                                 <p>Regular Placement & Removal System</p>
                                 <span>Print Irregularity or Failure Detection</span>
                             </div>
                         </div>
-                        <div class="automated-grid-item">
+                        <div class="automated-grid-item flex radius-20">
                             <div class="automated-grid-image">
                                 <figure class="object-fit">
                                     <img src="images/printer.svg" alt="printer">
@@ -131,8 +136,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="automated-grid-top flex">
-
+                <div class="automated-grid-bottom flex">
+                    <div class="automated-grid-item flex radius-20">
+                            <div class="automated-grid-subtitle">20x</div>
+                            <div class="automated-grid-desc">
+                                <p>Faster Material Swaps</p>
+                                <span>Easily access 8 modular filament inputs per printer for uninterrupted, multi-material production.</span>
+                            </div>
+                        </div>
+                        <div class="automated-grid-item flex radius-20">
+                            <div class="automated-grid-image">
+                                <figure class="object-fit">
+                                    <img src="images/volume.svg" alt="volume">
+                                </figure>
+                            </div>
+                            <div class="automated-grid-desc">
+                                <p>355x355x355mm</p>
+                                <span>Build Volume</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
