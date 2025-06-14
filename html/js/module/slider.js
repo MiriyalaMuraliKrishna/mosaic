@@ -8,8 +8,7 @@ export const slider = {
   logos: document.querySelectorAll('.trust-by-logos'),
   brands: document.querySelectorAll('.trusted-by-logos'),
   featuredeles: document.querySelector('.featured-articles-slider'),
-  productsliderfor: document.querySelector('.products-slider-for'),
-  productslidernav: document.querySelector('.products-slider-nav'),
+
   init() {
     this.customSlider();
     this.usecaseSlider();
@@ -17,7 +16,6 @@ export const slider = {
     this.trustlogoSlider();
     this.trustbrandSlider();
     this.mobileSlider();
-    this.productsliderFor();
   },
   customSlider() {
     const left = this.customele?.querySelector('.our-customer-left');
@@ -194,30 +192,6 @@ export const slider = {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
-    });
-  },
-  productsliderFor() {
-    const productnav = new Swiper(this.productslidernav, {
-      slidesPerView: 1,
-      speed: 800,
-      spaceBetween: 26,
-      autoHeight: true,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-    const productfor = new Swiper(this.productsliderfor, {
-      slidesPerView: 1,
-      speed: 800,
-      spaceBetween: 26,
-      autoHeight: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: productnav,
       },
     });
   },

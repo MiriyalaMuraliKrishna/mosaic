@@ -11,7 +11,7 @@
 @import url('./elements/_formidable.css');
 @import url('./elements/magnific-popup.css');
 @import url('./elements/swiper-bundle.min.css');
-
+@import url('./elements/slick.css');
 
 /*-- 01 Home page --*/
 @import url('./sections/home-banner-section.css');
@@ -24,6 +24,7 @@
 
 /*-- 02 - Solutions page --*/
 @import url('./sections/solutions-banner-section.css');
+@import url('./sections/cases-two-section.css');
 
 
 
@@ -39,9 +40,10 @@
 
 
 
-
-
-
+/*-- 04 products Hardware page --*/
+@import url('./sections/products-hardware-banner-section.css');
+@import url('./sections/automated-grid-section.css');
+@import url('./sections/fullscreen-section.css');
 
 /*-- 06 prod meterials section page --*/
 @import url('./sections/meterials-banner-section.css');

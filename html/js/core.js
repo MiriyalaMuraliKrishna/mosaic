@@ -23,6 +23,8 @@ import { magnificPopup } from './module/magnificpopup';
 import { stickme } from './module/altstickscroll';
 import { usecases } from './module/usecases';
 import { counter } from './module/counter';
+import { myslick } from './module/slick';
+import { usecase } from './module/casetwo';
 
 (() => {
   mylenis.init();
@@ -49,6 +51,8 @@ import { counter } from './module/counter';
   // stickme.init();
   usecases.init();
   counter.init();
+  myslick.init();
+  usecase.init();
 })();
 
 let scrolled = window.scrollY;

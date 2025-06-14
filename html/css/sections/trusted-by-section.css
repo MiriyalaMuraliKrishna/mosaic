@@ -14,3 +14,13 @@
 
 .trusted-by-gradient.left{ top: 0; left: 0; right: auto; width: 100px; height: 100%; background-image: linear-gradient(270deg, transparent, var(--Black)); content: ""; position: absolute; }
 .trusted-by-gradient.right { top: 0; left: auto; right: 0px; width: 100px; height: 100%; background-image: linear-gradient(270deg, var(--Black), transparent); content: ""; position: absolute; }
+
+
+
+@media screen and (max-width:767px) and (min-width: 200px){
+    .trusted-by-logos .swiper-slide{width: fit-content;}
+    .trusted-by-logo img{max-width: 132px;}
+    .trusted-by-logo img[data-logo="awwards"]{max-width: 86px;}
+    .trusted-by-logo img[data-logo="dan"]{max-width: 120px;}
+    .trusted-by-logo img[data-logo="css-winner"]{max-width: 132px;}
+}

@@ -77,9 +77,9 @@
       <div class="background-bg usecase-banner-video">
         <!-- <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div> -->
         <!-- <div data-vbg="https://vimeo.com/70459392"></div> -->
-        <video autoplay muted loop>
+        <!-- <video autoplay muted loop>
           <source src="images/array.mp4" type="video/mp4" />
-        </video>
+        </video> -->
       </div>
       <div class="background-text usecase-banner-overlay black-bg"></div>
       <div class="container">
@@ -126,8 +126,8 @@
       </div>
     </section>
     <section class="trusted-by-section">
-      <div class="container">
-        <div class="trusted-by-main white-bg-10 radius-30 relative o-hidden">
+      <div class="container mobile-0">
+        <div class="trusted-by-main white-bg-t radius-30 relative o-hidden">
           <div class="trusted-by-gradient z-2 left background-text"></div>
           <div class="trusted-by-gradient z-2 right background-text"></div>
           <div class="trusted-by-head aligncenter">
@@ -212,7 +212,7 @@
             <h2 class="title" data-anim="title">Why <span>Us</span></h2>
           </div>
           <div class="large-feature-main relative">
-            <div class="background-bg">
+            <div class="large-feature-bg background-bg">
               <figure class="object-fit radius-img-30">
                 <img src="images/video-why@2x.jpg" alt="">
               </figure>
@@ -290,7 +290,7 @@
       </div>
     </section>
     <section class="download-section">
-      <div class="container">
+      <div class="container ipad-0 mobile-0">
         <div class="download-wrap">
           <div class="download-main white-bg-10 radius-30 relative o-hidden">
             <div class="download-text relative z-2">
@@ -308,9 +308,11 @@
               </form>
             </div>
             <div class="download-image absolute">
-              <figure class="object-fit">
-                <img src="images/Print-Bed--Stack-Empty.svg" alt="">
-              </figure>
+              <picture class="object-fit">
+                <source srcset="images/Print-Bed--Stack-Empty.svg" media="(min-width:768px)">
+                <img src="images/Print-Bed--Stack-Empty-Mobile.svg" alt="">
+              </picture>
+              <div class="download-ellipse radius-50 absolute"></div>
             </div>
           </div>
         </div>
@@ -472,125 +474,146 @@
       <div class="container sm">
         <div class="products-slider-main">
           <div class="products-slider-for">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="products-slider-image">
-                  <figure class="radius-img-30">
+              <div class="products-slide">
+                <div class="products-slider-image relative">
+                  <figure class="products-slider-thumb radius-img-30">
                     <img src="images/media-enhanced@2x.jpg" alt="">
                   </figure>
+                  <div class="play-btn-main lg green-bg radius-50">
+                    <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc"
+                      class="popup-youtube play-btn flex flex-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                        <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="products-slider-image">
-                  <figure class="radius-img-30">
+              <div class="products-slide">
+                <div class="products-slider-image relative">
+                  <figure class="products-slider-thumb radius-img-30">
                     <img src="images/media-enhanced@2x.jpg" alt="">
                   </figure>
+                  <div class="play-btn-main lg green-bg radius-50">
+                    <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc"
+                      class="popup-youtube play-btn flex flex-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                        <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="products-slider-image">
-                  <figure class="radius-img-30">
+              <div class="products-slide">
+                <div class="products-slider-image relative">
+                  <figure class="products-slider-thumb radius-img-30">
                     <img src="images/media-enhanced@2x.jpg" alt="">
                   </figure>
+                  <div class="play-btn-main lg green-bg radius-50">
+                    <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc"
+                      class="popup-youtube play-btn flex flex-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                        <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="products-slider-image">
-                  <figure class="radius-img-30">
+              <div class="products-slide">
+                <div class="products-slider-image relative">
+                  <figure class="products-slider-thumb radius-img-30">
                     <img src="images/media-enhanced@2x.jpg" alt="">
                   </figure>
+                  <div class="play-btn-main lg green-bg radius-50">
+                    <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc"
+                      class="popup-youtube play-btn flex flex-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                        <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </div>
-                        <div class="swiper-button swiper-button-prev">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="#1AD1B1" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M15.7482 18.295L22.0411 12.0021L20.6269 10.5879L12.6269 18.5879L11.9198 19.295L12.6269 20.0021L20.6269 28.0021L22.0411 26.5879L15.7482 20.295L29.334 20.295V18.295L15.7482 18.295Z"
-                  fill="black" />
-              </svg>
-            </div>
-            <div class="swiper-button swiper-button-next">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <circle cx="20" cy="20" r="20" fill="#1AD1B1" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M24.2518 18.295L17.9589 12.0021L19.3731 10.5879L27.3731 18.5879L28.0802 19.295L27.3731 20.0021L19.3731 28.0021L17.9589 26.5879L24.2518 20.295L10.666 20.295V18.295L24.2518 18.295Z"
-                  fill="black" />
-              </svg>
             </div>
           </div>
           <div class="products-slider-nav">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="products-nav-slide">
                 <div class="products-slider-text">
                   <div class="products-slider-title">
-                    Element
+                    Element1
                   </div>
-                  <p>Automated, Scalable, and Versatile</p>
-                  <div class="products-slider-btn flex flex-center">
-                    <a href="#" class="button flex flex-center text-upper">Read More
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                        <path
-                          d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                          fill="#1AD1B1"></path>
-                      </svg>
-                    </a>
+                  <div class="products-slider-desc">
+                    <p>Automated, Scalable, and Versatile</p>
+                    <div class="products-slider-btn flex flex-center">
+                      <a href="#" class="button flex flex-center text-upper">Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                          <path
+                            d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                            fill="#1AD1B1"></path>
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-                <div class="swiper-slide">
+              <div class="products-nav-slide">
                 <div class="products-slider-text">
                   <div class="products-slider-title">
-                    Element
+                    Element2
                   </div>
-                  <p>Automated, Scalable, and Versatile</p>
-                  <div class="products-slider-btn flex flex-center">
-                    <a href="#" class="button flex flex-center text-upper">Read More
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                        <path
-                          d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                          fill="#1AD1B1"></path>
-                      </svg>
-                    </a>
+                  <div class="products-slider-desc">
+                    <p>Automated, Scalable, and Versatile</p>
+                    <div class="products-slider-btn flex flex-center">
+                      <a href="#" class="button flex flex-center text-upper">Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                          <path
+                            d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                            fill="#1AD1B1"></path>
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-                <div class="swiper-slide">
+              <div class="products-nav-slide">
                 <div class="products-slider-text">
                   <div class="products-slider-title">
-                    Element
+                    Element3
                   </div>
-                  <p>Automated, Scalable, and Versatile</p>
-                  <div class="products-slider-btn flex flex-center">
-                    <a href="#" class="button flex flex-center text-upper">Read More
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                        <path
-                          d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                          fill="#1AD1B1"></path>
-                      </svg>
-                    </a>
+                  <div class="products-slider-desc">
+                    <p>Automated, Scalable, and Versatile</p>
+                    <div class="products-slider-btn flex flex-center">
+                      <a href="#" class="button flex flex-center text-upper">Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                          <path
+                            d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                            fill="#1AD1B1"></path>
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-                <div class="swiper-slide">
+              <div class="products-nav-slide">
                 <div class="products-slider-text">
                   <div class="products-slider-title">
-                    Element
+                    Element4
                   </div>
-                  <p>Automated, Scalable, and Versatile</p>
-                  <div class="products-slider-btn flex flex-center">
-                    <a href="#" class="button flex flex-center text-upper">Read More
-                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                        <path
-                          d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                          fill="#1AD1B1"></path>
-                      </svg>
-                    </a>
+                  <div class="products-slider-desc">
+                    <p>Automated, Scalable, and Versatile</p>
+                    <div class="products-slider-btn flex flex-center">
+                      <a href="#" class="button flex flex-center text-upper">Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                          <path
+                            d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                            fill="#1AD1B1"></path>
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
           </div>
+          <div class="slick-progress relative hide-desktop" role="progress"><span class="absolute"></span></div>
         </div>
       </div>
     </section>
@@ -797,6 +820,80 @@
         </div>
       </div>
     </section>
+    <section class="modular-option-section">
+      <div class="container">
+        <div class="modular-option-wrap">
+          <div class="modular-option-main flex flex-vcenter white-bg-10 radius-40 relative">
+            <div class="modular-ellipse left absolute radius-50"></div>
+            <div class="modular-ellipse right absolute radius-50"></div>
+            <div class="modular-option-text highlight-purple">
+              <h2 class="h3"><span>Modular</span> & Scalable Handling</h2>
+              <p>Automatically detects, tracks, and optimizes filament usage, ensuring smooth multi-material transitions
+                and reducing waste for efficient printing</p>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="modular-option-image flex flex-vcenter">
+              <div class="modular-option-graph flex flex-col">
+                <div class="all-meterials-sm-icon white-bg-10 radius-30">
+                  <div class="all-meterials-chart-main m-auto relative" data-animate="chart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="105" height="51" viewBox="0 0 105 51" fill="none">
+                      <rect opacity="0.15" y="0.196289" width="11.6621" height="49.9743" rx="5.83103" fill="white" />
+                      <rect y="33.0957" width="11.6621" height="17.0746" rx="5.83103" fill="#8B52FC" />
+                      <rect opacity="0.15" x="69.9727" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
+                        fill="white" />
+                      <rect x="70" y="11.1963" width="12" height="39" rx="6" fill="#8B52FC" />
+                      <rect opacity="0.15" x="23.3242" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
+                        fill="white" />
+                      <rect x="23.334" y="26.1963" width="11.6667" height="24" rx="5.83333" fill="#8B52FC" />
+                      <rect opacity="0.15" x="93.2969" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
+                        fill="white" />
+                      <rect x="93" y="0.196289" width="12" height="50" rx="6" fill="#8B52FC" />
+                      <rect opacity="0.15" x="46.6484" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
+                        fill="white" />
+                      <rect x="46.666" y="21.1963" width="11.6667" height="29" rx="5.83333" fill="#8B52FC" />
+                    </svg>
+                  </div>
+                  <span class="fs-16 lh-18 d-block  f-500">Increased
+                    performance</span>
+                </div>
+                <div class="all-meterials-sm-icon white-bg-10 radius-30">
+                  <div class="half-circle-main m-auto relative" data-animate="half-circle">
+                    <div class="half-circle-pos relative o-hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="101" height="63" viewBox="0 0 101 63" fill="none">
+                        <path opacity="0.1"
+                          d="M91 52.133C91 41.0949 86.733 30.5088 79.1378 22.7037C71.5426 14.8986 61.2413 10.5137 50.5 10.5137C39.7587 10.5137 29.4574 14.8986 21.8622 22.7037C14.267 30.5088 10 41.0949 10 52.133"
+                          stroke="white" stroke-width="20" stroke-linecap="round" />
+                      </svg>
+                      <div class="all-meterials-half-circle absolute">
+                        <svg width="101" viewBox="0 0 101 101" height="101">
+                          <circle stroke="#8B52FC" stroke-width="20px" stroke-linecap="round" fill="none" cy="50.5"
+                            cx="50.5" r="40"></circle>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="all-meterials-parts flex flex-center flex-col">
+                      <span class="half-circle-count fs-26 lh-30 d-block f-500">75%</span>
+                      <span class="fs-16 lh-18 d-block">stronger parts</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modular-option-array">
+                <figure class="modular-option-thumb">
+                  <img src="images/modular-thumb-new@2x.png" alt="modular-thumb-new">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="everything-section">
       <div class="container">
         <div class="everything-wrap">
@@ -969,80 +1066,6 @@
                       </svg></a>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="modular-option-section">
-      <div class="container">
-        <div class="modular-option-wrap">
-          <div class="modular-option-main flex flex-vcenter white-bg-10 radius-40 relative">
-            <div class="modular-ellipse left absolute radius-50"></div>
-            <div class="modular-ellipse right absolute radius-50"></div>
-            <div class="modular-option-text highlight-purple">
-              <h2 class="h3"><span>Modular</span> & Scalable Handling</h2>
-              <p>Automatically detects, tracks, and optimizes filament usage, ensuring smooth multi-material transitions
-                and reducing waste for efficient printing</p>
-              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                  <path
-                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                    fill="#1AD1B1"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="modular-option-image flex flex-vcenter">
-              <div class="modular-option-graph flex flex-col">
-                <div class="all-meterials-sm-icon white-bg-10 radius-30">
-                  <div class="all-meterials-chart-main m-auto relative" data-animate="chart">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="105" height="51" viewBox="0 0 105 51" fill="none">
-                      <rect opacity="0.15" y="0.196289" width="11.6621" height="49.9743" rx="5.83103" fill="white" />
-                      <rect y="33.0957" width="11.6621" height="17.0746" rx="5.83103" fill="#8B52FC" />
-                      <rect opacity="0.15" x="69.9727" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
-                        fill="white" />
-                      <rect x="70" y="11.1963" width="12" height="39" rx="6" fill="#8B52FC" />
-                      <rect opacity="0.15" x="23.3242" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
-                        fill="white" />
-                      <rect x="23.334" y="26.1963" width="11.6667" height="24" rx="5.83333" fill="#8B52FC" />
-                      <rect opacity="0.15" x="93.2969" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
-                        fill="white" />
-                      <rect x="93" y="0.196289" width="12" height="50" rx="6" fill="#8B52FC" />
-                      <rect opacity="0.15" x="46.6484" y="0.196289" width="11.6621" height="49.9743" rx="5.83103"
-                        fill="white" />
-                      <rect x="46.666" y="21.1963" width="11.6667" height="29" rx="5.83333" fill="#8B52FC" />
-                    </svg>
-                  </div>
-                  <span class="fs-16 lh-18 d-block  f-500">Increased
-                    performance</span>
-                </div>
-                <div class="all-meterials-sm-icon white-bg-10 radius-30">
-                  <div class="half-circle-main m-auto relative" data-animate="half-circle">
-                    <div class="half-circle-pos relative o-hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="101" height="63" viewBox="0 0 101 63" fill="none">
-                        <path opacity="0.1"
-                          d="M91 52.133C91 41.0949 86.733 30.5088 79.1378 22.7037C71.5426 14.8986 61.2413 10.5137 50.5 10.5137C39.7587 10.5137 29.4574 14.8986 21.8622 22.7037C14.267 30.5088 10 41.0949 10 52.133"
-                          stroke="white" stroke-width="20" stroke-linecap="round" />
-                      </svg>
-                      <div class="all-meterials-half-circle absolute">
-                        <svg width="101" viewBox="0 0 101 101" height="101">
-                          <circle stroke="#8B52FC" stroke-width="20px" stroke-linecap="round" fill="none" cy="50.5"
-                            cx="50.5" r="40"></circle>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="all-meterials-parts flex flex-center flex-col">
-                      <span class="half-circle-count fs-26 lh-30 d-block f-500">75%</span>
-                      <span class="fs-16 lh-18 d-block">stronger parts</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modular-option-array">
-                <figure class="modular-option-thumb">
-                  <img src="images/modular-thumb-new@2x.png" alt="modular-thumb-new">
-                </figure>
               </div>
             </div>
           </div>
