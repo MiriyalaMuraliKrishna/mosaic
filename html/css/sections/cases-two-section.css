@@ -15,9 +15,11 @@
 
 
 
+.cases-two-head{max-width: 780px; padding-bottom: 48px;} 
+.cases-two-head span.optional-text{margin-bottom: 28px;}
 
 .cases-two-main{gap: 140px; padding: 62px 0 0;}
-.cases-two-left{flex: 0 0 205px; padding-top: 126px;}
+.cases-two-left{flex: 0 0 205px;}
 .cases-two-right{flex: 1;}
 
 ul.cases-two-links{gap: 24px 0;}
@@ -26,8 +28,8 @@ ul.cases-two-links > li > a.active, ul.cases-two-links > li > a:hover{color: var
 
 
 
-.cases-two-text{max-width: 435px; padding: 110px 0 334px;}
-.cases-two-text h2{margin-bottom: 26px; padding-top: 24px;}
+.cases-two-text{max-width: 435px;}
+.cases-two-text h2{margin-bottom: 26px;}
 .cases-two-text p{margin-bottom: 26px;}
 
 
@@ -37,6 +39,7 @@ ul.cases-two-links > li > a.active, ul.cases-two-links > li > a:hover{color: var
 .cases-two-overlay{background: linear-gradient(-270deg,var(--Black) 0%,hsla(0,0%,100%,0) 51%)}
 .cases-two-gradient{background: linear-gradient(0deg,var(--Black) 0%,hsla(0,0%,100%,0) 50%)}
 
+.cases-two-list:not(:first-child){display: none;}
 
 @media screen and (max-width: 767px) and (min-width: 200px){
     .cases-two-main{padding: 0; }

@@ -24,6 +24,7 @@ import { stickme } from './module/altstickscroll';
 import { usecases } from './module/usecases';
 import { counter } from './module/counter';
 import { myslick } from './module/slick';
+import { usecase } from './module/casetwo';
 
 (() => {
   mylenis.init();
@@ -51,6 +52,7 @@ import { myslick } from './module/slick';
   usecases.init();
   counter.init();
   myslick.init();
+  usecase.init();
 })();
 
 let scrolled = window.scrollY;
