@@ -24,7 +24,10 @@
 
 /*-- 02 - Solutions page --*/
 @import url('./sections/solutions-banner-section.css');
+@import url('./sections/sol-stats-section.css');
 @import url('./sections/cases-two-section.css');
+
+
 
 
 
