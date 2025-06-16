@@ -4,9 +4,11 @@
 .product-stats-row{align-items: center;}
 .product-dividend-line{width: 1000%; left: -100vw; height: 1px; top: calc(50% + 5px); transform: translateY(-50%); background: var(--Line---Light);}
 
-span.product-stats-num{font-size: 90px; line-height: 98px; letter-spacing: -2.7px; font-weight: 300; font-family: var(--heading-font); display: block; color: var(--Purple);}
-span.product-stats-num > span{font-size: 50px; letter-spacing: 0;}
-span.product-stats-name{font-size: 26px; line-height: normal; letter-spacing: -0.78px; }
+
+.product-stats-n-main{color: var(--Purple);align-items: flex-end;}
+.product-stats-num{font-size: 90px; line-height: 98px; letter-spacing: -2.7px; font-weight: 300; font-family: var(--heading-font); display: block; color: var(--Purple);}
+.product-stats-percentage{font-size: 50px; line-height: 67px; letter-spacing: 0;}
+.product-stats-name{font-size: 26px; line-height: normal; letter-spacing: -0.78px; }
 .product-stats-item p{font-size: 16.5px; letter-spacing: -0.495px; font-weight: 400; color: var(--Muted---Light); line-height: 26px; }
 .product-stats-ellipse{ top: -275px; left: -235px; width: 1158px; height: 1158px; border-radius: 1158px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Purple) 0%, rgba(139, 82, 252, 0.00) 100%); z-index: -1;}
 
@@ -21,6 +23,8 @@ span.product-stats-name{font-size: 26px; line-height: normal; letter-spacing: -0
     .product-stats-lists:nth-child(2){justify-content: end;}
     .product-stats-item{text-align: right; }
     .product-stats-lists:nth-child(4) .product-stats-item{text-align: left; }
+    .product-stats-lists:nth-child(2) .product-stats-n-main{ justify-content: flex-end;}
+
 }
 
 @media screen and (max-width: 1149px) and (min-width:1024px) {
@@ -32,6 +36,7 @@ span.product-stats-name{font-size: 26px; line-height: normal; letter-spacing: -0
     .product-stats-head{gap: 32px 0; padding-bottom: 80px; flex-direction: column;}
     .product-stats-thumb{flex: 0 0 687px; }
     .product-stats-lists{gap: 102px; justify-content: center; text-align: center;}
+    .product-stats-n-main{justify-content: center;}
 }
 @media screen and (max-width: 767px) and (min-width:200px) {
     .product-stats-main{padding: 90px 0 82px;}
