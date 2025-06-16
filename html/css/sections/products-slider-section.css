@@ -36,6 +36,7 @@
     figure.products-slider-thumb img{border-radius: 20px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    body.page-template-solutions .products-slider-main{padding-top: 25px;}
     .products-slider-main{padding: 199px 0 40px;}
     .products-slider-text{padding: 32px 0 62px; text-align: center; font-size: 22px; font-weight: 300; line-height: 28px; letter-spacing: -0.66px; }
     .products-slider-title{padding: 0 30px 17px; font-size: 65px; font-weight: 400; line-height: 75px; letter-spacing: 0.6px; }
