@@ -67,21 +67,29 @@
       </div>
   </header>
   <main class="site-main-cover"><!-- site starts here -->
-    <section class="solutions-banner-section relative">
-      <div class="background-bg solutions-banner-bg">
+    <section class="solutions-banner-section relative have_illustration">
+      <!-- <div class="background-bg solutions-banner-bg">
         <picture class="object-fit">
           <source srcset="images/solutions-banner@2x.jpg" media="(min-width:1024px)">
           <img src="images/solutions-banner-mobile@2x.jpg" alt="solutions-banner-mobile">
         </picture>
+      </div> -->
+      <div class="absolute solutions-banner-illustration z-2"> <!-- illustration -->
+        <picture class="object-fit relative z-3">
+          <source srcset="images/solutions-illustration.svg" media="(min-width:768px)">
+          <img src="images/solutions-illustration-mobile.svg" alt="solutions-banner-mobile">
+        </picture>
+        <div class="solutions-banner-ellipse radius-50 absolute"></div>
       </div>
-      <div class="background-bg solutions-banner-video">
-        <!-- <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div> -->
-        <!-- <div data-vbg="https://vimeo.com/70459392"></div> -->
-        <!-- <video autoplay muted loop>
-          <source src="images/array.mp4" type="video/mp4" />
-        </video> -->
-      </div>
+      <!-- if no need leave this -->
+      <!-- <div class="background-bg solutions-banner-video">
+        <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div> -->
+      <!-- <div data-vbg="https://vimeo.com/70459392"></div> -->
+      <!-- <video autoplay muted loop>
+        <source src="images/array.mp4" type="video/mp4" />
+      </video>
       <div class="background-text solutions-banner-overlay"></div>
+      </div> -->
       <div class="container xx-md">
         <div class="solutions-banner-main relative z-3">
           <div class="solutions-banner-text f-300 fs-21 lh-30">
@@ -108,6 +116,64 @@
               automated production systems to industrial-grade printers and filament splicing technology, their
               innovations enable faster, stronger, and more versatile printing - helping businesses scale, reduce waste,
               and unlock new creative possibilities. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advanced-scroll-section">
+      <div class="container">
+        <div class="advanced-scroll-main flex">
+          <div class="advanced-scroll-head">
+            <span class="optional-text">Optional Preheader</span>
+            <div class="sticky-widget">
+              <span class="stripe-line line-green d-block"></span>
+              <h2><span>Advanced</span> 3D Printing Solutions That Scale</h2>
+              <p>Discover how businesses across industries are using cutting-edge 3D printing technology.</p>
+            </div>
+          </div>
+          <div class="advanced-scroll-lists">
+            <div class="advanced-scroll-item" scroll-grid="1">
+              <div class="fluid-container relative">
+                <div class="advanced-scroll-img">
+                  <figure class="object-fit">
+                    <img src="images/bed-stack-empty.svg" alt="bed-stack-empty">
+                  </figure>
+                </div>
+              </div>
+              <div class="advanced-scroll-desc">
+                <h2 class="h3">Seamless Multi-Printer Management</h2>
+                <p>Control multiple printers from a single interface, optimizing production flow and minimizing
+                  downtime.</p>
+              </div>
+            </div>
+            <div class="advanced-scroll-item" scroll-grid="2">
+              <div class="fluid-container relative">
+                <div class="advanced-scroll-img">
+                  <figure class="object-fit">
+                    <img src="images/process.svg" alt="process">
+                  </figure>
+                </div>
+              </div>
+              <div class="advanced-scroll-desc">
+                <h2 class="h3">Seamless Multi-Printer Management</h2>
+                <p>Control multiple printers from a single interface, optimizing production flow and minimizing
+                  downtime.</p>
+              </div>
+            </div>
+            <div class="advanced-scroll-item" scroll-grid="3">
+              <div class="fluid-container relative">
+                <div class="advanced-scroll-img">
+                  <figure class="object-fit">
+                    <img src="images/Material-Pod-Two.svg" alt="Material-Pod">
+                  </figure>
+                </div>
+              </div>
+              <div class="advanced-scroll-desc">
+                <h2 class="h3">Seamless Multi-Printer Management</h2>
+                <p>Control multiple printers from a single interface, optimizing production flow and minimizing
+                  downtime.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

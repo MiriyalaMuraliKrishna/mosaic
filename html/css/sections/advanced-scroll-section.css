@@ -21,15 +21,17 @@
     .advanced-scroll-item[scroll-grid="3"] .advanced-scroll-img{width: 335px; padding-top: 58px; margin-bottom: 76px;}
 }
 @media screen and (min-width: 1400px){
-    .advanced-scroll-item[scroll-grid="1"] .advanced-scroll-img{right: 377px;}
+    .advanced-scroll-item[scroll-grid="1"] .advanced-scroll-img{right: 306px;}
     .advanced-scroll-item[scroll-grid="2"] .advanced-scroll-img{right: 395px;}
     .advanced-scroll-item[scroll-grid="3"] .advanced-scroll-img{right: 395px;}
 }
 @media screen and (max-width: 1399px) and (min-width: 1024px) { 
     .advanced-scroll-item .fluid-container{position: static; margin: 0; width: 100%;}
+    .advanced-scroll-item[scroll-grid="1"] .advanced-scroll-img{right: -82px;}
 }
 @media screen and (max-width: 1299px) and (min-width: 1024px) {
     .advanced-scroll-img{max-width: 350px;}
+    .advanced-scroll-item[scroll-grid="1"] .advanced-scroll-img{right: -62px;}
     .advanced-scroll-main{gap: 50px;}
     .advanced-scroll-head{width: 400px;}
     .advanced-scroll-lists{width: calc(100% - 450px);}
