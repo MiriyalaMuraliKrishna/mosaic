@@ -32,7 +32,9 @@
 @media only screen and (max-width: 1399px) and (min-width: 1024px){
     .content-cta-fluid .fluid-container{margin: 0; width: 100%; position: static;}
     .content-cta-fluid .container{padding: 0;}
-    
+    .content-cta-fluid .content-cta-main{padding: 77px 41px 27px;}
+    .content-cta-fluid .content-cta-image{right: -40px; top: -31px; width: 300px;}
+    .content-cta-fluid .content-cta-text{max-width: 350px;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .default-content-wrap{padding: 120px 0 0 0;}
