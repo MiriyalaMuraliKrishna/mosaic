@@ -53,6 +53,9 @@
     .our-customer-left .swiper-buttons .swiper-button{position: relative;}
     .our-customer-left .swiper-buttons .swiper-button-prev{left: -13px;}
     .our-customer-left .swiper-buttons .swiper-button-next{right: -13px;}
+
+    body.page-template-products-hardware .our-customer-wrap .hide-desktop{padding-right: 80px;}
+    body.page-template-products-hardware .our-customer-wrap .hide-desktop h2{font-size: 34px; line-height: 40px;}
 }
 
 @media screen and (max-width: 374px) and (min-width: 200px) {

@@ -13,3 +13,11 @@
     .cta-module-main{padding: 128px 0 88px;}
     .cta-module-text{max-width: 979px;}
 }
+
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .cta-module-main{padding: 326px 0 44px;}
+    .cta-module-text span.optional-text{margin-bottom: 30px;}
+    .cta-module-text h2{font-size: 48px; letter-spacing: -0.48px; line-height: 56px; margin-bottom: 28px; }
+    .cta-module-image{right: auto; top: -22px; width: 423px; left: -70px; }
+    .cta-module-ellipse{background: radial-gradient(50% 50% at 50% 50%,var(--White) 0,hsla(0,0%,100%,0) 100%); border-radius: 855px; height: 855px; left: -112px; top: -204px; right: auto; width: 855px;}
+}
