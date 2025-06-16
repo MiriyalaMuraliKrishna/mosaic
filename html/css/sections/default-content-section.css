@@ -29,6 +29,11 @@
     .default-content-aside{width:320px; }
     .default-content-article blockquote{padding: 74px 92px 75px 88px; margin-bottom: 60px;}
 }
+@media only screen and (max-width: 1399px) and (min-width: 1024px){
+    .content-cta-fluid .fluid-container{margin: 0; width: 100%; position: static;}
+    .content-cta-fluid .container{padding: 0;}
+    
+}
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .default-content-wrap{padding: 120px 0 0 0;}
     .default-content-article blockquote{padding: 40px;}

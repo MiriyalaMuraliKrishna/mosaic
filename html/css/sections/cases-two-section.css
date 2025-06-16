@@ -49,6 +49,9 @@ ul.cases-two-links > li > a.active, ul.cases-two-links > li > a:hover{color: var
     .cases-two-image img{width: fit-content;}
     .cases-two-image{max-width: 1117px; max-height: 677px; margin-left: auto;}
 }
+@media only screen and (min-width: 1400px){
+    .cases-two-image{margin: 0 auto; right: -340px;}
+}
 @media only screen and (min-width: 768px){
     .cases-two-mobile{display: none;}
 }
