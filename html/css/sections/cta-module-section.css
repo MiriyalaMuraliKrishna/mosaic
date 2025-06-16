@@ -1,0 +1,15 @@
+
+.cta-module-text{font-size: 16.5px; letter-spacing: -0.495px; line-height: 26px;}
+.cta-module-text span.optional-text{margin-bottom: 133px;}
+.cta-module-text h2{font-size: 94px; line-height: 100px; letter-spacing: -2.82px; font-weight: 400; margin-bottom: 28px;}
+.cta-module-text p{max-width: 435px;}
+.cta-module-btns{margin-top: 28px;}
+
+.cta-module-image{top: 79px; right: 0;}
+.cta-module-ellipse{background: radial-gradient(50% 50% at 50% 50%,var(--White) 0,hsla(0,0%,100%,0) 100%); border-radius: 1415px; flex-shrink: 0; height: 1415px; opacity: .3; right: -594px; top: -176px; width: 1415px;}
+
+
+@media screen and (min-width:1024px) {
+    .cta-module-main{padding: 128px 0 88px;}
+    .cta-module-text{max-width: 979px;}
+}

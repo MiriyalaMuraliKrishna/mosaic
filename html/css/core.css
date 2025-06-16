@@ -44,6 +44,8 @@
 @import url('./sections/products-hardware-banner-section.css');
 @import url('./sections/automated-grid-section.css');
 @import url('./sections/fullscreen-section.css');
+@import url('./sections/cta-module-section.css');
+@import url('./sections/choose-array-section.css');
 
 /*-- 06 prod meterials section page --*/
 @import url('./sections/meterials-banner-section.css');
