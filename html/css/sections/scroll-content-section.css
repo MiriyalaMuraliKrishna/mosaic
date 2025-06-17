@@ -5,7 +5,9 @@
 .scroll-content-text .chars{transition: color .3s ease; opacity: 0.4; color: var(--White-50);}
 
 body.page-template-products-hardware .scroll-content-main span.optional-text{color: var(--Muted---Light); margin-bottom: 44px; text-transform: uppercase; display: block; }
-body.page-template-products-hardware .scroll-content-text{font-size: 48px; line-height: 78px; letter-spacing: -1.44px;}
+body.page-template-products-hardware .scroll-content-text{letter-spacing: -1.44px;}
+
+body.page-template-products-software .scroll-content-main span.optional-text{color: var(--Muted---Dark); margin-bottom: 44px; text-transform: uppercase; display: block; }
 
 
 

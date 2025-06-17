@@ -293,6 +293,7 @@ span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; displ
 .fs-38{ font-size: 38px; line-height: 48px; }
 .fs-40{ font-size: 2.5rem; line-height: 2.5rem;}
 .fs-44{ font-size: 44px;}
+.fs-48{ font-size: 48px;}
 .fs-72{font-size: 72px; line-height: 125%;}
 .fs-64{font-size: 64px; line-height: 125%;}
 .fs-80{font-size: 80px; line-height: 125%;}
@@ -312,9 +313,11 @@ span.optional-step{margin-bottom: 8px; font-size: 16px; line-height: 26px; displ
 .lh-36{line-height: 36px;}
 .lh-38{line-height: 38px;}
 .lh-40{line-height: 40px;}
+.lh-48{line-height: 48px;}
 .lh-50{line-height: 50px;}
 .lh-54{line-height: 54px;}
 .lh-68{line-height: 68px;}
+.lh-78{line-height: 78px;}
 
 .radius-2, .radius-img-2 img{border-radius: 2px;}
 .radius-4, .radius-img-4 img{border-radius: 4px;}
