@@ -6,10 +6,12 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 export const anime = {
   eles: document.querySelectorAll('.scroll-content-text'),
+  scrolltextblack: document.querySelectorAll('.scroll-conten-blk-text'),
   h1: document.querySelectorAll('[data-anim*="title"]'),
   h2: document.querySelectorAll('[data-anim*="subtitle"]'),
   init() {
     this.scrollcontent();
+    this.scrollcontentblack();
     this.title();
     this.subtitle();
   },
@@ -51,6 +53,51 @@ export const anime = {
 
         tl.to(charSplit.chars, {
           color: '#ffffff',
+          opacity: 1,
+          stagger: 0.1,
+          ease: 'power2.out',
+        });
+      });
+    });
+  },
+  scrollcontentblack() {
+    this.scrolltextblack.forEach((el) => {
+      // Skip if this element already contains a title or subtitle anim element
+      if (
+        el.querySelector('[data-anim*="title"]') ||
+        el.querySelector('[data-anim*="subtitle"]')
+      ) {
+        return;
+      }
+
+      const target = el.querySelector('p') || el.querySelector('h2');
+
+      if (!target) return;
+
+      document.fonts.ready.then(() => {
+        const wordSplit = new SplitText(target, { type: 'words' });
+        const charSplit = new SplitText(wordSplit.words, {
+          type: 'chars',
+          charsClass: 'chars',
+        });
+
+        gsap.set(el, { opacity: 1 });
+        gsap.set(charSplit.chars, {
+          opacity: 0.4,
+          color: 'rgba(0, 0, 0, 0.4)',
+        });
+
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 75%',
+            end: 'bottom 50%',
+            scrub: 0.75,
+          },
+        });
+
+        tl.to(charSplit.chars, {
+          color: '#000000',
           opacity: 1,
           stagger: 0.1,
           ease: 'power2.out',
