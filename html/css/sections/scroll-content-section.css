@@ -18,6 +18,7 @@ body.page-template-products-hardware .scroll-content-text{font-size: 48px; line-
 }
 @media screen and (max-width: 1023px) and (min-width:768px){
     body.page-template-solutions .scroll-content-main{padding: 69px 0 0;}
+    body.page-template-products-hardware .scroll-content-main{padding: 50px 0 0;}
 }
 @media screen  and (max-width: 767px) and (min-width: 200px){
     .scroll-content-main{padding-top: 90px;}

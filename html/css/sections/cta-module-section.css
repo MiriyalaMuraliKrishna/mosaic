@@ -14,6 +14,12 @@
     .cta-module-text{max-width: 979px;}
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .cta-module-main{padding: 128px 0 80px;}
+    .cta-module-text{max-width: 600px;}
+    .cta-module-text h2{font-size: 74px; line-height: 80px;}
+    .cta-module-image{right: -20px; top: -20px; }
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .cta-module-main{padding: 326px 0 44px;}
     .cta-module-text span.optional-text{margin-bottom: 30px;}

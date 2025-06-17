@@ -11,6 +11,13 @@
     .fullscreen-main{padding: 113px 160px 120px 172px; }
     .fullscreen-btn{padding-bottom: 390px;}
 }
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .fullscreen-main{padding: 100px 0 17px;}
+    .fullscreen-bg{left: 0; width: 100%; min-height: 625px;}
+    .fullscreen-bg video{min-height: 625px;}
+    .fullscreen-btn{padding-bottom: 296px;}
+    .fullscreen-head h2{font-size: 62px; line-height: 68px; }
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
     .fullscreen-main{padding: 122px 0 17px;}
     .fullscreen-bg{left: 0; width: 100%; min-height: 625px;}

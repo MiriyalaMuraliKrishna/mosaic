@@ -25,6 +25,16 @@
     .choose-array-item{padding: 160px 63px 338px; }
     .choose-array-img{left: auto; right: -40px;}
 }
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .choose-array-main{gap: 89px;}
+    .choose-array-lt, .choose-array-rt{width: 100%; }
+    .choose-array-img{right: -20px; left: auto;}
+    .choose-array-title h2{font-size: 50px; line-height: 60px; letter-spacing: -0.5px;}
+    .choose-array-item{padding: 89px 0 86px; }
+    .choose-array-item:last-child{padding-bottom: 18px;}
+    .choose-array-text{font-size: 19px; letter-spacing: -0.57px; line-height: 27px; }
+    .choose-array-text h2{margin-bottom: 25px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px){
     .choose-array-main{gap: 89px;}
     .choose-array-lt, .choose-array-rt{width: 100%; }
