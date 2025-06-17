@@ -53,6 +53,9 @@
 /*--05 Products Software Page --*/
 @import url('./sections/products-software-banner-section.css');
 @import url('./sections/ai-grid-section.css');
+@import url('./sections/feature-slider-section.css');
+@import url('./sections/intro-section.css');
+@import url('./sections/features-icon-section.css');
 
 /*-- 06 prod meterials section page --*/
 @import url('./sections/meterials-banner-section.css');

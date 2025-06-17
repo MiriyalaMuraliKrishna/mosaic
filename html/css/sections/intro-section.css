@@ -1,0 +1,9 @@
+
+.intro-text h2{letter-spacing: -1.32px; margin-bottom: 11px;}
+.intro-text span{font-size: 122px; line-height: 128px; letter-spacing: -1.22px; font-weight: 400; display: block; color: var(--Green);}
+.intro-ellipse{top: 0; left: 50%; transform: translateX(-50%); width: 776px; height: 776px; border-radius: 776px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1;}
+
+@media screen and (min-width: 1024px) {
+    .intro-main{min-height: 776px;}
+    .features-icon-sidebar{flex: 0 0 205px;}
+}

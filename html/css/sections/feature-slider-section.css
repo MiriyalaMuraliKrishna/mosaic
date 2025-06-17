@@ -1,0 +1,11 @@
+
+.feature-item{width: 521px; gap: 50px;}
+.feature-item-img{flex: 0 0 50px;}
+.feature-item-desc{flex: 1;}
+.feature-item-desc h2{font-size: 38px; line-height: 44px; letter-spacing: -1.14px; margin-bottom: 16px;}
+
+@media screen and (min-width: 1024px) {
+    .feature-slider-main{padding: 145px 0;}
+    .feature-item{margin-right: 169px;}
+    
+}
