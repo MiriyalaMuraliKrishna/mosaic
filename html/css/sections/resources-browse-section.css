@@ -43,6 +43,7 @@ ul.browse-links > li > a{gap: 20px 0; padding-top: 12px;}
     .resources-browse-mobile.open .stripe-line{background-color: var(--Green);}
     .resources-browse-mobile .stripe-line{margin-top: 11px;}
     span.resources-browse-icon{position: absolute; right: 0; top: calc(50% - 8px); transform: translateY(-50%);}
+    .resources-browse-mobile.open span.resources-browse-icon{ transform: translateY(-50%) rotate(-90deg)}
 
     ul.browse-links{max-height: 0; transition: var(--b-transition-10); overflow: hidden; display: block;}
     ul.browse-links > li{margin-bottom: 0;}
