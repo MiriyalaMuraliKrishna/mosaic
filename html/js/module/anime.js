@@ -5,13 +5,11 @@ import { SplitText } from 'gsap/SplitText';
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 export const anime = {
-  eles: document.querySelectorAll('.scroll-content-text'),
-  scrolltextblack: document.querySelectorAll('.scroll-conten-blk-text'),
+  eles: document.querySelectorAll('.scroll-content-text'), // scrolltextblack: document.querySelectorAll('.scroll-conten-blk-text'),
   h1: document.querySelectorAll('[data-anim*="title"]'),
   h2: document.querySelectorAll('[data-anim*="subtitle"]'),
   init() {
     this.scrollcontent();
-    this.scrollcontentblack();
     this.title();
     this.subtitle();
   },
@@ -29,50 +27,21 @@ export const anime = {
 
       if (!target) return;
 
-      document.fonts.ready.then(() => {
-        const wordSplit = new SplitText(target, { type: 'words' });
-        const charSplit = new SplitText(wordSplit.words, {
-          type: 'chars',
-          charsClass: 'chars',
-        });
+      function getRGBA(colorName, alpha = 0.5) {
+        const tempDiv = document.createElement('div');
+        tempDiv.style.color = colorName;
+        document.body.appendChild(tempDiv);
 
-        gsap.set(el, { opacity: 1 });
-        gsap.set(charSplit.chars, {
-          opacity: 0.4,
-          color: 'rgba(255, 255, 255, 0.5)',
-        });
+        const computedColor = getComputedStyle(tempDiv).color;
+        document.body.removeChild(tempDiv);
 
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 75%',
-            end: 'bottom 50%',
-            scrub: 0.75,
-          },
-        });
-
-        tl.to(charSplit.chars, {
-          color: '#ffffff',
-          opacity: 1,
-          stagger: 0.1,
-          ease: 'power2.out',
-        });
-      });
-    });
-  },
-  scrollcontentblack() {
-    this.scrolltextblack.forEach((el) => {
-      // Skip if this element already contains a title or subtitle anim element
-      if (
-        el.querySelector('[data-anim*="title"]') ||
-        el.querySelector('[data-anim*="subtitle"]')
-      ) {
-        return;
+        const rgb = computedColor.match(/\d+/g); // Extract the numbers
+        return `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${alpha})`;
       }
 
-      const target = el.querySelector('p') || el.querySelector('h2');
-
-      if (!target) return;
+      let elColor = el.dataset.color || '#ffffff';
+      let opencolor = getRGBA(elColor, 0.5);
+      let activecolor = elColor;
 
       document.fonts.ready.then(() => {
         const wordSplit = new SplitText(target, { type: 'words' });
@@ -84,7 +53,7 @@ export const anime = {
         gsap.set(el, { opacity: 1 });
         gsap.set(charSplit.chars, {
           opacity: 0.4,
-          color: 'rgba(0, 0, 0, 0.4)',
+          color: opencolor,
         });
 
         const tl = gsap.timeline({
@@ -97,7 +66,7 @@ export const anime = {
         });
 
         tl.to(charSplit.chars, {
-          color: '#000000',
+          color: activecolor,
           opacity: 1,
           stagger: 0.1,
           ease: 'power2.out',
@@ -105,6 +74,7 @@ export const anime = {
       });
     });
   },
+
   title() {
     this.h1.forEach((ele) => {
       if (ele.dataset.anim !== 'title') return;
