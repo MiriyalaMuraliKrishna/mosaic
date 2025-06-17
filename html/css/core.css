@@ -24,7 +24,10 @@
 
 /*-- 02 - Solutions page --*/
 @import url('./sections/solutions-banner-section.css');
+@import url('./sections/sol-stats-section.css');
 @import url('./sections/cases-two-section.css');
+
+
 
 
 
@@ -44,6 +47,12 @@
 @import url('./sections/products-hardware-banner-section.css');
 @import url('./sections/automated-grid-section.css');
 @import url('./sections/fullscreen-section.css');
+@import url('./sections/cta-module-section.css');
+@import url('./sections/choose-array-section.css');
+
+/*--05 Products Software Page --*/
+@import url('./sections/products-software-banner-section.css');
+@import url('./sections/ai-grid-section.css');
 
 /*-- 06 prod meterials section page --*/
 @import url('./sections/meterials-banner-section.css');

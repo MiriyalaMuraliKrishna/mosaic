@@ -37,12 +37,14 @@ ul.browse-links > li > a{gap: 20px 0; padding-top: 12px;}
     .resources-browse-main{padding: 0 0 32px;}
     .resources-browse-head{gap: 22px; padding-bottom: 33px; flex-direction: column; align-items: flex-start;}
     .resources-browse-head .stripe-line{display: none;}
-    .resources-browse-mobile{cursor: pointer; font-size: 18px; position: relative;}
+    .resources-browse-mobile{gap: 2px; cursor: pointer; color: var(--Green);}
     .resources-browse-mobile:hover{color: var(--Green);}
     .resources-browse-mobile.open{color: var(--Green);}
     .resources-browse-mobile.open .stripe-line{background-color: var(--Green);}
     .resources-browse-mobile .stripe-line{margin-top: 11px;}
-    span.resources-browse-icon{position: absolute; right: 0; top: 0;}
+    span.resources-browse-icon{position: absolute; right: 0; top: calc(50% - 8px); transform: translateY(-50%);}
+    .resources-browse-mobile.open span.resources-browse-icon{ transform: translateY(-50%) rotate(-90deg)}
+
     ul.browse-links{max-height: 0; transition: var(--b-transition-10); overflow: hidden; display: block;}
     ul.browse-links > li{margin-bottom: 0;}
     ul.browse-links > li > a{padding-top: 16px; font-size: 18px; font-weight: 500; gap: 13px 0;}

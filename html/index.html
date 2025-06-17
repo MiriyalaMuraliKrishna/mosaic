@@ -51,15 +51,581 @@
           <span class="humburger-line"></span>
         </div>
         <div class="header_right">
+          <div class="header_ellipse radius-50 absolute"></div>
           <nav role="navigation" class="navigation flex radius-70">
             <ul class="main_menu m-0 flex no-disc">
-              <li><a href="solutions.html">Solutions</a></li>
+              <li class="solutions-menu-item menu-item-has-children">
+                <a href="solutions.html">Solutions</a>
+                <ul>
+                  <li>
+                    <div class="solutions-menu-text f-300">
+                      <span class="h4 d-block">Solutions</span>
+                      <p>Powerful Tools for Modern 3D Printing</p>
+                    </div>
+                  </li>
+                  <li><a href="#">Customization at Scale</a>
+                    <ul>
+                      <li><a href="#">Product Lifecycle Support</a></li>
+                      <li><a href="#">Sustainable Manufacturing</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">On-Demand Production</a></li>
+                  <li><a href="#">Digital Inventory Management</a></li>
+                  <li><a href="#">Supply-Chain Reorganization</a></li>
+                  <li class="solutions-menu-image">
+                    <div class="solutions-menu-bg">
+                      <img src="images/menu-bg@2x.jpg" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </li>
               <li><a href="use-cases.html">Use Cases</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="products-meterial.html">Materials</a></li>
+              <li class="products-menu-item menu-item-has-children"><a href="#">Products</a>
+                <ul>
+                  <li>
+                    <div class="products-menu-text f-300">
+                      <span class="h4 d-block">Products</span>
+                      <p>Powerful Tools for Modern 3D Printing</p>
+                    </div>
+                  </li>
+                  <li class="prod-menu-hardware"><a href="#">Hardware</a>
+                    <ul>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+                          <div class="prod-menu-image">
+                            <img src="images/array-icon@2x.png" alt="">
+                          </div>
+                          <div class="prod-menu-desc">
+                            <span>Array</span>
+                            <p>Automated, high-volume 3D printing system</p>
+                          </div>
+                          <div class="prod-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+                          <div class="prod-menu-image">
+                            <img src="images/element@2x.png" alt="">
+                          </div>
+                          <div class="prod-menu-desc">
+                            <span>Element</span>
+                            <p>Industrial-grade, multi-material 3D printer</p>
+                          </div>
+                          <div class="prod-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+                          <div class="prod-menu-image">
+                            <img src="images/palatte@2x.png" alt="">
+                          </div>
+                          <div class="prod-menu-desc">
+                            <span>Palette X</span>
+                            <p>Advanced filament splicing for complex prints</p>
+                          </div>
+                          <div class="prod-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+                          <div class="prod-menu-image">
+                            <img src="images/palatte@2x.png" alt="">
+                          </div>
+                          <div class="prod-menu-desc">
+                            <span>Palette X</span>
+                            <p>Advanced filament splicing for complex prints</p>
+                          </div>
+                          <div class="prod-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Software</a>
+                    <ul>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+                          <div class="prod-menu-image">
+                            <img src="images/array-icon@2x.png" alt="">
+                          </div>
+                          <div class="prod-menu-desc">
+                            <span>Array Software</span>
+                            <p>Automated, high-volume 3D printing system</p>
+                          </div>
+                          <div class="prod-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+                          <div class="prod-menu-image">
+                            <img src="images/element@2x.png" alt="">
+                          </div>
+                          <div class="prod-menu-desc">
+                            <span>Element</span>
+                            <p>Industrial-grade, multi-material 3D printer</p>
+                          </div>
+                          <div class="prod-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+                          <div class="prod-menu-image">
+                            <img src="images/palatte@2x.png" alt="">
+                          </div>
+                          <div class="prod-menu-desc">
+                            <span>Palette X</span>
+                            <p>Advanced filament splicing for complex prints</p>
+                          </div>
+                          <div class="prod-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Deployment</a>
+                    <ul>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+                          <div class="prod-menu-image">
+                            <img src="images/array-icon@2x.png" alt="">
+                          </div>
+                          <div class="prod-menu-desc">
+                            <span>Array Deployment</span>
+                            <p>Automated, high-volume 3D printing system</p>
+                          </div>
+                          <div class="prod-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+                          <div class="prod-menu-image">
+                            <img src="images/element@2x.png" alt="">
+                          </div>
+                          <div class="prod-menu-desc">
+                            <span>Element</span>
+                            <p>Industrial-grade, multi-material 3D printer</p>
+                          </div>
+                          <div class="prod-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+                          <div class="prod-menu-image">
+                            <img src="images/palatte@2x.png" alt="">
+                          </div>
+                          <div class="prod-menu-desc">
+                            <span>Palette X</span>
+                            <p>Advanced filament splicing for complex prints</p>
+                          </div>
+                          <div class="prod-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="materials-menu-item menu-item-has-children">
+                <a href="products-meterial.html">Materials</a>
+                <ul>
+                  <li>
+                    <div class="materials-menu-text f-300">
+                      <span class="h4 d-block">Materials</span>
+                      <p>Powerful Tools for Modern 3D Printing</p>
+                    </div>
+                  </li>
+                  <li class="materials-menu-specialty">
+                    <a href="#">Specialty</a>
+                    <ul>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+                          <div class="materials-menu-desc">
+                            <span>Stitch</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Aero</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Matrix</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Flex</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">General Purpose</a>
+                    <ul>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+                          <div class="materials-menu-desc">
+                            <span>Stitch</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Aero</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Matrix</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Flex</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">High Performance</a>
+                    <ul>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+                          <div class="materials-menu-desc">
+                            <span>Stitch</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Aero</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Matrix</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Flex</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Support Materials</a>
+                    <ul>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+                          <div class="materials-menu-desc">
+                            <span>Stitch</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Aero</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Matrix</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="text-link up flex flex-vcenter" href="#">
+
+                          <div class="materials-menu-desc">
+                            <span>Flex</span>
+                            <p>Smaple material description</p>
+                          </div>
+                          <div class="materials-menu-link">
+                            <!-- <span class="hide">Learn More</span> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                              fill="none">
+                              <path
+                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                fill="#1AD1B1"></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
               <li><a href="resources.html">Resources</a></li>
               <li><a href="support.html">Support</a></li>
-              <li><a href="#">Company</a></li>
+              <li class="menu-item-has-children">
+                <a href="#">Company</a>
+                <ul>
+                  <li><a href="about.html">About Mosaic</a></li>
+                  <li><a href="careers.html">Careers</a></li>
+                  <li><a href="resources.html">Resources</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
@@ -163,34 +729,39 @@
                 <div class="home-endless-graphs relative">
                   <div class="home-endless-dot absolute" data-animate="scale-dot-in">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
-                      <ellipse cx="5.5" cy="5" rx="5.5" ry="5" fill="#8B52FC"/>
+                      <ellipse cx="5.5" cy="5" rx="5.5" ry="5" fill="#8B52FC" />
                     </svg>
                   </div>
                   <div class="home-endless-graph relative" data-animate="icon">
                     <svg width="359" height="199" viewBox="0 0 359 199" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M68.1582 79.9556C39.7472 78.1617 1.29688 106.277 1.29688 106.277V198.403H357.593V79.9556C357.593 79.9556 330.214 96.4591 311.533 93.6536C281.716 89.1753 298.579 42.7024 269.634 34.8328C248.667 29.1325 235.052 51.9716 214.659 44.7705C194.139 37.5248 201.129 12.7499 181.674 3.40796C137.674 -17.7198 173.838 107.158 124.025 106.277C99.4258 105.842 92.7018 81.5053 68.1582 79.9556Z" fill="url(#paint0_linear_1_3)"/>
-                      <path d="M1.29688 105.874C1.29688 105.874 39.7472 77.7586 68.1582 79.5526C92.7018 81.1023 99.4258 105.439 124.025 105.874C173.838 106.755 137.674 -18.1228 181.674 3.00494C201.129 12.3468 194.139 37.1218 214.659 44.3675C235.052 51.5686 248.667 28.7295 269.634 34.4298C298.579 42.2994 281.716 88.7723 311.533 93.2506C330.214 96.0561 357.593 79.5526 357.593 79.5526" stroke="#8B52FC" stroke-linecap="round"/>
+                      <path opacity="0.3"
+                        d="M68.1582 79.9556C39.7472 78.1617 1.29688 106.277 1.29688 106.277V198.403H357.593V79.9556C357.593 79.9556 330.214 96.4591 311.533 93.6536C281.716 89.1753 298.579 42.7024 269.634 34.8328C248.667 29.1325 235.052 51.9716 214.659 44.7705C194.139 37.5248 201.129 12.7499 181.674 3.40796C137.674 -17.7198 173.838 107.158 124.025 106.277C99.4258 105.842 92.7018 81.5053 68.1582 79.9556Z"
+                        fill="url(#paint0_linear_1_3)" />
+                      <path
+                        d="M1.29688 105.874C1.29688 105.874 39.7472 77.7586 68.1582 79.5526C92.7018 81.1023 99.4258 105.439 124.025 105.874C173.838 106.755 137.674 -18.1228 181.674 3.00494C201.129 12.3468 194.139 37.1218 214.659 44.3675C235.052 51.5686 248.667 28.7295 269.634 34.4298C298.579 42.2994 281.716 88.7723 311.533 93.2506C330.214 96.0561 357.593 79.5526 357.593 79.5526"
+                        stroke="#8B52FC" stroke-linecap="round" />
                       <defs>
-                      <linearGradient id="paint0_linear_1_3" x1="179.445" y1="1" x2="179.445" y2="198.403" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#8B52FC"/>
-                      <stop offset="0.45" stop-color="#8B52FC" stop-opacity="0"/>
-                      </linearGradient>
+                        <linearGradient id="paint0_linear_1_3" x1="179.445" y1="1" x2="179.445" y2="198.403"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#8B52FC" />
+                          <stop offset="0.45" stop-color="#8B52FC" stop-opacity="0" />
+                        </linearGradient>
                       </defs>
-                      </svg>
+                    </svg>
                   </div>
                 </div>
-                  <div class="home-endless-lines absolute">
-                    <svg width="234" height="172" viewBox="0 0 234 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="0.5" y1="-2.18557e-08" x2="0.500008" y2="172" stroke="white"/>
-                      <line x1="47.1" y1="-2.18557e-08" x2="47.1" y2="172" stroke="white"/>
-                      <line x1="93.7" y1="-2.18557e-08" x2="93.7" y2="172" stroke="white"/>
-                      <line x1="140.3" y1="-2.18557e-08" x2="140.3" y2="172" stroke="white"/>
-                      <line x1="186.9" y1="-2.18557e-08" x2="186.9" y2="172" stroke="white"/>
-                      <line x1="233.5" y1="-2.18557e-08" x2="233.5" y2="172" stroke="white"/>
-                      </svg>
-                  </div>
-                    
-                  
+                <div class="home-endless-lines absolute">
+                  <svg width="234" height="172" viewBox="0 0 234 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.5" y1="-2.18557e-08" x2="0.500008" y2="172" stroke="white" />
+                    <line x1="47.1" y1="-2.18557e-08" x2="47.1" y2="172" stroke="white" />
+                    <line x1="93.7" y1="-2.18557e-08" x2="93.7" y2="172" stroke="white" />
+                    <line x1="140.3" y1="-2.18557e-08" x2="140.3" y2="172" stroke="white" />
+                    <line x1="186.9" y1="-2.18557e-08" x2="186.9" y2="172" stroke="white" />
+                    <line x1="233.5" y1="-2.18557e-08" x2="233.5" y2="172" stroke="white" />
+                  </svg>
+                </div>
+
+
               </div>
             </div>
           </div>
@@ -1237,7 +1808,7 @@
             </div>
           </div>
         </div>
-        <div class="featured-articles-row flex">
+        <div class="featured-articles-row flex hide-mobile">
           <div class="featured-articles-post radius-40 relative o-hidden">
             <div class="featured-articles-bg radius-40 background-bg"></div>
             <div class="featured-articles-image absolute">
@@ -1469,7 +2040,7 @@
               <a href="" class="stripe-btn-line">Support Ticket<span class="stripe-line line-light d-block"></span></a>
             </li>
             <li>
-                            <a href="faq.html" class="stripe-btn-line">FAQs<span class="stripe-line line-light d-block"></span></a>
+              <a href="faq.html" class="stripe-btn-line">FAQs<span class="stripe-line line-light d-block"></span></a>
 
             </li>
             <li>

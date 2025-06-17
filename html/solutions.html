@@ -32,7 +32,7 @@
   <script src="https://kit.fontawesome.com/daf2e8de71.js" crossorigin="anonymous"></script>
   <!-- CSS Base -->
   <link rel="stylesheet" href="./style.css" media="all" />
-  <link rel="stylesheet" href="./style.bundle.css" media="all" />
+  <link rel="stylesheet" href="./style.bundle.css?v=1" media="all" />
 </head>
 
 <body class="page-template-solutions">
@@ -67,21 +67,29 @@
       </div>
   </header>
   <main class="site-main-cover"><!-- site starts here -->
-    <section class="solutions-banner-section relative">
-      <div class="background-bg solutions-banner-bg">
+    <section class="solutions-banner-section relative have_illustration">
+      <!-- <div class="background-bg solutions-banner-bg">
         <picture class="object-fit">
           <source srcset="images/solutions-banner@2x.jpg" media="(min-width:1024px)">
           <img src="images/solutions-banner-mobile@2x.jpg" alt="solutions-banner-mobile">
         </picture>
+      </div> -->
+      <div class="absolute solutions-banner-illustration z-2"> <!-- illustration -->
+        <picture class="object-fit relative z-3">
+          <source srcset="images/solutions-illustration.svg" media="(min-width:768px)">
+          <img src="images/solutions-illustration-mobile.svg" alt="solutions-banner-mobile">
+        </picture>
+        <div class="solutions-banner-ellipse radius-50 absolute"></div>
       </div>
-      <div class="background-bg solutions-banner-video">
-        <!-- <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div> -->
-        <!-- <div data-vbg="https://vimeo.com/70459392"></div> -->
-        <!-- <video autoplay muted loop>
-          <source src="images/array.mp4" type="video/mp4" />
-        </video> -->
-      </div>
+      <!-- if no need leave this -->
+      <!-- <div class="background-bg solutions-banner-video">
+        <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div> -->
+      <!-- <div data-vbg="https://vimeo.com/70459392"></div> -->
+      <!-- <video autoplay muted loop>
+        <source src="images/array.mp4" type="video/mp4" />
+      </video>
       <div class="background-text solutions-banner-overlay"></div>
+      </div> -->
       <div class="container xx-md">
         <div class="solutions-banner-main relative z-3">
           <div class="solutions-banner-text f-300 fs-21 lh-30">
@@ -110,6 +118,264 @@
               and unlock new creative possibilities. </p>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="advanced-scroll-section">
+      <div class="container">
+        <div class="advanced-scroll-main flex">
+          <div class="advanced-scroll-head">
+            <span class="optional-text">Optional Preheader</span>
+            <div class="sticky-widget">
+              <span class="stripe-line line-green d-block"></span>
+              <h2><span>Advanced</span> 3D Printing Solutions That Scale</h2>
+              <p>Discover how businesses across industries are using cutting-edge 3D printing technology.</p>
+            </div>
+          </div>
+          <div class="advanced-scroll-lists">
+            <div class="advanced-scroll-item" scroll-grid="1">
+              <div class="fluid-container relative">
+                <div class="advanced-scroll-img">
+                  <figure class="object-fit">
+                    <img src="images/bed-stack-empty.svg" alt="bed-stack-empty">
+                  </figure>
+                </div>
+              </div>
+              <div class="advanced-scroll-desc">
+                <h2 class="h3">Seamless Multi-Printer Management</h2>
+                <p>Control multiple printers from a single interface, optimizing production flow and minimizing
+                  downtime.</p>
+              </div>
+            </div>
+            <div class="advanced-scroll-item" scroll-grid="2">
+              <div class="fluid-container relative">
+                <div class="advanced-scroll-img">
+                  <figure class="object-fit">
+                    <img src="images/process.svg" alt="process">
+                  </figure>
+                </div>
+              </div>
+              <div class="advanced-scroll-desc">
+                <h2 class="h3">Seamless Multi-Printer Management</h2>
+                <p>Control multiple printers from a single interface, optimizing production flow and minimizing
+                  downtime.</p>
+              </div>
+            </div>
+            <div class="advanced-scroll-item" scroll-grid="3">
+              <div class="fluid-container relative">
+                <div class="advanced-scroll-img">
+                  <figure class="object-fit">
+                    <img src="images/Material-Pod-Two.svg" alt="Material-Pod">
+                  </figure>
+                </div>
+              </div>
+              <div class="advanced-scroll-desc">
+                <h2 class="h3">Seamless Multi-Printer Management</h2>
+                <p>Control multiple printers from a single interface, optimizing production flow and minimizing
+                  downtime.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products-slider-section">
+      <div class="container sm">
+        <div class="products-slider-main">
+          <div class="products-slider-for">
+            <div class="products-slide">
+              <div class="products-slider-image relative">
+                <figure class="products-slider-thumb radius-img-30">
+                  <img src="images/media-enhanced@2x.jpg" alt="">
+                </figure>
+                <div class="play-btn-main lg green-bg radius-50">
+                  <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc" class="popup-youtube play-btn flex flex-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                      <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="products-slide">
+              <div class="products-slider-image relative">
+                <figure class="products-slider-thumb radius-img-30">
+                  <img src="images/media-enhanced@2x.jpg" alt="">
+                </figure>
+                <div class="play-btn-main lg green-bg radius-50">
+                  <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc" class="popup-youtube play-btn flex flex-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                      <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="products-slide">
+              <div class="products-slider-image relative">
+                <figure class="products-slider-thumb radius-img-30">
+                  <img src="images/media-enhanced@2x.jpg" alt="">
+                </figure>
+                <div class="play-btn-main lg green-bg radius-50">
+                  <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc" class="popup-youtube play-btn flex flex-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                      <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="products-slide">
+              <div class="products-slider-image relative">
+                <figure class="products-slider-thumb radius-img-30">
+                  <img src="images/media-enhanced@2x.jpg" alt="">
+                </figure>
+                <div class="play-btn-main lg green-bg radius-50">
+                  <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc" class="popup-youtube play-btn flex flex-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                      <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-slider-nav">
+            <div class="products-nav-slide">
+              <div class="products-slider-text">
+                <div class="products-slider-title">
+                  Element1
+                </div>
+                <div class="products-slider-desc">
+                  <p>Automated, Scalable, and Versatile</p>
+                  <div class="products-slider-btn flex flex-center">
+                    <a href="#" class="button flex flex-center text-upper">Read More
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                        <path
+                          d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                          fill="#1AD1B1"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-nav-slide">
+              <div class="products-slider-text">
+                <div class="products-slider-title">
+                  Element2
+                </div>
+                <div class="products-slider-desc">
+                  <p>Automated, Scalable, and Versatile</p>
+                  <div class="products-slider-btn flex flex-center">
+                    <a href="#" class="button flex flex-center text-upper">Read More
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                        <path
+                          d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                          fill="#1AD1B1"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-nav-slide">
+              <div class="products-slider-text">
+                <div class="products-slider-title">
+                  Element3
+                </div>
+                <div class="products-slider-desc">
+                  <p>Automated, Scalable, and Versatile</p>
+                  <div class="products-slider-btn flex flex-center">
+                    <a href="#" class="button flex flex-center text-upper">Read More
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                        <path
+                          d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                          fill="#1AD1B1"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-nav-slide">
+              <div class="products-slider-text">
+                <div class="products-slider-title">
+                  Element4
+                </div>
+                <div class="products-slider-desc">
+                  <p>Automated, Scalable, and Versatile</p>
+                  <div class="products-slider-btn flex flex-center">
+                    <a href="#" class="button flex flex-center text-upper">Read More
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                        <path
+                          d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                          fill="#1AD1B1"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-progress relative hide-desktop" role="progress"><span class="absolute"></span></div>
+        </div>
+      </div>
+    </section>
+    <section class="sol-stats-section">
+      <div class="container">
+        <div class="sol-stats-wrap">
+          <div class="sol-stats-main flex flex-vcenter">
+            <div class="sol-stats-text highlight-purple">
+              <h2><span>How</span> the<br> product saves time/money.
+              </h2>
+              <p>Augue arcu congue porttitor mauris lorem eget. Vulputate enim fermentum morbi feugiat tincidunt aenean
+                accumsan integer. Sit maecenas at risus eget interdum dictum sed odio. Amet suscipit nisl curabitur a.
+                Sed ipsum lectus amet aliquam morbi ac.</p>
+            </div>
+            <div class="sol-stats-right relative">
+              <div class="sol-stats-ellipse absolute"></div>
+              <div class="sol-stats-graphs flex">
+                <div class="sol-stats-item">
+                  <div class="sol-stats-n-main flex">
+                    <span class="sol-stats-num" id="counter-70" data-duration="3000" data-count-to="70"
+                      data-animate="counter">70</span>
+                    <span class="sol-stats-percentage">%</span>
+                  </div>
+                  <span class="sol-stats-name">Faster Production</span>
+                  <p>Automation cuts lead times.</p>
+                </div>
+                <div class="sol-stats-item">
+                  <div class="sol-stats-n-main flex">
+                    <span class="sol-stats-num" id="counter-40" data-duration="3000" data-count-to="40"
+                      data-animate="counter">40</span>
+                    <span class="sol-stats-percentage">%</span>
+                  </div>
+                  <span class="sol-stats-name">Cost Savings</span>
+                  <p>Less waste, lower costs.</p>
+                </div>
+                <div class="sol-stats-item">
+                  <div class="sol-stats-n-main flex">
+                    <span class="sol-stats-num" id="counter-3" data-duration="3000" data-count-to="3"
+                      data-animate="counter">3</span>
+                    <span class="sol-stats-percentage">x</span>
+                  </div>
+                  <span class="sol-stats-name">Cost Savings</span>
+                  <p>Smarter, faster workflows.</p>
+                </div>
+                <div class="sol-stats-item">
+                  <div class="sol-stats-n-main flex">
+                    <span class="sol-stats-num" id="counter-2" data-duration="3000" data-count-to="2"
+                      data-animate="counter">2</span>
+                    <span class="sol-stats-percentage">x</span>
+                  </div>
+                  <span class="sol-stats-name">Stronger Parts</span>
+                  <p>Durable, high-temp materials.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
     <section class="unlock-3d-section highlight-green relative z-0">
@@ -149,81 +415,104 @@
         <!-- <video autoplay muted loop>
         <source srcset="images/media.mp4" type="video/mp4" />
       </video> -->
-        <figure class="object-fit"><img src="images/media1@2x.jpg" alt=""></figure>
         <div class="cases-two-overlay background-text"></div>
         <div class="cases-two-gradient background-text"></div>
       </div>
-      <div class="container">
-        <div class="cases-two-head">
-          <span class="optional-text muted-light text-upper d-block w-100">Use Cases</span>
-          <h2 class="h3">Discover how Mosaic’s technology is transforming workflows across industries.</h2>
+      <div class="background-bg">
+        <div class="cases-two-image relative">
+          <picture class="object-fit">
+            <source srcset="images/usecase-array@2x.png" media="(min-width: 768px)">
+            <img src="images/usecase-array-mobile@2x.png" alt="">
+          </picture>
         </div>
-        <span class="stripe-line line-light d-block" data-animate="line"></span>
-        <div class="cases-two-main flex">
-          <div class="cases-two-left">
-            <ul class="cases-two-links flex flex-col no-disc m-0">
-              <li class="mb-0"><a href="#Rapid Prototyping">Rapid Prototyping</a></li>
-              <li class="mb-0"><a href="#End-Use Parts">End-Use Parts</a></li>
-              <li class="mb-0"><a href="#Tooling & Fixtures">Tooling & Fixtures</a></li>
-              <li class="mb-0"><a href="#Custom Jigs & Brackets">Custom Jigs & Brackets</a></li>
-              <li class="mb-0"><a href="#Educational Projects">Educational Projects</a></li>
-            </ul>
+      </div>
+      <div class="container">
+        <div class="cases-two-wrap">
+          <div class="cases-two-head">
+            <span class="optional-text muted-light text-upper d-block w-100">Use Cases</span>
+            <h2 class="h3">Discover how Mosaic’s technology is transforming workflows across industries.</h2>
           </div>
-          <div class="cases-two-right">
-            <div id="Rapid Prototyping" class="cases-two-list relative">
-              <div class="cases-two-text">
-                <h2 data-animate="fade-in-up" class="h3">Rapid Prototyping</h2>
-                <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional, testable prototypes with minimal turnaround time.</p>
-                <ul>
-                  <li>Validate designs faster with true-to-function parts</li>
-                  <li>Combine flexible and rigid materials in one print</li>
-                  <li>Reduce outsourcing and accelerate time to market</li>
-                </ul>
+          <span class="stripe-line line-light d-block" data-animate="line"></span>
+          <div class="cases-two-main flex">
+            <div class="cases-two-left">
+              <div class="cases-two-mobile flex flex-vcenter fs-18 f-600" data-mobile="false">
+                <span class="cases-two-mobile-txt">Rapid Prototyping</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path d="M10.8105 9.75H9.31055V2.56055L1.06055 10.8105L0 9.75L8.25 1.5H0.560547V0H10.8105V9.75Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+                <span class="stripe-line line-light d-block w-100"></span>
               </div>
+              <ul class="cases-two-links flex flex-col no-disc m-0">
+                <li class="mb-0"><a href="#Rapid Prototyping">Rapid Prototyping</a></li>
+                <li class="mb-0"><a href="#End-Use Parts">End-Use Parts</a></li>
+                <li class="mb-0"><a href="#Tooling & Fixtures">Tooling & Fixtures</a></li>
+                <li class="mb-0"><a href="#Custom Jigs & Brackets">Custom Jigs & Brackets</a></li>
+                <li class="mb-0"><a href="#Educational Projects">Educational Projects</a></li>
+              </ul>
             </div>
-            <div id="End-Use Parts" class="cases-two-list relative">
-              <div class="cases-two-text fs-21 lh-30 f-300">
-                <h2 data-animate="fade-in-up" class="h3">End-Use Parts</h2>
-                <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional, testable prototypes with minimal turnaround time.</p>
-                <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional, testable prototypes with minimal turnaround time.</p>
-                <ul>
-                  <li>Validate designs faster with true-to-function parts</li>
-                  <li>Combine flexible and rigid materials in one print</li>
-                  <li>Reduce outsourcing and accelerate time to market</li>
-                </ul>
+            <div class="cases-two-right">
+              <div id="Rapid Prototyping" class="cases-two-list relative">
+                <div class="cases-two-text">
+                  <h2 data-animate="fade-in-up" class="h3">Rapid Prototyping</h2>
+                  <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional,
+                    testable prototypes with minimal turnaround time.</p>
+                  <ul>
+                    <li>Validate designs faster with true-to-function parts</li>
+                    <li>Combine flexible and rigid materials in one print</li>
+                    <li>Reduce outsourcing and accelerate time to market</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div id="Tooling & Fixtures" class="cases-two-list relative">
-              <div class="cases-two-text fs-21 lh-30 f-300">
-                <h2 data-animate="fade-in-up" class="h3">Tooling & Fixtures</h2>
-                <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional, testable prototypes with minimal turnaround time.</p>
-                <ul>
-                  <li>Validate designs faster with true-to-function parts</li>
-                  <li>Combine flexible and rigid materials in one print</li>
-                  <li>Reduce outsourcing and accelerate time to market</li>
-                </ul>
+              <div id="End-Use Parts" class="cases-two-list relative">
+                <div class="cases-two-text">
+                  <h2 data-animate="fade-in-up" class="h3">End-Use Parts</h2>
+                  <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional,
+                    testable prototypes with minimal turnaround time.</p>
+                  <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional,
+                    testable prototypes with minimal turnaround time.</p>
+                  <ul>
+                    <li>Validate designs faster with true-to-function parts</li>
+                    <li>Combine flexible and rigid materials in one print</li>
+                    <li>Reduce outsourcing and accelerate time to market</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div id="Custom Jigs & Brackets" class="cases-two-list relative">
-              <div class="cases-two-text fs-21 lh-30 f-300">
-                <h2 data-animate="fade-in-up" class="h3">Custom Jigs & Brackets</h2>
-                <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional, testable prototypes with minimal turnaround time.</p>
-                <ul>
-                  <li>Validate designs faster with true-to-function parts</li>
-                  <li>Combine flexible and rigid materials in one print</li>
-                  <li>Reduce outsourcing and accelerate time to market</li>
-                </ul>
+              <div id="Tooling & Fixtures" class="cases-two-list relative">
+                <div class="cases-two-text">
+                  <h2 data-animate="fade-in-up" class="h3">Tooling & Fixtures</h2>
+                  <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional,
+                    testable prototypes with minimal turnaround time.</p>
+                  <ul>
+                    <li>Validate designs faster with true-to-function parts</li>
+                    <li>Combine flexible and rigid materials in one print</li>
+                    <li>Reduce outsourcing and accelerate time to market</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div id="Educational Projects" class="cases-two-list relative">
-              <div class="cases-two-text fs-21 lh-30 f-300">
-                <h2 data-animate="fade-in-up" class="h3">Educational Projects</h2>
-                <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional, testable prototypes with minimal turnaround time.</p>
-                <ul>
-                  <li>Validate designs faster with true-to-function parts</li>
-                  <li>Combine flexible and rigid materials in one print</li>
-                  <li>Reduce outsourcing and accelerate time to market</li>
-                </ul>
+              <div id="Custom Jigs & Brackets" class="cases-two-list relative">
+                <div class="cases-two-text">
+                  <h2 data-animate="fade-in-up" class="h3">Custom Jigs & Brackets</h2>
+                  <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional,
+                    testable prototypes with minimal turnaround time.</p>
+                  <ul>
+                    <li>Validate designs faster with true-to-function parts</li>
+                    <li>Combine flexible and rigid materials in one print</li>
+                    <li>Reduce outsourcing and accelerate time to market</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="Educational Projects" class="cases-two-list relative">
+                <div class="cases-two-text">
+                  <h2 data-animate="fade-in-up" class="h3">Educational Projects</h2>
+                  <p>Quickly iterate product designs using high-speed, multi-material printing that delivers functional,
+                    testable prototypes with minimal turnaround time.</p>
+                  <ul>
+                    <li>Validate designs faster with true-to-function parts</li>
+                    <li>Combine flexible and rigid materials in one print</li>
+                    <li>Reduce outsourcing and accelerate time to market</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -450,7 +739,7 @@
             </div>
           </div>
         </div>
-        <div class="featured-articles-row flex">
+        <div class="featured-articles-row flex hide-mobile">
           <div class="featured-articles-post radius-40 relative o-hidden">
             <div class="featured-articles-bg radius-40 background-bg"></div>
             <div class="featured-articles-image absolute">
@@ -682,7 +971,7 @@
               <a href="" class="stripe-btn-line">Support Ticket<span class="stripe-line line-light d-block"></span></a>
             </li>
             <li>
-                            <a href="faq.html" class="stripe-btn-line">FAQs<span class="stripe-line line-light d-block"></span></a>
+              <a href="faq.html" class="stripe-btn-line">FAQs<span class="stripe-line line-light d-block"></span></a>
 
             </li>
             <li>
@@ -886,7 +1175,7 @@
       </div>
     </div>
   </footer>
-  <script src="dist/core.bundle.js"></script>
+  <script src="dist/core.bundle.js?v=1"></script>
 </body>
 
 </html>

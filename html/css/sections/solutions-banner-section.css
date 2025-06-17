@@ -1,42 +1,45 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .solutions-banner-video video{width: 100%; height: 100%;}
 .solutions-banner-bg img{opacity: 0.4;}
 .solutions-banner-overlay{background: linear-gradient(0deg,var(--Black) 0,hsla(0,0%,45%,0) 33.7%);}
-.solutions-banner-text h1{padding-top: 20px; margin-bottom: 32px;}
 .solutions-banner-btns{padding-top: 17px;}
-
-
+.solutions-banner-illustration img{object-fit: contain;}
+.solutions-banner-ellipse{opacity: 0.25; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%);  z-index: -1;}
 
 
 /*-- media css starts here --*/
+@media only screen and (min-width: 1440px){
+    .solutions-banner-illustration{width: 762px; height: 956px;}
+}
 @media only screen and (min-width: 1024px){
     .solutions-banner-main{padding: 318px 0 117px; max-width: 860px;}
     .solutions-banner-text h1{letter-spacing: -1.22px;}
-
+    .solutions-banner-illustration{top: -41px; right: 42px;}   
 }
 @media screen and (min-width: 768px) {
+    .solutions-banner-ellipse{width: 1401px; height: 1375px; top: -542px; right: -418px;}
+    .solutions-banner-text h1{padding-top: 20px; margin-bottom: 32px;}
     .solutions-banner-text h1 br{display: none;}
 }
+@media screen and (max-width: 1439px) and (min-width: 1300px) {
+    .solutions-banner-illustration{width: 562px; height: 756px;}
+}
+@media screen and (max-width: 1299px) and (min-width: 1024px){
+    .solutions-banner-illustration{width: 562px; height: 756px;}
+    .solutions-banner-main{max-width: 740px;}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .solutions-banner-illustration{position: relative; margin-left: auto; width: 462px; height: 656px; margin-top: -82px; right: 42px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
+    .solutions-banner-illustration{position: relative; margin-left: auto; width: 324px; height: 407px; margin-top: -106px; right: 20px;}
+    .solutions-banner-ellipse{width: 788px; height: 773px; top: -297px; right: -180px;}
+    .have_illustration .solutions-banner-main{padding: 0;}
     .solutions-banner-main{padding: 143px 0 107px;}
-    .solutions-banner-text{font-size: 19px; line-height: 27px; letter-spacing: -0.57px;}
-    .solutions-banner-text h1{max-width: 300px; margin-bottom: 18px;}
-    .solutions-banner-bg img{opacity: 0.4;}
+    .solutions-banner-text h1{margin-bottom: 20px;}
+    .solutions-banner-text p{margin-bottom: 18px;}
+    .solutions-banner-bg img{opacity: 0.3;}
     .solutions-banner-overlay{opacity: 0;}
     .solutions-banner-btns{padding-top: 2px;}
 }

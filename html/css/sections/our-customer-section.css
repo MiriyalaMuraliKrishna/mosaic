@@ -14,6 +14,7 @@
 /* media css starts here */
 
 @media only screen and (min-width: 1024px){
+    body.page-template-solutions .our-customer-main{padding-top: 126px;}
     .our-customer-main{gap: 113px; padding: 140px 0 119px;}
     .our-customer-left{width: 437px;}
     .our-customer-right{width: calc(100% - 550px);}
@@ -37,6 +38,8 @@
 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    body.page-template-solutions .our-customer-wrap{padding-top: 70px;}
+
     .our-customer-wrap{padding: 90px 0 100px;}
     .our-customer-main{display: block;}
     .our-customer-left{overflow: inherit;}
@@ -50,6 +53,9 @@
     .our-customer-left .swiper-buttons .swiper-button{position: relative;}
     .our-customer-left .swiper-buttons .swiper-button-prev{left: -13px;}
     .our-customer-left .swiper-buttons .swiper-button-next{right: -13px;}
+
+    body.page-template-products-hardware .our-customer-wrap .hide-desktop{padding-right: 80px;}
+    body.page-template-products-hardware .our-customer-wrap .hide-desktop h2{font-size: 34px; line-height: 40px;}
 }
 
 @media screen and (max-width: 374px) and (min-width: 200px) {

@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="./style.css" media="all" />
   <link rel="stylesheet" href="./style.bundle.css" media="all" />
 </head>
+
 <body class="page-template-default">
   <header class="site-header">
     <div class="container no-auto">
@@ -97,42 +98,53 @@
         <div class="advanced-scroll-main flex">
           <div class="advanced-scroll-head">
             <span class="optional-text">Optional Preheader</span>
-            <span class="stripe-line line-green d-block"></span>
-            <h2><span>Advanced</span> 3D Printing Solutions That Scale</h2>
-            <p>Discover how businesses across industries are using cutting-edge 3D printing technology.</p>
+            <div class="sticky-widget">
+              <span class="stripe-line line-green d-block"></span>
+              <h2><span>Advanced</span> 3D Printing Solutions That Scale</h2>
+              <p>Discover how businesses across industries are using cutting-edge 3D printing technology.</p>
+            </div>
           </div>
           <div class="advanced-scroll-lists">
             <div class="advanced-scroll-item" scroll-grid="1">
-              <div class="advanced-scroll-img">
-                <figure class="object-fit">
-                  <img src="images/bed-stack-empty.svg" alt="bed-stack-empty">
-                </figure>
+              <div class="fluid-container relative">
+                <div class="advanced-scroll-img">
+                  <figure class="object-fit">
+                    <img src="images/bed-stack-empty.svg" alt="bed-stack-empty">
+                  </figure>
+                </div>
               </div>
               <div class="advanced-scroll-desc">
                 <h2 class="h3">Seamless Multi-Printer Management</h2>
-                <p>Control multiple printers from a single interface, optimizing production flow and minimizing downtime.</p>
+                <p>Control multiple printers from a single interface, optimizing production flow and minimizing
+                  downtime.</p>
               </div>
             </div>
             <div class="advanced-scroll-item" scroll-grid="2">
-              <div class="advanced-scroll-img">
-                <figure class="object-fit">
-                  <img src="images/process.svg" alt="process">
-                </figure>
+              <div class="fluid-container relative">
+                <div class="advanced-scroll-img">
+                  <figure class="object-fit">
+                    <img src="images/process.svg" alt="process">
+                  </figure>
+                </div>
               </div>
               <div class="advanced-scroll-desc">
                 <h2 class="h3">Seamless Multi-Printer Management</h2>
-                <p>Control multiple printers from a single interface, optimizing production flow and minimizing downtime.</p>
+                <p>Control multiple printers from a single interface, optimizing production flow and minimizing
+                  downtime.</p>
               </div>
             </div>
             <div class="advanced-scroll-item" scroll-grid="3">
-              <div class="advanced-scroll-img">
-                <figure class="object-fit">
-                  <img src="images/Material-Pod.svg" alt="Material-Pod">
-                </figure>
+              <div class="fluid-container relative">
+                <div class="advanced-scroll-img">
+                  <figure class="object-fit">
+                    <img src="images/Material-Pod-Two.svg" alt="Material-Pod">
+                  </figure>
+                </div>
               </div>
               <div class="advanced-scroll-desc">
                 <h2 class="h3">Seamless Multi-Printer Management</h2>
-                <p>Control multiple printers from a single interface, optimizing production flow and minimizing downtime.</p>
+                <p>Control multiple printers from a single interface, optimizing production flow and minimizing
+                  downtime.</p>
               </div>
             </div>
           </div>
@@ -409,7 +421,8 @@
                 <li>Reduce outsourcing and accelerate time to market</li>
               </ul>
               <div class="full-width-image">
-                <figure class="radius-img-30 object-fit"><img src="images/media-thumb@2x.jpg" alt="media-thumb"></figure>
+                <figure class="radius-img-30 object-fit"><img src="images/media-thumb@2x.jpg" alt="media-thumb">
+                </figure>
               </div>
               <p>At sed facilisis ipsum diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed
                 tristique mauris auctor. Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet
@@ -430,33 +443,36 @@
                 facilisis ipsum diam. Nibh tempus vitae ac rutrum mi. Dapibus diam lacus molestie dignissim sed
                 tristique mauris auctor. Mauris nascetur nec, amet maecenas gravida. Placerat vitae fermentum aliquet
                 egestas.</p>
-              <div class="fluid-container relative">
-                <div class="container x-md">
-                  <div class="content-cta-wrap">
-                    <div class="content-cta-main flex radius-30 relative o-hidden">
-                      <div class="content-cta-image absolute">
-                        <div class="content-cta-ellipse absolute"></div>
-                        <figure class="object-fit"><img src="images/Filament-Spools.svg" alt=""></figure>
-                      </div>
-                      <div class="content-cta-text z-1">
-                        <h2 class="h4">A concise headline fits here driving conversions from posts.</h2>
-                        <div class="flex">
-                          <a href="#" class="button flex flex-center text-upper">Download File
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
-                              fill="none">
-                              <path
-                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                                fill="#1AD1B1"></path>
-                            </svg>
-                          </a>
-                          <a class="blg-resource-link up flex flex-vcenter" href="#">Learn more
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
-                              fill="none">
-                              <path
-                                d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                                fill="#1AD1B1"></path>
-                            </svg>
-                          </a>
+              <div class="content-cta-fluid">
+
+                <div class="fluid-container relative">
+                  <div class="container x-md">
+                    <div class="content-cta-wrap">
+                      <div class="content-cta-main flex radius-30 relative o-hidden">
+                        <div class="content-cta-image absolute">
+                          <div class="content-cta-ellipse absolute"></div>
+                          <figure class="object-fit"><img src="images/Filament-Spools.svg" alt=""></figure>
+                        </div>
+                        <div class="content-cta-text z-1">
+                          <h2 class="h4">A concise headline fits here driving conversions from posts.</h2>
+                          <div class="flex">
+                            <a href="#" class="button flex flex-center text-upper">Download File
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                                fill="none">
+                                <path
+                                  d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                  fill="#1AD1B1"></path>
+                              </svg>
+                            </a>
+                            <a class="blg-resource-link up flex flex-vcenter" href="#">Learn more
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                                fill="none">
+                                <path
+                                  d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                                  fill="#1AD1B1"></path>
+                              </svg>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -726,7 +742,7 @@
             </div>
           </div>
         </div>
-        <div class="featured-articles-row flex">
+        <div class="featured-articles-row flex hide-mobile">
           <div class="featured-articles-post radius-40 relative o-hidden">
             <div class="featured-articles-bg radius-40 background-bg"></div>
             <div class="featured-articles-image absolute">

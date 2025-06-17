@@ -103,16 +103,7 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
     .fluid-image-thumb{flex: 0 0 216px;}
     .fluid-image-thumb img{border-radius: 20px;}
     .fluid-image-icon{flex: 0 0 138px; max-width: 138px;}
-    .half-circle-pos{height: 53px; width: 90px; }
-    .half-circle-pos svg{height: 53px; width: 90px; }
-    .half-circle-pos svg path{stroke-width: 15px;}
-    .all-meterials-sm-icon{padding: 23px 19px; border-radius: 25px;} 
-    .half-circle-count{font-size: 23px; letter-spacing: -0.69px;}
-    .all-meterials-half-circle{height: 53px; transform: rotate(-167deg); width: 90px;}
-    .all-meterials-half-circle svg{height: 53px; width: 90px;}
-    .all-meterials-parts span:last-child{font-size: 14px; letter-spacing: -0.42px;}
-    .all-meterials-sm-x{flex: 0 0 138px; padding: 15px 19px 26px 24px; border-radius: 25px;}
-    .all-meterials-sm-x > span{font-size: 14px; letter-spacing: -0.42px;}
+
     .highlightbox-main{gap: 29px; padding: 34px 30px 38px 31px; align-items: flex-start;}
     .highlightbox-icon{flex: 0 0 48px; }
     .highlightbox-icon svg{width: 48px; height: 48px;}
@@ -144,8 +135,7 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
     .fluid-image-caption{gap: 10px;}
     .fluid-image-thumb{flex: 0 0 150px;}
     .fluid-image-icon{flex: 0 0 120px; max-width: 120px;}
-    .all-meterials-sm-icon{padding: 15px 15px;}
-    .all-meterials-sm-x{padding: 15px;}
+
     .content-cta-text h2{font-size: 26px; line-height: 32px;}
     .res-content-main blockquote{padding: 20px 20px 31px;}
 }

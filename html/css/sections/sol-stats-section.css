@@ -1,0 +1,58 @@
+
+
+
+.sol-stats-n-main{color: var(--Purple);}
+.sol-stats-num{font-size: 90px; line-height: 98px; letter-spacing: -2.7px; font-weight: 300; font-family: var(--heading-font);}
+.sol-stats-percentage{font-size: 50px; line-height: 67px; letter-spacing: 0;}
+span.sol-stats-name{font-size: 26px; line-height: normal; letter-spacing: -0.78px; }
+.sol-stats-item p{font-size: 16.5px; letter-spacing: -0.495px; font-weight: 400; color: var(--Muted---Light); line-height: 26px; }
+.sol-stats-ellipse{ top: 50%; left: 50%; transform: translate(-50%,-50%); width: 874px; height: 874px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Purple) 0%, rgba(139, 82, 252, 0.00) 100%); z-index: -1;}
+
+
+
+
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .sol-stats-wrap{padding: 93px 0 8px;}
+    .sol-stats-main{gap: 90px;}
+    .sol-stats-text{flex: 0 0 462px;}
+    .sol-stats-right{flex: 1;}
+}
+@media screen and (min-width: 768px){
+    .sol-stats-item{flex: 0 0 50%; border-bottom: 1px solid var(--Line---Light); border-left: 1px solid var(--Line---Light);}
+    .sol-stats-item:nth-child(2n+2){padding: 0 0 0 63px;}
+    .sol-stats-item:nth-child(2n+1){border-left: none; padding: 0 77px 58px 0; text-align: right;}
+    .sol-stats-item:nth-last-child(-n+2){border-bottom: none; padding-top: 47px; padding-bottom: 0;}
+    .sol-stats-n-main{align-items: flex-end;}
+    .sol-stats-item:nth-child(2n+1) .sol-stats-n-main{justify-content: flex-end;}
+}
+@media screen and (max-width: 1023px) and (min-width:768px){
+    .sol-stats-wrap{padding: 43px 0 8px;}
+    .sol-stats-main{gap: 90px; flex-direction: column; align-items: flex-start;}
+    .sol-stats-text h2 br{display: none;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .sol-stats-wrap{padding: 43px 0 0;}
+    .sol-stats-main{gap: 33px; flex-direction: column; align-items: flex-start;}
+    .sol-stats-text h2 br{display: none;}
+    .sol-stats-right{width: 100%;}
+    .sol-stats-graphs{flex-direction: column; gap: 37px;}
+    .sol-stats-item{order: 1;}
+    .sol-stats-item:not(:last-child){padding-bottom: 39px; border-bottom: 1px solid var(--Line---Light); }
+    .sol-stats-item:nth-child(2){order: 3;}
+    .sol-stats-item:nth-child(3){order: 1;}
+    .sol-stats-item:nth-child(4){order: 4;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

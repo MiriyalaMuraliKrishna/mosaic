@@ -1,7 +1,7 @@
 
 
 ul.prod-meterials-links > li > a{gap: 20px 0; padding-top: 12px; color: var(--White);}
-ul.prod-meterials-links > li > a:hover{color: var(--Green);}
+ul.prod-meterials-links > li > a.mPS2id-clicked, ul.prod-meterials-links > li > a:hover{color: var(--Green);}
 .prod-meterials-rows{gap: 99px 0;padding: 115px 0 137px;}
 .prod-meterials-row{gap: 120px 0;}
 .prod-meterials-row:last-child span.stripe-line:last-child{display: none;}
