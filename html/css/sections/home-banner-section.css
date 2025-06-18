@@ -57,7 +57,7 @@
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .home-banner-section{min-height: 570px;}
-    .home-banner-wrap{padding: 0;}
+    .home-banner-wrap{padding: 0; overflow: hidden;}
     .home-banner-main{padding: 173px 0 94px;}
     .home-banner-text h1{font-size: 56px; letter-spacing: -0.56px; line-height: 68px; margin-bottom: 22px;}
     
@@ -67,8 +67,13 @@
     .trust-by-logo img[data-logo="awwards"]{max-width: 86px;}
     .trust-by-logo img[data-logo="dan"]{max-width: 120px;}
     .trust-by-logo img[data-logo="css-winner"]{max-width: 132px;}
-    .home-endless-pos{margin: 184px 0 10px;  padding: 0 37px 0 40px; position: relative;}
-    .home-endless-text{padding: 0px 0 148px 7px; }
+    .home-endless-pos{margin: 184px 0 10px; padding: 0 37px 0 40px; position: relative;}
+    .home-endless-main{overflow: inherit;}
+    .home-endless-text{padding: 0px 0 189px 7px; }
+    .home-endless-graph{right: -20px; bottom: 35px;}
+    .home-endless-lines{left: 76px; bottom: 41px; width: 274px; height: 202px;} 
+    /* .home-endless-lines svg{opacity: 0.2;} */
+    .home-endless-dot{top: -47px; left: 180px;}
 }
 @media only screen and (max-width: 374px) and (min-width: 200px){
     .home-banner-text h1{font-size: 50px; line-height: 62px;}
