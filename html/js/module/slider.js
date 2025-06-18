@@ -75,7 +75,15 @@ export const slider = {
       const targetEle = document.querySelector(
         `.use-cases-slider[data-slider="${attr}"]`
       );
-      if (targetEle) $(targetEle).fadeIn(900);
+      if (targetEle) {
+        $(targetEle).fadeIn(900, () => {
+          const swiper = targetEle.swiper;
+          if (swiper) {
+            updateSlideOpacity(swiper);
+            swiper.update();
+          }
+        });
+      }
     });
 
     this.usecaseele.forEach((usecaseele) => {
@@ -106,21 +114,19 @@ export const slider = {
             updateSlideOpacity(this);
           },
           init: function () {
-            console.log('swiper initialized on:', this.el);
             updateSlideOpacity(this);
           },
         },
       });
-      function updateSlideOpacity(swiper) {
-        swiper.slides.forEach((slide, index) => {
-          // console.log(index, swiper.activeIndex + swiper.params.slidesPerView);
-          slide.style.opacity =
-            index < swiper.activeIndex + swiper.params.slidesPerView
-              ? '1'
-              : '0.15';
-        });
-      }
     });
+    function updateSlideOpacity(swiper) {
+      swiper.slides.forEach((slide, index) => {
+        slide.style.opacity =
+          index < swiper.activeIndex + swiper.params.slidesPerView
+            ? '1'
+            : '0.15';
+      });
+    }
   },
 
   serviceSlider() {

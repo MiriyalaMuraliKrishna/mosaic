@@ -18,7 +18,7 @@
 .modular-ellipse.right{right: -612px; top: 69px;}
 
 
-
+.optional-module-text:nth-child(3){flex: 0 0 100%;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
