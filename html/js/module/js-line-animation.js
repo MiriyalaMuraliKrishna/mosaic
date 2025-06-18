@@ -132,7 +132,6 @@ export const jslineanimation = {
             });
           });
         });
-        console.log('Running code for screens larger than 991px');
       }
     }
 

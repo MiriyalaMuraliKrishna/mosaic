@@ -13,23 +13,12 @@
 .alt-stick-list span.fs-21{padding:6px 0 20px;}
 .alt-stick-list p{margin-bottom: 26px;}
 .alt-stick-thumb img{opacity: 0.4;}
-.alt-stick-overlay{
-    width: 100%;
-height: 100%;
-}
-.alt-stick-overlay.top{
-    top: 0;
-    left: 0;
-    background: linear-gradient(0deg,hsla(0,0%,100%,0) 0,var(--Black-75) 100%)
-}
-.alt-stick-overlay.bottom{
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(270deg, #000 0%, transparent 50.63%);
-}
+.alt-stick-overlay{ width: 100%; height: 100%; }
+.alt-stick-overlay.top{ top: 0; left: 0; background: linear-gradient(0deg,hsla(0,0%,100%,0) 0,var(--Black-75) 100%) }
+.alt-stick-overlay.bottom{ bottom: 0; right: 0; background: linear-gradient(270deg, #000 0%, transparent 50.63%); }
 .alt-stick-left{flex: 1;}
 .alt-stick-right{flex: 1; gap: 99px 0;}
-
+.no_right .alt-stick-text{max-width: 100%;}
 
 
 @media only screen and (min-width: 1600px){

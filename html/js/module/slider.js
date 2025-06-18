@@ -106,14 +106,13 @@ export const slider = {
             updateSlideOpacity(this);
           },
           init: function () {
-            console.log('swiper initialized on:', this.el);
+            'swiper initialized on:', this.el;
             updateSlideOpacity(this);
           },
         },
       });
       function updateSlideOpacity(swiper) {
         swiper.slides.forEach((slide, index) => {
-          // console.log(index, swiper.activeIndex + swiper.params.slidesPerView);
           slide.style.opacity =
             index < swiper.activeIndex + swiper.params.slidesPerView
               ? '1'
