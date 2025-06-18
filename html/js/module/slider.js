@@ -8,7 +8,7 @@ export const slider = {
   logos: document.querySelectorAll('.trust-by-logos'),
   brands: document.querySelectorAll('.trusted-by-logos'),
   featuredeles: document.querySelector('.featured-articles-slider'),
-
+  featureitemslider: document.querySelector('.feature-item-slider'),
   init() {
     this.customSlider();
     this.usecaseSlider();
@@ -16,6 +16,7 @@ export const slider = {
     this.trustlogoSlider();
     this.trustbrandSlider();
     this.mobileSlider();
+    this.featureItemSlider();
   },
   customSlider() {
     const left = this.customele?.querySelector('.our-customer-left');
@@ -189,6 +190,23 @@ export const slider = {
         el: '.swiper-pagination',
         type: 'progressbar',
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  },
+  featureItemSlider() {
+    if (!this.featureitemslider) return;
+    new Swiper(this.featureitemslider, {
+      slidesPerView: 'auto',
+      speed: 800,
+      spaceBetween: 0,
+      autoHeight: true,
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   type: 'progressbar',
+      // },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

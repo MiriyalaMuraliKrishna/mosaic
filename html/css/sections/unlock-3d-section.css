@@ -21,6 +21,8 @@ body.page-template-products-software .unlock-3d-text h2{margin-bottom: 9px;}
     body.page-template-default .unlock-3d-wrap{padding: 102px 0 40px;}
     body.page-template-products-hardware .unlock-3d-wrap{padding-bottom: 32px;}
     body.page-template-products-software .unlock-3d-wrap{padding: 140px 0 0;}
+    body.page-template-products-software .unlock-3d-text{max-width: 565px;}
+    body.page-template-products-software .unlock-3d-text p{max-width: 476px;}
 }
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .unlock-3d-main{gap: 20px; padding: 125px 40px 123px 0;}
