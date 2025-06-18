@@ -9,6 +9,7 @@
 .unlock-3d-text{flex: 1; max-width: 550px;}
 .unlock-3d-text span.optional-text{margin-bottom: 27px; }
 .unlock-3d-text h2{margin-bottom: 29px;}
+body.page-template-products-software .unlock-3d-text h2{margin-bottom: 9px;}
 .unlock-3d-text p{margin-bottom: 28px;}
 .unlock-3d-ellipse{ top: -280px; left: -169px; width: 1066px; height: 1066px; border-radius: 1066px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1;}
 .unlock-3d-image:nth-child(3):last-child{flex: 0 0 100%; transform: none;}
@@ -19,6 +20,7 @@
     body.home .unlock-3d-wrap{padding: 124px 0 38px;}
     body.page-template-default .unlock-3d-wrap{padding: 102px 0 40px;}
     body.page-template-products-hardware .unlock-3d-wrap{padding-bottom: 32px;}
+    body.page-template-products-software .unlock-3d-wrap{padding: 140px 0 0;}
 }
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
     .unlock-3d-main{gap: 20px; padding: 125px 40px 123px 0;}
