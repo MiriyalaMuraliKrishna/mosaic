@@ -66,7 +66,7 @@ export const aislick = {
         {
           breakpoint: 1023,
           settings: {
-            arrows: true,
+            arrows: false,
             prevArrow:
               '<button type="button" aria-label="previous" aria-disabled="false" tabindex="0" class="slick-arrow slick-prev flex flex-center radius-50"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"> <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="#1AD1B1"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7482 18.295L22.0411 12.0021L20.6269 10.5879L12.6269 18.5879L11.9198 19.295L12.6269 20.0021L20.6269 28.0021L22.0411 26.5879L15.7482 20.295L29.334 20.295V18.295L15.7482 18.295Z" fill="black"></path> </svg></button>',
             nextArrow:

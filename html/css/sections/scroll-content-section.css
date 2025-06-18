@@ -24,8 +24,10 @@ body.page-template-products-software .scroll-content-main span.optional-text{col
 }
 @media screen  and (max-width: 767px) and (min-width: 200px){
     .scroll-content-main{padding-top: 90px;}
+    body.page-template-products-software .scroll-content-main{padding-top: 95px;}
     .scroll-content-text{font-size: 23px; line-height: 42px; letter-spacing: -0.69px;}
-    body.page-template-products-hardware .scroll-content-text{font-size: 32px; letter-spacing: -0.96px; line-height: 44px; }
+    body.page-template-products-hardware .scroll-content-text,
+    body.page-template-products-software .scroll-content-text{font-size: 32px; letter-spacing: -0.96px; line-height: 44px; }
 }
 
 

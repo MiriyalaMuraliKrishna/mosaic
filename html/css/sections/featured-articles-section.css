@@ -101,6 +101,7 @@
     .featured-articles-ellipse {right: -180px; top: -350px;}
     body.home .featured-articles-main{padding: 0;}
     body.page-template-default .featured-articles-main{padding: 0;}
+    body.page-template-products-software  .featured-articles-main{padding: 80px 0 40px;}
 }
 
 @media only screen and (max-width: 413px) and (min-width: 200px){

@@ -16,3 +16,20 @@
     .compare-main{max-width: 900px; margin: 0 auto; padding-top: 153px;}
     .compare-head{max-width: 780px; margin-bottom: 92px;}
 }
+
+@media screen and (max-width: 767px) and (min-width: 200px){
+    .compare-main{padding-top: 90px;}
+    .compare-table-mob-ellipse{top: -380px; left: -397px; right: auto; width: 922px; height: 922px; border-radius: 922px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1;}
+    .compare-head{width: 100%; font-size: 17px; margin-bottom: 60px;}
+    .compare-head h2{margin-bottom: 30px; padding: 0 20px;}
+    .compare-table-mob{gap: 60px;}
+    .compare-canvas{flex: 100%;}
+    .compare-mob-title{margin-bottom: 19px; gap: 10px;}
+    .compare-mob-title h2{font-size: 30px; line-height: 36px; letter-spacing: -0.9px; margin-bottom: 0;}
+    .compare-mob-title span{font-size: 10px; font-weight: 600; line-height: 18px; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 13px; border-radius: 90px; background: var(--Glass, rgba(255, 255, 255, 0.10)); backdrop-filter: blur(22px); }
+    ul.compare-mob-lists li{gap: 16px; padding: 23px 0; border-bottom: 1px solid var(--Line---Light);}
+    ul.compare-mob-lists li:last-child{border-bottom: none;}
+    ul.compare-mob-lists li > span{font-size: 19px; line-height: 28px; letter-spacing: -0.57px;}
+    .compare-thumb{flex: 0 0 28px;}
+    .compare-mob-btn .button{width: 100%; margin-top: 21px;}
+}
