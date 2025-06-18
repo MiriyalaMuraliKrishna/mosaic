@@ -106,6 +106,7 @@ export const slider = {
             updateSlideOpacity(this);
           },
           init: function () {
+            console.log('swiper initialized on:', this.el);
             updateSlideOpacity(this);
           },
         },

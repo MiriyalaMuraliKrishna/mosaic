@@ -68,12 +68,19 @@
   </header>
   <main class="site-main-cover"><!-- site starts here -->
     <section class="products-hardware-banner-section relative">
-      <div class="background-bg products-hardware-banner-bg">
+      <div class="background-bg hardware-banner-video">
+        <!-- <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div> -->
+        <div data-vbg="https://vimeo.com/70459392"></div>
+        <!-- <video autoplay muted loop>
+          <source src="images/landing-video.mp4" type="video/mp4" />
+        </video> -->
+      </div>
+      <!-- <div class="background-bg products-hardware-banner-bg">
         <picture class="object-fit">
           <source srcset="images/products-hardware-banner@2x.jpg" media="(min-width:1024px)">
           <img src="images/products-hardware-banner-mobile@2x.jpg" alt="products-hardware-banner-mobile">
         </picture>
-      </div>
+      </div> -->
       <div class="background-text products-hardware-banner-overlay black-bg"></div>
       <div class="container">
         <div class="products-hardware-banner-main relative z-3">
@@ -142,7 +149,8 @@
           </div>
           <div class="automated-grid-bottom flex">
             <div class="automated-grid-item flex radius-20">
-              <div class="automated-grid-subtitle">20x</div>
+              <div class="automated-grid-subtitle"><span id="counter-20" data-duration="3000" data-count-to="20"
+                  data-animate="counter">20</span>x</div>
               <div class="automated-grid-desc">
                 <p>Faster Material Swaps</p>
                 <span>Easily access 8 modular filament inputs per printer for uninterrupted, multi-material
@@ -314,7 +322,7 @@
             <div class="our-customer-left relative o-hidden radius-30">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="our-customer-image relative" data-animate="">
+                  <div class="our-customer-image relative" data-animate="fade-in-up">
                     <picture class="object-fit radius-img-30">
                       <img src="images/video@2x.jpg" alt="">
                     </picture>
@@ -329,23 +337,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="our-customer-image relative">
-                    <picture class="object-fit radius-img-30">
-                      <img src="images/video@2x.jpg" alt="">
-                    </picture>
-                    <div class="play-btn-main green-bg radius-50">
-                      <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc"
-                        class="popup-youtube play-btn flex flex-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
-                          <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-
-                  <div class="our-customer-image relative">
+                  <div class="our-customer-image relative" data-animate="fade-in-up">
                     <picture class="object-fit radius-img-30">
                       <img src="images/video@2x.jpg" alt="">
                     </picture>
@@ -361,7 +353,23 @@
                 </div>
                 <div class="swiper-slide">
 
-                  <div class="our-customer-image relative">
+                  <div class="our-customer-image relative" data-animate="fade-in-up">
+                    <picture class="object-fit radius-img-30">
+                      <img src="images/video@2x.jpg" alt="">
+                    </picture>
+                    <div class="play-btn-main green-bg radius-50">
+                      <a href="https://www.youtube.com/watch?v=qzCK5sJbEvc"
+                        class="popup-youtube play-btn flex flex-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                          <path d="M48.3203 39.5357L36.24 49.0465L36.24 30.0249L48.3203 39.5357Z" fill="black" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+
+                  <div class="our-customer-image relative" data-animate="fade-in-up">
                     <picture class="object-fit radius-img-30">
                       <img src="images/video@2x.jpg" alt="">
                     </picture>
@@ -1369,7 +1377,11 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script defer src="dist/DrawSVGPlugin.js"></script>
+  <script defer src="dist/jquery.youtube-background.js"></script>
+  <script defer src="dist/iframe.js"></script>
   <script defer src="dist/core.bundle.js"></script>
 </body>
 

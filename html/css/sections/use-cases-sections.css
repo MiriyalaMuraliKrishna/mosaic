@@ -63,10 +63,12 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
     .use-cases-wrap{padding: 285px 0 82px;}
     .use-cases-head{padding-bottom: 60px;}
     .use-cases-head h2{font-size: 40px; line-height: 50px; margin-bottom: 0;}
-    ul.use-cases-links > li > a{gap: 20px 0;}
+    ul.use-cases-links > li > a{gap: 19px 0; font-size: 22px;}
     .use-cases-row{padding-top: 40px;}
-    .use-cases-slider .swiper-slide{width: 323px;}
+    .use-cases-slider .swiper-slide{width: 323px; opacity: 1 !important;}
     .use-cases-text{padding: 51px 40px 71px 41px;}
+    .use-cases-image img{min-height: 430px; max-height: 430px;}
+    .use-cases-text-overlay{max-height: 242px;}
 }
 
 @media screen and (max-width: 374px) and (min-width: 200px) {
