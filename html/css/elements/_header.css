@@ -120,14 +120,18 @@ ul.main_menu > li > ul > li.hide-nav-overview > a{display: none;}
 
      /*-- materials-menu-item starts here --*/
      ul.main_menu > li.materials-menu-item{position: relative;}
-     ul.main_menu > li.materials-menu-item > ul{min-height: 435px; padding: 25px 32px 32px 52px; min-width: 1103px; max-width: 1103px; }
+     ul.main_menu > li.materials-menu-item > ul{min-height: 435px; padding: 25px 32px 32px 52px; min-width: 1103px; max-width: 1103px; 
+    
+    visibility: visible;
+    opacity: 1;
+    }
      .materials-menu-text{letter-spacing: 0;}
      .materials-menu-text span.h4{margin-bottom: 0; letter-spacing: 0;}
      ul.main_menu > li.materials-menu-item > ul > li:first-child{padding-top: 25px; padding-bottom: 2px;}
      ul.main_menu > li.materials-menu-item > ul > li{max-width: 302px; position: static;}
      ul.main_menu > li.materials-menu-item > ul > li > a{padding: 18px 0 17px; border-bottom: 1px solid var(--Line---Light); font-size: 17px; font-weight: 600; line-height: 22px; letter-spacing: 0; display: block; position: relative;}
      ul.main_menu > li.materials-menu-item > ul > li:last-child > a{border-bottom-color: transparent;}
-     ul.main_menu > li.materials-menu-item > ul > li > a::after{right: 0; top: 50%; transform: translateY(-50%); width: 8px; height: 11px; content: ""; display: block; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='11' viewBox='0 0 8 11' fill='none'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%231AD1B1' stroke-width='1.5'/%3E%3C/svg%3E"); position: absolute; filter: grayscale(100%);}
+     ul.main_menu > li.materials-menu-item > ul > li > a::after{right: 0; top: 50%; transform: translateY(-50%); width: 8px; height: 11px; content: ""; display: block; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='11' viewBox='0 0 8 11' fill='none'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%231AD1B1' stroke-width='1.5'/%3E%3C/svg%3E"); position: absolute;}
      ul.main_menu > li.materials-menu-item > ul > li > ul{left: 403px; width: calc(100% - 435px); height: calc(100% - 50px); top: 25px; margin: 0; padding: 9px; position: absolute; border-radius: 20px; background: rgba(0, 0, 0, 0.14); display:block; visibility: hidden; opacity: 0; transition: all 0.5s ease; align-items: flex-start;}
 
      ul.main_menu > li.materials-menu-item > ul > li:nth-child(2) > a{color: var(--Green);}
