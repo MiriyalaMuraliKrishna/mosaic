@@ -14,7 +14,7 @@ ul.main_menu > li > ul > li.hide-nav-overview > a{display: none;}
     .header{ padding: 38px 0 38px; position: relative;}
     .logo{top: -16px; position: relative; flex: 0 0 139px;}
  
-    .navigation{padding: 0 43px; width: fit-content; margin-left: auto;  backdrop-filter: blur(27px);}
+    .navigation{padding: 0 43px; width: fit-content; margin-left: auto;}
     .navigation::before{width: 100%; height: calc(100% - 20px); top: 0; left: 0; border-radius: 70px;  background-color: var(--White-10); backdrop-filter: blur(27px); content: ""; display: block; position: absolute; z-index: -1;}
     ul.main_menu{gap: 16px 39.55px; justify-content: flex-end;}
     ul.main_menu > li{margin: 0; padding-bottom: 20px;}
