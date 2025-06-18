@@ -12,10 +12,11 @@ ul.features-icon-subtitle li.active{color: var(--White);}
 .features-icon-item-text h2{font-size: 18px; line-height: 25px; font-weight: 600; margin-bottom: 0;}
 
 @media screen and (min-width: 1024px) {
-    .features-icon-main{gap: 124px;}
+    .features-icon-main{gap: 124px; padding: 150px 0 138px;}
     .features-icon-sidebar{flex: 0 0 205px;}
-    .features-icon-article{flex: 1;}
-    .features-icon-list{gap: 101px; justify-content: space-between;}
+    .features-icon-article{flex: 1; gap: 140px;}
+    .features-icon-list{gap: 101px; justify-content: space-between; align-items: flex-start;}
     .features-icon-text{flex: 0 0 509px; gap: 30px;}
+    .features-icon-img{flex: 1;}
     .features-icon-list[features-list="1"] .features-icon-img{flex: 0 0 348px;}
 }
