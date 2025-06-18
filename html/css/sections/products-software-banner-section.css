@@ -11,3 +11,12 @@
     .products-software-banner-text{flex: 1;}
     .products-software-banner-text h1{font-size: 130px; line-height: 148px; letter-spacing: -1.3px;}
 }
+
+@media screen and (max-width: 767px)  and (min-width: 200px) {
+    .products-software-banner-main{flex-direction: column-reverse; padding: 123px 0 0;}
+    .products-software-banner-img{width: 100%;}
+    .products-software-banner-img .all-meterials-sm-icon{position: relative; top: 0; left: 0; padding: 15px 20px 26px 24px; width: 138px;}
+    .products-software-banner-img .all-meterials-sm-icon > span{font-size: 14px; line-height: normal; letter-spacing: -0.42px;}
+    .products-software-banner-thumb{position: absolute; top: -52px; left: 87px; width: 536px;}
+
+}

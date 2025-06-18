@@ -1,9 +1,9 @@
 
-ul.features-icon-subtitle{margin: 0;}
-ul.features-icon-subtitle li::before{display: none;}
-ul.features-icon-subtitle li{font-size: 18px; line-height: 22px; letter-spacing: -0.54px; margin-bottom: 30px; color: var(--White-20);}
-ul.features-icon-subtitle li:last-child{margin-bottom: 0;}
-ul.features-icon-subtitle li.active{color: var(--White);}
+ul.features-icon-subtitle{gap: 30px;}
+ul.features-icon-subtitle li{font-size: 18px; line-height: 22px; letter-spacing: -0.54px;}
+ul.features-icon-subtitle li a{color: var(--White-20);}
+ul.features-icon-subtitle li a.active{color: var(--White);}
+ul.features-icon-subtitle li a:hover{color: var(--White);}
 
 .features-icon-desc h2{letter-spacing: -1.32px; margin-bottom: 20px;}
 .features-icon-items{gap: 10px;}

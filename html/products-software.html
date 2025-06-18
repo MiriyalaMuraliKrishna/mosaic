@@ -98,7 +98,7 @@
               </div>
               <span class="fs-16 lh-18 d-block">faster filament splicing</span>
             </div>
-            <div class="all-meterials-sm-icon white-bg-10 radius-30">
+            <div class="all-meterials-sm-icon white-bg-10 radius-30 hide-mobile">
               <div class="all-meterials-chart-main m-auto relative" data-animate="chart">
                 <svg xmlns="http://www.w3.org/2000/svg" width="107" height="51" viewBox="0 0 107 51" fill="none">
                   <rect opacity="0.15" x="0.341797" y="0.196289" width="11.8095" height="49.9743" rx="5.90473"
@@ -217,7 +217,8 @@
       </div>
     </section>
     <section class="fullscreen-section relative">
-      <div class="fullscreen-bg background-bg">
+      <div class="fullscreen-bg background-bg radius-30 o-hidden">
+        <div class="fullscreen-bg-overlay background-bg"></div>
         <video autoplay muted loop>
           <source src="images/landing-video.mp4" type="video/mp4" />
         </video>
@@ -246,7 +247,8 @@
         </div>
       </div>
     </section>
-    <section class="feature-slider-section">
+    <section class="feature-slider-section relative">
+      <div class="feature-slider-overlay background-bg"></div>
       <div class="container">
         <div class="feature-slider-main">
           <div class="feature-item-slider">
@@ -392,13 +394,131 @@
         </div>
       </div>
     </section>
+    <section class="compare-section">
+      <div class="container">
+        <div class="compare-main">
+          <div class="compare-head aligncenter">
+            <h2>Which Version Works Best for Your Workflow?</h2>
+            <p>Explore the key features of Canvas and Canvas Desktop to find the right fit for your design process.</p>
+          </div>
+          <div class="compare-table-main relative">
+            <div class="compare-table-ellipse absolute"></div>
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Canvas</th>
+                  <th>Canvas Desktop</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span>Real-Time Collaboration</span></td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-tick.svg" alt="pricing-tick">
+                    </figure>
+                  </td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-tick.svg" alt="pricing-tick">
+                    </figure></td>
+                </tr>
+                <tr>
+                  <td><span>Cloud File Sync	</span></td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-tick.svg" alt="pricing-tick">
+                    </figure>
+                  </td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-tick.svg" alt="pricing-tick">
+                    </figure></td>
+                </tr>
+                <tr>
+                  <td><span>Multi-User Editing</span></td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-tick.svg" alt="pricing-tick">
+                    </figure>
+                  </td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-tick.svg" alt="pricing-tick">
+                    </figure></td>
+                </tr>
+                <tr>
+                  <td><span>Offline Access</span></td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-tick.svg" alt="pricing-tick">
+                    </figure>
+                  </td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-no.svg" alt="pricing-no">
+                    </figure></td>
+                </tr>
+                <tr>
+                  <td><span>Component Libraries</span></td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-tick.svg" alt="pricing-tick">
+                    </figure>
+                  </td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-no.svg" alt="pricing-no">
+                    </figure></td>
+                </tr>
+                <tr>
+                  <td><span>Auto Versioning	</span></td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-tick.svg" alt="pricing-tick">
+                    </figure>
+                  </td>
+                  <td>
+                    <figure class="object-fit">
+                      <img src="images/pricing-no.svg" alt="pricing-no">
+                    </figure></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <a target="_blank" href="#" class="button flex flex-center text-upper">More
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                        <path
+                          d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                          fill="#1AD1B1"></path>
+                      </svg>
+                    </a>
+                  </td>
+                  <td>
+                    <a target="_blank" href="#" class="button flex flex-center text-upper">More
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                        <path
+                          d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                          fill="#1AD1B1"></path>
+                      </svg>
+                    </a>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
     <section class="intro-section">
       <div class="container">
         <div class="intro-main flex flex-center relative">
           <div class="intro-ellipse absolute"></div>
           <div class="intro-text aligncenter">
             <h2 class="h3">Introducing</h2>
-            <span>Canvas</span>
+            <span data-anim="title">Canvas</span>
           </div>
         </div>
       </div>
@@ -559,14 +679,14 @@
       <div class="container">
         <div class="features-icon-main flex">
           <div class="features-icon-sidebar">
-            <ul class="features-icon-subtitle">
-              <li class="active">Smart Print Tuning</li>
-              <li>Consistent High Quality</li>
-              <li>Built for Industrial Demands</li>
+            <ul class="features-icon-subtitle flex flex-col no-disc m-0">
+              <li class="mb-0"><a href="#smart-print-tuning" class="active">Smart Print Tuning</a></li>
+              <li class="mb-0"><a href="#consistent-high-quality">Consistent High Quality</a></li>
+              <li class="mb-0"><a href="#built-for-industrial-demands">Built for Industrial Demands</a></li>
             </ul>
           </div>
           <div class="features-icon-article flex">
-            <div class="features-icon-list flex" features-list="1">
+            <div class="features-icon-list flex" id="smart-print-tuning" features-list="1">
               <div class="features-icon-img">
                 <figure class="object-fit">
                   <img src="images/Material-Pod-Two.svg" alt="Material-Pod-Two">
@@ -644,7 +764,7 @@
                 </div>
               </div>
             </div>
-            <div class="features-icon-list flex" features-list="2">
+            <div class="features-icon-list flex" id="consistent-high-quality" features-list="2">
               <div class="features-icon-img">
                 <figure class="object-fit">
                   <img src="images/Print-Bed--Stack-Empty.svg" alt="Print-Bed--Stack-Empty">
@@ -722,7 +842,7 @@
                 </div>
               </div>
             </div>
-            <div class="features-icon-list flex" features-list="3">
+            <div class="features-icon-list flex" id="built-for-industrial-demands" features-list="3">
               <div class="features-icon-img">
                 <figure class="object-fit">
                   <img src="images/path1700.svg" alt="path1700">
@@ -864,7 +984,7 @@
           <div class="intro-ellipse absolute"></div>
           <div class="intro-text aligncenter">
             <h2 class="h3">Introducing</h2>
-            <span>Canvas Desktop</span>
+            <span data-anim="title">Canvas Desktop</span>
           </div>
         </div>
       </div>
@@ -1025,14 +1145,14 @@
       <div class="container">
         <div class="features-icon-main flex">
           <div class="features-icon-sidebar">
-            <ul class="features-icon-subtitle">
-              <li class="active">Smart Print Tuning</li>
-              <li>Consistent High Quality</li>
-              <li>Built for Industrial Demands</li>
+            <ul class="features-icon-subtitle flex flex-col no-disc m-0">
+              <li class="mb-0"><a href="#smart-print-tuning" class="active">Smart Print Tuning</a></li>
+              <li class="mb-0"><a href="#consistent-high-quality">Consistent High Quality</a></li>
+              <li class="mb-0"><a href="#built-for-industrial-demands">Built for Industrial Demands</a></li>
             </ul>
           </div>
           <div class="features-icon-article flex">
-            <div class="features-icon-list flex" features-list="1">
+            <div class="features-icon-list flex" id="smart-print-tuning" features-list="1">
               <div class="features-icon-img">
                 <figure class="object-fit">
                   <img src="images/Material-Pod-Two.svg" alt="Material-Pod-Two">
@@ -1110,7 +1230,7 @@
                 </div>
               </div>
             </div>
-            <div class="features-icon-list flex" features-list="2">
+            <div class="features-icon-list flex" id="consistent-high-quality" features-list="2">
               <div class="features-icon-img">
                 <figure class="object-fit">
                   <img src="images/Print-Bed--Stack-Empty.svg" alt="Print-Bed--Stack-Empty">
@@ -1188,7 +1308,7 @@
                 </div>
               </div>
             </div>
-            <div class="features-icon-list flex" features-list="3">
+            <div class="features-icon-list flex" id="built-for-industrial-demands" features-list="3">
               <div class="features-icon-img">
                 <figure class="object-fit">
                   <img src="images/path1700.svg" alt="path1700">
