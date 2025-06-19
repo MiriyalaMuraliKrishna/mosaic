@@ -9,7 +9,7 @@
 .fullscreen-head p{max-width: 524px;}
 
 @media screen and (min-width: 1024px){
-    .fullscreen-main{padding: 113px 160px 120px 172px; }
+    .fullscreen-main{padding: 113px 0 120px; }
     .fullscreen-btn{padding-bottom: 390px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){

@@ -24,6 +24,7 @@ import { counter } from './module/counter';
 import { myslick } from './module/slick';
 import { aislick } from './module/aiSlick';
 import { usecase } from './module/casetwo';
+import { poweredobj } from './module/poweredby';
 
 (() => {
   mylenis.init();
@@ -51,6 +52,7 @@ import { usecase } from './module/casetwo';
   myslick.init();
   usecase.init();
   aislick.init();
+  poweredobj.init();
 })();
 
 let scrolled = window.scrollY;

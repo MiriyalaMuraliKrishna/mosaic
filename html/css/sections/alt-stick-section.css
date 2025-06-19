@@ -3,10 +3,7 @@
 
 .alt-stick-section{margin-bottom: 200px;}
 .alt-stick-section.last{margin-bottom: 0;}
-.alt-stick-bg{top: 0; right: 0; bottom: auto; left: auto; max-width: 796px; min-width: 796px;min-height: 629px;}
 
-.alt-stick-main{padding: 0 0 127px; min-height: 629px;}
-.alt-stick-text{max-width: 320px;}
 .alt-stick-text span.stripe-line{margin-bottom: 29px;}
 .alt-stick-text h2{margin-bottom: 31px;}
 
@@ -16,15 +13,21 @@
 .alt-stick-overlay{ width: 100%; height: 100%; }
 .alt-stick-overlay.top{ top: 0; left: 0; background: linear-gradient(0deg,hsla(0,0%,100%,0) 0,var(--Black-75) 100%) }
 .alt-stick-overlay.bottom{ bottom: 0; right: 0; background: linear-gradient(270deg, #000 0%, transparent 50.63%); }
-.alt-stick-left{flex: 1;}
-.alt-stick-right{flex: 1; gap: 99px 0;}
 .no_right .alt-stick-text{max-width: 100%;}
 
 
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .alt-stick-section{overflow: hidden;}
+    .alt-stick-main{padding: 0 0 127px; min-height: 629px;}
+    .alt-stick-left{flex: 1;}
+    .alt-stick-text{max-width: 320px;}
+    .alt-stick-image{top: 0; right: 0; bottom: auto; left: auto; max-width: 796px; min-width: 796px; min-height: 629px;}
+    .alt-stick-right{flex: 1; gap: 99px 0;}
+}
 @media only screen and (min-width: 1600px){
     .alt-stick-main{margin-left: -114px;}
 }
-
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .alt-stick-section{margin-bottom: 100px;}
     .alt-stick-section .container{padding: 0;}

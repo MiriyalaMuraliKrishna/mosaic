@@ -9,6 +9,7 @@ export const slider = {
   brands: document.querySelectorAll('.trusted-by-logos'),
   featuredeles: document.querySelector('.featured-articles-slider'),
   featureitemslider: document.querySelector('.feature-item-slider'),
+  poweredByEle: document.querySelector('.powered-by-slider'),
   init() {
     this.customSlider();
     this.usecaseSlider();
@@ -17,6 +18,7 @@ export const slider = {
     this.trustbrandSlider();
     this.mobileSlider();
     this.featureItemSlider();
+    this.poweredBySlider();
   },
   customSlider() {
     const left = this.customele?.querySelector('.our-customer-left');
@@ -206,6 +208,23 @@ export const slider = {
   featureItemSlider() {
     if (!this.featureitemslider) return;
     new Swiper(this.featureitemslider, {
+      slidesPerView: 'auto',
+      speed: 800,
+      spaceBetween: 0,
+      autoHeight: true,
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   type: 'progressbar',
+      // },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  },
+  poweredBySlider() {
+    if (!this.poweredBySlider) return;
+    new Swiper(this.poweredByEle, {
       slidesPerView: 'auto',
       speed: 800,
       spaceBetween: 0,
