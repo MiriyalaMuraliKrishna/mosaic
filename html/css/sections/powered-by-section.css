@@ -19,12 +19,11 @@
 .powered-by-ellipse{
     width: 568px;
 height: 568px;
-border-radius: 568px;
-/* opacity: 0.2; */
-background: var(--Green-Radial-Gradient, radial-gradient(50% 50% at 50% 50%, #1AD1B1 0%, rgba(26, 209, 177, 0.00) 100%));
+opacity: 0.2;
+background: var(--Green-Radial-Gradient);
 }
 ul.powered-by-list{gap: 26px;}
-ul.powered-by-list li{gap: 18px; padding-bottom: 20px; border-bottom: 1px solid var(--Line---Light);}
+ul.powered-by-list li{gap: 18px; cursor: pointer; padding-bottom: 20px; border-bottom: 1px solid var(--Line---Light);}
 ul.powered-by-list li:last-child{padding-bottom: 0; border-bottom: none;}
 
 .powered-by-icon{width: 61px;}
@@ -34,6 +33,7 @@ ul.powered-by-list li:last-child{padding-bottom: 0; border-bottom: none;}
 .active .powered-by-icon svg g{opacity: 1;}
 .active .powered-by-icon svg path{stroke: var(--Green);}
 
+.powered-graphs[data-by]:not(:first-child){display: none;}
 
 .powered-graph-ellipse{ width: 883px; height: 883px; opacity: 0.25; background: radial-gradient(50% 50% at 50% 50%, #8B52FC 0%, rgba(139, 82, 252, 0.00) 100%); }
 .powered-graph-list{gap: 30px;}

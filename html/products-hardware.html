@@ -1168,10 +1168,10 @@
             <p>Compare production time, cost, and efficiency with traditional methods.</p>
           </div>
           <div class="powered-by-row flex flex-start">
-            <div class="powered-by-left">
-              <div class="powered-by-ellipse absolute"></div>
+            <div class="powered-by-left relative">
+              <div class="powered-by-ellipse transition-5 radius-50 absolute"></div>
               <ul class="powered-by-list m-0 no-disc flex flex-col">
-                <li class="mb-0 flex flex-vcenter active">
+                <li class="mb-0 flex flex-vcenter" data-to="Custom Bracket">
                   <div class="powered-by-icon" data-duration="1000" data-animate="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="61" height="48" viewBox="0 0 61 48" fill="none">
                       <g opacity="0.3" clip-path="url(#clip0_3558_16187)">
@@ -1249,7 +1249,7 @@
                     <p>Short part description</p>
                   </div>
                 </li>
-                <li class="mb-0 flex flex-vcenter">
+                <li class="mb-0 flex flex-vcenter" data-to="Seat Mount">
                   <div class="powered-by-icon" data-animate="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="61" height="48" viewBox="0 0 61 48" fill="none">
                       <g opacity="0.3" clip-path="url(#clip0_3558_16240)">
@@ -1286,7 +1286,7 @@
                     <p>Short part description</p>
                   </div>
                 </li>
-                <li class="mb-0 flex flex-vcenter">
+                <li class="mb-0 flex flex-vcenter" data-to="Tooling Jig">
                   <div class="powered-by-icon" data-animate="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="61" height="48" viewBox="0 0 61 48" fill="none">
                       <g opacity="0.3" clip-path="url(#clip0_3558_16264)">
@@ -1309,7 +1309,117 @@
               </ul>
             </div>
             <div class="powered-by-right">
-              <div class="powered-graphs flex flex-vcenter">
+              <div class="powered-graphs flex flex-vcenter" data-by="Custom Bracket">
+                <div class="powered-graph-image">
+                  <figure class="object-fit">
+                    <img src="images/transparent@2x.png" alt="">
+                  </figure>
+                </div>
+                <div class="powered-graph-lists relative">
+                  <div class="powered-graph-ellipse radius-50 absolute"></div>
+                  <div class="powered-graph-list flex">
+                    <div class="powered-graph-col">
+                      <div class="powered-graph-bg white-bg-10 radius-30">
+                        <span class="fs-18 lh-20 d-block">4 hrs 38 mins</span>
+                        <span class="fs-16 lh-18 d-block">Print Time</span>
+                      </div>
+                    </div>
+                    <div class="powered-graph-col">
+                      <div class="powered-graph-bg white-bg-10 radius-30">
+                        <div class="fs-36 f-500">6.<sub class="fs-24">20</sub></div>
+                        <span class="fs-16 lh-18 d-block">Cost per part</span>
+                      </div>
+                    </div>
+                    <div class="powered-graph-col">
+                      <div class="powered-graph-bg white-bg-10 radius-30">
+                        <div class="powered-bw fs-31 f-500">12-14</div>
+                        <span class="powered-days fs-14 f-500 text-upper d-block">DAYS</span>
+                        <span class="fs-16 lh-18 d-block">Manufacturing Lead Time</span>
+                      </div>
+                    </div>
+                    <div class="powered-graph-col">
+                      <div class="powered-graph-bg white-bg-10 radius-30">
+                        <div class="half-circle-main m-auto relative" data-animate="half-circle">
+                          <div class="half-circle-pos relative o-hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="101" height="63" viewBox="0 0 101 63"
+                              fill="none">
+                              <path opacity="0.1"
+                                d="M91 52.133C91 41.0949 86.733 30.5088 79.1378 22.7037C71.5426 14.8986 61.2413 10.5137 50.5 10.5137C39.7587 10.5137 29.4574 14.8986 21.8622 22.7037C14.267 30.5088 10 41.0949 10 52.133"
+                                stroke="white" stroke-width="20" stroke-linecap="round" />
+                            </svg>
+                            <div class="all-meterials-half-circle absolute">
+                              <svg width="101" viewBox="0 0 101 101" height="101">
+                                <circle stroke="#8B52FC" stroke-width="20px" stroke-linecap="round" fill="none"
+                                  cy="50.5" cx="50.5" r="40"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="all-meterials-parts flex flex-center flex-col">
+                            <span class="half-circle-count fs-26 lh-30 d-block f-500">75%</span>
+                            <span class="fs-16 lh-18 d-block">stronger parts</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="powered-graphs flex flex-vcenter" data-by="Seat Mount">
+                <div class="powered-graph-image">
+                  <figure class="object-fit">
+                    <img src="images/transparent@2x.png" alt="">
+                  </figure>
+                </div>
+                <div class="powered-graph-lists relative">
+                  <div class="powered-graph-ellipse radius-50 absolute"></div>
+                  <div class="powered-graph-list flex">
+                    <div class="powered-graph-col">
+                      <div class="powered-graph-bg white-bg-10 radius-30">
+                        <span class="fs-18 lh-20 d-block">4 hrs 38 mins</span>
+                        <span class="fs-16 lh-18 d-block">Print Time</span>
+                      </div>
+                    </div>
+                    <div class="powered-graph-col">
+                      <div class="powered-graph-bg white-bg-10 radius-30">
+                        <div class="fs-36 f-500">6.<sub class="fs-24">20</sub></div>
+                        <span class="fs-16 lh-18 d-block">Cost per part</span>
+                      </div>
+                    </div>
+                    <div class="powered-graph-col">
+                      <div class="powered-graph-bg white-bg-10 radius-30">
+                        <div class="powered-bw fs-31 f-500">12-14</div>
+                        <span class="powered-days fs-14 f-500 text-upper d-block">DAYS</span>
+                        <span class="fs-16 lh-18 d-block">Manufacturing Lead Time</span>
+                      </div>
+                    </div>
+                    <div class="powered-graph-col">
+                      <div class="powered-graph-bg white-bg-10 radius-30">
+                        <div class="half-circle-main m-auto relative" data-animate="half-circle">
+                          <div class="half-circle-pos relative o-hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="101" height="63" viewBox="0 0 101 63"
+                              fill="none">
+                              <path opacity="0.1"
+                                d="M91 52.133C91 41.0949 86.733 30.5088 79.1378 22.7037C71.5426 14.8986 61.2413 10.5137 50.5 10.5137C39.7587 10.5137 29.4574 14.8986 21.8622 22.7037C14.267 30.5088 10 41.0949 10 52.133"
+                                stroke="white" stroke-width="20" stroke-linecap="round" />
+                            </svg>
+                            <div class="all-meterials-half-circle absolute">
+                              <svg width="101" viewBox="0 0 101 101" height="101">
+                                <circle stroke="#8B52FC" stroke-width="20px" stroke-linecap="round" fill="none"
+                                  cy="50.5" cx="50.5" r="40"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="all-meterials-parts flex flex-center flex-col">
+                            <span class="half-circle-count fs-26 lh-30 d-block f-500">75%</span>
+                            <span class="fs-16 lh-18 d-block">stronger parts</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="powered-graphs flex flex-vcenter" data-by="Tooling Jig">
                 <div class="powered-graph-image">
                   <figure class="object-fit">
                     <img src="images/transparent@2x.png" alt="">
