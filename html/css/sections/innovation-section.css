@@ -18,6 +18,30 @@ span.year{padding-bottom: 28px;}
 .innovation-text:nth-child(1):last-child{flex: 0 0 100%;}
 
 
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .innovation-wrap{padding-bottom: 140px;}
+    .innovation-overlay-top{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, var(--Black) 120.02%);
+    }
+    .innovation-overlay-right{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        background: linear-gradient(-270deg, rgba(255, 255, 255, 0.00) 0%, var(--Black) 115.63%);
+    }
+    .innovation-image{max-width: 988px; max-height: 676px; left: -225px; bottom: 0; z-index: 0;}
+    .innovation-image img{opacity: 0.4;}
+}
 @media screen and (max-width: 1299px) and (min-width: 1024px) {
     .innovation-text{flex: 0 0 560px; padding-right: 60px;}
     .innovation-lists{padding-left: 60px;}

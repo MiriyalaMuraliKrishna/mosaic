@@ -26,7 +26,7 @@
 
 @media screen and (max-width: 767px) and (min-width:200px) {
     .open-postion-section .container{padding: 0;}
-    .open-postion-wrap{padding: 131px 0 133px;}
+    .open-postion-wrap{padding: 131px 0 90px;}
     .open-postion-ellipse{ height: 759px; width: 759px;}
     .open-postion-main{gap: 25px; padding: 0 20px 90px;}
     .open-postion-bg{border-radius: 0;}

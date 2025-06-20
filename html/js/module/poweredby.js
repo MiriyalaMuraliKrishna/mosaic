@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 function Poweredby(ele) {
   this.ele = document.querySelector(ele);
 }
@@ -23,12 +25,13 @@ Poweredby.prototype.init = function () {
 
     let id = li.dataset.to.trim();
 
-    document.querySelectorAll(`.powered-graphs`).forEach((ele) => {
-      ele.style.display = 'none';
+    document.querySelectorAll(`.powered-graphs-row`).forEach((ele) => {
+      $(ele).hide();
     });
 
-    document.querySelector(`.powered-graphs[data-by="${id}"]`).style.display =
-      'flex';
+    $(document.querySelector(`.powered-graphs-row[data-by="${id}"]`)).fadeIn(
+      900
+    );
 
     this.moveEllipseTo(li);
   });
