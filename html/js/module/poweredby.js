@@ -42,7 +42,7 @@ Poweredby.prototype.moveEllipseTo = function (li) {
 
   const ellipseW = this.ellipse.offsetWidth;
   const ellipseH = this.ellipse.offsetHeight;
-  const totleft = centerX - ellipseW / 2 + centerX - ellipseW / 2;
+  const totleft = 2 * (centerX - ellipseW / 2);
 
   this.ellipse.style.top = `${centerY - ellipseH / 2}px`;
   this.ellipse.style.left = `${totleft}px`;
