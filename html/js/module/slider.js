@@ -10,6 +10,7 @@ export const slider = {
   featuredeles: document.querySelector('.featured-articles-slider'),
   featureitemslider: document.querySelector('.feature-item-slider'),
   poweredByEle: document.querySelector('.powered-by-slider'),
+  lifeateele: document.querySelector('.life-at-slider'),
   init() {
     this.customSlider();
     this.usecaseSlider();
@@ -19,6 +20,7 @@ export const slider = {
     this.mobileSlider();
     this.featureItemSlider();
     this.poweredBySlider();
+    this.lifeAtSlider();
   },
   customSlider() {
     const left = this.customele?.querySelector('.our-customer-left');
@@ -236,6 +238,27 @@ export const slider = {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+    });
+  },
+  lifeAtSlider() {
+    if (!this.lifeateele) return;
+    new Swiper(this.lifeateele, {
+      slidesPerView: 'auto',
+      loop: true,
+      centeredSlides: true,
+      speed: 4000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        // enabled: true,
+      },
+      freeMode: true,
+      freeModeMomentum: false,
+      breakpoints: {
+        768: {},
+        1024: {},
+        1300: {},
       },
     });
   },
