@@ -5,11 +5,16 @@ function Poweredby(ele) {
 }
 
 Poweredby.prototype.init = function () {
+  if (!this.ele) return;
   this.list = this.ele?.querySelector('ul.powered-by-list');
   this.ellipse = this.ele?.querySelector('.powered-by-ellipse');
   this.left = this.ele?.querySelector('.powered-by-left');
 
   this.list?.children[0].classList.add('active');
+  this.ele
+    ?.querySelector('.powered-graphs-row')
+    .querySelector('.powered-graph-ellipse')
+    .classList.add('open');
 
   // Initial positioning on the first active li
   this.setEllipseToActive();
@@ -26,8 +31,14 @@ Poweredby.prototype.init = function () {
     let id = li.dataset.to.trim();
 
     document.querySelectorAll(`.powered-graphs-row`).forEach((ele) => {
+      ele.querySelector('.powered-graph-ellipse').classList.remove('open');
       $(ele).hide();
     });
+
+    document
+      .querySelector(`.powered-graphs-row[data-by="${id}"]`)
+      .querySelector('.powered-graph-ellipse')
+      .classList.add('open');
 
     $(document.querySelector(`.powered-graphs-row[data-by="${id}"]`)).fadeIn(
       900

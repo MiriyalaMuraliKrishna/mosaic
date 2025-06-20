@@ -30,7 +30,11 @@ ul.powered-by-list li:last-child{padding-bottom: 0; border-bottom: none;}
 
 .powered-graphs-row:not(:first-child){display: none;}
 
-.powered-graph-ellipse{left: -268px; top: -390px; width: 883px; height: 883px; opacity: 0.25; background: radial-gradient(50% 50% at 50% 50%, #8B52FC 0%, rgba(139, 82, 252, 0.00) 100%); z-index: -1;}
+
+.powered-graph-ellipse{left: -268px; top: -390px; width: 883px; height: 883px; opacity: 0; background: radial-gradient(50% 50% at 50% 50%, #8B52FC 0%, rgba(139, 82, 252, 0.00) 100%); z-index: -1;}
+.powered-graph-ellipse.open{ animation-delay: 1s; animation-duration: 1s; animation-name: ellipse; animation-timing-function: ease; animation-fill-mode: forwards; }
+@keyframes ellipse{ 0%{ opacity: 0; } 100%{ opacity: 0.25; } }
+
 .powered-graph-list{gap: 30px;}
 .powered-graph-col{flex: 0 0 calc(50% - 15px); text-align: center;}
 .powered-graph-bg{ backdrop-filter: blur(67px); padding: 30px 20px 26px; min-height: 161px;}
