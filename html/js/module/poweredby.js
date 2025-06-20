@@ -10,6 +10,10 @@ Poweredby.prototype.init = function () {
   this.left = this.ele?.querySelector('.powered-by-left');
 
   this.list?.children[0].classList.add('active');
+  this.ele
+    .querySelector('.powered-graphs-row')
+    .querySelector('.powered-graph-ellipse')
+    .classList.add('open');
 
   // Initial positioning on the first active li
   this.setEllipseToActive();
@@ -26,8 +30,14 @@ Poweredby.prototype.init = function () {
     let id = li.dataset.to.trim();
 
     document.querySelectorAll(`.powered-graphs-row`).forEach((ele) => {
+      ele.querySelector('.powered-graph-ellipse').classList.remove('open');
       $(ele).hide();
     });
+
+    document
+      .querySelector(`.powered-graphs-row[data-by="${id}"]`)
+      .querySelector('.powered-graph-ellipse')
+      .classList.add('open');
 
     $(document.querySelector(`.powered-graphs-row[data-by="${id}"]`)).fadeIn(
       900
@@ -45,7 +55,7 @@ Poweredby.prototype.moveEllipseTo = function (li) {
 
   const ellipseW = this.ellipse.offsetWidth;
   const ellipseH = this.ellipse.offsetHeight;
-  const totleft = centerX - ellipseW / 2 + centerX - ellipseW / 2;
+  const totleft = 2 * (centerX - ellipseW / 2);
 
   this.ellipse.style.top = `${centerY - ellipseH / 2}px`;
   this.ellipse.style.left = `${totleft}px`;
