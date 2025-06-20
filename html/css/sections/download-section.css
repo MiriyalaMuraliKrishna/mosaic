@@ -14,7 +14,7 @@
 .download-text h2{margin-bottom: 0;}
 form.download-form{gap: 10px; padding-top: 6px;}
 form.download-form input{flex: 1; border-radius: 90px; border: 1px solid var(--Line---Light); background-color: transparent; }
-.download-ellipse{ top: 50%; transform: translateY(-50%); right: -21px; width: 695px; height: 695px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, #1AD1B1 0%, rgba(26, 209, 177, 0.00) 100%); }
+.download-ellipse{ top: 50%; transform: translateY(-50%); right: -21px; width: 695px; height: 695px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); }
 
 /* media css starts here */
 @media screen and (min-width: 1024px){

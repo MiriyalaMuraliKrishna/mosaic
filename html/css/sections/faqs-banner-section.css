@@ -30,7 +30,7 @@
   .faqs-banner-ellipse{
 
 opacity: 0.30;
-background: radial-gradient(50% 50% at 50% 50%, #1AD1B1 0%, rgba(26, 209, 177, 0.00) 100%);
+background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%);
 z-index: -1;
   } 
 

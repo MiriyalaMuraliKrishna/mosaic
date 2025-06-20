@@ -43,7 +43,7 @@ ul.category-links > li a {
 .faqs-head h2.h5{margin-bottom: 9px;}
 
 .faqs-answer{padding: 30px 24px 40px; background: var(--White-10); backdrop-filter: blur(40px); } 
-.faqs-answer-ellipse{ bottom: 0; left: 50%; transform: translateX(-50%); width: 757px; height: 757px; opacity: 0.2; border-radius: 50%; background: radial-gradient(50% 50% at 50% 50%, #1AD1B1 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1; }
+.faqs-answer-ellipse{ bottom: 0; left: 50%; transform: translateX(-50%); width: 757px; height: 757px; opacity: 0.2; border-radius: 50%; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1; }
 .faqs-answer-desc{padding: 18px 24px 0;}
 
 .faqs-answer span.optional-text{margin-bottom: 11px;}

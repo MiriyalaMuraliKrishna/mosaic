@@ -25,8 +25,10 @@ import { myslick } from './module/slick';
 import { aislick } from './module/aiSlick';
 import { usecase } from './module/casetwo';
 import { poweredobj } from './module/poweredby';
+import { prodslick } from './module/prodCompareSlick';
 
-(() => {
+document.addEventListener('DOMContentLoaded', function () {
+  // (() => {
   mylenis.init();
   Gsap.init();
   anime.init();
@@ -53,7 +55,9 @@ import { poweredobj } from './module/poweredby';
   usecase.init();
   aislick.init();
   poweredobj.init();
-})();
+  prodslick.init();
+  // })();
+});
 
 let scrolled = window.scrollY;
 window.addEventListener('scroll', function () {

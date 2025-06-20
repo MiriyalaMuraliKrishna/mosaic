@@ -24,7 +24,7 @@
     height: 1067.506px;
     opacity: 0.2;
     z-index: -1;
-    background: radial-gradient(50% 50% at 50% 50%, #1AD1B1 0%, rgba(26, 209, 177, 0.00) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%);
 }
 
 .services-carousel-ellipse.top{

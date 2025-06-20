@@ -5,13 +5,14 @@ function Poweredby(ele) {
 }
 
 Poweredby.prototype.init = function () {
+  if (!this.ele) return;
   this.list = this.ele?.querySelector('ul.powered-by-list');
   this.ellipse = this.ele?.querySelector('.powered-by-ellipse');
   this.left = this.ele?.querySelector('.powered-by-left');
 
   this.list?.children[0].classList.add('active');
   this.ele
-    .querySelector('.powered-graphs-row')
+    ?.querySelector('.powered-graphs-row')
     .querySelector('.powered-graph-ellipse')
     .classList.add('open');
 
