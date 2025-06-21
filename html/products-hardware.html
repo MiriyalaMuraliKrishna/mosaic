@@ -1164,7 +1164,7 @@
 
             </div>
           </div>
-          <div class="innovation-image absolute">
+          <div class="innovation-image absolute hide-mobile">
             <div class="innovation-overlay-top absolute"></div>
             <div class="innovation-overlay-right absolute"></div>
             <figure class="object-fit innovation-thumb">
@@ -1327,9 +1327,11 @@
               <div class="powered-graphs-row" data-by="Custom Bracket">
                 <div class="powered-graphs flex flex-vcenter">
                   <div class="powered-graph-image">
-                    <figure class="object-fit">
-                      <img src="images/transparent@2x.png" alt="">
-                    </figure>
+                    <picture class="object-fit">
+                      <source srcset="images/transparent@2x.png" media="(min-width:1024px)">
+
+                      <img src="images/transparent-mobile@2x.png" alt="">
+                    </picture>
                   </div>
                   <div class="powered-graph-lists relative">
                     <div class="powered-graph-ellipse radius-50 absolute transition"></div>
@@ -1614,21 +1616,24 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button swiper-button-prev">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="#1AD1B1" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M15.7482 18.295L22.0411 12.0021L20.6269 10.5879L12.6269 18.5879L11.9198 19.295L12.6269 20.0021L20.6269 28.0021L22.0411 26.5879L15.7482 20.295L29.334 20.295V18.295L15.7482 18.295Z"
-                  fill="black" />
-              </svg>
-            </div>
-            <div class="swiper-button swiper-button-next">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <circle cx="20" cy="20" r="20" fill="#1AD1B1" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M24.2518 18.295L17.9589 12.0021L19.3731 10.5879L27.3731 18.5879L28.0802 19.295L27.3731 20.0021L19.3731 28.0021L17.9589 26.5879L24.2518 20.295L10.666 20.295V18.295L24.2518 18.295Z"
-                  fill="black" />
-              </svg>
+            <div class="powered-by-pagination flex flex-vcenter relative">
+              <div class="swiper-button swiper-button-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="#1AD1B1" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.7482 18.295L22.0411 12.0021L20.6269 10.5879L12.6269 18.5879L11.9198 19.295L12.6269 20.0021L20.6269 28.0021L22.0411 26.5879L15.7482 20.295L29.334 20.295V18.295L15.7482 18.295Z"
+                    fill="black" />
+                </svg>
+              </div>
+              <div class="swiper-button swiper-button-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <circle cx="20" cy="20" r="20" fill="#1AD1B1" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M24.2518 18.295L17.9589 12.0021L19.3731 10.5879L27.3731 18.5879L28.0802 19.295L27.3731 20.0021L19.3731 28.0021L17.9589 26.5879L24.2518 20.295L10.666 20.295V18.295L24.2518 18.295Z"
+                    fill="black" />
+                </svg>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -1726,11 +1731,14 @@
                       </div>
                     </li>
                     <li class="mb-0 f-700 aligncenter">Array</li>
-                    <li class="mb-0 f-400">16x14x16 in. <span>(406x355x355 mm)</span></li>
-                    <li class="mb-0 f-400">16</li>
-                    <li class="mb-0 f-400">Up to 500 cu in.</li>
-                    <li class="mb-0"><a class="text-link up flex flex-vcenter text-upper" href="#">Download<svg
-                          xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <li data-text="Tray Size and Build Plate Shape" class="mb-0 f-400">16x14x16 in.
+                      <span>(406x355x355 mm)</span>
+                    </li>
+                    <li data-text="Materials" class="mb-0 f-400">16</li>
+                    <li data-text="Cartridge Capacity" class="mb-0 f-400">Up to 500 cu in.</li>
+                    <li data-text="Brochure" class="mb-0"><a class="text-link up flex flex-vcenter text-upper"
+                        href="#">Download<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"
+                          viewBox="0 0 11 11" fill="none">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M8.25 1.59467H0.560665V0.0946655H10.0607H10.8107V0.844666V9.84467H9.31067V2.65532L1.06066 10.9053L0 9.84467L8.25 1.59467Z"
                             fill="#1AD1B1"></path>
@@ -1747,11 +1755,14 @@
                       </div>
                     </li>
                     <li class="mb-0 f-700 aligncenter">Palette 3</li>
-                    <li class="mb-0 f-400">16x14x16 in. <span>(406x355x355 mm)</span></li>
-                    <li class="mb-0 f-400">16</li>
-                    <li class="mb-0 f-400">Up to 500 cu in.</li>
-                    <li class="mb-0"><a class="text-link up flex flex-vcenter text-upper" href="#">Download<svg
-                          xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <li data-text="Tray Size and Build Plate Shape" class="mb-0 f-400">16x14x16 in.
+                      <span>(406x355x355 mm)</span>
+                    </li>
+                    <li data-text="Materials" class="mb-0 f-400">16</li>
+                    <li data-text="Cartridge Capacity" class="mb-0 f-400">Up to 500 cu in.</li>
+                    <li data-text="Brochure" class="mb-0"><a class="text-link up flex flex-vcenter text-upper"
+                        href="#">Download<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"
+                          viewBox="0 0 11 11" fill="none">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M8.25 1.59467H0.560665V0.0946655H10.0607H10.8107V0.844666V9.84467H9.31067V2.65532L1.06066 10.9053L0 9.84467L8.25 1.59467Z"
                             fill="#1AD1B1"></path>
@@ -1768,11 +1779,14 @@
                       </div>
                     </li>
                     <li class="mb-0 f-700 aligncenter">Canvas</li>
-                    <li class="mb-0 f-400">16x14x16 in. <span>(406x355x355 mm)</span></li>
-                    <li class="mb-0 f-400">16</li>
-                    <li class="mb-0 f-400">Up to 500 cu in.</li>
-                    <li class="mb-0"><a class="text-link up flex flex-vcenter text-upper" href="#">Download<svg
-                          xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <li data-text="Tray Size and Build Plate Shape" class="mb-0 f-400">16x14x16 in.
+                      <span>(406x355x355 mm)</span>
+                    </li>
+                    <li data-text="Materials" class="mb-0 f-400">16</li>
+                    <li data-text="Cartridge Capacity" class="mb-0 f-400">Up to 500 cu in.</li>
+                    <li data-text="Brochure" class="mb-0"><a class="text-link up flex flex-vcenter text-upper"
+                        href="#">Download<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"
+                          viewBox="0 0 11 11" fill="none">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M8.25 1.59467H0.560665V0.0946655H10.0607H10.8107V0.844666V9.84467H9.31067V2.65532L1.06066 10.9053L0 9.84467L8.25 1.59467Z"
                             fill="#1AD1B1"></path>
@@ -1780,10 +1794,11 @@
                   </ul>
                 </div>
               </div>
+              <div class="prod-slick-progress relative hide-desktop" role="progress"><span class="absolute"></span></iv>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
     <section class="use-cases-sections relative">
       <div class="use-cases-container background-bg">

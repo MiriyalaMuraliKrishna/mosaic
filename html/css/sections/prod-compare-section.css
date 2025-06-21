@@ -45,11 +45,13 @@ ul.prod-compare-list li{padding: 23px 0 24px;}
 ul.prod-compare-list li:last-child{border-bottom: none;}
 ul.prod-compare-list li span{display: block;}
 ul.prod-compare-list li.aligncenter{ font-size: 20px; font-weight: 700; line-height: 28px; letter-spacing: -0.6px; }
-[data-slide="prod-compare-slide-1"]{ border-radius: 10px; background: var(--White-10); backdrop-filter: blur(30px); }
+
 [data-slide="prod-compare-slide-2"] .prod-compare-image img{max-width: 184px;}
 [data-slide="prod-compare-slide-3"] .prod-compare-image{max-width: 234px;}
 .prod-compare-image{max-width: 204px; min-height: 204px; margin-bottom: -19px;}
 .prod-compare-ellipse{ top: -229px; left: 0; width: 1066px; height: 1066px; opacity: 0.2; background: var(--Green-Radial-Gradient); z-index: -1; }
+.prod-slick-progress{margin-top: 45px; background-color: var(--White-15); border-radius: 25px; height: 4px; width: 100%; }
+.prod-slick-progress span{width: 0; border-radius: 4px; transition: width 0.5s ease; height: 100%; border-radius: 4px; background-color: var(--Green);}
 
 
 /*-- media css starts here --*/
@@ -58,11 +60,30 @@ ul.prod-compare-list li.aligncenter{ font-size: 20px; font-weight: 700; line-hei
     .prod-compare-left{flex: 0 0 335px; margin-top: auto;}
     .prod-compare-right{flex: 1;}
     .prod-compare-slide{flex: 1; padding: 27px 52px 0;}
+    [data-slide="prod-compare-slide-1"]{ border-radius: 10px; background: var(--White-10); backdrop-filter: blur(30px); }
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .prod-compare-wrap{overflow: inherit;}
+    .prod-compare-wrap{overflow: inherit; padding: 90px 0 114px;}
     .prod-compare-main{display: block;}
     .prod-compare-left{display: none;}
+     ul.prod-compare-list li{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+     }
+   ul.prod-compare-list li::after {
+  content: attr(data-text);
+  display: block;
+  color: var(--Muted---Light);
+font-size: 16px;
+font-weight: 600;
+line-height: 28px; /* 175% */
+letter-spacing: -0.48px;
+}
+    ul.prod-compare-list li:nth-child(n+3){border-bottom: 1px solid var(--Line---Light);}
+     ul.prod-compare-list li a.text-link{width: fit-content;}
+   .prod-compare-slide{ border-radius: 10px; background: var(--White-10); backdrop-filter: blur(30px); }
 }
 
 

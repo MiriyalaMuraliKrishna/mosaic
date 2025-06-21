@@ -227,17 +227,21 @@ export const slider = {
   poweredBySlider() {
     if (!this.poweredBySlider) return;
     new Swiper(this.poweredByEle, {
-      slidesPerView: 'auto',
+      slidesPerView: 1,
       speed: 800,
-      spaceBetween: 0,
+      spaceBetween: 30,
       autoHeight: true,
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   type: 'progressbar',
-      // },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {},
+        1024: { slidesPerView: 'auto' },
       },
     });
   },
