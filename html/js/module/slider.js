@@ -256,6 +256,7 @@ export const slider = {
     new Swiper(this.lifeateele, {
       slidesPerView: 'auto',
       spaceBetween: 0,
+      direction: 'horizontal',
       loop: true,
       speed: 4000,
       autoplay: {
@@ -265,6 +266,7 @@ export const slider = {
       allowTouchMove: false,
       grabCursor: false,
       centeredSlides: false,
+      freeMode: false,
       loopedSlides: slideCount,
     });
   },
