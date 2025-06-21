@@ -156,14 +156,14 @@ export const slider = {
       new Swiper(trustlogo, {
         slidesPerView: 'auto',
         loop: true,
-        speed: 2000,
+        speed: 5000,
         autoplay: {
           delay: 0,
           disableOnInteraction: false,
         },
         spaceBetween: 40,
-        freeMode: true,
-        freeModeMomentum: false,
+        // freeMode: true,
+        // freeModeMomentum: false,
         breakpoints: {
           768: {
             spaceBetween: 50,
@@ -179,14 +179,14 @@ export const slider = {
       new Swiper(trustlogo, {
         slidesPerView: 'auto',
         loop: true,
-        speed: 2000,
+        speed: 5000,
         autoplay: {
-          delay: 0,
+          delay: 1,
           disableOnInteraction: false,
         },
         spaceBetween: 50,
-        freeMode: true,
-        freeModeMomentum: false,
+        // freeMode: true,
+        // freeModeMomentum: false,
       });
     });
   },
@@ -249,19 +249,23 @@ export const slider = {
       image.style.animationDelay = delay + 'ms';
     });
 
+    const slideCount = document.querySelectorAll(
+      '.life-at-slider .swiper-slide'
+    ).length;
+
     new Swiper(this.lifeateele, {
       slidesPerView: 'auto',
       spaceBetween: 0,
       loop: true,
-      speed: 5000, // higher = slower movement
+      speed: 4000,
       autoplay: {
-        delay: 1, // critical: must be tiny, NOT 0
+        delay: 0,
         disableOnInteraction: false,
       },
       allowTouchMove: false,
       grabCursor: false,
       centeredSlides: false,
-      loopedSlides: 20, // more than visible slides
+      loopedSlides: slideCount,
     });
   },
 };
