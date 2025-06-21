@@ -6,6 +6,31 @@
 
 
 
+.life-at-image {
+  opacity: 0;
+  transform: translateY(20%);
+  will-change: transform, opacity;
+}
+
+.life-at-anime {
+  animation-name: fadeInSlide;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 /*-- media css starts here --*/
@@ -16,7 +41,7 @@
     .life-at-slide{width: 430px;}
     [data-life-slide='2']{width: 500px;}
     [data-life-slide='3']{padding-top: 156px;}
-    .life-at-image{gap: 25px; transition: all 1s ease; transform: translateY(0%);}
+    .life-at-image{gap: 25px;}
     .life-at-image figure:nth-child(2){max-width: 304px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
@@ -25,7 +50,7 @@
     .life-at-slide{width: 330px;}
     [data-life-slide='2']{width: 368px;}
     [data-life-slide='3']{padding-top: 78px;}
-    .life-at-image{gap: 13px; transition: all 1s ease; transform: translateY(0%);}
+    .life-at-image{gap: 13px;}
     .life-at-image figure:nth-child(2){max-width: 263px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
@@ -34,6 +59,6 @@
     .life-at-slide{width: 230px;}
     [data-life-slide='2']{width: 268px;}
     [data-life-slide='3']{padding-top: 78px;}
-    .life-at-image{gap: 13px; transition: all 1s ease; transform: translateY(0%);}
+    .life-at-image{gap: 13px;}
     .life-at-image figure:nth-child(2){max-width: 163px;}
 }

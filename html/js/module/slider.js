@@ -243,23 +243,25 @@ export const slider = {
   },
   lifeAtSlider() {
     if (!this.lifeateele) return;
+    var thumb = document.querySelectorAll('[data-animate*="life-at-anime"]');
+    thumb.forEach(function (image, index) {
+      var delay = index * 100;
+      image.style.animationDelay = delay + 'ms';
+    });
+
     new Swiper(this.lifeateele, {
       slidesPerView: 'auto',
+      spaceBetween: 0,
       loop: true,
-      centeredSlides: true,
-      speed: 4000,
+      speed: 5000, // higher = slower movement
       autoplay: {
-        delay: 0,
+        delay: 1, // critical: must be tiny, NOT 0
         disableOnInteraction: false,
-        // enabled: true,
       },
-      freeMode: true,
-      freeModeMomentum: false,
-      breakpoints: {
-        768: {},
-        1024: {},
-        1300: {},
-      },
+      allowTouchMove: false,
+      grabCursor: false,
+      centeredSlides: false,
+      loopedSlides: 20, // more than visible slides
     });
   },
 };
