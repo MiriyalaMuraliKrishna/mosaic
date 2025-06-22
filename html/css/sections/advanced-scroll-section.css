@@ -8,7 +8,7 @@
 
 .advanced-scroll-desc{width: 460px; font-size: 16.5px; line-height: 26px; letter-spacing: -0.495px; }
 .advanced-scroll-desc p{opacity: .4; width: 324px;}
-
+.advanced-scroll-head:nth-child(1):last-child{width: 100%;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
