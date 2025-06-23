@@ -23,7 +23,7 @@ ul.category-links > li a {
   line-height: 24px;
 }
 .faqs-q-list {
-  gap: 59px 0;
+  gap: 54px 0;
 }
 .faqs-q-list:first-child .stripe-line{display: none;}
 .faqs-q-list h2 {
@@ -64,7 +64,7 @@ ul.category-links > li a {
     .faqs-head{padding-bottom: 60px;}
     .faqs-head h2{margin-bottom: 8px;}
     .faqs-right{flex: 1; gap: 82px 0;}
-    .faqs-text:nth-child(1):nth-last-child(2){flex: 0 0 100%;}
+    .faqs-text:nth-child(1):nth-last-child(1){flex: 0 0 100%;}
     .faqs-text:nth-child(1):last-child, .faqs-right:nth-child(1):last-child{width: 100%; flex: 0 0 100%;}
     
 }
@@ -73,13 +73,13 @@ ul.category-links > li a {
 
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
-  .faqs-main{ gap: 80px; flex-direction: column;}
-  .faqs-text{padding-top: 20px; flex: 0 0 320px;}
+  .faqs-main{ gap: 40px;}
+  .faqs-text{padding-top: 20px; flex: 0 0 220px;}
   .faqs-head{padding-bottom: 60px;}
   .faqs-head h2{margin-bottom: 8px;}
   .faqs-right{flex: 1; gap: 82px 0;}
   .faqs-text:nth-child(1):last-child, .faqs-right:nth-child(1):last-child{width: 100%; flex: 0 0 100%;}
-  
+  .faqs-q-list h2{font-size: 40px; line-height: 50px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .faqs-main{padding: 52px 0 0; gap: 0; flex-direction: column;}
@@ -88,6 +88,7 @@ ul.category-links > li a {
     .faqs-head h2{margin-bottom: 8px;}
     .faqs-vactor{width: 257px; height: 63px; right: 26px; bottom: -42px;}
     .faqs-right{flex: 1; gap: 43px 0;}
-    .faqs-q-list{gap: 38px 0;}
+    .faqs-q-list{gap: 32px 0;}
     .faqs-answer{margin-top: 72px;}
+    .faqs-answer video{margin: 0;}
 }

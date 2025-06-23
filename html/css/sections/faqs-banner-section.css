@@ -36,7 +36,7 @@ z-index: -1;
 
 /* media css starts here */
 @media only screen and (min-width: 1024px) {
-  .faqs-banner-main { padding: 274px 0 93px; }
+  .faqs-banner-main { padding: 274px 0 174px; }
   .faqs-banner-text { flex: 0 0 747px; } 
   .faqs-banner-text h1{max-width: 637px;} 
   .faqs-banner-image { flex:1; top: -281px; right: -492px; width: 1064px; height: 928px; bottom: auto; } 
@@ -48,9 +48,12 @@ z-index: -1;
   .faqs-banner-image{right: -592px;}
 }
   @media only screen and (max-width: 1023px) and (min-width: 768px) {
-    .faqs-banner-text { flex: 1; } 
-    .faqs-banner-image { flex: 1; } 
-    .faqs-banner-main { padding-bottom: 32px; }
+    .faqs-banner-main{padding: 161px 0 84px;}
+    .faqs-banner-text{max-width: 637px;}
+    .faqs-banner-text h1{font-size: 54px; line-height: 60px;}
+    
+    .faqs-banner-image { flex:1; top: -181px; right: -292px; width: 532px; height: 464px; bottom: auto; } 
+    .faqs-banner-ellipse{ top: -762px; right: 0; width: 1973px; height: 1973px; }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
@@ -58,6 +61,6 @@ z-index: -1;
   .faqs-banner-text{font-size: 21px; line-height: 32px; letter-spacing: -0.63px;}
   .faqs-banner-text h1{font-size: 50px; line-height: 60px; letter-spacing: 0.5px; margin-bottom: 29px;}
   .faqs-banner-image { flex:1; top: -75px; right: -61px; width: 264px; height: 230px; bottom: auto; } 
-  .faqs-banner-ellipse{ top: -762px; right: 0; width: 1973px; height: 1973px; } 
+  .faqs-banner-ellipse{ top: -762px; left: -820px; width: 1973px; height: 1973px; } 
 }
   
