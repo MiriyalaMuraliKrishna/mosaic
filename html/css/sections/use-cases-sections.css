@@ -40,24 +40,33 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
 .use-cases-slider .swiper-button-prev{left: -60px;}
 .use-cases-slider .swiper-button-next{right: -60px;}
 
-.use-cases-container{top: 68px; left: 62px; width: calc(100% - 124px); height: calc(100% - 136px);}
-.use-cases-bg, .use-cases-video{ min-height: 903px; max-height: 903px;}
 .use-cases-video{z-index: 1;}
 .use-cases-video video{width: 100%; height: 100%;}
 
+.use-cases-screen{top: 113px; right: 160px; justify-content: end; width: fit-content;}
+.use-cases-screen button{padding: 6.7px 18px 7.7px 13px; cursor: pointer; background: rgba(255, 255, 255, 0.20); backdrop-filter: blur(7px); border: none; border-radius: 40px; font-size: 13px; color: var(--White); letter-spacing: 0.52px; text-transform: capitalize; font-weight: 500; line-height: normal; display: flex; justify-content: center; align-items: center; gap: 11px; }
 
 
+/*-- media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .use-cases-container{top: 68px; left: 62px; width: calc(100% - 124px); height: calc(100% - 136px);}
+    .use-cases-bg, .use-cases-video{ min-height: 903px; max-height: 903px;}
+
+}
 @media screen and (max-width: 1399px) and (min-width: 1024px) {
     .use-cases-slider .swiper-button-prev{left: 0;}
     .use-cases-slider .swiper-button-next{right: 0;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .use-cases-screen{top: 40px; right: 40px;}
+    .use-cases-container{height: 463px; left: 0; top: 0; width: 100%;}
+
     .use-cases-head h2{font-size: 62px; line-height: 70px;}
     .use-cases-slider .swiper-button-prev{left: 0;}
     .use-cases-slider .swiper-button-next{right: 0;}
 }
-
 @media screen and (max-width: 767px) and (min-width: 200px) {
+    .use-cases-screen{top: 20px; right: 20px;}
     .use-cases-container{height: 363px; left: 0; top: 0; width: 100%;}
     .use-cases-bg, .use-cases-video{max-height: 363px; min-height: 363px;}
     .use-cases-wrap{padding: 285px 0 82px;}
@@ -70,7 +79,6 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
     .use-cases-image img{min-height: 430px; max-height: 430px;}
     .use-cases-text-overlay{max-height: 242px;}
 }
-
 @media screen and (max-width: 374px) and (min-width: 200px) {
     .use-cases-head h2{font-size: 35px; line-height: 45px;}
     .use-cases-slider .swiper-slide{width: 260px;}

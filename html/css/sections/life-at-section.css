@@ -38,8 +38,8 @@
     .life-at-head{padding-bottom: 55px;}
     .life-at-wrap{padding: 0 40px; max-width: 1800px; margin: 0 auto; width: 100%;}
     .life-at-images{gap: 25px; flex-wrap: nowrap;}
-    .life-at-slide{width: 430px;}
-    [data-life-slide='2']{width: 500px;}
+    .life-at-slide{max-width: 430px;}
+    [data-life-slide='2']{max-width: 500px;}
     [data-life-slide='3']{padding-top: 156px;}
     .life-at-image{gap: 25px;}
     .life-at-image figure:nth-child(2){max-width: 304px;}

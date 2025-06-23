@@ -10,7 +10,7 @@ export const slider = {
   featuredeles: document.querySelector('.featured-articles-slider'),
   featureitemslider: document.querySelector('.feature-item-slider'),
   poweredByEle: document.querySelector('.powered-by-slider'),
-  lifeateele: document.querySelector('.life-at-slider'),
+
   init() {
     this.customSlider();
     this.usecaseSlider();
@@ -20,7 +20,6 @@ export const slider = {
     this.mobileSlider();
     this.featureItemSlider();
     this.poweredBySlider();
-    this.lifeAtSlider();
   },
   customSlider() {
     const left = this.customele?.querySelector('.our-customer-left');
@@ -244,35 +243,6 @@ export const slider = {
         1024: { slidesPerView: 'auto' },
         1440: { slidesPerView: 'auto', spaceBetween: 169 },
       },
-    });
-  },
-  lifeAtSlider() {
-    if (!this.lifeateele) return;
-    var thumb = document.querySelectorAll('[data-animate*="life-at-anime"]');
-    thumb.forEach(function (image, index) {
-      var delay = index * 100;
-      image.style.animationDelay = delay + 'ms';
-    });
-
-    const slideCount = document.querySelectorAll(
-      '.life-at-slider .swiper-slide'
-    ).length;
-
-    new Swiper(this.lifeateele, {
-      slidesPerView: 'auto',
-      spaceBetween: 0,
-      direction: 'horizontal',
-      loop: true,
-      speed: 4000,
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-      },
-      allowTouchMove: false,
-      grabCursor: false,
-      centeredSlides: false,
-      freeMode: false,
-      loopedSlides: slideCount,
     });
   },
 };

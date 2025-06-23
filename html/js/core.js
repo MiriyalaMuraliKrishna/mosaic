@@ -27,6 +27,7 @@ import { usecase } from './module/casetwo';
 import { poweredobj } from './module/poweredby';
 import { prodslick } from './module/prodCompareSlick';
 import { automated } from './module/automated';
+import { lifeatslider } from './module/lifeatslider';
 
 document.addEventListener('DOMContentLoaded', function () {
   // (() => {
@@ -58,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
   poweredobj.init();
   prodslick.init();
   automated.init();
+  lifeatslider.init();
   // })();
 });
 
