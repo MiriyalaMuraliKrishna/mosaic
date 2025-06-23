@@ -242,6 +242,7 @@ export const slider = {
       breakpoints: {
         768: {},
         1024: { slidesPerView: 'auto' },
+        1440: { slidesPerView: 'auto', spaceBetween: 169 },
       },
     });
   },

@@ -11,23 +11,13 @@
 .content-cta-wrap{padding: 105px 0 117px;}
 .content-cta-main{min-height: 319px; padding: 77px 90px 83px; background-color: var(--White-7);}
 .content-cta-image{top: -95px; right: -47px;}
-.content-cta-ellipse{
-    top: -111px;
-    right: -105.5px;
-    width: 695px;
-    height: 695px;
-    flex-shrink: 0;
-    border-radius: 695px;
-    opacity: 0.2;
-    background: var(--Green-Radial-Gradient)
-}
+.content-cta-ellipse{ top: -111px; right: -105.5px; width: 695px; height: 695px; flex-shrink: 0; border-radius: 695px; opacity: 0.2; background: var(--Green-Radial-Gradient) }
 .content-cta-text{max-width: 450px;}
+.content-cta-text:nth-child(1):last-child{max-width: 100%;}
 .content-cta-text h2{margin-bottom: 28px; letter-spacing: 0;}
 .content-cta-text .flex{gap: 12px;}
 .res-content-main h3{padding-bottom: 15px;}
 .res-content-main h4{padding-bottom: 16px;}
-
-
 
 
 .fluid-image-captions{gap: 25px; padding: 97px 0 120px;}

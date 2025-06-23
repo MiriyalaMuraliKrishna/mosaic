@@ -7,6 +7,8 @@
 .default-content-article .full-width-image{padding: 45px 0 60px;}
 .default-content-article .caption-link-main{padding: 10px 0 50px;}
 .default-content-article .caption-link{font-size: 20px; line-height: 30px; letter-spacing: -0.6px;}
+.default-content-article .caption-link svg{transition: var(--b-transition);}
+.default-content-article .caption-link:hover svg{ transform:translate3d(3px,-3px,0) rotate(0deg)}
 .default-content-article .content-cta-wrap{padding: 30px 0 85px; }
 .default-content-article .accordion-main{gap: 52px 0; }
 
@@ -20,6 +22,7 @@
 .default-answer h2{margin-bottom: 20px;}
 .default-answer p{margin-bottom: 21px;}
 .default-answer video{max-width: 242px; mix-blend-mode: difference; margin: auto; object-fit: contain;}
+.default-content-aside:nth-child(1):last-child{width: 100%;}
 
 @media screen and (min-width: 1024px) {
     .default-content-wrap{padding: 120px 0 0 114px;}

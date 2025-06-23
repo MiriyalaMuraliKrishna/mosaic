@@ -675,10 +675,10 @@
         </div>
       </div>
     </section>
-    <section class="automated-grid-section">
+    <section class="automated-grid-section relative">
       <div class="container">
         <div class="automated-grid-main relative">
-          <div class="automated-grid-ellipse absolute radius-50"></div>
+          <div class="automated-grid-ellipse absolute radius-50 transition-8"></div>
           <div class="automated-grid-top flex">
             <div class="automated-grid-lt">
               <div class="automated-grid-item flex radius-20">
@@ -1183,11 +1183,11 @@
             <p>Compare production time, cost, and efficiency with traditional methods.</p>
           </div>
           <div class="powered-by-row flex flex-vcenter">
-            <div class="powered-by-left relative">
+            <div class="powered-by-left relative z-2">
               <div class="powered-by-ellipse transition-5 radius-50 absolute"></div>
               <ul class="powered-by-list m-0 no-disc flex flex-col">
                 <li class="mb-0 flex flex-vcenter" data-to="Custom Bracket">
-                  <div class="powered-by-icon" data-duration="1000" data-animate="icon">
+                  <div class="powered-by-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="61" height="48" viewBox="0 0 61 48" fill="none">
                       <g opacity="0.3" clip-path="url(#clip0_3558_16187)">
                         <path
@@ -1265,7 +1265,7 @@
                   </div>
                 </li>
                 <li class="mb-0 flex flex-vcenter" data-to="Seat Mount">
-                  <div class="powered-by-icon" data-animate="icon">
+                  <div class="powered-by-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="61" height="48" viewBox="0 0 61 48" fill="none">
                       <g opacity="0.3" clip-path="url(#clip0_3558_16240)">
                         <path
@@ -1302,7 +1302,7 @@
                   </div>
                 </li>
                 <li class="mb-0 flex flex-vcenter" data-to="Tooling Jig">
-                  <div class="powered-by-icon" data-animate="icon">
+                  <div class="powered-by-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="61" height="48" viewBox="0 0 61 48" fill="none">
                       <g opacity="0.3" clip-path="url(#clip0_3558_16264)">
                         <path
@@ -1392,9 +1392,11 @@
               <div class="powered-graphs-row" data-by="Seat Mount">
                 <div class="powered-graphs flex flex-vcenter">
                   <div class="powered-graph-image">
-                    <figure class="object-fit">
-                      <img src="images/transparent@2x.png" alt="">
-                    </figure>
+                    <picture class="object-fit">
+                      <source srcset="images/transparent@2x.png" media="(min-width:1024px)">
+
+                      <img src="images/transparent-mobile@2x.png" alt="">
+                    </picture>
                   </div>
                   <div class="powered-graph-lists relative">
                     <div class="powered-graph-ellipse radius-50 absolute transition"></div>
@@ -1455,9 +1457,11 @@
               <div class="powered-graphs-row" data-by="Tooling Jig">
                 <div class="powered-graphs flex flex-vcenter">
                   <div class="powered-graph-image">
-                    <figure class="object-fit">
-                      <img src="images/transparent@2x.png" alt="">
-                    </figure>
+                    <picture class="object-fit">
+                      <source srcset="images/transparent@2x.png" media="(min-width:1024px)">
+
+                      <img src="images/transparent-mobile@2x.png" alt="">
+                    </picture>
                   </div>
                   <div class="powered-graph-lists relative">
                     <div class="powered-graph-ellipse radius-50 absolute transition"></div>

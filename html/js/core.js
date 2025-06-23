@@ -26,6 +26,7 @@ import { aislick } from './module/aiSlick';
 import { usecase } from './module/casetwo';
 import { poweredobj } from './module/poweredby';
 import { prodslick } from './module/prodCompareSlick';
+import { automated } from './module/automated';
 
 document.addEventListener('DOMContentLoaded', function () {
   // (() => {
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
   aislick.init();
   poweredobj.init();
   prodslick.init();
+  automated.init();
   // })();
 });
 

@@ -38,4 +38,5 @@
     --Gray: #5B5B5B;
     --Green-Radial-Gradient: radial-gradient(50% 50% at 50% 50%, #1AD1B1 0%, rgba(26, 209, 177, 0.00) 100%);
     --Purple-Radial-Gradient :radial-gradient(50% 50% at 50% 50%, #8B52FC 0%, rgba(139, 82, 252, 0.00) 100%);
+    --glass-green: rgba(85, 191, 172, 0.15);
 }

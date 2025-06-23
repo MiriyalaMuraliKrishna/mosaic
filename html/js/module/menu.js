@@ -2,6 +2,7 @@ export const Menu = {
   $ele: document.querySelector('header.site-header'),
   $nav: document.querySelector('.header_right'),
   $btn: document.querySelector('.humburger-btn'),
+  $blackheader: document.querySelector('body.page-template-products-software'),
   $footerlinks: document.querySelectorAll('ul.foter-nav-links > li > a'),
   $mainsolutions: document.querySelector(
     'ul.main_menu > li.solutions-menu-item:not(.current-page-ancestor) > a'
@@ -32,6 +33,12 @@ export const Menu = {
   ),
   init() {
     const _ = this;
+
+    if (_.$blackheader) {
+      _.$blackheader
+        .querySelector('.site-header')
+        .classList.add('black-header');
+    }
 
     // solutions hover
     _.$mainsolutions && !_.$solutionsLi.length > 0

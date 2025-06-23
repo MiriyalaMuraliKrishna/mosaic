@@ -2,7 +2,8 @@
 
 .automated-grid-top{gap: 25px; margin-bottom: 25px;}
 .automated-grid-item{background:rgba(255, 255, 255, 0.10); backdrop-filter: blur(30px); justify-content: center; align-items: center;}
-.automated-grid-ellipse{background: var(--Green-Radial-Gradient); height: 824px; opacity: .15; width: 824px; z-index: -1; top: 50%; left: 50%; transform: translate(-50% , -50%);}
+.automated-grid-ellipse{background: var(--Green-Radial-Gradient); height: 824px; opacity: .2; width: 824px; z-index: -1; top: 0; left: 250px;}
+
 
 .automated-grid-lt .automated-grid-item{padding: 75px 58px 70px 59px; text-align: center; font-size: 20px; gap: 64px;}
 .automated-grid-lt .automated-grid-image{max-width: 126px; margin: 0 auto;}
