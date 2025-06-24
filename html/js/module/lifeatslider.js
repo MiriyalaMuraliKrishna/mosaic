@@ -1,36 +1,43 @@
-import Swiper from 'swiper/bundle';
+import Splide from '@splidejs/splide';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 export const lifeatslider = {
   lifeateele: document.querySelector('.life-at-slider'),
+
   init() {
-    if (!this.lifeateele) return;
+    const item = this.lifeateele;
+    if (!item) return;
 
+    // Animate thumbnails
     const thumb = document.querySelectorAll('[data-animate*="life-at-anime"]');
-    thumb.forEach(function (image, index) {
-      const delay = index * 100;
-      image.style.animationDelay = delay + 'ms';
+    thumb.forEach((image, index) => {
+      image.style.animationDelay = `${index * 100}ms`;
     });
 
-    const slideCount = document.querySelectorAll(
-      '.life-at-slider .slick-slide'
-    ).length;
+    setTimeout(() => {
+      const autoScrollSpeed = item.dataset.speed
+        ? parseFloat(item.dataset.speed)
+        : 0.5;
 
-    new Swiper(this.lifeateele, {
-      slidesPerView: 'auto',
-      spaceBetween: 0,
-      direction: 'horizontal',
-      loop: true,
-      //   mousewheel: true,
-      speed: 5000,
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-      },
-      allowTouchMove: false,
-      grabCursor: false,
-      centeredSlides: false,
-      freeMode: false,
-      loopedSlides: slideCount,
-    });
+      const direction = item.dataset.direction === 'reversed' ? -1 : 1;
+
+      const splide = new Splide(item, {
+        pagination: false,
+        arrows: false,
+        direction: 'ltr',
+        type: 'loop',
+
+        autoWidth: true,
+        autoScroll: {
+          speed:
+            item.hasAttribute('data-direction') &&
+            $(this).data('direction') === 'reversed'
+              ? autoScrollSpeed * -1
+              : autoScrollSpeed,
+          pauseOnHover: false,
+        },
+        extensions: { AutoScroll },
+      }).mount({ AutoScroll });
+    }, 1000);
   },
 };

@@ -11,7 +11,7 @@
   transform: translateY(20%);
   will-change: transform, opacity;
 }
-/* .life-at-image.visible{opacity: 1; animation: none;} */
+
 
 .life-at-anime {
   animation-name: fadeInSlide;

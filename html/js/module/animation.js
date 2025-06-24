@@ -1,10 +1,10 @@
-import imagesLoaded from 'imagesloaded';
 import 'is-in-viewport';
 import 'jquery.appear';
+import imagesLoaded from 'imagesloaded';
 import { chart } from './chart';
 import { circle } from './circle-progress';
 import { halfCircle } from './halfCircle';
-import { svgprogress } from './svgprogress';
+import { counter } from './counter';
 
 imagesLoaded.makeJQueryPlugin($);
 const $body = $('body');
@@ -71,7 +71,7 @@ export const Animation = {
         $counter.counter.start();
       }
     }
-    if (svgprogress) svgprogress.play();
+
     type === 'chart' ? chart.play() : null;
     type === 'progress' ? circle.play() : null;
     type === 'half-circle' ? halfCircle.play() : null;

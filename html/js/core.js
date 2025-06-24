@@ -10,7 +10,6 @@ import { HeaderScroll } from './module/headerscroll';
 import { Stripe } from './module/stripeline';
 import { Browse } from './module/browse';
 import { sticky } from './module/stickmeterial';
-import { svgprogress } from './module/svgprogress';
 import { Blockquote } from './module/blockquote';
 import { Video } from './module/video';
 import { jslineanimation } from './module/js-line-animation';
@@ -30,7 +29,6 @@ import { automated } from './module/automated';
 import { lifeatslider } from './module/lifeatslider';
 
 document.addEventListener('DOMContentLoaded', function () {
-  // (() => {
   mylenis.init();
   Gsap.init();
   anime.init();
@@ -42,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
   Stripe.init();
   Browse.init();
   sticky.init();
-  svgprogress.init();
   Blockquote.init();
   Video.init();
   jslineanimation.init();
@@ -60,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
   prodslick.init();
   automated.init();
   lifeatslider.init();
-  // })();
 });
 
 let scrolled = window.scrollY;

@@ -12,7 +12,7 @@ ul.main_menu > li > ul > li.hide-nav-overview > a{display: none;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .header{ padding: 38px 0 38px; position: relative;}
+    .header{ padding: 38px 0 18px; position: relative;}
     .logo{top: -16px; position: relative; flex: 0 0 139px;}
  
     .navigation{padding: 0 43px; width: fit-content; margin-left: auto;}
