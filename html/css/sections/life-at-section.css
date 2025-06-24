@@ -1,39 +1,6 @@
 
 
 
-
-
-
-
-
-.life-at-image {
-  opacity: 0;
-  transform: translateY(20%);
-  will-change: transform, opacity;
-}
-
-
-.life-at-anime {
-  animation-name: fadeInSlide;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-
-}
-
-@keyframes fadeInSlide {
-  0% {
-    opacity: 0;
-    transform: translateY(20%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     .life-at-head{padding-bottom: 55px;}
