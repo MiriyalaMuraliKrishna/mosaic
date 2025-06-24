@@ -48,6 +48,11 @@
     .home-endless-pos{position: absolute; max-width: 320px; min-width: 320px; top: auto; right: 0; bottom: 8px; z-index: 1; }
     .home-endless-main{padding: 0px 37px 148px 47px; }
 }
+@media only screen and (max-width: 1359px) and (min-width: 1024px){
+    .trust-by-main{width: calc(100% - 320px);}
+    .trust-by-gradient.left{width: 100%;}
+    .trust-by-gradient.right{width: 100%;}
+}
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .home-endless-pos{bottom: 80px; right: 40px;}
 }
@@ -67,7 +72,7 @@
     .trust-by-logo img[data-logo="awwards"]{max-width: 86px;}
     .trust-by-logo img[data-logo="dan"]{max-width: 120px;}
     .trust-by-logo img[data-logo="css-winner"]{max-width: 132px;}
-    .home-endless-pos{margin: 184px 0 10px; padding: 0 37px 0 40px; max-width: 335px; position: relative;}
+    .home-endless-pos{margin: 88px 0 10px; padding: 0 37px 0 40px; max-width: 335px; position: relative;}
     .home-endless-main{overflow: inherit;}
     .home-endless-text{padding: 0px 0 189px 7px; }
     .home-endless-graph{right: -20px; bottom: 35px;}

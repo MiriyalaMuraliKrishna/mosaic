@@ -54,16 +54,16 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
 
 }
 @media screen and (max-width: 1399px) and (min-width: 1024px) {
-    .use-cases-slider .swiper-button-prev{left: 0;}
-    .use-cases-slider .swiper-button-next{right: 0;}
+    .use-cases-slider .swiper-button-prev{left: -18px;}
+    .use-cases-slider .swiper-button-next{right: -18px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .use-cases-screen{top: 40px; right: 40px;}
     .use-cases-container{height: 463px; left: 0; top: 0; width: 100%;}
 
     .use-cases-head h2{font-size: 62px; line-height: 70px;}
-    .use-cases-slider .swiper-button-prev{left: 0;}
-    .use-cases-slider .swiper-button-next{right: 0;}
+    .use-cases-slider .swiper-button-prev{left: -18px;}
+    .use-cases-slider .swiper-button-next{right: -18px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .use-cases-screen{top: 20px; right: 20px;}

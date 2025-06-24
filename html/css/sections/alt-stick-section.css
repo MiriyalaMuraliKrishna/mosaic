@@ -28,6 +28,18 @@
 @media only screen and (min-width: 1600px){
     .alt-stick-main{margin-left: -114px;}
 }
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .alt-stick-section{margin-bottom: 100px;}
+    .alt-stick-section .container{padding: 0;}
+    .alt-stick-main{display: block; padding: 0 20px;}
+    .alt-stick-left, .alt-stick-right{width: 100%;}
+    .alt-stick-left{padding: 100px 20px 80px; width: calc(100% + 40px); margin-left: -20px;}
+    .alt-stick-bg{max-width: 100%; min-height: 366px; min-width: auto; width: 100%;}
+    .alt-stick-right{gap: 60px 0;}
+    .alt-stick-list span.fs-21{padding: 20px 0 20px;}
+    .alt-stick-thumb img{opacity: 0.8;}
+    .alt-stick-overlay.top{background: linear-gradient(180deg, hsla(0,0%,100%,0) 29.98%, var(--Black) 100%); }
+}
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .alt-stick-section{margin-bottom: 100px;}
     .alt-stick-section .container{padding: 0;}

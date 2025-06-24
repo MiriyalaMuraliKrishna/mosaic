@@ -27,6 +27,8 @@
     .modular-option-image{flex: 1; gap: 44px;}
     .modular-option-graph{flex: 0 0 158px; gap: 29px;}
     .modular-option-array{flex: 1;}
+    body.home .modular-ellipse.left{top: auto; bottom: -636px;}
+    body.home .modular-ellipse.right{top: auto; bottom: 69px;}
 }
 @media only screen and (max-width: 1369px) and (min-width: 1024px){
  .modular-option-main{gap: 60px; padding: 60px;}

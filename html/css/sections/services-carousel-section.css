@@ -15,25 +15,12 @@
 .services-carousel-title{max-width: 807px; padding-bottom: 70px;}
 
 
-.services-carousel-text{padding: 111px;}
+
 .services-carousel-desc{max-width: 437px;}
 .services-carousel-desc h2{margin-bottom: 24px;}
 .services-carousel-desc p{margin-bottom: 37px;}
-
-.services-carousel-ellipse{width: 1057px;
-    height: 1067.506px;
-    opacity: 0.2;
-    z-index: -1;
-    background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%);
-}
-
-.services-carousel-ellipse.top{
-    top: -620px;
-    left: -480px;
-
-}
-
-
+.services-carousel-ellipse{width: 1057px; height: 1067.506px; opacity: 0.2; z-index: -1; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); }
+.services-carousel-ellipse.top{ top: -620px; left: -480px; }
 
 .services-carousel-image{flex: 0 0 613px;}
 .services-carousel-text{flex: 1; font-size: 16.5px; font-weight: 400; line-height: 26px; letter-spacing: -0.495px; }
@@ -50,6 +37,10 @@
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{border-radius: 25px; background-color: var(--Green);}
 
 
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .services-carousel-text{padding: 121px 111px 100px;}
+}
 @media screen and (max-width: 1549px) and (min-width: 1024px) {
     .services-carousel-slider .swiper-button-prev{left: 0;}
     .services-carousel-slider .swiper-button-next{right: 0;}
