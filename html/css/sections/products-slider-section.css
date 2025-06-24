@@ -1,8 +1,6 @@
 
 
-
-
-
+.products-slider-ellipse{width: 1154px; height: 1154px; top: calc(50% + 190px); left: 50%; transform: translate(-50%, -50%); background-image: var(--Green-Radial-Gradient); opacity: 0.25; z-index: -1; }
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
@@ -38,6 +36,7 @@
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body.page-template-solutions .products-slider-main{padding-top: 25px;}
     .products-slider-main{padding: 199px 0 40px;}
+    .products-slider-ellipse{width: 715px; height: 715px; top: calc(50% + 172px); }
     .products-slider-text{padding: 32px 0 62px; text-align: center; font-size: 22px; font-weight: 300; line-height: 28px; letter-spacing: -0.66px; }
     .products-slider-title{padding: 0 30px 17px; font-size: 65px; font-weight: 400; line-height: 75px; letter-spacing: 0.6px; }
     .products-slider-desc p{margin-bottom: 30px;}
