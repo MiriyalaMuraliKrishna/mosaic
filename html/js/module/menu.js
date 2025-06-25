@@ -2,7 +2,7 @@ export const Menu = {
   $ele: document.querySelector('header.site-header'),
   $nav: document.querySelector('.header_right'),
   $btn: document.querySelector('.humburger-btn'),
-  $blackheader: document.querySelector('body.page-template-products-software'),
+  $blackheader: document.querySelector('body.page-template-product-software'),
   $footerlinks: document.querySelectorAll('ul.foter-nav-links > li > a'),
   $mainsolutions: document.querySelector(
     'ul.main_menu > li.solutions-menu-item:not(.current-page-ancestor) > a'

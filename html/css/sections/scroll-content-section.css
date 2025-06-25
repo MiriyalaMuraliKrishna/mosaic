@@ -7,7 +7,7 @@
 body.page-template-products-hardware .scroll-content-main span.optional-text{color: var(--Muted---Light); margin-bottom: 44px; text-transform: uppercase; display: block; }
 body.page-template-products-hardware .scroll-content-text{letter-spacing: -1.44px;}
 
-body.page-template-products-software .scroll-content-main span.optional-text{color: var(--Muted---Dark); margin-bottom: 44px; text-transform: uppercase; display: block; }
+body.page-template-product-software .scroll-content-main span.optional-text{color: var(--Muted---Dark); margin-bottom: 44px; text-transform: uppercase; display: block; }
 
 
 
@@ -24,10 +24,10 @@ body.page-template-products-software .scroll-content-main span.optional-text{col
 }
 @media screen  and (max-width: 767px) and (min-width: 200px){
     .scroll-content-main{padding-top: 90px;}
-    body.page-template-products-software .scroll-content-main{padding-top: 95px;}
+    body.page-template-product-software .scroll-content-main{padding-top: 95px;}
     .scroll-content-text{font-size: 23px; line-height: 42px; letter-spacing: -0.69px;}
     body.page-template-products-hardware .scroll-content-text,
-    body.page-template-products-software .scroll-content-text{font-size: 32px; letter-spacing: -0.96px; line-height: 44px; }
+    body.page-template-product-software .scroll-content-text{font-size: 32px; letter-spacing: -0.96px; line-height: 44px; }
 }
 
 

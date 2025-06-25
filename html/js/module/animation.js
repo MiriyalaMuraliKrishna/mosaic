@@ -4,7 +4,7 @@ import imagesLoaded from 'imagesloaded';
 import { chart } from './chart';
 import { circle } from './circle-progress';
 import { halfCircle } from './halfCircle';
-import { counter } from './counter';
+import { software } from './product-software';
 
 imagesLoaded.makeJQueryPlugin($);
 const $body = $('body');
@@ -75,6 +75,7 @@ export const Animation = {
     type === 'chart' ? chart.play() : null;
     type === 'progress' ? circle.play() : null;
     type === 'half-circle' ? halfCircle.play() : null;
+    type === 'ai-software-circle' ? software.play() : null;
   },
 
   // Reset animation and timeline when the element leaves the viewport

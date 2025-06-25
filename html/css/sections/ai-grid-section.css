@@ -2,18 +2,21 @@
 
 .ai-grid-pos{width: 100%;}
 
-.ai-grid-lt{padding: 110px 0 0; background: rgba(85, 191, 172, 0.15); backdrop-filter: blur(67px);}
+.ai-grid-lt{padding: 110px 0 0; background: rgba(85, 191, 172, 0.15);}
 .ai-slider-for{margin-bottom: 50px;}
 .ai-slide{max-width: 251px; margin: 0 5px;}
 .ai-nav-text span{font-size: 14px; line-height: 18px; letter-spacing: 3.5px; text-transform: uppercase; font-weight: 600; color: var(--Muted---Dark); margin-bottom: 21px; display: block;}
 .ai-nav-text h2{font-size: 31px; line-height: normal; color: var(--Black); letter-spacing: -0.93px; margin-bottom: 0;}
 
-.ai-grid-item{background: rgba(85, 191, 172, 0.15); backdrop-filter: blur(67px); flex: 100%; padding: 60px 51px 54px; gap: 44px; align-items: flex-start;}
+.ai-grid-item{background: rgba(85, 191, 172, 0.15); flex: 100%; padding: 60px 51px 54px; gap: 44px; align-items: flex-start;}
 .ai-grid-item.purple-bg{background: rgba(139, 82, 252, 0.10);}
 .ai-grid-text{text-align: center;}
 .ai-grid-text span{display: block; font-size: 20px; line-height: normal; letter-spacing: -0.6px; color: var(--Black);}
 .ai-grid-text > span:last-child{width: 179px; margin: 0 auto; font-size: 22px; letter-spacing: -0.66px;}
-.ai-grid-graph{left: 50%; transform: translateX(-50%); width: 336px; top: 50px; }
+.ai-grid-graph{left: 50%; transform: translateX(-50%); width: 336px; height: 336px; top: 50px; }
+.ai-pie{top: 0; left: 0; z-index: 1; } 
+
+
 .ai-grid-num-main{padding: 4px 0;}
 .ai-grid-num-main span{font-size: 90px; line-height: normal; display: block; letter-spacing: -2.7px; color: var(--Purple);}
 .ai-grid-img{flex: 0 0 41px; padding-top: 8px;}
@@ -48,7 +51,7 @@
     .ai-grid-rt{gap: 20px;}
     .ai-grid-item.purple-bg{padding: 82px 90px 49px;}
     .ai-grid-item{border-radius: 20px; gap: 23px; padding: 36px 40px 38px 31px;}
-    .ai-grid-graph{top: 38px; width: 241px;}
+    .ai-grid-graph{top: 38px; width: 241px; height: 241px;}
     .ai-grid-text > span{font-size: 19px; letter-spacing: -.57px;}
     .ai-grid-img{flex: 0 0 36px; padding-top: 0; }
     .ai-grid-desc{font-size: 15px; letter-spacing: -.45px; padding-top: 4px;}

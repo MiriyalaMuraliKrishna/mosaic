@@ -2,7 +2,8 @@
 .fullscreen-bg{height: 100%; left: 62px; top: 0; width: calc(100% - 124px); }
 .fullscreen-bg-overlay{background: linear-gradient(180deg, var(--Black) 0%, transparent 50.5%); z-index: 2;}
 .fullscreen-btn{justify-content: end;}
-.fullscreen-btn button{padding: 6.7px 18px 7.7px 13px; cursor: pointer; background: rgba(255, 255, 255, 0.20); backdrop-filter: blur(7px); border: none; border-radius: 40px; font-size: 13px; color: var(--White); letter-spacing: 0.52px; text-transform: capitalize; font-weight: 500; line-height: normal; display: flex; justify-content: center; align-items: center; gap: 11px; }
+.fullscreen-btn button{ padding: 6.7px 18px 7.7px 13px; cursor: pointer; background: rgba(255, 255, 255, 0.20); backdrop-filter: blur(7px); border: none; border-radius: 40px; font-size: 13px; color: var(--White); letter-spacing: 0.52px; text-transform: capitalize; font-weight: 500; line-height: normal; display: flex; justify-content: center; align-items: center; gap: 11px; }
+.fullscreen-btn button:hover svg{animation: none;}
 .fullscreen-head{font-size: 21px; line-height: 30px; letter-spacing: -0.63px; font-weight: 300;}
 .fullscreen-head h2{font-size: 122px; line-height: 128px; letter-spacing: -1.22px; font-weight: 400;}
 .fullscreen-head h2 span{color: var(--Green);}
@@ -20,7 +21,7 @@
     .fullscreen-head h2{font-size: 62px; line-height: 68px; }
 }
 @media screen and (min-width: 768px){
-    body.page-template-products-software .fullscreen-head h2{font-size: 84px; line-height: 90px; letter-spacing: normal;}
+    body.page-template-product-software .fullscreen-head h2{font-size: 84px; line-height: 90px; letter-spacing: normal;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .fullscreen-main{padding: 122px 0 17px;}
@@ -30,6 +31,6 @@
     .fullscreen-head{font-size: 19px; letter-spacing: -.57px; line-height: 27px;}
     .fullscreen-head h2{font-size: 40px; line-height: 50px; letter-spacing: normal;}
 
-    body.page-template-products-software .fullscreen-main{padding: 20px 0; margin-top: 130px;}
-    body.page-template-products-software .fullscreen-head h2{padding-right: 150px; margin-bottom: 20px;}
+    body.page-template-product-software .fullscreen-main{padding: 20px 0; margin-top: 130px;}
+    body.page-template-product-software .fullscreen-head h2{padding-right: 150px; margin-bottom: 20px;}
 }

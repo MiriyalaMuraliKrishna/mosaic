@@ -32,7 +32,7 @@
     .featured-articles-sm:nth-child(2n+2) .featured-articles-image{top: -156px; right: 72px;}
 }
 @media only screen and (min-width: 1024px){
-    body.page-template-products-software .featured-articles-main{padding: 140px 0;}
+    body.page-template-product-software .featured-articles-main{padding: 140px 0;}
 }
 @media only screen and (min-width: 768px){
     .featured-articles-post .featured-articles-desc{padding-top: 255px;}
@@ -101,7 +101,7 @@
     .featured-articles-ellipse {right: -180px; top: -350px;}
     body.home .featured-articles-main{padding: 0;}
     body.page-template-default .featured-articles-main{padding: 0;}
-    body.page-template-products-software  .featured-articles-main{padding: 80px 0 40px;}
+    body.page-template-product-software  .featured-articles-main{padding: 80px 0 40px;}
 }
 
 @media only screen and (max-width: 413px) and (min-width: 200px){
