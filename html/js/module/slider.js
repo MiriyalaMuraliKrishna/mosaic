@@ -209,17 +209,22 @@ export const slider = {
   featureItemSlider() {
     if (!this.featureitemslider) return;
     new Swiper(this.featureitemslider, {
-      slidesPerView: 'auto',
+      slidesPerView: 1,
       speed: 800,
-      spaceBetween: 0,
+      spaceBetween: 30,
       autoHeight: true,
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   type: 'progressbar',
-      // },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {},
+        1024: { slidesPerView: 'auto' },
+        1440: { slidesPerView: 'auto', spaceBetween: 169 },
       },
     });
   },
