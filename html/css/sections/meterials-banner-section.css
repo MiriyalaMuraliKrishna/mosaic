@@ -6,7 +6,7 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .meterials-banner-main{padding: 282px 0 187px;}
+    .meterials-banner-main{padding: 282px 0 217px;}
     .meterials-banner-text{letter-spacing: 0.69px;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
@@ -16,6 +16,7 @@
     .meterials-banner-main{padding: 182px 0 117px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .meterials-banner-main{padding: 172px 0 59px;}
+    .meterials-banner-main{padding: 154px 0 59px;}
     .meterials-banner-text{font-size: 21px; line-height: 32px; letter-spacing: 0.63px;}
+    .meterials-banner-text p{margin-bottom: 25px;}
 }

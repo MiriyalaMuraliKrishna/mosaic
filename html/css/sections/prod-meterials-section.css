@@ -3,9 +3,8 @@
 ul.prod-meterials-links > li > a{gap: 20px 0; padding-top: 12px; color: var(--White);}
 ul.prod-meterials-links > li > a.mPS2id-clicked, ul.prod-meterials-links > li > a:hover{color: var(--Green);}
 .prod-meterials-rows{gap: 99px 0;padding: 115px 0 137px;}
-.prod-meterials-row{gap: 120px 0;}
+.prod-meterials-row{gap: 137px 0;}
 .prod-meterials-row:last-child span.stripe-line:last-child{display: none;}
-.prod-meterials-head{max-width: 768px; padding-bottom: 39px; letter-spacing: -0.63px;}
 .prod-meterials-head h2{margin-bottom: 0;}
 
 
@@ -22,7 +21,7 @@ ul.prod-meterials-typicals > li:last-child span.stripe-line{display: none;}
 .prod-meterials-center{flex: 1;}
 .prod-meterials-text{padding-bottom: 79px;}
 .prod-meterials-text h2{margin-bottom: 16px;}
-.prod-meterials-highlights{padding-bottom: 34px;}
+.prod-meterials-highlights{padding-bottom: 34px; font-weight: 300;}
 .prod-meterials-highlights span{margin-bottom: 20px; display: block;}
 
 
@@ -40,19 +39,21 @@ ul.prod-meterials-typicals > li:last-child span.stripe-line{display: none;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
+    .prod-meterials-text{max-width: 444px;}
     ul.prod-meterials-links{gap: 25px;}
     ul.prod-meterials-links > li{flex: 0 0 calc(25%  - 19px);}
-
+    
     .prod-meterials-list{gap: 119px;}
     .prod-meterials-left{flex: 0 0 300px;}
     .prod-meterials-left:nth-child(1):last-child{flex: 1;}
     .prod-meterials-right{padding-left: 53px; border-left: 1px solid var(--White-15);}
-
+    .prod-meterials-head{max-width: 768px; padding-bottom: 39px; letter-spacing: -0.63px;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .prod-meterials-list{gap: 40px;}
     .prod-meterials-left{flex: 0 0 260px;}
     .prod-meterials-right{padding-left: 40px; flex: 0 0 280px;}
+    .prod-meterials-head{padding-bottom: 0;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     ul.prod-meterials-links{gap: 25px;}
@@ -78,9 +79,10 @@ ul.prod-meterials-typicals > li:last-child span.stripe-line{display: none;}
     .prod-meterials-list:last-child{margin-bottom: 0;}
     .prod-meterials-buy .button{width: 100%;}
     .prod-meterials-dwlds{align-items: center;}
-    .prod-meterials-image{max-width: 182px;}
+    .prod-meterials-image{max-width: 182px; margin-bottom: 27px;}
     .prod-meterials-highlights{padding-bottom: 38px;}
     .prod-meterials-highlights:last-child{padding-bottom: 0;}
     .prod-meterials-highlights ul{margin-bottom: 0;}
     .prod-meterials-highlights ul li:last-child{margin-bottom: 0;}
+    ul.prod-meterials-typicals{padding-top: 20px;}
 }

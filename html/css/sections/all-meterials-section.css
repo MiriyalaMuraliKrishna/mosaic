@@ -17,10 +17,10 @@
 .all-meterials-thumb:nth-child(even) .all-meterials-sm-icon{margin-bottom: auto;}
 .all-meterials-lg-icon{flex:  0 0 218px; min-height: 218px;}
 .all-meterials-lg-icon img{max-width: 162px; margin: auto; display: block; object-fit: contain;}
-.all-meterials-sm-icon{flex: 0 0 153px; padding: 30px 26px 26px 27px; backdrop-filter: blur(67px); }
+.all-meterials-sm-icon{flex: 0 0 158px; padding: 25px 26px 26px 27px; backdrop-filter: blur(67px); }
 .all-meterials-sm-x{flex: 0 0 153px; padding: 19px 26px 35px 27px; backdrop-filter: blur(67px); }
 
-.all-meterials-circle-main{width: 86px; height: 86px; margin-bottom: 4px;}
+.all-meterials-circle-main{width: 86px; height: 86px;}
 .progress-inner{width: 74px; height: 74px;}
 .progress-inner svg{width: 100%; height: 100%;}
 .progress-circle{top: 0; left: 0; width: 86px; height: 86px;}
@@ -73,7 +73,7 @@
 
     .all-meterials-half-circle,.all-meterials-half-circle svg{height: 84px; width: 84px;}
 
-    .all-meterials-sm-icon{padding: 23px 19px; border-radius: 25px;} 
+    .all-meterials-sm-icon{padding: 23px 19px; border-radius: 25px; flex: 0 0 138px;} 
     .half-circle-count{font-size: 23px; letter-spacing: -0.69px;}
     .all-meterials-parts span:last-child{font-size: 14px; letter-spacing: -0.42px;}
     .all-meterials-sm-x{flex: 0 0 138px; padding: 15px 19px 26px 24px; border-radius: 25px;}
@@ -89,11 +89,7 @@
      .all-meterials-lg-icon { flex: 0 0 125px; min-height: 155px;}
      .all-meterials-lg-icon img { max-width: 100px; }
      .all-meterials-sm-icon{flex: 0 0 123px; padding: 15px; }
-     /* .all-meterials-thumb.row-reverse .all-meterials-sm-icon svg{width: 90px;} */
+
      .all-meterials-thumb:nth-child(2n) .all-meterials-sm-icon{padding: 26px 16px 20px; }
-
-     .all-meterials-sm-icon{padding: 15px 15px;}
-     .all-meterials-sm-x{padding: 15px;}
-
-     
+     .all-meterials-sm-x{padding: 15px;}     
 }
