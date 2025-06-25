@@ -74,7 +74,7 @@ export const Animation = {
 
     type === 'chart' ? chart.play() : null;
     type === 'progress' ? circle.play() : null;
-    type === 'half-circle' ? halfCircle.play() : null;
+    type === 'half-circle' ? halfCircle.play($el[0]) : null;
     type === 'ai-software-circle' ? software.play() : null;
   },
 

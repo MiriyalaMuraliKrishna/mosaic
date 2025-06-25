@@ -18,8 +18,31 @@ class HalfCircle {
       ele._dasharray = $dasharray;
     });
   }
-  play() {
-    this.circles.forEach((ele) => {
+  // play() {
+  //   this.circles.forEach((ele) => {
+  //     const countEl = ele.querySelector('.half-circle-count');
+  //     const circle = ele._circle;
+  //     const $dasharray = ele._dasharray;
+
+  //     if (!countEl || !circle || !$dasharray) return;
+
+  //     let progress = parseFloat(countEl.textContent.trim());
+
+  //     if (isNaN(progress)) progress = 0;
+  //     if (progress > 100) progress = 100;
+
+  //     const visibleHalf = $dasharray / 2;
+  //     const offset = $dasharray - visibleHalf * (progress / 100);
+
+  //     requestAnimationFrame(() => {
+  //       circle.style.transition = 'stroke-dashoffset 2s ease';
+  //       circle.style.strokeDashoffset = offset;
+  //     });
+  //   });
+  // }
+  play(target = null) {
+    const elements = target ? [target] : this.circles;
+    elements.forEach((ele) => {
       const countEl = ele.querySelector('.half-circle-count');
       const circle = ele._circle;
       const $dasharray = ele._dasharray;
@@ -27,7 +50,6 @@ class HalfCircle {
       if (!countEl || !circle || !$dasharray) return;
 
       let progress = parseFloat(countEl.textContent.trim());
-
       if (isNaN(progress)) progress = 0;
       if (progress > 100) progress = 100;
 
