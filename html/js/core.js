@@ -19,6 +19,7 @@ import { innovation } from './module/innovation';
 import { slider } from './module/slider';
 import { magnificPopup } from './module/magnificpopup';
 import { usecases } from './module/usecases';
+import { usecasesbr } from './module/usecasepage';
 import { counter } from './module/counter';
 import { myslick } from './module/slick';
 import { aislick } from './module/aiSlick';
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
   counter.init();
   myslick.init();
   usecase.init();
+  usecasesbr.init();
   aislick.init();
   poweredobj.init();
   prodslick.init();

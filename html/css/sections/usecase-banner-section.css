@@ -8,7 +8,7 @@
 
 
 @media screen and (min-width: 768px) {
-    .usecase-banner-text h1 br{display: none;}
+    .usecase-banner-text h1 br.hide-above{display: none;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .usecase-banner-main{padding: 143px 0 107px;}

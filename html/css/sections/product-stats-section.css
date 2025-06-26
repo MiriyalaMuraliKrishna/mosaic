@@ -12,6 +12,9 @@
 .product-stats-item p{font-size: 16.5px; letter-spacing: -0.495px; font-weight: 400; color: var(--Muted---Light); line-height: 26px; }
 .product-stats-ellipse{ top: -275px; left: -235px; width: 1158px; height: 1158px; border-radius: 1158px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Purple) 0%, rgba(139, 82, 252, 0.00) 100%); z-index: -1;}
 
+.product-stats-title:nth-child(1):last-child{flex: 0 0 100%;}
+.product-stats-desc:nth-child(1):last-child{flex: 0 0 100%; max-width: 100%; padding: 0;}
+
 /* media css starts here */
 @media screen and (min-width:1024px) {
     .product-stats-main{padding: 147px 0 0;}
