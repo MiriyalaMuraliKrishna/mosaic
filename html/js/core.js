@@ -28,6 +28,7 @@ import { poweredobj } from './module/poweredby';
 import { prodslick } from './module/prodCompareSlick';
 import { automated } from './module/automated';
 import { lifeatslider } from './module/lifeatslider';
+import { sidebar } from './module/sidebarsticky';
 
 document.addEventListener('DOMContentLoaded', function () {
   mylenis.init();
@@ -59,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
   prodslick.init();
   automated.init();
   lifeatslider.init();
+  sidebar.init();
 });
 
 let scrolled = window.scrollY;
