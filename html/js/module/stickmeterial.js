@@ -17,5 +17,7 @@ export const sticky = {
         true
       );
     });
+    // above code only for desktop
+    // later i can use media
   },
 };
