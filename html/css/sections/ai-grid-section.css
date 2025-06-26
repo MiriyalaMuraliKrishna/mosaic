@@ -39,7 +39,20 @@
     .ai-grid-text{width: 372px;}
     .ai-nav-text{max-width: 357px;}
 }
-
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .ai-grid-main{gap: 40px; padding: 80px 0 90px; flex-direction: column;}
+    .ai-grid-lt, .ai-grid-rt{width: 100%;}
+    .ai-grid-lt{border-radius: 20px; padding: 69px 0 49px;}
+    .ai-slide{max-width: 182px;}
+    .ai-nav-text span{font-size: 12px; letter-spacing: 3px; margin-bottom: 15px;}
+    .ai-nav-text{max-width: 293px;}
+    .ai-nav-text h2{font-size: 24px; letter-spacing: -.72px; line-height: 36px;}
+    .ai-grid-rt{gap: 40px;}
+    .ai-grid-item{border-radius: 20px; flex: 0 0 calc(50% - 20px); gap: 23px; padding: 36px 40px 38px 31px;}
+    .ai-grid-graph{top: 38px; width: 241px; height: 241px;}
+    .ai-grid-text > span{font-size: 19px; letter-spacing: -.57px;}
+    .ai-grid-img{flex: 0 0 36px; padding-top: 0; }
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .ai-grid-main{gap: 20px; padding: 80px 0 90px;}
     .ai-grid-lt, .ai-grid-rt{width: 100%;}

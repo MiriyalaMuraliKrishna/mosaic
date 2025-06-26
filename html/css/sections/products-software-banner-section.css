@@ -3,15 +3,39 @@
 .products-software-banner-text h1{font-weight: 400; font-family: var(--heading-font); margin-bottom: 0;}
 .products-software-banner-text p{margin-bottom: 18px;}
 .products-software-banner-img .all-meterials-sm-icon{backdrop-filter: blur(67px); padding: 16px 23px 33px 27px; background: rgba(139, 82, 252, 0.10); width: 160px; position: relative; top: 219px; left: -88px; color: var(--Black);}
-.products-software-banner-img .all-meterials-sm-icon:nth-child(3){top: 252px; left: 103px; padding: 30px 26px 26px 27px;}
 
-@media screen and (min-width: 1024px) {
+
+
+
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1400px) {
     .products-software-banner-main{gap: 200px; padding: 121px 0 159px;}
     .products-software-banner-img{flex: 0 0 732px;}
-    .products-software-banner-text{flex: 1;}
+    .products-software-banner-text{flex: 1; padding: 141px 0 140px;}
     .products-software-banner-text h1{font-size: 130px; line-height: 148px; letter-spacing: -1.3px;}
+    .products-software-banner-thumb{max-width: 732px; top: 0; right: 0; z-index: -1;}
+    .products-software-banner-img .all-meterials-sm-icon:nth-child(3){top: 254px; left: 103px; padding: 30px 26px 26px 27px;}
 }
-
+@media screen and (max-width: 1399px)  and (min-width: 1024px) {
+    .products-software-banner-main{gap: 30px; padding: 121px 0 159px;}
+    .products-software-banner-text{flex: 1; max-width: 575px; padding: 141px 0 140px;}
+    .products-software-banner-text h1{font-size: 130px; line-height: 148px; letter-spacing: -1.3px;}
+    .products-software-banner-img{ flex: 0 0 540px; min-height: 516px; margin-right: -200px; }
+    .products-software-banner-thumb{max-width: 732px; top: 0; right: 0; z-index: -1;}
+    .products-software-banner-thumb img{min-height: 516px; max-height: 516px; overflow: hidden;}
+    .products-software-banner-img .all-meterials-sm-icon{ left: -160px; top: 198px; }
+    .products-software-banner-img .all-meterials-sm-icon:nth-child(3) { left: 21px; top: 227px; }
+}
+@media screen and (max-width: 1023px)  and (min-width: 768px) {
+    .products-software-banner-main{gap: 30px; padding: 121px 0 159px; flex-direction: column;}
+    .products-software-banner-text{width: 100%;}
+    .products-software-banner-text h1{font-size: 130px; line-height: 148px; letter-spacing: -1.3px;}
+    .products-software-banner-img{width: 100%; right: -90px; min-height: 516px;}
+    .products-software-banner-thumb{max-width: 732px; top: 0; right: 0; z-index: -1;}
+    .products-software-banner-thumb img{min-height: 516px; max-height: 516px; overflow: hidden;}
+    .products-software-banner-img .all-meterials-sm-icon:nth-child(3){top: 254px; left: 103px; padding: 30px 26px 26px 27px;}
+}
 @media screen and (max-width: 767px)  and (min-width: 200px) {
     .products-software-banner-main{flex-direction: column-reverse; padding: 123px 0 0; align-items: flex-start;}
     .products-software-banner-img{width: 100%; margin-bottom: 127px;}
