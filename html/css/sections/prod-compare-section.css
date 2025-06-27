@@ -55,6 +55,9 @@ ul.prod-compare-list li.aligncenter{ font-size: 20px; font-weight: 700; line-hei
 
 
 /*-- media css starts here --*/
+@media only screen and (min-width: 768px){
+    .prod-slick-progress{display: none;}
+}
 @media only screen and (min-width: 1024px){
     .prod-compare-wrap{padding: 140px 0 100px;}
     .prod-compare-left{flex: 0 0 335px; margin-top: auto;}
