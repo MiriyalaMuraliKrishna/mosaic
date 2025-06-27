@@ -29,6 +29,7 @@ import { prodslick } from './module/prodCompareSlick';
 import { automated } from './module/automated';
 import { lifeatslider } from './module/lifeatslider';
 import { sidebar } from './module/sidebarsticky';
+import { software } from './module/product-software';
 
 document.addEventListener('DOMContentLoaded', function () {
   mylenis.init();
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
   automated.init();
   lifeatslider.init();
   sidebar.init();
+  software.init();
 });
 
 let scrolled = window.scrollY;
