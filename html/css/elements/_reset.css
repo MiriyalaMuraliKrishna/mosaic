@@ -504,6 +504,10 @@ a.mPS2id-clicked{color: var(--Green);}
     .text-md-right{text-align: right;}
     .fluid-container{width: 100vw; left: -50vw; margin-left: 50%;}
   }
+@media only screen and (min-width: 768px){
+
+  br.hide-above-ipad{display: none;}
+}
   @media only screen and (max-width: 1800px) and (min-width: 1024px){
   .container.no-auto{margin: 0;}
 }
