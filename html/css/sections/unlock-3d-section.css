@@ -30,7 +30,7 @@ body.page-template-product-software .unlock-3d-text h2{margin-bottom: 9px;}
 }
 @media screen and (max-width: 1023px) and (min-width:768px) {
     .unlock-3d-wrap{padding: 90px 0;}
-    .unlock-3d-main{padding: 60px 20px;}
+    .unlock-3d-main{padding: 60px 20px; flex-direction: column; align-items: flex-start;}
     .unlock-3d-image{flex: 0 0 100%; transform: none; position: relative;}
 }
 @media screen and (max-width: 767px) and (min-width:200px) {

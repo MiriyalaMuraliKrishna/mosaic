@@ -3,11 +3,15 @@
 .intro-text span{display: block; color: var(--Green);}
 .intro-ellipse{top: 0; left: 50%; transform: translateX(-50%); width: 776px; height: 776px; border-radius: 776px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1;}
 
+/*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
-    .intro-main{min-height: 776px;}
+    .intro-main{padding: 231px 0 295px;}
     .intro-text span{font-size: 122px; line-height: 128px; letter-spacing: -1.22px; font-weight: 400;}
 }
-
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    .intro-main{padding: 191px 0 195px;}
+    .intro-text span{font-size: 122px; line-height: 128px; letter-spacing: -1.22px; font-weight: 400;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .intro-main{min-height: 529px;}
     .intro-ellipse{top: -97px; width: 913px; height: 913px; border-radius: 913px;}

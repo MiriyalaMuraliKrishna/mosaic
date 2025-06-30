@@ -15,7 +15,7 @@
 .services-carousel-title{max-width: 807px; padding-bottom: 70px;}
 
 
-
+.services-carousel-text:nth-child(1):last-child .services-carousel-desc{max-width: 100%;}
 .services-carousel-desc{max-width: 437px;}
 .services-carousel-desc h2{margin-bottom: 24px;}
 .services-carousel-desc p{margin-bottom: 37px;}

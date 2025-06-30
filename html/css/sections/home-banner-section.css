@@ -58,7 +58,13 @@
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .home-banner-text h1{font-size: 66px; line-height: 78px;}
-    .home-endless-pos{margin: 184px 0 10px; padding: 79px 55px 45px 45px; max-width: 320px; position: relative;}
+    .home-endless-pos{margin: 88px 0 10px; padding: 0 37px 0 40px; max-width: 335px; position: relative;}
+    .home-endless-main{overflow: inherit;}
+    .home-endless-pos-main{max-width: 335px; position: relative; overflow: hidden;}
+    .home-endless-text{padding: 0px 0 189px 7px; }
+    .home-endless-graph{right: -40px; bottom: 35px;}
+    .home-endless-lines{left: 106px; bottom: 41px; width: 274px; height: 202px;} 
+    .home-endless-dot{top: -49px; left: 210px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .home-banner-section{min-height: 570px;}
@@ -77,7 +83,6 @@
     .home-endless-text{padding: 0px 0 189px 7px; }
     .home-endless-graph{right: -20px; bottom: 35px;}
     .home-endless-lines{left: 76px; bottom: 41px; width: 274px; height: 202px;} 
-    /* .home-endless-lines svg{opacity: 0.2;} */
     .home-endless-dot{top: -47px; left: 180px;}
 }
 @media only screen and (max-width: 414px) and (min-width: 200px){

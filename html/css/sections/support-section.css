@@ -19,7 +19,9 @@
 @media only screen and (min-width: 1024px){
     .support-main{padding: 80px 0 0;}
     .support-list{flex: 0 0 calc(33.3333% - 17px); padding: 32px;}
-    .support-ellipse-bg{ height: 1226px;  width: 1226px; margin-left: -536px; left: 125px; transform: translateY(-50%); top: calc(50% - 103px); }
+    .support-ellipse-bg{ height: 1226px; width: 1226px; margin-left: -536px; left: 125px; transform: translateY(-50%); top: calc(50% - 103px); }
+    body.page-template-support .supprt-section:nth-child(2):last-child .support-main{padding-bottom: 97px;}
+    body.page-template-contact .supprt-section:nth-child(3):last-child .support-main{padding-bottom: 97px;}
 }
 @media only screen and (min-width: 1440px){
     .support-list{padding: 70px;}

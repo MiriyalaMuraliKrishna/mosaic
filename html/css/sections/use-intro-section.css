@@ -4,7 +4,9 @@
 
 
 .use-intro-text h2{padding: 34px 0 15px;}
-
+.use-intro-text:nth-child(1):last-child{flex: 0 0 100%; padding: 0;}
+.use-intro-text:nth-child(1):last-child br{display: none;}
+.use-intro-image:nth-child(1):last-child{flex: 0 0 100%;}
 
 
 /*-- media css starts here --*/

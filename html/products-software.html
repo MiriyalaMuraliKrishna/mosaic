@@ -32,7 +32,7 @@
   <script src="https://kit.fontawesome.com/daf2e8de71.js" crossorigin="anonymous"></script>
   <!-- CSS Base -->
   <link rel="stylesheet" href="./style.css" media="all" />
-  <link rel="stylesheet" href="./style.bundle.css" media="all" />
+  <link rel="stylesheet" href="./style.bundle.css?v=1" media="all" />
 </head>
 
 <body class="page-template-product-software">
@@ -752,21 +752,44 @@
             </div>
           </div>
           <div class="ai-grid-rt flex">
-            <div class="ai-grid-item ai-graph-main purple-bg radius-30 relative" data-animate="ai-software-circle">
-              <div class="ai-grid-graph absolute">
-                <svg class="ai-pie-white radius-50" width="336" height="336" viewBox="0 0 336 336" fill="none">
-                  <circle cx="168" cy="168" r="168" stroke="white" stroke-width="20" fill="none" />
+            <div class="ai-grid-item ai-graph-main purple-bg radius-30 relative">
+              <div class="ai-grid-graph absolute o-hidden" data-animate="ai-software-circle">
+                <svg width="336" height="337" viewBox="0 0 336 337" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="ai-grid-path1"
+                    d="M27.3794 250.219C24.7809 251.726 21.444 250.845 20.0218 248.199C3.81993 218.057 -2.81135 183.641 1.08964 149.557C4.99062 115.473 19.2266 83.4449 41.8198 57.7432C43.8031 55.4871 47.2527 55.3826 49.4435 57.4378V57.4378C51.6343 59.4931 51.7361 62.9294 49.7579 65.19C28.7623 89.1824 15.5323 119.034 11.8973 150.794C8.26227 182.554 14.4054 214.623 29.4372 242.739C30.8535 245.388 29.9779 248.712 27.3794 250.219V250.219Z"
+                    fill="white" />
+                  <path class="ai-grid-path2"
+                    d="M56.4919 50.3725C54.4313 48.1866 54.5271 44.7371 56.7785 42.7484C76.2804 25.5216 99.5381 13.0432 124.729 6.32836C151.673 -0.85393 179.982 -1.21634 207.101 5.27382C234.221 11.764 259.298 24.9026 280.072 43.5046C299.494 60.896 314.582 82.5515 324.173 106.741C325.28 109.533 323.804 112.652 320.977 113.668V113.668C318.15 114.685 315.044 113.213 313.93 110.423C304.955 87.9318 290.892 67.7954 272.815 51.6086C253.386 34.211 229.933 21.9232 204.569 15.8533C179.206 9.78337 152.73 10.1223 127.531 16.8395C104.085 23.0893 82.4293 34.6775 64.2445 50.6684C61.9887 52.652 58.5524 52.5583 56.4919 50.3725V50.3725Z"
+                    fill="white" />
+                  <path class="ai-grid-path3"
+                    d="M323.249 120.454C326.118 119.563 329.175 121.165 329.972 124.061C335.668 144.748 337.353 166.353 334.917 187.705C332.481 209.057 325.973 229.727 315.763 248.599C314.333 251.241 310.994 252.113 308.4 250.599V250.599C305.805 249.085 304.939 245.758 306.362 243.113C315.815 225.546 321.844 206.325 324.109 186.472C326.374 166.619 324.83 146.533 319.577 127.289C318.786 124.391 320.38 121.345 323.249 120.454V120.454Z"
+                    fill="white" />
                 </svg>
-                <svg class="ai-pie absolute radius-50" width="336" height="336" viewBox="0 0 336 336">
-                  <circle stroke="#8B52FC" stroke-width="20px" stroke-linecap="" fill="none" cy="168" cx="168" r="168">
+                <svg class="ai-pie ai-pie1 absolute radius-50" width="336" height="336" viewBox="0 0 336 336">
+                  <circle class="ai-grid-circle1" stroke="#decffe" stroke-width="11px" stroke-linecap="round"
+                    fill="none" cy="168" cx="168" r="160">
                   </circle>
                 </svg>
+                <svg class="ai-pie ai-pie2 absolute radius-50" width="336" height="336" viewBox="0 0 336 336">
+                  <circle class="ai-grid-circle2" stroke="#decffe" stroke-width="11px" stroke-linecap="round"
+                    fill="none" cy="168" cx="168" r="160">
+                  </circle>
+                </svg>
+                <svg class="ai-pie ai-pie3 absolute radius-50" width="336" height="336" viewBox="0 0 336 336">
+                  <circle class="ai-grid-circle3" stroke="#decffe" stroke-width="11px" stroke-linecap="round"
+                    fill="none" cy="168" cx="168" r="160">
+                  </circle>
+                </svg>
+                <!-- Dynamic fill start now -->
+                <span data-ai-fill="100" data-ai-end="ai-circle1"></span>
+                <span data-ai-fill="100" data-ai-end="ai-circle2"></span>
+                <span data-ai-fill="50" data-ai-end="ai-circle3"></span>
               </div>
               <div class="ai-grid-text">
                 <span>Up to</span>
                 <div class="ai-grid-num-main flex flex-center">
-                  <span class="ai-grid-num" id="counter-7" data-duration="3000" data-count-to="7"
-                    data-animate="counter">7</span>
+                  <span class="ai-grid-num" id="counter-7" data-duration="3000" data-count-to="9"
+                    data-animate="counter">9</span>
                   <span class="ai-grid-x">x</span>
                 </div>
                 <span>faster workflow setup</span>
@@ -793,11 +816,11 @@
       </div>
     </section>
     <section class="fullscreen-section relative">
-      <div class="fullscreen-bg background-bg radius-30 o-hidden">
-        <div class="fullscreen-bg-overlay background-bg"></div>
+      <div class="fullscreen-bg background-bg o-hidden">
         <video autoplay muted loop>
           <source src="images/landing-video.mp4" type="video/mp4" />
         </video>
+        <div class="fullscreen-bg-overlay background-bg"></div>
       </div>
       <div class="container">
         <div class="fullscreen-main">
@@ -824,9 +847,8 @@
       </div>
     </section>
     <section class="feature-slider-section relative">
-      <div class="feature-slider-overlay background-bg"></div>
       <div class="container">
-        <div class="feature-slider-main">
+        <div class="feature-slider-main relative z-2">
           <div class="feature-item-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide feature-item-slide">
@@ -1233,7 +1255,7 @@
     </section>
     <section class="intro-section">
       <div class="container">
-        <div class="intro-main flex flex-center relative">
+        <div class="intro-main flex relative">
           <div class="intro-ellipse absolute"></div>
           <div class="intro-text aligncenter">
             <h2 class="h3">Introducing</h2>
@@ -1253,19 +1275,16 @@
               <div class="alt-stick-overlay top absolute"></div>
               <div class="alt-stick-overlay bottom absolute"></div>
             </div>
-            <div class="sticky-widget">
-              <div class="alt-stick-text">
-
-                <span class="stripe-line line-green d-block w-100"></span>
-                <h2 class="h3">Adaptive Print Optimization</h2>
-                <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path
-                      d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                      fill="#1AD1B1"></path>
-                  </svg>
-                </a>
-              </div>
+            <div class="alt-stick-text">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <h2 class="h3">Adaptive Print Optimization</h2>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="alt-stick-right flex flex-col">
@@ -1309,18 +1328,16 @@
               <div class="alt-stick-overlay top absolute"></div>
               <div class="alt-stick-overlay bottom absolute"></div>
             </div>
-            <div class="sticky-widget">
-              <div class="alt-stick-text">
-                <span class="stripe-line line-green d-block w-100"></span>
-                <h2 class="h3">Continuous Printing System</h2>
-                <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path
-                      d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                      fill="#1AD1B1"></path>
-                  </svg>
-                </a>
-              </div>
+            <div class="alt-stick-text">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <h2 class="h3">Continuous Printing System</h2>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="alt-stick-right flex flex-col">
@@ -1353,19 +1370,16 @@
               <div class="alt-stick-overlay top absolute"></div>
               <div class="alt-stick-overlay bottom absolute"></div>
             </div>
-            <div class="sticky-widget">
-              <div class="alt-stick-text">
-
-                <span class="stripe-line line-green d-block w-100"></span>
-                <h2 class="h3">High-Temp Compatibility</h2>
-                <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path
-                      d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                      fill="#1AD1B1"></path>
-                  </svg>
-                </a>
-              </div>
+            <div class="alt-stick-text">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <h2 class="h3">High-Temp Compatibility</h2>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="alt-stick-right flex flex-col">
@@ -1702,7 +1716,7 @@
     </section>
     <section class="intro-section">
       <div class="container">
-        <div class="intro-main flex flex-center relative">
+        <div class="intro-main flex relative">
           <div class="intro-ellipse absolute"></div>
           <div class="intro-text aligncenter">
             <h2 class="h3">Introducing</h2>
@@ -1722,19 +1736,16 @@
               <div class="alt-stick-overlay top absolute"></div>
               <div class="alt-stick-overlay bottom absolute"></div>
             </div>
-            <div class="sticky-widget">
-              <div class="alt-stick-text">
-
-                <span class="stripe-line line-green d-block w-100"></span>
-                <h2 class="h3">Adaptive Print Optimization</h2>
-                <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path
-                      d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                      fill="#1AD1B1"></path>
-                  </svg>
-                </a>
-              </div>
+            <div class="alt-stick-text">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <h2 class="h3">Adaptive Print Optimization</h2>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="alt-stick-right flex flex-col">
@@ -1778,19 +1789,16 @@
               <div class="alt-stick-overlay top absolute"></div>
               <div class="alt-stick-overlay bottom absolute"></div>
             </div>
-            <div class="sticky-widget">
-              <div class="alt-stick-text">
-
-                <span class="stripe-line line-green d-block w-100"></span>
-                <h2 class="h3">Continuous Printing System</h2>
-                <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path
-                      d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                      fill="#1AD1B1"></path>
-                  </svg>
-                </a>
-              </div>
+            <div class="alt-stick-text">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <h2 class="h3">Continuous Printing System</h2>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="alt-stick-right flex flex-col">
@@ -1823,19 +1831,16 @@
               <div class="alt-stick-overlay top absolute"></div>
               <div class="alt-stick-overlay bottom absolute"></div>
             </div>
-            <div class="sticky-widget">
-              <div class="alt-stick-text">
-
-                <span class="stripe-line line-green d-block w-100"></span>
-                <h2 class="h3">High-Temp Compatibility</h2>
-                <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path
-                      d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
-                      fill="#1AD1B1"></path>
-                  </svg>
-                </a>
-              </div>
+            <div class="alt-stick-text">
+              <span class="stripe-line line-green d-block w-100"></span>
+              <h2 class="h3">High-Temp Compatibility</h2>
+              <a target="_blank" href="#" class="button flex flex-center text-upper">Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                  <path
+                    d="M10.8105 9.84467H9.31055V2.65521L1.06055 10.9052L0 9.84467L8.25 1.59467H0.560547V0.0946655H10.8105V9.84467Z"
+                    fill="#1AD1B1"></path>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="alt-stick-right flex flex-col">
@@ -2627,7 +2632,7 @@
   <script defer src="dist/DrawSVGPlugin.js"></script>
   <script defer src="dist/jquery.youtube-background.js"></script>
   <script defer src="dist/iframe.js"></script>
-  <script defer src="dist/core.bundle.js"></script>
+  <script defer src="dist/core.bundle.js?v=11"></script>
 </body>
 
 </html>

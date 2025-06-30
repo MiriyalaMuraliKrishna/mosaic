@@ -23,6 +23,17 @@ ul.features-icon-subtitle li a:hover{color: var(--White);}
     .features-icon-list[features-list="1"] .features-icon-img{flex: 0 0 348px;}
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .features-icon-main{padding: 100px 0; gap: 40px;}
+    .features-icon-sidebar{flex: 0 0 215px;}
+    .features-icon-article{gap: 80px; flex: 1; flex-direction: column;}
+    .features-icon-list{gap: 30px;}
+    .features-icon-img{max-width: 250px;}
+    .features-icon-text{flex: 100%;}
+    .features-icon-text{gap: 30px;}
+    .features-icon-desc{font-size: 18px; line-height: 28px; letter-spacing: -0.54px; }
+    .features-icon-desc h2{font-size: 44px; line-height: 54px;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .features-icon-main{padding: 100px 0;}
     .features-icon-article{gap: 80px;}

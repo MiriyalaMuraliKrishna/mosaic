@@ -24,6 +24,9 @@
     .contact-banner-main{padding: 123px 0 79px;}
     .contact-banner-text span.optional-text{font-size: 12px; line-height: 18px; letter-spacing: 3px;}
 }
+@media only screen and (max-width: 414px) and (min-width: 200px){
+    .contact-banner-text h1 {max-width: 250px;}
+}
 @media only screen and (max-width: 413px) and (min-width: 200px){
     .contact-banner-text h1{font-size: 40px; line-height: 50px;}
 }

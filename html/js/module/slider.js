@@ -8,7 +8,7 @@ export const slider = {
   logos: document.querySelectorAll('.trust-by-logos'),
   brands: document.querySelectorAll('.trusted-by-logos'),
   featuredeles: document.querySelector('.featured-articles-slider'),
-  featureitemslider: document.querySelector('.feature-item-slider'),
+  featureitemsEle: document.querySelector('.feature-item-slider'),
   poweredByEle: document.querySelector('.powered-by-slider'),
 
   init() {
@@ -207,8 +207,8 @@ export const slider = {
     });
   },
   featureItemSlider() {
-    if (!this.featureitemslider) return;
-    new Swiper(this.featureitemslider, {
+    if (!this.featureitemsEle) return;
+    new Swiper(this.featureitemsEle, {
       slidesPerView: 1,
       speed: 800,
       spaceBetween: 30,
@@ -222,8 +222,8 @@ export const slider = {
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        768: {},
-        1024: { slidesPerView: 'auto' },
+        768: { slidesPerView: 2, spaceBetween: 40 },
+        1024: { slidesPerView: 'auto', spaceBetween: 64 },
         1440: { slidesPerView: 'auto', spaceBetween: 169 },
       },
     });
@@ -244,7 +244,7 @@ export const slider = {
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        768: {},
+        768: { slidesPerView: 2, spaceBetween: 40 },
         1024: { slidesPerView: 'auto' },
         1440: { slidesPerView: 'auto', spaceBetween: 169 },
       },

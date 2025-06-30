@@ -4,7 +4,6 @@
 
 
 
-.use-cases-wrap{padding: 472px 0 130px;}
 .use-cases-head{padding-bottom: 89px;}
 .use-cases-head h2{font-size: 82px; line-height: 90px;}
 .use-cases-head span.optional-text{margin-bottom: 31px;}
@@ -43,22 +42,28 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
 .use-cases-video{z-index: 1;}
 .use-cases-video video{width: 100%; height: 100%;}
 
-.use-cases-screen{top: 113px; right: 160px; justify-content: end; width: fit-content;}
+.use-cases-screen{justify-content: end;}
 .use-cases-screen button{padding: 6.7px 18px 7.7px 13px; cursor: pointer; background: rgba(255, 255, 255, 0.20); backdrop-filter: blur(7px); border: none; border-radius: 40px; font-size: 13px; color: var(--White); letter-spacing: 0.52px; text-transform: capitalize; font-weight: 500; line-height: normal; display: flex; justify-content: center; align-items: center; gap: 11px; }
+.use-cases-screen button:hover svg{animation: none;}
 
 
 /*-- media css starts here --*/
-@media only screen and (min-width: 1024px){
+@media screen and (min-width: 1800px){
     .use-cases-container{top: 68px; left: 62px; width: calc(100% - 124px); height: calc(100% - 136px);}
+    .use-cases-screen{right: -117px; position: relative;}
+}
+@media only screen and (min-width: 1024px){
+    .use-cases-wrap{padding: 114px 0 130px;}
+    .use-cases-screen{padding-bottom: 390px;}
     .use-cases-bg, .use-cases-video{ min-height: 903px; max-height: 903px;}
-
 }
 @media screen and (max-width: 1399px) and (min-width: 1024px) {
     .use-cases-slider .swiper-button-prev{left: -18px;}
     .use-cases-slider .swiper-button-next{right: -18px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    .use-cases-screen{top: 40px; right: 40px;}
+    .use-cases-wrap{padding: 285px 0 130px;}
+    .use-cases-screen{top: 40px; right: 0; position: absolute;}
     .use-cases-container{height: 463px; left: 0; top: 0; width: 100%;}
 
     .use-cases-head h2{font-size: 62px; line-height: 70px;}
@@ -66,10 +71,11 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
     .use-cases-slider .swiper-button-next{right: -18px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .use-cases-screen{top: 20px; right: 20px;}
+    .use-cases-screen{top: 20px; right: 0; position: absolute;}
     .use-cases-container{height: 363px; left: 0; top: 0; width: 100%;}
     .use-cases-bg, .use-cases-video{max-height: 363px; min-height: 363px;}
     .use-cases-wrap{padding: 285px 0 82px;}
+
     .use-cases-head{padding-bottom: 60px;}
     .use-cases-head h2{font-size: 40px; line-height: 50px; margin-bottom: 0;}
     ul.use-cases-links > li > a{gap: 19px 0; font-size: 22px;}

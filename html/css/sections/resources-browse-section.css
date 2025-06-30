@@ -9,7 +9,7 @@
 .resources-browse-form button:hover svg path{fill: var(--Black);}
 
 ul.browse-links > li > a{gap: 20px 0; padding-top: 12px;}
-
+ul.browse-links > li > a.active{color: var(--Green);}
 
 
 
@@ -48,6 +48,7 @@ ul.browse-links > li > a{gap: 20px 0; padding-top: 12px;}
     ul.browse-links{max-height: 0; transition: var(--b-transition-10); overflow: hidden; display: block;}
     ul.browse-links > li{margin-bottom: 0;}
     ul.browse-links > li > a{padding-top: 16px; font-size: 18px; font-weight: 500; gap: 13px 0;}
+    ul.browse-links > li:has( a.active ){display: none;}
 }
 
 
