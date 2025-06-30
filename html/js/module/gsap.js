@@ -1,9 +1,11 @@
 import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 var DrawSVGPlugin = DrawSVGPlugin || window.DrawSVGPlugin;
 var CountUp = CountUp || window.CountUp;
 
 gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 export const Gsap = {
   eles: document.querySelectorAll('[data-animate*="icon"]'),
@@ -30,6 +32,16 @@ export const Gsap = {
         );
       });
       ele.tl = tl;
+    });
+
+    gsap.to('.site-main-cover', {
+      y: 30,
+      scrollTrigger: {
+        trigger: '.site-footer',
+        start: 'top bottom',
+        end: 'bottom bottom',
+        scrub: true,
+      },
     });
   },
 };
