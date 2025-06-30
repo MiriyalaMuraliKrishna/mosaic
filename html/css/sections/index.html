@@ -1,0 +1,321 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .elementor-widget-video .e-hosted-video .elementor-video {
+            -o-object-fit: contain;
+            object-fit: contain;
+            mix-blend-mode: difference;
+        }
+
+        .elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .slick-track {
+            display: flex;
+            align-items: center;
+        }
+
+        .elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .jet-arrow svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .jet-arrow {
+            border-radius: 50%;
+        }
+
+        .elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .jet-arrow:hover {
+            background-color: #D0A164;
+            color: #fff;
+        }
+
+        .elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .jet-arrow:hover svg path {
+            fill: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div style=" font-family:Roboto;font-size:45px; line-height: 55px;">Why Resilience?</div><br>
+    <div style=" font-family:Roboto;font-size:30px; line-height: 40px;">We help individuals and organizations to become
+        their best version.
+    </div>
+    <?php
+
+	function efor_child_scripts()
+	{
+		wp_enqueue_style('efor-parent-style', get_template_directory_uri(). '/style.css');
+		
+	}
+	
+	add_action('wp_enqueue_scripts', 'efor_child_scripts');
+
+
+function my_custom_css_in_head() {
+    echo '<style>
+	.site-title img{
+	max-height: 162px;
+	}
+	@media screen and (min-width: 992px) {
+	.is-header-row:not(.is-header-smaller) .site-header .site-navigation {
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.is-header-smaller .site-header{
+position: fixed;
+top: 0;
+
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px #d0d0d070;
+}
+.is-header-smaller .site-title img{
+max-height: 120px;
+}
+  .is-menu-hover-ribbon .nav-menu a:hover .link-text::before, .is-menu-hover-ribbon .nav-menu li.has-submenu:hover > a > .link-text::before, .is-menu-hover-ribbon .nav-menu li.current-menu-item > a > .link-text::before {
+    height: calc(100% + 45px);
+    top: calc(50% + 5px);
+    transform: translateY(-50%);
+  }
+}
+        .elementor-widget-video .e-hosted-video .elementor-video{
+		-o-object-fit: contain;
+  object-fit: contain;
+  mix-blend-mode: difference;
+		}
+		.elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .jet-arrow svg{
+		width: 32px;
+  height: 32px;
+		}
+		.elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .slick-slide{
+		display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 145px;
+		 
+		}
+		       .elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .slick-slide img {
+            max-width: 200px;
+			overflow: hidden;
+			object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  margin: 0 20px;
+         }
+		 .elementor-254 .elementor-element.elementor-element-1b046b5 .jet-postsslick-slider .jet-posts__inner-content{
+		 padding: 0;
+		 
+		 }
+		.elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .jet-arrow{
+		border-radius: 50%;
+		}
+		.elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .jet-arrow:hover{
+		background-color: #D0A164;
+  color: #fff;
+		}
+		.elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts.slick-slider .jet-arrow:hover svg path{
+		fill: #fff;
+		}
+		
+		.about-banner img.jet-banner__img{
+		min-height: 497px;
+  max-height: 497px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: 50% 50%;
+		}
+		html a.social-link{
+		margin-top: 1rem;
+		border: 1px solid #f4f4f4;
+		}
+		.contact-form p:last-child{
+		text-align: right;
+		}
+		
+		@media only screen and (max-width: 1023px) and (min-width: 768px){
+		.is-header-smaller body.home .site-header.clone{
+		background: #fff;
+		}
+		.is-header-smaller body.home .site-header.clone .header-wrap{
+		box-shadow: none !important;
+		}
+		.is-header-smaller body.home .site-header{
+		background: #000;
+		}
+		.is-menu-sticky .clone{
+		background: #fff;
+		}
+		.site-header .header-wrap{
+		box-shadow: none !important;
+		}
+		.is-header-smaller .menu-toggle{
+		 top: 50px;
+		}
+		.site-title img{
+		max-height: 142px;
+		}
+		.menu-toggle {
+
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  position: fixed;
+  background: #d0a164;
+  top: 115px;
+  right: 20px;
+}
+.is-menu-toggled-on .menu-wrap {
+    
+    box-shadow: 0px 1px 1px #cbcbcb;
+  }
+	
+  .elementor-254 .elementor-element.elementor-element-39d42b4 {
+    padding-top: 25%;
+  }
+  .elementor-254 .elementor-element.elementor-element-350395a4{
+  box-shadow: 10px 10px 20px 0px #0000008a;
+  }
+  .elementor-254 .elementor-element.elementor-element-de21fde > .elementor-widget-container{
+  margin-bottom: 24px;
+  }
+  .elementor-254 .elementor-element.elementor-element-9469fb3{
+  padding: 0;
+  }
+.elementor-254 .elementor-element.elementor-element-5b87bf3 > .elementor-element-populated{
+margin: 0;
+}
+.elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts .jet-posts__inner-content{
+padding: 0;
+}
+body .signup_form .frm_style_formidable-style.with_frm_style .frm_submit{
+position: static;
+}
+.elementor-1031 .elementor-element.elementor-element-498c039b > .elementor-widget-container{
+padding-top: 60px;
+}
+.elementor-1031 .elementor-element.elementor-element-73c6702a{
+padding-bottom: 60px;
+}
+.about-banner img.jet-banner__img {
+  min-height: 297px;
+  max-height: 297px;}
+    .footer-widgets .col-sm-6 {
+    width: 25%;
+  }
+		}
+	@media only screen and (max-width: 1024px) and (min-width: 200px){
+  .elementor-254 .elementor-element.elementor-element-d4ffc47 .elementor-heading-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+		@media only screen and (max-width: 767px) and (min-width: 200px){
+		.is-header-smaller body.home .site-header.clone{
+		background: #fff;
+		}
+		.is-header-smaller body.home .site-header.clone .header-wrap{
+		box-shadow: none !important;
+		}
+		.is-header-smaller body.home .site-header{
+		background: #000;
+		}
+		.site-header .header-wrap{
+		box-shadow: none !important;
+		}
+		.is-header-smaller .menu-toggle{
+		 top: 50px;
+		}
+		.site-title img{
+		max-height: 142px;
+		}
+		.menu-toggle {
+
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  position: fixed;
+  background: #d0a164;
+  top: 115px;
+  right: 20px;
+}
+.is-menu-toggled-on .menu-wrap {
+    
+    box-shadow: 0px 1px 1px #cbcbcb;
+  }
+	
+  .elementor-254 .elementor-element.elementor-element-39d42b4 {
+    padding-top: 50%;
+  }
+  .elementor-254 .elementor-element.elementor-element-350395a4{
+  box-shadow: 10px 10px 20px 0px #0000008a;
+  }
+  .elementor-254 .elementor-element.elementor-element-de21fde > .elementor-widget-container{
+  margin-bottom: 24px;
+  }
+  .elementor-254 .elementor-element.elementor-element-9469fb3{
+  padding: 0;
+  }
+.elementor-254 .elementor-element.elementor-element-5b87bf3 > .elementor-element-populated{
+margin: 0;
+}
+.elementor-254 .elementor-element.elementor-element-1b046b5 .jet-posts .jet-posts__inner-content{
+padding: 0;
+}
+body .signup_form .frm_style_formidable-style.with_frm_style .frm_submit{
+position: static;
+}
+.about-banner img.jet-banner__img {
+  min-height: 197px;
+  max-height: 197px;}
+		}
+    </style>';
+}
+add_action( 'wp_head', 'my_custom_css_in_head' );
+
+function my_inline_custom_js() {
+    ?>
+    <script>
+
+        // 		document.addEventListener('DOMContentLoaded', function () {
+        //   let header = document.querySelector('header.site-header');
+        //   let headerHeight = header.offsetHeight;
+
+        //   let options = {
+        //     root: null,
+        //     threshold: 0,
+        //     rootMargin: `-${headerHeight}px`,
+        //   };
+
+        //   let observer = new IntersectionObserver(myheader, options);
+
+        //   function myheader(entries, observer) {
+        //     const [entry] = entries;
+        //     if (entry.isIntersecting) {
+        //       header.classList.add('header');
+        //     } else {
+        //       header.classList.remove('header');
+        //       observer.unobserve(entry.target); // stop observing
+        //     }
+        //   }
+
+        //   observer.observe(header); // You need to observe a target element
+        // });
+
+
+    </script>
+    <?php
+}
+add_action( 'wp_footer', 'my_inline_custom_js' );
+
+/* Custom Functions */
+
+</body>
+
+</html>
