@@ -22,6 +22,9 @@ ul.category-links > li a {
   font-weight: 500;
   line-height: 24px;
 }
+ul.category-links > li a.mPS2id-clicked{
+  color: var(--Green);
+}
 .faqs-q-list {
   gap: 54px 0;
 }

@@ -27,8 +27,8 @@
 @media screen and (min-width: 1024px) {
     .default-content-wrap{padding: 120px 0 0 114px;}
     .default-content-head{margin-bottom: 80px;}
-    .default-content-main{gap: 20px;}
-    .default-content-article{width: calc(100% - 340px);}
+    .default-content-main{gap: 80px;}
+    .default-content-article{width: calc(100% - 400px);}
     .default-content-aside{width:320px; }
     .default-content-article blockquote{padding: 74px 92px 75px 88px; margin-bottom: 60px;}
 }

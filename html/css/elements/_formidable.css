@@ -2,18 +2,28 @@
 
 /* Input fields */
 label{padding-bottom: 5px; display: block; font-size: 17px; line-height: 28px; letter-spacing: -0.34px; font-weight: 600; font-family: var(--body-font);}
-textarea {width: 100%; resize: none; height: 118px;}
+textarea {width: 100%; resize: none;}
 input:focus, textarea:focus{outline: 0;}
 input[type="button"], input[type="reset"], input[type="submit"] {display: inline-block; font-size: 0.875rem; line-height: normal; padding: 17px 35px 16px 36px; vertical-align: middle; cursor: pointer; border: none; border-radius: 0; background-color: var(--Muted---Light); font-weight: 700; letter-spacing: normal; position: relative; text-transform: uppercase; text-align: center; color: var(--White); transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1);}
 input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {background-color: var(--Black); color: var(--White);}
 input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {outline: none;}
 
 
-.frm_checkbox label{gap: 10px; display: flex; flex-wrap: wrap; align-items: center; font-size: 17px; font-weight: 400; line-height: 22px; letter-spacing: -0.51px; }
-input[type="checkbox"], input[type="radio"]{width: 29px; height: 29px; padding: 0;  cursor: pointer; position: relative;}
+body .with_frm_style .vertical_radio .frm_checkbox label, 
+body .with_frm_style .vertical_radio .frm_radio label,
+.frm_checkbox label{gap: 10px; display: flex; flex-wrap: wrap; align-items: center; font-size: 17px; font-weight: 400; line-height: 22px; letter-spacing: -0.51px; color: var(--White);}
+body .with_frm_style .frm_checkbox label input[type="checkbox"], 
+body .with_frm_style .frm_radio label input[type="radio"],
+input[type="checkbox"], input[type="radio"]{width: 29px !important; height: 29px !important; padding: 0; margin: 0; min-width: 29px; border: none; cursor: pointer; position: relative;}
+body .with_frm_style .frm_checkbox label input[type="checkbox"]:checked, 
+body .with_frm_style .frm_radio label input[type="radio"]:checked,
 input[type="checkbox"]:checked, input[type="radio"]:checked{background-color: var(--Green);}
-input[type="checkbox"]:checked::before{width: 14px; height: 11px; top: 50%; left: 50%; transform: translate(-50%,-50%); position: absolute; content: ""; display: block; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='11' viewBox='0 0 14 11' fill='none'%3E%3Cpath d='M1 4.78947L5.13793 9L13 1' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center;}
-input[type="radio"]:checked{}
+body .with_frm_style .frm_checkbox label input[type="checkbox"]:checked::before, 
+body .with_frm_style .frm_radio label input[type="radio"]:checked::before,
+input[type="checkbox"]:checked::before{width: 14px !important; height: 11px !important; top: 50%; left: 50%; transform: translate(-50%,-50%); position: absolute !important; content: ""; display: block; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='11' viewBox='0 0 14 11' fill='none'%3E%3Cpath d='M1 4.78947L5.13793 9L13 1' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") !important; background-repeat: no-repeat !important; background-position: center !important; background-size: 14px 11px !important;}
+body .with_frm_style .frm_checkbox label input[type="checkbox"]:focus, 
+body .with_frm_style .frm_radio label input[type="radio"]:focus,
+input[type="checkbox"]:focus, input[type="radio"]:focus{box-shadow: none;}
 
 body .white-popup-block .frm_forms h3.frm_form_title{display: none;}
 body .frm_forms .frm_form_fields fieldset{margin: 0; padding: 0; border: none;}
@@ -33,15 +43,26 @@ body .frm_forms .frm_form_fields .frm_form_field .frm_primary_label span:not(.fr
 
 
 
-body .frm_forms .frm_form_fields .frm_form_field input, body .frm_forms .frm_form_fields .frm_form_field textarea, input, select, textarea{ width: 100%; font-size: 17px; font-weight: 400; line-height: 28px; letter-spacing: -0.51px; box-shadow: none; padding: 15px 16px 16px; vertical-align: middle; height: auto; border: none; border-radius: 10px; background: var(--White-10); color: var(--Muted---Light); font-family: var(--body-font); appearance: none; opacity: 1; outline: none; transform: var( --b-transition-5);}
+body .with_frm_style input[type="text"], 
+body .with_frm_style input[type="password"], 
+body .with_frm_style input[type="email"], 
+body .with_frm_style input[type="number"], 
+body .with_frm_style input[type="url"], 
+body .with_frm_style input[type="tel"], 
+body .with_frm_style input[type="file"], 
+body .with_frm_style input[type="search"], 
+body .with_frm_style select, 
+body .with_frm_style .frm-card-element.StripeElement,
+body  .with_frm_style textarea, body .frm_forms .frm_form_fields .frm_form_field input, body .frm_forms .frm_form_fields .frm_form_field textarea, input, select, textarea{ width: 100%; font-size: 17px; font-weight: 400; line-height: 28px; letter-spacing: -0.51px; box-shadow: none; padding: 15px 16px 16px; vertical-align: middle; height: auto; border: none; border-radius: 10px; background: var(--White-10); color: var(--Muted---Light); font-family: var(--body-font); appearance: none; opacity: 1; outline: none; transform: var( --b-transition-5);}
 
 
-body .frm_forms .frm_form_fields .frm_form_field textarea, textarea{height: 230px;} 
+body  .with_frm_style textarea, body .frm_forms .frm_form_fields .frm_form_field textarea, textarea{height: 230px;} 
+
 body .frm_style_formidable-style.with_frm_style .form-field input:not([type="file"]):not([type="range"]):not([readonly]):focus, 
 body .frm_forms .frm_form_fields .frm_form_field input:not([type="file"]):focus,
 body .frm_forms .frm_form_fields .frm_form_field input:not([type="checkbox"]):focus, 
 body .frm_forms .frm_form_fields .frm_form_field input:not([type="radio"]):focus,
-body .frm_forms .frm_form_fields .frm_form_field textarea:focus, textarea:focus{  box-shadow: none; color: var(--Muted---Light); opacity: 1;}
+body .frm_forms .frm_form_fields .frm_form_field textarea:focus, input:focus, textarea:focus{ box-shadow: none; color: var(--White); opacity: 1; border-color: var(--White); background: var(--White-20);}
 
 body .frm_forms.with_frm_style .frm_fields_container .frm_radio input[type="radio"]:not([disabled]):checked, 
 body .frm_forms.with_frm_style .frm_fields_container .frm_scale input[type="radio"]:not([disabled]):checked, 
@@ -64,19 +85,7 @@ body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radi
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type='checkbox']{top: 0; left: 0; width: 20px !important; height: 20px !important; min-width: 20px !important; padding: 0; background-color: transparent !important; border: 1px solid var(--Text-Gray); overflow: hidden; position: absolute; cursor: pointer; box-shadow: none;}
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type='checkbox']:focus{box-shadow: none !important;}
 body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type='checkbox']::before{box-shadow: none;}
-body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="checkbox"]:checked:before{
-
-    box-shadow: none;
-    content: "";
-    font-size: 1.5rem;
-    color: var(--Deep-Teal);
-    top: 0px;
-    position: absolute !important;
-    background: var(--Blue);
-    background-size: 11px !important;
-  border-radius: 2px;
-}
-
+body .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="checkbox"]:checked:before{ box-shadow: none; content: ""; font-size: 1.5rem; color: var(--Deep-Teal); top: 0px; position: absolute !important; background: var(--Blue); background-size: 11px !important; border-radius: 2px; }
 
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field{margin: 0;}
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_form_field.vertical_checkbox::after{display: none;}
@@ -170,9 +179,9 @@ body .with_frm_style .frm_loading_form .frm_button_submit:before,
 body .with_frm_style .frm_loading_form .frm_button_submit::after{animation: none !important; border-radius: 0 !important; margin: 0; border: none;}
 
 
-body .contact-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{padding: 8px 20px 8px; gap: 8px; display: flex; justify-content: center;}
+body .contact-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit{ gap: 8px; display: flex; justify-content: center;}
 body .contact-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit::after{content: ""; background-repeat: no-repeat; background-size: contain; display: block; top: 0; position: relative; width: 24px; height: 24px;}
-body .contact-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover::after{ }
+/* body .contact-form .frm_forms .frm_form_fields .frm_submit button.frm_button_submit:hover::after{ } */
 body .frm_style_formidable-style.with_frm_style .frm_error_style{display: none;}
 
 

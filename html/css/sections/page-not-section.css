@@ -1,7 +1,7 @@
 
 
 .page-not-main{padding: 226px 0 0; max-width: 500px;}
-
+.page-not-section:last-child .page-not-main{padding-bottom: 64px;}
 
 
 

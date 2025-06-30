@@ -6,6 +6,8 @@
 .fea-articles-grid-desc{max-width: 538px;}
 .fea-articles-grid-list{padding: 68px 71px 72px;}
 .fea-articles-grid-list .fea-articles-grid-inner{max-width: 400px; }
+.fea-articles-grid-list .fea-articles-grid-inner:nth-child(2):last-child{max-width: 100%;}
+.fea-articles-grid-list .fea-articles-grid-inner:nth-child(2):last-child .fea-articles-grid-desc{max-width: 100%;}
 .fea-articles-grid-list .fea-articles-grid-text{margin-top: auto;}
 .fea-articles-grid-list .fea-articles-grid-date{display: block; font-size: 18px; line-height: 33px; color: var(--White-30); font-weight: 600; margin-bottom: 15px;}
 .fea-articles-grid-desc h2{margin-bottom: 0;}

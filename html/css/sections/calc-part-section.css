@@ -40,6 +40,12 @@ ul.calc-part-inputs li:hover{background-color: var(--Black); color: var(--White)
 
 .calc-part-tot{backdrop-filter: blur(9px);} 
 
+/*-- media css starts here --*/
+@media screen and (max-width: 1299px) and (min-width: 1024px){
+    .calc-part-text{max-width: 700px;}
+    .calc-part-text h2{font-size: 70px; line-height: 80px;}
+    .calc-part-desc{max-width: 410px;}
+}
 @media screen and (max-width: 1099px) and (min-width: 1024px){
    .calc-part-cost{padding: 60px;}
    .calc-part-choose{padding: 60px;}
