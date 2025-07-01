@@ -37,6 +37,10 @@
 @media only screen and (min-width: 768px){
     .featured-articles-post .featured-articles-desc{padding-top: 255px;}
     .featured-articles-post .featured-articles-desc h2{font-size: 40px;line-height: 52px; margin-bottom: 23px;}
+
+
+    .featured-articles-post .featured-articles-image picture img{min-height: 475px; object-fit: contain;}
+    .featured-articles-right .featured-articles-image picture img{min-height: 200px; object-fit: contain;}
 }
 @media only screen and (max-width: 1600px) and (min-width: 1360px){
     .featured-articles-post { padding: 87px 62px 94px; }

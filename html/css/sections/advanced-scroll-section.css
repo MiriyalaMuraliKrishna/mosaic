@@ -12,9 +12,9 @@
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
-    .advanced-scroll-main{gap: 141px; padding: 0 0 160px;}
+    .advanced-scroll-main{gap: 141px 258px; padding: 0 0 160px;}
     .advanced-scroll-head{width: 546px; padding-top: 145px;}
-    .advanced-scroll-lists{width: calc(100% - 687px);}
+    .advanced-scroll-lists{width: calc(100% - 804px);}
     .advanced-scroll-item{min-height: 790px;}
     .advanced-scroll-img{margin-bottom: 58px; margin-left: auto; position: relative; width: 515px; padding-top: 102px; }
     .advanced-scroll-item[scroll-grid="2"] .advanced-scroll-img{width: 392px; padding-top: 67px; margin-bottom: 23px;}
@@ -32,9 +32,9 @@
 @media screen and (max-width: 1299px) and (min-width: 1024px) {
     .advanced-scroll-img{max-width: 350px;}
     .advanced-scroll-item[scroll-grid="1"] .advanced-scroll-img{right: -62px;}
-    .advanced-scroll-main{gap: 50px;}
+    .advanced-scroll-main{gap: 50px 100px;}
     .advanced-scroll-head{width: 400px;}
-    .advanced-scroll-lists{width: calc(100% - 450px);}
+    .advanced-scroll-lists{width: calc(100% - 500px);}
     .advanced-scroll-head h2{font-size: 54px; line-height: 64px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {

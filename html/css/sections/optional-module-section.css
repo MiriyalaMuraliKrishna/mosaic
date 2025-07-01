@@ -12,7 +12,7 @@
 
 
 .optional-module-wrap{padding-bottom: 151px;}
-.optional-module-main{padding: 118px 136px 117px 49px; overflow: hidden;}
+.optional-module-main{padding: 130px 136px 117px 49px; overflow: hidden;}
 .modular-ellipse{width: 1066px; height: 1066px; opacity: 0.2; z-index: -1; background: var(--Purple-Radial-Gradient);}
 .modular-ellipse.left{left: -536px; top: -636px;}
 .modular-ellipse.right{right: -612px; top: 69px;}
@@ -22,6 +22,7 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
+
     .optional-module-main{gap: 72.8px;}
     .optional-module-text{flex: 0 0 435px;}
     .optional-module-image{flex: 1; gap: 6px;}

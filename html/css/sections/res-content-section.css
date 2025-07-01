@@ -56,6 +56,22 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
 
 .res-content-last-line{padding: 102px 0 70px;}
 
+blockquote p{position: relative; overflow: hidden;}
+blockquote p span.quote-line:last-child{
+  position: relative;
+}
+blockquote p span.quote-line:last-child::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  min-width: 1000px;
+  height: 1px;
+  background: var(--White-10);
+  bottom: -1px;
+  position: absolute;
+}
+
+
 @media screen and (max-width: 1099px) and (min-width: 1024px) {
     .content-cta-main{padding: 77px 90px 83px 30px;}
     .res-content-main blockquote{padding: 60px;}
@@ -113,7 +129,8 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
     .quote-avatar-text{font-size: 15px;}
     .quote-avatar-logo{width: 68px; }
     .res-content-last-line{padding: 63px 0 0;}
-    
+    blockquote p span.quote-line{display: inline-block; padding-bottom: 0;}   
+    blockquote p span.quote-line:last-child::after{bottom: -13px;}
 }
 
 @media screen and (max-width: 413px) and (min-width: 200px) {

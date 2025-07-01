@@ -20,12 +20,19 @@
 
 .default-answer span.optional-text{margin-bottom: 19px; color: var(--Sky-Blue);}
 .default-answer h2{margin-bottom: 20px;}
-.default-answer p{margin-bottom: 21px;}
+.default-answer p{margin-bottom: 12px;}
 .default-answer video{max-width: 242px; mix-blend-mode: difference; margin: auto; object-fit: contain;}
 .default-content-aside:nth-child(1):last-child{width: 100%;}
 
+.default-content-article:nth-child(1):last-child{width: 100%;}
+
+/*-- media css starts here --*/
+@media screen and (min-width: 768px) {
+    .default-content-article .accordion-main{padding-bottom: 30px;}
+    .default-content-article .accordion-main:nth-last-child(4){padding-bottom: 72px;}
+}
 @media screen and (min-width: 1024px) {
-    .default-content-wrap{padding: 120px 0 0 114px;}
+    .default-content-wrap{padding: 120px 0 0 54px;}
     .default-content-head{margin-bottom: 80px;}
     .default-content-main{gap: 80px;}
     .default-content-article{width: calc(100% - 400px);}
