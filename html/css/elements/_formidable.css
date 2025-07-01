@@ -104,7 +104,7 @@ body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_submit{margin: 0;}
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_submit::before{display: none;}
 body .frm_forms .frm_form_fields .frm_form_field_wrapper .frm_submit button.frm_button_submit{width: 100%;}
 body .frm_forms .frm_form_fields .frm_form_field input.frm_custom_date, body .frm_forms .frm_form_fields .frm_form_field.date_icon input{background-size: 14px 14px;}
-body .frm_forms form .frm_required_field div.frm_error, div.frm_error{right: 0; bottom: -17px; font-size: 0.75rem; line-height: 0.875rem; color: var(--Red); font-weight: 300; position: absolute; text-align: right;}
+body .frm_forms form .frm_required_field div.frm_error, div.frm_error{right: 0; bottom: -17px; font-size: 0.75rem; line-height: 0.875rem; letter-spacing: 0; color: var(--Red); font-weight: 400; position: absolute; text-align: right;}
 body .frm_success_style, body .with_frm_style .frm_message{font-weight: 700; font-size: 1.125rem; line-height: 1.625rem; letter-spacing: normal; font-weight: 400; font-family: var(--body-font); color: var(--Black); background: none; padding: 0; text-align: left; border: none; border-radius: 0;}
 body .with_frm_style .frm_message p{ font-weight: 500; color: var(--Muted---Light); font-size: 18px; line-height: 24px; }
 

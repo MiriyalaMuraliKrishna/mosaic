@@ -5,19 +5,26 @@
 .download-image img{object-fit: contain;}
 .download-text{color: var(--Muted---Light); font-size: 16.5px; font-weight: 400; line-height: 26px; letter-spacing: -0.495px; }
 .download-text h2{margin-bottom: 0;}
-form.download-form{gap: 10px; padding-top: 6px;}
-form.download-form input{flex: 1; border-radius: 90px; border: 1px solid var(--Line---Light); background-color: transparent; }
-form.download-form input:focus{border-color: var(--White-20);}
+.download-form{gap: 10px; padding-top: 6px;}
 .download-ellipse{ top: 50%; transform: translateY(-50%); right: -21px; width: 695px; height: 695px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); }
 
 .download-text:nth-child(1):last-child{flex: 0 0 100%; max-width: 100%;}
 
+body .download-form  .frm_style_formidable-style.with_frm_style{width: 100%;}
+body .download-form .frm_forms .frm_form_fields .frm_fields_container{gap: 10px;}
+body .download-form  .frm_forms .frm_form_fields .frm_form_field .frm_primary_label{display: none;}
+body .download-form .frm_style_formidable-style.with_frm_style .frm_form_field input[type="email"]{flex: 1; padding: 12px 28px 13px; border-radius: 90px; border: 1px solid var(--Line---Light); background-color: transparent; font-family: var(--body-font); font-size: 18px; font-weight: 400; letter-spacing: -.54px; line-height: 28px; }
+body .download-form .frm_style_formidable-style.with_frm_style .frm_form_field input[type="email"]:focus,
+ body .download-form .frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input:not([type="checkbox"]):focus{border-color: var(--Line---Light); background-color: transparent;}
+body .download-form .frm_forms .frm_form_fields .frm_form_field.frm_half{width: fit-content; flex: 1;}
+body .download-form .frm_style_formidable-style.with_frm_style .frm_submit button{ text-transform: uppercase;}
+body .with_frm_style input::placeholder, body .with_frm_style textarea::placeholder{ font-family: var(--body-font); font-size: 18px; font-weight: 400; letter-spacing: -.54px; line-height: 28px; }
 
 /* media css starts here */
 @media screen and (min-width: 1024px){
     .download-wrap{padding: 109px 0 162px;}
     .download-image{width: 561px; height: 462px;}
-    form.download-form button{width: fit-content;}
+    .download-form button{width: fit-content;}
 }
 @media screen and (min-width: 1400px){
     .download-text{max-width: 780px; padding: 88px 114px 90px; }
@@ -47,7 +54,7 @@ form.download-form input:focus{border-color: var(--White-20);}
     .download-text{ font-size: 15.5px; font-weight: 400; line-height: 24px; letter-spacing: -0.465px; }
     .download-text h2{max-width: 185px; margin-bottom: 11px;}
     .download-text p{padding-right: 82px;}
-    form.download-form{flex-direction: column;}
-    form.download-form button{width: 100%;}
+    .download-form{flex-direction: column;}
+    .download-form button{width: 100%;}
     .download-ellipse{ width: 481px; height: 481px; }
 }

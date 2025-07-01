@@ -12,6 +12,9 @@
 .optional-repeater-text:nth-child(1):last-child{flex: 0 0 100%;}
 
 /* media css starts here */
+@media only screen and (min-width: 768px){
+    .optional-repeater-text p{margin-bottom: 30px;}
+}
 @media only screen and (min-width: 1400px){
     .optional-repeater-main{gap: 138px; flex-wrap: nowrap;}
     .optional-repeater-text{flex: 0 0 658px;}

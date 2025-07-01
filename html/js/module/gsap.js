@@ -34,8 +34,8 @@ export const Gsap = {
       ele.tl = tl;
     });
 
-    gsap.to('.site-main-cover', {
-      y: 30,
+    gsap.to('.unlock-cta-section', {
+      y: -50,
       scrollTrigger: {
         trigger: '.site-footer',
         start: 'top bottom',

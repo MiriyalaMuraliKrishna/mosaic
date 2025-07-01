@@ -16,7 +16,6 @@ export class UIAccordion {
       const line = el.querySelector('.accordion-line.is-second');
 
       if (!header || !content) return;
-
       header.addEventListener('click', () => {
         const isOpen = el.dataset.open === 'true';
 
