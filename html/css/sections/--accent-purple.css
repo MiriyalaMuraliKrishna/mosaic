@@ -1,6 +1,12 @@
-.accent-purple .button:not(.featured-articles-desc .button, .btn-reverse){border-color: var(--Purple); color: var(--White);}
-.accent-purple .button:not(.featured-articles-desc .button, .btn-reverse) svg path{fill: var(--White);}
-.accent-purple .button:not(.featured-articles-desc .button, .btn-reverse):hover{background-color: var(--Purple);}
+
+
+
+.accent-purple .download-form .frm_style_formidable-style.with_frm_style .frm_submit button,
+.accent-purple .button:not(.btn-reverse){border-color: var(--Purple); color: var(--White);}
+.accent-purple .download-form .frm_style_formidable-style.with_frm_style .frm_submit button svg path,
+.accent-purple .button:not(.btn-reverse) svg path{fill: var(--White);}
+.accent-purple .download-form .frm_style_formidable-style.with_frm_style .frm_submit button:hover,
+.accent-purple .button:not(.btn-reverse):hover{background-color: var(--Purple);}
 .accent-purple h2 span, .accent-purple h2.green span{color: var(--Purple);}
 .accent-purple a.text-link, .accent-purple span.text-link{color: var(--Purple);}
 .accent-purple a.text-link svg path{fill: var(--Purple);}
@@ -9,3 +15,21 @@
 .accent-purple button svg circle, 
 .accent-purple button svg circle{fill: var(--Purple);}
 .accent-purple .accordion-line{background-color: var(--Purple);}
+.accent-purple .inverted h2 a:hover{color: var(--Purple);}
+.accent-purple button.slick-arrow:hover svg path{fill: var(--White);}
+.accent-purple .download-ellipse{background: radial-gradient(50% 50% at 50% 50%,var(--Purple) 0,rgba(26,209,177,0) 100%);}
+.accent-purple .products-slider-ellipse{background: radial-gradient(50% 50% at 50% 50%, var(--Purple) 0%, rgba(26, 209, 177, 0.00) 100%);}
+.accent-purple .featured-articles-ellipse{background: radial-gradient(50% 50% at 50% 50%, var(--Purple) 0%, rgba(26, 209, 177, 0.00) 100%);;}
+.accent-purple .everything-answer-ellipse { background: radial-gradient(50% 50% at 50% 50%,var(--Purple) 0,rgba(26,209,177,0) 100%); }
+.accent-purple .blg-resource-link{color: var(--Purple);}
+.accent-purple .blg-resource-link:hover{color: var(--Purple);}
+.accent-purple .blg-resource-link svg path{fill: var(--Purple);}
+
+
+
+
+
+
+
+
+
