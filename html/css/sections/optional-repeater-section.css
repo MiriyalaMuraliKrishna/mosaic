@@ -39,9 +39,11 @@
     .optional-repeater-main{padding: 90px 0; gap: 90px;}
     .optional-repeater-text{font-size: 18px; line-height: 28px; letter-spacing: -0.54px; padding: 0 20px;}
     .optional-repeater-text h2{margin-bottom: 20px; letter-spacing: -1.26px; }
+    .optional-repeater-image{width: calc(100% - 16px);}
     .optional-repeater-image img{border-radius: 0;}
     .reverse .optional-repeater-main{flex-direction: column-reverse;}
     .reverse .optional-repeater-image img{border-radius: 0;}
+    .reverse .optional-repeater-image{margin-left: -16px;}
 }
 
 @media only screen and (max-width: 374px) and (min-width: 200px){

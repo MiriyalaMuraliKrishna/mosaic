@@ -31,7 +31,12 @@ ul.sticky-feature-links > li > a.open, ul.sticky-feature-links > li > a:hover{co
     .sticky-feature-video{min-width: 100%;}
     .sticky-feature-text{max-width: 100%; padding: 70px 0 62px; font-size: 19px; line-height: 27px; letter-spacing: -0.57px;}
     .sticky-feature-text h2{margin-bottom: 25px; padding-top: 25px; }
-    .sticky-feature-video img{min-height: 366px; max-height: 366px; overflow: hidden;}
+    .sticky-feature-video img{opacity: 0.5; 
+        max-width: 284px;
+        margin-left: auto;
+        display: block;
+        /* min-height: 272px; max-height: 272px; overflow: hidden; */
+    }
 }
 
 
