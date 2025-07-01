@@ -1,0 +1,11 @@
+.accent-purple .button:not(.featured-articles-desc .button, .btn-reverse){border-color: var(--Purple); color: var(--White);}
+.accent-purple .button:not(.featured-articles-desc .button, .btn-reverse) svg path{fill: var(--White);}
+.accent-purple .button:not(.featured-articles-desc .button, .btn-reverse):hover{background-color: var(--Purple);}
+.accent-purple h2 span, .accent-purple h2.green span{color: var(--Purple);}
+.accent-purple a.text-link, .accent-purple span.text-link{color: var(--Purple);}
+.accent-purple a.text-link svg path{fill: var(--Purple);}
+.accent-purple .swiper-button-next svg circle, 
+.accent-purple .swiper-button-prev svg circle{fill: var(--Purple);}
+.accent-purple button svg circle, 
+.accent-purple button svg circle{fill: var(--Purple);}
+.accent-purple .accordion-line{background-color: var(--Purple);}

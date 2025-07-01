@@ -17,7 +17,7 @@ body .download-form .frm_style_formidable-style.with_frm_style .frm_form_field i
 body .download-form .frm_style_formidable-style.with_frm_style .frm_form_field input[type="email"]:focus,
  body .download-form .frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input:not([type="checkbox"]):focus{border-color: var(--Line---Light); background-color: transparent;}
 body .download-form .frm_forms .frm_form_fields .frm_form_field.frm_half{width: fit-content; flex: 1;}
-body .download-form .frm_style_formidable-style.with_frm_style .frm_submit button{ text-transform: uppercase;}
+body .download-form .frm_style_formidable-style.with_frm_style .frm_submit button{ text-transform: uppercase; text-align: center; justify-content: center;}
 body .with_frm_style input::placeholder, body .with_frm_style textarea::placeholder{ font-family: var(--body-font); font-size: 18px; font-weight: 400; letter-spacing: -.54px; line-height: 28px; }
 
 /* media css starts here */
@@ -57,4 +57,5 @@ body .with_frm_style input::placeholder, body .with_frm_style textarea::placehol
     .download-form{flex-direction: column;}
     .download-form button{width: 100%;}
     .download-ellipse{ width: 481px; height: 481px; }
+    body .download-form .frm_forms .frm_form_fields .frm_form_field.frm_half{width: 100%;}
 }

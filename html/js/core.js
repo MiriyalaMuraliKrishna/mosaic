@@ -30,6 +30,7 @@ import { automated } from './module/automated';
 import { lifeatslider } from './module/lifeatslider';
 import { sidebar } from './module/sidebarsticky';
 import { software } from './module/product-software';
+import { useintro } from './module/useIntro';
 
 document.addEventListener('DOMContentLoaded', function () {
   mylenis.init();
@@ -63,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
   lifeatslider.init();
   sidebar.init();
   software.init();
+  // useintro.init();
 });
 
 let scrolled = window.scrollY;
