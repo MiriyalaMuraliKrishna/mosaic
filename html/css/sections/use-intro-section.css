@@ -11,9 +11,9 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1440px){
-    .use-intro-main{gap: 77px;}
-    .use-intro-image{flex: 0 0 677px;}
-    .use-intro-text{flex: 0 0 487px; padding-top: 270px;}
+    .use-intro-main{gap: 0 77px;}
+    .use-intro-image{width: 677px;}
+    .use-intro-text{width: 487px; padding-top: 270px;}
 }
 @media only screen and (min-width: 1024px){
     .use-intro-wrap{padding: 140px 0 113px;}

@@ -42,6 +42,9 @@ body .frm_forms .frm_form_fields .frm_form_field .frm_primary_label:empty{displa
 body .frm_forms .frm_form_fields .frm_form_field .frm_primary_label span:not(.frm_required){margin-left: auto; float: right; font-weight: 500; font-family: var(--body-font); color: var(--Gray); font-size: 0.875rem; line-height: 100%; bottom: -4px; position: relative;}
 
 
+body .frm_forms .frm_form_fields .frm_form_field .frm_primary_label.hide-label,
+body .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_primary_label.hide-label{display: none;}
+
 
 body .with_frm_style input[type="text"], 
 body .with_frm_style input[type="password"], 

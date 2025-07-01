@@ -30,6 +30,7 @@ import { automated } from './module/automated';
 import { lifeatslider } from './module/lifeatslider';
 import { sidebar } from './module/sidebarsticky';
 import { software } from './module/product-software';
+import { usesticky } from './module/useIntroSticky';
 
 document.addEventListener('DOMContentLoaded', function () {
   mylenis.init();
@@ -42,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
   HeaderScroll.init();
   Stripe.init();
   Browse.init();
-  sticky.init();
   Blockquote.init();
   Video.init();
   jslineanimation.init();
@@ -70,4 +70,9 @@ window.addEventListener('scroll', function () {
   scrolled = window.scrollY;
   Scroll.handle(scrolled);
   Animation.handle(scrolled, Scroll.direction);
+});
+
+window.addEventListener('load', function () {
+  sticky.init();
+  usesticky.init();
 });

@@ -18,23 +18,28 @@
 
 .frm_opt_container{padding-bottom: 80px;}
 
-.contact-form .vertical_radio{flex: 1;}
-.contact-form .vertical_radio .frm_opt_container{width: 100%; gap: 9px; display: flex; flex-wrap: wrap;}
+body .contact-form .vertical_radio{flex: 1;}
+body .contact-form .vertical_radio .frm_opt_container{width: 100%; gap: 9px; display: flex; flex-wrap: wrap;}
 
-body .with_frm_style .vertical_radio .frm_radio label, .contact-form .vertical_radio .frm_radio label{font-size: 17px; line-height: 28px; font-weight: 500; padding: 18px 27px; position: relative; letter-spacing: -0.51px; overflow: hidden; cursor: pointer; transition: var(--b-transition-10); color: var(--White);}  
-body .with_frm_style .vertical_radio .frm_radio label input, .contact-form .vertical_radio .frm_radio label input{top: 0; left: 0; width: 100% !important; height: 100% !important; margin: 0; border-radius: 90px; border: 1px solid var(--Line---Light); background-color: transparent;  position: absolute; z-index: -1; transition: var(--b-transition-10);}
-body .with_frm_style .vertical_radio .frm_radio label input:checked:before{display: none;}
-body .with_frm_style .vertical_radio .frm_radio label input:hover, body .with_frm_style .vertical_radio .frm_radio label input:checked,
-.contact-form .vertical_radio .frm_radio label input:hover, .contact-form .vertical_radio .frm_radio label input:checked{background-color: var(--White); border-color: var(--White); color: var(--Black);}
-body .with_frm_style .vertical_radio .frm_radio label:hover, .contact-form .vertical_radio .frm_radio label:hover, .contact-form .vertical_radio .frm_radio label:has(input[type="radio"]:checked), .contact-form .vertical_radio .frm_radio label:has(input[type="radio"]:checked){color: var(--Black);}
+body .contact-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_radio label,
+body .contact-form .with_frm_style .vertical_radio .frm_radio label, body .contact-form .vertical_radio .frm_radio label{font-size: 17px; line-height: 28px; font-weight: 500; padding: 18px 27px; position: relative; letter-spacing: -0.51px; overflow: hidden; cursor: pointer; transition: var(--b-transition-10); color: var(--White);}  
+
+body .contact-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio input[type="radio"],
+body .contact-form .with_frm_style .vertical_radio .frm_radio label input, 
+body .contact-form .frm_forms .frm_form_fields .frm_form_field.vertical_radio .frm_checkbox input[type="checkbox"],
+body .contact-form .vertical_radio .frm_radio label input{top: 0; left: 0; width: 100% !important; height: 100% !important; margin: 0; border-radius: 90px; border: 1px solid var(--Line---Light); background-color: transparent;  position: absolute; z-index: -1; transition: var(--b-transition-10);}
+body .contact-form .with_frm_style .vertical_radio .frm_radio label input:checked:before{display: none;}
+body .contact-form .with_frm_style .vertical_radio .frm_radio label input:hover, body .with_frm_style .vertical_radio .frm_radio label input:checked,
+body .contact-form .vertical_radio .frm_radio label input:hover, body .contact-form .vertical_radio .frm_radio label input:checked{background-color: var(--White); border-color: var(--White); color: var(--Black);}
+body .contact-form .with_frm_style .vertical_radio .frm_radio label:hover, body .contact-form .vertical_radio .frm_radio label:hover, body .contact-form .vertical_radio .frm_radio label:has(input[type="radio"]:checked), body .contact-form .vertical_radio .frm_radio label:has(input[type="radio"]:checked){color: var(--Black);}
 
 
 
-.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label{font-size: 17px; line-height: 28px; font-weight: 500; padding: 18px 27px; position: relative; letter-spacing: -0.51px; overflow: hidden; cursor: pointer; transition: var(--b-transition-10); color: var(--White);} 
-.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input{top: 0; left: 0; width: 100% !important; height: 100% !important; margin: 0;  background-color: transparent;  position: absolute; z-index: -1; border: 1px solid var(--Line---Light); border-radius: 90px !important; transition: var(--b-transition-10);}
-.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:hover input, .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input:checked{background-color: var(--White); color: var(--Black);}
-.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input:checked::before{display: none;}
-.contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:hover, .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:has(input[type="checkbox"]:checked){color: var(--Black);}
+body .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label{font-size: 17px; line-height: 28px; font-weight: 500; padding: 18px 27px; position: relative; letter-spacing: -0.51px; overflow: hidden; cursor: pointer; transition: var(--b-transition-10); color: var(--White);} 
+body .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input{top: 0; left: 0; width: 100% !important; height: 100% !important; margin: 0;  background-color: transparent;  position: absolute; z-index: -1; border: 1px solid var(--Line---Light); border-radius: 90px !important; transition: var(--b-transition-10);}
+body .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:hover input, body .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input:checked{background-color: var(--White); color: var(--Black);}
+body .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label input:checked::before{display: none;}
+body .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:hover, body .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label:has(input[type="checkbox"]:checked){color: var(--Black);}
 
 .contact-address:nth-child(1):last-child{flex: 0 0 100%;}
 
@@ -61,8 +66,8 @@ body .with_frm_style .vertical_radio .frm_radio label:hover, .contact-form .vert
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .frm_field_container{flex-direction: column; padding-bottom: 60px;}
     .frm_opt_container{padding-bottom: 60px;}
-    .contact-form .vertical_radio .frm_radio label,
-    .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label{padding: 18px; font-size: 15px; line-height: 19px; letter-spacing: -0.45px;}
+    body .contact-form .vertical_radio .frm_radio label,
+    body .contact-form .frm_field:not(.frm_field_wrapper) .vertical_radio .frm_checkbox label{padding: 18px; font-size: 15px; line-height: 19px; letter-spacing: -0.45px;}
 }
 
 
