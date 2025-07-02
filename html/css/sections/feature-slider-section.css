@@ -9,7 +9,7 @@
 .feature-item-slide.swiper-slide-active, .feature-item-slide.swiper-slide-next{opacity: 1;}
 
 /*-- media css starts here --*/
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1600px){
     .feature-item-slider .swiper-button{top: -80px;}
     .feature-item-slider .swiper-button.swiper-button-prev{left: -90px;}
     .feature-item-slider .swiper-button.swiper-button-next{right: 25px;}   
@@ -20,7 +20,7 @@
     .feature-item{ gap: 50px;}
     .feature-item-pagination .swiper-pagination{display: none;}   
 }
-@media screen and (max-width: 1439px) and (min-width: 1024px) {
+@media screen and (max-width: 1599px) and (min-width: 1024px) {
     .feature-item-slider .swiper-button{top: -55px;}
     .feature-item-slider .swiper-button.swiper-button-prev{left: -30px;}
     .feature-item-slider .swiper-button.swiper-button-next{right: -30px;}   

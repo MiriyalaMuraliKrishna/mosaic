@@ -8,7 +8,7 @@ ul.footer-links li:last-child a span.stripe-line{display: none;}
 
 .copyrights-main{gap: 20px;}
 ul.copyrights-menu{gap:10px 20px;}
-ul.copyrights-menu li a{color: var(--Muted---Light);}
+ul.copyrights-menu li a{color: var(--Muted---Light); letter-spacing: 0;}
 ul.copyrights-menu li a:hover{color: var(--Green);}
 
 ul.social-icons {gap: 16px 24px; padding-top: 11px;}
@@ -21,10 +21,17 @@ ul.social-icons li a:hover i{animation: iconflip 0.75s ease-in-out forwards;}
 ul.foter-nav-links{margin: 0;}
 ul.foter-nav-links > li{margin: 0;}
 ul.foter-nav-links > li > a{gap: 7px; color: var(--Green); font-size: 14px; font-weight: 600; line-height: 22px; text-transform: capitalize; display: flex; flex-direction: column;}
+ul.foter-nav-links > li > ul{margin: 0; display: flex; flex-wrap: wrap;}
+ul.foter-nav-links > li > ul > li{margin: 0;}
+ul.foter-nav-links > li > ul > li::before{display: none;}
 ul.foter-nav-links > li > ul > li > a{color: var(--White); font-size: 16px; line-height: 22px; display: block;}
 
-
 a.no_link{pointer-events: none;}
+
+ul.foter-nav-links > li > a{padding-top: 8px; gap: 0; border-top: 1px solid var(--Green);}
+ul.foter-nav-links > li > a span.stripe-line{display: none;}
+ul.foter-nav-links > li > a svg{display: none;}
+
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1440px){
@@ -42,8 +49,8 @@ a.no_link{pointer-events: none;}
     .footer{gap: 80px; padding: 80px 0 160px; align-items: flex-start;}
     .footer-lt{flex: 0 0 378px;}
     .footer-logo{margin-bottom: 48px; padding-top: 1px;}
-    .footer-rt{flex: 1; gap: 79px 0;}
-    .footer-list{flex: 0 0 100%;}
+    .footer-rt{flex: 1; align-items: flex-start; gap: 79px 0;}
+    .footer-list{flex: 0 0 100%; width: 100%;}
     ul.foter-nav-links{gap: 79px 60px;}
     ul.foter-nav-links > li{flex: 1;}
     .footer-list:first-child ul.foter-nav-links > li{flex: 1;}
@@ -57,8 +64,6 @@ a.no_link{pointer-events: none;}
     ul.foter-nav-links > li > ul > li{margin-bottom: 0;}
 }
 @media only screen and (min-width: 768px){
-    ul.foter-nav-links > li > a svg{display: none;}
-
 }
 @media only screen and (max-width: 1439px) and (min-width: 1024px){
     .footer{gap: 40px;}
@@ -99,10 +104,15 @@ a.no_link{pointer-events: none;}
     ul.footer-links li a{padding-top: 16px; gap: 15px;}
     .footer-rt{flex-direction: column; padding-bottom: 40px;}
     ul.foter-nav-links{flex-direction: column;}
-    ul.foter-nav-links > li > a{gap: 19px 0; padding-bottom: 20px; position: relative;}
+    ul.foter-nav-links > li > a{gap: 19px 0; padding: 18px 0 20px; position: relative;}
     ul.foter-nav-links > li > a svg{top: 50%; transform: translateY(-50%); right: 0; position: absolute; transition: var(--b-transition);}
     ul.foter-nav-links > li > a.open svg{transform: translateY(-50%) rotate(-90deg);}
+
+    ul.foter-nav-links > li > a::after{width: 11px; height: 11px; right: 0; top: 50%; transform: translateY(-50%); position: absolute; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11' fill='none'%3E%3Cpath d='M10.8105 1.06055H9.31055V8.25L1.06055 0L0 1.06055L8.25 9.31055H0.560547V10.8105H10.8105V1.06055Z' fill='%231AD1B1'%3E%3C/path%3E%3C/svg%3E"); content: ""; display: block;}
+    ul.foter-nav-links > li > a.open::after{transform: translateY(-50%) rotate(-90deg);}
+
     ul.foter-nav-links > li > ul{display: none; padding-bottom: 18px;}
+    ul.foter-nav-links > li > ul > li:not(:last-child){margin-bottom: 10px;}
     .footer-list:nth-child(2) ul.foter-nav-links > li:last-child{border-bottom: 1px solid var(--Green);}
     
 }

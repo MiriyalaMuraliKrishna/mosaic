@@ -3,7 +3,7 @@
 
 
 
-.contact-banner-ellipse{ top: -762px; left: -102px; width: 1973px; height: 1973px; flex-shrink: 0; border-radius: 1973px; opacity: 0.25; background: var(--Green-Radial-Gradient); z-index: -1; }
+.contact-banner-ellipse{ top: -762px; left: -102px; width: 1973px; height: 1973px; border-radius: 1973px; opacity: 0.25; background: var(--Green-Radial-Gradient); z-index: -1; }
 .contact-banner-text span.optional-text{padding-bottom: 10px;}
 
 
@@ -15,7 +15,7 @@
     .contact-banner-text{max-width: 896px;}
 }
 @media only screen and (min-width: 1024px){
-    .contact-banner-main{padding: 306px 0 124px;}
+    .contact-banner-main{padding: 248px 0 124px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .contact-banner-main{padding: 153px 0 62px;}
@@ -23,6 +23,7 @@
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .contact-banner-main{padding: 123px 0 79px;}
     .contact-banner-text span.optional-text{font-size: 12px; line-height: 18px; letter-spacing: 3px;}
+    .contact-banner-ellipse{width: 1062px; height: 1062px; top: -418px; right: -496px; }
 }
 @media only screen and (max-width: 414px) and (min-width: 200px){
     .contact-banner-text h1 {max-width: 250px;}

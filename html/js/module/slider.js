@@ -210,6 +210,7 @@ export const slider = {
     if (!this.featureitemsEle) return;
     new Swiper(this.featureitemsEle, {
       slidesPerView: 1,
+      loop: true,
       speed: 800,
       spaceBetween: 30,
       autoHeight: true,

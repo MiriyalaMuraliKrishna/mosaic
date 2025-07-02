@@ -45,6 +45,7 @@
 /* media css starts here */
 @media only screen and (min-width: 1024px){
     .trust-by-main{max-width: 870px;}
+    .trust-by-main.no_right_side{max-width: 100%;}
     .home-endless-pos{position: absolute; max-width: 320px; min-width: 320px; top: auto; right: 0; bottom: 8px; z-index: 1; }
     .home-endless-main{padding: 0px 37px 148px 47px; }
 }

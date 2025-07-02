@@ -24,10 +24,11 @@
 .accent-purple .blg-resource-link{color: var(--Purple);}
 .accent-purple .blg-resource-link:hover{color: var(--Purple);}
 .accent-purple .blg-resource-link svg path{fill: var(--Purple);}
+.accent-purple .slick-progress span{background-color: var(--Purple);}
+.accent-purple .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background-color: var(--Purple);}
 
-
-
-
+.accent-purple .play-btn-main{background-color: var(--Purple);}
+.accent-purple .line-green{background-color: var(--Purple);}
 
 
 

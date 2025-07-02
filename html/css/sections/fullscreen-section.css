@@ -28,6 +28,7 @@
     .fullscreen-head h2{font-size: 62px; line-height: 68px; }
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
+    .fullscreen-section{min-height: 625px;}
     .fullscreen-main{padding: 122px 0 17px;}
     .fullscreen-bg{left: 0; width: 100%; min-height: 625px; border-radius: 0;}
     .fullscreen-bg video{min-height: 625px;}
