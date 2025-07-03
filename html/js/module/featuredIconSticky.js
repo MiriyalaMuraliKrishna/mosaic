@@ -17,12 +17,12 @@ export const featuredIcon = {
       if (!ele) return;
       const link = ele.querySelector('a');
       if (link) link.classList.add('open');
-      if (ele) {
-        new Sticksy(ele, {
-          topSpacing: headerHeight,
-          listen: true,
-        });
-      }
+      // if (ele) { // same ele we have careerstickyfeature.js
+      //   new Sticksy(ele, {
+      //     topSpacing: headerHeight,
+      //     listen: true,
+      //   });
+      // }
     });
   },
   observeIconSections() {
