@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 1023px) and (min-width:768px) {
     .open-postion-wrap{padding: 90px 0;}
-    .open-postion-main{padding: 60px 20px;}
+    .open-postion-main{padding: 60px 40px;}
     .open-postion-image{flex: 0 0 100%; transform: none; position: relative;}
 }
 

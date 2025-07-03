@@ -55,7 +55,7 @@ body .with_frm_style input::placeholder, body .with_frm_style textarea::placehol
     .download-text h2{max-width: 185px; margin-bottom: 11px;}
     .download-text p{padding-right: 82px;}
     .download-form{flex-direction: column;}
-    .download-form button{width: 100%;}
+    .download-form button{width: 100%; justify-content: center;}
     .download-ellipse{ width: 481px; height: 481px; }
     body .download-form .frm_forms .frm_form_fields .frm_form_field.frm_half{width: 100%;}
 }

@@ -2,11 +2,11 @@
 
 
 .accent-purple .download-form .frm_style_formidable-style.with_frm_style .frm_submit button,
-.accent-purple .button:not(.btn-reverse){border-color: var(--Purple); color: var(--White);}
+.accent-purple .button:not(.btn-reverse), .accent-purple .download-form button{border-color: var(--Purple); color: var(--White);}
 .accent-purple .download-form .frm_style_formidable-style.with_frm_style .frm_submit button svg path,
-.accent-purple .button:not(.btn-reverse) svg path{fill: var(--White);}
+.accent-purple .button:not(.btn-reverse) svg path, .accent-purple .download-form button svg path{fill: var(--White);}
 .accent-purple .download-form .frm_style_formidable-style.with_frm_style .frm_submit button:hover,
-.accent-purple .button:not(.btn-reverse):hover{background-color: var(--Purple);}
+.accent-purple .button:not(.btn-reverse):hover, .accent-purple .download-form button:hover{background-color: var(--Purple);}
 .accent-purple h2 span, .accent-purple h2.green span{color: var(--Purple);}
 .accent-purple a.text-link, .accent-purple span.text-link{color: var(--Purple);}
 .accent-purple a.text-link svg path{fill: var(--Purple);}
@@ -29,7 +29,7 @@
 
 .accent-purple .play-btn-main{background-color: var(--Purple);}
 .accent-purple .line-green{background-color: var(--Purple);}
-
+.accent-purple .download-form button{}
 
 
 

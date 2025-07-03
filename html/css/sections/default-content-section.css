@@ -54,6 +54,8 @@
     .default-content-head .h1{margin-bottom: 30px; font-size: 64px; line-height: 70px;}
     .default-content-article blockquote{margin: 70px 0; padding: 60px 40px;}
     .default-content-aside{width: 100%;}
+    .default-answer{text-align: center;}
+
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .default-category-content{margin-bottom: 60px;}

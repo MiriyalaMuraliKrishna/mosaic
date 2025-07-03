@@ -20,18 +20,16 @@ ul.social-icons li a:hover i{animation: iconflip 0.75s ease-in-out forwards;}
 
 ul.foter-nav-links{margin: 0;}
 ul.foter-nav-links > li{margin: 0;}
-ul.foter-nav-links > li > a{gap: 7px; color: var(--Green); font-size: 14px; font-weight: 600; line-height: 22px; text-transform: capitalize; display: flex; flex-direction: column;}
+ul.foter-nav-links > li > a{padding-top: 8px; gap: 0; border-top: 1px solid var(--Green); color: var(--Green); font-size: 14px; font-weight: 600; line-height: 22px; text-transform: capitalize; display: flex; flex-direction: column;}
+ul.foter-nav-links > li > a span.stripe-line{display: none;}
+ul.foter-nav-links > li > a svg{display: none;}
+ul.foter-nav-links > li > a:hover{color: var(--White);}
 ul.foter-nav-links > li > ul{margin: 0; display: flex; flex-wrap: wrap;}
 ul.foter-nav-links > li > ul > li{margin: 0;}
 ul.foter-nav-links > li > ul > li::before{display: none;}
 ul.foter-nav-links > li > ul > li > a{color: var(--White); font-size: 16px; line-height: 22px; display: block;}
 
 a.no_link{pointer-events: none;}
-
-ul.foter-nav-links > li > a{padding-top: 8px; gap: 0; border-top: 1px solid var(--Green);}
-ul.foter-nav-links > li > a span.stripe-line{display: none;}
-ul.foter-nav-links > li > a svg{display: none;}
-
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1440px){

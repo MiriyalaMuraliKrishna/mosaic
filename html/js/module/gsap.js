@@ -34,13 +34,38 @@ export const Gsap = {
       ele.tl = tl;
     });
 
-    gsap.to('.unlock-cta-section', {
-      y: -50,
-      scrollTrigger: {
-        trigger: '.site-footer',
-        start: 'top bottom',
-        end: 'bottom bottom',
-        scrub: true,
+    // gsap.to('.unlock-cta-section', {
+    //   y: -50,
+    //   scrollTrigger: {
+    //     trigger: '.site-footer',
+    //     start: 'top bottom',
+    //     end: 'bottom bottom',
+    //     scrub: true,
+    //   },
+    // });
+    ScrollTrigger.matchMedia({
+      // Desktop
+      '(min-width: 768px)': function () {
+        gsap.to('.unlock-cta-section', {
+          y: -50,
+          scrollTrigger: {
+            trigger: '.site-footer',
+            start: 'top bottom',
+            end: 'bottom bottom',
+            scrub: true,
+          },
+        });
+      },
+      '(max-width: 767px)': function () {
+        gsap.to('.unlock-cta-section', {
+          y: -20,
+          scrollTrigger: {
+            trigger: '.site-footer',
+            start: 'top bottom',
+            end: 'bottom bottom',
+            scrub: true,
+          },
+        });
       },
     });
   },

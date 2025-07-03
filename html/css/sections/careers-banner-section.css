@@ -13,7 +13,7 @@
     .careers-banner-text h1 br{display: none;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .careers-banner-main{padding: 312px 0 32px;}
+    .careers-banner-main{padding: 312px 16px 32px 0;}
     .careers-banner-bg img{opacity: 0.4;}
     .careers-banner-overlay{opacity: 0;}
     .careers-banner-btns{padding-top: 2px;}

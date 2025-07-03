@@ -17,10 +17,12 @@
 /* media css starts here */
 @media screen and (min-width: 1024px){
     .everything-wrap{padding: 133px 0 141px;}
-    .everything-main{gap: 0 288px;}
     .everything-left{flex: 1;}
     .everything-right{flex: 0 0 317px;}
     .everything-main .accordion-main{gap: 53px 0;}
+}
+@media screen and (max-width: 1299px) and (min-width: 1024px){
+    .everything-main{gap: 0 144px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .everything-wrap{padding: 133px 0 141px;}

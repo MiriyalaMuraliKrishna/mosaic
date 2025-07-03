@@ -3,7 +3,7 @@
 .featured-articles-main{padding: 26px 0 0;}
 .featured-articles-head{padding-bottom: 71px; align-items: center;}
 .featured-articles-title{flex: 1;}
-.featured-articles-title h2{font-size: 32px; line-height: 38px; letter-spacing: -0.96px;}
+.featured-articles-title h2{font-size: 32px; line-height: 38px; letter-spacing: -0.48px;} /*-- letterspace /2 --*/
 .featured-articles-link{width: fit-content;}
 
 .featured-articles-post{padding: 87px 82px 94px;}
@@ -15,6 +15,8 @@
 
 .featured-articles-ellipse{background: var(--Green-Radial-Gradient); border-radius: 757px; flex-shrink: 0; height: 757px; opacity: .1; right: -163px; top: -181px; width: 757px;}
 .featured-articles-post .featured-articles-ellipse{right: -103px; top: -181px;}
+.featured-articles-image.background-bg{max-width: 100%; top: 0; left: 0; right: 0; }
+.featured-articles-post .featured-articles-image.background-bg picture img{object-fit: cover;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1800px){
