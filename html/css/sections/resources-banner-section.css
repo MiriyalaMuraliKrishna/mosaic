@@ -10,7 +10,7 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .resources-banner-main{padding: 252px 0 162px;}
+    .resources-banner-main{padding: 267px 0 162px;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .resources-banner-main{padding: 156px 0 112px;}

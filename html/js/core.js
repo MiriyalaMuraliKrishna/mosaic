@@ -14,7 +14,7 @@ import { Blockquote } from './module/blockquote';
 import { Video } from './module/video';
 import { jslineanimation } from './module/js-line-animation';
 import { support } from './module/support';
-import { Stickyfeature } from './module/careerstickyfeature';
+import { Stickyfeature, featuredIcon } from './module/careerstickyfeature';
 import { innovation } from './module/innovation';
 import { slider } from './module/slider';
 import { magnificPopup } from './module/magnificpopup';
@@ -31,7 +31,6 @@ import { lifeatslider } from './module/lifeatslider';
 import { sidebar } from './module/sidebarsticky';
 import { software } from './module/product-software';
 import { usesticky } from './module/useIntroSticky';
-import { featuredIcon } from './module/featuresIconSection';
 import { convas } from './module/convas';
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -49,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
   Video.init();
   jslineanimation.init();
   support.init();
-  Stickyfeature.init();
   innovation.init();
   slider.init();
   magnificPopup.init();
@@ -63,9 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
   prodslick.init();
   automated.init();
   lifeatslider.init();
-  sidebar.init();
   software.init();
-  featuredIcon.init();
   convas.init();
 });
 
@@ -79,4 +75,7 @@ window.addEventListener('scroll', function () {
 window.addEventListener('load', function () {
   sticky.init();
   usesticky.init();
+  Stickyfeature.init();
+  featuredIcon.init();
+  sidebar.init();
 });

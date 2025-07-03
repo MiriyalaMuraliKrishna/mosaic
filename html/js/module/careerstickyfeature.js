@@ -1,9 +1,9 @@
 import 'sticksy';
 
 class Stickyfeatures {
-  constructor(linksSelector) {
+  constructor(linksSelector, sections) {
     this.links = document.querySelectorAll(linksSelector);
-    this.sections = document.querySelectorAll('.sticky-feature-scroll[id]');
+    this.sections = document.querySelectorAll(sections);
   }
 
   init() {
@@ -46,4 +46,11 @@ class Stickyfeatures {
   }
 }
 
-export const Stickyfeature = new Stickyfeatures('ul.sticky-feature-links');
+export const Stickyfeature = new Stickyfeatures(
+  'ul.sticky-feature-links',
+  '.sticky-feature-scroll[id]'
+);
+export const featuredIcon = new Stickyfeatures(
+  'ul.features-icon-subtitle',
+  '.features-icon-list[id]'
+);

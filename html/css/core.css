@@ -41,7 +41,6 @@
 @import url('./sections/download-section.css');
 @import url('./sections/products-slider-section.css');
 @import url('./sections/everything-faq-section.css');
-@import url('./sections/--accent-purple.css');
 
 
 
@@ -80,9 +79,6 @@
 @import url('./sections/res-default-banner-section.css');
 @import url('./sections/result-box-section.css');
 @import url('./sections/res-content-section.css');
-
-
-
 
 
 /*-- supprt page --*/
@@ -128,4 +124,6 @@
 @import url('./sections/default-content-section.css');
 @import url('./sections/advanced-scroll-section.css');
 
+/*-- switch template --*/
+@import url('./template/--accent-purple.css');
 

@@ -19,6 +19,7 @@
     .advanced-scroll-img{margin-bottom: 58px; margin-left: auto; position: relative; width: 515px; padding-top: 102px; }
     .advanced-scroll-item[scroll-grid="2"] .advanced-scroll-img{width: 392px; padding-top: 67px; margin-bottom: 23px;}
     .advanced-scroll-item[scroll-grid="3"] .advanced-scroll-img{width: 335px; padding-top: 58px; margin-bottom: 76px;}
+    .no_advanced_scroll_image .advanced-scroll-desc{padding-top: 431px;}
 }
 @media screen and (min-width: 1400px){
     .advanced-scroll-item[scroll-grid="1"] .advanced-scroll-img{right: 306px;}

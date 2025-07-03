@@ -291,7 +291,6 @@ body .frm_style_formidable-style.with_frm_style .frm_error_style{display: none;}
 @media screen and (max-width: 560px) and (min-width: 200px){
     body .frm_forms .frm_form_fields .frm_fields_container{gap: 24px; flex-direction: column;}
     body .frm_forms .frm_form_fields .frm_form_field{width: 100%;}
-    body .frm_forms .frm_form_fields .frm_form_field textarea{height: 162px;}
 
     
     .contact-form  .frm_field_wrapper{flex-direction: column;}

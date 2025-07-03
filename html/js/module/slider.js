@@ -184,8 +184,9 @@ export const slider = {
           disableOnInteraction: false,
         },
         spaceBetween: 50,
-        // freeMode: true,
-        // freeModeMomentum: false,
+        breakpoints: {
+          1400: { slidesPerView: 6 },
+        },
       });
     });
   },
