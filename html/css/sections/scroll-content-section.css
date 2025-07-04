@@ -4,8 +4,8 @@
 .scroll-content-text{letter-spacing: -1.14px;}
 .scroll-content-text .chars{transition: color .3s ease; opacity: 0.4; color: var(--White-50);}
 
-body.page-template-products-hardware .scroll-content-main span.optional-text{color: var(--Muted---Light); margin-bottom: 44px; text-transform: uppercase; display: block; }
-body.page-template-products-hardware .scroll-content-text{letter-spacing: -1.44px;}
+body.page-template-product-hardware .scroll-content-main span.optional-text{color: var(--Muted---Light); margin-bottom: 44px; text-transform: uppercase; display: block; }
+body.page-template-product-hardware .scroll-content-text{letter-spacing: -1.44px;}
 
 body.page-template-product-software .scroll-content-main span.optional-text{color: var(--Muted---Dark); margin-bottom: 44px; text-transform: uppercase; display: block; }
 
@@ -15,18 +15,18 @@ body.page-template-product-software .scroll-content-main span.optional-text{colo
 /* media css starts here */
 @media only screen and (min-width: 1024px){
     body.home .scroll-content-main{padding: 135px 0 0;}
-    body.page-template-products-hardware  .scroll-content-main{padding: 33px 0 0;}
+    body.page-template-product-hardware  .scroll-content-main{padding: 33px 0 0;}
     body.page-template-solutions .scroll-content-main{padding: 89px 0 203px;}
 }
 @media screen and (max-width: 1023px) and (min-width:768px){
     body.page-template-solutions .scroll-content-main{padding: 69px 0 0;}
-    body.page-template-products-hardware .scroll-content-main{padding: 50px 0 0;}
+    body.page-template-product-hardware .scroll-content-main{padding: 50px 0 0;}
 }
 @media screen  and (max-width: 767px) and (min-width: 200px){
     .scroll-content-main{padding-top: 90px;}
     body.page-template-product-software .scroll-content-main{padding-top: 95px;}
     .scroll-content-text{font-size: 23px; line-height: 42px; letter-spacing: -0.69px;}
-    body.page-template-products-hardware .scroll-content-text,
+    body.page-template-product-hardware .scroll-content-text,
     body.page-template-product-software .scroll-content-text{font-size: 32px; letter-spacing: -0.96px; line-height: 44px; }
 }
 

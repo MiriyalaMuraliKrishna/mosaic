@@ -109,7 +109,7 @@ blockquote p span.quote-line:last-child::after {
     .fluid-image-caption:first-child{align-items: end; }
     .fluid-image-caption:nth-child(2n){padding-top: 0; }
     .fluid-image-thumb{flex: 0 0 216px;}
-    .fluid-image-thumb img{border-radius: 20px;}
+    .fluid-image-thumb img{border-radius: 20px; min-height: 212px;}
     .fluid-image-icon{flex: 0 0 138px; max-width: 138px;}
 
     .highlightbox-main{gap: 29px; padding: 34px 30px 38px 31px; align-items: flex-start;}

@@ -18,10 +18,12 @@
 @-webkit-keyframes fadeInUp { 0% { transform: translate3d(0, 20px, 0); opacity: 0; } 100% { transform: translate3d(0, 0, 0); opacity: 1; } }
 @keyframes fadeInUp { 0% { transform: translate3d(0, 20px, 0); opacity: 0; } 100% { transform: translate3d(0, 0, 0); opacity: 1; } }
 
-.fade-in { -webkit-animation-name: fadeIn; animation-name: fadeIn; opacity: 0; }
+.fade-in{ -webkit-animation-name: fadeIn; animation-name: fadeIn; opacity: 0; }
 @-webkit-keyframes fadeIn { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 @keyframes fadeIn { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 
+.fade-in.delay-1{animation-delay: 1s;}
+.fade-in.delay-2{animation-delay: 2s;}
 
 [data-animate='fade-in-20']{animation-delay: 1s; animation-duration: 1s;}
 .fade-in-20 { -webkit-animation-name: fadeIn; animation-name: fadeIn; opacity: 0; }

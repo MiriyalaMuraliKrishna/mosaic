@@ -3,7 +3,7 @@
 
 .large-feature-head{padding-bottom: 115px;}
 .large-feature-icon{padding-bottom: 235px; max-width: 49px;}
-
+.large-feature-bg video{top: 0; left: 0; border-radius: 30px; position: absolute;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){

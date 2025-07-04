@@ -23,7 +23,7 @@
     .product-stats-title{flex: 0 0 394px;}
     .product-stats-desc{flex: 1; max-width: 661px; padding-top: 26px;}
     .product-stats-thumb{flex: 0 0 687px; }
-    .product-stats-lists{flex: 1; gap: 102px;}
+    .product-stats-lists{flex: 1; gap: 102px; min-height: 412px;}
     .product-stats-lists:nth-child(2){justify-content: end;}
     .product-stats-item{text-align: right; }
     .product-stats-lists:nth-child(4) .product-stats-item{text-align: left; }
