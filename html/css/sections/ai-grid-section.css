@@ -37,7 +37,6 @@
     .ai-grid-lt{width: calc(50% - 13px);}
     .ai-grid-rt{width: calc(50% - 13px); gap: 29px;}
     .ai-grid-item.purple-bg{padding: 105px 90px 68px 87px; width: 372px; }
-    .ai-grid-text{width: 372px;}
     .ai-nav-text{max-width: 357px;}
     .ai-grid-text > span:last-child{width: 179px; margin: 0 auto; font-size: 22px; letter-spacing: -0.66px;}
 

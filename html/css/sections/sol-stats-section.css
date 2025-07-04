@@ -26,6 +26,9 @@ span.sol-stats-name{font-size: 26px; line-height: normal; letter-spacing: -0.78p
     .sol-stats-n-main{align-items: flex-end;}
     .sol-stats-item:nth-child(2n+1) .sol-stats-n-main{justify-content: flex-end;}
 }
+@media screen and (max-width: 1299px) and (min-width: 1024px){
+    .sol-stats-text{flex: 0 0 400px;}
+}
 @media screen and (max-width: 1023px) and (min-width:768px){
     .sol-stats-wrap{padding: 43px 0 8px;}
     .sol-stats-main{gap: 90px; flex-direction: column; align-items: flex-start;}
