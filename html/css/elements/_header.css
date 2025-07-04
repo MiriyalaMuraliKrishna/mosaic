@@ -210,6 +210,7 @@ header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; 
     ul.main_menu > li.menu-item-has-children.open > a::after{left: 0; right: auto; top: calc(50% - 2px); transform: translateY(-50%) rotate(180deg);}
     ul.main_menu > li > ul{display: none; margin: 0; padding-top: 27px;}
     ul.main_menu > li > ul > li::before{display: none;}
+    ul.main_menu > li > ul > li:not(:last-child){margin-bottom: 34px;}
     ul.main_menu > li > ul > li > a{ position: relative; color: var(--White); font-size: 18px; font-weight: 400; line-height: 18px; display: block;}
 
     ul.main_menu > li > ul > li.menu-item-has-children.open > a{padding-left: 17px; padding-bottom: 4px; border-bottom: 1px solid var(--Line---Light); gap: 0px; width: 100%; color: var(--White-40); font-size: 16px; font-weight: 500; line-height: 22px; }

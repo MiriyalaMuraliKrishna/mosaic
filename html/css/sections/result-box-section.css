@@ -15,6 +15,7 @@
 }
 .result-box-head{gap: 64px; padding-bottom: 74px;}
 .result-box-title{flex: 0 0 394px;}
+.result-box-title:nth-child(1):last-child{flex: 0 0 100%;}
 .result-box-desc{flex: 1;}
 
 

@@ -59,9 +59,25 @@ export const Menu = {
     // solutions hover
 
     // products hover
-    _.$mainproducts && !_.$productsLi.length > 0
-      ? _.$products[0].parentElement.classList.add('open-menu')
-      : '';
+    if (_.$mainproducts && !_.$productsLi.length > 0) {
+      const anyActive = Array.from(_.$products).some((prodli) =>
+        prodli.parentElement.classList.contains('current_page_item')
+      );
+
+      const firstParent = _.$products[0]?.parentElement;
+      if (!firstParent) return;
+
+      if (anyActive) {
+        firstParent.classList.remove('open-menu');
+        _.$products.forEach((prodli) => {
+          if (prodli.parentElement.classList.contains('current_page_item')) {
+            prodli.parentElement.classList.add('open-menu');
+          }
+        });
+      } else {
+        firstParent.classList.add('open-menu');
+      }
+    }
 
     _.$products.forEach((ele) => {
       ele.addEventListener('mouseenter', function (e) {

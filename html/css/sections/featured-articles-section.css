@@ -38,6 +38,7 @@
     body.page-template-product-software .featured-articles-main{padding: 140px 0;}
 }
 @media only screen and (min-width: 768px){
+    body.category .featured-articles-title h2{font-size: 44px; line-height: 54px; letter-spacing: -0.32px;}
     .featured-articles-post .featured-articles-desc{padding-top: 255px;}
     .featured-articles-post .featured-articles-desc h2{font-size: 40px;line-height: 52px; margin-bottom: 23px;}
 
@@ -77,13 +78,14 @@
     .featured-articles-sm { padding: 62px 40px 60px; }
     .featured-articles-sm:nth-child(2n+1) .featured-articles-image { right: -24px; top: 50%; transform: translateY(-50%); }
     .featured-articles-sm:nth-child(2n+2) .featured-articles-image{top: -130px;}
-    body.category-resources .featured-articles-sm:nth-child(2n+2) .featured-articles-image{right: -32px;}
+    body.category .featured-articles-sm:nth-child(2n+2) .featured-articles-image{right: -32px;}
 }
 @media only screen and (min-width: 768px){
     .featured-articles-slider{display: none;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .featured-articles-section.gray-out{opacity: 0.5;}
+    body.category .featured-articles-head{padding-bottom: 31px;}
     .featured-articles-head{padding-bottom: 40px;}
     .featured-articles-title h2{font-size: 27px; letter-spacing: -0.81px; line-height: 36px;}
     .featured-articles-row{padding: 0 20px; gap: 20px; flex-direction: column;}
@@ -104,8 +106,9 @@
     .featured-articles-slider .featured-articles-bg{border-radius: 20px;}
     .featured-articles-slider .swiper-button{top: -76px; transform: none;}
     .featured-articles-slider .swiper-button.swiper-button-prev{left: auto; right: 55px;}
-    .featured-articles-btn{margin: 0 auto; width: fit-content; padding-top: 30px;}
-    body.page-template-resource-filtered .featured-articles-btn{margin: 0; padding: 30px 20px 0;}
+    .featured-articles-btn{margin: 0 auto; width: fit-content; padding-top: 33px;}
+    body.category .featured-articles-btn, body.page-template-resource-filtered .featured-articles-btn{margin: 0; padding: 30px 20px 0;}
+
     .featured-articles-ellipse {right: -180px; top: -350px;}
     body.home .featured-articles-main{padding: 0;}
     body.page-template-default .featured-articles-main{padding: 0;}

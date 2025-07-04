@@ -480,6 +480,7 @@ a.mPS2id-clicked{color: var(--Green);}
 
 [data-vbg]{opacity: 0; visibility: hidden;}
 [data-vbg].open{opacity: 1; visibility: visible;}
+[data-vbg] iframe{max-width: inherit;}
 
 .background-bg video{width: 100%; height: 100%; display: block;}
 .background-bg iframe{max-width: inherit; object-position: center top;}

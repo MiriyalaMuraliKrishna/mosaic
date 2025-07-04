@@ -5,6 +5,7 @@
 .resources-browse-main{padding: 0 0 113px;}
 .resources-browse-head{gap: 29px 0; padding-bottom: 70px;}
 .resources-browse-form input{padding: 13px 66px 12px 24px; border-radius: 90px; font-size: 18px; line-height: 28px; letter-spacing: -0.54px; background-color: var(--White-20);}
+.resources-browse-form input:-moz-placeholder, .resources-browse-form input::placeholder{ color: var(--White); }
 .resources-browse-form button{top: 7px; right: 8px; padding: 0; margin: 0; width: 38px; height: 38px; border: none;}
 .resources-browse-form button:hover svg path{fill: var(--Black);}
 

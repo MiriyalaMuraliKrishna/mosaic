@@ -10,7 +10,7 @@
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1400px) {
-    .products-software-banner-main{gap: 200px; padding: 121px 0 159px;}
+    .products-software-banner-main{gap: 200px; padding: 121px 0 159px; flex-wrap: nowrap;}
     .products-software-banner-img{flex: 0 0 732px;}
     .products-software-banner-text{flex: 1; padding: 141px 0 140px;}
     .products-software-banner-text h1{font-size: 130px; line-height: 148px; letter-spacing: -1.3px;}
@@ -20,8 +20,8 @@
 @media screen and (max-width: 1399px)  and (min-width: 1024px) {
     .products-software-banner-main{gap: 30px; padding: 121px 0 159px;}
     .products-software-banner-text{flex: 1; max-width: 575px; padding: 141px 0 140px;}
-    .products-software-banner-text h1{font-size: 130px; line-height: 148px; letter-spacing: -1.3px;}
-    .products-software-banner-img{ flex: 0 0 540px; min-height: 516px; margin-right: -200px; }
+    .products-software-banner-text h1{font-size: 100px; line-height: 118px; letter-spacing: -1.3px;}
+    .products-software-banner-img{flex: 0 0 540px; min-height: 516px; margin-right: -200px; }
     .products-software-banner-thumb{max-width: 732px; top: 0; right: 0; z-index: -1;}
     .products-software-banner-thumb img{min-height: 516px; max-height: 516px; overflow: hidden;}
     .products-software-banner-img .all-meterials-sm-icon{ left: -160px; top: 198px; }

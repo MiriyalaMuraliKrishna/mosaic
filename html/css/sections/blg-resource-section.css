@@ -13,8 +13,9 @@
 .blg-resource-link:hover{color: var(--Green);}
 .blg-resource-link.up:hover svg{animation: moveuprrow 0.5s forwards ease-in-out;}
 @keyframes moveuprrow { 0%{transform: translate3d(0px,0px,0px);} 100%{transform:  translate3d(3px,-3px,0px) rotate(0deg); }}
-
-.blg-resource-link.down:hover svg{animation: movedownarrow 0.5s forwards ease-in-out;}
+.blg-resource-link.down{margin-top: 25px;}
+.blg-resource-link.down::after{width: 11px; height: 12px; content: ""; display: block; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='12' viewBox='0 0 11 12' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.06055 11.4053L10.8105 11.4053L10.8105 1.15533L9.31055 1.15533L9.31055 8.84473L1.06055 0.594726L-4.6358e-08 1.65527L8.25006 9.90534L1.06055 9.90534L1.06055 11.4053Z' fill='%231AD1B1'%3E%3C/path%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center;}
+.blg-resource-link.down:hover::after{animation: movedownarrow 0.5s forwards ease-in-out;}
 @keyframes movedownarrow { 0%{transform: translate3d(0px,0px,0px);} 100%{transform:  translate3d(2px,4px,0px) rotate(5deg);} }
 
 .case-stdy-lists{gap: 25px;}
@@ -30,6 +31,9 @@ picture.case-stdy-thumb img{opacity: 0.3;}
 
 
 /*-- media css starts here --*/
+@media only screen and (min-width: 1800px){
+    .blg-resource-links{transform: translateY(18px);}
+}
 @media only screen and (min-width: 1024px){
     ul.blg-resource-lists{gap: 25px;}
     ul.blg-resource-lists > li{padding: 30px; gap: 29px; flex: 0  0 calc(50% - 12.5px);}
@@ -64,7 +68,7 @@ picture.case-stdy-thumb img{opacity: 0.3;}
     ul.blg-resource-lists{flex-direction: column;}
     .blg-resource-icon{width: 36px;}
     ul.blg-resource-lists{gap: 20px;}
-    ul.blg-resource-lists > li{gap: 0 25px; padding: 23px 25px;}
+    ul.blg-resource-lists > li{gap: 0 25px; padding: 23px 25px; align-items: flex-start;}
     .blg-resource-text h2{padding-right: 16px; font-size: 19px; line-height: 26px; font-weight: 500;}
     .blg-resource-links{margin-top: -17px; flex: 0 0 100%; display: flex; flex-wrap: wrap; justify-content: flex-end;}
     .blg-resource-link{text-transform: uppercase; font-size: 16px; font-weight: 600; letter-spacing: 0.16px;}

@@ -2,6 +2,7 @@
 
 
 
+.no_result_content .res-content-main{padding: 0;}
 .res-content-main{padding: 119px 0 0;}
 
 .full-width-image{padding: 98px 0 120px;}
@@ -23,6 +24,7 @@
 .fluid-image-captions{gap: 25px; padding: 97px 0 120px;}
 .fluid-image-caption{flex: 1; gap: 31px;}
 .fluid-image-thumb{flex: 1;}
+.fluid-image-thumb [data-vbg]{border-radius: 30px;}
 .fluid-image-icon{flex: 0 0 158px; max-width: 158px;}
 .fluid-image-caption:nth-child(odd) .fluid-image-icon{margin-left: auto;}
 .fluid-image-caption:nth-child(even){padding-top: 163px;}
@@ -97,8 +99,8 @@ blockquote p span.quote-line:last-child::after {
     .content-cta-wrap{padding: 67px 0 80px;}
     .content-cta-main{padding: 227px 41px 27px;}
     .content-cta-text{max-width: 100%;}
-    .content-cta-text .flex{justify-content: center;}
-    .content-cta-text .flex .button{width: 100%;}
+    .content-cta-text div.flex{justify-content: center; align-items: center; flex-direction: column; gap: 24px;}
+    .content-cta-text div.flex .button{width: 100%;}
     .content-cta-image{right: 0; top: -27px; width: 265px; left: 67px;}
     .content-cta-ellipse{border-radius: 536px; height: 536px; right: -160px; top: -222px; width: 536px;}
     .res-content-main h3{padding-bottom: 5px;}

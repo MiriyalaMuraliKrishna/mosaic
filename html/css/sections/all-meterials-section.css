@@ -36,7 +36,7 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .optional-module-graph .all-meterials-sm-icon:nth-child(2){padding-bottom: 35px;}
+    .optional-module-graph .all-meterials-sm-icon:nth-child(2){padding-bottom: 35px; padding-top: 18px;}
 }
 @media only screen and (max-width: 1279px) and (min-width: 1024px){
     .all-meterials-main {padding: 40px;}

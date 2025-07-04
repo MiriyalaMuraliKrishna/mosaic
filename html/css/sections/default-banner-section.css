@@ -17,3 +17,6 @@
     .default-banner-main{padding: 312px 0 32px;}
     .default-banner-btns{padding-top: 2px;}
 }
+@media screen and (max-width: 414px) and (min-width: 200px) {
+    .default-banner-text h1{max-width: 315px;}
+}

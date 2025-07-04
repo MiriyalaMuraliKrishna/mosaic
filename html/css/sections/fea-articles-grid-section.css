@@ -1,5 +1,5 @@
 
-
+.fea-articles-grid-section{position: relative; z-index: 2;}
 .fea-articles-grid-main{gap: 25px;}
 
 .fea-articles-grid-bg{background-color: var(--White-10);}
