@@ -4,7 +4,8 @@
 .all-meterials-bg{opacity: .1;}
 
 
-
+.all-meterials-text:nth-child(3):last-child{max-width: 100%; flex: 1;}
+.all-meterials-text:nth-child(3):last-child p{max-width: 100%;}
 .all-meterials-text{max-width: 564px;}
 .all-meterials-text span.optional-text{margin-bottom: 27px;}
 .all-meterials-text h2{margin-bottom: 10px;}
@@ -69,6 +70,7 @@
     .progress-circle{height: 72px; left: -9px; top: 5px; width: 72px; transform: rotate(-93deg);}
     .progress-circle svg circle{stroke-width: 10; }
     .all-meterials-text{max-width: 100%; width: 100%; }
+    .all-meterials-text:nth-child(3):last-child{padding-top: 70px;}
 
     .half-circle-pos{height: 53px; width: 90px; margin: 0 auto;}
     .half-circle-pos > svg{height: 53px; width: 86px; }

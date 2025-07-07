@@ -34,7 +34,7 @@
     figure.products-slider-thumb img{border-radius: 20px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    body.page-template-solutions .products-slider-main{padding-top: 25px;}
+    body.page-template-solution .products-slider-main{padding-top: 25px;}
     .products-slider-main{padding: 199px 0 40px;}
     .products-slider-ellipse{width: 715px; height: 715px; top: calc(50% + 172px); }
     .products-slider-text{padding: 32px 0 62px; text-align: center; font-size: 22px; font-weight: 300; line-height: 28px; letter-spacing: -0.66px; }

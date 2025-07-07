@@ -13,14 +13,21 @@
     .feature-item-slider .swiper-button{top: -80px;}
     .feature-item-slider .swiper-button.swiper-button-prev{left: -90px;}
     .feature-item-slider .swiper-button.swiper-button-next{right: 25px;}   
+    .swiper-slide.feature-item-slide{margin-right: 169px;}
 }
 @media screen and (min-width: 1024px) {
     .feature-slider-main{padding: 145px 0;}
-    .swiper-slide.feature-item-slide{width: 521px; margin-right: 169px;}
     .feature-item{ gap: 50px;}
     .feature-item-pagination .swiper-pagination{display: none;}   
+    .swiper-slide.feature-item-slide{width: 521px;}
 }
-@media screen and (max-width: 1599px) and (min-width: 1024px) {
+@media screen and (max-width: 1599px) and (min-width: 1400px) {
+    .swiper-slide.feature-item-slide{width: 521px; margin-right: 84.5px;}
+    .feature-item-slider .swiper-button{top: -55px;}
+    .feature-item-slider .swiper-button.swiper-button-prev{left: -15px;}
+    .feature-item-slider .swiper-button.swiper-button-next{right: -15px;} 
+}
+@media screen and (max-width: 1399px) and (min-width: 1024px) {
     .feature-item-slider .swiper-button{top: -55px;}
     .feature-item-slider .swiper-button.swiper-button-prev{left: -30px;}
     .feature-item-slider .swiper-button.swiper-button-next{right: -30px;}   

@@ -1,4 +1,6 @@
 import Swiper from 'swiper/bundle';
+import Splide from '@splidejs/splide';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 export const slider = {
   customele: document.querySelector('.our-customer-main'),
@@ -152,25 +154,18 @@ export const slider = {
 
   trustlogoSlider() {
     this.logos.forEach((trustlogo) => {
-      new Swiper(trustlogo, {
-        slidesPerView: 'auto',
-        loop: true,
-        speed: 5000,
-        autoplay: {
-          delay: 0,
-          disableOnInteraction: false,
+      new Splide(trustlogo, {
+        pagination: false,
+        arrows: false,
+        direction: 'ltr',
+        type: 'loop',
+        autoWidth: true,
+        autoScroll: {
+          speed: 0.8,
+          pauseOnHover: false,
         },
-        spaceBetween: 40,
-        // freeMode: true,
-        // freeModeMomentum: false,
-        breakpoints: {
-          768: {
-            spaceBetween: 50,
-          },
-          1024: {},
-          1300: {},
-        },
-      });
+        extensions: { AutoScroll },
+      }).mount({ AutoScroll });
     });
   },
   trustbrandSlider() {
@@ -209,6 +204,11 @@ export const slider = {
   },
   featureItemSlider() {
     if (!this.featureitemsEle) return;
+    const myscreen = new Swiper(document.querySelector('.fullscreen-section'), {
+      slidesPerView: 1,
+      effect: 'fade',
+      speed: 1000,
+    });
     new Swiper(this.featureitemsEle, {
       slidesPerView: 1,
       loop: true,
@@ -223,10 +223,13 @@ export const slider = {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      thumbs: {
+        swiper: myscreen,
+      },
       breakpoints: {
         768: { slidesPerView: 2, spaceBetween: 40 },
         1024: { slidesPerView: 'auto', spaceBetween: 64 },
-        1440: { slidesPerView: 'auto', spaceBetween: 169 },
+        1440: { slidesPerView: 'auto', spaceBetween: 0 },
       },
     });
   },

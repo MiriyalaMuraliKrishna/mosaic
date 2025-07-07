@@ -26,9 +26,9 @@
 .fade-in.delay-2{animation-delay: 2s;}
 
 [data-animate='fade-in-20']{animation-delay: 1s; animation-duration: 1s;}
-.fade-in-20 { -webkit-animation-name: fadeIn; animation-name: fadeIn; opacity: 0; }
-@-webkit-keyframes fadeIn { 0% { opacity: 0.4; } 50% { opacity: 0.3; } 100% { opacity: 0.2; } }
-@keyframes fadeIn { 0% { opacity: 0.4; } 50% { opacity: 0.3; } 100% { opacity: 0.2; } }
+.fade-in-20 { -webkit-animation-name: fadeIn20; animation-name: fadeIn20; opacity: 0; }
+@-webkit-keyframes fadeIn20 { 0% { opacity: 0.4; } 50% { opacity: 0.3; } 100% { opacity: 0.2; } }
+@keyframes fadeIn20 { 0% { opacity: 0.4; } 50% { opacity: 0.3; } 100% { opacity: 0.2; } }
   
   
 .zoom-out{ -webkit-animation-name: zoomOut; animation-name: zoomOut; }

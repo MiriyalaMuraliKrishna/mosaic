@@ -14,7 +14,7 @@
 /* media css starts here */
 
 @media only screen and (min-width: 1024px){
-    body.page-template-solutions .our-customer-main{padding-top: 126px;}
+    body.page-template-solution .our-customer-main{padding-top: 126px;}
     .our-customer-main{gap: 113px; padding: 140px 0 119px;}
     .our-customer-left{width: 437px;}
     .our-customer-right{width: calc(100% - 550px);}
@@ -38,7 +38,7 @@
 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    body.page-template-solutions .our-customer-wrap{padding-top: 70px;}
+    body.page-template-solution .our-customer-wrap{padding-top: 70px;}
 
     .our-customer-wrap{padding: 90px 0 100px;}
     body.page-template-usecases .our-customer-wrap h2{font-size: 34px; line-height: 40px; max-width: 230px;}

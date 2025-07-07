@@ -24,6 +24,6 @@
 @media screen and (max-width: 767px) and (min-width: 200px){
     .accordion-main{gap: 25px;}
     .accordion-header{padding-left: 53px; font-size: 20px; line-height: 32px; letter-spacing: -0.6px;}
-    .accordion-plus{width: 34px; height: 34px;}
+    .accordion-plus{width: 34px; height: 34px; top: -1px;}
     .accordion-desc { padding: 18px 22px 14px 52px; font-size: 15.5px; line-height: 24px; letter-spacing: -0.465px;} 
 }

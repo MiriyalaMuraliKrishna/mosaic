@@ -23,15 +23,18 @@
     .solutions-banner-text h1 br{display: none;}
 }
 @media screen and (max-width: 1499px) and (min-width: 1400px){
-    .solutions-banner-illustration{right: -42px;}
+    .solutions-banner-illustration{right: -80px; width: 700px; height: 787px;}
+    
 }
 @media screen and (max-width: 1399px) and (min-width: 1300px){
-    .solutions-banner-illustration{right: -42px;}
+    .solutions-banner-illustration{right: 0px; width: 700px; height: 787px;}
     .solutions-banner-main{max-width: 750px;}
 }
 @media screen and (max-width: 1299px) and (min-width: 1024px){
     .solutions-banner-illustration{width: 562px; height: 756px; top: -31px; right: -150px;}
     .solutions-banner-main{max-width: 740px; padding: 218px 0 87px;}
+    .products-slider-for button.slick-arrow.slick-next{right: -52px;}
+    .products-slider-for button.slick-arrow.slick-prev{left: -52px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .solutions-banner-main{padding: 79.2px 0 58px;}

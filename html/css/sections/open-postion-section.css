@@ -10,7 +10,7 @@
 .open-postion-text p{margin-bottom: 28px;}
 .open-postion-ellipse{ top: -280px; left: -169px; width: 1066px; height: 1066px; border-radius: 1066px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1;}
 .open-postion-image:nth-child(3):last-child{padding: 0 60px; flex: 0 0 100%; transform: none;}
-.open-postion-text:nth-child(3):last-child{padding: 0 60px; flex: 0 0 100%; max-width: 100%;}
+.open-postion-text:nth-child(1):last-child, .open-postion-text:nth-child(3):last-child{padding: 0 60px; flex: 0 0 100%; max-width: 100%;}
 
 
 @media screen and (max-width: 1199px) and (min-width: 1024px) {

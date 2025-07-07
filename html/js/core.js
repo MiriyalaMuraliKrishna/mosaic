@@ -33,6 +33,7 @@ import { software } from './module/product-software';
 import { usesticky } from './module/useIntroSticky';
 import { convas } from './module/convas';
 import { featuredIcon } from './module/featuredIconSticky';
+import { solstatsgraphs } from './module/solutionPage';
 
 document.addEventListener('DOMContentLoaded', function () {
   mylenis.init();
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
   lifeatslider.init();
   software.init();
   convas.init();
+  solstatsgraphs.init();
 });
 
 let scrolled = window.scrollY;
