@@ -702,73 +702,77 @@
           <div class="trusted-by-head aligncenter">
             <span class="optional-text white-40 text-upper d-block w-100">Trusted by</span>
           </div>
-          <div class="trusted-by-logos relative">
-            <div class="swiper-wrapper linear">
-              <div class="trusted-by-logo swiper-slide">
-                <figure class="object-fit">
-                  <img data-logo="css" src="images/css@2x.png" alt="">
-                </figure>
-              </div>
-              <div class="trusted-by-logo swiper-slide">
-                <figure class="object-fit">
-                  <img data-logo="awwards" src="images/awwards@2x.png" alt="">
-                </figure>
-              </div>
-              <div class="trusted-by-logo swiper-slide">
+          <div class="splide trusted-by-logos relative">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="trusted-by-logo splide__slide">
+                  <figure class="object-fit">
+                    <img data-logo="css" src="images/css@2x.png" alt="">
+                  </figure>
+                </div>
+
+                <div class="trusted-by-logo splide__slide">
+                  <figure class="object-fit">
+                    <img data-logo="awwards" src="images/awwards@2x.png" alt="">
+                  </figure>
+                </div>
+                <div class="trusted-by-logo splide__slide">
+                  <figure class="object-fit">
+                    <img data-logo="dan" src="images/dan@2x.png" alt="">
+                  </figure>
+                </div>
+                <div class="trusted-by-logo splide__slide">
+                  <figure class="object-fit">
+                    <img data-logo="css-winner" src="images/css-winner@2x.png" alt="">
+                  </figure>
+                </div>
+                <div class="trusted-by-logo splide__slide">
+                  <figure class="object-fit">
+                    <img data-logo="clutch" src="images/clutch@2x.png" alt="clutch@2x">
+                  </figure>
+                </div>
+                <div class="trusted-by-logo splide__slide">
+                  <figure class="object-fit">
+                    <img data-logo="awwards" src="images/awwards@2x.png" alt="">
+                  </figure>
+                </div>
+
+                <!-- <div class="trusted-by-logo splide__slide">
                 <figure class="object-fit">
                   <img data-logo="dan" src="images/dan@2x.png" alt="">
                 </figure>
               </div>
-              <div class="trusted-by-logo swiper-slide">
+              <div class="trusted-by-logo splide__slide">
                 <figure class="object-fit">
                   <img data-logo="css-winner" src="images/css-winner@2x.png" alt="">
                 </figure>
               </div>
-              <div class="trusted-by-logo swiper-slide">
+              <div class="trusted-by-logo splide__slide">
                 <figure class="object-fit">
                   <img data-logo="clutch" src="images/clutch@2x.png" alt="clutch@2x">
                 </figure>
               </div>
-              <div class="trusted-by-logo swiper-slide">
+              <div class="trusted-by-logo splide__slide">
                 <figure class="object-fit">
                   <img data-logo="awwards" src="images/awwards@2x.png" alt="">
                 </figure>
               </div>
-              <!-- <div class="trusted-by-logo swiper-slide">
+              <div class="trusted-by-logo splide__slide">
                 <figure class="object-fit">
                   <img data-logo="dan" src="images/dan@2x.png" alt="">
                 </figure>
               </div>
-              <div class="trusted-by-logo swiper-slide">
+              <div class="trusted-by-logo splide__slide">
                 <figure class="object-fit">
                   <img data-logo="css-winner" src="images/css-winner@2x.png" alt="">
                 </figure>
               </div>
-              <div class="trusted-by-logo swiper-slide">
-                <figure class="object-fit">
-                  <img data-logo="clutch" src="images/clutch@2x.png" alt="clutch@2x">
-                </figure>
-              </div>
-              <div class="trusted-by-logo swiper-slide">
-                <figure class="object-fit">
-                  <img data-logo="awwards" src="images/awwards@2x.png" alt="">
-                </figure>
-              </div>
-              <div class="trusted-by-logo swiper-slide">
-                <figure class="object-fit">
-                  <img data-logo="dan" src="images/dan@2x.png" alt="">
-                </figure>
-              </div>
-              <div class="trusted-by-logo swiper-slide">
-                <figure class="object-fit">
-                  <img data-logo="css-winner" src="images/css-winner@2x.png" alt="">
-                </figure>
-              </div>
-              <div class="trusted-by-logo swiper-slide">
+              <div class="trusted-by-logo splide__slide">
                 <figure class="object-fit">
                   <img data-logo="clutch" src="images/clutch@2x.png" alt="clutch@2x">
                 </figure>
               </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -1712,7 +1716,7 @@
                     <p>
                       Endless Production, Zero Downtime
                     </p>
-                    <a class="" href="#">
+                    <a class="text-link up" href="#">
                       <span class="hide">Read More</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2180,8 +2184,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script defer src="dist/DrawSVGPlugin.js"></script>
   <script defer src="dist/jquery.youtube-background.js"></script>
   <script defer src="dist/iframe.js"></script>

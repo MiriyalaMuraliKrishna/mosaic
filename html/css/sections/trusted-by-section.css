@@ -2,8 +2,10 @@
 
 .trusted-by-main{padding: 62px 0 52px;}
 .trusted-by-head{padding-bottom: 33px;}
-.trusted-by-logos .swiper-wrapper{align-items: center;}
-.trusted-by-logos .swiper-slide{width: 180px; flex-shrink: 0;}
+
+.trusted-by-logos.splide{visibility: visible;}
+.trusted-by-logos .splide__list{align-items: center; gap: 50px;}
+.trusted-by-logos .splide__slide{width: 180px; flex-shrink: 0;}
 .trusted-by-logo img{object-fit: contain; max-width: 180px; margin: auto;}
 
 .trusted-by-logo img[data-logo="awwards"]{max-width: 132px;}
@@ -18,7 +20,7 @@
 
 
 @media screen and (max-width:767px) and (min-width: 200px){
-    .trusted-by-logos .swiper-slide{width: fit-content;}
+    .trusted-by-logos .splide__slide{width: fit-content;}
     .trusted-by-logo img{max-width: 132px;}
     .trusted-by-logo img[data-logo="awwards"]{max-width: 86px;}
     .trusted-by-logo img[data-logo="dan"]{max-width: 120px;}

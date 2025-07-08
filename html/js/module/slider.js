@@ -8,7 +8,6 @@ export const slider = {
   usecaseele: document.querySelectorAll('.use-cases-slider'),
   serviceele: document.querySelectorAll('.services-carousel-slider'),
   logos: document.querySelectorAll('.trust-by-logos'),
-  brands: document.querySelectorAll('.trusted-by-logos'),
   featuredeles: document.querySelector('.featured-articles-slider'),
   featureitemsEle: document.querySelector('.feature-item-slider'),
   poweredByEle: document.querySelector('.powered-by-slider'),
@@ -18,7 +17,6 @@ export const slider = {
     this.usecaseSlider();
     this.serviceSlider();
     this.trustlogoSlider();
-    this.trustbrandSlider();
     this.mobileSlider();
     this.featureItemSlider();
     this.poweredBySlider();
@@ -154,6 +152,11 @@ export const slider = {
 
   trustlogoSlider() {
     this.logos.forEach((trustlogo) => {
+      const autoScrollSpeedme = trustlogo.dataset.speed
+        ? parseFloat(trustlogo.dataset.speed)
+        : 0.5;
+
+      const directionme = trustlogo.dataset.direction === 'reversed' ? -1 : 1;
       new Splide(trustlogo, {
         pagination: false,
         arrows: false,
@@ -161,28 +164,11 @@ export const slider = {
         type: 'loop',
         autoWidth: true,
         autoScroll: {
-          speed: 0.8,
+          speed: autoScrollSpeedme,
           pauseOnHover: false,
         },
         extensions: { AutoScroll },
       }).mount({ AutoScroll });
-    });
-  },
-  trustbrandSlider() {
-    this.brands.forEach((trustlogo) => {
-      new Swiper(trustlogo, {
-        slidesPerView: 'auto',
-        loop: true,
-        speed: 5000,
-        autoplay: {
-          delay: 1,
-          disableOnInteraction: false,
-        },
-        spaceBetween: 50,
-        breakpoints: {
-          1400: { slidesPerView: 6 },
-        },
-      });
     });
   },
 

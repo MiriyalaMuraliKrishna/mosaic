@@ -70,17 +70,23 @@
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .home-banner-section{min-height: 570px;}
-    .home-banner-wrap{padding: 0; overflow: hidden;}
+    .home-banner-wrap{padding: 0; }
     .home-banner-main{padding: 173px 0 94px;}
     .home-banner-text h1{font-size: 56px; letter-spacing: -0.56px; line-height: 68px; margin-bottom: 22px;}
     .home-banner-text h1 br{display: none;}
     .trust-by-main span.optional-text{font-size: 12px; line-height: 18px; letter-spacing: 3px;}
+    .trust-by-gradient.left { left: -100%; width: 100%; }
+    .trust-by-gradient.right { right: -100%; width: 100%; }
+    .trust-by-gradient.left::before { right: -40px; width: 40px; }
+    .trust-by-gradient.right::before { left: -40px; width: 40px; }
+    .trust-by-logos .splide__list{gap: 40px;}
     .trust-by-logos .splide__slide{width: fit-content;}
     .trust-by-logo img{max-width: 132px;}
     .trust-by-logo img[data-logo="awwards@2x"]{max-width: 86px;}
     .trust-by-logo img[data-logo="dan@2x"]{max-width: 120px;}
     .trust-by-logo img[data-logo="css-winner@2x"]{max-width: 132px;}
     .home-endless-pos{margin: 88px 0 10px; padding: 0 37px 0 40px; max-width: 335px; position: relative;}
+    .home-endless-pos-main{overflow: hidden;}
     .home-endless-main{overflow: inherit;}
     .home-endless-text{padding: 0px 0 189px 7px; }
     .home-endless-graph{right: -20px; bottom: 35px;}

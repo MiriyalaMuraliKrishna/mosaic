@@ -18,6 +18,7 @@ ul.prod-meterials-typicals > li:last-child span.stripe-line{display: none;}
 .prod-typicals-icon{width: 22px;}
 .prod-typicals-text{flex: 1;}
 
+.prod-meterials-center:nth-child(2):last-child .prod-meterials-text{max-width: 100%;}
 .prod-meterials-center{flex: 1;}
 .prod-meterials-text{padding-bottom: 79px;}
 .prod-meterials-text h2{margin-bottom: 16px;}
