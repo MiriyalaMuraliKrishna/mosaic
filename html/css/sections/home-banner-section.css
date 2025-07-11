@@ -23,7 +23,7 @@
 .trust-by-logos .splide__track{overflow: inherit;}
 .trust-by-logos .splide__list{gap: 10px; align-items: center; flex-wrap: nowrap;}
 .trust-by-logos .splide__slide{width: 180px;}
-.trust-by-logo img{object-fit: contain; max-width: 180px; margin: 0 auto; display: block;}
+.trust-by-logo img{object-fit: contain; max-width: 140px; margin: 0 auto; display: block;}
 
 .trust-by-logo img[data-logo="awwards@2x"]{max-width: 132px;}
 .trust-by-logo img[data-logo="dan@2x"]{max-width: 148px;}
@@ -81,7 +81,7 @@
     .trust-by-gradient.right::before { left: -40px; width: 40px; }
     .trust-by-logos .splide__list{gap: 40px;}
     .trust-by-logos .splide__slide{width: fit-content;}
-    .trust-by-logo img{max-width: 132px;}
+    .trust-by-logo img{max-width: 120px;}
     .trust-by-logo img[data-logo="awwards@2x"]{max-width: 86px;}
     .trust-by-logo img[data-logo="dan@2x"]{max-width: 120px;}
     .trust-by-logo img[data-logo="css-winner@2x"]{max-width: 132px;}
