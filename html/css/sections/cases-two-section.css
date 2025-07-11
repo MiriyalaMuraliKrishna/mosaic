@@ -21,8 +21,8 @@
 
 
 ul.cases-two-links{gap: 24px 0;}
-ul.cases-two-links > li > a{color: var(--White-20);}
-ul.cases-two-links > li > a.active, ul.cases-two-links > li > a:hover{color: var(--White);}
+ul.cases-two-links > li > a{color: var(--White-40);}
+ul.cases-two-links > li > a.active, ul.cases-two-links > li > a:hover{color: var(--White); font-weight: 500;}
 
 
 

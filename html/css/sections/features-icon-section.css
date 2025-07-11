@@ -1,8 +1,8 @@
 
 ul.features-icon-subtitle{gap: 30px;}
 ul.features-icon-subtitle li{font-size: 18px; line-height: 22px; letter-spacing: -0.54px;}
-ul.features-icon-subtitle li a{color: var(--White-20);}
-ul.features-icon-subtitle li a.open, ul.features-icon-subtitle li a:hover{color: var(--White);}
+ul.features-icon-subtitle li a{color: var(--White-40);}
+ul.features-icon-subtitle li a.open, ul.features-icon-subtitle li a:hover{color: var(--White); font-weight: 500;}
 
 .features-icon-desc h2{letter-spacing: -1.32px; margin-bottom: 20px;}
 .features-icon-items{gap: 10px;}
