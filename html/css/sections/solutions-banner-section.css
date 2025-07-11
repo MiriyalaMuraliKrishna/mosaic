@@ -10,7 +10,7 @@
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1440px){
-    .solutions-banner-illustration{width: 762px; height: 956px;}
+    .solutions-banner-illustration{width: 650px; height: 956px;}
 }
 @media only screen and (min-width: 1024px){
     .solutions-banner-main{padding: 318px 0 117px; max-width: 860px;}
@@ -23,11 +23,11 @@
     .solutions-banner-text h1 br{display: none;}
 }
 @media screen and (max-width: 1499px) and (min-width: 1400px){
-    .solutions-banner-illustration{right: -80px; width: 700px; height: 787px;}
+    .solutions-banner-illustration{right: -80px; width: 650px; height: 787px;}
     
 }
 @media screen and (max-width: 1399px) and (min-width: 1300px){
-    .solutions-banner-illustration{right: 0px; width: 700px; height: 787px;}
+    .solutions-banner-illustration{right: 0px; width: 650px; height: 787px;}
     .solutions-banner-main{max-width: 750px;}
 }
 @media screen and (max-width: 1299px) and (min-width: 1024px){
@@ -39,7 +39,7 @@
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .solutions-banner-main{padding: 79.2px 0 58px;}
     .solutions-banner-text h1{font-size: 70px; line-height: 82px;}
-    .solutions-banner-illustration{position: relative; margin-left: auto; width: 462px; height: 656px; margin-top: -82px; right: 42px;}
+    .solutions-banner-illustration{position: relative; margin-left: auto; width: 462px; height: 550px; margin-top: 50px; right: 42px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .solutions-banner-illustration{position: relative; margin-left: auto; width: 280px; height: 407px; margin-top: 40px; right: 15px;}
