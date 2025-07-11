@@ -2,6 +2,7 @@
 
 .overview-main{padding: 0 0 143px; align-items: flex-start;}
 .overview-head{max-width: 711px; padding-bottom: 151px; z-index: 2;}
+body.page-template-usecase .overview-head{padding-top: 100px;}
 .overview-image{max-width: 392px; max-height: 593px; z-index: 1;}
 .overview-ellipse{width: 942px; height: 942px; opacity: 0.25; z-index: -1; background: var(--Green-Radial-Gradient);}
 .overview-ellipse.left{left: -198px; top: -240px;}
