@@ -11,6 +11,7 @@
     .large-feature-main{padding: 107px 125px 94px 125px;}
    .large-feature-text{max-width: 923px;}  
    .large-feature-bg [data-vbg], .large-feature-bg img, .large-feature-bg iframe{border-radius: 30px;}
+   .large-feature-head h2{font-size: 80px; line-height: 90px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .large-feature-section .container{padding: 0;}

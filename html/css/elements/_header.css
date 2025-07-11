@@ -46,7 +46,8 @@ header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; 
      ul.main_menu > li.solutions-menu-item > ul > li > a{padding: 18px 22px 17px 0; border-bottom: 1px solid var(--Line---Light); font-size: 17px; font-weight: 600; line-height: 22px; letter-spacing: 0; display: block; position: relative;}
      ul.main_menu > li.solutions-menu-item > ul > li:last-child > a{border-bottom-color: transparent;}
      ul.main_menu > li.solutions-menu-item > ul > li > ul{left: 359px; width: calc(100% - 359px); min-width: 100%; height: auto; top: 0; margin: 0; padding: 0; position: absolute; border-radius: 0; background: none; display: block; visibility: hidden; opacity: 0; transition: all 0.5s ease;}
-     ul.main_menu > li.solutions-menu-item > ul > li > ul > li:nth-child(n+4){display: none;}
+     ul.main_menu > li.solutions-menu-item:not(li#menu-item-1968) > ul > li > ul > li:nth-child(n+4){display: none;}
+     /* ul.main_menu > li#menu-item-1968 > ul > li > ul > li:nth-child(n+4){display: block;} */
    
      ul.main_menu > li.solutions-menu-item > ul > li.open-menu > a{color: var(--Green);}
      ul.main_menu > li.solutions-menu-item > ul > li.open-menu > a::after{filter: grayscale(0);}
