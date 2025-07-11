@@ -15,7 +15,7 @@
 @media only screen and (min-width: 1024px){
     .solutions-banner-main{padding: 318px 0 117px; max-width: 860px;}
     .solutions-banner-text h1{letter-spacing: -1.22px;}
-    .solutions-banner-illustration{top: -41px; right: 42px;}   
+    .solutions-banner-illustration{top: -41px; right: 25px;}   
 }
 @media screen and (min-width: 768px) {
     .solutions-banner-ellipse{width: 1401px; height: 1375px; top: -542px; right: -418px;}
