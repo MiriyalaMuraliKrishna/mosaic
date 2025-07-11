@@ -42,7 +42,7 @@
     .solutions-banner-illustration{position: relative; margin-left: auto; width: 462px; height: 656px; margin-top: -82px; right: 42px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .solutions-banner-illustration{position: relative; margin-left: auto; width: 324px; height: 407px; margin-top: -106px; right: 20px;}
+    .solutions-banner-illustration{position: relative; margin-left: auto; width: 280px; height: 407px; margin-top: 40px; right: 15px;}
     .solutions-banner-ellipse{width: 788px; height: 773px; top: -297px; right: -180px;}
     .have_illustration .solutions-banner-main{padding: 0;}
     .solutions-banner-main{padding: 143px 0 107px;}
