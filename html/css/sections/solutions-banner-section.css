@@ -14,8 +14,8 @@
 }
 @media only screen and (min-width: 1024px){
     .solutions-banner-main{padding: 318px 0 117px; max-width: 860px;}
-    .solutions-banner-text h1{letter-spacing: -1.22px;}
-    .solutions-banner-illustration{top: -41px; right: 25px;}   
+    .solutions-banner-text h1{letter-spacing: -1.22px; font-size: 100px; line-height: 118px;}
+    .solutions-banner-illustration{top: -164px; right: 40px;}   
 }
 @media screen and (min-width: 768px) {
     .solutions-banner-ellipse{width: 1401px; height: 1375px; top: -542px; right: -418px;}
@@ -42,7 +42,7 @@
     .solutions-banner-illustration{position: relative; margin-left: auto; width: 462px; height: 550px; margin-top: 50px; right: 42px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .solutions-banner-illustration{position: relative; margin-left: auto; width: 280px; height: 407px; margin-top: 40px; right: 15px;}
+    .solutions-banner-illustration{ height: 274px; margin-left: auto; margin-top: -50px; position: relative; right: -9px; width: 220px;}
     .solutions-banner-ellipse{width: 788px; height: 773px; top: -297px; right: -180px;}
     .have_illustration .solutions-banner-main{padding: 0;}
     .solutions-banner-main{padding: 143px 0 107px;}

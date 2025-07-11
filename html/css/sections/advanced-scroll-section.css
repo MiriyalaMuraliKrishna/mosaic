@@ -22,10 +22,10 @@
     .no_advanced_scroll_image .advanced-scroll-desc{padding-top: 431px;}
 }
 @media screen and (min-width: 1400px){
-    .advanced-scroll-item[scroll-grid="1"] .advanced-scroll-img,
-    .advanced-scroll-item[scroll-grid="2"] .advanced-scroll-img,
+    .advanced-scroll-item[scroll-grid="1"] .advanced-scroll-img{right: 362px;}
+    .advanced-scroll-item[scroll-grid="2"] .advanced-scroll-img{right: 444px;}
+    .advanced-scroll-item[scroll-grid="3"] .advanced-scroll-img{right: 463px;}
     .advanced-scroll-item[scroll-grid="4"] .advanced-scroll-img{right: 306px;}
-    .advanced-scroll-item[scroll-grid="3"] .advanced-scroll-img{right: 370px;}
 }
 @media screen and (max-width: 1399px) and (min-width: 1024px) { 
     .advanced-scroll-item .fluid-container{position: static; margin: 0; width: 100%;}
