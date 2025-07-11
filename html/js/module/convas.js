@@ -10,7 +10,6 @@ export const convas = {
 
       container.addEventListener('mousemove', (e) => {
         const rect = container.getBoundingClientRect();
-        console.log(rect);
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top - 300;
 
