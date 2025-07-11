@@ -37,12 +37,12 @@ header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; 
 
      /*-- solutions-menu-item starts here --*/
      ul.main_menu > li.solutions-menu-item > a{position: relative;}
-     ul.main_menu > li.solutions-menu-item > ul{min-height: 435px; left: calc(100% - 174px); transform: translateX(0%); padding: 25px 32px 32px 42px; min-width: 1103px; max-width: 1103px; }
+     ul.main_menu > li.solutions-menu-item > ul{ display: flex; flex-wrap: wrap; gap: 0 32px; min-height: 435px; left: calc(100% - 174px); transform: translateX(0%); padding: 25px 32px 32px 42px; min-width: 1103px; max-width: 1103px; }
      ul.main_menu > li.solutions-menu-item > ul::before{left: 134px;}
      .solutions-menu-text{letter-spacing: 0;}
      .solutions-menu-text span.h4{margin-bottom: 0; letter-spacing: 0;}
-     ul.main_menu > li.solutions-menu-item > ul > li:first-child{padding-top: 25px; padding-bottom: 2px;}
-     ul.main_menu > li.solutions-menu-item > ul > li{max-width: 302px; position: relative;}
+     ul.main_menu > li.solutions-menu-item > ul > li:first-child{padding-top: 25px; padding-bottom: 22px;}
+     ul.main_menu > li.solutions-menu-item > ul > li{max-width: 302px; flex: 0 0 302px; position: relative;}
      ul.main_menu > li.solutions-menu-item > ul > li > a{padding: 18px 22px 17px 0; border-bottom: 1px solid var(--Line---Light); font-size: 17px; font-weight: 600; line-height: 22px; letter-spacing: 0; display: block; position: relative;}
      ul.main_menu > li.solutions-menu-item > ul > li:last-child > a{border-bottom-color: transparent;}
      ul.main_menu > li.solutions-menu-item > ul > li > ul{left: 359px; width: calc(100% - 359px); min-width: 100%; height: auto; top: 0; margin: 0; padding: 0; position: absolute; border-radius: 0; background: none; display: block; visibility: hidden; opacity: 0; transition: all 0.5s ease;}
