@@ -13,7 +13,7 @@ export const counter = {
 
       const countTo = parseFloat($el.getAttribute('data-count-to'));
       const decimalPlaces =
-        countTo % 1 !== 0 ? countTo.toString().split('.')[1].length : 0;
+        countTo % 1 !== 0 ? countTo.toString()?.split('.')[1].length : 0;
 
       $el.counter = new CountUp(`${$target}`, countTo, {
         startVal: 0,
