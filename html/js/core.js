@@ -36,7 +36,7 @@ import { featuredIcon } from './module/featuredIconSticky';
 import { solstatsgraphs } from './module/solutionPage';
 import { trustbrandSlider } from './module/trustbrandSlider';
 import { coountSolLI } from './module/countLi';
-import { coountProdLi } from './module/countProdLi';
+import { coountProdLI } from './module/countProdLi';
 
 document.addEventListener('DOMContentLoaded', function () {
   mylenis.init();
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
   solstatsgraphs.init();
   trustbrandSlider.init();
   coountSolLI.list();
-  coountProdLi.list();
+  coountProdLI.prodlist();
 });
 
 let scrolled = window.scrollY;

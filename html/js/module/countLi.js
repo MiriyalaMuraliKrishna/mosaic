@@ -4,6 +4,7 @@ export const coountSolLI = {
   isWrapped: false,
 
   list() {
+    if (this.eles.length === 0) return;
     const ul = this.eles[0];
     const media = window.matchMedia('(min-width: 1024px)');
     const mainWrapperClass = 'sol-main-wrapper flex';

@@ -1,73 +1,148 @@
-export const coountSolLI = {
+// export const coountProdLI = {
+//   eles: document.querySelectorAll(
+//     'ul.main_menu > li.prods-menu-item > ul > li > ul'
+//   ),
+//   originalProdItems: [],
+//   isProdWrapped: false,
+
+//   prodlist() {
+//     if (this.eles.length === 0) return;
+//     this.eles.forEach((ele) => {
+//       const Produl = ele;
+
+//       const media = window.matchMedia('(min-width: 1024px)');
+//       const mainWrapperClass = 'prod-main-wrapper flex';
+//       const wrapperClass = 'prod-menu-wrapper';
+
+//       // Store original <li> items only once
+//       if (this.originalProdItems.length === 0) {
+//         this.originalProdItems = Array.from(Produl.children);
+//       }
+
+//       const wrapPrdItems = () => {
+//         if (this.isProdWrapped) return; // Avoid double wrapping
+
+//         const lists = this.originalProdItems;
+//         const tot = lists.length;
+
+//         // Clear everything after the first two
+//         while (Produl.children.length > 2) {
+//           Produl.removeChild(Produl.lastElementChild);
+//         }
+
+//         const mainWrapper = document.createElement('div');
+//         mainWrapper.classList.add(...mainWrapperClass.split(' '));
+//         const fragment = document.createDocumentFragment();
+
+//         for (let i = 0; i < tot; i += 4) {
+//           const div = document.createElement('div');
+//           div.classList.add(wrapperClass);
+
+//           lists.slice(i, i + 4).forEach((li) => div.appendChild(li));
+//           mainWrapper.appendChild(div);
+//         }
+
+//         fragment.appendChild(mainWrapper);
+//         Produl.appendChild(fragment);
+//         this.isProdWrapped = true;
+//       };
+
+//       const unwrapPrdItems = () => {
+//         if (!this.isProdWrapped) return;
+
+//         // Remove grouped structure
+//         const wrapper = Produl.querySelector('.prod-main-wrapper');
+//         if (wrapper) Produl.removeChild(wrapper);
+
+//         // Re-add original items
+//         this.originalProdItems.slice(2).forEach((li) => Produl.appendChild(li));
+//         this.isProdWrapped = false;
+//       };
+
+//       const handleProdChange = () => {
+//         if (media.matches) {
+//           wrapPrdItems();
+//         } else {
+//           unwrapPrdItems();
+//         }
+//       };
+
+//       handleProdChange();
+//       media.addEventListener('change', handleProdChange);
+//     });
+//   },
+// };
+
+export const coountProdLI = {
   eles: document.querySelectorAll(
-    'ul.main_menu > li.prods-menu-item > ul > li > ul > li > ul'
+    'ul.main_menu > li.prods-menu-item > ul > li > ul'
   ),
-  originalItems: [],
-  isWrapped: false,
+  stateMap: new WeakMap(),
 
-  list() {
-    const ul = this.eles[0];
-    const media = window.matchMedia('(min-width: 1024px)');
-    const mainWrapperClass = 'prod-main-wrapper flex';
-    const wrapperClass = 'prod-menu-wrapper';
+  prodlist() {
+    if (this.eles.length === 0) return;
 
-    // Store original <li> items only once
-    if (this.originalItems.length === 0) {
-      this.originalItems = Array.from(ul.children);
-    }
+    this.eles.forEach((Produl) => {
+      const media = window.matchMedia('(min-width: 1024px)');
+      const mainWrapperClass = 'prod-main-wrapper flex';
+      const wrapperClass = 'prod-menu-wrapper';
 
-    const wrapItems = () => {
-      if (this.isWrapped) return; // Avoid double wrapping
-
-      const lists = this.originalItems.slice(2); // Ignore first two
-      const tot = lists.length;
-
-      // Clear everything after the first two
-      while (ul.children.length > 2) {
-        ul.removeChild(ul.lastElementChild);
+      // Initialize state for this <ul> if not already set
+      if (!this.stateMap.has(Produl)) {
+        this.stateMap.set(Produl, {
+          originalItems: Array.from(Produl.children),
+          isWrapped: false,
+        });
       }
 
-      const mainWrapper = document.createElement('div');
-      mainWrapper.classList.add(...mainWrapperClass.split(' '));
-      const fragment = document.createDocumentFragment();
+      const wrapPrdItems = () => {
+        const state = this.stateMap.get(Produl);
+        if (state.isWrapped) return;
 
-      for (let i = 0; i < tot; i += 4) {
-        const div = document.createElement('div');
-        div.classList.add(wrapperClass);
+        const lists = state.originalItems; // Ignore first two
+        const tot = lists.length;
 
-        lists.slice(i, i + 4).forEach((li) => div.appendChild(li));
-        mainWrapper.appendChild(div);
-      }
+        while (Produl.children.length > 2) {
+          Produl.removeChild(Produl.lastElementChild);
+        }
 
-      fragment.appendChild(mainWrapper);
-      ul.appendChild(fragment);
-      this.isWrapped = true;
-    };
+        const mainWrapper = document.createElement('div');
+        mainWrapper.classList.add(...mainWrapperClass.split(' '));
+        const fragment = document.createDocumentFragment();
 
-    const unwrapItems = () => {
-      if (!this.isWrapped) return;
+        for (let i = 0; i < tot; i += 4) {
+          const div = document.createElement('div');
+          div.classList.add(wrapperClass);
+          lists.slice(i, i + 4).forEach((li) => div.appendChild(li));
+          mainWrapper.appendChild(div);
+        }
 
-      // Remove grouped structure
-      const wrapper = ul.querySelector('.sol-main-wrapper');
-      if (wrapper) ul.removeChild(wrapper);
+        fragment.appendChild(mainWrapper);
+        Produl.appendChild(fragment);
+        state.isWrapped = true;
+      };
 
-      // Re-add original items
-      this.originalItems.slice(2).forEach((li) => ul.appendChild(li));
-      this.isWrapped = false;
-    };
+      const unwrapPrdItems = () => {
+        const state = this.stateMap.get(Produl);
+        if (!state.isWrapped) return;
 
-    const handleChange = () => {
-      if (media.matches) {
-        wrapItems();
-      } else {
-        unwrapItems();
-      }
-    };
+        const wrapper = Produl.querySelector('.prod-main-wrapper');
+        if (wrapper) Produl.removeChild(wrapper);
 
-    // Initial check
-    handleChange();
+        state.originalItems.forEach((li) => Produl.appendChild(li));
+        state.isWrapped = false;
+      };
 
-    // Listen for media query changes
-    media.addEventListener('change', handleChange);
+      const handleProdChange = () => {
+        if (media.matches) {
+          wrapPrdItems();
+        } else {
+          unwrapPrdItems();
+        }
+      };
+
+      handleProdChange();
+      media.addEventListener('change', handleProdChange);
+    });
   },
 };
