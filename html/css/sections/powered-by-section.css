@@ -22,6 +22,15 @@
 .powered-by-icon{width: 61px;}
 .powered-by-text{flex: 1; color: var(--Muted---Light); font-size: 16px; font-weight: 400; letter-spacing: -0.16px; }
 
+ul.powered-by-list li .powered-by-text span.fs-18,
+ul.powered-by-list li .powered-by-icon svg g,
+ul.powered-by-list li .powered-by-icon svg path{transition: var(--b-transition);}
+
+ul.powered-by-list li:hover .powered-by-text span.fs-18{color: var(--White);}
+ul.powered-by-list li:hover .powered-by-icon svg g{opacity: 1;}
+ul.powered-by-list li:hover .powered-by-icon svg path{stroke: var(--Green);}
+
+
 .active .powered-by-text span.fs-18{color: var(--White);}
 .active .powered-by-icon svg g{opacity: 1;}
 .active .powered-by-icon svg path{stroke: var(--Green);}
@@ -47,6 +56,8 @@
 .powered-by-img{flex: 0 0 50px;}
 .powered-by-desc{flex: 1;}
 .powered-by-desc h2{font-size: 38px; line-height: 44px; letter-spacing: -0.14px; margin-bottom: 16px;}
+.powered-by-desc h2 a{color: var(--White);}
+.powered-by-desc h2 a:hover{color: var(--Green);}
 .powered-by-slide{opacity: 0.4;}
 .powered-by-slide.swiper-slide-active, .powered-by-slide.swiper-slide-next{opacity: 1;}
 ul.powered-by-list li{cursor: pointer;}
