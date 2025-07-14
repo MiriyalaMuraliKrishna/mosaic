@@ -18,6 +18,7 @@
 
 /* media css starts here */
 @media screen and (min-width:1024px) {
+    body.page-template-usecase.page-id-1139 .product-stats-row{padding-top: 80px;}
     .product-stats-main{padding: 147px 0 0;}
     .product-stats-head{gap: 184px;}
     .product-stats-title{flex: 0 0 394px;}
