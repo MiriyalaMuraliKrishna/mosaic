@@ -1,7 +1,7 @@
 
 .cta-module-text{font-size: 16.5px; letter-spacing: -0.495px; line-height: 26px;}
 .cta-module-text span.optional-text{margin-bottom: 133px;}
-.cta-module-text h2{font-size: 94px; line-height: 100px; letter-spacing: -2.82px; font-weight: 400; margin-bottom: 28px;}
+.cta-module-text h2{font-size: 86px; line-height: 92px; letter-spacing: -2.82px; font-weight: 400; margin-bottom: 28px;}
 .cta-module-text p{max-width: 435px;}
 .cta-module-btns{margin-top: 28px;}
 
@@ -11,7 +11,7 @@
 
 @media screen and (min-width:1024px) {
     .cta-module-main{padding: 128px 0 88px;}
-    .cta-module-text{max-width: 979px;}
+    .cta-module-text{max-width: 879px;}
     .cta-module-text:nth-child(1):last-child{max-width: 100%;}
 }
 

@@ -9,7 +9,7 @@ span.year{padding-bottom: 28px;}
 
 .innovation-text{flex: 0 0 677px; padding-right: 133px;}
 .innovation-lists{flex: 1;}
-.innovation-list{opacity: 0.4; margin-bottom: 45px;}
+.innovation-list{opacity: 0.6; color: var(--White-60); margin-bottom: 45px;}
 .innovation-list *{transition: var(--b-transition-10);}
 .innovation-list .stripe-line{margin-top: 44px;}
 .innovation-list:last-child{margin-bottom: 0;}
