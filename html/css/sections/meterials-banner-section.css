@@ -8,6 +8,7 @@
 @media only screen and (min-width: 1024px){
     .meterials-banner-main{padding: 282px 0 217px;}
     .meterials-banner-text{letter-spacing: 0.69px;}
+    .meterials-banner-text h1{font-size: 90px; line-height: 108px;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .meterials-banner-main{padding: 202px 0 117px;}

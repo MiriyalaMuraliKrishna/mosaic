@@ -4,7 +4,11 @@
 .fullscreen-btn button{ padding: 6.7px 18px 7.7px 13px; cursor: pointer; background: rgba(255, 255, 255, 0.20); backdrop-filter: blur(7px); border: none; border-radius: 40px; font-size: 13px; color: var(--White); letter-spacing: 0.52px; text-transform: capitalize; font-weight: 500; line-height: normal; display: flex; justify-content: center; align-items: center; gap: 11px; }
 .fullscreen-btn button:hover svg{animation: none;}
 .fullscreen-head{font-size: 21px; line-height: 30px; letter-spacing: -0.63px; font-weight: 300;}
+<<<<<<< HEAD
 .fullscreen-head h2{font-size: 100px; line-height: 106px; letter-spacing: -1.22px; font-weight: 400;}
+=======
+.fullscreen-head h2{font-size: 84px; line-height: 90px; letter-spacing: -1.22px; font-weight: 400;}
+>>>>>>> a4e354064881679c06db2f84d4f1e78d1d9d2538
 .fullscreen-head h2 span{color: var(--Green);}
 .fullscreen-head p{max-width: 524px;}
 .fullscreen-bg video{top: 0; left: 0; position: absolute;}
