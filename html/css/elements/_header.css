@@ -48,6 +48,8 @@ header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; 
      ul.main_menu > li.solutions-menu-item > ul > li:first-child{padding-top: 25px; padding-bottom: 2px;}
      ul.main_menu > li.solutions-menu-item > ul > li{max-width: 302px; flex: 0 0 302px; position: relative;}
 
+     ul.main_menu > li.solutions-menu-item > ul .sol-menu-wrapper > li.hide-nav-overview{display: none;}
+
      ul.main_menu > li.solutions-menu-item > ul .sol-menu-wrapper > li > a,
      ul.main_menu > li.solutions-menu-item > ul .prod-menu-wrapper > li > a{padding: 18px 22px 17px 0; border-bottom: 1px solid var(--Line---Light); font-size: 17px; font-weight: 600; line-height: 22px; letter-spacing: 0; display: block; position: relative; color: var(--White);}
      ul.main_menu > li.solutions-menu-item > ul .sol-menu-wrapper > li > a:hover,
