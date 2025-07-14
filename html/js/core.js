@@ -35,6 +35,8 @@ import { convas } from './module/convas';
 import { featuredIcon } from './module/featuredIconSticky';
 import { solstatsgraphs } from './module/solutionPage';
 import { trustbrandSlider } from './module/trustbrandSlider';
+import { coountSolLI } from './module/countLi';
+import { coountProdLI } from './module/countProdLi';
 
 document.addEventListener('DOMContentLoaded', function () {
   mylenis.init();
@@ -68,6 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
   convas.init();
   solstatsgraphs.init();
   trustbrandSlider.init();
+  coountSolLI.list();
+  coountProdLI.prodlist();
 });
 
 let scrolled = window.scrollY;
