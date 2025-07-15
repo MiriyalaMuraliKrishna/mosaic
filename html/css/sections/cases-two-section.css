@@ -46,7 +46,7 @@ ul.cases-two-links > li > a.active, ul.cases-two-links > li > a:hover{color: var
     .cases-two-left{flex: 0 0 205px;}
     .cases-two-right{flex: 1;}
     .cases-two-text p{max-width: 435px;}
-    .cases-two-image img{width: fit-content;}
+    .cases-two-image img{width: fit-content; min-height: 677px;}
     .cases-two-image{max-width: 1117px; max-height: 677px; margin-left: auto;}
 }
 @media only screen and (min-width: 1400px){
