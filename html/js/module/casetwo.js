@@ -23,6 +23,10 @@ class UsecaseTwo {
       });
       const id = e.target.getAttribute('href').trim().slice(1);
       document.getElementById(id).style.display = 'block';
+      document.querySelectorAll('[data-cases-bg]').forEach((ele) => {
+        ele.style.display = 'none';
+      });
+      document.querySelector(`[data-cases-bg="${id}"]`).style.display = 'block';
     }
   }
   eventHandlerMobile(e) {
