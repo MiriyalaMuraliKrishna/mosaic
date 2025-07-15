@@ -38,12 +38,14 @@ span.year{padding-bottom: 28px;}
   .innovation-text h2{font-size: 54px; line-height: 64px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .innovation-wrap{margin-bottom: 60px; overflow: hidden;}
     .innovation-main{padding: 90px 0 0;}
     .innovation-text{flex: 0 0 100%; padding-right: 0; margin-bottom: 36px;}
     .innovation-text h2{margin-bottom: 0;}
     .innovation-lists{padding-left: 23px; }
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
+    .innovation-wrap{margin-bottom: 50px; overflow: hidden;}
     .innovation-main{padding: 90px 0 0;}
     .innovation-text{flex: 0 0 100%; padding-right: 0; margin-bottom: 36px;}
     .innovation-text h2{margin-bottom: 0;}

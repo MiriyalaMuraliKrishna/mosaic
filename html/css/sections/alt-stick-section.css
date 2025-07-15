@@ -4,6 +4,8 @@
 .alt-stick-section{margin-bottom: 200px;}
 .alt-stick-section.last{margin-bottom: 0;}
 
+.alt-stick-section.remove-section-space { display: none; }
+
 .alt-stick-text span.stripe-line{margin-bottom: 29px;}
 .alt-stick-text h2{margin-bottom: 31px;}
 

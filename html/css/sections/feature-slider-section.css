@@ -8,6 +8,12 @@
 .feature-item-slide{opacity: 0.4;}
 .feature-item-slide.swiper-slide-active, .feature-item-slide.swiper-slide-next{opacity: 1;}
 
+/* body.page-template-product-software.page-id-1982 .feature-slider-main{padding-bottom: 60px;} */
+body.page-template-product-software.page-id-1982 .site-main-cover:has(> .feature-slider-section + .innovation-section) .feature-slider-main {
+  padding-bottom: 0;
+}
+
+
 /*-- media css starts here --*/
 @media screen and (min-width: 1600px){
     .feature-item-slider .swiper-button{top: -80px;}

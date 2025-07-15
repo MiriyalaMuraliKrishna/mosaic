@@ -5,7 +5,7 @@
 .product-dividend-line{width: 1000%; left: -100vw; height: 1px; top: calc(50% + 5px); transform: translateY(-50%); background: var(--Line---Light);}
 
 
-.product-stats-n-main{color: var(--Purple);align-items: flex-end;}
+.product-stats-n-main{color: var(--Purple);align-items: flex-end; margin-bottom: 20px;}
 .product-stats-num{font-size: 90px; line-height: 98px; letter-spacing: -2.7px; font-weight: 300; font-family: var(--heading-font); display: block; color: var(--Purple);}
 .product-stats-percentage{font-size: 50px; line-height: 67px; letter-spacing: 0;}
 .product-stats-name{font-size: 26px; line-height: normal; letter-spacing: -0.78px; }
@@ -24,6 +24,7 @@
     .product-stats-title{flex: 0 0 394px;}
     .product-stats-desc{flex: 1; max-width: 661px; padding-top: 26px;}
     .product-stats-thumb{flex: 0 0 687px; }
+    body.page-template-usecase.page-id-1139 .product-stats-thumb img{max-height: 500px; object-fit: contain;}
     .product-stats-lists{flex: 1; gap: 102px; min-height: 412px;}
     .product-stats-lists:nth-child(2){justify-content: end;}
     .product-stats-item{text-align: right; }
@@ -42,6 +43,8 @@
     .product-stats-thumb{flex: 0 0 687px; }
     .product-stats-lists{gap: 102px; justify-content: center; text-align: center;}
     .product-stats-n-main{justify-content: center;}
+    body.page-template-usecase.page-id-1139 .product-stats-thumb{margin: 30px 0 15px;}
+    body.page-template-usecase.page-id-1139 .product-stats-thumb img{max-height: 400px; object-fit: contain;}
 }
 @media screen and (max-width: 767px) and (min-width:200px) {
     .product-stats-main{padding: 90px 0 82px;}
@@ -57,4 +60,6 @@
     .product-stats-item p{font-size: 15.5px; letter-spacing: -.465px; line-height: 24px;}
     .product-stats-ellipse{ top: -300px; left: -264px; width: 923px; height: 923px; border-radius: 923px;}
     .product-dividend-line{display: none;}
+     body.page-template-usecase.page-id-1139 .product-stats-thumb{margin: 30px auto 15px;}
+    body.page-template-usecase.page-id-1139 .product-stats-thumb img{max-height: 300px; object-fit: contain;}
 }

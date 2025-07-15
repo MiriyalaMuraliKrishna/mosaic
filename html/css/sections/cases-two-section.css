@@ -31,7 +31,7 @@ ul.cases-two-links > li > a.active, ul.cases-two-links > li > a:hover{color: var
 .cases-two-text p{margin-bottom: 26px;}
 
 
-.cases-two-video{min-width: 1232px;}
+.cases-two-video{min-width: 1232px; z-index: 1;}
 .cases-two-video video{width: 100%; height: 100%;}
 .cases-two-video img{opacity: 0.4;}
 .cases-two-overlay{background: linear-gradient(-270deg,var(--Black) 0%,hsla(0,0%,100%,0) 51%)}
