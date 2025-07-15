@@ -10,15 +10,18 @@
 
 .download-text:nth-child(1):last-child{flex: 0 0 100%; max-width: 100%;}
 
-body .download-form  .frm_style_formidable-style.with_frm_style{width: 100%;}
+body .download-form .frm_style_formidable-style.with_frm_style{width: 100%;}
 body .download-form .frm_forms .frm_form_fields .frm_fields_container{gap: 10px;}
-body .download-form  .frm_forms .frm_form_fields .frm_form_field .frm_primary_label{display: none;}
+body .download-form .frm_forms .frm_form_fields .frm_form_field .frm_primary_label{display: none;}
 body .download-form .frm_style_formidable-style.with_frm_style .frm_form_field input[type="email"]{flex: 1; padding: 12px 28px 13px; border-radius: 90px; border: 1px solid var(--Line---Light); background-color: transparent; font-family: var(--body-font); font-size: 18px; font-weight: 400; letter-spacing: -.54px; line-height: 28px; }
 body .download-form .frm_style_formidable-style.with_frm_style .frm_form_field input[type="email"]:focus,
- body .download-form .frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input:not([type="checkbox"]):focus{border-color: var(--Line---Light); background-color: transparent;}
+body .download-form .frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input:not([type="checkbox"]):focus{border-color: var(--Line---Light); background-color: transparent;}
 body .download-form .frm_forms .frm_form_fields .frm_form_field.frm_half{width: fit-content; flex: 1;}
 body .download-form .frm_style_formidable-style.with_frm_style .frm_submit button{ text-transform: uppercase; text-align: center; justify-content: center;}
-body .with_frm_style input::placeholder, body .with_frm_style textarea::placeholder{ font-family: var(--body-font); font-size: 18px; font-weight: 400; letter-spacing: -.54px; line-height: 28px; }
+body .download-form .with_frm_style input::placeholder, body .with_frm_style textarea::placeholder{ font-family: var(--body-font); font-size: 18px; font-weight: 400; letter-spacing: -.54px; line-height: 28px; }
+body .download-form .with_frm_style .frm_message p{color: var(--Green);}
+
+
 
 /* media css starts here */
 @media screen and (min-width: 1024px){
