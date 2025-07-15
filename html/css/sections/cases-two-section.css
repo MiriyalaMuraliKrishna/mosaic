@@ -17,7 +17,7 @@
 
 .cases-two-head{max-width: 780px; padding-bottom: 51px;} 
 .cases-two-head span.optional-text{margin-bottom: 28px;}
-
+[data-cases-bg]:not(:first-child){display: none;}
 
 
 ul.cases-two-links{gap: 24px 0;}
