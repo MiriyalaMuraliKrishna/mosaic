@@ -1,13 +1,6 @@
 
 
-
-
-
-
-
-
-
-
+.powered-by-section{position: relative; z-index: 1;}
 .powered-by-head{padding-bottom: 62px; letter-spacing: -0.63px;}
 .powered-by-head h2{margin-bottom: 12px;}
 
@@ -47,7 +40,7 @@ ul.powered-by-list li:hover .powered-by-icon svg path{stroke: var(--Green);}
 .powered-graph-bg{ backdrop-filter: blur(67px); padding: 30px 20px 26px; min-height: 161px;}
 
 .powered-by-hrs{padding-top: 13px;}
-.powered-graph-min{padding-top: 5px;}
+.powered-graph-min{padding-top: 5px; padding-bottom: 8px;}
 .powered-cad, .powered-days{padding-bottom: 22px; font-family: var(--heading-font); color: var(--Purple); letter-spacing: -0.42px; }
 .powered-progress-main{width: 112px; margin: 9px 0 33px;}
 .powered-progress{width: 100%; height: 4px; border-radius: 4px;}

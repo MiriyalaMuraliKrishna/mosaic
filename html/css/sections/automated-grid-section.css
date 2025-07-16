@@ -19,7 +19,7 @@
 .automated-grid-rt .automated-grid-item:not(:first-child){padding: 66px 65px 74px 96px; gap: 117px;}
 .automated-grid-rt .automated-grid-item:not(:first-child) .automated-grid-image{flex: 0 0 136px;}
 
-.automated-grid-bottom{gap: 25px;}
+.automated-grid-bottom{gap: 25px; margin-bottom: 25px;}
 .automated-grid-bottom .automated-grid-item{padding: 76px 60px 75px 97px; gap: 99px; flex: 1;}
 
 .automated-grid-bottom .automated-grid-subtitle{font-size: 86px; line-height: normal; font-weight: 200; flex: 0 0 149px;}
@@ -30,12 +30,12 @@
 .automated-grid-bottom .automated-grid-item:not(:first-child) .automated-grid-image img{object-fit: contain;}
 
 @media screen and (min-width: 1024px) {
-    .automated-grid-main{margin: 120px 0 143px;}
+    .automated-grid-wrapper{margin: 120px 0 118px;}
     .automated-grid-lt{flex: 0 0 320px;}
     .automated-grid-rt{flex: 1;}
     .automated-grid-rt .automated-grid-desc{flex: 1;}
+    .automated-grid-image{flex: 0 0 136px;}
 }
-
 @media screen and (max-width: 1250px) and (min-width: 1024px) {
     .automated-grid-bottom .automated-grid-subtitle{font-size: 60px;}
 }
@@ -44,7 +44,7 @@
     .automated-grid-bottom .automated-grid-subtitle{font-size: 50px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-    .automated-grid-main{margin: 90px 0;}
+    .automated-grid-wrapper{margin: 90px 0;}
     .automated-grid-top{gap: 20px; margin-bottom: 20px;}
     .automated-grid-lt{flex: 0 0 250px;}
     .automated-grid-lt .automated-grid-item{padding: 65px 50px 60px;}
@@ -59,7 +59,7 @@
     .automated-grid-bottom .automated-grid-subtitle{font-size: 35px;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
-    .automated-grid-main{margin: 90px 0 0;}
+    .automated-grid-wrapper{margin: 90px 0 0;}
     .automated-grid-ellipse{display: none;}
     .automated-grid-top{gap: 20px; margin-bottom: 20px;}
     .automated-grid-lt, .automated-grid-rt{width: 100%; }
@@ -76,4 +76,7 @@
     .automated-grid-bottom .automated-grid-item{gap: 39px; padding: 41px 20px 64px; flex-direction: column;}
     .automated-grid-bottom .automated-grid-item:not(:first-child){flex: 100%; gap: 40px; padding: 56px 57px 50px; text-align: center; } 
     .automated-grid-bottom .automated-grid-subtitle{font-size: 66px; flex: 1;}
+}
+@media screen and (max-width: 413px) and (min-width: 200px){
+    .automated-grid-bottom .automated-grid-subtitle{font-size: 46px; line-height: 56px;}
 }

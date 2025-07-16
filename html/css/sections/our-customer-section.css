@@ -19,7 +19,7 @@
     .our-customer-left{width: 437px;}
     .our-customer-right{width: calc(100% - 550px);}
     .our-customer-head{padding-right: 92px; padding-top: 2px;}
-    .our-customer-nav.swiper-horizontal .swiper-buttons{top: -57px;}
+    .our-customer-nav{padding-top: 57px;}
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 1024px){

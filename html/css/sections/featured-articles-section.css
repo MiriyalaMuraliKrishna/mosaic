@@ -36,6 +36,7 @@
 }
 @media only screen and (min-width: 1024px){
     body.page-template-product-software .featured-articles-main{padding: 140px 0;}
+    .no_testimonial_section .featured-articles-main{padding-top: 86px;}
 }
 @media only screen and (min-width: 768px){
     body.category .featured-articles-title h2{font-size: 44px; line-height: 54px; letter-spacing: -0.32px;}

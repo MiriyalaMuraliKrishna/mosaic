@@ -8,10 +8,10 @@ export const Menu = {
     'ul.main_menu > li.solutions-menu-item:not(.current-page-ancestor) > a'
   ),
   $solutions: document.querySelectorAll(
-    'ul.main_menu > li.solutions-menu-item > ul > li > a'
+    'ul.main_menu > li.solutions-menu-item.prods-menu-item > ul > li > a'
   ),
   $solutionsLi: document.querySelectorAll(
-    'ul.main_menu > li.solutions-menu-item > ul > li > ul > li.current_page_item'
+    'ul.main_menu > li.solutions-menu-item.prods-menu-item > ul > li > ul > li.current_page_item'
   ),
   $mainproducts: document.querySelector(
     'ul.main_menu > li.products-menu-item:not(.current-page-ancestor) > a'
@@ -31,6 +31,9 @@ export const Menu = {
   $materialsLi: document.querySelectorAll(
     'ul.main_menu > li.materials-menu-item > ul > li > ul > li.current_page_item'
   ),
+  $industriesLi: document.querySelector(
+    'ul.main_menu > li.solutions-menu-item.prods-menu-item > ul > li:nth-child(4)'
+  ),
   init() {
     const _ = this;
 
@@ -44,6 +47,7 @@ export const Menu = {
     _.$mainsolutions && !_.$solutionsLi.length > 0
       ? _.$solutions[0].parentElement.classList.add('open-menu')
       : '';
+    _.$industriesLi.classList.add('open-menu');
 
     _.$solutions.forEach((ele) => {
       ele.addEventListener('mouseenter', function (e) {
