@@ -32,10 +32,11 @@
     .featured-articles-image{top: -92px; right: 50px; z-index: -1;}
     .featured-articles-sm{width: 100%;}
     .featured-articles-sm .featured-articles-image{top: 42px; right: -25px;}
-    .featured-articles-sm:nth-child(2n+2) .featured-articles-image{top: -156px; right: 72px;}
+    .featured-articles-sm:nth-child(2n+2) .featured-articles-image{right: -23px; top: -50px; max-width: 328px;}
 }
 @media only screen and (min-width: 1024px){
     body.page-template-product-software .featured-articles-main{padding: 140px 0;}
+    .no_testimonial_section .featured-articles-main{padding-top: 86px;}
 }
 @media only screen and (min-width: 768px){
     body.category .featured-articles-title h2{font-size: 44px; line-height: 54px; letter-spacing: -0.32px;}

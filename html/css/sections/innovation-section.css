@@ -9,7 +9,7 @@ span.year{padding-bottom: 28px;}
 
 .innovation-text{flex: 0 0 677px; padding-right: 133px;}
 .innovation-lists{flex: 1;}
-.innovation-list{opacity: 0.4; margin-bottom: 45px;}
+.innovation-list{opacity: 0.6; color: var(--White-60); margin-bottom: 45px;}
 .innovation-list *{transition: var(--b-transition-10);}
 .innovation-list .stripe-line{margin-top: 44px;}
 .innovation-list:last-child{margin-bottom: 0;}
@@ -21,8 +21,10 @@ span.year{padding-bottom: 28px;}
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px){
     .innovation-wrap{padding-bottom: 140px;}
-    .innovation-overlay-top{ width: 100%; height: 100%; top: 0; right: 0; z-index: 1; background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, var(--Black) 120.02%); }
-    .innovation-overlay-right{ width: 100%; height: 100%; top: 0; right: 0; z-index: 1; background: linear-gradient(-270deg, rgba(255, 255, 255, 0.00) 0%, var(--Black) 115.63%); }
+    /* .innovation-overlay-top{ width: 100%; height: 100%; top: 0; right: 0; z-index: 1; background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, var(--Black) 120.02%); }
+    .innovation-overlay-right{ width: 100%; height: 100%; top: 0; right: 0; z-index: 1; background: linear-gradient(-270deg, rgba(255, 255, 255, 0.00) 0%, var(--Black) 115.63%); } */
+    .innovation-overlay-top{background: linear-gradient(0deg,hsla(0,0%,100%,0) 0,#00000026 120.02%); height: 100%; right: 0; top: 0; width: 100%; z-index: 1; }
+    .innovation-overlay-right{background: linear-gradient(-270deg,hsla(0,0%,100%,0) 0,#0000003d 115.63%); height: 100%; right: 0; top: 0; width: 100%; z-index: 1; }
     .innovation-image{max-width: 988px; max-height: 676px; left: -225px; bottom: 0; z-index: 0;}
     .innovation-image img{opacity: 0.4;}
     .innovation-lists{ padding-left: 128px; padding-top: 7px;}
@@ -36,12 +38,14 @@ span.year{padding-bottom: 28px;}
   .innovation-text h2{font-size: 54px; line-height: 64px;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .innovation-wrap{margin-bottom: 60px; overflow: hidden;}
     .innovation-main{padding: 90px 0 0;}
     .innovation-text{flex: 0 0 100%; padding-right: 0; margin-bottom: 36px;}
     .innovation-text h2{margin-bottom: 0;}
     .innovation-lists{padding-left: 23px; }
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
+    .innovation-wrap{margin-bottom: 50px; overflow: hidden;}
     .innovation-main{padding: 90px 0 0;}
     .innovation-text{flex: 0 0 100%; padding-right: 0; margin-bottom: 36px;}
     .innovation-text h2{margin-bottom: 0;}

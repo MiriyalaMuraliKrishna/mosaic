@@ -17,7 +17,7 @@
 
 .cases-two-head{max-width: 780px; padding-bottom: 51px;} 
 .cases-two-head span.optional-text{margin-bottom: 28px;}
-
+[data-cases-bg]:not(:first-child){display: none;}
 
 
 ul.cases-two-links{gap: 24px 0;}
@@ -31,7 +31,7 @@ ul.cases-two-links > li > a.active, ul.cases-two-links > li > a:hover{color: var
 .cases-two-text p{margin-bottom: 26px;}
 
 
-.cases-two-video{min-width: 1232px;}
+.cases-two-video{min-width: 1232px; z-index: 1;}
 .cases-two-video video{width: 100%; height: 100%;}
 .cases-two-video img{opacity: 0.4;}
 .cases-two-overlay{background: linear-gradient(-270deg,var(--Black) 0%,hsla(0,0%,100%,0) 51%)}
@@ -46,7 +46,7 @@ ul.cases-two-links > li > a.active, ul.cases-two-links > li > a:hover{color: var
     .cases-two-left{flex: 0 0 205px;}
     .cases-two-right{flex: 1;}
     .cases-two-text p{max-width: 435px;}
-    .cases-two-image img{width: fit-content;}
+    .cases-two-image img{width: fit-content; min-height: 677px;}
     .cases-two-image{max-width: 1117px; max-height: 677px; margin-left: auto;}
 }
 @media only screen and (min-width: 1400px){

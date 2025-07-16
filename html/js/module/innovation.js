@@ -11,7 +11,7 @@ class Innovation {
   init() {
     if (!this.ele || !this.line || this.items.length === 0) return;
     this.items.forEach((item) => {
-      item.style.opacity = 0.4;
+      item.style.opacity = 0.6;
       item.style.transition = 'opacity 1s ease';
       this.line.style.transition = 'height 1s ease';
       this.observer.observe(item);
@@ -30,7 +30,7 @@ class Innovation {
 
     // Update previous item opacity only if scrolling up
     if (this.activeItem && !scrollingDown) {
-      this.activeItem.style.opacity = 0.4;
+      this.activeItem.style.opacity = 0.6;
     }
 
     // Set new active

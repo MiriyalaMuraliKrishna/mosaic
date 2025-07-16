@@ -26,6 +26,7 @@
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .everything-wrap{padding: 133px 0 141px;}
+    body.page-template-usecase.page-id-1139 .everything-wrap{padding-bottom: 60px;}
     .everything-head h2{font-size: 48px; letter-spacing: -.32px; line-height: 58px; margin-bottom: 21px;}
     .everything-main{display: block;}
     .everything-left{padding-bottom: 80px;}

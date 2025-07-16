@@ -5,6 +5,7 @@
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
+    section.no-feature-section .intro-main { padding-bottom: 95px; }
     .intro-main{padding: 231px 0 295px;}
     .intro-text span{font-size: 122px; line-height: 128px; letter-spacing: -1.22px; font-weight: 400;}
 }

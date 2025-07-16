@@ -3,7 +3,6 @@ import Splide from '@splidejs/splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 export const slider = {
-  customele: document.querySelector('.our-customer-main'),
   usecaselink: document.querySelector('ul.use-cases-links'),
   usecaseele: document.querySelectorAll('.use-cases-slider'),
   serviceele: document.querySelectorAll('.services-carousel-slider'),
@@ -22,42 +21,69 @@ export const slider = {
     this.poweredBySlider();
   },
   customSlider() {
-    const left = this.customele?.querySelector('.our-customer-left');
-    const right = this.customele?.querySelector('.our-customer-nav');
+    const customerBlocks = document.querySelectorAll('.our-customer-main');
 
-    const leftswiper = new Swiper(left, {
-      effect: 'coverflow',
-      slidesPerView: 1,
-      speed: 800,
-      spaceBetween: 0,
-      coverflowEffect: {
-        rotate: 100,
-        stretch: 0,
-        depth: 200,
-        modifier: 1,
-        slideShadows: true,
-      },
-      watchSlidesProgress: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+    customerBlocks.forEach((customele) => {
+      const left = customele.querySelector('.our-customer-left');
+      const right = customele.querySelector('.our-customer-nav');
+      const nextBtnMbl = customele.querySelector('.swiper-button-next');
+      const prevBtnMbl = customele.querySelector('.swiper-button-prev');
+      const nextBtnDesktop = customele
+        .querySelector('.our-customer-nav')
+        .querySelector('.swiper-button-next');
+      const prevBtnDesktop = customele
+        .querySelector('.our-customer-nav')
+        .querySelector('.swiper-button-prev');
 
-    new Swiper(right, {
-      slidesPerView: 1,
-      speed: 800,
-      spaceBetween: 0,
-      thumbs: {
-        swiper: leftswiper,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      const leftswiper = new Swiper(left, {
+        effect: 'coverflow',
+        slidesPerView: 1,
+        speed: 800,
+        spaceBetween: 0,
+        coverflowEffect: {
+          rotate: 100,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        watchSlidesProgress: true,
+        navigation: {
+          nextEl: nextBtnMbl,
+          prevEl: prevBtnMbl,
+        },
+        breakpoints: {
+          768: {
+            navigation: {
+              nextEl: nextBtnDesktop,
+              prevEl: prevBtnDesktop,
+            },
+          },
+        },
+      });
+
+      new Swiper(right, {
+        slidesPerView: 1,
+        speed: 800,
+        spaceBetween: 0,
+        thumbs: {
+          swiper: leftswiper,
+        },
+        navigation: {
+          nextEl: nextBtnMbl,
+          prevEl: prevBtnMbl,
+        },
+        breakpoints: {
+          768: {
+            navigation: {
+              nextEl: nextBtnDesktop,
+              prevEl: prevBtnDesktop,
+            },
+          },
+        },
+      });
     });
   },
-
   usecaseSlider() {
     this.usecaselink?.children[0].querySelector('a').classList.add('active');
 

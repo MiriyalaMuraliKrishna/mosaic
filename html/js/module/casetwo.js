@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 class UsecaseTwo {
   constructor(selector) {
     this.main = document.querySelector(selector);
@@ -23,6 +25,11 @@ class UsecaseTwo {
       });
       const id = e.target.getAttribute('href').trim().slice(1);
       document.getElementById(id).style.display = 'block';
+      document.querySelectorAll('[data-cases-bg]').forEach((ele) => {
+        $(ele).hide();
+      });
+      let showele = document.querySelector(`[data-cases-bg="${id}"]`);
+      if (showele) $(showele).fadeIn(800);
     }
   }
   eventHandlerMobile(e) {

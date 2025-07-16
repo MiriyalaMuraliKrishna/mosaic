@@ -15,6 +15,7 @@
     .choose-array-img figure img{min-width: 1232px;}
 }
 @media screen and (min-width: 1024px) {
+    .choose-array-main{padding-bottom: 89px;}
     .choose-array-lt{flex: 0 0 471px;padding-top: 155px;}
     .choose-array-rt{flex: 1;}
     .choose-array-text{max-width: 435px; font-size: 21px; font-weight: 300; line-height: 30px; letter-spacing: -0.63px; }

@@ -1,8 +1,10 @@
-jQuery(document).ready(function () {
-  if (jQuery('[data-vbg]')) {
-    jQuery('[data-vbg]').youtube_background({
-      // lazyloading: true, // some console reason i commented here
+jQuery(window).on('load', function () {
+  const $vbg = jQuery('[data-vbg]');
+  if ($vbg.length > 0) {
+    $vbg.youtube_background({
+      // lazyload: true, // optional but may help
+      // mute: true // try this to avoid autoplay issues
     });
-    jQuery('[data-vbg]').addClass('open');
+    $vbg.addClass('open');
   }
 });

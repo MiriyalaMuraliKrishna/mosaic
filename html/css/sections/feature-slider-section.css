@@ -4,9 +4,13 @@
 
 .feature-item-img{flex: 0 0 50px;}
 .feature-item-desc{flex: 1;}
-.feature-item-desc h2{font-size: 38px; line-height: 44px; letter-spacing: -1.14px; margin-bottom: 16px;}
+.feature-item-desc h2{font-size: 38px; line-height: 44px; margin-bottom: 16px;}
 .feature-item-slide{opacity: 0.4;}
 .feature-item-slide.swiper-slide-active, .feature-item-slide.swiper-slide-next{opacity: 1;}
+
+/* body.page-template-product-software.page-id-1982 .feature-slider-main{padding-bottom: 60px;} */
+body.page-template-product-software.page-id-1982 .site-main-cover:has(> .feature-slider-section + .innovation-section) .feature-slider-main { padding-bottom: 0; }
+.features_count_one .feature-item-pagination{display: none;}
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1600px){
@@ -20,6 +24,7 @@
     .feature-item{ gap: 50px;}
     .feature-item-pagination .swiper-pagination{display: none;}   
     .swiper-slide.feature-item-slide{width: 521px;}
+    .features_count_one .swiper-slide.feature-item-slide{width: 100%;}
 }
 @media screen and (max-width: 1599px) and (min-width: 1400px) {
     .swiper-slide.feature-item-slide{width: 521px; margin-right: 84.5px;}
