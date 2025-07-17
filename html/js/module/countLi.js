@@ -30,11 +30,11 @@ export const coountSolLI = {
       mainWrapper.classList.add(...mainWrapperClass.split(' '));
       const fragment = document.createDocumentFragment();
 
-      for (let i = 0; i < tot; i += 4) {
+      for (let i = 0; i < tot; i += 5) {
         const div = document.createElement('div');
         div.classList.add(wrapperClass);
 
-        lists.slice(i, i + 4).forEach((li) => div.appendChild(li));
+        lists.slice(i, i + 5).forEach((li) => div.appendChild(li));
         mainWrapper.appendChild(div);
       }
 

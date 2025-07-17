@@ -4,7 +4,7 @@
 .products-software-banner-text h1{font-weight: 400; font-family: var(--heading-font); margin-bottom: 0;}
 .products-software-banner-text p{margin-bottom: 18px;}
 .products-software-banner-img .all-meterials-sm-icon{backdrop-filter: blur(67px); padding: 16px 23px 33px 27px; background: rgba(139, 82, 252, 0.10); width: 160px; position: relative; top: 219px; left: -88px; color: var(--Black);}
-
+.products-software-banner-thumb img{object-fit: contain;}
 
 
 
@@ -17,6 +17,7 @@
     .products-software-banner-text h1{font-size: 100px; line-height: 118px; letter-spacing: -1.3px;}
     .products-software-banner-thumb{max-width: 732px; width: 100%; height: auto; top: 0; right: 0; z-index: -1;}
     .products-software-banner-img .all-meterials-sm-icon:nth-child(3){top: 254px; left: 103px; padding: 30px 26px 26px 27px;}
+    .products-software-banner-thumb img{max-height: 600px;}
 }
 @media screen and (max-width: 1399px)  and (min-width: 1024px) {
     .products-software-banner-main{gap: 30px; padding: 121px 0 159px;}

@@ -110,10 +110,10 @@ export const coountProdLI = {
         mainWrapper.classList.add(...mainWrapperClass.split(' '));
         const fragment = document.createDocumentFragment();
 
-        for (let i = 0; i < tot; i += 4) {
+        for (let i = 0; i < tot; i += 6) {
           const div = document.createElement('div');
           div.classList.add(wrapperClass);
-          lists.slice(i, i + 4).forEach((li) => div.appendChild(li));
+          lists.slice(i, i + 6).forEach((li) => div.appendChild(li));
           mainWrapper.appendChild(div);
         }
 

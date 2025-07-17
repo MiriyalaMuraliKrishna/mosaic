@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
   software.init();
   convas.init();
   solstatsgraphs.init();
-  trustbrandSlider.init();
   coountSolLI.list();
   coountProdLI.prodlist();
 });
@@ -87,4 +86,5 @@ window.addEventListener('load', function () {
   Stickyfeatures.init();
   sidebar.init();
   featuredIcon.init();
+  trustbrandSlider.init();
 });

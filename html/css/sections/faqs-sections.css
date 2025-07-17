@@ -55,8 +55,7 @@ ul.category-links > li a.mPS2id-clicked{
 .faqs-answer video{max-width: 242px; mix-blend-mode: difference; margin: auto; object-fit: contain;}
 .faqs-vactor{bottom: -26px; right: 14px; width: 225px; height: 54px;}
 .faqs-vactor svg{width: 100%; height: 100%; object-fit: contain;}
-
-
+.faqs-answer figure img { object-fit: contain; max-width: 146px; margin: 0 auto; display: block; }
 
 /* media css starts here */
 @media only screen  and (min-width: 1440px){

@@ -23,6 +23,7 @@ ProductCompare.prototype.mySlick = function () {
     let $nav = $(this.ele).slick({
       slidesToShow: 2,
       slidesToScroll: 1,
+      adaptiveHeight: true,
       infinite: false,
       arrows: true,
       prevArrow:

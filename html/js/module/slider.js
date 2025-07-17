@@ -216,17 +216,28 @@ export const slider = {
   },
   featureItemSlider() {
     if (!this.featureitemsEle) return;
+
+    const slides = this.featureitemsEle.querySelectorAll('.swiper-slide');
+    if (slides.length === 2) {
+      const container = this.featureitemsEle.querySelector('.swiper-wrapper');
+      slides.forEach((slide) => {
+        const clone = slide.cloneNode(true);
+        container.appendChild(clone);
+      });
+    }
     const myscreen = new Swiper(document.querySelector('.fullscreen-section'), {
       slidesPerView: 1,
       effect: 'fade',
-      speed: 1000,
+      loop: true,
+      speed: 4000,
+      autoHeight: false,
     });
     new Swiper(this.featureitemsEle, {
       slidesPerView: 1,
       loop: true,
-      speed: 800,
+      speed: 1000,
       spaceBetween: 30,
-      autoHeight: true,
+      autoHeight: false,
       pagination: {
         el: '.swiper-pagination',
         type: 'progressbar',
@@ -252,6 +263,7 @@ export const slider = {
       speed: 800,
       spaceBetween: 30,
       autoHeight: true,
+      loop: true,
       pagination: {
         el: '.swiper-pagination',
         type: 'progressbar',
@@ -263,7 +275,7 @@ export const slider = {
       breakpoints: {
         768: { slidesPerView: 2, spaceBetween: 40 },
         1024: { slidesPerView: 'auto' },
-        1440: { slidesPerView: 'auto', spaceBetween: 169 },
+        1440: { slidesPerView: 'auto', spaceBetween: 0 },
       },
     });
   },

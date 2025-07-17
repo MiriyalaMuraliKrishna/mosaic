@@ -10,6 +10,7 @@
 
 /* body.page-template-product-software.page-id-1982 .feature-slider-main{padding-bottom: 60px;} */
 body.page-template-product-software.page-id-1982 .site-main-cover:has(> .feature-slider-section + .innovation-section) .feature-slider-main { padding-bottom: 0; }
+.features_count_one{display: none;} 
 .features_count_one .feature-item-pagination{display: none;}
 
 /*-- media css starts here --*/

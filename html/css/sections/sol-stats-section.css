@@ -8,7 +8,7 @@ span.sol-stats-name{font-size: 26px; line-height: normal; letter-spacing: -0.78p
 .sol-stats-item p{font-size: 16.5px; letter-spacing: -0.495px; font-weight: 400; color: var(--Muted---Light); line-height: 26px; }
 .sol-stats-ellipse{ top: 50%; left: 50%; transform: translate(-50%,-50%); width: 874px; height: 874px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Purple) 0%, rgba(139, 82, 252, 0.00) 100%); z-index: -1;}
 .sol-stats-text:nth-child(1):last-child{flex: 0 0 100%;}
-
+.sol-stats-desc img{max-width: 120px; min-height: 120px; object-fit: contain;}
 
 
 /*-- media css starts here --*/
@@ -17,10 +17,11 @@ span.sol-stats-name{font-size: 26px; line-height: normal; letter-spacing: -0.78p
     .sol-stats-main{gap: 90px;}
     .sol-stats-text{flex: 0 0 462px;}
     .sol-stats-right{flex: 1;}
+    .sol-stats-text h2{font-size: 58px; line-height: 68px;}
 }
 @media screen and (min-width: 768px){
     .sol-stats-item{flex: 0 0 50%; border-bottom: 1px solid var(--Line---Light); border-left: 1px solid var(--Line---Light); display: flex; flex-direction: column; justify-content: center; }
-    .sol-stats-item:nth-child(2n+2){padding: 44px 0 0 63px;}
+    .sol-stats-item:nth-child(2n+2){padding: 0 0 44px 63px;}
     .sol-stats-item:nth-child(2n+1){border-left: none; padding: 44px 77px 58px 0; text-align: right;}
     .sol-stats-item.highlight-last{border-bottom: none; padding-top: 47px; padding-bottom: 0;}
     .sol-stats-item.highlight-last.one{border-right: 1px solid var(--Line---Light);}
@@ -30,6 +31,9 @@ span.sol-stats-name{font-size: 26px; line-height: normal; letter-spacing: -0.78p
 }
 @media screen and (max-width: 1299px) and (min-width: 1024px){
     .sol-stats-text{flex: 0 0 400px;}
+    .sol-stats-text h2{font-size: 50px; line-height: 60px;}
+    .sol-stats-main{gap: 40px;}
+    span.sol-stats-name{font-size: 20px;}
 }
 @media screen and (max-width: 1023px) and (min-width:768px){
     .sol-stats-wrap{padding: 43px 0 8px;}

@@ -15,6 +15,7 @@
 
 @media only screen and (min-width: 1024px){
     body.page-template-solution .our-customer-main{padding-top: 126px;}
+    body.page-template-usecase.page-id-2783 .our-customer-main{padding-bottom: 180px;}
     .our-customer-main{gap: 113px; padding: 140px 0 119px;}
     .our-customer-left{width: 437px;}
     .our-customer-right{width: calc(100% - 550px);}

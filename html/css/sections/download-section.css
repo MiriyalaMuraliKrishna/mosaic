@@ -25,12 +25,13 @@ body .download-form .with_frm_style .frm_message p{color: var(--Green);}
 
 /* media css starts here */
 @media screen and (min-width: 1024px){
+    body.page-template-product-hardware .download-wrap{padding: 140px 0 0;}
     .download-wrap{padding: 109px 0 162px;}
     .download-image{width: 561px; height: 462px;}
     .download-form button{width: fit-content;}
 }
 @media screen and (min-width: 1400px){
-    .download-text{max-width: 780px; padding: 88px 114px 90px; }
+    .download-text{max-width: 780px; padding: 88px 114px 108px; }
     .download-image{top: -85px; right: 75px;}
 }
 @media screen and (max-width: 1399px) and (min-width: 1024px){

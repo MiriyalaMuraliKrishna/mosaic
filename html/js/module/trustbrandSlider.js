@@ -12,10 +12,17 @@ export const trustbrandSlider = {
       this.brands.forEach((trustlogo) => {
         const logoItems = trustlogo.querySelectorAll('.splide__slide');
 
+        // if (trustlogo.classList.contains('is-splide')) {
+        //   const existing = trustlogo.splide;
+        //   if (existing && existing.destroy) {
+        //     existing.destroy(true);
+        //   }
+        // }
         if (trustlogo.classList.contains('is-splide')) {
           const existing = trustlogo.splide;
           if (existing && existing.destroy) {
             existing.destroy(true);
+            trustlogo.classList.remove('is-splide'); // <== Important!
           }
         }
 
@@ -34,7 +41,7 @@ export const trustbrandSlider = {
           type: 'loop',
           autoWidth: true,
           autoScroll: {
-            speed: autoScrollSpeed * direction,
+            speed: 0.95,
             pauseOnHover: false,
           },
           extensions: { AutoScroll },
