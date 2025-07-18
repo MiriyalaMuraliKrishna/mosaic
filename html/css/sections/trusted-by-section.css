@@ -9,8 +9,8 @@
 .trusted-by-logo img{object-fit: contain; max-width: 180px; width: 100%; height: auto; margin: 0 auto;}
 
 
-.trusted-by-gradient.left{ top: 0; left: 0; right: auto; width: 100px; height: 100%; background-image: linear-gradient(270deg, transparent, var(--Black)); content: ""; position: absolute; }
-.trusted-by-gradient.right { top: 0; left: auto; right: 0px; width: 100px; height: 100%; background-image: linear-gradient(270deg, var(--Black), transparent); content: ""; position: absolute; }
+.trusted-by-gradient.left{ top: 0; left: 0; right: auto; width: 15%; height: 100%; background-image: linear-gradient(to left, transparent 10%, var(--Black)  105%); content: ""; position: absolute; }
+.trusted-by-gradient.right { top: 0; left: auto; right: 0px; width: 15%; height: 100%; background-image: linear-gradient(to right, transparent 10%, var(--Black)  105%); content: ""; position: absolute; }
 .trusted-by-logos .splide__track{ will-change: transform; transform: translateZ(0); backface-visibility: hidden; }
 
 /*-- media css starts here --*/

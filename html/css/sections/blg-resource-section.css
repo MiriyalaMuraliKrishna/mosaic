@@ -20,7 +20,7 @@
 
 .case-stdy-list.no_image{background-color: var(--White-10);}
 .case-stdy-lists{gap: 25px;}
-.case-stdy-list{flex: 1; }
+.case-stdy-list{flex: 0 0 calc(50% - 12.5px); }
 .case-stdy-list h2{margin-bottom: 0; font-size: 26px; line-height: 40px; font-family: var(--body-font); letter-spacing: 0;}
 .case-stdy-image{width: 100%; height: 100%;}
 picture.case-stdy-thumb img{opacity: 0.3;}
@@ -55,9 +55,6 @@ picture.case-stdy-thumb img{opacity: 0.3;}
     ul.blg-resource-lists > li{gap: 0 25px; padding: 23px 25px; flex: 0 0 calc(50% - 10px);}
     .blg-resource-text h2{padding-right: 16px; font-size: 19px; line-height: 26px; font-weight: 500;}
     .blg-resource-links{margin-top: -17px; flex: 0 0 100%; display: flex; flex-wrap: wrap; justify-content: flex-end;}
-    
-    
-    .case-stdy-list{flex:  0 0 calc(50% - 12.5px);}
     .case-stdy-text{padding: 41px 40px 46px;}
     .case-stdy-list h2{font-size: 22px; line-height: 32px;}
     .case-stdy-desc{padding-top: 134px;}
@@ -75,7 +72,7 @@ picture.case-stdy-thumb img{opacity: 0.3;}
     .blg-resource-link{text-transform: uppercase; font-size: 16px; font-weight: 600; letter-spacing: 0.16px;}
     
     .case-stdy-lists{flex-direction: column;}
-    .case-stdy-text{padding: 41px 40px 41px;}
+    .case-stdy-text{padding: 41px 40px 41px; flex: 0 0 100%;}
     .case-stdy-list h2{font-size: 22px; line-height: 32px; letter-spacing: 0.56px;}
     .case-stdy-desc{padding-top: 134px;}
     .case-date{font-size: 16px;}

@@ -22,7 +22,11 @@
 .result-box-icon{padding-bottom: 40px;}
 .result-box-text span{padding-bottom: 13px;}
 
-
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .no_resource_post_results .result-box-main{padding-bottom: 110px;}
+    .no_resource_post_results .result-box-head{padding-bottom: 0;}
+}
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .result-box-section{overflow: hidden;}
     .result-box-section .container{padding: 0;}

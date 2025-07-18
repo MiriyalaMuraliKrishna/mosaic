@@ -30,6 +30,7 @@
 .fluid-image-caption:nth-child(even){padding-top: 163px;}
 .fluid-video video{width: 100%; height: 100%;}
 
+
 .highlightbox-wrap{padding: 43px 0 59px;}
 .highlightbox-main{gap: 45px; padding: 37px 51px 42px;}
 .highlightbox-bg{opacity: 0.2; background-color: var(--Green);}
@@ -57,23 +58,18 @@ blockquote p span.quote-line{padding-bottom: 7px; border-bottom: 1px solid var(-
 
 
 .res-content-last-line{padding: 102px 0 70px;}
-
 blockquote p{position: relative; overflow: hidden;}
-blockquote p span.quote-line:last-child{
-  position: relative;
-}
-blockquote p span.quote-line:last-child::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  min-width: 1000px;
-  height: 1px;
-  background: var(--White-10);
-  bottom: -1px;
-  position: absolute;
-}
+blockquote p span.quote-line:last-child{ position: relative; }
+blockquote p span.quote-line:last-child::after { content: ""; display: inline-block; width: 100%; min-width: 1000px; height: 1px; background: var(--White-10); bottom: -1px; position: absolute; }
 
 
+
+
+/*-- media css starts here --*/
+@media screen and (min-width: 1024px){
+    .no_poster_image .fluid-image-thumb{min-height: 650px;}
+
+}
 @media screen and (max-width: 1099px) and (min-width: 1024px) {
     .content-cta-main{padding: 77px 90px 83px 30px;}
     .res-content-main blockquote{padding: 60px;}
@@ -89,6 +85,8 @@ blockquote p span.quote-line:last-child::after {
     .res-content-line{padding-bottom: 90px;}
     .res-content-main blockquote{margin: 40px 0 70px; padding: 60px 40px;}
     .content-cta-text{max-width: 350px;}
+    .no_poster_image .fluid-image-thumb{min-height: 325px;}
+
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     .res-content-main{padding: 80px 0 60px;}
@@ -133,6 +131,7 @@ blockquote p span.quote-line:last-child::after {
     .res-content-last-line{padding: 63px 0 0;}
     blockquote p span.quote-line{display: inline-block; padding-bottom: 0;}   
     blockquote p span.quote-line:last-child::after{bottom: -13px;}
+   .no_poster_image .fluid-image-thumb{min-height: 212px;}
 }
 
 @media screen and (max-width: 413px) and (min-width: 200px) {

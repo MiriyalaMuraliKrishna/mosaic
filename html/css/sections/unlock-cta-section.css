@@ -12,16 +12,19 @@ body.page-template-product-software .unlock-cta-section{padding-top: 0px;}
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     body.page-template-support .unlock-cta-text{max-width: 740px;}
+    .unlock-two-section .unlock-cta-main{margin-top: 225px;}
     .unlock-cta-main{padding: 47px 60px 50px; gap: 32px;}
     .unlock-cta-btn{margin-left: auto;}
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .unlock-cta-section{padding-top: 80px;}
+    .unlock-two-section .unlock-cta-main{margin-top: 125px;}
     .unlock-cta-main{padding: 39px 40px 44px; gap: 32px;}
     .unlock-cta-btn{width: fit-content;}
 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    .unlock-two-section .unlock-cta-main{margin-top: 125px;}
     .unlock-cta-section{padding-top: 90px;}
     body.page-template-resource-default .unlock-cta-section{padding-top: 38px;}
     body.home .unlock-cta-section, body.page-template-default .unlock-cta-section{padding-top: 40px;}

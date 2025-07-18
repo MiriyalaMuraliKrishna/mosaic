@@ -2,10 +2,10 @@
 .intro-text h2{letter-spacing: -1.32px; margin-bottom: 11px;}
 .intro-text span{display: block; color: var(--Green);}
 .intro-ellipse{top: 0; left: 50%; transform: translateX(-50%); width: 776px; height: 776px; border-radius: 776px; opacity: 0.2; background: radial-gradient(50% 50% at 50% 50%, var(--Green) 0%, rgba(26, 209, 177, 0.00) 100%); z-index: -1;}
+section.no-feature-section .intro-main {padding-top: 181px; padding-bottom: 95px; }
 
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
-    section.no-feature-section .intro-main { padding-bottom: 95px; }
     .intro-main{padding: 231px 0 295px;}
     .intro-text span{font-size: 122px; line-height: 128px; letter-spacing: -1.22px; font-weight: 400;}
 }
@@ -14,6 +14,7 @@
     .intro-text span{font-size: 122px; line-height: 128px; letter-spacing: -1.22px; font-weight: 400;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
+    
     .intro-main{padding: 205px 0 195px;}
     .intro-ellipse{top: -97px; width: 913px; height: 913px; border-radius: 913px;}
     .intro-text h2{margin-bottom: 9px; font-size: 28px; line-height: 40px; letter-spacing: -0.84px; }

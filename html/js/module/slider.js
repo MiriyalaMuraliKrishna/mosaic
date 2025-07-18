@@ -229,13 +229,13 @@ export const slider = {
       slidesPerView: 1,
       effect: 'fade',
       loop: true,
-      speed: 4000,
+      speed: 500,
       autoHeight: false,
     });
     new Swiper(this.featureitemsEle, {
       slidesPerView: 1,
       loop: true,
-      speed: 1000,
+      speed: 500,
       spaceBetween: 30,
       autoHeight: false,
       pagination: {
