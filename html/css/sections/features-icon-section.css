@@ -10,6 +10,7 @@ ul.features-icon-subtitle li a.open, ul.features-icon-subtitle li a:hover{color:
 .features-icon-item-text{font-size: 16.5px; line-height: 26px; letter-spacing: -0.495px; color: var(--Muted---Light); }
 .features-icon-item-text h2{font-size: 18px; line-height: 25px; font-weight: 600; margin-bottom: 0;}
 .features-icon-item-img{flex: 0 0 44px;}
+.features-icon-item-img img{object-fit: contain;}
 .features-icon-item-text{flex: 1;}
 
 @media screen and (min-width: 1024px) {

@@ -46,7 +46,7 @@
     .solutions-banner-ellipse{width: 788px; height: 773px; top: -297px; right: -180px;}
     .have_illustration .solutions-banner-main{padding: 0;}
     .solutions-banner-main{padding: 143px 0 107px;}
-    .solutions-banner-text h1{margin-bottom: 20px;}
+    .solutions-banner-text h1{margin-bottom: 20px; font-size: 52px; line-height: 64px;}
     .solutions-banner-text p{margin-bottom: 18px;}
     .solutions-banner-bg img{opacity: 0.3;}
     .solutions-banner-overlay{opacity: 0;}

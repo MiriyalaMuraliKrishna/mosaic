@@ -12,6 +12,7 @@ body.page-template-product-software .unlock-cta-section{padding-top: 0px;}
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
     body.page-template-support .unlock-cta-text{max-width: 740px;}
+    .unlock-three-section .unlock-cta-main{margin-top: 152px;}
     .unlock-two-section .unlock-cta-main{margin-top: 225px;}
     .unlock-cta-main{padding: 47px 60px 50px; gap: 32px;}
     .unlock-cta-btn{margin-left: auto;}
