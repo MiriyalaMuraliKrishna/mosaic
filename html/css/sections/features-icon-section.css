@@ -7,8 +7,8 @@ ul.features-icon-subtitle li a.open, ul.features-icon-subtitle li a:hover{color:
 .features-icon-desc h2{letter-spacing: -1.32px; margin-bottom: 20px;}
 .features-icon-items{gap: 10px;}
 .features-icon-item{background: rgba(255, 255, 255, 0.10); backdrop-filter: blur(67px); padding: 27px 29px 27px 25px; gap: 21px;}
-.features-icon-item-text{font-size: 16.5px; line-height: 26px; letter-spacing: -0.495px; color: var(--Muted---Light); }
-.features-icon-item-text h2{font-size: 18px; line-height: 25px; font-weight: 600; margin-bottom: 0;}
+.features-icon-item-text{font-size: 16.5px; line-height: 22px; letter-spacing: -0.495px; color: var(--Muted---Light); }
+.features-icon-item-text h2{font-size: 18px; line-height: 25px; font-weight: 600; margin-bottom: 4px;}
 .features-icon-item-img{flex: 0 0 44px;}
 .features-icon-item-img img{object-fit: contain;}
 .features-icon-item-text{flex: 1;}

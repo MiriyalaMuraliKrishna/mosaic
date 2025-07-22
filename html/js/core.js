@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
   solstatsgraphs.init();
   coountSolLI.list();
   coountProdLI.prodlist();
+  trustbrandSlider.init();
 });
 
 let scrolled = window.scrollY;
@@ -86,5 +87,4 @@ window.addEventListener('load', function () {
   Stickyfeatures.init();
   sidebar.init();
   featuredIcon.init();
-  trustbrandSlider.init();
 });

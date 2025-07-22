@@ -7,11 +7,11 @@ section.no-feature-section .intro-main {padding-top: 181px; padding-bottom: 95px
 /*-- media css starts here --*/
 @media screen and (min-width: 1024px) {
     .intro-main{padding: 231px 0 295px;}
-    .intro-text span{font-size: 122px; line-height: 128px; letter-spacing: -1.22px; font-weight: 400;}
+    .intro-text span{font-size: 112px; line-height: 118px; letter-spacing: -1.22px; font-weight: 400;}
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .intro-main{padding: 191px 0 195px;}
-    .intro-text span{font-size: 122px; line-height: 128px; letter-spacing: -1.22px; font-weight: 400;}
+    .intro-text span{font-size: 112px; line-height: 118px; letter-spacing: -1.22px; font-weight: 400;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px) {
     
