@@ -124,6 +124,11 @@
 @import url('./sections/default-content-section.css');
 @import url('./sections/advanced-scroll-section.css');
 
+/*-- reseller page --*/
+@import url('./sections/repeater-services-section.css');
+@import url('./sections/reseller-table-section.css');
+
+
 /*-- switch template --*/
 @import url('./template/--accent-purple.css');
 
