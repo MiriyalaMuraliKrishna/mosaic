@@ -1,0 +1,19 @@
+
+
+.application-banner-main{padding: 184px 0 117px}
+.application-banner-bg img{opacity: 0.3;}
+.application-banner-text{letter-spacing: -0.63px; font-weight: 300;}
+.application-banner-text h1{margin-bottom: 22px; padding-top: 30px; letter-spacing: -1.22px; font-weight: 400;}
+.application-banner-btns{padding-top: 12px;}
+
+/* media css starts here */
+@media screen and (min-width: 1024px) {
+    .application-banner-text h1{font-size: 100px; line-height: 118px;}
+}
+@media screen and (min-width: 768px) {
+    .application-banner-text h1 br{display: none;}
+}
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    .application-banner-main{padding: 212px 0 32px;}
+    .application-banner-btns{padding-top: 2px;}
+}

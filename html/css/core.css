@@ -128,6 +128,11 @@
 @import url('./sections/repeater-services-section.css');
 @import url('./sections/reseller-table-section.css');
 
+/*-- application page --*/
+@import url('./sections/application-banner-section.css');
+@import url('./sections/application-form-section.css');
+
+
 
 /*-- switch template --*/
 @import url('./template/--accent-purple.css');
