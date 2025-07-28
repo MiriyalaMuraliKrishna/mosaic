@@ -18,7 +18,8 @@
 .all-meterials-thumb:nth-child(even) .all-meterials-sm-icon{margin-bottom: auto;}
 .all-meterials-lg-icon{flex:  0 0 218px; min-height: 218px;}
 .all-meterials-lg-icon img{max-width: 162px; margin: auto; display: block; object-fit: contain;}
-.all-meterials-sm-icon{flex: 0 0 158px; padding: 25px 26px 26px 27px; backdrop-filter: blur(67px); }
+.all-meterials-sm-icon{flex: 0 0 158px; padding: 25px 26px 26px 27px; backdrop-filter: blur(67px); text-align: center; }
+.all-meterials-sm-icon .counter-main{justify-content: center;}
 .all-meterials-sm-x{flex: 0 0 153px; padding: 19px 26px 35px 27px; backdrop-filter: blur(67px); }
 
 .all-meterials-circle-main{width: 86px; height: 86px;}

@@ -10,12 +10,12 @@
 
 
 
-.trust-by-gradient.left{width: calc(100% - 100px); background: var(--Black); left: -100%; z-index: 2;}
+.trust-by-gradient.left{width: 5%; background: var(--Black); left: 0%; z-index: 2;}
 .trust-by-gradient.left::before { top: 0; right: -100px; width: 100px; height: 100%; background-image: linear-gradient(270deg, transparent, var(--Black)); content: ""; position: absolute; }
 
 
 
-.trust-by-gradient.right{width: calc(100% - 100px); background: var(--Black); right: -100%; left: auto; z-index: 2;}
+.trust-by-gradient.right{width: 15%; background: var(--Black); right: -15%; left: auto; z-index: 2;}
 .trust-by-gradient.right::before { top: 0; left: -100px; width: 100px; height: 100%; background-image: linear-gradient(270deg, var(--Black), transparent); content: ""; position: absolute; }
 
 
@@ -37,10 +37,10 @@
 .home-endless-ellipse{ bottom: 0; left: 50%; transform: translateX(-50%); width: 511px; height: 511px; opacity: 0.23; background: radial-gradient(50% 50% at 50% 50%, var(--Purple) 0%, rgba(139, 82, 252, 0.00) 100%); }
 .home-endless-image{max-width: 124px; margin-bottom: 13px; top: -84px; left: 45px;}
 .home-endless-main span.fs-22{margin-bottom: 20px;}
-.home-endless-lines{ bottom: 25px; width: 234px; height: 172px; left: 85px; }
+.home-endless-lines{ bottom: 25px; width: 234px; height: 172px; left: 85px; display: none; }
 .home-endless-lines svg{opacity: 0.1; width: 100%; height: 100%; object-fit: contain;}
 
-.home-endless-dot{width: 11px; height: 10px; top: -15px; left: 173px;}
+.home-endless-dot{width: 11px; height: 10px; top: -15px; left: 173px; display: none;}
 .home-endless-graph{right: -6px;}
 
 /* media css starts here */

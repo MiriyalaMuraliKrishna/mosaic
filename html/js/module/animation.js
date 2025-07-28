@@ -29,16 +29,9 @@ export const Animation = {
             _.animateRun($self, animateType, timeline);
           } else {
             $self.addClass('visible ' + (animation ? animation : ''));
-            if (timeline) {
-              timeline.restart().play(); // Restart timeline on load
-            }
           }
         }, delay);
       } else {
-        // Reset timeline if element is not in the viewport
-        if (timeline) {
-          timeline.progress(0).pause(); // Reset and pause timeline
-        }
       }
     });
 
@@ -62,14 +55,22 @@ export const Animation = {
   // Run animation and timeline when the element is visible
   animateRun($el, type, timeline) {
     $el.addClass('visible ' + $el.attr('data-animate'));
-    if (timeline) {
-      timeline.restart().play(); // Restart and play timeline when visible
-    }
+
     if (type === 'counter') {
       const $counter = $el[0];
       if ($counter.counter && $counter.counter.paused) {
         $counter.counter.start();
       }
+    }
+
+    // type === 'icon' ? timeline.play() : null;
+    if (type === 'icon') {
+      timeline.play();
+      console.log($el);
+      setTimeout(function () {
+        $('.home-endless-dot').fadeIn(800);
+        $('.home-endless-lines').fadeIn(800);
+      }, 2000);
     }
 
     type === 'chart' ? chart.play() : null;
@@ -81,9 +82,7 @@ export const Animation = {
   // Reset animation and timeline when the element leaves the viewport
   animateReset($el, type, timeline) {
     $el.removeClass('visible ' + $el.attr('data-animate'));
-    if (timeline) {
-      timeline.pause(0); // Pause and reset timeline when not visible
-    }
+    type === 'icon' ? timeline.paused() : null;
   },
 
   // Handle scroll events to trigger animations
@@ -110,9 +109,6 @@ export const Animation = {
             _.animateRun($self, animateType, timeline);
           } else {
             $self.addClass('visible ' + (animation ? animation : ''));
-            if (timeline) {
-              timeline.restart().play(); // Restart and play timeline when visible
-            }
           }
         }, delay);
       } else if (
@@ -126,9 +122,6 @@ export const Animation = {
             _.animateRun($self, animateType, timeline);
           } else {
             $self.addClass('visible ' + (animation ? animation : ''));
-            if (timeline) {
-              timeline.restart().play(); // Restart and play timeline when visible
-            }
           }
         }, delay);
       } else if (
@@ -142,9 +135,6 @@ export const Animation = {
           _.animateReset($self, animateType, timeline);
         } else {
           $self.removeClass('visible ' + (animation ? animation : ''));
-          if (timeline) {
-            timeline.pause(0); // Pause and reset timeline when out of view
-          }
         }
       }
     });

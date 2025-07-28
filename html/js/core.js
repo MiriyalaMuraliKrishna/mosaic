@@ -73,10 +73,13 @@ document.addEventListener('DOMContentLoaded', function () {
   coountProdLI.prodlist();
   trustbrandSlider.init();
 });
-
-let scrolled = window.scrollY;
-window.addEventListener('scroll', function () {
-  scrolled = window.scrollY;
+document.addEventListener('DOMContentLoaded', function () {
+  let scrolled = window.scrollY;
+  window.addEventListener('scroll', function () {
+    scrolled = window.scrollY;
+    Scroll.handle(scrolled);
+    Animation.handle(scrolled, Scroll.direction);
+  });
   Scroll.handle(scrolled);
   Animation.handle(scrolled, Scroll.direction);
 });

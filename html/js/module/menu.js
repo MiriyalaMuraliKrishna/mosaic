@@ -96,7 +96,7 @@ export const Menu = {
 
     // materials hover
     _.$mainmaterials && !_.$materialsLi.length > 0
-      ? _.$materials[0].parentElement.classList.add('open-menu')
+      ? _.$materials[1].parentElement.classList.add('open-menu')
       : '';
 
     _.$materials.forEach((ele) => {
