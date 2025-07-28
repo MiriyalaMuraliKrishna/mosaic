@@ -3,7 +3,7 @@
 .application-form-main{padding: 109px 0 40px;}
 .application--desc{padding-bottom: 60px;}
 body .frm_forms .frm_form_fields .frm_form_field.frm_btn_right{margin-left: auto;}
-
+body .application-form-main .with_frm_style .frm_message p{color: var(--Green);}
 
 /* media css starts here */
 @media screen and (max-width: 767px) and (min-width: 200px) {
