@@ -129,7 +129,7 @@ blockquote p span.quote-line:last-child::after { content: ""; display: inline-bl
     .quote-avatar-text{font-size: 15px;}
     .quote-avatar-logo{width: 68px; }
     .res-content-last-line{padding: 63px 0 0;}
-    blockquote p span.quote-line{display: inline-block; padding-bottom: 0;}   
+    blockquote p span.quote-line{padding-bottom: 0;}   
     blockquote p span.quote-line:last-child::after{bottom: -13px;}
    .no_poster_image .fluid-image-thumb{min-height: 212px;}
 }

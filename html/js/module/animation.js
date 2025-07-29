@@ -68,8 +68,8 @@ export const Animation = {
       timeline.play();
       console.log($el);
       setTimeout(function () {
-        $('.home-endless-dot').fadeIn(800);
-        $('.home-endless-lines').fadeIn(800);
+        $('.home-endless-dot').fadeIn(1200);
+        $('.home-endless-lines').fadeIn(1200);
       }, 2000);
     }
 
