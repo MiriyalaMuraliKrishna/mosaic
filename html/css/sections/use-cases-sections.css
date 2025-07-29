@@ -83,7 +83,7 @@ ul.use-cases-links > li > a.active .stripe-line{background-color: var(--Green);}
     .use-cases-slider .swiper-slide{width: 323px; opacity: 1 !important;}
     .use-cases-text{padding: 51px 40px 71px 41px;}
     .use-cases-image img{min-height: 430px; max-height: 430px;}
-    .use-cases-text-overlay{max-height: 242px;}
+    
 }
 @media screen and (max-width: 374px) and (min-width: 200px) {
     .use-cases-head h2{font-size: 35px; line-height: 45px;}
