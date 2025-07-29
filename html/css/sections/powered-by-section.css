@@ -37,8 +37,9 @@ ul.powered-by-list li:hover .powered-by-icon svg path{stroke: var(--Green);}
 
 .powered-graph-list{gap: 30px;}
 .powered-graph-col{flex: 0 0 calc(50% - 15px); text-align: center;}
-.powered-graph-bg{height: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; flex-direction: column; backdrop-filter: blur(67px); padding: 30px 20px 26px; min-height: 161px;}
+.powered-graph-bg{height: 100%; gap: 10px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; flex-direction: column; backdrop-filter: blur(67px); padding: 30px 20px 26px; min-height: 161px;}
 .powered-graph-bg span:last-child{padding-bottom: 0; font-size: 13px; line-height: 18px;}
+.powered-graph-bg .all-meterials-parts{padding-top: 10px;}
 
 .powered-by-hrs{padding-top: 13px;}
 .powered-graph-min{padding-bottom: 8px;}

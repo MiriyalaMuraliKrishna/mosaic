@@ -8,6 +8,8 @@ input[type="button"], input[type="reset"], input[type="submit"] {display: inline
 input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {background-color: var(--Black); color: var(--White);}
 input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {outline: none;}
 
+
+
 .frm_style_formidable-style.with_frm_style .frm_loading_prev .frm_prev_page,
 .frm_style_formidable-style.with_frm_style .frm_loading_prev .frm_prev_page:hover,
 .frm_style_formidable-style.with_frm_style .frm_loading_prev .frm_prev_page:active,

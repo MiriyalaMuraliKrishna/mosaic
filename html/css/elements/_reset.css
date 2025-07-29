@@ -476,7 +476,7 @@ ul.slick-dots.orange:not(.pagination) li.slick-active{background-color: var(--RF
 a.mPS2id-clicked{color: var(--Green);}
 
 
-.title{margin-bottom: 19px; font-family: var(--heading-font); font-size: 130px; font-weight: 400; line-height: 148px; letter-spacing: -1.3px;}
+.title{margin-bottom: 19px; font-size: 130px; font-weight: 400; line-height: 148px; letter-spacing: -1.3px;}
 .title.body-font{font-family: var(--body-font);}
 
 .text-black{color: var(--Black);}

@@ -80,7 +80,6 @@ header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; 
      .prod-menu-wrapper{flex: 0 0 calc(50% - 16px);}
      ul.main_menu > li.solutions-menu-item.prods-menu-item > ul > li{max-width: 220px; flex: 0 0 220px; position: relative;}
 
-     ul.main_menu > li.solutions-menu-item.prods-menu-item > ul > li:nth-child(n + 4){max-width: 100%;}
      ul.main_menu > li.solutions-menu-item.prods-menu-item > ul > li:nth-child(n + 4) > a{max-width: 220px; position: relative; z-index: 1; }
      ul.main_menu > li.solutions-menu-item.prods-menu-item > ul > li:nth-child(n + 4) > ul{width: 100%; padding-left: 252px; left: 0; max-width: 800px; min-width: 800px;}
      ul.main_menu > li.solutions-menu-item.prods-menu-item > ul > li:nth-last-child(1) > ul{top: -58px;}
@@ -202,6 +201,9 @@ header.site-header{width: 100%; height: auto; top: 0; left: 0; position: fixed; 
 
     ul.main_menu > li.solutions-menu-item > ul > li.hide-nav-overview > a,
     ul.main_menu > li > ul > li.hide-nav-overview > a{display: none;}
+
+    li.no_link > a{pointer-events: none;}
+    li.no_cursor > a{cursor: auto;}
 
 }
 @media only screen and (min-width: 1360px){

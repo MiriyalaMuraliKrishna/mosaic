@@ -20,19 +20,22 @@
 .alt-stick-overlay.bottom{ bottom: 0; right: 0; background: linear-gradient(-180deg,transparent 50%,var(--Black) 100%); }
 .no_right .alt-stick-text{max-width: 100%;}
 
-.alt-stick-number{width: fit-content; color: var(--White-20); font-size: 23.826px; font-weight: 400; font-family: var( --heading-font); }
+.alt-stick-number{width: fit-content; color: var(--White-20); font-size: 23.826px; font-weight: 400; font-family: var( --heading-font); z-index: 1;}
 
 
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px){
-    .alt-stick-section{overflow: hidden;}
+    .alt-stick-section{overflow: hidden; min-height: 629px;}
     .alt-stick-main{padding: 0 0 127px; gap: 0 253px; min-height: 629px;}
     .alt-stick-left{flex: 0 0 322px;}
-    .alt-stick-text{max-width: 320px; padding-bottom: 2px;} /*-- 2px required for button cutoff */
+    .alt-stick-text{max-width: 320px; padding-bottom: 2px;}
     .alt-stick-image{top: 0; right: 0; bottom: auto; left: auto; max-width: 796px; min-width: 796px; min-height: 629px;}
     .alt-stick-right{flex: 1; gap: 100px 201px; flex-direction: row-reverse;}
     .alt-stick-lists{flex: 1; gap: 99px 0;}
+}
+@media only screen and (min-width: 1800px){
+    .alt-stick-image{min-width: 100vw;}
 }
 @media only screen and (max-width: 1299px) and (min-width: 1024px){
     .alt-stick-main{gap: 0 126px;}
@@ -63,8 +66,8 @@
     .alt-stick-bg{max-width: 100%; min-height: 366px; min-width: auto; width: 100%;}
     .alt-stick-lists{gap: 60px 0;}
     .alt-stick-list span.fs-21{padding: 20px 0 20px;}
-    .alt-stick-image{max-width: 284px; max-height: 272px; right: 0; left: auto;}
-    .alt-stick-thumb img{opacity: 0.5; max-width: 284px; margin-left: auto; display: block;}
+    .alt-stick-image{max-height: 272px;}
+    .alt-stick-thumb img{opacity: 0.5; display: block;}
     .alt-stick-overlay.top{background: linear-gradient(180deg, hsla(0,0%,100%,0) 29.98%, var(--Black) 100%); }
     .alt-stick-number{top: 10px; right: 10px;}
 }

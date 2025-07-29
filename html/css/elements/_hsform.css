@@ -1,0 +1,11 @@
+
+.hbspt-form{width: 100%;}
+body .download-form .selectBox-dropdown{ color: var(--White); float: left; width: 30%; }
+
+.hs-form-field{margin-bottom: 25px; position: relative;}
+ul.hs-error-msgs{margin: 0; bottom: -17px; right: 0; text-align: right; position: absolute; }
+ul.hs-error-msgs li::before{display: none;}
+ul.hs-error-msgs li{margin: 0;}
+ul.hs-error-msgs li label{ color: var(--Red); font-size: .75rem; font-weight: 400; letter-spacing: 0; line-height: .875rem; }
+input[type="submit"].hs-button{margin-left: auto; display: flex; width: fit-content; background: transparent; border: 1px solid var(--Green); border-radius: 90px; box-shadow: none; color: var(--Green); cursor: pointer; font-family: var(--heading-font); font-size: 16px; font-weight: 600; gap: 16px; letter-spacing: .16px; line-height: 23px; overflow: hidden; padding: 14px 35px 15px; position: relative; text-align: center; transition: var(--b-transition); z-index: 1; }
+input[type="submit"].hs-button:hover{background-color: var(--Green); color: var(--Black);}
