@@ -1,7 +1,7 @@
 
 .hbspt-form{width: 100%;}
 body .download-form .selectBox-dropdown{ color: var(--White); float: left; width: 30%; }
-
+body .download-form .selectBox-dropdown .selectBox-arrow::after{color: var(--White);}
 .hs-form-field{margin-bottom: 25px; position: relative;}
 ul.hs-error-msgs{margin: 0; bottom: -17px; right: 0; text-align: right; position: absolute; }
 ul.hs-error-msgs li::before{display: none;}

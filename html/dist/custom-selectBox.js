@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+jQuery(function ($) {
   function initializeSelectBox() {
     jQuery('select').selectBox({
       keepInViewport: false,
@@ -10,6 +10,7 @@ jQuery(document).ready(function ($) {
     jQuery('.selectBox, .selectBox-dropdown .selectBox-label').removeAttr(
       'style'
     );
+    jQuery('ul.selectBox-dropdown-menu').attr('data-lenis-prevent', '');
   }
   initializeSelectBox();
   const observer = new MutationObserver(function (mutationList) {

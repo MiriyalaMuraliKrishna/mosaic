@@ -33,7 +33,6 @@
   <!-- CSS Base -->
   <link rel="stylesheet" href="./style.css" media="all" />
   <link rel="stylesheet" href="./style.bundle.css?v=12266" media="all" />
-  <link rel="stylesheet" href="./custom-style.css" media="all" />
 
 </head>
 
@@ -1714,43 +1713,423 @@
           <div class="calc-part-tot flex white-bg-20 radius-40 relative z-3">
             <div class="calc-part-cost">
               <div class="calc-part-head">
-                <h2 class="h4 f-600">Total Cost per Part Calculator</h2>
+                <h2 class="h4 f-600">TCPP Calculator - Test UI</h2>
               </div>
               <ol class="calc-part-steps flex flex-col">
-                <li class="mb-0 active">Select Materials</li>
-                <li class="mb-0">Product Details</li>
-                <li class="mb-0">Business Data</li>
+                <li class="mb-0" data-parts-calc="step-1">Select Materials</li>
+                <li class="mb-0" data-parts-calc="step-2">Product Details</li>
+                <li class="mb-0" data-parts-calc="step-3">Business Data</li>
               </ol>
             </div>
             <div class="calc-part-choose">
               <div class="calc-part-up flex flex-vcenter">
-                <span class="fs-20 lh-24 f-600">Choose up to 5 materials</span>
-                <span class="muted-dark">3/5</span>
+                <span class="fs-20 lh-24 f-600">Choose up to 3 materials</span>
+                <span class="muted-dark flex flex-vcenter"><span class="calc-part-number">1</span>/3</span>
               </div>
-              <ul class="calc-part-inputs no-disc flex m-0">
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-                <li class="mb-0 transition-5">ABS</li>
-              </ul>
-              <div class="calc-part-btns">
-                <a target="_blank" href="#" class="button btn-reverse flex flex-center text-upper">Next Step
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M10.9053 9.84473V0.0947266H0.655335V1.59473H8.34473L0.0947266 9.84473L1.15527 10.9053L9.40534 2.65521V9.84473H10.9053Z"
-                      fill="black" />
-                  </svg>
-                </a>
+
+
+
+              <div class="wrapper">
+                <table border="1">
+                  <thead>
+                    <tr>
+                      <th>Question</th>
+                      <th>Response</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label for="partProductionMethod"><span>1.</span>How are you currently producing parts?</label>
+                      </td>
+                      <td>
+                        <select id="partProductionMethod" required>
+                          <option value="" disabled selected>Select One</option>
+                          <option value="3D Printing">3D Printing</option>
+                          <option value="CNC Machining">CNC Machining</option>
+                          <option value="Injection Molding">Injection Molding</option>
+                          <option value="Urethane Casting/Silicone Molding">Urethane Casting/Silicone Molding</option>
+                          <option value="Traditional Fabrication">Traditional Fabrication</option>
+                          <option value="Hybrid Processes">Hybrid Processes</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="error-message" id="error-partProductionMethod"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="material"><span>2.</span>What material are you currently using?</label>
+                      </td>
+                      <td>
+                        <select id="material" required>
+                          <option value="" disabled selected>Select One</option>
+                          <option value="Aero">Aero</option>
+                          <option value="Matrix">Matrix</option>
+                          <option value="Flex">Flex</option>
+                          <option value="ASA">ASA</option>
+                          <option value="PLA">PLA</option>
+                          <option value="PETG">PETG</option>
+                          <option value="PEEK">PEEK</option>
+                          <option value="PEKK">PEKK</option>
+                          <option value="ABS">ABS</option>
+                          <option value="FR-PC">FR-PC</option>
+                          <option value="Nylon">Nylon</option>
+                          <option value="Form">Form</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="error-message" id="error-material"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="partsPerMonth">
+                          <span>3.</span>Approximately how many parts do you produce or require each
+                          month?
+                        </label>
+                      </td>
+                      <td>
+                        <select id="partsPerMonth" required>
+                          <option value="" disabled selected>Select One</option>
+                          <option value="0-50">0-50</option>
+                          <option value="51-100">51-100</option>
+                          <option value="101-200">101-200</option>
+                          <option value="201-500">201-500</option>
+                          <option value="501-1000">501-1000</option>
+                          <option value="1001-2000">1001-2000</option>
+                          <option value="2001-4000">2001-4000</option>
+                          <option value="4001+">4001+</option>
+                          <option value="Not sure">Not sure</option>
+                        </select>
+                        <div class="error-message" id="error-partsPerMonth"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="estimatedPrintTime"><span>4.</span>What is the estimated 3D print time for this part
+                          in
+                          hours?</label>
+                      </td>
+                      <td>
+                        <input id="estimatedPrintTime" type="number" min="1" step="1" value="" required />
+                        <div class="error-message" id="error-estimatedPrintTime"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="costPerPart"><span>5.</span>Approximately, what is your current cost per part?
+                          (USD)</label>
+                      </td>
+                      <td>
+                        <input id="costPerPart" type="number" min="0.01" step="0.01" value="" required />
+                        <div class="error-message" id="error-costPerPart"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="benchmarkPrint"><span>6.</span>Select a benchmark part that is closest in size and
+                          volume to
+                          what you typically produce.</label>
+                      </td>
+                      <td>
+                        <select id="benchmarkPrint" required>
+                          <option value="" disabled selected>Select One</option>
+                          <option value="Model in 8-30 CC Range">Model in 8-30 CC Range</option>
+                          <option value="Model in 30-60 CC Range">Model in 30-60 CC Range</option>
+                          <option value="Model in 60-90 CC Range">Model in 60-90 CC Range</option>
+                          <option value="Model in 90-120 CC Range">Model in 90-120 CC Range</option>
+                          <option value="Model in 120-470 CC Range">Model in 120-470 CC Range</option>
+                        </select>
+                        <div class="error-message" id="error-benchmarkPrint"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="industry"><span>7.</span>Select your industry type</label>
+                      </td>
+                      <td>
+                        <select id="industry" required>
+                          <option value="" disabled selected>Select One</option>
+                          <option value="Supply Chain & Logistics">Supply Chain & Logistics</option>
+                          <option value="Aerospace">Aerospace</option>
+                          <option value="Automotive">Automotive</option>
+                          <option value="Defense">Defense</option>
+                          <option value="Contract Manufacturing">Contract Manufacturing</option>
+                          <option value="Healthcare">Healthcare</option>
+                          <option value="Apparel">Apparel</option>
+                          <option value="Education">Education</option>
+                          <option value="Robotics & Automation">Robotics & Automation</option>
+                          <option value="Technology">Technology</option>
+                          <option value="Manufacturing">Manufacturing</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="error-message" id="error-industry"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="firstName"><span>8a.</span>First Name</label>
+                      </td>
+                      <td>
+                        <input type="text" id="firstName" value="" required>
+                        <div class="error-message" id="error-firstName"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="lastName"><span>8b.</span>Last Name</label>
+                      </td>
+                      <td>
+                        <input type="text" id="lastName" value="" required>
+                        <div class="error-message" id="error-lastName"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="email"><span>8c.</span>Email</label>
+                      </td>
+                      <td>
+                        <input type="email" id="email" value="" required>
+                        <div class="error-message" id="error-email"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="phoneNumber"><span>8d.</span> Number</label>
+                      </td>
+                      <td>
+                        <input type="tel" id="phoneNumber" value="" required>
+                        <div class="error-message" id="error-phoneNumber"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="companyName"><span>8e.</span>Company Name</label>
+                      </td>
+                      <td>
+                        <input type="text" id="companyName" value="" required>
+                        <div class="error-message" id="error-companyName"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="calc-part-btns-main flex flex-vcenter">
+                  <div class="calc-part-btns" data-calc="step-1">
+                    <a target="_blank" href="#" class="button btn-reverse flex flex-center text-upper">
+                      <span>Next Step</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.9053 9.84473V0.0947266H0.655335V1.59473H8.34473L0.0947266 9.84473L1.15527 10.9053L9.40534 2.65521V9.84473H10.9053Z"
+                          fill="black" />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="calc-part-btns" data-calc="step-2">
+                    <a target="_blank" href="#" class="button btn-reverse flex flex-center text-upper">
+                      <span>Next Step</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.9053 9.84473V0.0947266H0.655335V1.59473H8.34473L0.0947266 9.84473L1.15527 10.9053L9.40534 2.65521V9.84473H10.9053Z"
+                          fill="black" />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="calc-part-btns" data-calc="step-3">
+                    <button id="submit" class="button btn-reverse flex flex-vcenter text-upper">Submit
+                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.998 9.84473H9.49805V2.65527L1.24805 10.9053L0.1875 9.84473L8.4375 1.59473H0.748047V0.0947266H10.998V9.84473Z"
+                          fill="black" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div id="formMessage" class="form-message"></div>
               </div>
+
+              <script>
+                const buttonEl = document.getElementById("submit");
+
+                const showMsg = (msg, type = 'success') => {
+                  const box = document.getElementById('formMessage');
+                  box.textContent = msg;
+                  box.className = `form-message ${type}`;
+                  box.style.display = msg ? 'block' : 'none';
+                };
+
+
+                const clearErrors = () => {
+                  document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+                };
+                const validateForm = () => {
+                  clearErrors();
+                  let valid = true;
+
+                  const fields = [
+                    { id: "partProductionMethod", msg: "Please select how you are currently producing parts." },
+                    { id: "material", msg: "Please select the material you are currently using." },
+                    { id: "partsPerMonth", msg: "Please select how many parts you produce or require each month." },
+                    { id: "estimatedPrintTime", msg: "Estimated print time must be greater than zero.", min: 1 },
+                    { id: "costPerPart", msg: "Cost per part must be greater than zero.", min: 0.01 },
+                    { id: "benchmarkPrint", msg: "Please select a benchmark part." },
+                    { id: "industry", msg: "Please select your industry type." },
+                    { id: "firstName", msg: "Please enter your first name." },
+                    { id: "lastName", msg: "Please enter your last name." },
+                    { id: "email", msg: "Please enter your email address." },
+                    { id: "phoneNumber", msg: "Please enter your phone number." },
+                    { id: "companyName", msg: "Please enter your company name." }
+                  ];
+
+                  fields.forEach(({ id, msg, min }) => {
+                    const el = document.getElementById(id);
+                    const errorEl = document.getElementById('error-' + id);
+                    let val = el.value.trim();
+
+                    if (!val) {
+                      errorEl.textContent = msg;
+                      valid = false;
+                      return;
+                    }
+
+
+                    if (min !== undefined) {
+                      const numVal = parseFloat(val);
+                      if (isNaN(numVal) || numVal < min) {
+                        errorEl.textContent = msg;
+                        valid = false;
+                        return;
+                      }
+                    }
+
+
+                    if (id === 'email') {
+                      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                      if (!emailRegex.test(val)) {
+                        errorEl.textContent = "Please enter a valid email address.";
+                        valid = false;
+                      }
+                    }
+                  });
+
+                  return valid;
+                };
+
+                buttonEl.addEventListener("click", (e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+
+                  showMsg('', '');
+
+                  if (!validateForm()) {
+                    return;
+                  }
+
+                  const partProductionMethod = document.getElementById("partProductionMethod").value;
+                  const material = document.getElementById("material").value;
+                  const partsPerMonth = document.getElementById("partsPerMonth").value;
+                  const estimatedPrintTime = parseFloat(document.getElementById("estimatedPrintTime").value);
+                  const costPerPart = parseFloat(document.getElementById("costPerPart").value);
+                  const benchmarkPrint = document.getElementById("benchmarkPrint").value;
+                  const industry = document.getElementById("industry").value;
+                  const firstName = document.getElementById("firstName").value.trim();
+                  const lastName = document.getElementById("lastName").value.trim();
+                  const email = document.getElementById("email").value.trim();
+                  const phoneNumber = document.getElementById("phoneNumber").value.trim();
+                  const companyName = document.getElementById("companyName").value.trim();
+
+                  const token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTI2Nzg3OTQsImlzcyI6Ik1vc2FpYyBNYW51ZmFjdHVyaW5nIEx0ZC4iLCJzdWIiOiJodHRwczovL21vc2FpY21hbnVmYWN0dXJpbmcua2luc3RhLmNsb3VkIn0.iaFgYSI-fUkASbY1odqcAJTmMq2wQzpnNWPAJWW2HGIDrVteREJqRUe_yQcD5Zj3QIt_MxDvQyPdYLd46nXgF4aQAXk-Hcamu5k9YR2bMIvKMZHUtqJSaXqMXHyc0Q_hrSq8F7MKNJMtvYzhOZk6n-MkvC8W_XNy33MxbvXehzsi-UsL84SbQrsB2cv4QC0SQ9uRjE_T9OAdmz-OCydck2v_c2-ouca64dA1wG_ifuoxjVLpoBELWbRb9DtuIER8vkUsMGntBK2r4xVoeqFCPcMlEuez5hv-d1uxXth8AxBlbL6mLairohactg5h5tH14jDqqUBaDAjMVsa4tiNl7qItrrg7DE2OSgDNLEMZF0lnMK1y2hVigN3W3AawKOg2Bo700apaMy6pbuM0w1uxpr4P6dA-C-SWasoN204atyiK0ZUWJN7CtWg1LyKig1-AJzPljv1Bw6fI7Ozh0VkbrsHq77uwsUt5mHLGnBoxpHJRzfqcIOFfKuPT9X2irs-Z5hpSFLjsrFKPrymX9NjksKcuNH65c5T2gRoaNTAaE9Nsd54seY77xAJeFyHFJ5WzrTnWhDsOpyYx8xrxoghGx4RgARa5og8WHsO2DX1m6MaTAx6IdP9RolWbKO51oBZYDFfLiteKve6UDjfoD101hlJkl7etz1nFC2s0j5WSom4";
+
+                  const makeRequest = async () => {
+                    try {
+                      showMsg("Loading...", "success");
+                      buttonEl.disabled = true;
+
+                      const response = await fetch("https://tcpp2.mosaicmfg.com", {
+                        method: "POST",
+                        headers: {
+                          Authorization: `Bearer ${token}`,
+                          "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                          firstName,
+                          lastName,
+                          companyName,
+                          email,
+                          phoneNumber,
+                          industry,
+                          partProductionMethod,
+                          costPerPart,
+                          material,
+                          partsPerMonth,
+                          estimatedPrintTime,
+                          benchmarkPrint,
+                        }),
+                      });
+
+                      if (response.ok) {
+                        showMsg("Thank you! Your responses were successfully submitted.", "success");
+                      } else {
+                        showMsg("Sorry – there was a problem submitting the form. Please try again.", "error");
+                      }
+                    } catch (err) {
+                      showMsg(err instanceof Error ? err.message : "Unexpected error.", "error");
+                    }
+                    buttonEl.disabled = false;
+                  };
+
+                  makeRequest();
+                });
+                // DOM CHANGES START
+                const stepBtn1 = document.querySelector('[data-calc="step-1"]');
+                const stepBtn2 = document.querySelector('[data-calc="step-2"]');
+                const stepBtn3 = document.querySelector('[data-calc="step-3"]');
+                const stepActive = document.querySelectorAll('ol.calc-part-steps > li');
+                //set 
+                stepActive[0].classList.add('active');
+                const tableRows = Array.from(document.querySelectorAll('.calc-part-section .wrapper table tbody tr'))
+                tableRows.slice(0, 3).forEach((ele) => ele.classList.add('show'));
+
+                function calcHideRows() {
+                  stepActive.forEach((ele) => ele.classList.remove('active'))
+                  tableRows.forEach((ele) => ele.classList.remove('show'))
+                }
+                function handleUi(e) {
+                  const targetAttr = e.currentTarget.nextElementSibling.dataset.calc;
+                  const stepNumber = +targetAttr.split('-')[1];
+                  document.querySelector(`ol.calc-part-steps > li[data-parts-calc="${targetAttr}"]`).classList.add("active");
+                  document.querySelector('.calc-part-number').textContent = stepNumber;
+                  e.currentTarget.classList.add('reverse-calc-btn');
+                  e.currentTarget.querySelector('.button span').textContent = "Prev Step";
+                }
+                function calcNextStep1(e) {
+                  e.preventDefault();
+                  calcHideRows();
+                  for (let i = 0; i < tableRows.length; i += 4) {
+                    tableRows.slice(i += 3, 7).forEach((ele) => ele.classList.add('show'))
+                  }
+                  handleUi(e);
+                  stepBtn2.style.display = 'block';
+
+                }
+                function calcNextStep2(e) {
+                  e.preventDefault();
+                  calcHideRows();
+                  for (let i = 0; i < tableRows.length; i += 4) {
+                    tableRows.slice(i += 7, 13).forEach((ele) => ele.classList.add('show'))
+                  }
+                  handleUi(e);
+                  stepBtn1.style.display = 'none';
+                  stepBtn3.style.display = 'block';
+                }
+                stepBtn1.addEventListener("click", calcNextStep1);
+                stepBtn2.addEventListener("click", calcNextStep2);
+                // DOM CHANGES END
+
+                function makeWhiteSelectBox(selects) {
+                  selects.forEach((select) => select.classList.add("white"))
+                }
+                makeWhiteSelectBox(document.querySelectorAll('.calc-part-section .wrapper table td select'))
+              </script>
+
             </div>
           </div>
         </div>
@@ -2618,6 +2997,8 @@
   <script defer src="dist/jquery.youtube-background.js"></script>
   <script defer src="dist/iframe.js"></script>
   <script defer src="dist/DrawSVGPlugin.js"></script>
+  <script defer src="dist/jquery.selectBox.js"></script>
+  <script defer src="dist/custom-selectBox.js"></script>
   <script defer src="dist/core.bundle.js"></script>
 </body>
 
