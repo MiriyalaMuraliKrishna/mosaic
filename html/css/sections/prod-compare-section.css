@@ -59,7 +59,7 @@ ul.prod-compare-list li{font-weight: 400;}
     ul.prod-compare-list._desk:nth-child(2) li{font-weight: 700; text-align: center;}
     ul.prod-compare-list._desk li{flex: 0 0 25%; padding: 23px 52px 24px;}
     .count_table_3 ul.prod-compare-list._desk li:not(:first-child){flex: 0 0 37.5%;}
-    ul.prod-compare-list._desk li:not(:first-child):nth-child(even){ background: var(--White-10); backdrop-filter: blur(30px); }
+    ul.prod-compare-list._desk li:not(:first-child):nth-child(2){ background: var(--White-10); backdrop-filter: blur(30px); }
     ul.prod-compare-list._desk:first-child li:not(:first-child):nth-child(even){ border-radius: 10px 10px 0 0;}
     ul.prod-compare-list._desk:last-child li:not(:first-child):nth-child(even){border-radius: 0 0 10px 10px;}
 
@@ -95,7 +95,8 @@ ul.prod-compare-list li{font-weight: 400;}
     ul.prod-compare-list li:nth-child(2){font-weight: 700;}
     ul.prod-compare-list li:nth-child(n+3){border-bottom: 1px solid var(--Line---Light);}
     ul.prod-compare-list li a.text-link{width: fit-content;}
-    .prod-compare-slide{padding: 27px 0 0; border-radius: 10px; background: var(--White-10); backdrop-filter: blur(30px); }
+    [data-slick-index='0'] .prod-compare-slide{border-radius: 10px; background: var(--White-10); backdrop-filter: blur(30px);}
+    .prod-compare-slide{padding: 27px 0 0;  }
     .prod-compare-slider button.slick-arrow{top: 132px; transform: none;}
 }
 

@@ -2097,6 +2097,7 @@
                   const stepNumber = +targetAttr.split('-')[1];
                   document.querySelector(`ol.calc-part-steps > li[data-parts-calc="${targetAttr}"]`).classList.add("active");
                   document.querySelector('.calc-part-number').textContent = stepNumber;
+                  e.currentTarget.setAttribute('data-calc', `step-prev-${stepNumber}`)
                   e.currentTarget.classList.add('reverse-calc-btn');
                   e.currentTarget.querySelector('.button span').textContent = "Prev Step";
                 }
