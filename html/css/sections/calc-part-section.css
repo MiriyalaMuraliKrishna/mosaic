@@ -21,12 +21,10 @@
 .calc-part-text h2{margin-bottom: 30px; font-size: 94px; font-weight: 400; line-height: 100px; letter-spacing: -2.82px;}
 
 
-
-
 .calc-part-cost{padding: 87px 91px 87px; flex: 0 0 470px; letter-spacing: 0;}
 .calc-part-cost h2{font-size: 33px; letter-spacing: 0;}
 .calc-part-head{padding-bottom: 29px;}
-ol.calc-part-steps{gap: 33px; letter-spacing: 0; font-size: 19px; font-weight: 600; line-height: normal;}
+ol.calc-part-steps{gap: 33px; margin: 0 0 0 44px; letter-spacing: 0; font-size: 19px; font-weight: 600; line-height: normal;}
 ol.calc-part-steps li::before{width: 33px; height: 33px; top: -5px; left: -43px; background-color: var(--White-20); color: var(--Black);}
 ol.calc-part-steps li:first-child:before{text-indent: -0.5px;}
 ol.calc-part-steps li.active::before{background-color: var(--White);}
@@ -45,19 +43,17 @@ ul.calc-part-inputs li:hover{background-color: var(--Black); color: var(--White)
 .calc-part-tot{backdrop-filter: blur(9px);} 
 
 
-.calc-part-section .wrapper table {border: 0 none; margin-bottom: 20px;}
+.calc-part-section .wrapper table {border: 0 none; margin: 31px 0 20px;}
 .calc-part-section .wrapper table thead{display: none;}
 .calc-part-section .wrapper table th {color: var(--Black); font-size: 19px; padding: 18px 16px 16px; background-color: rgba(0,0,0,.02); text-transform: uppercase; letter-spacing: normal;}
-.calc-part-section .wrapper table td label, 
-.calc-part-section .wrapper p label{display: flex; gap: 5px; color: var(--Black); padding: 0;}
+.calc-part-section .wrapper table td label, .calc-part-section .wrapper p label{font-size: 17px; line-height: 26px; display: flex; gap: 5px; color: var(--Black); padding: 0;}
 
 .calc-part-section .wrapper table tr{display: none;}
 .calc-part-section .wrapper table tr.show{display: table-row;}
 
-.calc-part-section .wrapper table input[type='number']:not([type='text']){border-radius: 70px; border: 1px solid var(--Black); backdrop-filter: blur(17px); color: var(--Black); background: transparent;}
-.calc-part-section .wrapper table input:not([type='number']){border-radius: 70px;}
-.calc-part-section .wrapper table input:not([type='number']),
- .calc-part-section .wrapper table textarea {color: var(--Black); background: var(--White);}
+.calc-part-section .wrapper table input{border-radius: 70px; border: 1px solid var(--Black); backdrop-filter: blur(17px); color: var(--Black); background: transparent; transition: var(--b-transition);}
+.calc-part-section .wrapper table input:focus{border-radius: 10px;}
+
 .calc-part-section .wrapper table td {border: none; background: transparent; position: relative;}
 .calc-part-section .wrapper table td:nth-child(odd){padding-left: 0;}
 .calc-part-section .wrapper table td:nth-child(even){padding-right: 0; width: 240px; max-width: 240px;}
@@ -70,29 +66,32 @@ ul.calc-part-inputs li:hover{background-color: var(--Black); color: var(--White)
 body ul.white-selectBox-dropdown-menu{background-color: var(--White); border-radius: 0;}
 body ul.white-selectBox-dropdown-menu li.selectBox-selected a, body ul.white-selectBox-dropdown-menu li a:hover{background-color: var(--Green); color: var(--Black);}
 
-.calc-part-btns-main{padding-top: 34px;}
+.calc-part-btns-main{padding: 34px 0; justify-content: space-between;}
 .calc-part-btns:not(:first-child, .reverse-calc-btn){display: none; margin-left: auto;}
 .reverse-calc-btn .button{flex-direction: row-reverse;}
 .reverse-calc-btn .button:hover svg{animation: none;}
 .reverse-calc-btn svg{transform: rotate(-90deg);}
+.calc-part-section .wrapper table td div.error-message { bottom: -4px; right: 0; white-space: nowrap; position: absolute; }
+.calc-part-btns .button span em{font-style: normal;}
 
 /*-- media css starts here --*/
-@media screen and (max-width: 1299px) and (min-width: 1024px){
+@media screen and (max-width: 1359px) and (min-width: 1024px){
     .calc-part-text{max-width: 700px;}
     .calc-part-text h2{font-size: 70px; line-height: 80px;}
     .calc-part-desc{max-width: 410px;}
+    .calc-part-cost{padding: 60px; flex: 0 0 400px;}
+    .calc-part-choose{padding: 60px;}
 }
-@media screen and (max-width: 1099px) and (min-width: 1024px){
-   .calc-part-cost{padding: 60px;}
-   .calc-part-choose{padding: 60px;}
+@media screen and (max-width: 1199px) and (min-width: 1024px){
 }
 @media screen and (max-width: 1023px) and (min-width: 768px){
     .calc-part-wrap{padding: 80px 0; }
+    .calc-part-tot{flex-direction: column;}
     .calc-part-text h2{font-size: 64px; line-height: 70px;}
     .calc-part-image{max-height: 500px; max-width: 500px; right: -180px; top: 150px;}
-    .calc-part-cost{flex: 0 0 300px; padding: 60px; }
+    .calc-part-cost{flex: 1; padding: 60px;}
     .calc-part-cost h2{font-size: 26px; line-height: 31px;}
-    .calc-part-choose{padding: 60px; }
+    .calc-part-choose{padding: 60px; border-top: 1px solid var(--Line---Light); border-left: none;}
 }
 @media screen and (max-width: 767px) and (min-width: 200px){
     .calc-part-wrap{padding: 100px 0 90px;}
@@ -102,15 +101,30 @@ body ul.white-selectBox-dropdown-menu li.selectBox-selected a, body ul.white-sel
     .calc-part-desc{font-size: 15.5px; letter-spacing: -.465px; line-height: 24px; max-width: 258px; }
     .calc-part-image{max-height: fit-content; max-width: 273px; right: -89px; top: 189px;}
     .calc-part-tot{border-radius: 20px;}
+    .calc-part-up{padding-bottom: 20px;}
     .calc-part-cost{flex: 0 0 100%; padding: 46px 40px 0;}
     .calc-part-head{padding-bottom: 31px;}
     .calc-part-cost h2{font-size: 28px; line-height: normal; margin-bottom: 0;}
-    ol.calc-part-steps{font-size: 0; gap: 56px; position: absolute; left: 0;}
+    ol.calc-part-steps { gap: 22px 0; left: -10px; position: absolute; margin: 0; width: 28px; align-items: end; justify-content: flex-end; height: auto; }
+    ol.calc-part-steps li{width: 28px; height: 28px; font-size: 0; line-height: 0;}
+    ol.calc-part-steps li::before{top: 0; left: 0; width: 100%; height: 100%; font-size: 15px;}
+
     .calc-part-choose{padding: 0 40px 40px; border: none;}
     .calc-part-up span.fs-20{font-size: 18px;}
     .calc-part-up span.muted-dark{font-size: 16px;}
     ul.calc-part-inputs li{padding: 10px 20px; flex: 0 0 calc(50% - 5px); text-align: center;}
+    .calc-part-section .wrapper table{margin: 0;}
+    .calc-part-section .wrapper table, .calc-part-section .wrapper table tbody,
+    .calc-part-section .wrapper table td{padding: 0; display: block;}
+    .calc-part-section .wrapper table tr.show{display: block; padding-bottom: 32px;}
+    .calc-part-section .wrapper table td:not(:first-child){padding-top: 10px; max-width: 100%; width: 100%;}
+    .calc-part-section .wrapper table td div.error-message{position: static; white-space: normal;}
+    .calc-part-btns-main{padding: 10px 0 34px;}
+    .calc-part-btns .button{padding: 14px 20px 14px;}
+    .calc-part-btns .button span em{display: none;}
 }
 @media screen and (max-width: 374px) and (min-width: 200px){
+    .calc-part-btns-main{gap: 24px 0; justify-content: center; align-items: center; flex-direction: column;}
+    .calc-part-btns:not(:first-child, .reverse-calc-btn){margin: 0 auto;}
     .calc-part-up span.fs-20{font-size: 14px;}
 }

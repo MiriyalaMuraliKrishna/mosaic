@@ -29,7 +29,6 @@ body .download-form .with_frm_style .frm_message p{color: var(--Green);}
     .download-wrap{padding: 109px 0 162px;}
     .download-image{width: 561px; height: 462px;}
     .download-form button{width: fit-content;}
-    body.page-id-1147 .download-form{min-height: 640px;}
 }
 @media screen and (min-width: 1400px){
     .download-text{max-width: 780px; padding: 88px 114px 108px; }

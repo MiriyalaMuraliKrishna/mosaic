@@ -1,0 +1,327 @@
+<div class="wrapper white-bg-20 radius-40">
+
+    <h2 class="h4 f-600">TCPP Calculator - Test UI</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Response</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="partProductionMethod">1. How are you currently producing parts?</label>
+                </td>
+                <td>
+                    <select id="partProductionMethod" required>
+                        <option value="" disabled selected>Select One</option>
+                        <option value="3D Printing">3D Printing</option>
+                        <option value="CNC Machining">CNC Machining</option>
+                        <option value="Injection Molding">Injection Molding</option>
+                        <option value="Urethane Casting/Silicone Molding">Urethane Casting/Silicone Molding</option>
+                        <option value="Traditional Fabrication">Traditional Fabrication</option>
+                        <option value="Hybrid Processes">Hybrid Processes</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="error-message" id="error-partProductionMethod"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="material">2. What material are you currently using?</label>
+                </td>
+                <td>
+                    <select id="material" required>
+                        <option value="" disabled selected>Select One</option>
+                        <option value="Aero">Aero</option>
+                        <option value="Matrix">Matrix</option>
+                        <option value="Flex">Flex</option>
+                        <option value="ASA">ASA</option>
+                        <option value="PLA">PLA</option>
+                        <option value="PETG">PETG</option>
+                        <option value="PEEK">PEEK</option>
+                        <option value="PEKK">PEKK</option>
+                        <option value="ABS">ABS</option>
+                        <option value="FR-PC">FR-PC</option>
+                        <option value="Nylon">Nylon</option>
+                        <option value="Form">Form</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="error-message" id="error-material"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="partsPerMonth">3. Approximately how many parts do you produce or require each
+                        month?</label>
+                </td>
+                <td>
+                    <select id="partsPerMonth" required>
+                        <option value="" disabled selected>Select One</option>
+                        <option value="0-50">0-50</option>
+                        <option value="51-100">51-100</option>
+                        <option value="101-200">101-200</option>
+                        <option value="201-500">201-500</option>
+                        <option value="501-1000">501-1000</option>
+                        <option value="1001-2000">1001-2000</option>
+                        <option value="2001-4000">2001-4000</option>
+                        <option value="4001+">4001+</option>
+                        <option value="Not sure">Not sure</option>
+                    </select>
+                    <div class="error-message" id="error-partsPerMonth"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="estimatedPrintTime">4. What is the estimated 3D print time for this part in
+                        hours?</label>
+                </td>
+                <td>
+                    <input id="estimatedPrintTime" type="number" min="1" step="1" value="" required />
+                    <div class="error-message" id="error-estimatedPrintTime"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="costPerPart">5. Approximately, what is your current cost per part? (USD)</label>
+                </td>
+                <td>
+                    <input id="costPerPart" type="number" min="0.01" step="0.01" value="" required />
+                    <div class="error-message" id="error-costPerPart"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="benchmarkPrint">6. Select a benchmark part that is closest in size and volume to what
+                        you typically produce.</label>
+                </td>
+                <td>
+                    <select id="benchmarkPrint" required>
+                        <option value="" disabled selected>Select One</option>
+                        <option value="Model in 8-30 CC Range">Model in 8-30 CC Range</option>
+                        <option value="Model in 30-60 CC Range">Model in 30-60 CC Range</option>
+                        <option value="Model in 60-90 CC Range">Model in 60-90 CC Range</option>
+                        <option value="Model in 90-120 CC Range">Model in 90-120 CC Range</option>
+                        <option value="Model in 120-470 CC Range">Model in 120-470 CC Range</option>
+                    </select>
+                    <div class="error-message" id="error-benchmarkPrint"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="industry">7. Select your industry type</label>
+                </td>
+                <td>
+                    <select id="industry" required>
+                        <option value="" disabled selected>Select One</option>
+                        <option value="Supply Chain & Logistics">Supply Chain & Logistics</option>
+                        <option value="Aerospace">Aerospace</option>
+                        <option value="Automotive">Automotive</option>
+                        <option value="Defense">Defense</option>
+                        <option value="Contract Manufacturing">Contract Manufacturing</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Apparel">Apparel</option>
+                        <option value="Education">Education</option>
+                        <option value="Robotics & Automation">Robotics & Automation</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="error-message" id="error-industry"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="firstName">8a. First Name</label>
+                </td>
+                <td>
+                    <input type="text" id="firstName" value="" required>
+                    <div class="error-message" id="error-firstName"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastName">8b. Last Name</label>
+                </td>
+                <td>
+                    <input type="text" id="lastName" value="" required>
+                    <div class="error-message" id="error-lastName"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">8c. Email</label>
+                </td>
+                <td>
+                    <input type="email" id="email" value="" required>
+                    <div class="error-message" id="error-email"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phoneNumber">8d. Phone Number</label>
+                </td>
+                <td>
+                    <input type="tel" id="phoneNumber" value="" required>
+                    <div class="error-message" id="error-phoneNumber"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="companyName">8e. Company Name</label>
+                </td>
+                <td>
+                    <input type="text" id="companyName" value="" required>
+                    <div class="error-message" id="error-companyName"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="submit" class="button btn-reverse flex flex-vcenter text-upper">Submit
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M10.998 9.84473H9.49805V2.65527L1.24805 10.9053L0.1875 9.84473L8.4375 1.59473H0.748047V0.0947266H10.998V9.84473Z"
+                fill="black" />
+        </svg>
+    </button>
+
+    <div id="formMessage" class="form-message"></div>
+
+</div>
+
+<script>
+    const buttonEl = document.getElementById("submit");
+
+    const showMsg = (msg, type = 'success') => {
+        const box = document.getElementById('formMessage');
+        box.textContent = msg;
+        box.className = `form-message ${type}`;
+        box.style.display = msg ? 'block' : 'none';
+    };
+
+
+    const clearErrors = () => {
+        document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+    };
+    const validateForm = () => {
+        clearErrors();
+        let valid = true;
+
+        const fields = [
+            { id: "partProductionMethod", msg: "Please select how you are currently producing parts." },
+            { id: "material", msg: "Please select the material you are currently using." },
+            { id: "partsPerMonth", msg: "Please select how many parts you produce or require each month." },
+            { id: "estimatedPrintTime", msg: "Estimated print time must be greater than zero.", min: 1 },
+            { id: "costPerPart", msg: "Cost per part must be greater than zero.", min: 0.01 },
+            { id: "benchmarkPrint", msg: "Please select a benchmark part." },
+            { id: "industry", msg: "Please select your industry type." },
+            { id: "firstName", msg: "Please enter your first name." },
+            { id: "lastName", msg: "Please enter your last name." },
+            { id: "email", msg: "Please enter your email address." },
+            { id: "phoneNumber", msg: "Please enter your phone number." },
+            { id: "companyName", msg: "Please enter your company name." }
+        ];
+
+        fields.forEach(({ id, msg, min }) => {
+            const el = document.getElementById(id);
+            const errorEl = document.getElementById('error-' + id);
+            let val = el.value.trim();
+
+            if (!val) {
+                errorEl.textContent = msg;
+                valid = false;
+                return;
+            }
+
+
+            if (min !== undefined) {
+                const numVal = parseFloat(val);
+                if (isNaN(numVal) || numVal < min) {
+                    errorEl.textContent = msg;
+                    valid = false;
+                    return;
+                }
+            }
+
+
+            if (id === 'email') {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(val)) {
+                    errorEl.textContent = "Please enter a valid email address.";
+                    valid = false;
+                }
+            }
+        });
+
+        return valid;
+    };
+
+    buttonEl.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        showMsg('', '');
+
+        if (!validateForm()) {
+            return;
+        }
+
+        const partProductionMethod = document.getElementById("partProductionMethod").value;
+        const material = document.getElementById("material").value;
+        const partsPerMonth = document.getElementById("partsPerMonth").value;
+        const estimatedPrintTime = parseFloat(document.getElementById("estimatedPrintTime").value);
+        const costPerPart = parseFloat(document.getElementById("costPerPart").value);
+        const benchmarkPrint = document.getElementById("benchmarkPrint").value;
+        const industry = document.getElementById("industry").value;
+        const firstName = document.getElementById("firstName").value.trim();
+        const lastName = document.getElementById("lastName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phoneNumber = document.getElementById("phoneNumber").value.trim();
+        const companyName = document.getElementById("companyName").value.trim();
+
+        const token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NTI2Nzg3OTQsImlzcyI6Ik1vc2FpYyBNYW51ZmFjdHVyaW5nIEx0ZC4iLCJzdWIiOiJodHRwczovL21vc2FpY21hbnVmYWN0dXJpbmcua2luc3RhLmNsb3VkIn0.iaFgYSI-fUkASbY1odqcAJTmMq2wQzpnNWPAJWW2HGIDrVteREJqRUe_yQcD5Zj3QIt_MxDvQyPdYLd46nXgF4aQAXk-Hcamu5k9YR2bMIvKMZHUtqJSaXqMXHyc0Q_hrSq8F7MKNJMtvYzhOZk6n-MkvC8W_XNy33MxbvXehzsi-UsL84SbQrsB2cv4QC0SQ9uRjE_T9OAdmz-OCydck2v_c2-ouca64dA1wG_ifuoxjVLpoBELWbRb9DtuIER8vkUsMGntBK2r4xVoeqFCPcMlEuez5hv-d1uxXth8AxBlbL6mLairohactg5h5tH14jDqqUBaDAjMVsa4tiNl7qItrrg7DE2OSgDNLEMZF0lnMK1y2hVigN3W3AawKOg2Bo700apaMy6pbuM0w1uxpr4P6dA-C-SWasoN204atyiK0ZUWJN7CtWg1LyKig1-AJzPljv1Bw6fI7Ozh0VkbrsHq77uwsUt5mHLGnBoxpHJRzfqcIOFfKuPT9X2irs-Z5hpSFLjsrFKPrymX9NjksKcuNH65c5T2gRoaNTAaE9Nsd54seY77xAJeFyHFJ5WzrTnWhDsOpyYx8xrxoghGx4RgARa5og8WHsO2DX1m6MaTAx6IdP9RolWbKO51oBZYDFfLiteKve6UDjfoD101hlJkl7etz1nFC2s0j5WSom4";
+
+        const makeRequest = async () => {
+            try {
+                showMsg("Loading...", "success");
+                buttonEl.disabled = true;
+
+                const response = await fetch("https://tcpp2.mosaicmfg.com", {
+                    method: "POST",
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        firstName,
+                        lastName,
+                        companyName,
+                        email,
+                        phoneNumber,
+                        industry,
+                        partProductionMethod,
+                        costPerPart,
+                        material,
+                        partsPerMonth,
+                        estimatedPrintTime,
+                        benchmarkPrint,
+                    }),
+                });
+
+                if (response.ok) {
+                    showMsg("Thank you! Your responses were successfully submitted.", "success");
+                } else {
+                    showMsg("Sorry – there was a problem submitting the form. Please try again.", "error");
+                }
+            } catch (err) {
+                showMsg(err instanceof Error ? err.message : "Unexpected error.", "error");
+            }
+            buttonEl.disabled = false;
+        };
+
+        makeRequest();
+    });
+</script>

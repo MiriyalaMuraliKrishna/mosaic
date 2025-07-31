@@ -1,5 +1,5 @@
 select.selectBox {display:none;}
-body .selectBox-dropdown {outline: 0; width: 100%; font-size: 17px; letter-spacing: -0.34px; font-weight: 400; line-height: 28px; background: var(--White-10); color: var(--Black); box-shadow: none; border-radius:10px; padding: 0; border: none; vertical-align: middle; height: auto;  cursor: pointer; transform: var( --b-transition-5); position: relative; display: block;}
+body .selectBox-dropdown {outline: 0; padding: 15px 45px 16px 16px; width: 100%; font-size: 17px; letter-spacing: -0.34px; font-weight: 400; line-height: 28px; background: var(--White-10); color: var(--Black); box-shadow: none; border-radius:10px; border: none; vertical-align: middle; height: auto;  cursor: pointer; transform: var( --b-transition-5); position: relative; display: block;}
 body .selectBox-dropdown:hover, body .selectBox-dropdown:focus {color: var(--Black);}
 body .selectBox-dropdown .selectBox-label {padding:0; display:block; width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
 body .selectBox-dropdown .selectBox-label a {color:inherit;}

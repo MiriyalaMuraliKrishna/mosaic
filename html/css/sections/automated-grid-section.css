@@ -30,8 +30,8 @@
     .automated-grid-wrapper{margin: 120px 0 118px;}
     .automated-grid-left{flex: 0 0 320px;}
     .automated-grid-right{flex: 1;}
-    .automated-grid-image{flex: 0 0 84px;}
-    .automated-grid-left .automated-grid-image{flex: 0 0 128px;}
+    .automated-grid-image{flex: 0 0 84px; max-width: 84px;}
+    .automated-grid-left .automated-grid-image{flex: 0 0 128px; max-width: 128px;}
     .automated-grid-items{gap: 25px;}
     .automated-grid-items .automated-grid-item{flex: 0 0 calc(33.33333% - 17px);}
     .automated-grid-degrees{flex-direction: column;}

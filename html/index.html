@@ -1912,10 +1912,10 @@
                     </tr>
                   </tbody>
                 </table>
-                <div class="calc-part-btns-main flex flex-vcenter">
+                <div class="calc-part-btns-main flex">
                   <div class="calc-part-btns" data-calc="step-1">
                     <a target="_blank" href="#" class="button btn-reverse flex flex-center text-upper">
-                      <span>Next Step</span>
+                      <span>Next <em>Step</em></span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M10.9053 9.84473V0.0947266H0.655335V1.59473H8.34473L0.0947266 9.84473L1.15527 10.9053L9.40534 2.65521V9.84473H10.9053Z"
@@ -1925,7 +1925,7 @@
                   </div>
                   <div class="calc-part-btns" data-calc="step-2">
                     <a target="_blank" href="#" class="button btn-reverse flex flex-center text-upper">
-                      <span>Next Step</span>
+                      <span>Next <em>Step</em></span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M10.9053 9.84473V0.0947266H0.655335V1.59473H8.34473L0.0947266 9.84473L1.15527 10.9053L9.40534 2.65521V9.84473H10.9053Z"
@@ -2064,10 +2064,14 @@
                           benchmarkPrint,
                         }),
                       });
-
                       if (response.ok) {
                         showMsg("Thank you! Your responses were successfully submitted.", "success");
-                      } else {
+                      }
+                      else if (!response.ok) {
+                        const errText = await response.text();
+                        showMsg(`Submission failed: ${errText}`, "error");
+                      }
+                      else {
                         showMsg("Sorry – there was a problem submitting the form. Please try again.", "error");
                       }
                     } catch (err) {
@@ -2083,6 +2087,120 @@
                 const stepBtn2 = document.querySelector('[data-calc="step-2"]');
                 const stepBtn3 = document.querySelector('[data-calc="step-3"]');
                 const stepActive = document.querySelectorAll('ol.calc-part-steps > li');
+                const validateForm1 = () => {
+                  clearErrors();
+                  let valid = true;
+
+                  const fields = [
+                    { id: "partProductionMethod", msg: "Please select how you are currently producing parts." },
+                    { id: "material", msg: "Please select the material you are currently using." },
+                    { id: "partsPerMonth", msg: "Please select how many parts you produce or require each month." },
+
+                  ];
+
+                  fields.forEach(({ id, msg, min }) => {
+                    const el = document.getElementById(id);
+                    const errorEl = document.getElementById('error-' + id);
+                    let val = el.value.trim();
+
+                    if (!val) {
+                      errorEl.textContent = msg;
+                      valid = false;
+                      return;
+                    }
+
+
+
+                  });
+
+                  return valid;
+                };
+
+                const validateForm2 = () => {
+                  let valid = true;
+
+                  const fields = [
+
+                    { id: "estimatedPrintTime", msg: "Estimated print time must be greater than zero.", min: 1 },
+                    { id: "costPerPart", msg: "Cost per part must be greater than zero.", min: 0.01 },
+                    { id: "benchmarkPrint", msg: "Please select a benchmark part." },
+                    { id: "industry", msg: "Please select your industry type." },
+
+                  ];
+
+                  fields.forEach(({ id, msg, min }) => {
+                    const el = document.getElementById(id);
+                    const errorEl = document.getElementById('error-' + id);
+                    let val = el.value.trim();
+
+                    if (!val) {
+                      errorEl.textContent = msg;
+                      valid = false;
+                      return;
+                    }
+
+
+                    if (min !== undefined) {
+                      const numVal = parseFloat(val);
+                      if (isNaN(numVal) || numVal < min) {
+                        errorEl.textContent = msg;
+                        valid = false;
+                        return;
+                      }
+                    }
+
+
+
+                  });
+
+                  return valid;
+                };
+                const validateForm3 = () => {
+                  let valid = true;
+
+                  const fields = [
+
+                    { id: "firstName", msg: "Please enter your first name." },
+                    { id: "lastName", msg: "Please enter your last name." },
+                    { id: "email", msg: "Please enter your email address." },
+                    { id: "phoneNumber", msg: "Please enter your phone number." },
+                    { id: "companyName", msg: "Please enter your company name." }
+                  ];
+
+                  fields.forEach(({ id, msg, min }) => {
+                    const el = document.getElementById(id);
+                    const errorEl = document.getElementById('error-' + id);
+                    let val = el.value.trim();
+
+                    if (!val) {
+                      errorEl.textContent = msg;
+                      valid = false;
+                      return;
+                    }
+
+
+                    if (min !== undefined) {
+                      const numVal = parseFloat(val);
+                      if (isNaN(numVal) || numVal < min) {
+                        errorEl.textContent = msg;
+                        valid = false;
+                        return;
+                      }
+                    }
+
+
+                    if (id === 'email') {
+                      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                      if (!emailRegex.test(val)) {
+                        errorEl.textContent = "Please enter a valid email address.";
+                        valid = false;
+                      }
+                    }
+                  });
+
+                  return valid;
+                };
+
                 //set 
                 stepActive[0].classList.add('active');
                 const tableRows = Array.from(document.querySelectorAll('.calc-part-section .wrapper table tbody tr'))
@@ -2097,22 +2215,53 @@
                   const stepNumber = +targetAttr.split('-')[1];
                   document.querySelector(`ol.calc-part-steps > li[data-parts-calc="${targetAttr}"]`).classList.add("active");
                   document.querySelector('.calc-part-number').textContent = stepNumber;
-                  e.currentTarget.setAttribute('data-calc', `step-prev-${stepNumber}`)
+                  e.currentTarget.setAttribute('data-calc', `step-prev-${stepNumber - 1}`)
                   e.currentTarget.classList.add('reverse-calc-btn');
-                  e.currentTarget.querySelector('.button span').textContent = "Prev Step";
+                  e.currentTarget.querySelector('.button span').innerHTML = "Prev <em>Step</em>";
+                }
+
+                function uiBackReset(e) {
+                  const prevTarget = e.currentTarget.dataset.calc;
+                  const prevNumber = +prevTarget.split('-')[2];
+                  document.querySelector(`ol.calc-part-steps > li[data-parts-calc="step-${prevNumber}"]`).classList.add("active");
+                  document.querySelector('.calc-part-number').textContent = prevNumber;
+
+                  e.currentTarget.classList.remove('reverse-calc-btn');
+                  e.currentTarget.setAttribute('data-calc', `step-${prevNumber}`)
+                  e.currentTarget.querySelector('.button span').innerHTML = "Next <em>Step</em>";
                 }
                 function calcNextStep1(e) {
                   e.preventDefault();
+
+                  // handle errors
+                  clearErrors();
+                  if (!validateForm1()) { return; }
+
+
                   calcHideRows();
                   for (let i = 0; i < tableRows.length; i += 4) {
                     tableRows.slice(i += 3, 7).forEach((ele) => ele.classList.add('show'))
                   }
                   handleUi(e);
                   stepBtn2.style.display = 'block';
-
+                }
+                function calcPrevStep1(e) {
+                  e.preventDefault();
+                  calcHideRows();
+                  for (let i = 0; i < tableRows.length; i += 4) {
+                    tableRows.slice(i += 3, 7).forEach((ele) => ele.classList.remove('show'))
+                    tableRows.slice(0, 3).forEach((ele) => ele.classList.add('show'))
+                  }
+                  uiBackReset(e);
+                  stepBtn2.style.display = 'none';
+                  stepBtn3.style.display = 'none';
                 }
                 function calcNextStep2(e) {
                   e.preventDefault();
+                  // handle errors
+                  clearErrors();
+                  if (!validateForm2()) { return; }
+
                   calcHideRows();
                   for (let i = 0; i < tableRows.length; i += 4) {
                     tableRows.slice(i += 7, 13).forEach((ele) => ele.classList.add('show'))
@@ -2121,8 +2270,35 @@
                   stepBtn1.style.display = 'none';
                   stepBtn3.style.display = 'block';
                 }
-                stepBtn1.addEventListener("click", calcNextStep1);
-                stepBtn2.addEventListener("click", calcNextStep2);
+                function calcPrevStep2(e) {
+                  e.preventDefault();
+                  calcHideRows();
+                  for (let i = 0; i < tableRows.length; i += 4) {
+                    tableRows.slice(i += 7, 13).forEach((ele) => ele.classList.remove('show'))
+                    tableRows.slice(3, 7).forEach((ele) => ele.classList.add('show'))
+                  }
+                  uiBackReset(e);
+                  stepBtn1.style.display = 'block';
+                  stepBtn3.style.display = 'none';
+                }
+                stepBtn1.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  if (e.currentTarget.dataset.calc === 'step-1') {
+                    calcNextStep1(e);
+                  }
+                  else if (e.currentTarget.dataset.calc === 'step-prev-1') {
+                    calcPrevStep1(e);
+                  }
+                });
+                stepBtn2.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  if (e.currentTarget.dataset.calc === 'step-2') {
+                    calcNextStep2(e);
+                  }
+                  else if (e.currentTarget.dataset.calc === 'step-prev-2') {
+                    calcPrevStep2(e);
+                  }
+                });
                 // DOM CHANGES END
 
                 function makeWhiteSelectBox(selects) {
