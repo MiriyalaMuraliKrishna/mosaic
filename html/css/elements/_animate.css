@@ -2,6 +2,14 @@
 *[data-animate] {visibility: hidden; animation-delay: 0.15s; -webkit-animation-duration: 0.75s; animation-duration: 0.75s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out;}
 *[data-animate].visible { visibility: visible; }
 
+
+.fade-in-top { -webkit-animation-name: fadeInTop; animation-name: fadeInTop; }
+@-webkit-keyframes fadeInTop { 0% { transform: translate3d(0, 60px, 0); } 100% { transform: translate3d(0, 0, 0); } }
+@keyframes fadeInTop { 0% { transform: translate3d(0, 60px, 0); } 100% { transform: translate3d(0, 0, 0);} }
+[data-duration="ai-one"]{ animation-duration: 0.5s;}
+[data-duration="ai-two"]{ animation-duration: 0.75s;}
+[data-duration="ai-three"]{ animation-duration: 1s;}
+
 .fade-in-right { -webkit-animation-name: fadeInRight; animation-name: fadeInRight; }
 @-webkit-keyframes fadeInRight { 0% { transform: translate3d(20px, 0, 0); opacity: 0; } 100% { transform: translate3d(0, 0, 0); opacity: 1; } }
 @keyframes fadeInRight { 0% { transform: translate3d(20px, 0, 0); opacity: 0; } 100% { transform: translate3d(0, 0, 0); opacity: 1; } }
