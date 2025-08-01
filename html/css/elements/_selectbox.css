@@ -13,3 +13,5 @@ body ul.selectBox-dropdown-menu li.selectBox-disabled{display: none;}
 body ul.selectBox-dropdown-menu li a {display:block; padding: 10px 16px; white-space: normal; text-transform:capitalize; overflow:hidden; text-overflow:ellipsis; text-decoration: none; font-size: 16px; line-height: 20px; letter-spacing: -0.34px;  color: var(--Black);}
 body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropdown-menu li a:hover {color:var(--White); background-color:var(--White-20); cursor:pointer;}
 
+.hs-fieldtype-intl-phone.hs-input .hs-input.selectBox-dropdown{float: left; width: 30%; color: var(--White);}
+.hs-fieldtype-intl-phone.hs-input .hs-input.selectBox-dropdown .selectBox-arrow{color: var(--White);}

@@ -4,7 +4,7 @@ import 'magnific-popup';
 export const magnificPopup = {
   $youtube: document.querySelectorAll('.popup-youtube'),
   $video: document.querySelectorAll('.popup-vimeo'),
-  $modal: [
+  $modals: [
     ...document.querySelectorAll('.popup-modal'),
     ...document.querySelectorAll('.open_hubspot_popup'),
   ],
@@ -50,8 +50,9 @@ export const magnificPopup = {
         fixedContentPos: true,
       });
     });
-    _.$modal.forEach((modal) => {
-      $(modal).magnificPopup({
+    _.$modals.forEach((modal) => {
+      const $modal = $(modal);
+      $modal.magnificPopup({
         type: 'inline',
         fixedContentPos: true,
         fixedBgPos: true,

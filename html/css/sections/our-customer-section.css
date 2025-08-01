@@ -9,11 +9,16 @@
 .our-customer-avatar{gap: 28px; padding-top: 47px;}
 .our-customer-avatar-logo{max-width: 170px;}
 .our-customer-avatar-logo img{object-fit: contain;}
-
+.our-customer-nav button.slick-arrow:hover svg circle{fill: var(--Purple);}
+.our-customer-nav button.slick-arrow:hover svg path{fill: var(--White);}
 
 
 /* media css starts here */
-
+@media only screen and (min-width: 768px){
+    .our-customer-nav button.slick-arrow{bottom: auto;top: 0; transform: none;}
+    .our-customer-nav button.slick-arrow.slick-prev{left: auto; right: 51px;}
+    .our-customer-nav button.slick-arrow.slick-next{left: auto; right: 0;}
+}
 @media only screen and (min-width: 1024px){
     body.page-template-solution .our-customer-main{padding-top: 126px;}
     body.page-template-usecase.page-id-2783 .our-customer-main{padding-bottom: 180px;}
@@ -22,6 +27,7 @@
     .our-customer-right{width: calc(100% - 550px);}
     .our-customer-head{padding-right: 92px; padding-top: 2px;}
     .our-customer-nav{padding-top: 57px;}
+
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 1024px){
@@ -36,8 +42,8 @@
     .our-customer-right{width: calc(100% - 340px);}
     .our-customer-head{padding-bottom: 40px;}
     .our-customer-text blockquote{font-size: 20px; line-height: 42px;}
-    .swiper-horizontal .swiper-buttons{top: -22px;}
-
+    .our-customer-nav button.slick-arrow{top: -44px;}
+    .our-customer-left button.slick-arrow{display: none;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
     body.page-template-solution .our-customer-wrap{padding-top: 70px;}
@@ -52,10 +58,6 @@
     .our-customer-text{padding: 0 30px;}
     .our-customer-avatar{gap: 22px; padding-top: 21px;}
     .our-customer-avatar .muted-light{font-size: 16px;}
-    .our-customer-left .swiper-buttons{gap: 12px; left: 0; right: 0; top: 50%; transform: translateY(-50%); width: 100%; z-index: 1; justify-content: space-between;}
-    .our-customer-left .swiper-buttons .swiper-button{position: relative;}
-    .our-customer-left .swiper-buttons .swiper-button-prev{left: -13px;}
-    .our-customer-left .swiper-buttons .swiper-button-next{right: -13px;}
 
     body.page-template-product-hardware .our-customer-wrap .hide-desktop{padding-right: 80px;}
     body.page-template-product-hardware .our-customer-wrap .hide-desktop h2{font-size: 34px; line-height: 40px;}

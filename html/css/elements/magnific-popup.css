@@ -18,7 +18,7 @@
   height: 100%;
   z-index: 1043;
   position: fixed;
-  outline: none !important;
+  outline: none;
   -webkit-backface-visibility: hidden;
 }
 
@@ -53,8 +53,8 @@
   z-index: 1045;
 }
 .modal-bg-blur{backdrop-filter: blur(70px); }
-.modal-padd{padding: 60px;}
-.mfp-close-btn-in .container .mfp-close{top: -16px; right: -10px;}
+.modal-padd{padding: 60px; margin: 120px 0;}
+.mfp-close-btn-in .container.sm .mfp-close{top: -16px; right: -10px;}
 
 .mfp-inline-holder .mfp-content,
 .mfp-ajax-holder .mfp-content {
@@ -443,5 +443,12 @@ img.mfp-img {
     padding-right: 20px;
   }
 }
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+.mfp-close-btn-in .container.sm .mfp-close{right: 28px;}
 
+  .modal-padd{padding: 40px;}
+  }
+@media only screen and (max-width: 767px) and (min-width: 200px){
+.modal-padd{padding: 40px 20px;}
+}
 /*# sourceMappingURL=magnific-popup.css.map */

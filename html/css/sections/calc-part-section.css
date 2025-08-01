@@ -47,7 +47,7 @@ ul.calc-part-inputs li:hover{background-color: var(--Black); color: var(--White)
 .calc-part-section .wrapper table thead{display: none;}
 .calc-part-section .wrapper table th {color: var(--Black); font-size: 19px; padding: 18px 16px 16px; background-color: rgba(0,0,0,.02); text-transform: uppercase; letter-spacing: normal;}
 .calc-part-section .wrapper table td label, .calc-part-section .wrapper p label{font-size: 17px; line-height: 26px; display: flex; gap: 5px; color: var(--Black); padding: 0;}
-
+.calc-part-section .wrapper table td label span{display: none;}
 .calc-part-section .wrapper table tr{display: none;}
 .calc-part-section .wrapper table tr.show{display: table-row;}
 
