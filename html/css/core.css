@@ -15,6 +15,7 @@
 @import url('./elements/splide.min.css');
 @import url('./elements/_selectbox.css');
 @import url('./elements/_hsform.css');
+@import url('./elements/_white-paper.css');
 
 /*-- 01 Home page --*/
 @import url('./sections/home-banner-section.css');

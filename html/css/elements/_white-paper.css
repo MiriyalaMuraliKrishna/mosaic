@@ -1,0 +1,9 @@
+
+.white-papper-main{}
+
+
+.white-papper-head{padding-bottom: 40px;}
+
+.white-papper-main select.hs-input{display: none;}
+body .white-papper-main .selectBox-dropdown{ color: var(--White);}
+body .white-papper-main .selectBox-dropdown .selectBox-arrow::after{color: var(--White);}

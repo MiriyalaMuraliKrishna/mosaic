@@ -8,6 +8,7 @@ export const magnificPopup = {
     ...document.querySelectorAll('.popup-modal'),
     ...document.querySelectorAll('.open_hubspot_popup'),
   ],
+  dataPopups: document.querySelectorAll('[data-open-popup]'),
   init() {
     const _ = this;
     _.$youtube.forEach((youtube) => {
@@ -62,5 +63,27 @@ export const magnificPopup = {
         mainClass: 'my-mfp-slide-top',
       });
     });
+    _.dataPopups.forEach((popup) => {
+      const $popup = $(popup);
+      $popup.magnificPopup({
+        type: 'inline',
+        fixedContentPos: true,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        preloader: false,
+        removalDelay: 160,
+        mainClass: 'mfp-fade',
+      });
+    });
+    window.onload = function () {
+      if (jQuery('.mfp-open-popup').length > 0) {
+        $.magnificPopup.open({
+          items: {
+            src: '.mfp-open-popup',
+          },
+          type: 'inline',
+        });
+      }
+    };
   },
 };

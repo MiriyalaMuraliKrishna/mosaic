@@ -28,7 +28,7 @@
 @media only screen and (min-width: 1024px){
     .alt-stick-section{overflow: hidden; min-height: 629px;}
     .alt-stick-main{padding: 0 0 127px; gap: 0 253px; min-height: 629px;}
-    .alt-stick-left{flex: 0 0 322px;}
+    .no_alt_stick_left, .alt-stick-left{flex: 0 0 322px;}
     .alt-stick-text{max-width: 320px; padding-bottom: 2px;}
     .alt-stick-image{top: 0; right: 0; bottom: auto; left: auto; max-width: 796px; min-width: 796px; min-height: 629px;}
     .alt-stick-right{flex: 1; gap: 100px 201px; flex-direction: row-reverse;}
@@ -48,9 +48,9 @@
     .alt-stick-section{margin-bottom: 100px;}
     .alt-stick-section .container{padding: 0;}
     .alt-stick-main{display: block; padding: 0 40px;}
-    .alt-stick-left, .alt-stick-right{width: 100%;}
+    .no_alt_stick_left, .alt-stick-left, .alt-stick-right{width: 100%;}
     .alt-stick-number{top: 40px; right: 40px;}
-    .alt-stick-left{padding: 200px 40px 80px; width: calc(100% + 80px); margin-left: -40px;}
+    .no_alt_stick_left, .alt-stick-left{padding: 200px 40px 80px; width: calc(100% + 80px); margin-left: -40px;}
     .alt-stick-bg{max-width: 100%; min-height: 366px; min-width: auto; width: 100%;}
     .alt-stick-lists{gap: 60px 0;}
     .alt-stick-list span.fs-21{padding: 20px 0 20px;}
@@ -61,7 +61,7 @@
     .alt-stick-section{margin-bottom: 100px;}
     .alt-stick-section .container{padding: 0;}
     .alt-stick-main{display: block; padding: 0 20px;}
-    .alt-stick-left{padding: 100px 20px 80px; width: calc(100% + 40px); margin-left: -20px;}
+    .no_alt_stick_left, .alt-stick-left{padding: 100px 20px 80px; width: calc(100% + 40px); margin-left: -20px;}
     .alt-stick-right{width: 100%; gap: 59px;}
     .alt-stick-bg{max-width: 100%; min-height: 366px; min-width: auto; width: 100%;}
     .alt-stick-lists{gap: 60px 0;}
